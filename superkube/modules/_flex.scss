@@ -1,0 +1,30 @@
+// =Flex
+.flex {
+    display: flex;
+}
+.flex-auto {
+    flex: 1 1 auto;
+}
+.flex-top {
+    align-items: flex-start;
+}
+.flex-middle {
+    align-items: center;
+}
+.flex-bottom {
+    align-items: flex-end;
+}
+@include for-sm {
+    .flex-column-sm {
+        flex-direction: column;
+    }
+    .flex-top-sm {
+        align-items: flex-start;
+    }
+    .flex-middle-sm {
+        align-items: center;
+    }
+    .flex-bottom-sm {
+        align-items: flex-end;
+    }
+}

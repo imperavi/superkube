@@ -1,0 +1,521 @@
+// =Font
+$font-text: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Helvetica Neue', Arial, sans-serif;
+$font-heading: inherit;
+$font-monospace: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+
+// =Dark
+$dark-class: null;
+
+// =Unit
+$unit: 4px;
+
+// =Body Text
+$body-size: 16px;
+$body-line: 1.5;
+
+// =Type
+$type: (
+    base: (
+        h1: 48px 1.1,
+        h2: 28px 1.3,
+        h3: 21px 1.4,
+        h4: 16px 1.5,
+        quote: 115% 1.5,
+        quotecite: 12px 1.5,
+        table: 95% 1.5,
+        pre: 90% 1.5
+    ),
+    text: (
+        small: 12px 1.5,
+        medium: 14px 1.5,
+        regular: 16px 1.5,
+        large: 21px 1.5
+    ),
+    heading: (
+        mega: 72px 1.1,
+        huge: 60px 1.1,
+        large: 48px 1.1,
+        medium: 24px 1.3,
+        small: 16px 1.5
+    ),
+    input: (
+        regular: 16px 1.5,
+        large: 21px 1.5
+    ),
+    button: (
+        regular: 15px 1.25,
+        large: 16px 1.25
+    ),
+    form: (
+        label: 16px 1.5
+    )
+);
+
+$type-sm: (
+    mega: 60px 1.1
+);
+$type-md: ();
+$type-lg: ();
+
+
+// =Heading
+$heading: (
+    font-weight: bold,
+    letter-spacing: -0.01em
+);
+
+// =Palette
+$palette: (
+    black: #000B1D,
+    white: #ffffff,
+    neutral: (
+        darker: #262F3F,
+        dark: #4C5460,
+        base: #7F858E,
+        light: #D9DBDD,
+        lighter: #F5F5F6
+    ),
+    negative: (
+        darker: #4D1F3A,
+        dark: #BF3D66,
+        base: #FF4F7F,
+        light: #FFCAD8,
+        lighter: #FFF3F6
+    ),
+    positive: (
+        darker: #004E54,
+        dark: #00B4A8,
+        base: #00EDD6,
+        light: #B2F9F2,
+        lighter: #EDFEFC
+    ),
+    active: (
+        darker: #00215F,
+        dark: #0044C3,
+        base: #0058FB,
+        light: #B2CCFD,
+        lighter: #EDF3FF
+    )
+);
+$palette-dark: ();
+
+// =Colors
+$colors: (
+    placeholder: (
+        dark: rgba(palette(black), .4)
+    ),
+    text: (
+        dark: palette(black),
+        default: palette(neutral, darker),
+        moderated: rgba(palette(neutral, darker), .7),
+        muted: rgba(palette(neutral, darker), .5),
+        success: palette(positive, dark),
+        error: palette(negative, dark),
+        light: palette(white),
+        light-moderated: rgba(palette(white), .8),
+        light-muted: rgba(palette(white), .5)
+    ),
+    heading: (
+        default: palette(black),
+        moderated: rgba(palette(black), .7),
+        muted: rgba(palette(black), .5),
+        light: palette(white),
+        light-moderated: rgba(palette(white), .8)
+    ),
+    link: (
+        default: (
+            base: palette(active, dark),
+            hover: palette(negative, dark)
+        ),
+        dark: (
+            base: palette(black),
+            hover: rgba(palette(black), 0.6)
+        ),
+        moderated: (
+            base: rgba(palette(black), .7),
+            hover: palette(black)
+        ),
+        light: (
+            base: palette(white),
+            hover: rgba(palette(white), .6)
+        ),
+        light-moderated: (
+            base: rgba(palette(white), .7),
+            hover: palette(white)
+        )
+    ),
+    pre: (
+        background: palette(neutral, lighter),
+        text: palette(neutral, darker)
+    ),
+    table: (
+        cell: (
+            border: rgba(palette(neutral, light), .5)
+        )
+    ),
+    inline: (
+        var: (
+            text: rgba(palette(black), .85)
+        ),
+        kbd: (
+            border: rgba(palette(black), .15),
+            text: rgba(palette(black), .85)
+        ),
+        code: (
+            background: palette(neutral, lighter),
+            text: rgba(palette(black), .85)
+        )
+    ),
+    button: (
+        default: (
+            base: (
+                background: palette(white),
+                border: palette(neutral, light),
+                text: palette(neutral, darker)
+            ),
+            hover: (
+                background: palette(neutral, lighter),
+                border: palette(neutral, light),
+                text: palette(black)
+            ),
+            disabled: (
+                background: palette(white),
+                border: palette(neutral, light),
+                text: rgba(palette(black), .85)
+            )
+        ),
+        primary: (
+            base: (
+                background: palette(active, base),
+                border: transparent,
+                text: palette(active, lighter)
+            ),
+            hover: (
+                background: palette(active, dark),
+                border: transparent,
+                text: palette(active, lighter)
+            ),
+            disabled: (
+                background: palette(black),
+                border: transparent,
+                text: rgba(palette(active, lighter), .75)
+            )
+        ),
+        secondary: (
+            base: (
+                background: palette(black),
+                border: transparent,
+                text: palette(neutral, lighter),
+            ),
+            hover: (
+                background: palette(neutral, darker),
+                border: transparent,
+                text: palette(neutral, lighter)
+            ),
+            disabled: (
+                background: palette(black),
+                border: transparent,
+                text: rgba(palette(neutral, lighter), .75)
+            )
+        )
+    ),
+    input: (
+        default: (
+            base: (
+                text: palette(neutral, darker),
+                border: palette(neutral, light),
+                background: palette(white)
+            ),
+            focus: (
+                border: rgba(palette(active, base), .5),
+                shadow: rgba(palette(active, base), .3)
+            )
+        ),
+        error: (
+            base: (
+                text: palette(negative, dark),
+                border: rgba(palette(negative, base), .5),
+                shadow: rgba(palette(negative, base), .3)
+            ),
+            focus: (
+                border: palette(negative, base)
+            )
+        )
+    ),
+    hint: (
+        default: rgba(palette(neutral, darker), .55),
+        success: palette(positive, dark),
+        error: palette(negative, dark),
+        required: palette(negative, dark)
+    ),
+    line: (
+        default: rgba(palette(neutral, light), .6)
+    ),
+    shadow: (
+        neutral: palette(black)
+    ),
+    border: (),
+    text-gradient: (),
+    gradient: (),
+    background: (
+        light: palette(white),
+        dark: palette(black)
+    )
+);
+$colors-dark: ();
+
+// =Border
+$borders: ();
+
+// =Radius
+$radius: (
+    small: 2px,
+    base: 4px,
+    large: 12px
+);
+
+// =Breakpoints
+$breakpoints: (
+    lg: 1442px,
+    md: 1024px,
+    sm: 768px
+);
+
+// Type Space
+$type-space: (
+    h1-to-tag: 1rem,
+    h2-to-tag: 1rem,
+    h3-to-tag: 1rem,
+    h4-to-tag: 1rem,
+    h5-to-tag: 1rem,
+    h6-to-tag: 1rem,
+    tag-to-tag: 5rem,
+    tag-to-h2: 6rem,
+    tag-to-h3: 6rem,
+    tag-to-h4: 6rem,
+    tag-to-h5: 6rem,
+    tag-to-h6: 6rem,
+    form-item-to-item: 5rem,
+    form-buttons-to-item: 6rem
+);
+
+// =Levels
+$levels: (
+    content: 100, // overlays
+    page: 200, // modals/offcanvas
+    control: 300, // popups
+    all: 400 // messages
+);
+
+// =Icons
+$icons: (
+    base: 16px,
+    large: 32px
+);
+
+// =Spacing Scale
+$spacing-scale: (
+    1: 1,
+    2: 2,
+    3: 3,
+    4: 4,
+    5: 5,
+    6: 6,
+    7: 7,
+    8: 8,
+    9: 9,
+    10: 10,
+    12: 12,
+    14: 14,
+    15: 15,
+    20: 20,
+    25: 25,
+    30: 30
+);
+
+// =Width Scale
+$width-scale: (
+    20: 20%,
+    25: 25%,
+    30: 30%,
+    33: 33%,
+    40: 40%,
+    50: 50%,
+    60: 60%,
+    67: 67%,
+    70: 70%,
+    75: 75%,
+    80: 80%,
+    100: 100%
+);
+
+// =Grid
+$grid: (
+    gridname: grid,
+    columnname: column,
+    columns: 12,
+    gutter: 6rem,
+    gap: 6rem
+);
+
+// =Shadow
+$shadows: (
+    100: (
+        1: 0 1px 3px 0.15,
+        2: 0 1px 2px 0.06
+    ),
+    200: (
+        1: 0 10px 15px -3px 0.12,
+        2: 0 4px 6px -2px 0.06
+    ),
+    300: 0 20px 50px -12px 0.2
+);
+
+// =Edges
+$edges: (
+    base: 5rem
+);
+
+// =Containers
+$containers: (
+    small: 400px,
+    medium: 800px,
+    base: 1200px,
+    large: 100%
+);
+
+// =Line
+$lines: (
+    default: (
+        margin-top: 1.5em,
+        margin-bottom: 1.5em,
+        color: color(line, default),
+        height: 1px,
+        width: 100%,
+        align: left,
+        style: solid
+    )
+);
+
+// =Buttons Scale
+$buttons-scale: (
+    regular: (
+        font-size: type-size(button, regular),
+        border-radius: radius(base),
+        padding: .4em 20px .4em 20px,
+        height: 44px
+    ),
+    large: (
+        font-size: type-size(button, large),
+        border-radius: radius(base),
+        padding: .4em 32px .4em 32px,
+        height: 56px
+    )
+);
+
+// =Buttons
+$buttons: (
+    default: (
+        base: (
+            font-weight: normal,
+            text-transform: none,
+            color: color(button, default, base, text),
+            border: 1px solid color(button, default, base, border),
+            background-color: color(button, default, base, background)
+        ),
+        hover: (
+            color: color(button, default, hover, text),
+            border: 1px solid color(button, default, hover, border),
+            background-color: color(button, default, hover, background)
+        ),
+        disabled: (
+            color: color(button, default, disabled, text),
+            border: 1px solid color(button, default, disabled, border),
+            background-color: color(button, default, disabled, background)
+        )
+    ),
+    primary: (
+        base: (
+            font-weight: normal,
+            text-transform: none,
+            color: color(button, primary, base, text),
+            border: 1px solid color(button, primary, base, border),
+            background-color: color(button, primary, base, background)
+        ),
+        hover: (
+            color: color(button, primary, hover, text),
+            border: 1px solid color(button, primary, hover, border),
+            background-color: color(button, primary, hover, background)
+        ),
+        disabled: (
+            color: color(button, primary, disabled, text),
+            border: 1px solid color(button, primary, disabled, border),
+            background-color: color(button, primary, disabled, background),
+            opacity: 0.4
+        )
+    ),
+    secondary: (
+        base: (
+            font-weight: normal,
+            text-transform: none,
+            color: color(button, secondary, base, text),
+            border: 1px solid color(button, secondary, base, border),
+            background-color: color(button, secondary, base, background)
+        ),
+        hover: (
+            color: color(button, secondary, hover, text),
+            border: 1px solid color(button, secondary, hover, border),
+            background-color: color(button, secondary, hover, background)
+        ),
+        disabled: (
+            color: color(button, secondary, disabled, text),
+            border: 1px solid color(button, secondary, disabled, border),
+            background-color: color(button, secondary, disabled, background),
+            opacity: 0.4
+        )
+    )
+);
+
+// =Input Scale
+$inputs-scale: (
+    regular: (
+        font-size: type-size(input, regular),
+        line-height: type-line(input, regular),
+        border-radius: radius(small),
+        padding: 0.3em 0.5em,
+        height: 44px
+    ),
+    large: (
+        font-size: type-size(input, large),
+        line-height: type-line(input, large),
+        border-radius: radius(small),
+        padding: 0.3em 0.65em,
+        height: 56px
+    )
+);
+
+// =Input
+$inputs: (
+    default: (
+        base: (
+            color: color(input, default, base, text),
+            border: 1px solid color(input, default, base, border),
+            background-color: color(input, default, base, background),
+            box-shadow: none
+        ),
+        focus: (
+            border-color: color(input, default, focus, border),
+            box-shadow: 0 0 2px color(input, default, focus, shadow)
+        )
+    ),
+    error: (
+        base: (
+            color: color(input, error, base, text),
+            border-color: color(input, error, base, border),
+            box-shadow: 0 0 2px color(input, error, base, shadow)
+        ),
+        focus: (
+            border-color: color(input, error, focus, border)
+        )
+    )
+);

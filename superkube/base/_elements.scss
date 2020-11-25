@@ -1,0 +1,376 @@
+// =Body
+html {
+    font-size: $unit;
+}
+body {
+    font-family: $font-text;
+    font-size: $body-size;
+    line-height: $body-line;
+    color: color(text, default);
+}
+
+// =Placeholder
+@include placeholder(color(placeholder, dark));
+
+// =Type Spacing
+h1 + * { margin-top: type-space(h1-to-tag); }
+h2 + * { margin-top: type-space(h2-to-tag); }
+h3 + * { margin-top: type-space(h3-to-tag); }
+h4 + * { margin-top: type-space(h4-to-tag); }
+h5 + * { margin-top: type-space(h5-to-tag); }
+h6 + * { margin-top: type-space(h6-to-tag); }
+
+p, ul, ol, blockquote, figure, pre, table, dl, address {
+    & + h2 { margin-top: type-space(tag-to-h2); }
+    & + h3 { margin-top: type-space(tag-to-h3); }
+    & + h4 { margin-top: type-space(tag-to-h4); }
+    & + h5 { margin-top: type-space(tag-to-h5); }
+    & + h6 { margin-top: type-space(tag-to-h6); }
+    & + * {
+        margin-top: type-space(tag-to-tag);
+    }
+}
+h1 + h2 { margin-top: type-space(tag-to-h2); }
+h2 + h3 { margin-top: type-space(tag-to-h3); }
+h3 + h4 { margin-top: type-space(tag-to-h4); }
+h4 + h5 { margin-top: type-space(tag-to-h5); }
+h5 + h6 { margin-top: type-space(tag-to-h6); }
+
+// =Link
+a {
+    color: color(link, default, base);
+}
+a:hover {
+    color: color(link, default, hover);
+}
+
+
+// =Heading
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $font-heading;
+    font-weight: bold;
+    font-style: normal;
+    font-size: $body-size;
+    line-height: $body-line;
+    color: color(heading, default);
+    text-rendering: optimizeLegibility;
+    letter-spacing: -0.01em;
+
+    & a {
+        color: inherit;
+        text-decoration: none;
+    }
+    & a:hover {
+        @include transition;
+        color: inherit;
+        opacity: 0.7;
+        text-decoration: underline;
+    }
+}
+@include generate-base-headings($type, std);
+@include for-lg { @include generate-base-headings($type-lg, lg); }
+@include for-md { @include generate-base-headings($type-md, md); }
+@include for-sm { @include generate-base-headings($type-sm, sm); }
+
+
+// =List
+ul,
+ol {
+    margin-left: 20px;
+}
+li li {
+    font-size: 1em;
+}
+
+
+// =Nav
+nav ul,
+nav ol {
+    margin-left: 0;
+    list-style: none;
+}
+
+// =Dl
+dt {
+    font-weight: bold;
+}
+dd + dt {
+    margin-top: 0.25em;
+}
+
+// =Pre
+pre {
+    overflow: auto;
+    white-space: pre;
+    font-family: $font-monospace;
+    font-size: type-size(base, pre);
+    line-height: type-line(base, pre);
+    color: color(pre, text);
+    background-color: color(pre, background);
+    padding: 1em;
+    border-radius: radius(small);
+}
+pre code {
+    padding: 0;
+    border: 0;
+    background: none;
+    font-size: 100%;
+    display: block;
+    line-height: inherit;
+}
+
+// =Quote
+blockquote {
+    color: color(text, default);
+    font-style: italic;
+    font-weight: normal;
+    padding: 0;
+    background: transparent;
+
+    & p {
+        color: color(text, default);
+        font-size: type-size(base, quote);
+        line-height: type-line(base, quote);
+    }
+    & p + p {
+        margin-top: 0.5em;
+    }
+}
+blockquote,
+figcaption {
+    & cite {
+        font-style: inherit;
+        font-size: type-size(base, quotecite);
+        line-height: type-line(base, quotecite);
+        color: rgba(color(text, default), 0.7);
+    }
+}
+
+// =Table
+caption {
+    text-align: left;
+    font-style: normal;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+	empty-cells: show;
+}
+td,
+th {
+    text-align: left;
+    vertical-align: top;
+    font-size: type-size(base, table);
+    line-height: type-line(base, table);
+    padding: 0.75em 0;
+    border-bottom: 1px solid color(table, cell, border);
+}
+th {
+    font-weight: normal;
+}
+thead th {
+    font-weight: bold;
+}
+
+// =Address
+address {
+    font-style: normal;
+}
+
+// =Inline
+dfn,
+abbr {
+    font-size: 95%;
+}
+time,
+cite,
+small,
+var,
+kbd,
+code {
+    font-size: 85%;
+}
+sup,
+sub {
+    font-size: 65%;
+}
+var,
+code,
+kbd {
+    display: inline-block;
+	font-family: $font-monospace;
+	font-style: normal;
+	line-height: 1;
+	vertical-align: baseline;
+}
+kbd,
+code {
+    border-radius: radius(base);
+}
+kbd {
+    color: color(inline, kbd, text);
+    border: 1px solid color(inline, kbd, border);
+    padding: .2em .4em;
+}
+var {
+   color: color(inline, var, text);
+}
+code {
+    color: color(inline, code, text);
+    position: relative;
+    top: -1px;
+    border: 1px solid transparent;
+    background-color: color(inline, code, background);
+    padding: .2em .4em .2em;
+}
+mark {
+    background-color: yellow;
+    color: black;
+}
+b,
+strong {
+	font-weight: 600;
+}
+dfn,
+abbr {
+    &[title] {
+        letter-spacing: .01em;
+        text-transform: uppercase;
+        text-decoration: none;
+        border-bottom: 1px dotted rgba(#000, .4);
+        cursor: help;
+    }
+}
+cite {
+    font-style: italic;
+}
+sub,
+sup {
+    line-height: 1;
+    margin-left: 2px;
+}
+sub {
+    vertical-align: sub;
+}
+sup {
+    vertical-align: super;
+}
+
+// =Label
+label {
+    display: block;
+    font-size: type-size(form, label);
+    margin-bottom: 0.15em;
+
+    &.checkbox,
+    & .hint,
+    & .success,
+    & .error {
+    	text-transform: none;
+    	font-weight: normal;
+    }
+    &.checkbox {
+    	cursor: pointer;
+    	color: inherit;
+    	font-size: 100%;
+    }
+}
+
+// =Embed
+figure {
+    & > img,
+    & > iframe,
+    & > pre,
+    & > div {
+        vertical-align: middle;
+    }
+    & figcaption {
+        display: block;
+        font-style: normal;
+        margin-top: 0.25em;
+        font-size: type-size(text, small);
+        line-height: type-line(text, small);
+    }
+}
+
+// =Line
+hr {
+    position: relative;
+    line-height: 1;
+    background: none;
+    border: none;
+    text-align: left;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+    }
+
+    @if map-has-key($lines, default) {
+        @include line(map-get($lines, default));
+    }
+}
+
+// =Input
+input,
+textarea,
+select {
+    display: block;
+    width: 100%;
+	font-family: inherit;
+    vertical-align: middle;
+	font-weight: normal;
+
+    &:disabled  {
+    	resize: none;
+    	opacity: 0.6;
+    	cursor: default;
+    }
+}
+// Build
+@include build-inputs($inputs, 'input, textarea, select', '.input', 'input-');
+@include build-inputs-scale($inputs-scale, 'input, textarea, select', '.input', 'input-');
+
+textarea {
+    resize: vertical;
+    height: auto;
+    vertical-align: top;
+}
+select {
+    -webkit-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg height="10" viewBox="0 0 9 10" width="9" xmlns="http://www.w3.org/2000/svg"><path fill="rgba(0, 0, 0, .6)" d="m3.27162899.66658308.8-.70211699 4 3.51058495-.8.70211699-3.2-2.80846796-3.2 2.80846796-.8-.70211699zm0 8.59576602-3.2-2.80846795.8-.70211699 3.2 2.80846796 3.2-2.80846796.8.70211699-4 3.51058494z" /></svg>');
+    background-repeat: no-repeat;
+    background-position: right 0.65em center;
+    padding-right: 28px;
+}
+select[multiple] {
+    background-image: none;
+    height: auto;
+}
+
+// =File
+input[type="file"] {
+    width: auto;
+    border: none;
+    padding: 0;
+    height: auto;
+    background: none;
+    box-shadow: none;
+    display: inline-block;
+}
+
+// =Radio & Checkbox
+input[type="radio"],
+input[type="checkbox"] {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    box-shadow: none;
+    padding: 0;
+}

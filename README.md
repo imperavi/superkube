@@ -24,16 +24,6 @@ Superkube is added as basic SCSS to your project and on its base you can create 
 See more about [how to use Superkube](https://imperavi.com/superkube/framework/getting-started/how-to-use/).
 
 
-## Quick install
-
-Try Superkube out now:
-
-### NPM
-
-```sh
-npm install superkube
-```
-
 ## Features
 
 Superkube has many features and surprising uses. This is what is on the surface:

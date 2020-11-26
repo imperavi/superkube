@@ -3,7 +3,7 @@
 Superkube is a SCSS framework designed to build HTML and CSS websites. This means that there is nothing superfluous in it, you can add what you need in each of your projects. 
 
 <a href="https://imperavi.com/superkube/">
-    <img src="https://raw.githubusercontent.com/imperavi/superkube/main/superkube-logo.png" alt="Superkube SCSS Framework" style="max-width:100%" width="400">
+    <img src="https://raw.githubusercontent.com/imperavi/superkube/master/superkube-logo.png" alt="Superkube SCSS Framework" style="max-width:100%" width="400">
 </a>
 
 ----
@@ -60,4 +60,4 @@ Superkube is compatible with latest versions of:
 
 ## License
 
-Superkube Framework is licensed under [the MIT license](https://github.com/imperavi/superkube/blob/main/LICENSE). Superkube is absolutely free for personal or commercial use.
+Superkube Framework is licensed under [the MIT license](https://github.com/imperavi/superkube/blob/master/LICENSE). Superkube is absolutely free for personal or commercial use.

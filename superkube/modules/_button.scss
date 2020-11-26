@@ -24,8 +24,8 @@ a.button,
 	padding: map-deep-get($buttons-scale, regular, padding);
 	height: map-deep-get($buttons-scale, regular, height);
 	border-radius: map-deep-get($buttons-scale, regular, radius);
-    border: 1px solid rgba(black, .15);
-    background-color: #fff;
+    border: 1px solid color(button, default, base, border);
+    background-color: color(button, default, base, background);
 }
 .button {
     // Icons

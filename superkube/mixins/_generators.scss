@@ -47,10 +47,10 @@
     @each $key, $val in $obj {
         @if ($key != default and type-of($val) == 'map') {
             &-#{$key} {
-                color: map-get($val, base);
+                color: color(link, $key, base);
                 &:hover {
                     @include transition;
-                    color: map-get($val, hover);
+                    color: color(link, $key, hover);
                 }
             }
         }
@@ -63,7 +63,7 @@
     @each $key, $val in $obj {
         @if ($key != default) {
             &-#{$key} {
-                color: $val;
+                color: color(text, $key);
             }
         }
     }
@@ -92,7 +92,7 @@
     @each $key, $val in $obj {
         @if ($key != default) {
             &-#{$key} {
-                color: $val;
+                color: color(heading, $key);
             }
         }
     }

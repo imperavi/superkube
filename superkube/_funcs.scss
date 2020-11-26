@@ -79,20 +79,21 @@
 
 @function build-shadows($map, $name, $value) {
     $shadow: map-get($map, $value);
-    $color: map-deep-get($colors, shadow, $name);
+    $color: var(--c-shadow-#{$name}-#{$value});
 
-    //@debug $color;
     @if type-of($shadow) == 'map' {
         $map: ();
         @each $key, $val in $shadow {
-            $str: build-shadow($val, $color);
+            $color: var(--c-shadow-#{$name}-#{$value}-#{$key});
+            $str: $val $color;
             $map: map-merge($map, ($key: $str));
         }
 
         @return map-values($map);
     }
-
-    @return build-shadow($shadow, $color);
+    @else {
+        @return $shadow $color;
+    }
 }
 
 @function build-shadow($shadow, $color) {

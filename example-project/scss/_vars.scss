@@ -35,7 +35,7 @@ $type: (
         mega: 72px 1.1,
         huge: 60px 1.1,
         large: 48px 1.1,
-        medium: 24px 1.3,
+        medium: 21px 1.3,
         small: 16px 1.5
     ),
     input: (
@@ -95,9 +95,50 @@ $palette: (
         base: #0058FB,
         light: #B2CCFD,
         lighter: #EDF3FF
+    ),
+    brand: (
+        platinum: #E0E4EA,
+        blue: #3C79EF,
+        violet: #9968EA
     )
 );
-$palette-dark: ();
+$palette-dark: (
+    black: #000,
+    white: #ffffff,
+    neutral: (
+        darker: #E6E6E6,
+        dark: #A6A6A6,
+        base: #666666,
+        light: #262626,
+        lighter: #080808
+    ),
+    negative: (
+        darker: #4D1F3A,
+        dark: #BF3D66,
+        base: #FF4F7F,
+        light: #FFCAD8,
+        lighter: #FFF3F6
+    ),
+    positive: (
+        darker: #004E54,
+        dark: #00B4A8,
+        base: #00EDD6,
+        light: #B2F9F2,
+        lighter: #EDFEFC
+    ),
+    active: (
+        darker: #00215F,
+        dark: #0044C3,
+        base: #0058FB,
+        light: #B2CCFD,
+        lighter: #EDF3FF
+    ),
+    brand: (
+        platinum: #000,
+        blue: #3C79EF,
+        violet: #9968EA
+    )
+);
 
 // =Colors
 $colors: (
@@ -143,6 +184,13 @@ $colors: (
             base: rgba(palette(white), .7),
             hover: palette(white)
         )
+    ),
+    icon: (
+        blue: palette(brand, blue),
+        violet: palette(brand, violet)
+    ),
+    card: (
+        background: palette(white)
     ),
     pre: (
         background: palette(neutral, lighter),
@@ -264,18 +312,204 @@ $colors: (
             300: rgba(palette(black), .2)
         )
     ),
-    border: (),
+    border: (
+        primary: rgba(palette(black), .07)
+    ),
     text-gradient: (),
     gradient: (),
     background: (
-        light: palette(white),
-        dark: palette(black)
+        page: palette(white),
+        primary: palette(neutral, lighter),
+        secondary: palette(brand, platinum)
     )
 );
-$colors-dark: ();
+$colors-dark: (
+    placeholder: (
+        dark: rgba(palette-dark(white), .4)
+    ),
+    text: (
+        dark: palette-dark(white),
+        default: palette-dark(neutral, darker),
+        moderated: rgba(palette-dark(neutral, darker), .7),
+        muted: rgba(palette-dark(neutral, darker), .5),
+        success: palette-dark(positive, dark),
+        error: palette-dark(negative, dark),
+        light: palette-dark(black),
+        light-moderated: rgba(palette-dark(black), .8),
+        light-muted: rgba(palette-dark(black), .5)
+    ),
+    heading: (
+        default: palette-dark(white),
+        moderated: rgba(palette-dark(white), .7),
+        muted: rgba(palette-dark(white), .5),
+        light: palette-dark(black),
+        light-moderated: rgba(palette-dark(black), .8)
+    ),
+    link: (
+        default: (
+            base: palette-dark(active, dark),
+            hover: palette-dark(negative, dark)
+        ),
+        dark: (
+            base: palette-dark(white),
+            hover: rgba(palette-dark(white), 0.6)
+        ),
+        moderated: (
+            base: rgba(palette-dark(white), .7),
+            hover: palette-dark(white)
+        ),
+        light: (
+            base: palette-dark(black),
+            hover: rgba(palette-dark(black), .6)
+        ),
+        light-moderated: (
+            base: rgba(palette-dark(black), .7),
+            hover: palette-dark(black)
+        )
+    ),
+    icon: (
+        blue: palette-dark(brand, blue),
+        violet: palette-dark(brand, violet)
+    ),
+    card: (
+        background: palette-dark(black)
+    ),
+    pre: (
+        background: palette-dark(neutral, lighter),
+        text: palette-dark(neutral, darker)
+    ),
+    table: (
+        cell: (
+            border: rgba(palette-dark(neutral, light), .5)
+        )
+    ),
+    inline: (
+        var: (
+            text: rgba(palette-dark(white), .85)
+        ),
+        kbd: (
+            border: rgba(palette-dark(white), .15),
+            text: rgba(palette-dark(white), .85)
+        ),
+        code: (
+            background: palette-dark(neutral, lighter),
+            text: rgba(palette-dark(white), .85)
+        )
+    ),
+    button: (
+        default: (
+            base: (
+                background: palette-dark(white),
+                border: palette-dark(neutral, light),
+                text: palette-dark(neutral, darker)
+            ),
+            hover: (
+                background: palette-dark(neutral, lighter),
+                border: palette-dark(neutral, light),
+                text: palette-dark(black)
+            ),
+            disabled: (
+                background: palette-dark(white),
+                border: palette-dark(neutral, light),
+                text: rgba(palette-dark(black), .85)
+            )
+        ),
+        primary: (
+            base: (
+                background: palette-dark(active, base),
+                border: transparent,
+                text: palette-dark(active, lighter)
+            ),
+            hover: (
+                background: palette-dark(active, dark),
+                border: transparent,
+                text: palette-dark(active, lighter)
+            ),
+            disabled: (
+                background: palette-dark(black),
+                border: transparent,
+                text: rgba(palette-dark(active, lighter), .75)
+            )
+        ),
+        secondary: (
+            base: (
+                background: palette-dark(black),
+                border: transparent,
+                text: palette-dark(neutral, lighter),
+            ),
+            hover: (
+                background: palette-dark(neutral, darker),
+                border: transparent,
+                text: palette-dark(neutral, lighter)
+            ),
+            disabled: (
+                background: palette-dark(black),
+                border: transparent,
+                text: rgba(palette-dark(neutral, lighter), .75)
+            )
+        )
+    ),
+    input: (
+        default: (
+            base: (
+                text: palette-dark(neutral, darker),
+                border: palette-dark(neutral, light),
+                background: palette-dark(white)
+            ),
+            focus: (
+                border: rgba(palette-dark(active, base), .5),
+                shadow: rgba(palette-dark(active, base), .3)
+            )
+        ),
+        error: (
+            base: (
+                text: palette-dark(negative, dark),
+                border: rgba(palette-dark(negative, base), .5),
+                shadow: rgba(palette-dark(negative, base), .3)
+            ),
+            focus: (
+                border: palette-dark(negative, base)
+            )
+        )
+    ),
+    hint: (
+        default: rgba(palette-dark(neutral, darker), .55),
+        success: palette-dark(positive, dark),
+        error: palette-dark(negative, dark),
+        required: palette-dark(negative, dark)
+    ),
+    line: (
+        default: rgba(palette-dark(neutral, light), .6)
+    ),
+    shadow: (
+        neutral: (
+            100: (
+                1: rgba(palette-dark(black), .3),
+                2: rgba(palette-dark(black), .15)
+            ),
+            200: (
+                1: rgba(palette-dark(black), .4),
+                2: rgba(palette-dark(black), .15)
+            ),
+            300: rgba(palette-dark(black), .6)
+        )
+    ),
+    border: (
+        primary: rgba(palette-dark(white), .07)
+    ),
+    text-gradient: (),
+    gradient: (),
+    background: (
+        page: palette-dark(black),
+        primary: palette-dark(neutral, lighter),
+        secondary: palette-dark(brand, platinum)
+    )
+);
 
 // =Border
-$borders: ();
+$borders: (
+    1: 1px
+);
 
 // =Radius
 $radius: (

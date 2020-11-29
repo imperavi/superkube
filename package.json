@@ -1,6 +1,6 @@
 {
   "name": "superkube",
-  "version": "1.0.0-rc",
+  "version": "1.0.1",
   "homepage": "https://imperavi.com/superkube",
   "description": "SCSS Framework",
   "main": "superkube.scss",

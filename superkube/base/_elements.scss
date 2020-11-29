@@ -266,6 +266,8 @@ sup {
 label {
     display: block;
     font-size: type-size(form, label);
+    font-weight: map-deep-get($form, label, font-weight);
+    color: color(form, label, text);
     margin-bottom: 0.15em;
 
     &.checkbox,

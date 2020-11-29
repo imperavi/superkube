@@ -30,6 +30,7 @@
   --c-pre-background: #F5F5F6;
   --c-pre-text: #262F3F;
   --c-table-cell-border: rgba(217, 219, 221, 0.5);
+  --c-form-label-text: #262F3F;
   --c-inline-var-text: rgba(0, 11, 29, 0.85);
   --c-inline-kbd-border: rgba(0, 11, 29, 0.15);
   --c-inline-kbd-text: rgba(0, 11, 29, 0.85);
@@ -526,6 +527,8 @@ sup {
 label {
   display: block;
   font-size: 16px;
+  font-weight: normal;
+  color: var(--c-form-label-text);
   margin-bottom: 0.15em; }
   label.checkbox,
   label .hint,

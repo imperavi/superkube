@@ -153,6 +153,11 @@ $colors: (
             border: rgba(palette(neutral, light), .5)
         )
     ),
+    form: (
+        label: (
+            text: palette(neutral, darker)
+        )
+    ),
     inline: (
         var: (
             text: rgba(palette(black), .85)
@@ -276,6 +281,13 @@ $colors-dark: ();
 
 // =Border
 $borders: ();
+
+// =Form
+$form: (
+    label: (
+        font-weight: normal
+    )
+);
 
 // =Radius
 $radius: (

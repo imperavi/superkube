@@ -198,7 +198,7 @@ audio, canvas, video, progress, iframe {
 fieldset, iframe, img {
   border: 0; }
 
-embed, object, audio, img, video {
+embed, object, img, video {
   max-width: 100%;
   height: auto; }
 

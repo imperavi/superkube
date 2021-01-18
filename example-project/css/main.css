@@ -45,24 +45,24 @@
   --c-button-default-disabled-background: #ffffff;
   --c-button-default-disabled-border: #D9DBDD;
   --c-button-default-disabled-text: rgba(0, 11, 29, 0.85);
-  --c-button-primary-base-background: #0058FB;
-  --c-button-primary-base-border: transparent;
-  --c-button-primary-base-text: #EDF3FF;
-  --c-button-primary-hover-background: #0044C3;
-  --c-button-primary-hover-border: transparent;
-  --c-button-primary-hover-text: #EDF3FF;
-  --c-button-primary-disabled-background: #000B1D;
-  --c-button-primary-disabled-border: transparent;
-  --c-button-primary-disabled-text: rgba(237, 243, 255, 0.75);
-  --c-button-secondary-base-background: #000B1D;
-  --c-button-secondary-base-border: transparent;
-  --c-button-secondary-base-text: #F5F5F6;
-  --c-button-secondary-hover-background: #262F3F;
-  --c-button-secondary-hover-border: transparent;
-  --c-button-secondary-hover-text: #F5F5F6;
-  --c-button-secondary-disabled-background: #000B1D;
-  --c-button-secondary-disabled-border: transparent;
-  --c-button-secondary-disabled-text: rgba(245, 245, 246, 0.75);
+  --c-button-alpha-base-background: #0058FB;
+  --c-button-alpha-base-border: transparent;
+  --c-button-alpha-base-text: #EDF3FF;
+  --c-button-alpha-hover-background: #0044C3;
+  --c-button-alpha-hover-border: transparent;
+  --c-button-alpha-hover-text: #EDF3FF;
+  --c-button-alpha-disabled-background: #000B1D;
+  --c-button-alpha-disabled-border: transparent;
+  --c-button-alpha-disabled-text: rgba(237, 243, 255, 0.75);
+  --c-button-bravo-base-background: #000B1D;
+  --c-button-bravo-base-border: transparent;
+  --c-button-bravo-base-text: #F5F5F6;
+  --c-button-bravo-hover-background: #262F3F;
+  --c-button-bravo-hover-border: transparent;
+  --c-button-bravo-hover-text: #F5F5F6;
+  --c-button-bravo-disabled-background: #000B1D;
+  --c-button-bravo-disabled-border: transparent;
+  --c-button-bravo-disabled-text: rgba(245, 245, 246, 0.75);
   --c-input-default-base-text: #262F3F;
   --c-input-default-base-border: #D9DBDD;
   --c-input-default-base-background: #ffffff;
@@ -82,10 +82,10 @@
   --c-shadow-neutral-200-1: rgba(0, 11, 29, 0.12);
   --c-shadow-neutral-200-2: rgba(0, 11, 29, 0.06);
   --c-shadow-neutral-300: rgba(0, 11, 29, 0.2);
-  --c-border-primary: rgba(0, 11, 29, 0.07);
+  --c-border-alpha: rgba(0, 11, 29, 0.07);
   --c-background-page: #ffffff;
-  --c-background-primary: #F5F5F6;
-  --c-background-secondary: #E0E4EA; }
+  --c-background-alpha: #F5F5F6;
+  --c-background-bravo: #E0E4EA; }
 
 @media (prefers-color-scheme: dark) {
   :root {
@@ -134,24 +134,24 @@
     --c-button-default-disabled-background: #ffffff;
     --c-button-default-disabled-border: #262626;
     --c-button-default-disabled-text: rgba(0, 0, 0, 0.85);
-    --c-button-primary-base-background: #0058FB;
-    --c-button-primary-base-border: transparent;
-    --c-button-primary-base-text: #EDF3FF;
-    --c-button-primary-hover-background: #0044C3;
-    --c-button-primary-hover-border: transparent;
-    --c-button-primary-hover-text: #EDF3FF;
-    --c-button-primary-disabled-background: #000;
-    --c-button-primary-disabled-border: transparent;
-    --c-button-primary-disabled-text: rgba(237, 243, 255, 0.75);
-    --c-button-secondary-base-background: #000;
-    --c-button-secondary-base-border: transparent;
-    --c-button-secondary-base-text: #080808;
-    --c-button-secondary-hover-background: #E6E6E6;
-    --c-button-secondary-hover-border: transparent;
-    --c-button-secondary-hover-text: #080808;
-    --c-button-secondary-disabled-background: #000;
-    --c-button-secondary-disabled-border: transparent;
-    --c-button-secondary-disabled-text: rgba(8, 8, 8, 0.75);
+    --c-button-alpha-base-background: #0058FB;
+    --c-button-alpha-base-border: transparent;
+    --c-button-alpha-base-text: #EDF3FF;
+    --c-button-alpha-hover-background: #0044C3;
+    --c-button-alpha-hover-border: transparent;
+    --c-button-alpha-hover-text: #EDF3FF;
+    --c-button-alpha-disabled-background: #000;
+    --c-button-alpha-disabled-border: transparent;
+    --c-button-alpha-disabled-text: rgba(237, 243, 255, 0.75);
+    --c-button-bravo-base-background: #000;
+    --c-button-bravo-base-border: transparent;
+    --c-button-bravo-base-text: #080808;
+    --c-button-bravo-hover-background: #E6E6E6;
+    --c-button-bravo-hover-border: transparent;
+    --c-button-bravo-hover-text: #080808;
+    --c-button-bravo-disabled-background: #000;
+    --c-button-bravo-disabled-border: transparent;
+    --c-button-bravo-disabled-text: rgba(8, 8, 8, 0.75);
     --c-input-default-base-text: #E6E6E6;
     --c-input-default-base-border: #262626;
     --c-input-default-base-background: #ffffff;
@@ -171,10 +171,10 @@
     --c-shadow-neutral-200-1: rgba(0, 0, 0, 0.4);
     --c-shadow-neutral-200-2: rgba(0, 0, 0, 0.15);
     --c-shadow-neutral-300: rgba(0, 0, 0, 0.6);
-    --c-border-primary: rgba(255, 255, 255, 0.07);
+    --c-border-alpha: rgba(255, 255, 255, 0.07);
     --c-background-page: #000;
-    --c-background-primary: #080808;
-    --c-background-secondary: #000; } }
+    --c-background-alpha: #080808;
+    --c-background-bravo: #000; } }
 
 html {
   box-sizing: border-box;
@@ -692,11 +692,11 @@ input[type="checkbox"] {
 .bg-page {
   background-color: var(--c-background-page); }
 
-.bg-primary {
-  background-color: var(--c-background-primary); }
+.bg-alpha {
+  background-color: var(--c-background-alpha); }
 
-.bg-secondary {
-  background-color: var(--c-background-secondary); }
+.bg-bravo {
+  background-color: var(--c-background-bravo); }
 
 [class^="bd-"],
 [class*=" bd-"] {
@@ -749,8 +749,8 @@ input[type="checkbox"] {
 .bd-off {
   border-width: 0 !important; }
 
-.bd-primary {
-  border-color: var(--c-border-primary); }
+.bd-alpha {
+  border-color: var(--c-border-alpha); }
 
 .bd-1 {
   border-width: 1px; }
@@ -845,41 +845,41 @@ a.button,
     background-color: var(--c-button-default-disabled-background);
     background-image: none; }
 
-.button.button-primary {
+.button.button-alpha {
   font-weight: normal;
   text-transform: none;
-  color: var(--c-button-primary-base-text);
-  border: 1px solid var(--c-button-primary-base-border);
-  background-color: var(--c-button-primary-base-background);
+  color: var(--c-button-alpha-base-text);
+  border: 1px solid var(--c-button-alpha-base-border);
+  background-color: var(--c-button-alpha-base-background);
   background-image: none; }
-  .button.button-primary:hover, .button.button-primary:focus {
-    color: var(--c-button-primary-hover-text);
-    border: 1px solid var(--c-button-primary-hover-border);
-    background-color: var(--c-button-primary-hover-background);
+  .button.button-alpha:hover, .button.button-alpha:focus {
+    color: var(--c-button-alpha-hover-text);
+    border: 1px solid var(--c-button-alpha-hover-border);
+    background-color: var(--c-button-alpha-hover-background);
     background-image: none; }
-  .button.button-primary:disabled {
-    color: var(--c-button-primary-disabled-text);
-    border: 1px solid var(--c-button-primary-disabled-border);
-    background-color: var(--c-button-primary-disabled-background);
+  .button.button-alpha:disabled {
+    color: var(--c-button-alpha-disabled-text);
+    border: 1px solid var(--c-button-alpha-disabled-border);
+    background-color: var(--c-button-alpha-disabled-background);
     background-image: none;
     opacity: 0.4; }
 
-.button.button-secondary {
+.button.button-bravo {
   font-weight: normal;
   text-transform: none;
-  color: var(--c-button-secondary-base-text);
-  border: 1px solid var(--c-button-secondary-base-border);
-  background-color: var(--c-button-secondary-base-background);
+  color: var(--c-button-bravo-base-text);
+  border: 1px solid var(--c-button-bravo-base-border);
+  background-color: var(--c-button-bravo-base-background);
   background-image: none; }
-  .button.button-secondary:hover, .button.button-secondary:focus {
-    color: var(--c-button-secondary-hover-text);
-    border: 1px solid var(--c-button-secondary-hover-border);
-    background-color: var(--c-button-secondary-hover-background);
+  .button.button-bravo:hover, .button.button-bravo:focus {
+    color: var(--c-button-bravo-hover-text);
+    border: 1px solid var(--c-button-bravo-hover-border);
+    background-color: var(--c-button-bravo-hover-background);
     background-image: none; }
-  .button.button-secondary:disabled {
-    color: var(--c-button-secondary-disabled-text);
-    border: 1px solid var(--c-button-secondary-disabled-border);
-    background-color: var(--c-button-secondary-disabled-background);
+  .button.button-bravo:disabled {
+    color: var(--c-button-bravo-disabled-text);
+    border: 1px solid var(--c-button-bravo-disabled-border);
+    background-color: var(--c-button-bravo-disabled-background);
     background-image: none;
     opacity: 0.4; }
 

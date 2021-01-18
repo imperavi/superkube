@@ -189,7 +189,7 @@ $colors: (
                 text: rgba(palette(black), .85)
             )
         ),
-        primary: (
+        alpha: (
             base: (
                 background: palette(active, base),
                 border: transparent,
@@ -206,7 +206,7 @@ $colors: (
                 text: rgba(palette(active, lighter), .75)
             )
         ),
-        secondary: (
+        bravo: (
             base: (
                 background: palette(black),
                 border: transparent,
@@ -456,43 +456,43 @@ $buttons: (
             background-color: color(button, default, disabled, background)
         )
     ),
-    primary: (
+    alpha: (
         base: (
             font-weight: normal,
             text-transform: none,
-            color: color(button, primary, base, text),
-            border: 1px solid color(button, primary, base, border),
-            background-color: color(button, primary, base, background)
+            color: color(button, alpha, base, text),
+            border: 1px solid color(button, alpha, base, border),
+            background-color: color(button, alpha, base, background)
         ),
         hover: (
-            color: color(button, primary, hover, text),
-            border: 1px solid color(button, primary, hover, border),
-            background-color: color(button, primary, hover, background)
+            color: color(button, alpha, hover, text),
+            border: 1px solid color(button, alpha, hover, border),
+            background-color: color(button, alpha, hover, background)
         ),
         disabled: (
-            color: color(button, primary, disabled, text),
-            border: 1px solid color(button, primary, disabled, border),
-            background-color: color(button, primary, disabled, background),
+            color: color(button, alpha, disabled, text),
+            border: 1px solid color(button, alpha, disabled, border),
+            background-color: color(button, alpha, disabled, background),
             opacity: 0.4
         )
     ),
-    secondary: (
+    bravo: (
         base: (
             font-weight: normal,
             text-transform: none,
-            color: color(button, secondary, base, text),
-            border: 1px solid color(button, secondary, base, border),
-            background-color: color(button, secondary, base, background)
+            color: color(button, bravo, base, text),
+            border: 1px solid color(button, bravo, base, border),
+            background-color: color(button, bravo, base, background)
         ),
         hover: (
-            color: color(button, secondary, hover, text),
-            border: 1px solid color(button, secondary, hover, border),
-            background-color: color(button, secondary, hover, background)
+            color: color(button, bravo, hover, text),
+            border: 1px solid color(button, bravo, hover, border),
+            background-color: color(button, bravo, hover, background)
         ),
         disabled: (
-            color: color(button, secondary, disabled, text),
-            border: 1px solid color(button, secondary, disabled, border),
-            background-color: color(button, secondary, disabled, background),
+            color: color(button, bravo, disabled, text),
+            border: 1px solid color(button, bravo, disabled, border),
+            background-color: color(button, bravo, disabled, background),
             opacity: 0.4
         )
     )

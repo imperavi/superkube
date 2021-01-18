@@ -24,7 +24,14 @@
 // =Gradients
 $gradients: map-get($colors, text-gradient);
 @each $name, $value in $gradients {
-    .text-gr-#{$name} { @include text-gradient(color(text-gradient, $name)); }
+    .text-gr-#{$name} {
+        @if (map-has-key($value, deg)) {
+            @include text-gradient(color(text-gradient, $name), map-get($value, deg));
+        }
+        @else {
+            @include text-gradient(color(text-gradient, $name));
+        }
+    }
 }
 [class^="text-gr-"],
 [class*=" text-gr-"] {

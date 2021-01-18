@@ -103,8 +103,16 @@ $palette: (
     )
 );
 $palette-dark: (
-    black: #000,
+    black: #1F2023,
     white: #ffffff,
+    surface: (
+        base: #27292D,
+        depth-5: #53575E,
+        depth-10: #43464C,
+        depth-20: #3E4147,
+        depth-30: #383B40,
+        depth-40: #2D2F34
+    ),
     neutral: (
         darker: #E6E6E6,
         dark: #A6A6A6,
@@ -113,30 +121,30 @@ $palette-dark: (
         lighter: #080808
     ),
     negative: (
-        darker: #4D1F3A,
-        dark: #BF3D66,
-        base: #FF4F7F,
-        light: #FFCAD8,
-        lighter: #FFF3F6
+        darker: #6D3C45,
+        dark: #A24C57,
+        base: #D75B6A,
+        light: #F4AAB3,
+        lighter: #FBE8EB
     ),
     positive: (
-        darker: #004E54,
-        dark: #00B4A8,
-        base: #00EDD6,
-        light: #B2F9F2,
-        lighter: #EDFEFC
+        darker: #265948,
+        dark: #257D5C,
+        base: #25A271,
+        light: #9DDAC2,
+        lighter: #E9F9F2
     ),
     active: (
-        darker: #00215F,
-        dark: #0044C3,
-        base: #0058FB,
-        light: #B2CCFD,
-        lighter: #EDF3FF
+        darker: #313865,
+        dark: #38448F,
+        base: #4050BA,
+        light: #B2BCFF,
+        lighter: #E6E9FD
     ),
     brand: (
-        platinum: #000,
-        blue: #3C79EF,
-        violet: #9968EA
+        platinum: #383B40,
+        blue: #6794E9,
+        violet: #A681E4
     )
 );
 
@@ -333,43 +341,43 @@ $colors-dark: (
         dark: rgba(palette-dark(white), .4)
     ),
     text: (
-        dark: palette-dark(white),
-        default: palette-dark(neutral, darker),
-        moderated: rgba(palette-dark(neutral, darker), .7),
-        muted: rgba(palette-dark(neutral, darker), .5),
-        success: palette-dark(positive, dark),
-        error: palette-dark(negative, dark),
-        light: palette-dark(black),
-        light-moderated: rgba(palette-dark(black), .8),
-        light-muted: rgba(palette-dark(black), .5)
-    ),
-    heading: (
-        default: palette-dark(white),
+        dark: rgba(palette-dark(white), .95),
+        default: rgba(palette-dark(white), .95),
         moderated: rgba(palette-dark(white), .7),
         muted: rgba(palette-dark(white), .5),
-        light: palette-dark(black),
-        light-moderated: rgba(palette-dark(black), .8)
+        success: palette-dark(positive, light),
+        error: palette-dark(negative, light),
+        light: palette-dark(white),
+        light-moderated: rgba(palette-dark(white), .8),
+        light-muted: rgba(palette-dark(white), .5)
+    ),
+    heading: (
+        default: rgba(palette-dark(white), .95),
+        moderated: rgba(palette-dark(white), .7),
+        muted: rgba(palette-dark(white), .5),
+        light: palette-dark(white),
+        light-moderated: rgba(palette-dark(white), .8)
     ),
     link: (
         default: (
-            base: palette-dark(active, dark),
-            hover: palette-dark(negative, dark)
+            base: palette-dark(active, light),
+            hover: palette-dark(negative, light)
         ),
         dark: (
-            base: palette-dark(white),
-            hover: rgba(palette-dark(white), 0.6)
+            base: rgba(palette-dark(white), .95),
+            hover: rgba(palette-dark(white), .6)
         ),
         moderated: (
             base: rgba(palette-dark(white), .7),
-            hover: palette-dark(white)
+            hover: rgba(palette-dark(white), .95)
         ),
         light: (
-            base: palette-dark(black),
-            hover: rgba(palette-dark(black), .6)
+            base: palette-dark(white),
+            hover: rgba(palette-dark(white), .6)
         ),
         light-moderated: (
-            base: rgba(palette-dark(black), .7),
-            hover: palette-dark(black)
+            base: rgba(palette-dark(white), .7),
+            hover: palette-dark(white)
         )
     ),
     icon: (
@@ -377,15 +385,20 @@ $colors-dark: (
         violet: palette-dark(brand, violet)
     ),
     card: (
-        background: palette-dark(black)
+        background: palette-dark(surface, depth-10)
     ),
     pre: (
-        background: palette-dark(neutral, lighter),
-        text: palette-dark(neutral, darker)
+        background: palette-dark(surface, depth-20),
+        text: rgba(palette-dark(white), .95)
     ),
     table: (
         cell: (
-            border: rgba(palette-dark(neutral, light), .5)
+            border: rgba(palette-dark(white), .12)
+        )
+    ),
+    form: (
+        label: (
+            text: rgba(palette-dark(white), .95)
         )
     ),
     inline: (
@@ -397,26 +410,26 @@ $colors-dark: (
             text: rgba(palette-dark(white), .85)
         ),
         code: (
-            background: palette-dark(neutral, lighter),
+            background: palette-dark(surface, depth-20),
             text: rgba(palette-dark(white), .85)
         )
     ),
     button: (
         default: (
             base: (
-                background: palette-dark(white),
-                border: palette-dark(neutral, light),
-                text: palette-dark(neutral, darker)
+                background: palette-dark(surface, base),
+                border: rgba(palette-dark(white), .25),
+                text: rgba(palette-dark(white), .95)
             ),
             hover: (
-                background: palette-dark(neutral, lighter),
-                border: palette-dark(neutral, light),
-                text: palette-dark(black)
+                background: palette-dark(surface, depth-30),
+                border: rgba(palette-dark(white), .15),
+                text: rgba(palette-dark(white), .95)
             ),
             disabled: (
-                background: palette-dark(white),
-                border: palette-dark(neutral, light),
-                text: rgba(palette-dark(black), .85)
+                background: palette-dark(surface, base),
+                border: rgba(palette-dark(white), .25),
+                text: rgba(palette-dark(white), .75)
             )
         ),
         alpha: (
@@ -431,60 +444,60 @@ $colors-dark: (
                 text: palette-dark(active, lighter)
             ),
             disabled: (
-                background: palette-dark(black),
+                background: palette-dark(surface, depth-10),
                 border: transparent,
-                text: rgba(palette-dark(active, lighter), .75)
+                text: rgba(palette-dark(white), .75)
             )
         ),
         bravo: (
             base: (
-                background: palette-dark(black),
+                background: palette-dark(surface, depth-5),
                 border: transparent,
-                text: palette-dark(neutral, lighter),
+                text: rgba(palette-dark(white), .95)
             ),
             hover: (
-                background: palette-dark(neutral, darker),
+                background: palette-dark(surface, depth-10),
                 border: transparent,
-                text: palette-dark(neutral, lighter)
+                text: rgba(palette-dark(white), .95)
             ),
             disabled: (
-                background: palette-dark(black),
+                background: palette-dark(surface, depth-10),
                 border: transparent,
-                text: rgba(palette-dark(neutral, lighter), .75)
+                text: rgba(palette-dark(white), .75)
             )
         )
     ),
     input: (
         default: (
             base: (
-                text: palette-dark(neutral, darker),
-                border: palette-dark(neutral, light),
-                background: palette-dark(white)
+                text: rgba(palette-dark(white), .95),
+                border: rgba(palette-dark(white), .15),
+                background: palette-dark(surface, depth-30)
             ),
             focus: (
-                border: rgba(palette-dark(active, base), .5),
-                shadow: rgba(palette-dark(active, base), .3)
+                border: rgba(palette-dark(white), .4),
+                shadow: none
             )
         ),
         error: (
             base: (
-                text: palette-dark(negative, dark),
-                border: rgba(palette-dark(negative, base), .5),
-                shadow: rgba(palette-dark(negative, base), .3)
+                text: palette-dark(negative, base),
+                border: palette-dark(negative, base),
+                shadow: none
             ),
             focus: (
-                border: palette-dark(negative, base)
+                border: palette-dark(negative, light)
             )
         )
     ),
     hint: (
-        default: rgba(palette-dark(neutral, darker), .55),
-        success: palette-dark(positive, dark),
-        error: palette-dark(negative, dark),
-        required: palette-dark(negative, dark)
+        default: rgba(palette-dark(white), .55),
+        success: palette-dark(positive, light),
+        error: palette-dark(negative, light),
+        required: palette-dark(negative, light)
     ),
     line: (
-        default: rgba(palette-dark(neutral, light), .6)
+        default: rgba(palette-dark(white), .1)
     ),
     shadow: (
         neutral: (
@@ -505,9 +518,9 @@ $colors-dark: (
     text-gradient: (),
     gradient: (),
     background: (
-        page: palette-dark(black),
-        alpha: palette-dark(neutral, lighter),
-        bravo: palette-dark(brand, platinum)
+        page: palette-dark(surface, base),
+        alpha: palette-dark(surface, depth-30),
+        bravo: palette-dark(surface, depth-40)
     )
 );
 

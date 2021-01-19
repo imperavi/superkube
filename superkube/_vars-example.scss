@@ -52,7 +52,9 @@ $type: (
 );
 
 $type-sm: (
-    mega: 60px 1.1
+    heading: (
+        mega: 60px 1.1
+    )
 );
 $type-md: ();
 $type-lg: ();
@@ -70,7 +72,7 @@ $palette: (
     white: #ffffff,
     neutral: (
         darker: #243742,
-        dark: #4E5355,
+        dark: #4E565B,
         base: #8A9093,
         light: #CED2D4,
         lighter: #F5F6F8

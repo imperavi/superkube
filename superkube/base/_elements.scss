@@ -113,6 +113,7 @@ pre {
     color: color(pre, text);
     background-color: color(pre, background);
     padding: 1em;
+    border: 1px solid color(pre, border);
     border-radius: radius(small);
 }
 pre code {

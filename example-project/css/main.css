@@ -29,6 +29,7 @@
   --c-card-background: #ffffff;
   --c-pre-background: #F5F6F8;
   --c-pre-text: #243742;
+  --c-pre-border: transparent;
   --c-table-cell-border: rgba(206, 210, 212, 0.5);
   --c-form-label-text: #243742;
   --c-inline-var-text: rgba(3, 25, 39, 0.85);

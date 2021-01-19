@@ -204,7 +204,8 @@ $colors: (
     ),
     pre: (
         background: palette(neutral, lighter),
-        text: palette(neutral, darker)
+        text: palette(neutral, darker),
+        border: transparent
     ),
     table: (
         cell: (

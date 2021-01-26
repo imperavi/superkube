@@ -38,7 +38,7 @@
 }
 
 // off
-.bd-off { border-width: 0 !important; }
+.bd-off { border-width: transparent !important; }
 
 // color
 $borders-colors: map-get($colors, border);
@@ -56,7 +56,7 @@ $borders-colors: map-get($colors, border);
 }
 
 @include for-sm {
-    .bd-off-sm { border-width: 0 !important; }
+    .bd-off-sm { border-color: transparent !important; }
 
     @each $name, $value in $borders {
         .bd-#{$name}-sm { border-width: $value }

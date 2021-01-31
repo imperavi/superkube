@@ -1,7 +1,11 @@
 // =Font
-$font-text: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Helvetica Neue', Arial, sans-serif;
+$font-alpha: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Helvetica Neue', Arial, sans-serif;
+$font-bravo: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+
+// =Semantic Font
+$font-text: $font-alpha;
 $font-heading: inherit;
-$font-monospace: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+$font-monospace: $font-bravo;
 
 // =Dark
 $dark-class: null;

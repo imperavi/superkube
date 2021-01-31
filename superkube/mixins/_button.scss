@@ -62,6 +62,19 @@
         @if ($key == background-color) {
             @include background-gradient($value);
         }
+        @else if ($key == box-shadow and type-of($value) == 'map') {
+            $str: '';
+            $z: 0;
+            @each $k, $v in $value {
+                $z: $z + 1;
+                $glue: ', ';
+                @if ($z == length($value)) {
+                    $glue: '';
+                }
+                $str: $str + $v + $glue;
+            }
+            #{$key}: #{$str};
+        }
         @else {
             #{$key}: $value;
         }

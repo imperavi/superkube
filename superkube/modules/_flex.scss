@@ -14,6 +14,18 @@
 .flex-bottom {
     align-items: flex-end;
 }
+.flex-start {
+    justify-content: flex-start;
+}
+.flex-end {
+    justify-content: flex-end;
+}
+.flex-between {
+    justify-content: space-between;
+}
+.flex-around {
+    justify-content: space-around;
+}
 @include for-sm {
     .flex-column-sm {
         flex-direction: column;
@@ -26,5 +38,17 @@
     }
     .flex-bottom-sm {
         align-items: flex-end;
+    }
+    .flex-between-sm {
+        justify-content: space-between;
+    }
+    .flex-around-sm {
+        justify-content: space-around;
+    }
+    .flex-start-sm {
+        justify-content: flex-start;
+    }
+    .flex-end-sm {
+        justify-content: flex-end;
     }
 }

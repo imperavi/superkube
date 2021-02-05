@@ -3,11 +3,11 @@
     $from: map-get($color, from);
     $to: map-get($color, to);
 
-  	color: $from;
-	background-image: linear-gradient($deg, $from, $to);
-	background-clip: text;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
+      color: $from;
+    background-image: linear-gradient($deg, $from, $to);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 // Dropcap

@@ -11,9 +11,9 @@
     min-width: 0;
 }
 @mixin flex-sidebar($width) {
-	flex: 0 0 $width;
+    flex: 0 0 $width;
 
-	@include for-sm {
+    @include for-sm {
         flex: 0 0 100%;
     }
 }

@@ -248,16 +248,16 @@ body {
   line-height: 1.5;
   color: var(--c-text-default); }
 
-::-webkit-input-placeholder {
+*::-webkit-input-placeholder {
   color: var(--c-placeholder-dark); }
 
-::-moz-placeholder {
+*::-moz-placeholder {
   color: var(--c-placeholder-dark); }
 
-::-ms-input-placeholder {
+*::-ms-input-placeholder {
   color: var(--c-placeholder-dark); }
 
-::placeholder {
+*::placeholder {
   color: var(--c-placeholder-dark); }
 
 h1 + * {

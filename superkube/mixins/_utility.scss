@@ -5,17 +5,11 @@
 
 // Placeholder
 @mixin placeholder($color) {
-    &::-webkit-input-placeholder {
+    $placeholders: "-webkit-input-" "-moz-" "-ms-input-" "";
+    @each $placeholder in $placeholders {
+      #{if(&, "&", "*")}::#{$placeholder}placeholder {
         color: $color;
-    }
-    &::-moz-placeholder {
-        color: $color;
-    }
-    &::-ms-input-placeholder {
-        color: $color;
-    }
-    &::placeholder {
-        color: $color;
+      }
     }
 }
 

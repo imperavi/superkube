@@ -1254,20 +1254,6 @@ a.button,
   .grid-12-sm {
     grid-template-columns: repeat(12, 1fr); } }
 
-@media all and (-ms-high-contrast: none) {
-  display: flex;
-  margin-left: -6rem;
-  .column {
-    flex: 1;
-    margin-left: 6rem;
-    margin-bottom: 6rem; } }
-
-@media all and (-ms-high-contrast: none) and (max-width: 767px) {
-  display: block;
-  margin-left: 0;
-  .column {
-    margin-left: 0; } }
-
 .gutter-1 {
   grid-column-gap: 4px; }
 

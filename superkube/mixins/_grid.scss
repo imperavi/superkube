@@ -70,30 +70,7 @@
             }
         }
     }
-    @include for-ie {
-        display: flex;
-        margin-left: -$gutter;
-        .#{$columnname} {
-            flex: 1;
-            margin-left: $gutter;
-            margin-bottom: $gap;
-        }
-    }
-    @include for-ie-sm {
-        display: block;
-        margin-left: 0;
-        & .#{$columnname} {
-            margin-left: 0;
-        }
-    }
 }
 @mixin column($num) {
     grid-column-end: span $num;
-}
-// =IE11
-@mixin for-ie {
-    @media all and (-ms-high-contrast: none) { @content; }
-}
-@mixin for-ie-sm {
-    @media all and (-ms-high-contrast: none) and (max-width: breakpoint(sm) - 1) { @content; }
 }

@@ -61,7 +61,7 @@
         .#{$columnname} {
             @include column(1);
         }
-        & .#{$columnname}:empty {
+        .#{$columnname}:empty {
             display: none;
         }
         @for $i from 1 through $columns {

@@ -497,7 +497,7 @@ code {
   padding: .2em .4em .2em; }
 
 pre code {
-  background: none; }
+  background: none !important; }
 
 mark {
   background-color: yellow;

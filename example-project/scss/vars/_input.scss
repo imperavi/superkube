@@ -1,0 +1,43 @@
+// =Scale
+$inputs-scale: (
+    regular: (
+        font-size: type-size(input, regular),
+        line-height: type-line(input, regular),
+        border-radius: radius(small),
+        padding: 0.3em 0.5em,
+        height: 44px
+    ),
+    large: (
+        font-size: type-size(input, large),
+        line-height: type-line(input, large),
+        border-radius: radius(small),
+        padding: 0.3em 0.65em,
+        height: 56px
+    )
+);
+
+// =Appearance
+$inputs: (
+    default: (
+        base: (
+            color: color(input, default, base, text),
+            border: 1px solid color(input, default, base, border),
+            background-color: color(input, default, base, background),
+            box-shadow: none
+        ),
+        focus: (
+            border-color: color(input, default, focus, border),
+            box-shadow: 0 0 2px color(input, default, focus, shadow)
+        )
+    ),
+    error: (
+        base: (
+            color: color(input, error, base, text),
+            border-color: color(input, error, base, border),
+            box-shadow: 0 0 2px color(input, error, base, shadow)
+        ),
+        focus: (
+            border-color: color(input, error, focus, border)
+        )
+    )
+);

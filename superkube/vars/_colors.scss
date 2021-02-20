@@ -1,0 +1,179 @@
+// =Colors
+$colors: (
+    placeholder: (
+        dark: rgba(palette(black), .4)
+    ),
+    text: (
+        dark: palette(black),
+        default: palette(neutral, darker),
+        moderated: rgba(palette(neutral, darker), .7),
+        muted: rgba(palette(neutral, darker), .5),
+        success: palette(positive, dark),
+        error: palette(negative, dark),
+        light: palette(white),
+        light-moderated: rgba(palette(white), .8),
+        light-muted: rgba(palette(white), .5)
+    ),
+    heading: (
+        default: palette(black),
+        moderated: rgba(palette(black), .7),
+        muted: rgba(palette(black), .5),
+        light: palette(white),
+        light-moderated: rgba(palette(white), .8)
+    ),
+    link: (
+        default: (
+            base: palette(active, dark),
+            hover: palette(negative, dark)
+        ),
+        dark: (
+            base: palette(black),
+            hover: rgba(palette(black), 0.6)
+        ),
+        moderated: (
+            base: rgba(palette(black), .7),
+            hover: palette(black)
+        ),
+        light: (
+            base: palette(white),
+            hover: rgba(palette(white), .6)
+        ),
+        light-moderated: (
+            base: rgba(palette(white), .7),
+            hover: palette(white)
+        )
+    ),
+    pre: (
+        background: palette(neutral, lighter),
+        text: palette(neutral, darker),
+        border: transparent
+    ),
+    table: (
+        cell: (
+            border: rgba(palette(neutral, light), .5)
+        )
+    ),
+    form: (
+        label: (
+            text: palette(neutral, darker)
+        )
+    ),
+    inline: (
+        var: (
+            text: rgba(palette(black), .85)
+        ),
+        kbd: (
+            border: rgba(palette(black), .15),
+            text: rgba(palette(black), .85)
+        ),
+        code: (
+            background: palette(neutral, lighter),
+            text: rgba(palette(black), .85)
+        )
+    ),
+    button: (
+        default: (
+            base: (
+                background: palette(white),
+                border: palette(neutral, light),
+                text: palette(neutral, darker)
+            ),
+            hover: (
+                background: palette(neutral, lighter),
+                border: palette(neutral, light),
+                text: palette(black)
+            ),
+            disabled: (
+                background: palette(white),
+                border: palette(neutral, light),
+                text: rgba(palette(black), .85)
+            )
+        ),
+        alpha: (
+            base: (
+                background: palette(active, base),
+                border: transparent,
+                text: palette(active, lighter)
+            ),
+            hover: (
+                background: palette(active, dark),
+                border: transparent,
+                text: palette(active, lighter)
+            ),
+            disabled: (
+                background: palette(black),
+                border: transparent,
+                text: rgba(palette(active, lighter), .75)
+            )
+        ),
+        bravo: (
+            base: (
+                background: palette(black),
+                border: transparent,
+                text: palette(neutral, lighter)
+            ),
+            hover: (
+                background: palette(neutral, darker),
+                border: transparent,
+                text: palette(neutral, lighter)
+            ),
+            disabled: (
+                background: palette(black),
+                border: transparent,
+                text: rgba(palette(neutral, lighter), .75)
+            )
+        )
+    ),
+    input: (
+        default: (
+            base: (
+                text: palette(neutral, darker),
+                border: palette(neutral, light),
+                background: palette(white)
+            ),
+            focus: (
+                border: rgba(palette(active, base), .5),
+                shadow: rgba(palette(active, base), .3)
+            )
+        ),
+        error: (
+            base: (
+                text: palette(negative, dark),
+                border: rgba(palette(negative, base), .5),
+                shadow: rgba(palette(negative, base), .3)
+            ),
+            focus: (
+                border: palette(negative, base)
+            )
+        )
+    ),
+    hint: (
+        default: rgba(palette(neutral, darker), .55),
+        success: palette(positive, dark),
+        error: palette(negative, dark),
+        required: palette(negative, dark)
+    ),
+    line: (
+        default: rgba(palette(neutral, light), .6)
+    ),
+    shadow: (
+        neutral: (
+            100: (
+                1: rgba(palette(black), .15),
+                2: rgba(palette(black), .06)
+            ),
+            200: (
+                1: rgba(palette(black), .12),
+                2: rgba(palette(black), .06)
+            ),
+            300: rgba(palette(black), .2)
+        )
+    ),
+    border: (),
+    text-gradient: (),
+    gradient: (),
+    background: (
+        light: palette(white),
+        dark: palette(black)
+    )
+);

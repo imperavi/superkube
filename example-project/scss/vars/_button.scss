@@ -1,0 +1,78 @@
+// =Scale
+$buttons-scale: (
+    regular: (
+        font-size: type-size(button, regular),
+        border-radius: radius(base),
+        padding: .4em 20px .4em 20px,
+        height: 44px
+    ),
+    large: (
+        font-size: type-size(button, large),
+        border-radius: radius(base),
+        padding: .4em 32px .4em 32px,
+        height: 56px
+    )
+);
+
+// =Appearance
+$buttons: (
+    default: (
+        base: (
+            font-weight: normal,
+            text-transform: none,
+            color: color(button, default, base, text),
+            border: 1px solid color(button, default, base, border),
+            background-color: color(button, default, base, background)
+        ),
+        hover: (
+            color: color(button, default, hover, text),
+            border: 1px solid color(button, default, hover, border),
+            background-color: color(button, default, hover, background)
+        ),
+        disabled: (
+            color: color(button, default, disabled, text),
+            border: 1px solid color(button, default, disabled, border),
+            background-color: color(button, default, disabled, background)
+        )
+    ),
+    alpha: (
+        base: (
+            font-weight: normal,
+            text-transform: none,
+            color: color(button, alpha, base, text),
+            border: 1px solid color(button, alpha, base, border),
+            background-color: color(button, alpha, base, background)
+        ),
+        hover: (
+            color: color(button, alpha, hover, text),
+            border: 1px solid color(button, alpha, hover, border),
+            background-color: color(button, alpha, hover, background)
+        ),
+        disabled: (
+            color: color(button, alpha, disabled, text),
+            border: 1px solid color(button, alpha, disabled, border),
+            background-color: color(button, alpha, disabled, background),
+            opacity: 0.4
+        )
+    ),
+    bravo: (
+        base: (
+            font-weight: normal,
+            text-transform: none,
+            color: color(button, bravo, base, text),
+            border: 1px solid color(button, bravo, base, border),
+            background-color: color(button, bravo, base, background)
+        ),
+        hover: (
+            color: color(button, bravo, hover, text),
+            border: 1px solid color(button, bravo, hover, border),
+            background-color: color(button, bravo, hover, background)
+        ),
+        disabled: (
+            color: color(button, bravo, disabled, text),
+            border: 1px solid color(button, bravo, disabled, border),
+            background-color: color(button, bravo, disabled, background),
+            opacity: 0.4
+        )
+    )
+);

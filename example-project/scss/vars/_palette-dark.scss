@@ -1,0 +1,46 @@
+// =PaletteDark
+$palette-dark: (
+    black: #1F2023,
+    white: #ffffff,
+    surface: (
+        base: #27292D,
+        depth-5: #53575E,
+        depth-10: #43464C,
+        depth-20: #3E4147,
+        depth-30: #383B40,
+        depth-40: #2D2F34
+    ),
+    neutral: (
+        darker: #E6E6E6,
+        dark: #A6A6A6,
+        base: #666666,
+        light: #262626,
+        lighter: #080808
+    ),
+    negative: (
+        darker: #6D3C45,
+        dark: #A24C57,
+        base: #D75B6A,
+        light: #F4AAB3,
+        lighter: #FBE8EB
+    ),
+    positive: (
+        darker: #265948,
+        dark: #257D5C,
+        base: #25A271,
+        light: #9DDAC2,
+        lighter: #E9F9F2
+    ),
+    active: (
+        darker: #313865,
+        dark: #38448F,
+        base: #4050BA,
+        light: #B2BCFF,
+        lighter: #E6E9FD
+    ),
+    brand: (
+        platinum: #383B40,
+        blue: #6794E9,
+        violet: #A681E4
+    )
+);

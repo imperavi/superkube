@@ -756,7 +756,19 @@ input[type="checkbox"] {
     border-right-style: dotted; }
 
 .bd-off {
-  border-width: transparent !important; }
+  border-color: transparent !important; }
+
+.bd-top-off {
+  border-top-color: transparent !important; }
+
+.bd-bottom-off {
+  border-bottom-color: transparent !important; }
+
+.bd-left-off {
+  border-left-color: transparent !important; }
+
+.bd-right-off {
+  border-right-color: transparent !important; }
 
 .bd-alpha {
   border-color: var(--c-border-alpha); }
@@ -779,6 +791,14 @@ input[type="checkbox"] {
 @media only screen and (max-width: 767px) {
   .bd-off-sm {
     border-color: transparent !important; }
+  .bd-top-off-sm {
+    border-top-color: transparent !important; }
+  .bd-bottom-off-sm {
+    border-bottom-color: transparent !important; }
+  .bd-left-off-sm {
+    border-left-color: transparent !important; }
+  .bd-right-off-sm {
+    border-right-color: transparent !important; }
   .bd-1-sm {
     border-width: 1px; }
   .bd-top-1-sm {

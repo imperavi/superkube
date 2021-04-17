@@ -1708,7 +1708,7 @@ a.button,
 .hint-error {
   color: var(--c-hint-error); }
 
-.req {
+.hint-req {
   font-weight: bold;
   color: var(--c-hint-required); }
 

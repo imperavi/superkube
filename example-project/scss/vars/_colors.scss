@@ -151,7 +151,7 @@ $colors: (
         default: rgba(palette(neutral, darker), .55),
         success: palette(positive, dark),
         error: palette(negative, dark),
-        required: palette(negative, dark)
+        required: palette(negative, base)
     ),
     line: (
         default: rgba(palette(neutral, light), .6)
@@ -182,8 +182,5 @@ $colors: (
     icon: (
         blue: palette(brand, blue),
         violet: palette(brand, violet)
-    ),
-    card: (
-        background: palette(white)
     )
 );

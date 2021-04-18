@@ -1,3 +1,11 @@
+// Colors
+$colors: map-extend($colors, (
+    card: (
+        background: palette(white)
+    )
+));
+
+// Module
 .card {
     background-color: color(card, background);
     box-shadow: shadow(neutral, 200);

@@ -576,7 +576,7 @@ input[type="checkbox"] {
   --c-hint-default: rgba(36, 55, 66, 0.55);
   --c-hint-success: #0B8058;
   --c-hint-error: #AB293C;
-  --c-hint-required: #AB293C;
+  --c-hint-required: #E42E44;
   --c-line-default: rgba(206, 210, 212, 0.6);
   --c-shadow-neutral-100-1: rgba(3, 25, 39, 0.15);
   --c-shadow-neutral-100-2: rgba(3, 25, 39, 0.06);

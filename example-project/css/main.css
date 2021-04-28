@@ -2151,6 +2151,9 @@ a.button,
 .rd-large {
   border-radius: 8px; }
 
+.rd-huge {
+  border-radius: 16px; }
+
 @media only screen and (max-width: 767px) {
   .rd-off-sm {
     border-radius: 0; }
@@ -2161,7 +2164,9 @@ a.button,
   .rd-base-sm {
     border-radius: 4px; }
   .rd-large-sm {
-    border-radius: 8px; } }
+    border-radius: 8px; }
+  .rd-huge-sm {
+    border-radius: 16px; } }
 
 .sh-off {
   box-shadow: none; }

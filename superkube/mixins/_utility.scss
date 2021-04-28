@@ -39,7 +39,7 @@
 }
 
 //  Close
-@mixin close($size: 1em, $weight: 1px, $color: #000) {
+@mixin close($size: 1em, $weight: 1px, $color: #000, $scale: 50%) {
     position: relative;
     cursor: pointer;
     display: inline-block;
@@ -64,10 +64,10 @@
     }
     &::before {
         height: $weight;
-        width: 50%;
+        width: $scale;
     }
     &::after {
-        height: 50%;
+        height: $scale;
         width: $weight;
     }
     &:hover {

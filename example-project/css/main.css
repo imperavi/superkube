@@ -2103,36 +2103,36 @@ a.button,
 .relative {
   position: relative; }
 
-.r-off, .rd-off {
+.r-off {
   border-radius: 0; }
 
-.r-circle, .rd-circle {
+.r-circle {
   border-radius: 50%; }
 
-.r-small, .rd-small {
+.r-small {
   border-radius: 2px; }
 
-.r-base, .rd-base {
+.r-base {
   border-radius: 4px; }
 
-.r-large, .rd-large {
+.r-large {
   border-radius: 8px; }
 
-.r-huge, .rd-huge {
+.r-huge {
   border-radius: 16px; }
 
 @media only screen and (max-width: 767px) {
-  .r-off-sm, .rd-off-sm {
+  .r-off-sm {
     border-radius: 0; }
-  .r-circle-sm, .rd-circle-sm {
+  .r-circle-sm {
     border-radius: 50%; }
-  .r-small-sm, .rd-small-sm {
+  .r-small-sm {
     border-radius: 2px; }
-  .r-base-sm, .rd-base-sm {
+  .r-base-sm {
     border-radius: 4px; }
-  .r-large-sm, .rd-large-sm {
+  .r-large-sm {
     border-radius: 8px; }
-  .r-huge-sm, .rd-huge-sm {
+  .r-huge-sm {
     border-radius: 16px; } }
 
 .sh-off {

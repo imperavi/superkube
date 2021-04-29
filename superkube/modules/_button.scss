@@ -55,8 +55,8 @@ a.button,
         cursor: default;
         opacity: 0.5;
     }
-}
 
-// Build
-@include build-buttons($buttons, '.button', 'button-');
-@include build-buttons-scale($buttons-scale, '.button', 'button-');
+    // Generate
+    @include generate-with-states($buttons);
+    @include generate-scale($buttons-scale);
+}

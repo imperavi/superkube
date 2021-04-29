@@ -89,7 +89,7 @@ $colors: (
                 text: rgba(palette(black), .85)
             )
         ),
-        alpha: (
+        primary: (
             base: (
                 background: palette(active, base),
                 border: transparent,
@@ -104,23 +104,6 @@ $colors: (
                 background: palette(black),
                 border: transparent,
                 text: rgba(palette(active, lighter), .75)
-            )
-        ),
-        bravo: (
-            base: (
-                background: palette(black),
-                border: transparent,
-                text: palette(neutral, lighter)
-            ),
-            hover: (
-                background: palette(neutral, darker),
-                border: transparent,
-                text: palette(neutral, lighter)
-            ),
-            disabled: (
-                background: palette(black),
-                border: transparent,
-                text: rgba(palette(neutral, lighter), .75)
             )
         )
     ),

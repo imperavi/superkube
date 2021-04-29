@@ -546,24 +546,15 @@ input[type="checkbox"] {
   --c-button-default-disabled-background: #ffffff;
   --c-button-default-disabled-border: #CED2D4;
   --c-button-default-disabled-text: rgba(3, 25, 39, 0.85);
-  --c-button-alpha-base-background: #3F58FF;
-  --c-button-alpha-base-border: transparent;
-  --c-button-alpha-base-text: #F1F3FF;
-  --c-button-alpha-hover-background: #2F48C8;
-  --c-button-alpha-hover-border: transparent;
-  --c-button-alpha-hover-text: #F1F3FF;
-  --c-button-alpha-disabled-background: #031927;
-  --c-button-alpha-disabled-border: transparent;
-  --c-button-alpha-disabled-text: rgba(241, 243, 255, 0.75);
-  --c-button-bravo-base-background: #031927;
-  --c-button-bravo-base-border: transparent;
-  --c-button-bravo-base-text: #F5F6F8;
-  --c-button-bravo-hover-background: #243742;
-  --c-button-bravo-hover-border: transparent;
-  --c-button-bravo-hover-text: #F5F6F8;
-  --c-button-bravo-disabled-background: #031927;
-  --c-button-bravo-disabled-border: transparent;
-  --c-button-bravo-disabled-text: rgba(245, 246, 248, 0.75);
+  --c-button-primary-base-background: #3F58FF;
+  --c-button-primary-base-border: transparent;
+  --c-button-primary-base-text: #F1F3FF;
+  --c-button-primary-hover-background: #2F48C8;
+  --c-button-primary-hover-border: transparent;
+  --c-button-primary-hover-text: #F1F3FF;
+  --c-button-primary-disabled-background: #031927;
+  --c-button-primary-disabled-border: transparent;
+  --c-button-primary-disabled-text: rgba(241, 243, 255, 0.75);
   --c-input-default-base-text: #243742;
   --c-input-default-base-border: #CED2D4;
   --c-input-default-base-background: #ffffff;
@@ -638,24 +629,15 @@ input[type="checkbox"] {
     --c-button-default-disabled-background: #27292D;
     --c-button-default-disabled-border: rgba(255, 255, 255, 0.25);
     --c-button-default-disabled-text: rgba(255, 255, 255, 0.75);
-    --c-button-alpha-base-background: #4050BA;
-    --c-button-alpha-base-border: transparent;
-    --c-button-alpha-base-text: #E6E9FD;
-    --c-button-alpha-hover-background: #38448F;
-    --c-button-alpha-hover-border: transparent;
-    --c-button-alpha-hover-text: #E6E9FD;
-    --c-button-alpha-disabled-background: #43464C;
-    --c-button-alpha-disabled-border: transparent;
-    --c-button-alpha-disabled-text: rgba(255, 255, 255, 0.75);
-    --c-button-bravo-base-background: #53575E;
-    --c-button-bravo-base-border: transparent;
-    --c-button-bravo-base-text: rgba(255, 255, 255, 0.95);
-    --c-button-bravo-hover-background: #43464C;
-    --c-button-bravo-hover-border: transparent;
-    --c-button-bravo-hover-text: rgba(255, 255, 255, 0.95);
-    --c-button-bravo-disabled-background: #43464C;
-    --c-button-bravo-disabled-border: transparent;
-    --c-button-bravo-disabled-text: rgba(255, 255, 255, 0.75);
+    --c-button-primary-base-background: #4050BA;
+    --c-button-primary-base-border: transparent;
+    --c-button-primary-base-text: #E6E9FD;
+    --c-button-primary-hover-background: #38448F;
+    --c-button-primary-hover-border: transparent;
+    --c-button-primary-hover-text: #E6E9FD;
+    --c-button-primary-disabled-background: #43464C;
+    --c-button-primary-disabled-border: transparent;
+    --c-button-primary-disabled-text: rgba(255, 255, 255, 0.75);
     --c-input-default-base-text: rgba(255, 255, 255, 0.95);
     --c-input-default-base-border: rgba(255, 255, 255, 0.15);
     --c-input-default-base-background: #383B40;
@@ -876,41 +858,22 @@ a.button,
     background-color: var(--c-button-default-disabled-background);
     background-image: none; }
 
-.button.button-alpha {
+.button.button-primary {
   font-weight: normal;
   text-transform: none;
-  color: var(--c-button-alpha-base-text);
-  border: 1px solid var(--c-button-alpha-base-border);
-  background-color: var(--c-button-alpha-base-background);
+  color: var(--c-button-primary-base-text);
+  border: 1px solid var(--c-button-primary-base-border);
+  background-color: var(--c-button-primary-base-background);
   background-image: none; }
-  .button.button-alpha:hover, .button.button-alpha:focus {
-    color: var(--c-button-alpha-hover-text);
-    border: 1px solid var(--c-button-alpha-hover-border);
-    background-color: var(--c-button-alpha-hover-background);
+  .button.button-primary:hover, .button.button-primary:focus {
+    color: var(--c-button-primary-hover-text);
+    border: 1px solid var(--c-button-primary-hover-border);
+    background-color: var(--c-button-primary-hover-background);
     background-image: none; }
-  .button.button-alpha:disabled {
-    color: var(--c-button-alpha-disabled-text);
-    border: 1px solid var(--c-button-alpha-disabled-border);
-    background-color: var(--c-button-alpha-disabled-background);
-    background-image: none;
-    opacity: 0.4; }
-
-.button.button-bravo {
-  font-weight: normal;
-  text-transform: none;
-  color: var(--c-button-bravo-base-text);
-  border: 1px solid var(--c-button-bravo-base-border);
-  background-color: var(--c-button-bravo-base-background);
-  background-image: none; }
-  .button.button-bravo:hover, .button.button-bravo:focus {
-    color: var(--c-button-bravo-hover-text);
-    border: 1px solid var(--c-button-bravo-hover-border);
-    background-color: var(--c-button-bravo-hover-background);
-    background-image: none; }
-  .button.button-bravo:disabled {
-    color: var(--c-button-bravo-disabled-text);
-    border: 1px solid var(--c-button-bravo-disabled-border);
-    background-color: var(--c-button-bravo-disabled-background);
+  .button.button-primary:disabled {
+    color: var(--c-button-primary-disabled-text);
+    border: 1px solid var(--c-button-primary-disabled-border);
+    background-color: var(--c-button-primary-disabled-background);
     background-image: none;
     opacity: 0.4; }
 

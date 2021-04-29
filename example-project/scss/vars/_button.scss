@@ -35,43 +35,23 @@ $buttons: (
             background-color: color(button, default, disabled, background)
         )
     ),
-    alpha: (
+    primary: (
         base: (
             font-weight: normal,
             text-transform: none,
-            color: color(button, alpha, base, text),
-            border: 1px solid color(button, alpha, base, border),
-            background-color: color(button, alpha, base, background)
+            color: color(button, primary, base, text),
+            border: 1px solid color(button, primary, base, border),
+            background-color: color(button, primary, base, background)
         ),
         hover: (
-            color: color(button, alpha, hover, text),
-            border: 1px solid color(button, alpha, hover, border),
-            background-color: color(button, alpha, hover, background)
+            color: color(button, primary, hover, text),
+            border: 1px solid color(button, primary, hover, border),
+            background-color: color(button, primary, hover, background)
         ),
         disabled: (
-            color: color(button, alpha, disabled, text),
-            border: 1px solid color(button, alpha, disabled, border),
-            background-color: color(button, alpha, disabled, background),
-            opacity: 0.4
-        )
-    ),
-    bravo: (
-        base: (
-            font-weight: normal,
-            text-transform: none,
-            color: color(button, bravo, base, text),
-            border: 1px solid color(button, bravo, base, border),
-            background-color: color(button, bravo, base, background)
-        ),
-        hover: (
-            color: color(button, bravo, hover, text),
-            border: 1px solid color(button, bravo, hover, border),
-            background-color: color(button, bravo, hover, background)
-        ),
-        disabled: (
-            color: color(button, bravo, disabled, text),
-            border: 1px solid color(button, bravo, disabled, border),
-            background-color: color(button, bravo, disabled, background),
+            color: color(button, primary, disabled, text),
+            border: 1px solid color(button, primary, disabled, border),
+            background-color: color(button, primary, disabled, background),
             opacity: 0.4
         )
     )

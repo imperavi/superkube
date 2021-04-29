@@ -88,7 +88,7 @@ $colors-dark: (
                 text: rgba(palette-dark(white), .75)
             )
         ),
-        alpha: (
+        primary: (
             base: (
                 background: palette-dark(active, base),
                 border: transparent,
@@ -98,23 +98,6 @@ $colors-dark: (
                 background: palette-dark(active, dark),
                 border: transparent,
                 text: palette-dark(active, lighter)
-            ),
-            disabled: (
-                background: palette-dark(surface, depth-10),
-                border: transparent,
-                text: rgba(palette-dark(white), .75)
-            )
-        ),
-        bravo: (
-            base: (
-                background: palette-dark(surface, depth-5),
-                border: transparent,
-                text: rgba(palette-dark(white), .95)
-            ),
-            hover: (
-                background: palette-dark(surface, depth-10),
-                border: transparent,
-                text: rgba(palette-dark(white), .95)
             ),
             disabled: (
                 background: palette-dark(surface, depth-10),

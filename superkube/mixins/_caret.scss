@@ -1,0 +1,25 @@
+@mixin caret($color) {
+    position: relative;
+    display: inline-block;
+    border: solid $color;
+    border-width: 0 2px 2px 0;
+    padding: 2px;
+
+    &-right,
+    &-left {
+        top: 2px;
+        left: 1px;
+    }
+    &-right {
+        transform: rotate(-45deg);
+    }
+    &-left {
+        transform: rotate(135deg);
+    }
+    &-up {
+        transform: rotate(-135deg);
+    }
+    &-down {
+        transform: rotate(45deg);
+    }
+}

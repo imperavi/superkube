@@ -19,7 +19,9 @@
 @mixin generate-item($obj, $key, $states) {
     @if ($states == false) {
         @each $key, $value in $obj {
-            #{$key}: #{$value};
+            @if $key != close {
+                #{$key}: #{$value};
+            }
         }
     }
     @else {
@@ -62,7 +64,7 @@
             }
             #{$key}: #{$str};
         }
-        @else {
+        @else if $key != close {
             #{$key}: $value;
         }
     }
@@ -82,6 +84,68 @@
 @mixin generate-scale-item($obj) {
     @each $objkey, $objvalue in $obj {
         #{$objkey}: $objvalue;
+    }
+}
+
+// close generator
+@mixin generate-close-with-states($map, $size, $weight, $scale: 100%) {
+    @include generate-close($map, $size, $weight, $scale, true);
+}
+@mixin generate-close($map, $size, $weight, $scale: 100%, $states: false) {
+
+    .close {
+        @include close($size, $weight, #000, $scale);
+    }
+
+    @each $key, $value in $map {
+        @if $key == default {
+            .close {
+                @include generate-close-item($value, $states);
+            }
+        }
+        @else {
+            &-#{$key} {
+                .close {
+                    @include generate-close-item($value, $states);
+                }
+            }
+        }
+    }
+}
+@mixin generate-close-item($objvalue, $states) {
+    @if ($states == false) {
+        @include generate-close-background($objvalue, $states);
+        @include close-color(get-close-color($objvalue, $states));
+    }
+    @else {
+        @each $state, $obj in $objvalue {
+            @if $state == base {
+                @include generate-close-background($obj, $state);
+                @include close-color(get-close-color($obj, $state));
+            }
+            @else if $state == hover {
+                &:hover,
+                &:focus {
+                    @include generate-close-background($obj, $state);
+                    @include close-color(get-close-color($obj, $state));
+                }
+            }
+            @else if $state == disabled {
+                &:disabled {
+                    @include generate-close-background($obj, $state);
+                    @include close-color(get-close-color($obj, $state));
+                }
+            }
+            @else {
+                @include generate-close-background($obj, $states);
+                @include close-color(get-close-color($obj, $states));
+            }
+        }
+    }
+}
+@mixin generate-close-background($obj, $states: false) {
+    @if (map-get($obj, close) and map-deep-get($obj, close, background-color)) {
+        background-color: map-deep-get($obj, close, background-color);
     }
 }
 

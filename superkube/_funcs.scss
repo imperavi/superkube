@@ -62,6 +62,16 @@
     }
 }
 
+// close color
+@function get-close-color($obj, $states: false) {
+    $color: map-get($obj, color);
+    @if (map-get($obj, close) and map-deep-get($obj, close, color)) {
+        $color: map-deep-get($obj, close, color);
+    }
+
+    @return $color;
+}
+
 // level
 @function level($name) {
     @return map-get($levels, $name);

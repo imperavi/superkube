@@ -765,21 +765,6 @@ input[type="checkbox"] {
 .b-alpha {
   border-color: var(--c-border-alpha); }
 
-.b-4 {
-  border-width: 4px; }
-
-.bt-4 {
-  border-top-width: 4px; }
-
-.bb-4 {
-  border-bottom-width: 4px; }
-
-.bl-4 {
-  border-left-width: 4px; }
-
-.br-4 {
-  border-right-width: 4px; }
-
 .b-1 {
   border-width: 1px; }
 
@@ -806,16 +791,6 @@ input[type="checkbox"] {
     border-left-color: transparent !important; }
   .br-off-sm {
     border-right-color: transparent !important; }
-  .b-4-sm {
-    border-width: 4px; }
-  .bt-4-sm {
-    border-top-width: 4px; }
-  .bb-4-sm {
-    border-bottom-width: 4px; }
-  .bl-4-sm {
-    border-left-width: 4px; }
-  .br-4-sm {
-    border-right-width: 4px; }
   .b-1-sm {
     border-width: 1px; }
   .bt-1-sm {

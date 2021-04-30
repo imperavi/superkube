@@ -3,7 +3,7 @@ $colors: map-extend($colors, (
     card: (
         background: palette(white)
     )
-));
+), true);
 
 // Module
 .card {

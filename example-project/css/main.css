@@ -709,58 +709,40 @@ input[type="checkbox"] {
 .b-dotted {
   border-style: dotted; }
 
-[class^="bt-"],
-[class*=" bt-"],
-[class^="bb-"],
-[class*=" bb-"],
-[class^="bl-"],
-[class*=" bl-"],
-[class^="br-"],
-[class*=" br-"] {
-  border-style: none; }
-
-[class^="bt-"], [class*=" bt-"] {
+[class^="b-top-"], [class*=" b-top-"] {
+  border-style: none;
   border-top-style: solid; }
-  [class^="bt-"].b-dashed, [class*=" bt-"].b-dashed {
+  [class^="b-top-"].b-dashed, [class*=" b-top-"].b-dashed {
     border-top-style: dashed; }
-  [class^="bt-"].b-dotted, [class*=" bt-"].b-dotted {
+  [class^="b-top-"].b-dotted, [class*=" b-top-"].b-dotted {
     border-top-style: dotted; }
 
-[class^="bb-"], [class*=" bb-"] {
+[class^="b-bottom-"], [class*=" b-bottom-"] {
+  border-style: none;
   border-bottom-style: solid; }
-  [class^="bb-"].b-dashed, [class*=" bb-"].b-dashed {
+  [class^="b-bottom-"].b-dashed, [class*=" b-bottom-"].b-dashed {
     border-bottom-style: dashed; }
-  [class^="bb-"].b-dotted, [class*=" bb-"].b-dotted {
+  [class^="b-bottom-"].b-dotted, [class*=" b-bottom-"].b-dotted {
     border-bottom-style: dotted; }
 
-[class^="bl-"], [class*=" bl-"] {
+[class^="b-left-"], [class*=" b-left-"] {
+  border-style: none;
   border-left-style: solid; }
-  [class^="bl-"].b-dashed, [class*=" bl-"].b-dashed {
+  [class^="b-left-"].b-dashed, [class*=" b-left-"].b-dashed {
     border-left-style: dashed; }
-  [class^="bl-"].b-dotted, [class*=" bl-"].b-dotted {
+  [class^="b-left-"].b-dotted, [class*=" b-left-"].b-dotted {
     border-left-style: dotted; }
 
-[class^="br-"], [class*=" br-"] {
+[class^="b-right-"], [class*=" b-right-"] {
+  border-style: none;
   border-right-style: solid; }
-  [class^="br-"].b-dashed, [class*=" br-"].b-dashed {
+  [class^="b-right-"].b-dashed, [class*=" b-right-"].b-dashed {
     border-right-style: dashed; }
-  [class^="br-"].b-dotted, [class*=" br-"].b-dotted {
+  [class^="b-right-"].b-dotted, [class*=" b-right-"].b-dotted {
     border-right-style: dotted; }
 
 .b-off {
   border-color: transparent !important; }
-
-.bt-off {
-  border-top-color: transparent !important; }
-
-.bb-off {
-  border-bottom-color: transparent !important; }
-
-.bl-off {
-  border-left-color: transparent !important; }
-
-.br-off {
-  border-right-color: transparent !important; }
 
 .b-alpha {
   border-color: var(--c-border-alpha); }
@@ -768,38 +750,30 @@ input[type="checkbox"] {
 .b-1 {
   border-width: 1px; }
 
-.bt-1 {
+.b-top-1 {
   border-top-width: 1px; }
 
-.bb-1 {
+.b-bottom-1 {
   border-bottom-width: 1px; }
 
-.bl-1 {
+.b-left-1 {
   border-left-width: 1px; }
 
-.br-1 {
+.b-right-1 {
   border-right-width: 1px; }
 
 @media only screen and (max-width: 767px) {
   .b-off-sm {
     border-color: transparent !important; }
-  .bt-off-sm {
-    border-top-color: transparent !important; }
-  .bb-off-sm {
-    border-bottom-color: transparent !important; }
-  .bl-off-sm {
-    border-left-color: transparent !important; }
-  .br-off-sm {
-    border-right-color: transparent !important; }
   .b-1-sm {
     border-width: 1px; }
-  .bt-1-sm {
+  .b-top-1-sm {
     border-top-width: 1px; }
-  .bb-1-sm {
+  .b-bottom-1-sm {
     border-bottom-width: 1px; }
-  .bl-1-sm {
+  .b-left-1-sm {
     border-left-width: 1px; }
-  .br-1-sm {
+  .b-right-1-sm {
     border-right-width: 1px; } }
 
 button,

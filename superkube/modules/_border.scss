@@ -6,32 +6,26 @@
 .b-dashed { border-style: dashed; }
 .b-dotted { border-style: dotted; }
 
-[class^="bt-"],
-[class*=" bt-"],
-[class^="bb-"],
-[class*=" bb-"],
-[class^="bl-"],
-[class*=" bl-"],
-[class^="br-"],
-[class*=" br-"] {
+[class^="b-top-"], [class*=" b-top-"] {
     border-style: none;
-}
-[class^="bt-"], [class*=" bt-"] {
     border-top-style: solid;
     &.b-dashed { border-top-style: dashed }
     &.b-dotted { border-top-style: dotted }
 }
-[class^="bb-"], [class*=" bb-"] {
+[class^="b-bottom-"], [class*=" b-bottom-"] {
+    border-style: none;
     border-bottom-style: solid;
     &.b-dashed { border-bottom-style: dashed }
     &.b-dotted { border-bottom-style: dotted }
 }
-[class^="bl-"], [class*=" bl-"] {
+[class^="b-left-"], [class*=" b-left-"] {
+    border-style: none;
     border-left-style: solid;
     &.b-dashed { border-left-style: dashed }
     &.b-dotted { border-left-style: dotted }
 }
-[class^="br-"], [class*=" br-"] {
+[class^="b-right-"], [class*=" b-right-"] {
+    border-style: none;
     border-right-style: solid;
     &.b-dashed { border-right-style: dashed }
     &.b-dotted { border-right-style: dotted }
@@ -39,10 +33,6 @@
 
 // off
 .b-off { border-color: transparent !important; }
-.bt-off { border-top-color: transparent !important; }
-.bb-off { border-bottom-color: transparent !important; }
-.bl-off { border-left-color: transparent !important; }
-.br-off { border-right-color: transparent !important; }
 
 // color
 $borders-colors: map-get($colors, border);
@@ -53,24 +43,20 @@ $borders-colors: map-get($colors, border);
 // size
 @each $name, $value in $borders {
     .b-#{$name} { border-width: $value }
-    .bt-#{$name} { border-top-width: $value; }
-    .bb-#{$name} { border-bottom-width: $value }
-    .bl-#{$name} { border-left-width: $value }
-    .br-#{$name} { border-right-width: $value }
+    .b-top-#{$name} { border-top-width: $value; }
+    .b-bottom-#{$name} { border-bottom-width: $value }
+    .b-left-#{$name} { border-left-width: $value }
+    .b-right-#{$name} { border-right-width: $value }
 }
 
 @include for-sm {
     .b-off-sm { border-color: transparent !important; }
-    .bt-off-sm { border-top-color: transparent !important; }
-    .bb-off-sm { border-bottom-color: transparent !important; }
-    .bl-off-sm { border-left-color: transparent !important; }
-    .br-off-sm { border-right-color: transparent !important; }
 
     @each $name, $value in $borders {
         .b-#{$name}-sm { border-width: $value }
-        .bt-#{$name}-sm { border-top-width: $value }
-        .bb-#{$name}-sm { border-bottom-width: $value }
-        .bl-#{$name}-sm { border-left-width: $value }
-        .br-#{$name}-sm { border-right-width: $value }
+        .b-top-#{$name}-sm { border-top-width: $value }
+        .b-bottom-#{$name}-sm { border-bottom-width: $value }
+        .b-left-#{$name}-sm { border-left-width: $value }
+        .b-right-#{$name}-sm { border-right-width: $value }
     }
 }

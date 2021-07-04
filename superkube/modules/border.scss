@@ -1,0 +1,61 @@
+// = Border
+[class^="b-"],
+[class*=" b-"] {
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+}
+.b-top {
+    border-style: none;
+    border-top-style: solid;
+}
+.b-bottom {
+    border-style: none;
+    border-bottom-style: solid;
+}
+.b-left {
+    border-style: none;
+    border-left-style: solid;
+}
+.b-right {
+    border-style: none;
+    border-right-style: solid;
+}
+
+// off
+.b-off { border-color: transparent !important; }
+
+// color
+$borders-colors: map-get($colors, border);
+@each $name, $value in $borders-colors {
+    .b-#{$name} { border-color: color(border, $name) }
+}
+
+// size
+$borders: scale(border);
+@each $name, $value in $borders {
+    .b-#{$name} { border-width: $value }
+}
+@include for-sm {
+    .b-off-sm { border-color: transparent !important; }
+    .b-top-sm {
+        border-style: none;
+        border-top-style: solid;
+    }
+    .b-bottom-sm {
+        border-style: none;
+        border-bottom-style: solid;
+    }
+    .b-left-sm {
+        border-style: none;
+        border-left-style: solid;
+    }
+    .b-right-sm {
+        border-style: none;
+        border-right-style: solid;
+    }
+
+    @each $name, $value in $borders {
+        .b-#{$name}-sm { border-width: $value }
+    }
+}

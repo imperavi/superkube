@@ -1,0 +1,41 @@
+// =Pagination
+.pagination {
+    .pagination-list {
+        display: flex;
+        align-items: center;
+    }
+    .pagination-item {
+        display: flex;
+        align-items: center;
+    }
+    .pagination-item.active .pagination-link {
+        cursor: text;
+        text-decoration: none;
+    }
+    .pagination-link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
+        line-height: 1;
+        border-style: solid;
+    }
+    .pagination-link:hover {
+        text-decoration: underline;
+    }
+    .pagination-ellipsis {
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+    .pagination-prev,
+    .pagination-next {
+        white-space: nowrap;
+    }
+
+
+    // =Variants
+    @include generate-type(pagination, '.pagination-link');
+    @include generate-variants('.pagination', pagination, true);
+}

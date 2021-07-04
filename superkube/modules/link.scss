@@ -1,0 +1,32 @@
+// =Link
+.link-stretched {
+    @include stretched;
+}
+.link-strong {
+    font-weight: bold;
+}
+.link-semibold {
+    font-weight: 600;
+}
+.link-italic {
+    font-style: italic;
+}
+.link-block {
+    display: block;
+}
+.link-underline {
+    text-decoration: underline;
+}
+.link-underline-off {
+    text-decoration: none;
+}
+.link-ghost {
+    text-decoration: none;
+}
+.link-ghost:hover {
+    text-decoration: underline;
+}
+.link {
+    @include generate-type(link);
+    @include generate-variants('.link', link);
+}

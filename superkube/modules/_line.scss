@@ -1,8 +1,0 @@
-// =Line
-@each $key, $line in $lines {
-    @if $key != default {
-        .line-#{$key} {
-            @include line($line);
-        }
-    }
-}

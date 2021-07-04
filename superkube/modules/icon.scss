@@ -1,0 +1,47 @@
+// =Icon
+.icon {
+    display: inline-block;
+}
+.icon svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: -.17em;
+    fill: currentColor;
+}
+.icon-text {
+    display: inline-flex;
+    align-self: center;
+}
+.icon-text svg {
+    height: 1em;
+    width: 1em;
+    top: .125em;
+    position: relative;
+    fill: currentColor;
+}
+
+// Colors
+$iconcolors: map-get($colors, icon);
+@each $key, $value in $iconcolors {
+    .icon-#{$key} svg,
+    a .icon-#{$key} svg {
+        fill: $value;
+    }
+}
+
+// Size
+$icons: scale(icon);
+@each $key, $size in $icons {
+    .icon-#{$key} svg {
+        width: $size;
+        height: $size;
+    }
+}
+@include for-sm {
+    @each $key, $size in $icons {
+        .icon-#{$key}-sm svg {
+            width: $size;
+            height: $size;
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.image-cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.image-cover img {
+    flex-shrink: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+.image-overlay {
+    position: relative;
+}
+.image-overlay:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+// =Overlays
+$overlays: map-get($colors, overlay);
+@each $name, $value in $overlays {
+    .image-overlay-#{$name}:before {
+        @include background($value);
+    }
+}
+
+// =Sizes
+$images: scale(image);
+@each $key, $value in $images {
+    .image-#{$key} {
+        width: $value;
+        height: $value;
+    }
+}

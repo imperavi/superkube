@@ -1,0 +1,145 @@
+// =Nav
+.nav {
+    height: 100%;
+
+    .nav-list,
+    .nav-item,
+    .nav-link {
+        height: 100%;
+    }
+    .nav-list {
+        display: flex;
+        align-items: center;
+    }
+    .nav-item {
+        display: flex;
+        align-items: center;
+    }
+    .nav-item.active .nav-link {
+        cursor: text;
+        text-decoration: none;
+    }
+    .nav-link {
+        display: flex;
+        align-items: center;
+        white-space: nowrap;
+        text-decoration: none;
+        line-height: 1;
+    }
+    .nav-link:hover {
+        text-decoration: underline;
+    }
+
+    // =Variants
+    @include generate-type(nav, '.nav-link');
+    @include generate-variants('.nav', nav, true);
+}
+
+// =Underline
+.nav-underline {
+    .nav-link {
+        text-decoration: underline;
+    }
+}
+.nav-underline-off {
+    .nav-link:hover {
+        text-decoration: none;
+    }
+}
+
+// =Pills
+.nav-pills {
+    .nav-link:hover {
+        text-decoration: none;
+    }
+}
+
+// =Tabs
+.nav-tabs {
+    .nav-list {
+        border-bottom-style: solid;
+    }
+    .nav-link {
+        border-bottom-style: solid;
+    }
+}
+
+
+// =Centered
+.nav-centered {
+    flex: 1 1 auto;
+
+    .nav-list {
+        justify-content: center;
+    }
+}
+
+
+// =Right
+.nav-right.nav-tabs {
+    .nav-item:last-child {
+        margin-right: 0;
+    }
+}
+
+
+// =Full
+.nav-full {
+    .nav-item {
+        flex: 1;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .nav-link {
+        flex: 1;
+        justify-content: center;
+    }
+}
+
+
+//=Responsive
+@include for-sm {
+    .nav-overflow-sm {
+        overflow-y: hidden;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+    .nav-menu-sm {
+        .nav-list {
+            flex-direction: column;
+            align-items: stretch;
+        }
+        .nav-item {
+            margin-left: 0;
+            margin-right: 0;
+            margin-top: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        .nav-link {
+            flex: 1;
+            justify-content: flex-start;
+        }
+    }
+    .nav-menu-sm.nav-pills {
+        .nav-item {
+            margin-top: 1px;
+            margin-bottom: 1px;
+        }
+    }
+    .nav-menu-sm.nav-tabs {
+        .nav-list,
+        .nav-link {
+            border: none;
+        }
+        .nav-item {
+            margin-top: 1px;
+            margin-bottom: 1px;
+        }
+    }
+    .nav-uncentered-sm {
+        flex: 0;
+        .nav-list {
+            justify-content: flex-start;
+        }
+    }
+}

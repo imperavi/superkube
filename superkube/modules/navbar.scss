@@ -1,0 +1,10 @@
+.navbar {
+    .navbar-container {
+        display: flex;
+        height: 100%;
+    }
+    .navbar-container > div {
+        display: flex;
+        align-items: center;
+    }
+}

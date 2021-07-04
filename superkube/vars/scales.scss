@@ -1,0 +1,217 @@
+// =Scales
+$scales: (
+    type: (
+        base: (
+            h1: 48px 1.2,
+            h2: 28px 1.3,
+            h3: 21px 1.4,
+            h4: 16px 1.5,
+            quote: 115% 1.5,
+            quotecite: 12px 1.5,
+            table: 95% 1.5,
+            pre: 85% 1.5
+        ),
+        text: (
+            giga: 36px 1.5,
+            mega: 24px 1.5,
+            huge: 20px 1.5,
+            large: 18px 1.5,
+            default: 16px 1.5,
+            reduced: 15px 1.5,
+            medium: 14px 1.5,
+            small: 13px 1.5,
+            tiny: 12px 1.5,
+            micro: 11px 1.5,
+            atomic: 10px 1.5
+        ),
+        heading: (
+            giga: 80px 1.1,
+            mega: 64px 1.1,
+            huge: 48px 1.2,
+            large: 36px 1.2,
+            medium: 24px 1.3,
+            small: 20px 1.4,
+            micro: 16px 1.5,
+            eyebrow: 11px 1.5
+        ),
+        input: (
+            default: 15px 1.5,
+            large: 21px 1.5
+        ),
+        button: (
+            small: 15px 1.25,
+            default: 15px 1.25,
+            large: 18px 1.25
+        ),
+        form: (
+            label: 16px 1.5,
+            hint: 13px 1.5
+        ),
+        badge: (
+            default: 11px,
+            large: 14px,
+            huge: 16px,
+            mega: 20px
+        ),
+        caption: (
+            caps: 13px,
+            small: 13px,
+            medium: 14px,
+            default: 15px
+        ),
+        label: (
+            caps: 11px,
+            default: 12px,
+            large: 14px
+        ),
+        alert: (
+            default: 15px
+        ),
+        nav: (
+            small: 13px,
+            medium: 14px,
+            default: 15px
+        ),
+        menu: (
+            caps: 13px 1.3,
+            small: 13px 1.3,
+            medium: 14px 1.3,
+            default: 15px 1.3
+        ),
+        pagination: (
+            default: 15px
+        ),
+        breadcrumb: (
+            default: 14px 1.5
+        )
+    ),
+    type-sm: (
+        heading: (
+            giga: 64px 1.1,
+            mega: 60px 1.1
+        )
+    ),
+    type-md: (
+
+    ),
+    type-lg: (
+
+    ),
+    type-space: (
+        h1-to-tag: 3rem,
+        h2-to-tag: 3rem,
+        h3-to-tag: 3rem,
+        h4-to-tag: 2rem,
+        h5-to-tag: 1rem,
+        h6-to-tag: 1rem,
+        tag-to-tag: 5rem,
+        tag-to-h2: 8rem,
+        tag-to-h3: 8rem,
+        tag-to-h4: 8rem,
+        tag-to-h5: 8rem,
+        tag-to-h6: 8rem,
+        form-item-to-item: 5rem,
+        form-buttons-to-item: 6rem
+    ),
+    breakpoint: (
+        lg: 1442px,
+        md: 1024px,
+        sm: 768px
+    ),
+    sidebar: (
+        base: 300px
+    ),
+    grid: (
+        gridname: grid,
+        columnname: column,
+        columns: 12,
+        gutter: 6rem,
+        gap: 6rem
+    ),
+    container: (
+        small: 400px,
+        medium: 960px,
+        base: 1144px,
+        large: 1200px,
+        content: 800px,
+        full: 100%
+    ),
+    edge: (
+        base: 5rem
+    ),
+    level: (
+        content: 100, // overlays
+        page: 200, // modals/offcanvas
+        control: 300, // popups
+        all: 400 // messages
+    ),
+    radius: (
+        small: 2px,
+        base: 4px,
+        large: 6px,
+        huge: 8px,
+        mega: 10px,
+        giga: 16px
+    ),
+    border: (
+        2: 2px,
+        4: 4px
+    ),
+    icon: (
+        12: 12px,
+        14: 14px,
+        16: 16px,
+        20: 20px,
+        24: 24px,
+        32: 32px,
+        48: 48px,
+        64: 64px
+    ),
+    width: (
+        20: 20%,
+        25: 25%,
+        30: 30%,
+        33: 33%,
+        40: 40%,
+        50: 50%,
+        60: 60%,
+        67: 67%,
+        70: 70%,
+        75: 75%,
+        80: 80%,
+        100: 100%
+    ),
+    spacing: (
+        1: 1,
+        2: 2,
+        3: 3,
+        4: 4,
+        5: 5,
+        6: 6,
+        8: 8,
+        10: 10,
+        12: 12,
+        14: 14,
+        16: 16,
+        20: 20,
+        24: 24,
+        28: 28,
+        32: 32
+    ),
+    shadow: (
+        100: 0 1px 2px,
+        150: 0 2px 4px,
+        200: 0 4px 6px,
+        250: 0 6px 8px,
+        300: 0 20px 25px,
+        350: 0 25px 50px
+    ),
+    image: (
+       16: 16px,
+       24: 24px,
+       32: 32px,
+       48: 48px,
+       64: 64px,
+       128: 128px
+    )
+) !default;

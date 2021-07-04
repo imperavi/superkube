@@ -1,0 +1,19 @@
+// =Centered
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+.uncentered {
+    margin-left: initial !important;
+    margin-right: initial !important;
+}
+@include for-sm {
+    .centered-sm {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .uncentered-sm {
+        margin-left: initial;
+        margin-right: initial;
+    }
+}

@@ -1,0 +1,39 @@
+// Transition
+@mixin transition($transition: all .2s linear) {
+    transition: $transition;
+}
+
+// Placeholder
+@mixin placeholder($color) {
+    $placeholders: "-webkit-input-" "-moz-" "-ms-input-" "";
+    @each $placeholder in $placeholders {
+      #{if(&, "&", "*")}::#{$placeholder}placeholder {
+        color: $color;
+      }
+    }
+}
+
+// Centered
+@mixin centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Uncentered
+@mixin uncentered {
+    margin-left: initial;
+    margin-right: initial;
+}
+
+// Stretched
+@mixin stretched {
+    &:after {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        content: "";
+    }
+}

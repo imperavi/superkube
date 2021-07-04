@@ -1,6 +1,6 @@
 # [Superkube](https://imperavi.com/superkube/)
 
-Superkube is a SCSS framework designed to build HTML and CSS websites. This means that there is nothing superfluous in it, you can add what you need in each of your projects. 
+Superkube is a SCSS framework designed to build HTML and CSS websites. This means that there is nothing superfluous in it, you can add what you need in each of your projects.
 
 <a href="https://imperavi.com/superkube/">
     <img src="https://raw.githubusercontent.com/imperavi/superkube/master/superkube-logo.png" alt="Superkube SCSS Framework" style="max-width:100%" width="400">
@@ -8,40 +8,53 @@ Superkube is a SCSS framework designed to build HTML and CSS websites. This mean
 
 ----
 
-Superkube is developed with design system in mind and contains system elements: the organization of variables, tokens, symbols, modules, etc. 
-Look at the [Design System Starter Kit](https://imperavi.com/superkube/design-system-starter-kit/), which shows the logic of the framework.
+Superkube is a free CSS/SCSS framework that has a lot of ready-made modules, modifiers, settings and variables HTML of website or web-interface.
 
-At the same time, the framework has the usual declarative modifiers, which are found in other popular Frontend frameworks. In general, it is a hybrid framework, which combines all the best.
+## Documentation
 
-## How Superkube Works
+See the description of Superkube and all its modules in the [documentation](https://imperavi.com/superkube/docs/).
 
-Superkube is added as basic SCSS to your project and on its base you can create the kind of project you need. Superkube helps you build logic, use ready-made built-in modules and tools to increase speed and reliability of the result.
+- [How to use](https://imperavi.com/superkube/docs/getting-started/how-to-use)
+- [Cheatsheet](https://imperavi.com/superkube/docs/getting-started/cheatsheet)
 
-1. **Get** a copy of Superkube to your project.
-2. **Create** your own variables based on Superkube and your modules depending on the project needs.
-3. **Build** Superkube, your variables and modules then release the website CSS for production.
 
-See more about [how to use Superkube](https://imperavi.com/superkube/framework/getting-started/how-to-use/).
+## Install
 
-## Quick install
+### CSS library
 
-Try Superkube out now:
+Superkube is a hybrid framework. So it can work as a CSS library without customization and build. This may be good for small projects where you do not need something complicated.
 
-### NPM
+You can use the CSS file directly from [jsDelivr](https://www.jsdelivr.com/package/npm/superkube):
+
+```
+&lt;link rel=&quot;stylesheet&quot; href=&quot;===jsdelivr-link===&quot;&gt;
+```
+
+Or you can download the latest Superkube from [Github](https://github.com/imperavi/superkube).
+
+
+### SCSS framework
+
+The maximum power of Superkube is unlocked if you use it as a SCSS framework, customize, extend and build your own version to fit your project.
+
+You can install Superkube via [npm](https://www.npmjs.com/package/superkube)
 
 ```sh
 npm install superkube
 ```
 
+Or download/clone from [Github](https://github.com/imperavi/superkube).
+
+
 ## Features
 
 Superkube has many features and surprising uses. This is what is on the surface:
 
-1. **Compactness**. Superkube is 3x smaller than similar frameworks. Only about 53kb.
+1. **Compactness**. Superkube is 2-3x smaller than similar frameworks.
 2. **Systemic**. Built with design system in mind.
 3. **Modularity**. Ideologically Superkube implies modular and reusable HTML and CSS code.
 4. **Grid CSS**. Inside Superkube are flexible and reliable grid building tools.
-5. **Dark mode**. It has built-in mechanisms for building a dark theme. 
+5. **Dark mode**. It has built-in mechanisms for building a dark theme.
 
 ## Javascript Agnostic
 

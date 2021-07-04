@@ -1,0 +1,29 @@
+.caret {
+    font-family: 'Supericons' !important;
+    font-style: normal;
+    font-weight: inherit;
+    font-variant: inherit;
+    text-transform: none;
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    line-height: 1;
+    vertical-align: middle;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    // Variants
+    @include generate-variants('.caret', caret);
+}
+.caret:before {
+    content: "\e900";
+}
+.caret-up:before {
+    content: "\e904";
+}
+.caret-right:before {
+    content: "\e903";
+}
+.caret-left:before {
+    content: "\e902";
+}

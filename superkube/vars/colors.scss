@@ -1,0 +1,637 @@
+// =Colors
+$colors: (
+    alert: (
+        default: (
+            base: (
+                background-color: palette(neutral, lighter),
+                color: palette(neutral, darker)
+            ),
+            info: (
+                background-color: palette(active, lighter),
+                color: palette(active, darker)
+            ),
+            success: (
+                background-color: palette(positive, lighter),
+                color: palette(positive, darker)
+            ),
+            error: (
+                background-color: palette(negative, lighter),
+                color: palette(negative, darker)
+            )
+        )
+    ),
+    background: (
+        light: palette(white),
+        dark: palette(black),
+        primary: palette(primary, base),
+        neutral-lightest: palette(neutral, lightest),
+        neutral-lighter: palette(neutral, lighter),
+        neutral-light: palette(neutral, light)
+    ),
+    badge: (
+        default: (
+            base: (
+                background-color: palette(neutral, lighter),
+                color: palette(neutral, darker)
+            ),
+            info: (
+                background-color: palette(active, lighter),
+                color: palette(active, dark)
+            ),
+            positive: (
+                background-color: palette(positive, lighter),
+                color: palette(positive, dark)
+            ),
+            important: (
+                background-color: palette(negative, lighter),
+                color: palette(negative, dark)
+            ),
+            dark: (
+                background-color: palette(black),
+                color: palette(white)
+            ),
+            light: (
+                background-color: palette(white),
+                color: palette(black)
+            )
+        )
+    ),
+    body: (
+        default: palette(white)
+    ),
+    border: (
+        dark-7: rgba(palette(black), .07),
+        dark-10: rgba(palette(black), .1),
+        light-25: rgba(palette(white), .25),
+        primary: palette(primary, base)
+    ),
+    breadcrumb: (
+        default: (
+            item: (
+                after: (
+                    color: rgba(palette(black), .25)
+                ),
+                active: (
+                    link: (
+                        color: rgba(palette(black), .4)
+                    )
+                )
+            ),
+            link: (
+                base: (
+                    color: palette(black)
+                ),
+                hover: (
+                    color: rgba(palette(black), .6)
+                )
+            )
+        )
+    ),
+    button: (
+        default: (
+            base: (
+                background-color: palette(white),
+                border-color: palette(neutral, mid),
+                color: palette(neutral, darker)
+            ),
+            hoverfocus: (
+                background-color: palette(neutral, lighter),
+                border-color: palette(neutral, mid),
+                color: palette(black)
+            ),
+            disabled: (
+                background-color: palette(white),
+                border-color: palette(neutral, mid),
+                color: rgba(palette(black), .85)
+            )
+        ),
+        light: (
+            base: (
+                background-color: palette(white),
+                border-color: transparent,
+                color: palette(black)
+            ),
+            hoverfocus: (
+                background-color: rgba(palette(white), .85),
+                border-color: transparent,
+                color: palette(black)
+            ),
+            disabled: (
+                background-color: palette(white),
+                border-color: transparent,
+                color: rgba(palette(black), .75)
+            )
+        ),
+        dark: (
+            base: (
+                background-color: palette(black),
+                border-color: transparent,
+                color: palette(neutral, lightest)
+            ),
+            hoverfocus: (
+                background-color: palette(neutral, darker),
+                border-color: transparent,
+                color: palette(neutral, lightest)
+            ),
+            disabled: (
+                background-color: palette(black),
+                border-color: transparent,
+                color: rgba(palette(neutral, lightest), .75)
+            )
+        ),
+        primary: (
+            base: (
+                background-color: palette(primary, base),
+                border-color: transparent,
+                color: palette(primary, lightest)
+            ),
+            hoverfocus: (
+                background-color: palette(primary, dark),
+                border-color: transparent,
+                color: palette(primary, lightest)
+            ),
+            disabled: (
+                background-color: palette(black),
+                border-color: transparent,
+                color: rgba(palette(neutral, lightest), .75)
+            )
+        )
+    ),
+    caption: (
+        default: (
+            base: (
+                color: palette(neutral, base)
+            ),
+            info: (
+                color: palette(active, dark)
+            ),
+            positive: (
+                color: palette(positive, dark)
+            ),
+            important: (
+                color: palette(negative, dark)
+            ),
+            dark: (
+                color: palette(black)
+            ),
+            light: (
+                color: palette(white)
+            )
+        )
+    ),
+    form: (
+        label: (
+            text: palette(neutral, darker)
+        )
+    ),
+    gradient: (
+
+    ),
+    heading: (
+        default: palette(black),
+        moderated: rgba(palette(black), .7),
+        muted: rgba(palette(black), .5),
+        light: palette(white),
+        light-moderated: rgba(palette(white), .8),
+        primary: palette(primary, base)
+    ),
+    hint: (
+        default: rgba(palette(neutral, darker), .55),
+        success: palette(positive, dark),
+        error: palette(negative, dark),
+        required: palette(negative, base)
+    ),
+    icon: (
+        dark: palette(black),
+        light: palette(white),
+        primary: palette(primary, base)
+    ),
+    inline: (
+        var: (
+            text: rgba(palette(black), .85)
+        ),
+        kbd: (
+            border: rgba(palette(black), .15),
+            text: rgba(palette(black), .85)
+        ),
+        code: (
+            background: palette(neutral, lightest),
+            text: rgba(palette(black), .85)
+        )
+    ),
+    input: (
+        default: (
+            base: (
+                color: palette(neutral, darker),
+                border-color: palette(neutral, mid),
+                background-color: palette(white)
+            ),
+            focus: (
+                border-color: rgba(palette(active, base), .5),
+                shadow: rgba(palette(active, base), .3)
+            )
+        ),
+        light: (
+            base: (
+                color: rgba(palette(white), .9),
+                border-color: rgba(palette(white), .25),
+                background-color: rgba(palette(white), .07)
+            ),
+            focus: (
+                border-color: rgba(palette(white), .5),
+                shadow: rgba(palette(white), .3)
+            )
+        ),
+        error: (
+            base: (
+                color: palette(negative, dark),
+                border-color: rgba(palette(negative, base), .5),
+                shadow: rgba(palette(negative, base), .3)
+            ),
+            focus: (
+                border-color: palette(negative, base)
+            )
+        )
+    ),
+    label: (
+        default: (
+            base: (
+                background-color: palette(neutral, lighter),
+                color: palette(neutral, darker)
+            ),
+            info: (
+                background-color: palette(active, lighter),
+                color: palette(active, darker)
+            ),
+            positive: (
+                background-color: palette(positive, lighter),
+                color: palette(positive, darker)
+            ),
+            important: (
+                background-color: palette(negative, lighter),
+                color: palette(negative, darker)
+            ),
+            dark: (
+                background-color: palette(black),
+                color: palette(neutral, lightest)
+            ),
+            light: (
+                background-color: palette(white),
+                color: palette(neutral, darker)
+            )
+        )
+    ),
+    line: (
+        default: rgba(palette(black), .1)
+    ),
+    link: (
+        default: (
+            base: (
+                color: palette(active, dark)
+            ),
+            hover: (
+                color: palette(negative, dark)
+            )
+        ),
+        dark: (
+            base: (
+                color: palette(black)
+            ),
+            hover: (
+                color: rgba(palette(black), 0.6)
+            )
+        ),
+        muted: (
+            base: (
+                color: rgba(palette(black), .5)
+            ),
+            hover: (
+                color: palette(black)
+            )
+        ),
+        moderated: (
+            base: (
+                color: rgba(palette(black), .7)
+            ),
+            hover: (
+                color: palette(black)
+            )
+        ),
+        light: (
+            base: (
+                color: palette(white)
+            ),
+            hover: (
+                color: rgba(palette(white), .6)
+            )
+        ),
+        light-moderated: (
+            base: (
+                color: rgba(palette(white), .75)
+            ),
+            hover: (
+                color: palette(white)
+            )
+        ),
+        primary: (
+            base: (
+                color: palette(primary, dark)
+            ),
+            hover: (
+                color: palette(primary, darker)
+            )
+        )
+    ),
+    menu: (
+        default: (
+            item: (
+                active: (
+                    link: (
+                        color: rgba(palette(black), .4)
+                    )
+                )
+            ),
+            link: (
+                base: (
+                    color: palette(black)
+                ),
+                hover: (
+                    color: rgba(palette(black), .6)
+                )
+            )
+        ),
+        primary: (
+            item: (
+                active: (
+                    link: (
+                        color: rgba(palette(black), .4)
+                    )
+                )
+            ),
+            link: (
+                base: (
+                    color: palette(primary, dark)
+                ),
+                hover: (
+                    color: palette(primary, darker)
+                )
+            )
+        ),
+        light: (
+            item: (
+                active: (
+                    link: (
+                        color: rgba(palette(white), .5)
+                    )
+                )
+            ),
+            link: (
+                base: (
+                    color: rgba(palette(white), .85)
+                ),
+                hover: (
+                    color: palette(white)
+                )
+            )
+        ),
+        muted: (
+            item: (
+                active: (
+                    link: (
+                        color: palette(black)
+                    )
+                )
+            ),
+            link: (
+                base: (
+                    color: rgba(palette(black), .6)
+                ),
+                hover: (
+                    color: palette(black)
+                )
+            )
+        ),
+        pills: (
+            item: (
+                active: (
+                    link: (
+                        color: palette(neutral, lightest),
+                        background-color: palette(black)
+                    )
+                )
+            ),
+            link: (
+                base: (
+                    color: palette(black)
+                ),
+                hover: (
+                    background-color: rgba(palette(black), .1)
+                )
+            )
+        ),
+        numbered: (
+            item: (
+                before: (
+                    color: rgba(palette(black), .6)
+                )
+            )
+        ),
+        numbered_light: (
+            item: (
+                before: (
+                    color: rgba(palette(white), .6)
+                )
+            )
+        ),
+        stacked: (
+            item: (
+                border-bottom-color: rgba(palette(black), .06)
+            )
+        ),
+        stacked_light: (
+            item: (
+                border-bottom-color: rgba(palette(white), .2)
+            )
+        )
+    ),
+    nav: (
+        default: (
+            item: (
+                active: (
+                    link: (
+                        color: rgba(palette(black), .4)
+                    )
+                )
+            ),
+            link: (
+                base: (
+                    color: palette(black)
+                ),
+                hover: (
+                    color: rgba(palette(black), .6)
+                )
+            )
+        ),
+        primary: (
+            item: (
+                active: (
+                    link: (
+                        color: rgba(palette(black), .4)
+                    )
+                )
+            ),
+            link: (
+                base: (
+                    color: palette(primary, dark)
+                ),
+                hover: (
+                    color: palette(primary, darker)
+                ),
+            )
+        ),
+        light: (
+            item: (
+                active: (
+                    link: (
+                        color: rgba(palette(white), .5)
+                    )
+                )
+            ),
+            link: (
+                base: (
+                    color: rgba(palette(white), .85)
+                ),
+                hover: (
+                    color: palette(white)
+                )
+            )
+        ),
+        muted: (
+            item: (
+                active: (
+                    link: (
+                        color: palette(black)
+                    )
+                )
+            ),
+            link: (
+                base: (
+                    color: rgba(palette(black), .6)
+                ),
+                hover: (
+                    color: palette(black)
+                )
+            )
+        ),
+        pills: (
+            item: (
+                active: (
+                    link: (
+                        background-color: palette(black),
+                        color: palette(neutral, lightest)
+                    )
+                )
+            ),
+            link: (
+                base: (
+                    color: palette(black)
+                ),
+                hover: (
+                    background-color: rgba(palette(black), .1)
+                )
+            )
+        ),
+        tabs: (
+            list: (
+                border-bottom-color: rgba(palette(black), .1)
+            ),
+            item: (
+                active: (
+                    link: (
+                        background-color: transparent,
+                        color: palette(black),
+                        border-bottom-color: palette(black)
+                    )
+                )
+            ),
+            link: (
+                base: (
+                    background-color: transparent,
+                    color: rgba(palette(black), .5),
+                    border-bottom-color: transparent
+                ),
+                hover: (
+                    background-color: palette(neutral, lightest),
+                    color: palette(black),
+                    border-bottom-color: palette(black)
+                )
+            )
+        )
+    ),
+    overlay: (
+        light: rgba(palette(white), .5),
+        dark: rgba(palette(black), .5)
+    ),
+    pagination: (
+        default: (
+            item: (
+                active: (
+                    link: (
+                        background-color: palette(active, base),
+                        color: palette(active, lightest),
+                        border-color: palette(active, base)
+                    )
+                )
+            ),
+            link: (
+                base: (
+                    background-color: transparent,
+                    color: palette(black),
+                    border-color: rgba(palette(black), .15)
+                ),
+                hover: (
+                    background-color: transparent,
+                    color: rgba(palette(black), .6)
+                )
+            )
+        )
+    ),
+    placeholder: (
+        base: rgba(palette(black), .4),
+        light: rgba(palette(white), .55),
+    ),
+    pre: (
+        background: palette(neutral, lightest),
+        text: palette(neutral, darker),
+        border: transparent
+    ),
+    shadow: (
+        default: (
+            100: rgba(palette(black), .1),
+            150: rgba(palette(black), .1),
+            200: rgba(palette(black), .1),
+            250: rgba(palette(black), .1),
+            300: rgba(palette(black), .1),
+            350: rgba(palette(black), .25)
+        )
+    ),
+    table: (
+        border: palette(neutral, light),
+        striped: palette(neutral, lightest)
+    ),
+    text-gradient: (
+
+    ),
+    text: (
+        dark: palette(black),
+        default: palette(neutral, darker),
+        moderated: rgba(palette(neutral, darker), .7),
+        muted: rgba(palette(neutral, darker), .5),
+        success: palette(positive, dark),
+        error: palette(negative, dark),
+        light: palette(white),
+        light-moderated: rgba(palette(white), .8),
+        light-muted: rgba(palette(white), .5),
+        primary: palette(primary, base)
+    )
+) !default;

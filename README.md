@@ -1,14 +1,12 @@
 # [Superkube](https://imperavi.com/superkube/)
 
-Superkube is a SCSS framework designed to build HTML and CSS websites. This means that there is nothing superfluous in it, you can add what you need in each of your projects.
+Superkube is a free CSS/SCSS framework that has a lot of ready-made modules, modifiers, settings and variables HTML of website or web-interface.
 
 <a href="https://imperavi.com/superkube/">
     <img src="https://raw.githubusercontent.com/imperavi/superkube/master/superkube-logo.png" alt="Superkube SCSS Framework" style="max-width:100%" width="400">
 </a>
 
 ----
-
-Superkube is a free CSS/SCSS framework that has a lot of ready-made modules, modifiers, settings and variables HTML of website or web-interface.
 
 ## Documentation
 

@@ -25,7 +25,7 @@ Superkube is a hybrid framework. So it can work as a CSS library without customi
 You can use the CSS file directly from [jsDelivr](https://www.jsdelivr.com/package/npm/superkube):
 
 ```
-&lt;link rel=&quot;stylesheet&quot; href=&quot;===jsdelivr-link===&quot;&gt;
+<link rel="stylesheet" href="https://www.jsdelivr.com/package/npm/superkube@latest/superkube.min.css">;
 ```
 
 Or you can download the latest Superkube from [Github](https://github.com/imperavi/superkube).

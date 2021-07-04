@@ -1,0 +1,287 @@
+// =Variants
+$variants: (
+    alert: (
+        default: (
+            padding: 4rem 5rem,
+            border-radius: radius(base),
+            border: 1px solid transparent
+        )
+    ),
+    badge: (
+        default: (
+            font-weight: 600,
+            min-width: 20px,
+            line-height: 16px,
+            border-radius: 99px,
+            padding: 1px 4px,
+            border: 1px solid transparent
+        ),
+        large: (
+            min-height: 26px,
+            min-width: 26px
+        ),
+        huge: (
+            min-height: 36px,
+            min-width: 36px
+        ),
+        mega: (
+            min-height: 48px,
+            min-width: 48px
+        )
+    ),
+    breadcrumb: (
+        default: (
+            item: (
+                after: (
+                    margin-left: 2rem,
+                    margin-right: 2rem
+                )
+            )
+        )
+    ),
+    button: (
+        default: (
+            base: (
+                font-weight: 600,
+                border-radius: radius(large),
+                padding: .4em 18px,
+                height: 42px,
+                border-width: 1px,
+                border-style: solid
+            ),
+            disabled: (
+                opacity: .5
+            )
+        ),
+        large: (
+            border-radius: radius(large),
+            padding: .4em 24px,
+            height: 52px
+        ),
+        small: (
+            font-size: type-size(button, small),
+            border-radius: radius(base),
+            padding: .4em 14px,
+            height: 32px
+        ),
+        primary: (
+            disabled: (
+                opacity: .4
+            )
+        ),
+        dark: (
+            disabled: (
+                opacity: .4
+            )
+        )
+    ),
+    caption: (
+        default: (
+            font-weight: normal
+        ),
+        semibold: (
+            font-weight: 600
+        ),
+        strong: (
+            font-weight: bold
+        ),
+        caps: (
+            text-transform: uppercase
+        )
+    ),
+    form: (
+        label: (
+            font-weight: normal
+        )
+    ),
+    heading: (
+        font-weight: bold,
+        letter-spacing: -0.01em
+    ),
+    input: (
+        default: (
+            base: (
+                border-radius: radius(base),
+                padding: 0.3em 0.5em,
+                height: 42px,
+                border-width: 1px,
+                border-style: solid
+            ),
+            focus: (
+                box-shadow: 0 0 2px color(input, default, focus, shadow)
+            )
+        ),
+        large: (
+            border-radius: radius(base),
+            padding: 0.3em 0.4em,
+            height: 52px
+        ),
+        error: (
+            base: (
+                box-shadow: 0 0 2px color(input, error, base, shadow)
+            )
+        )
+    ),
+    label: (
+        default: (
+            font-weight: 600,
+            border-radius: radius(base),
+            padding: 4px 9px,
+            border: 1px solid transparent
+        ),
+        caps: (
+            padding: 5px 8px 4px 8px,
+            text-transform: uppercase
+        )
+    ),
+    line: (
+        default: (
+            margin-top: 1.5em,
+            margin-bottom: 1.5em,
+            color: color(line, default),
+            height: 1px,
+            width: 100%,
+            align: left,
+            style: solid
+        )
+    ),
+    menu: (
+        default: (
+            link: (
+                padding: 5px 0
+            )
+        ),
+        semibold: (
+            link: (
+                font-weight: 600
+            )
+        ),
+        strong: (
+            link: (
+                font-weight: bold
+            )
+        ),
+        caps: (
+            link: (
+                padding: 8px 0
+            )
+        ),
+        stacked: (
+            item: (
+                border-bottom-width: 1px
+            ),
+            link: (
+                padding: 8px 0
+            )
+        ),
+        pills: (
+            item: (
+                margin-bottom: 1px
+            ),
+            link: (
+                padding: 6px 10px,
+                border-radius: radius(base)
+            )
+        ),
+        numbered: (
+            item: (
+                before: (
+                    width: 24px,
+                    font-size: 80%
+                )
+            )
+        )
+    ),
+    nav: (
+        default: (
+            item: (
+                margin-right: 5rem
+            )
+        ),
+        semibold: (
+            link: (
+                font-weight: 600
+            )
+        ),
+        strong: (
+            link: (
+                font-weight: bold
+            )
+        ),
+        pills: (
+            item: (
+                margin-right: 1rem
+            ),
+            link: (
+                padding: 7px 16px,
+                border-radius: 99px
+            )
+        ),
+        tabs: (
+            list: (
+                border-bottom-width: 2px
+            ),
+            item: (
+                margin-right: 1px
+            ),
+            link: (
+                border-bottom-width: 2px,
+                margin-bottom: -2px,
+                padding: 12px 12px 10px 12px
+            )
+        ),
+        centered: (
+            item: (
+                margin-left: 2rem,
+                margin-right: 2rem
+            )
+        ),
+        centered_pills: (
+            item: (
+                margin-left: 0.5rem,
+                margin-right: 0.5rem
+            )
+        ),
+        centered_tabs: (
+            item: (
+                margin-left: 1px,
+                margin-right: 1px
+            )
+        ),
+        right: (
+            item: (
+                margin-right: 0,
+                margin-left: 5rem
+            )
+        ),
+        right_pills: (
+            item: (
+                margin-right: 0,
+                margin-left: 1rem
+            )
+        ),
+        right_tabs: (
+            item: (
+                margin-right: 1px,
+                margin-left: 0
+            )
+        )
+    ),
+    pagination: (
+        default: (
+            item: (
+                margin-right: 1rem
+            ),
+            ellipsis: (
+                margin-left: 2rem,
+                margin-right: 2rem
+            ),
+            link: (
+                min-width: 32px,
+                border-width: 1px,
+                padding: 6px 8px,
+                border-radius: radius(base)
+            )
+        )
+    )
+) !default;

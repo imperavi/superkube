@@ -1,0 +1,24 @@
+// =Caption
+a.caption,
+.caption {
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    text-decoration: none;
+    line-height: 1;
+
+    svg {
+        fill: currentColor;
+    }
+}
+a.caption:hover {
+    opacity: .6;
+    text-decoration: underline;
+}
+a.caption,
+.caption {
+    // Generator
+    @include generate-variants('.caption', caption);
+    @include generate-type(caption);
+}

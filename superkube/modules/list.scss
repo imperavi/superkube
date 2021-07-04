@@ -1,0 +1,21 @@
+// =List
+.list-unstyled,
+.list-inline,
+.list-checkmark,
+.list-dashed {
+    list-style: none;
+    margin-left: 0;
+}
+.list-inline li {
+    display: inline;
+    white-space: nowrap;
+    margin-right: 0.25em;
+}
+.list-checkmark li:before {
+    content: "\2713";
+    margin-right: 4px;
+}
+.list-dashed li:before {
+    content: "\2014";
+    margin-right: 6px;
+}

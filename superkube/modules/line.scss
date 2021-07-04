@@ -1,0 +1,10 @@
+// =Line
+$lines: variant(line);
+@each $key, $line in $lines {
+    @if $key != default {
+        .line-#{$key} {
+            $line: map-extend(map-get($lines, default), $line);
+            @include line($line);
+        }
+    }
+}

@@ -1,0 +1,31 @@
+// =Alert
+.alert {
+    position: relative;
+    margin-bottom: type-space(tag-to-tag);
+
+    h2, h3, h4, h5, h6, p, a {
+        color: inherit;
+    }
+    * + p {
+        margin-top: 0.25em;
+    }
+    a:hover {
+        opacity: .6;
+    }
+    svg {
+        fill: currentColor;
+    }
+    .close {
+        font-size: 14px;
+        position: absolute;
+        right: 0;
+        top: 0;
+        padding-right: .65em;
+        padding-top: .85em;
+    }
+}
+.alert {
+    // Variants
+    @include generate-variants('.alert', alert);
+    @include generate-type(alert);
+}

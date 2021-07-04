@@ -1,10 +1,15 @@
 /*
     Superkube
-    Version 1.5.0
-    Updated: April 30, 2021
+    Version 2.0.0
+    Updated: July 5, 2021
 
     http://imperavi.com/superkube/
 
-    Copyright (c) 2009-2021, Imperavi Ltd.
+    Copyright (c) 2021, Imperavi Ltd.
     License: MIT
 */
+
+// =superkube css dist
+@import "scales";
+@import "variants";
+@import "modules";

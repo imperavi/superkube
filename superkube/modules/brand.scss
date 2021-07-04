@@ -1,0 +1,17 @@
+.brand {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+    font-weight: bold;
+    line-height: 1;
+
+    // =Variants
+    @include generate-type(brand);
+    @include generate-variants('.brand', brand);
+}
+a.brand:hover {
+    @include transition;
+    text-decoration: underline;
+}

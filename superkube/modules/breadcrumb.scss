@@ -1,0 +1,43 @@
+// =Breadcrumb
+.breadcrumb {
+    .breadcrumb-list {
+        display: flex;
+        align-items: center;
+    }
+    .breadcrumb-item {
+        display: flex;
+        align-items: center;
+    }
+    .breadcrumb-item:after {
+        content: '\0002f';
+    }
+    .breadcrumb-item:last-child:after {
+        display: none;
+    }
+    .breadcrumb-item.active .breadcrumb-link {
+        cursor: text;
+        text-decoration: none;
+    }
+    .breadcrumb-link {
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+    .breadcrumb-link:hover {
+        text-decoration: underline;
+    }
+
+    // =Variants
+    @include generate-type(breadcrumb, '.breadcrumb-link');
+    @include generate-variants('.breadcrumb', breadcrumb, true);
+}
+.breadcrumb-bullet {
+    .breadcrumb-item:after {
+        content: '\02022';
+    }
+}
+.breadcrumb-path {
+    .breadcrumb-item:after {
+        content: '\0227B';
+    }
+}

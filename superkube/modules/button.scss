@@ -1,0 +1,54 @@
+// =Button
+button,
+a.button,
+.button {
+    -webkit-appearance: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    font-family: inherit;
+    white-space: nowrap;
+    cursor: pointer;
+    border: none;
+    background: none;
+    box-shadow: none;
+    text-decoration: none;
+}
+.button {
+    // Icons
+    & .icon + span {
+        margin-left: 6px;
+    }
+    & span + .icon {
+        margin-left: 6px;
+        margin-right: -3px;
+    }
+    // Hover
+    &:hover {
+        outline: none;
+    }
+    &:hover,
+    &:focus {
+        background-image: none;
+        text-decoration: none;
+    }
+    // Disabled
+    &:disabled,
+    &.disabled {
+        cursor: default;
+    }
+    // Caret
+    .caret {
+        font-weight: bold;
+        margin-left: 2px;
+        margin-right: -3px;
+    }
+}
+// Generate
+a.button,
+.button {
+    @include generate-type(button);
+    @include generate-variants('.button', button);
+}

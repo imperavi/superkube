@@ -1,0 +1,46 @@
+// =Container
+$containers: scale(container);
+@each $name, $value in $containers {
+    @if $name == base {
+        .container { max-width: $value; }
+    }
+    @else {
+        .container-#{$name} { max-width: $value; }
+    }
+}
+$container-columns: scale(grid, columns);
+$container-gutter: scale(grid, gutter);
+@for $i from 1 through $container-columns {
+    .container-#{$i} { max-width: calc((100%/#{$container-columns}*#{$i}) - #{$container-gutter}/2); }
+}
+@include for-sm {
+    .container,
+    [class^="container-"],
+    [class*=" container-"] {
+        max-width: none;
+    }
+}
+
+// =Edges
+.edges-off { padding-left: 0; padding-right: 0; }
+
+$edges: scale(edge);
+@each $name, $value in $edges {
+    @if $name == base {
+        .edges { padding-left: $value; padding-right: $value; }
+    }
+    @else {
+        .edges-#{$name} { padding-left: $value; padding-right: $value; }
+    }
+}
+@include for-sm {
+    .edges-off-sm { padding-left: 0; padding-right: 0; }
+    @each $name, $value in $edges {
+        @if $name == base {
+            .edges-sm { padding-left: $value; padding-right: $value; }
+        }
+        @else {
+            .edges-#{$name}-sm { padding-left: $value; padding-right: $value; }
+        }
+    }
+}

@@ -1,0 +1,89 @@
+// =Menu
+.menu {
+    .menu-item {
+        display: flex;
+        align-items: center;
+        flex-flow: wrap;
+    }
+    .menu-item.active .menu-link {
+        cursor: text;
+        text-decoration: none;
+    }
+    .menu-link {
+        display: flex;
+        align-items: center;
+        flex: 1;
+        text-decoration: none;
+    }
+    .menu-link:hover {
+        text-decoration: underline;
+    }
+    .menu-list .menu-list {
+        width: 100%;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-left: 5rem;
+    }
+    .menu-list + h4,
+    .menu-list + h5,
+    .menu-list + h6 {
+        margin-top: 5rem;
+    }
+    & .label {
+        margin-top: -2px;
+    }
+
+    // =Variants
+    @include generate-type(menu, '.menu-link');
+    @include generate-variants('.menu', menu, true);
+}
+
+// =Caps
+.menu-caps {
+    .menu-link {
+        letter-spacing: .01em;
+        text-transform: uppercase;
+    }
+}
+
+// =Underline
+.menu-underline {
+    .menu-link {
+        text-decoration: underline;
+    }
+}
+.menu-underline-off {
+    .menu-link:hover {
+        text-decoration: none;
+    }
+}
+
+// =Stacked
+.menu-stacked {
+    .menu-item {
+        border-bottom-style: solid;
+    }
+    .menu-item:last-child {
+        border-bottom-color: transparent;
+    }
+}
+
+// =Pills
+.menu-pills {
+    .menu-item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// =Numbered
+.menu-numbered {
+    .menu-list {
+        counter-reset: table-of-contents;
+    }
+    .menu-item {
+        counter-increment: table-of-contents;
+    }
+    .menu-item:before {
+        content: counter(table-of-contents, decimal-leading-zero);
+    }
+}

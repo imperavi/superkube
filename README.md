@@ -1,6 +1,6 @@
 # [Superkube](https://imperavi.com/superkube/)
 
-Superkube is a SCSS framework designed to build HTML and CSS websites. This means that there is nothing superfluous in it, you can add what you need in each of your projects. 
+Superkube is a SCSS framework designed to build HTML and CSS websites. This means that there is nothing superfluous in it, you can add what you need in each of your projects.
 
 <a href="https://imperavi.com/superkube/">
     <img src="https://raw.githubusercontent.com/imperavi/superkube/master/superkube-logo.png" alt="Superkube SCSS Framework" style="max-width:100%" width="400">
@@ -8,7 +8,7 @@ Superkube is a SCSS framework designed to build HTML and CSS websites. This mean
 
 ----
 
-Superkube is developed with design system in mind and contains system elements: the organization of variables, tokens, symbols, modules, etc. 
+Superkube is developed with design system in mind and contains system elements: the organization of variables, tokens, symbols, modules, etc.
 Look at the [Design System Starter Kit](https://imperavi.com/superkube/design-system-starter-kit/), which shows the logic of the framework.
 
 At the same time, the framework has the usual declarative modifiers, which are found in other popular Frontend frameworks. In general, it is a hybrid framework, which combines all the best.
@@ -37,11 +37,11 @@ npm install superkube
 
 Superkube has many features and surprising uses. This is what is on the surface:
 
-1. **Compactness**. Superkube is 3x smaller than similar frameworks. Only about 53kb.
+1. **Compactness**. Superkube is 2-3x smaller than similar frameworks.
 2. **Systemic**. Built with design system in mind.
 3. **Modularity**. Ideologically Superkube implies modular and reusable HTML and CSS code.
 4. **Grid CSS**. Inside Superkube are flexible and reliable grid building tools.
-5. **Dark mode**. It has built-in mechanisms for building a dark theme. 
+5. **Dark mode**. It has built-in mechanisms for building a dark theme.
 
 ## Javascript Agnostic
 

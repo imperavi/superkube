@@ -1,0 +1,123 @@
+// =Flex
+.flex {
+    display: flex;
+}
+.flex-nowrap {
+    flex-wrap: nowrap;
+}
+.flex-auto {
+    flex: 1 1 auto;
+}
+.flex-off {
+    flex: 0 !important;
+}
+.flex-shrink-off {
+    flex-shrink: 0;
+}
+.flex-top {
+    align-items: flex-start !important;
+}
+.flex-baseline {
+    align-items: baseline;
+}
+.flex-middle {
+    align-items: center;
+}
+.flex-bottom {
+    align-items: flex-end;
+}
+.flex-start {
+    justify-content: flex-start !important;
+}
+.flex-end {
+    justify-content: flex-end;
+}
+.flex-center {
+    justify-content: center;
+}
+.flex-between {
+    justify-content: space-between;
+}
+.flex-around {
+    justify-content: space-around;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-overflow {
+    display: flex;
+    flex-wrap: nowrap !important;
+    overflow-y: hidden;
+    overflow-x: auto;
+}
+.flex-layout {
+    display: flex;
+}
+.flex-content {
+    flex-grow: 1;
+    min-width: 0;
+}
+
+// =Sidebars
+$sidebars: scale(sidebar);
+@each $name, $value in $sidebars {
+    @if $name == base {
+        .flex-sidebar { flex: 0 0 $value; }
+    }
+    @else {
+        .flex-sidebar-#{$name} { flex: 0 0 $value; }
+    }
+}
+@include for-sm {
+    @each $name, $value in $sidebars {
+        @if $name == base {
+            .flex-sidebar { flex: 0 0 100%; }
+        }
+        @else {
+            .flex-sidebar-#{$name} { flex: 0 0 100%; }
+        }
+    }
+}
+
+@include for-sm {
+    .flex-row-sm {
+        flex-direction: row;
+    }
+    .flex-layout,
+    .flex-column-sm {
+        flex-direction: column;
+    }
+    .flex-off-sm {
+        flex: 0 !important;
+    }
+    .flex-wrap-sm {
+        flex-wrap: wrap;
+    }
+    .flex-top-sm {
+        align-items: flex-start;
+    }
+    .flex-middle-sm {
+        align-items: center;
+    }
+    .flex-baseline-sm {
+        align-items: baseline;
+    }
+    .flex-bottom-sm {
+        align-items: flex-end;
+    }
+    .flex-between-sm {
+        justify-content: space-between;
+    }
+    .flex-around-sm {
+        justify-content: space-around;
+    }
+    .flex-center-sm {
+        justify-content: center;
+    }
+    .flex-start-sm {
+        justify-content: flex-start;
+    }
+    .flex-end-sm {
+        justify-content: flex-end;
+    }
+}

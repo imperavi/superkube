@@ -1,0 +1,46 @@
+// =Palette
+$palette: (
+    black: #031927,
+    white: #ffffff,
+    primary: (
+        darker: #1844A2,
+        dark: #1F52C8,
+        base: #245DE5,
+        light: #A7BEF5,
+        lighter: #E4EBFB,
+        lightest: #F0F4FD
+    ),
+    neutral: (
+        darker: #223542,
+        dark: #42525D,
+        base: #818C93,
+        mid: #D7D7D9,
+        light: #E8EAEB,
+        lighter: #EFF1F2,
+        lightest: #F5F6F7
+    ),
+    negative: (
+        darker: #9A333E,
+        dark: #C83B46,
+        base: #EB424C,
+        light: #F7B3B7,
+        lighter: #FCE8E9,
+        lightest: #FDF2F2
+    ),
+    positive: (
+        darker: #135E42,
+        dark: #1D8851,
+        base: #24A45D,
+        light: #A7DBBE,
+        lighter: #E4F4EB,
+        lightest: #F0F8F4
+    ),
+    active: (
+        darker: #1844A2,
+        dark: #1F52C8,
+        base: #245DE5,
+        light: #A7BEF5,
+        lighter: #E4EBFB,
+        lightest: #F0F4FD
+    )
+) !default;

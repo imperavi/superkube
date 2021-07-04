@@ -1,0 +1,47 @@
+// =Rounded
+.r-off    { border-radius: 0 }
+.r-circle { border-radius: 9999px }
+
+$radius: scale(radius);
+@each $name, $value in $radius {
+    .r-#{$name} { border-radius: $value }
+    .r-top-#{$name} {
+        border-top-left-radius: $value;
+        border-top-right-radius: $value;
+    }
+    .r-bottom-#{$name} {
+        border-bottom-left-radius: $value;
+        border-bottom-right-radius: $value;
+    }
+    .r-left-#{$name} {
+        border-top-left-radius: $value;
+        border-bottom-left-radius: $value;
+    }
+    .r-right-#{$name} {
+        border-top-right-radius: $value;
+        border-bottom-right-radius: $value;
+    }
+}
+@include for-sm {
+    .r-off-sm    { border-radius: 0 }
+    .r-circle-sm { border-radius: 9999px }
+    @each $name, $value in $radius {
+        .r-#{$name}-sm { border-radius: $value }
+        .r-top-#{$name}-sm {
+            border-top-left-radius: $value;
+            border-top-right-radius: $value;
+        }
+        .r-bottom-#{$name}-sm {
+            border-bottom-left-radius: $value;
+            border-bottom-right-radius: $value;
+        }
+        .r-left-#{$name}-sm {
+            border-top-left-radius: $value;
+            border-bottom-left-radius: $value;
+        }
+        .r-right-#{$name}-sm {
+            border-top-right-radius: $value;
+            border-bottom-right-radius: $value;
+        }
+    }
+}

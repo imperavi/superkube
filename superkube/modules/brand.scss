@@ -6,6 +6,7 @@
     text-decoration: none;
     font-weight: bold;
     line-height: 1;
+    white-space: nowrap;
 
     // =Variants
     @include generate-type(brand);

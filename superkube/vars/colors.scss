@@ -245,11 +245,11 @@ $colors: (
         error: (
             base: (
                 color: palette(negative, dark),
-                border-color: rgba(palette(negative, base), .5),
-                shadow: rgba(palette(negative, base), .3)
+                border-color: palette(negative, base),
             ),
             focus: (
-                border-color: palette(negative, base)
+                border-color: rgba(palette(negative, base), .5),
+                shadow: rgba(palette(negative, base), .3)
             )
         )
     ),

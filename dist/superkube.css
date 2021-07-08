@@ -795,7 +795,8 @@ input[type="checkbox"] {
     background-color: var(--c40);
     color: var(--c41); }
   .alert {
-    font-size: 15px; }
+    font-size: 15px;
+    line-height: 1.5; }
 
 .a-left {
   text-align: left; }

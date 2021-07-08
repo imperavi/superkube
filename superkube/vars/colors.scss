@@ -625,8 +625,8 @@ $colors: (
     text: (
         dark: palette(black),
         default: palette(neutral, darker),
-        moderated: rgba(palette(neutral, darker), .7),
-        muted: rgba(palette(neutral, darker), .5),
+        moderated: rgba(palette(black), .7),
+        muted: rgba(palette(black), .5),
         success: palette(positive, dark),
         error: palette(negative, dark),
         light: palette(white),

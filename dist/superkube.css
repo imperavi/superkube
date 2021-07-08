@@ -225,7 +225,7 @@ pre {
   overflow: auto;
   white-space: pre;
   font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  font-size: 85%;
+  font-size: 14px;
   line-height: 1.5;
   color: var(--c10);
   background-color: var(--c11);
@@ -248,7 +248,7 @@ blockquote {
   background: transparent; }
   blockquote p {
     color: var(--c4);
-    font-size: 115%;
+    font-size: 18px;
     line-height: 1.5; }
   blockquote p + p {
     margin-top: 0.5em; }
@@ -274,7 +274,7 @@ td,
 th {
   text-align: left;
   vertical-align: top;
-  font-size: 95%;
+  font-size: 15px;
   line-height: 1.5;
   padding: 0.75em 0;
   padding-right: 0.75em;

@@ -91,7 +91,6 @@
                         $str: '&-' + to-string($list, $prefix + '-');
                     }
 
-
                     #{$str} {
                        @include generate-variant($prefix, $key, $value, $nested, $mods);
                     }
@@ -115,7 +114,14 @@
             }
         }
         @else {
-            #{$name} {
+            $str: $name;
+            $list: str-split($key, '_');
+            @if length($list) > 1 {
+                @debug $name;
+                $str: $prefix + '-' + to-string($list, $prefix + '-');
+            }
+
+            #{$str} {
                @include generate-variant($prefix, $key, $value, $nested);
             }
         }

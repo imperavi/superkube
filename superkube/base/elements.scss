@@ -307,8 +307,8 @@ figure {
         display: block;
         font-style: normal;
         margin-top: 0.25em;
-        font-size: type-size(text, small);
-        line-height: type-line(text, small);
+        font-size: type-size(base, figcaption);
+        line-height: type-line(base, figcaption);
     }
 }
 

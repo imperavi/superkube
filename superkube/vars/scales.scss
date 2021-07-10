@@ -113,6 +113,15 @@ $scales: (
         form-item-to-item: 5rem,
         form-buttons-to-item: 6rem
     ),
+    button: (
+        small: 32px,
+        base: 42px,
+        large: 52px
+    ),
+    input: (
+        base: 42px,
+        large: 52px
+    ),
     breakpoint: (
         lg: 1442px,
         md: 1024px,

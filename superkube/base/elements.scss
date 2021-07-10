@@ -351,6 +351,25 @@ select {
 @include generate-variants('.input', input, false, 'input, textarea, select');
 @include generate-type(input, '.input', 'input, textarea, select');
 
+// Scales
+$input-scale: scale(input);
+@each $name, $value in $input-scale {
+    @if $name == base {
+        input,
+        textarea,
+        select {
+            height: $value;
+        }
+    }
+    @else {
+        input,
+        select {
+            &.input-#{$name} {
+                height: $value;
+            }
+        }
+    }
+}
 
 .input-light {
     @include placeholder(color(placeholder, light));

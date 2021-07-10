@@ -51,4 +51,17 @@ a.button,
 .button {
     @include generate-type(button);
     @include generate-variants('.button', button);
+
+    // Scales
+    $button-scale: scale(button);
+    @each $name, $value in $button-scale {
+        @if $name == base {
+            height: $value;
+        }
+        @else {
+            &-#{$name} {
+                height: $value;
+            }
+        }
+    }
 }

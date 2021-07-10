@@ -45,7 +45,6 @@ $variants: (
                 font-weight: 600,
                 border-radius: radius(large),
                 padding: .4em 18px,
-                height: 42px,
                 border-width: 1px,
                 border-style: solid
             ),
@@ -55,14 +54,12 @@ $variants: (
         ),
         large: (
             border-radius: radius(large),
-            padding: .4em 24px,
-            height: 52px
+            padding: .4em 24px
         ),
         small: (
             font-size: type-size(button, small),
             border-radius: radius(base),
-            padding: .4em 14px,
-            height: 32px
+            padding: .4em 14px
         ),
         primary: (
             disabled: (
@@ -103,7 +100,6 @@ $variants: (
             base: (
                 border-radius: radius(base),
                 padding: 0.3em 0.5em,
-                height: 42px,
                 border-width: 1px,
                 border-style: solid
             ),
@@ -113,8 +109,7 @@ $variants: (
         ),
         large: (
             border-radius: radius(base),
-            padding: 0.3em 0.4em,
-            height: 52px
+            padding: 0.3em 0.4em
         ),
         error: (
             base: (

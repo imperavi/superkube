@@ -441,7 +441,6 @@ input, textarea, select {
   background-color: var(--c22);
   border-radius: 4px;
   padding: 0.3em 0.5em;
-  height: 42px;
   border-width: 1px;
   border-style: solid; }
   input:focus, textarea:focus, select:focus {
@@ -464,8 +463,7 @@ input, textarea, select {
 
 .input-large {
   border-radius: 4px;
-  padding: 0.3em 0.4em;
-  height: 52px; }
+  padding: 0.3em 0.4em; }
 
 input, textarea, select {
   font-size: 15px;
@@ -474,6 +472,15 @@ input, textarea, select {
 .input-large {
   font-size: 21px;
   line-height: 1.5; }
+
+input,
+textarea,
+select {
+  height: 42px; }
+
+input.input-large,
+select.input-large {
+  height: 52px; }
 
 .input-light::-webkit-input-placeholder {
   color: var(--c33); }
@@ -1086,9 +1093,9 @@ a.button,
   font-weight: 600;
   border-radius: 6px;
   padding: 0.4em 18px;
-  height: 42px;
   border-width: 1px;
-  border-style: solid; }
+  border-style: solid;
+  height: 42px; }
   a.button,
   .button {
     font-size: 15px;
@@ -1170,14 +1177,18 @@ a.button,
   a.button-large,
   .button-large {
     border-radius: 6px;
-    padding: 0.4em 24px;
-    height: 52px; }
+    padding: 0.4em 24px; }
   a.button-small,
   .button-small {
     font-size: 15px;
     border-radius: 4px;
-    padding: 0.4em 14px;
+    padding: 0.4em 14px; }
+  a.button-small,
+  .button-small {
     height: 32px; }
+  a.button-large,
+  .button-large {
+    height: 52px; }
 
 a.caption,
 .caption {

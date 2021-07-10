@@ -851,7 +851,8 @@ a.badge,
   vertical-align: middle;
   white-space: nowrap;
   text-decoration: none;
-  height: auto; }
+  height: auto;
+  line-height: 1; }
   a.badge a,
   .badge a {
     color: inherit;
@@ -870,11 +871,11 @@ a.badge,
   background-color: var(--c48);
   color: var(--c49);
   font-weight: 600;
-  min-width: 20px;
-  line-height: 16px;
   border-radius: 99px;
   padding: 1px 4px;
-  border: 1px solid transparent; }
+  border: 1px solid transparent;
+  min-width: 20px;
+  min-height: 20px; }
   a.badge.badge-info,
   .badge.badge-info {
     background-color: var(--c50);

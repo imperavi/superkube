@@ -1042,7 +1042,7 @@ a.brand:hover {
     color: var(--c67); }
 
 .breadcrumb-bullet .breadcrumb-item:after {
-  content: '\02022'; }
+  content: '\2219'; }
 
 .breadcrumb-path .breadcrumb-item:after {
   content: '\0227B'; }

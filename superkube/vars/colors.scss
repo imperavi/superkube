@@ -60,20 +60,20 @@ $colors: (
         default: palette(white)
     ),
     border: (
-        dark-7: rgba(palette(black), .07),
-        dark-10: rgba(palette(black), .1),
-        light-25: rgba(palette(white), .25),
+        dark-7: palette(black-o, 7),
+        dark-10: palette(black-o, 10),
+        light-25: palette(white-o, 25),
         primary: palette(primary, base)
     ),
     breadcrumb: (
         default: (
             item: (
                 after: (
-                    color: rgba(palette(black), .25)
+                    color: palette(black-o, 25)
                 ),
                 active: (
                     link: (
-                        color: rgba(palette(black), .4)
+                        color: palette(black-o, 40)
                     )
                 )
             ),
@@ -82,7 +82,7 @@ $colors: (
                     color: palette(black)
                 ),
                 hover: (
-                    color: rgba(palette(black), .6)
+                    color: palette(black-o, 60)
                 )
             )
         )
@@ -102,7 +102,7 @@ $colors: (
             disabled: (
                 background-color: palette(white),
                 border-color: palette(neutral, mid),
-                color: rgba(palette(black), .85)
+                color: palette(black-o, 80)
             )
         ),
         light: (
@@ -112,14 +112,14 @@ $colors: (
                 color: palette(black)
             ),
             hoverfocus: (
-                background-color: rgba(palette(white), .85),
+                background-color: palette(white-o, 80),
                 border-color: transparent,
                 color: palette(black)
             ),
             disabled: (
                 background-color: palette(white),
                 border-color: transparent,
-                color: rgba(palette(black), .75)
+                color: palette(black-o, 80)
             )
         ),
         dark: (
@@ -136,7 +136,7 @@ $colors: (
             disabled: (
                 background-color: palette(black),
                 border-color: transparent,
-                color: rgba(palette(white), .7)
+                color: palette(white-o, 70)
             )
         ),
         primary: (
@@ -153,7 +153,7 @@ $colors: (
             disabled: (
                 background-color: palette(black),
                 border-color: transparent,
-                color: rgba(palette(white), .7)
+                color: palette(white-o, 70)
             )
         )
     ),
@@ -189,14 +189,14 @@ $colors: (
     ),
     heading: (
         default: palette(black),
-        moderated: rgba(palette(black), .7),
-        muted: rgba(palette(black), .5),
+        moderated: palette(black-o, 70),
+        muted: palette(black-o, 50),
         light: palette(white),
-        light-moderated: rgba(palette(white), .8),
+        light-moderated: palette(white-o, 80),
         primary: palette(primary, base)
     ),
     hint: (
-        default: rgba(palette(black), .5),
+        default: palette(black-o, 50),
         success: palette(positive, dark),
         error: palette(negative, dark),
         required: palette(negative, base)
@@ -208,15 +208,18 @@ $colors: (
     ),
     inline: (
         var: (
-            text: rgba(palette(black), .85)
+            color: palette(black-o, 80)
         ),
         kbd: (
-            border: rgba(palette(black), .15),
-            text: rgba(palette(black), .85)
+            border-color: palette(black-o, 15),
+            color: palette(black-o, 80)
         ),
         code: (
-            background: palette(neutral, lightest),
-            text: rgba(palette(black), .85)
+            background-color: palette(neutral, lightest),
+            color: palette(black-o, 80)
+        ),
+        cite: (
+            color: palette(black-o, 70)
         )
     ),
     input: (
@@ -233,13 +236,13 @@ $colors: (
         ),
         light: (
             base: (
-                color: rgba(palette(white), .9),
-                border-color: rgba(palette(white), .25),
-                background-color: rgba(palette(white), .07)
+                color: palette(white-o, 90),
+                border-color: palette(white-o, 25),
+                background-color: palette(white-o, 7)
             ),
             focus: (
-                border-color: rgba(palette(white), .5),
-                shadow: rgba(palette(white), .3)
+                border-color: palette(white-o, 50),
+                shadow: palette(white-o, 30)
             )
         ),
         error: (
@@ -282,7 +285,7 @@ $colors: (
         )
     ),
     line: (
-        default: rgba(palette(black), .1)
+        default: palette(black-o, 10)
     ),
     link: (
         default: (
@@ -298,12 +301,12 @@ $colors: (
                 color: palette(black)
             ),
             hover: (
-                color: rgba(palette(black), 0.6)
+                color: palette(black-o, 60)
             )
         ),
         muted: (
             base: (
-                color: rgba(palette(black), .5)
+                color: palette(black-o, 50)
             ),
             hover: (
                 color: palette(black)
@@ -311,7 +314,7 @@ $colors: (
         ),
         moderated: (
             base: (
-                color: rgba(palette(black), .7)
+                color: palette(black-o, 70)
             ),
             hover: (
                 color: palette(black)
@@ -322,12 +325,12 @@ $colors: (
                 color: palette(white)
             ),
             hover: (
-                color: rgba(palette(white), .6)
+                color: palette(white-o, 60)
             )
         ),
         light-moderated: (
             base: (
-                color: rgba(palette(white), .75)
+                color: palette(white-o, 70)
             ),
             hover: (
                 color: palette(white)
@@ -347,7 +350,7 @@ $colors: (
             item: (
                 active: (
                     link: (
-                        color: rgba(palette(black), .4)
+                        color: palette(black-o, 40)
                     )
                 )
             ),
@@ -356,7 +359,7 @@ $colors: (
                     color: palette(black)
                 ),
                 hover: (
-                    color: rgba(palette(black), .6)
+                    color: palette(black-o, 60)
                 )
             )
         ),
@@ -364,7 +367,7 @@ $colors: (
             item: (
                 active: (
                     link: (
-                        color: rgba(palette(black), .4)
+                        color: palette(black-o, 40)
                     )
                 )
             ),
@@ -381,13 +384,13 @@ $colors: (
             item: (
                 active: (
                     link: (
-                        color: rgba(palette(white), .5)
+                        color: palette(white-o, 50)
                     )
                 )
             ),
             link: (
                 base: (
-                    color: rgba(palette(white), .85)
+                    color: palette(white-o, 80)
                 ),
                 hover: (
                     color: palette(white)
@@ -404,7 +407,7 @@ $colors: (
             ),
             link: (
                 base: (
-                    color: rgba(palette(black), .6)
+                    color: palette(black-o, 60)
                 ),
                 hover: (
                     color: palette(black)
@@ -425,32 +428,32 @@ $colors: (
                     color: palette(black)
                 ),
                 hover: (
-                    background-color: rgba(palette(black), .1)
+                    background-color: palette(black-o, 10)
                 )
             )
         ),
         numbered: (
             item: (
                 before: (
-                    color: rgba(palette(black), .6)
+                    color: palette(black-o, 60)
                 )
             )
         ),
         numbered_light: (
             item: (
                 before: (
-                    color: rgba(palette(white), .6)
+                    color: palette(white-o, 60)
                 )
             )
         ),
         stacked: (
             item: (
-                border-bottom-color: rgba(palette(black), .06)
+                border-bottom-color: palette(black-o, 7)
             )
         ),
         stacked_light: (
             item: (
-                border-bottom-color: rgba(palette(white), .2)
+                border-bottom-color: palette(white-o, 20)
             )
         )
     ),
@@ -459,7 +462,7 @@ $colors: (
             item: (
                 active: (
                     link: (
-                        color: rgba(palette(black), .4)
+                        color: palette(black-o, 40)
                     )
                 )
             ),
@@ -468,7 +471,7 @@ $colors: (
                     color: palette(black)
                 ),
                 hover: (
-                    color: rgba(palette(black), .6)
+                    color: palette(black-o, 60)
                 )
             )
         ),
@@ -476,7 +479,7 @@ $colors: (
             item: (
                 active: (
                     link: (
-                        color: rgba(palette(black), .4)
+                        color: palette(black-o, 40)
                     )
                 )
             ),
@@ -493,13 +496,13 @@ $colors: (
             item: (
                 active: (
                     link: (
-                        color: rgba(palette(white), .5)
+                        color: palette(white-o, 50)
                     )
                 )
             ),
             link: (
                 base: (
-                    color: rgba(palette(white), .85)
+                    color: palette(white-o, 80)
                 ),
                 hover: (
                     color: palette(white)
@@ -516,7 +519,7 @@ $colors: (
             ),
             link: (
                 base: (
-                    color: rgba(palette(black), .6)
+                    color: palette(black-o, 60)
                 ),
                 hover: (
                     color: palette(black)
@@ -537,13 +540,13 @@ $colors: (
                     color: palette(black)
                 ),
                 hover: (
-                    background-color: rgba(palette(black), .1)
+                    background-color: palette(black-o, 10)
                 )
             )
         ),
         tabs: (
             list: (
-                border-bottom-color: rgba(palette(black), .1)
+                border-bottom-color: palette(black-o, 10)
             ),
             item: (
                 active: (
@@ -557,7 +560,7 @@ $colors: (
             link: (
                 base: (
                     background-color: transparent,
-                    color: rgba(palette(black), .5),
+                    color: palette(black-o, 50),
                     border-bottom-color: transparent
                 ),
                 hover: (
@@ -569,8 +572,8 @@ $colors: (
         )
     ),
     overlay: (
-        light: rgba(palette(white), .5),
-        dark: rgba(palette(black), .5)
+        light: palette(white-o, 50),
+        dark: palette(black-o, 50)
     ),
     pagination: (
         default: (
@@ -587,18 +590,18 @@ $colors: (
                 base: (
                     background-color: transparent,
                     color: palette(black),
-                    border-color: rgba(palette(black), .15)
+                    border-color: palette(black-o, 15)
                 ),
                 hover: (
                     background-color: transparent,
-                    color: rgba(palette(black), .6)
+                    color: palette(black-o, 60)
                 )
             )
         )
     ),
     placeholder: (
-        base: rgba(palette(black), .4),
-        light: rgba(palette(white), .55),
+        base: palette(black-o, 40),
+        light: palette(white-o, 50),
     ),
     pre: (
         background: palette(neutral, lightest),
@@ -607,12 +610,12 @@ $colors: (
     ),
     shadow: (
         default: (
-            100: rgba(palette(black), .1),
-            150: rgba(palette(black), .1),
-            200: rgba(palette(black), .1),
-            250: rgba(palette(black), .1),
-            300: rgba(palette(black), .1),
-            350: rgba(palette(black), .25)
+            100: palette(black-o, 10),
+            150: palette(black-o, 10),
+            200: palette(black-o, 10),
+            250: palette(black-o, 10),
+            300: palette(black-o, 10),
+            350: palette(black-o, 25)
         )
     ),
     table: (
@@ -625,13 +628,13 @@ $colors: (
     text: (
         dark: palette(black),
         default: palette(neutral, darker),
-        moderated: rgba(palette(black), .7),
-        muted: rgba(palette(black), .5),
+        moderated: palette(black-o, 70),
+        muted: palette(black-o, 50),
         success: palette(positive, dark),
         error: palette(negative, dark),
         light: palette(white),
-        light-moderated: rgba(palette(white), .8),
-        light-muted: rgba(palette(white), .5),
+        light-moderated: palette(white-o, 80),
+        light-muted: palette(white-o, 50),
         primary: palette(primary, base)
     )
 ) !default;

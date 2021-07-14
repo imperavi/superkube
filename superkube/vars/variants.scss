@@ -113,8 +113,8 @@ $variants: (
             padding: 0.3em 0.4em
         ),
         error: (
-            base: (
-                box-shadow: 0 0 2px color(input, error, base, shadow)
+            focus: (
+                box-shadow: 0 0 2px color(input, error, focus, shadow)
             )
         )
     ),

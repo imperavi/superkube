@@ -136,7 +136,7 @@ $colors: (
             disabled: (
                 background-color: palette(black),
                 border-color: transparent,
-                color: rgba(palette(neutral, lightest), .75)
+                color: rgba(palette(white), .7)
             )
         ),
         primary: (
@@ -153,7 +153,7 @@ $colors: (
             disabled: (
                 background-color: palette(black),
                 border-color: transparent,
-                color: rgba(palette(neutral, lightest), .75)
+                color: rgba(palette(white), .7)
             )
         )
     ),
@@ -196,7 +196,7 @@ $colors: (
         primary: palette(primary, base)
     ),
     hint: (
-        default: rgba(palette(neutral, darker), .55),
+        default: rgba(palette(black), .5),
         success: palette(positive, dark),
         error: palette(negative, dark),
         required: palette(negative, base)
@@ -227,8 +227,8 @@ $colors: (
                 background-color: palette(white)
             ),
             focus: (
-                border-color: rgba(palette(active, base), .5),
-                shadow: rgba(palette(active, base), .3)
+                border-color: palette(active, light),
+                shadow: palette(active, base)
             )
         ),
         light: (
@@ -248,8 +248,8 @@ $colors: (
                 border-color: palette(negative, base),
             ),
             focus: (
-                border-color: rgba(palette(negative, base), .5),
-                shadow: rgba(palette(negative, base), .3)
+                border-color: palette(negative, base),
+                shadow: palette(negative, base)
             )
         )
     ),

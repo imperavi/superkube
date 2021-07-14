@@ -208,15 +208,18 @@ $colors: (
     ),
     inline: (
         var: (
-            text: rgba(palette(black), .85)
+            color: rgba(palette(black), .85)
         ),
         kbd: (
-            border: rgba(palette(black), .15),
-            text: rgba(palette(black), .85)
+            border-color: rgba(palette(black), .15),
+            color: rgba(palette(black), .80)
         ),
         code: (
             background: palette(neutral, lightest),
-            text: rgba(palette(black), .85)
+            color: rgba(palette(black), .80)
+        ),
+        cite: (
+            color: rgba(palette(black), .70)
         )
     ),
     input: (

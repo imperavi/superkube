@@ -50,6 +50,7 @@
 $color-list: ();
 @function create-colors($colors, $keys...) {
     $str: to-string($keys, '-');
+
     @each $key, $value in $colors {
         @if type-of($value) == map {
             $value: create-var-from-color($str, $key, $value);
@@ -57,8 +58,16 @@ $color-list: ();
         }
         @else {
             @if length($value) > 0 and $value != false {
-                $index: get-color-index(#{$str}-#{$key});
-                $colors: map-merge($colors, (#{$key}: var(--c#{$index})));
+                @if {
+                    $index: $str + '-' + $key;
+                    $index: color-replace($index);
+                    $colors: map-merge($colors, (#{$key}: var(--#{$index})));
+                }
+                @else {
+                    $index: get-color-index(#{$str}-#{$key});
+                    $colors: map-merge($colors, (#{$key}: var(--c#{$index})));
+                }
+
             }
         }
     }
@@ -73,8 +82,15 @@ $color-list: ();
         }
         @else {
             @if length($value) > 0 and $value != false {
-                $index: get-color-index(#{$str}-#{$name}-#{$key});
-                $map: map-merge($map, (#{$key}: var(--c#{$index})));
+                @if $color-names {
+                    $index: $str + '-' + $name + '-' + $key;
+                    $index: color-replace($index);
+                    $map: map-merge($map, (#{$key}: var(--#{$index})));
+                }
+                @else {
+                    $index: get-color-index(#{$str}-#{$name}-#{$key});
+                    $map: map-merge($map, (#{$key}: var(--c#{$index})));
+                }
             }
         }
     }
@@ -91,6 +107,43 @@ $color-list: ();
         @return create-colors($map, $keys...);
     }
 }
+// color
+@function color($keys...) {
+    $color: map-deep-get($colors, $keys...);
+    $str: to-string($keys, '-');
+
+    @if (type-of($color) == 'map') {
+        @if $color-names {
+            $name1: color-replace($str + '-from');
+            $name2: color-replace($str + '-to');
+
+            @return (
+                from: var(--#{$name1}),
+                to: var(--#{$name2})
+            );
+        }
+        @else {
+            $index1: get-color-index(#{$str}-from);
+            $index2: get-color-index(#{$str}-to);
+
+            @return (
+                from: var(--c#{$index1}),
+                to: var(--c#{$index2})
+            );
+        }
+    }
+    @else {
+        @if $color-names {
+            $name: color-replace($str);
+            @return var(--#{$name});
+        }
+        @else {
+            $index: get-color-index(#{$str});
+            @return var(--c#{$index});
+        }
+    }
+}
+
 
 @function get-color-index($str) {
     $index: index($color-list, $str);
@@ -101,26 +154,32 @@ $color-list: ();
 
     @return $index;
 }
+@function str-replace($string, $search, $replace: '') {
+    $index: str-index($string, $search);
 
-// color
-@function color($keys...) {
-    $color: map-deep-get($colors, $keys...);
-    $str: to-string($keys, '-');
-
-    @if (type-of($color) == 'map') {
-        $index1: get-color-index(#{$str}-from);
-        $index2: get-color-index(#{$str}-to);
-
-        @return (
-            from: var(--c#{$index1}),
-            to: var(--c#{$index2})
-        );
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
     }
-    @else {
-        $index: get-color-index(#{$str});
 
-        @return var(--c#{$index});
+    @return $string;
+}
+@function color-replace($str) {
+    $replacers: (
+        -background-color: bg,
+        -border-color: b,
+        -shadow: sh,
+        -color: c
+    );
+    $replace: '';
+    @each $name, $val in $replacers {
+        $index: str-index($str, $name);
+        @if $index {
+            $str: str-slice($str, 1, $index - 1) + $replace + str-replace(str-slice($str, $index + str-length($name)), $name, $replace);
+            $str: $str + '-' + $val;
+        }
     }
+
+    @return $str;
 }
 
 // scale
@@ -155,14 +214,14 @@ $color-list: ();
 
 @function build-shadows($map, $name, $value) {
     $shadow: map-get($map, $value);
-    $index: get-color-index(shadow-#{$name}-#{$value});
-    $color: var(--c#{$index});
+    $index: shadow-#{$name}-#{$value};
+    $color: var(--#{$index});
 
     @if type-of($shadow) == 'map' {
         $map: ();
         @each $key, $val in $shadow {
-            $index: get-color-index(shadow-#{$name}-#{$value}-#{$key});
-            $color: var(--c#{$index});
+            $index: shadow-#{$name}-#{$value}-#{$key};
+            $color: var(--#{$index});
             $str: $val $color;
             $map: map-merge($map, ($key: $str));
         }

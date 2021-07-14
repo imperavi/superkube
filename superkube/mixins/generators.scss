@@ -117,7 +117,6 @@
             $str: $name;
             $list: str-split($key, '_');
             @if length($list) > 1 {
-                @debug $name;
                 $str: $prefix + '-' + to-string($list, $prefix + '-');
             }
 
@@ -268,6 +267,7 @@
 
 
 
+
 // colors
 @mixin generate-root-colors($colors) {
     @each $name, $map in $colors {
@@ -275,27 +275,36 @@
             @include split-color-to-var($name, $map);
         }
         @else {
-            @if length($map) > 0 and $map != false {
-                $index: get-color-index(#{$name});
-                --c#{$index}: #{$map};
+            @if length($map) > 0 {
+                @if $color-names {
+                    $name: color-replace($name);
+                    --#{$name}: #{$map};
+                }
+                @else {
+                    $index: get-color-index(#{$name});
+                    --c#{$index}: #{$map};
+                }
             }
         }
     }
 }
-@mixin split-color-to-var($name, $map) {
+@mixin split-color-to-var($sel, $map) {
     @each $key, $value in $map {
         @if type-of($value) == map {
-            @include split-color-to-var('#{$name}-#{$key}', $value);
+            @include split-color-to-var(#{$sel}-#{$key}, $value);
         }
         @else {
-            @if $value != false {
-                $index: get-color-index(#{$name}-#{$key});
+            @if $color-names {
+                $name: color-replace($sel + '-' + $key);
+                --#{$name}: #{$value};
+            }
+            @else {
+                $index: get-color-index(#{$sel}-#{$key});
                 --c#{$index}: #{$value};
             }
         }
     }
 }
-
 
 // base headings
 @mixin generate-base-headings($map, $breakpoint) {

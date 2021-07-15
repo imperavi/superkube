@@ -466,7 +466,7 @@ input, textarea, select {
   padding: 0.3em 0.4em; }
 
 input, textarea, select {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5; }
 
 .input-large {
@@ -1100,11 +1100,11 @@ a.button,
   height: 42px; }
   a.button,
   .button {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.25; }
   a.button-small,
   .button-small {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.25; }
   a.button-large,
   .button-large {
@@ -1182,7 +1182,7 @@ a.button,
     padding: 0.4em 24px; }
   a.button-small,
   .button-small {
-    font-size: 14px;
+    font-size: 15px;
     border-radius: 4px;
     padding: 0.4em 14px; }
   a.button-small,
@@ -2465,7 +2465,7 @@ a.label,
   margin-top: -2px; }
 
 .menu .menu-link {
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.3; }
 
 .menu-caps .menu-link {
@@ -2474,6 +2474,10 @@ a.label,
 
 .menu-small .menu-link {
   font-size: 13px;
+  line-height: 1.3; }
+
+.menu-medium .menu-link {
+  font-size: 14px;
   line-height: 1.3; }
 
 .menu .menu-item.active .menu-link {

@@ -8,22 +8,20 @@ $scales: (
             h4: 16px 1.5,
             quote: 18px 1.5,
             quotecite: 12px 1.5,
-            table: 15px 1.5,
+            table: 14px 1.5,
             pre: 14px 1.5,
             figcaption: 13px 1.5
         ),
         text: (
             giga: 36px 1.5,
             mega: 24px 1.5,
-            huge: 20px 1.5,
+            huge: 21px 1.5,
             large: 18px 1.5,
             default: 16px 1.5,
-            reduced: 15px 1.5,
             medium: 14px 1.5,
             small: 13px 1.5,
             tiny: 12px 1.5,
-            micro: 11px 1.5,
-            atomic: 10px 1.5
+            micro: 11px 1.5
         ),
         heading: (
             giga: 80px 1.1,
@@ -31,17 +29,17 @@ $scales: (
             huge: 48px 1.2,
             large: 36px 1.2,
             medium: 24px 1.3,
-            small: 20px 1.4,
+            small: 21px 1.4,
             micro: 16px 1.5,
             eyebrow: 11px 1.5
         ),
         input: (
-            default: 15px 1.5,
+            default: 14px 1.5,
             large: 21px 1.5
         ),
         button: (
-            small: 15px 1.25,
-            default: 15px 1.25,
+            small: 14px 1.25,
+            default: 14px 1.25,
             large: 18px 1.25
         ),
         form: (
@@ -52,13 +50,12 @@ $scales: (
             default: 11px,
             large: 14px,
             huge: 16px,
-            mega: 20px
+            mega: 21px
         ),
         caption: (
             caps: 13px,
             small: 13px,
-            medium: 14px,
-            default: 15px
+            default: 14px
         ),
         label: (
             caps: 11px,
@@ -66,21 +63,19 @@ $scales: (
             large: 14px
         ),
         alert: (
-            default: 15px 1.5
+            default: 14px 1.5
         ),
         nav: (
             small: 13px,
-            medium: 14px,
-            default: 15px
+            default: 14px
         ),
         menu: (
             caps: 13px 1.3,
             small: 13px 1.3,
-            medium: 14px 1.3,
-            default: 15px 1.3
+            default: 14px 1.3
         ),
         pagination: (
-            default: 15px
+            default: 14px
         ),
         breadcrumb: (
             default: 14px 1.5

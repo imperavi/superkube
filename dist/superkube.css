@@ -445,7 +445,7 @@ input, textarea, select {
   border-style: solid; }
   input:focus, textarea:focus, select:focus {
     border-color: var(--input-default-focus-b);
-    box-shadow: 0 0 2px var(--input-default-focus-sh); }
+    box-shadow: 0 0 4px var(--input-default-focus-sh); }
 
 .input-light {
   color: var(--input-light-base-c);
@@ -459,7 +459,7 @@ input, textarea, select {
   border-color: var(--input-error-base-b); }
   .input-error:focus {
     border-color: var(--input-error-focus-b);
-    box-shadow: 0 0 2px var(--input-error-focus-sh); }
+    box-shadow: 0 0 4px var(--input-error-focus-sh); }
 
 .input-large {
   border-radius: 4px;
@@ -654,7 +654,7 @@ input[type="checkbox"] {
   --input-default-base-b: #D7D7D9;
   --input-default-base-bg: #ffffff;
   --input-default-focus-b: #A7BEF5;
-  --input-default-focus-sh: #245DE5;
+  --input-default-focus-sh: rgba(36, 93, 229, 0.3);
   --input-light-base-c: rgba(255, 255, 255, 0.9);
   --input-light-base-b: rgba(255, 255, 255, 0.25);
   --input-light-base-bg: rgba(255, 255, 255, 0.07);
@@ -663,7 +663,7 @@ input[type="checkbox"] {
   --input-error-base-c: #C83B46;
   --input-error-base-b: #EB424C;
   --input-error-focus-b: #EB424C;
-  --input-error-focus-sh: #EB424C;
+  --input-error-focus-sh: rgba(235, 66, 76, 0.3);
   --label-default-base-bg: #EFF1F2;
   --label-default-base-c: #223542;
   --label-default-info-bg: #E4EBFB;

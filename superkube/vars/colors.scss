@@ -231,7 +231,7 @@ $colors: (
             ),
             focus: (
                 border-color: palette(active, light),
-                shadow: palette(active, base)
+                shadow: rgba(palette(active, base), .3)
             )
         ),
         light: (
@@ -252,7 +252,7 @@ $colors: (
             ),
             focus: (
                 border-color: palette(negative, base),
-                shadow: palette(negative, base)
+                shadow: rgba(palette(negative, base), .3)
             )
         )
     ),

@@ -281,13 +281,14 @@ label {
     & .hint,
     & .success,
     & .error {
-       text-transform: none;
-       font-weight: normal;
+        text-transform: none;
+        font-weight: normal;
     }
     &.checkbox {
-       cursor: pointer;
-       color: inherit;
-       font-size: 100%;
+        font-size: type-size(form, checkbox);
+        line-height: type-line(form, checkbox);
+        cursor: pointer;
+        color: inherit;
     }
     &.checkbox.disabled {
         opacity: 0.5;

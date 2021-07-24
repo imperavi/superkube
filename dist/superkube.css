@@ -369,15 +369,16 @@ sup {
 label {
   display: block;
   font-size: 16px;
-  font-weight: normal;
   color: var(--form-label-text);
-  margin-bottom: 0.15em; }
+  margin-bottom: 0.15em;
+  font-weight: normal; }
   label.checkbox,
   label .hint,
   label .success,
   label .error {
     text-transform: none;
-    font-weight: normal; }
+    font-weight: normal;
+    letter-spacing: 0; }
   label.checkbox {
     font-size: 15px;
     line-height: 1.5;

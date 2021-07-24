@@ -273,9 +273,14 @@ sup {
 label {
     display: block;
     font-size: type-size(form, label);
-    font-weight: variant(form, label, font-weight);
     color: color(form, label, text);
     margin-bottom: 0.15em;
+
+    // label properties
+    $labelvariant: variant(form, label);
+    @each $key, $value in $labelvariant {
+        #{$key}: $value;
+    }
 
     &.checkbox,
     & .hint,
@@ -283,6 +288,7 @@ label {
     & .error {
         text-transform: none;
         font-weight: normal;
+        letter-spacing: 0;
     }
     &.checkbox {
         font-size: type-size(form, checkbox);

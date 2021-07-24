@@ -368,7 +368,7 @@ sup {
 
 label {
   display: block;
-  font-size: 16px;
+  font-size: 15px;
   color: var(--form-label-text);
   margin-bottom: 0.15em;
   font-weight: normal; }

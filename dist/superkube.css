@@ -2118,10 +2118,11 @@ a.caption,
   font-weight: 900; }
 
 .hint {
-  font-style: normal;
   font-size: 13px;
   line-height: 1.5;
-  color: var(--hint-default); }
+  color: var(--hint-default);
+  font-weight: normal;
+  font-style: normal; }
 
 div.hint {
   margin-top: 2px; }

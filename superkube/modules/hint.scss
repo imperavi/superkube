@@ -1,9 +1,14 @@
 // =Hint
 .hint {
-    font-style: normal;
     font-size: type-size(form, hint);
     line-height: type-line(form, hint);
     color: color(hint, default);
+
+    // hint properties
+    $hintvariant: variant(form, hint);
+    @each $key, $value in $hintvariant {
+        #{$key}: $value;
+    }
 }
 div.hint {
     margin-top: 2px;

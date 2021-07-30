@@ -3121,10 +3121,6 @@ a.label,
     background-color: var(--pagination-default-link-hover-bg);
     color: var(--pagination-default-link-hover-c); }
 
-.pagination .pagination-ellipsis {
-  margin-left: 2rem;
-  margin-right: 2rem; }
-
 .position-relative {
   position: relative; }
 

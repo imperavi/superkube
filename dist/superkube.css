@@ -1316,6 +1316,9 @@ a.caption,
 .container-small {
   max-width: 400px; }
 
+.container-content {
+  max-width: 800px; }
+
 .container-medium {
   max-width: 960px; }
 
@@ -1324,9 +1327,6 @@ a.caption,
 
 .container-large {
   max-width: 1200px; }
-
-.container-content {
-  max-width: 800px; }
 
 .container-full {
   max-width: 100%; }

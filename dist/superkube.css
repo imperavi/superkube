@@ -566,6 +566,9 @@ input[type="checkbox"] {
   --background-light: #ffffff;
   --background-dark: #031927;
   --background-primary: #245DE5;
+  --background-aluminum: #F5F6F7;
+  --background-silver: #EFF1F2;
+  --background-platinum: #E8EAEB;
   --background-neutral-lightest: #F5F6F7;
   --background-neutral-lighter: #EFF1F2;
   --background-neutral-light: #E8EAEB;
@@ -836,6 +839,15 @@ input[type="checkbox"] {
 
 .bg-primary {
   background-color: var(--background-primary); }
+
+.bg-aluminum {
+  background-color: var(--background-aluminum); }
+
+.bg-silver {
+  background-color: var(--background-silver); }
+
+.bg-platinum {
+  background-color: var(--background-platinum); }
 
 .bg-neutral-lightest {
   background-color: var(--background-neutral-lightest); }

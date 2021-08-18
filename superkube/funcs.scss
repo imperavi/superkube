@@ -58,7 +58,7 @@ $color-list: ();
         }
         @else {
             @if length($value) > 0 and $value != false {
-                @if {
+                @if $color-names {
                     $index: $str + '-' + $key;
                     $index: color-replace($index);
                     $colors: map-merge($colors, (#{$key}: var(--#{$index})));
@@ -67,7 +67,6 @@ $color-list: ();
                     $index: get-color-index(#{$str}-#{$key});
                     $colors: map-merge($colors, (#{$key}: var(--c#{$index})));
                 }
-
             }
         }
     }

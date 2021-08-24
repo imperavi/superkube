@@ -439,12 +439,18 @@ $colors: (
             item: (
                 before: (
                     color: palette(black-o, 60)
+                ),
+                after: (
+                    color: palette(black-o, 60)
                 )
             )
         ),
         numbered_light: (
             item: (
                 before: (
+                    color: palette(white-o, 60)
+                ),
+                after: (
                     color: palette(white-o, 60)
                 )
             )

@@ -87,3 +87,12 @@
         content: counter(table-of-contents, decimal-leading-zero);
     }
 }
+.menu-numbered-right {
+    .menu-item:before {
+        display: none;
+    }
+    .menu-item:after {
+        content: counter(table-of-contents, decimal-leading-zero);
+        text-align: right;
+    }
+}

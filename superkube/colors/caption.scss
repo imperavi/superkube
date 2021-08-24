@@ -1,0 +1,25 @@
+// =Caption
+$colors: map-extend($colors, (
+    caption: (
+        default: (
+            base: (
+                color: palette(neutral, base)
+            ),
+            info: (
+                color: palette(active, dark)
+            ),
+            positive: (
+                color: palette(positive, dark)
+            ),
+            important: (
+                color: palette(negative, dark)
+            ),
+            dark: (
+                color: palette(black)
+            ),
+            light: (
+                color: palette(white)
+            )
+        )
+    )
+));

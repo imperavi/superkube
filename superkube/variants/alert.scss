@@ -1,0 +1,10 @@
+// =Alert
+$variants: map-extend($variants, (
+    alert: (
+        default: (
+            padding: 4rem 5rem,
+            border-radius: radius(base),
+            border: 1px solid transparent
+        )
+    )
+));

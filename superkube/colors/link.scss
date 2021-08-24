@@ -1,0 +1,61 @@
+// =Link
+$colors: map-extend($colors, (
+    link: (
+        default: (
+            base: (
+                color: palette(active, dark)
+            ),
+            hover: (
+                color: palette(negative, dark)
+            )
+        ),
+        dark: (
+            base: (
+                color: palette(black)
+            ),
+            hover: (
+                color: palette(black-o, 60)
+            )
+        ),
+        muted: (
+            base: (
+                color: palette(black-o, 50)
+            ),
+            hover: (
+                color: palette(black)
+            )
+        ),
+        moderated: (
+            base: (
+                color: palette(black-o, 70)
+            ),
+            hover: (
+                color: palette(black)
+            )
+        ),
+        light: (
+            base: (
+                color: palette(white)
+            ),
+            hover: (
+                color: palette(white-o, 60)
+            )
+        ),
+        light-moderated: (
+            base: (
+                color: palette(white-o, 70)
+            ),
+            hover: (
+                color: palette(white)
+            )
+        ),
+        primary: (
+            base: (
+                color: palette(primary, dark)
+            ),
+            hover: (
+                color: palette(primary, darker)
+            )
+        )
+    )
+));

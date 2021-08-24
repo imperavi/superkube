@@ -1,0 +1,7 @@
+// =Placeholder
+$colors: map-extend($colors, (
+    placeholder: (
+        base: palette(black-o, 40),
+        light: palette(white-o, 50),
+    )
+));

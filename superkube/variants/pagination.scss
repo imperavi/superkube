@@ -1,0 +1,16 @@
+// =Pagination
+$variants: map-extend($variants, (
+    pagination: (
+        default: (
+            item: (
+                margin-right: 1rem
+            ),
+            link: (
+                min-width: 32px,
+                border-width: 1px,
+                padding: 6px 8px,
+                border-radius: radius(base)
+            )
+        )
+    )
+));

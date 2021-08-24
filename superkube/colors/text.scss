@@ -1,0 +1,15 @@
+// =Text
+$colors: map-extend($colors, (
+    text: (
+        dark: palette(black),
+        default: palette(neutral, darker),
+        moderated: palette(black-o, 70),
+        muted: palette(black-o, 50),
+        success: palette(positive, dark),
+        error: palette(negative, dark),
+        light: palette(white),
+        light-moderated: palette(white-o, 80),
+        light-muted: palette(white-o, 50),
+        primary: palette(primary, base)
+    )
+));

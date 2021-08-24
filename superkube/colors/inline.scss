@@ -1,0 +1,19 @@
+// =Inline
+$colors: map-extend($colors, (
+    inline: (
+        var: (
+            color: palette(black-o, 80)
+        ),
+        kbd: (
+            border-color: palette(black-o, 15),
+            color: palette(black-o, 80)
+        ),
+        code: (
+            background-color: palette(neutral, lightest),
+            color: palette(black-o, 80)
+        ),
+        cite: (
+            color: palette(black-o, 70)
+        )
+    )
+));

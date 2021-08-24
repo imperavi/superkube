@@ -1,0 +1,6 @@
+// =Line
+$colors: map-extend($colors, (
+    line: (
+        default: palette(black-o, 10)
+    )
+));

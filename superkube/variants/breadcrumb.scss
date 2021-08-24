@@ -1,0 +1,13 @@
+// =Breadcrumb
+$variants: map-extend($variants, (
+    breadcrumb: (
+        default: (
+            item: (
+                after: (
+                    margin-left: 2rem,
+                    margin-right: 2rem
+                )
+            )
+        )
+    )
+));

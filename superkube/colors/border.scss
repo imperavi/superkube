@@ -1,0 +1,9 @@
+// =Border
+$colors: map-extend($colors, (
+    border: (
+        dark-7: palette(black-o, 7),
+        dark-10: palette(black-o, 10),
+        light-25: palette(white-o, 25),
+        primary: palette(primary, base)
+    )
+));

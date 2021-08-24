@@ -1,0 +1,8 @@
+// =Pre
+$colors: map-extend($colors, (
+    pre: (
+        background: palette(neutral, lightest),
+        text: palette(neutral, darker),
+        border: transparent
+    )
+));

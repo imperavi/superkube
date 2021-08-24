@@ -1,0 +1,7 @@
+// =Table
+$colors: map-extend($colors, (
+    table: (
+        border: palette(neutral, light),
+        striped: palette(neutral, lightest)
+    )
+));

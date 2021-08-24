@@ -1,0 +1,6 @@
+// =Body
+$colors: map-extend($colors, (
+    body: (
+        default: palette(white)
+    )
+));

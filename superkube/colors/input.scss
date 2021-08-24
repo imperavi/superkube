@@ -1,0 +1,37 @@
+// =Input
+$colors: map-extend($colors, (
+    input: (
+        default: (
+            base: (
+                color: palette(neutral, darker),
+                border-color: palette(neutral, mid),
+                background-color: palette(white)
+            ),
+            focus: (
+                border-color: palette(active, light),
+                shadow: rgba(palette(active, base), .3)
+            )
+        ),
+        light: (
+            base: (
+                color: palette(white-o, 90),
+                border-color: palette(white-o, 25),
+                background-color: palette(white-o, 7)
+            ),
+            focus: (
+                border-color: palette(white-o, 50),
+                shadow: palette(white-o, 30)
+            )
+        ),
+        error: (
+            base: (
+                color: palette(negative, dark),
+                border-color: palette(negative, base),
+            ),
+            focus: (
+                border-color: palette(negative, base),
+                shadow: rgba(palette(negative, base), .3)
+            )
+        )
+    )
+));

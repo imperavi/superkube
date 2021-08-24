@@ -1,0 +1,25 @@
+// =Breadcrumb
+$colors: map-extend($colors, (
+    breadcrumb: (
+        default: (
+            item: (
+                after: (
+                    color: palette(black-o, 25)
+                ),
+                active: (
+                    link: (
+                        color: palette(black-o, 40)
+                    )
+                )
+            ),
+            link: (
+                base: (
+                    color: palette(black)
+                ),
+                hover: (
+                    color: palette(black-o, 60)
+                )
+            )
+        )
+    )
+));

@@ -1,0 +1,8 @@
+// =Form
+$colors: map-extend($colors, (
+    form: (
+        label: (
+            text: palette(neutral, darker)
+        )
+    )
+));

@@ -1,0 +1,26 @@
+// =Badge
+$variants: map-extend($variants, (
+    badge: (
+        default: (
+            font-weight: 600,
+            border-radius: 99px,
+            padding: 1px 4px,
+            border: 1px solid transparent,
+            line-height: 16px,
+            min-width: 20px,
+            min-height: 20px
+        ),
+        large: (
+            min-height: 26px,
+            min-width: 26px
+        ),
+        huge: (
+            min-height: 36px,
+            min-width: 36px
+        ),
+        mega: (
+            min-height: 48px,
+            min-width: 48px
+        )
+    )
+));

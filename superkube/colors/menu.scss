@@ -1,0 +1,121 @@
+// =Menu
+$colors: map-extend($colors, (
+    menu: (
+        default: (
+            item: (
+                active: (
+                    link: (
+                        color: palette(black-o, 40)
+                    )
+                )
+            ),
+            link: (
+                base: (
+                    color: palette(black)
+                ),
+                hover: (
+                    color: palette(black-o, 60)
+                )
+            )
+        ),
+        primary: (
+            item: (
+                active: (
+                    link: (
+                        color: palette(black-o, 40)
+                    )
+                )
+            ),
+            link: (
+                base: (
+                    color: palette(primary, dark)
+                ),
+                hover: (
+                    color: palette(primary, darker)
+                )
+            )
+        ),
+        light: (
+            item: (
+                active: (
+                    link: (
+                        color: palette(white-o, 50)
+                    )
+                )
+            ),
+            link: (
+                base: (
+                    color: palette(white-o, 80)
+                ),
+                hover: (
+                    color: palette(white)
+                )
+            )
+        ),
+        muted: (
+            item: (
+                active: (
+                    link: (
+                        color: palette(black)
+                    )
+                )
+            ),
+            link: (
+                base: (
+                    color: palette(black-o, 60)
+                ),
+                hover: (
+                    color: palette(black)
+                )
+            )
+        ),
+        pills: (
+            item: (
+                active: (
+                    link: (
+                        color: palette(neutral, lightest),
+                        background-color: palette(black)
+                    )
+                )
+            ),
+            link: (
+                base: (
+                    color: palette(black)
+                ),
+                hover: (
+                    background-color: palette(black-o, 10)
+                )
+            )
+        ),
+        numbered: (
+            item: (
+                before: (
+                    color: palette(black-o, 60)
+                ),
+                after: (
+                    color: palette(black-o, 60)
+                )
+            )
+        ),
+        numbered_light: (
+            item: (
+                before: (
+                    color: palette(white-o, 60)
+                ),
+                after: (
+                    color: palette(white-o, 60)
+                )
+            )
+        ),
+        stacked: (
+            item: (
+                border-bottom-color: palette(black-o, 7)
+            )
+        ),
+        stacked_light: (
+            item: (
+                border-bottom-color: palette(white-o, 20)
+            )
+        )
+    )
+));

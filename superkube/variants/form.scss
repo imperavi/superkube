@@ -1,0 +1,12 @@
+// =Form
+$variants: map-extend($variants, (
+    form: (
+        label: (
+            font-weight: normal
+        ),
+        hint: (
+            font-weight: normal,
+            font-style: normal
+        )
+    )
+));

@@ -1,0 +1,17 @@
+// =Caption
+$variants: map-extend($variants, (
+    caption: (
+        default: (
+            font-weight: normal
+        ),
+        semibold: (
+            font-weight: 600
+        ),
+        strong: (
+            font-weight: bold
+        ),
+        caps: (
+            text-transform: uppercase
+        )
+    )
+));

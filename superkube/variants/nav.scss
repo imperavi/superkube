@@ -1,0 +1,78 @@
+// =Nav
+$variants: map-extend($variants, (
+    nav: (
+        default: (
+            item: (
+                margin-right: 5rem
+            )
+        ),
+        semibold: (
+            link: (
+                font-weight: 600
+            )
+        ),
+        strong: (
+            link: (
+                font-weight: bold
+            )
+        ),
+        pills: (
+            item: (
+                margin-right: 1rem
+            ),
+            link: (
+                padding: 7px 16px,
+                border-radius: 99px
+            )
+        ),
+        tabs: (
+            list: (
+                border-bottom-width: 2px
+            ),
+            item: (
+                margin-right: 1px
+            ),
+            link: (
+                border-bottom-width: 2px,
+                margin-bottom: -2px,
+                padding: 12px 12px 10px 12px
+            )
+        ),
+        centered: (
+            item: (
+                margin-left: 2rem,
+                margin-right: 2rem
+            )
+        ),
+        centered_pills: (
+            item: (
+                margin-left: 0.5rem,
+                margin-right: 0.5rem
+            )
+        ),
+        centered_tabs: (
+            item: (
+                margin-left: 1px,
+                margin-right: 1px
+            )
+        ),
+        right: (
+            item: (
+                margin-right: 0,
+                margin-left: 5rem
+            )
+        ),
+        right_pills: (
+            item: (
+                margin-right: 0,
+                margin-left: 1rem
+            )
+        ),
+        right_tabs: (
+            item: (
+                margin-right: 1px,
+                margin-left: 0
+            )
+        )
+    )
+));

@@ -2,6 +2,7 @@
 $palette: (
     black: #031927,
     black-o: (
+        5: rgba(#031927, .05),
         7: rgba(#031927, .07),
         10: rgba(#031927, .1),
         15: rgba(#031927, .15),
@@ -17,6 +18,7 @@ $palette: (
     ),
     white: #ffffff,
     white-o: (
+        5: rgba(#ffffff, .05),
         7: rgba(#ffffff, .07),
         10: rgba(#ffffff, .1),
         15: rgba(#ffffff, .15),

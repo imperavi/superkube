@@ -70,8 +70,7 @@
             $map: $colormap;
         }
         @else {
-            $map: map-extend($colormap, $map);
-            $map: map-reverse($map);
+            $map: map-extend($map, $colormap);
         }
     }
 

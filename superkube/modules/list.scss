@@ -19,3 +19,70 @@
     content: "\2014";
     margin-right: 6px;
 }
+.list {
+    list-style: none;
+    margin-left: 0;
+
+    .list-item {
+        display: flex;
+        align-items: center;
+        flex-flow: wrap;
+    }
+    .list-item .list {
+        width: 100%;
+        margin-top: 3px;
+        margin-bottom: 3px;
+        margin-left: 5rem;
+    }
+    .list + h4,
+    .list + h5,
+    .list + h6 {
+        margin-top: 5rem;
+    }
+    & .label {
+        margin-top: -2px;
+    }
+
+    // =Variants
+    @include generate-type(list, '.list-item');
+    @include generate-variants('.list', list, true);
+}
+
+// =Stacked
+.list-stacked {
+    .list-item {
+        border-bottom-style: solid;
+    }
+    .list-item:last-child {
+        border-bottom-color: transparent;
+    }
+}
+
+// =Bordered
+.list-bordered {
+    border-style: solid;
+    .list-item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+// =Numbered
+.list-numbered {
+    counter-reset: table-of-contents;
+
+    .list-item {
+        counter-increment: table-of-contents;
+    }
+    .list-item:before {
+        content: counter(table-of-contents, decimal-leading-zero);
+    }
+}
+.list-numbered-right {
+    .list-item:before {
+        display: none;
+    }
+    .list-item:after {
+        content: counter(table-of-contents, decimal-leading-zero);
+        text-align: right;
+    }
+}

@@ -1,0 +1,36 @@
+// =List
+$variants: map-extend($variants, (
+    list: (
+        default: (
+            item: (
+                padding: 5px 0
+            )
+        ),
+        stacked: (
+            item: (
+                border-bottom-width: 1px,
+                padding: 8px 0
+            )
+        ),
+        bordered: (
+            border-width: 1px,
+            border-radius: radius(base),
+            item: (
+                margin-bottom: 1px,
+                padding: 6px 12px
+            )
+        ),
+        numbered: (
+            item: (
+                before: (
+                    width: 24px,
+                    font-size: 80%
+                ),
+                after: (
+                    width: 24px,
+                    font-size: 80%
+                )
+            )
+        )
+    )
+));

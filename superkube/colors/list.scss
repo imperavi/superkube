@@ -1,0 +1,38 @@
+// =List
+$colors: map-extend($colors, (
+    list: (
+        numbered: (
+            item: (
+                before: (
+                    color: palette(black-o, 60)
+                ),
+                after: (
+                    color: palette(black-o, 60)
+                )
+            )
+        ),
+        numbered_light: (
+            item: (
+                before: (
+                    color: palette(white-o, 60)
+                ),
+                after: (
+                    color: palette(white-o, 60)
+                )
+            )
+        ),
+        bordered: (
+            border-color: palette(black-o, 7)
+        ),
+        stacked: (
+            item: (
+                border-bottom-color: palette(black-o, 7)
+            )
+        ),
+        stacked_light: (
+            item: (
+                border-bottom-color: palette(white-o, 20)
+            )
+        )
+    )
+));

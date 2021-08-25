@@ -62,7 +62,6 @@
 
 @mixin generate-variants($prefix, $modulename, $nested: false, $selector: false) {
     $map: variant($modulename);
-
     $colormap: colors($modulename);
     $mods: false;
     @if $colormap != null {
@@ -72,8 +71,10 @@
         }
         @else {
             $map: map-extend($colormap, $map);
+            $map: map-reverse($map);
         }
     }
+
 
     @if $map != null {
         @if $selector != false {

@@ -34,7 +34,9 @@ $borders-colors: map-get($colors, border);
 // size
 $borders: scale(border);
 @each $name, $value in $borders {
-    .b-#{$name} { border-width: $value }
+    @if $name not 1 {
+        .b-#{$name} { border-width: $value }
+    }
 }
 @include for-sm {
     .b-off-sm { border-color: transparent !important; }
@@ -56,6 +58,8 @@ $borders: scale(border);
     }
 
     @each $name, $value in $borders {
-        .b-#{$name}-sm { border-width: $value }
+        @if $name not 1 {
+            .b-#{$name}-sm { border-width: $value }
+        }
     }
 }

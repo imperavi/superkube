@@ -39,6 +39,13 @@ $variants: map-extend($variants, (
                     padding: 0 0.6em
                 )
             )
+        ),
+        circle: (
+            item: (
+                base: (
+                    padding: 0 0.85em
+                )
+            )
         )
     )
 ));

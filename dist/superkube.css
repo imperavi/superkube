@@ -2386,6 +2386,8 @@ input[type="checkbox"] {
     line-height: 1.5; }
   .inner-addon .inner-addon-item {
     padding: 0 0.6em; }
+  .inner-addon-circle .inner-addon-item {
+    padding: 0 0.85em; }
 
 .inner-addon-right .inner-addon-item {
   right: 0; }

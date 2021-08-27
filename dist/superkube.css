@@ -2286,7 +2286,10 @@ input[type="checkbox"] {
     outline: 2px solid var(--input-error-base-b); }
 
 .input-addon {
-  display: flex; }
+  display: flex;
+  height: 42px; }
+  .input-addon-large {
+    height: 52px; }
   .input-addon input,
   .input-addon select {
     flex: 1;
@@ -2297,10 +2300,7 @@ input[type="checkbox"] {
     align-items: center;
     justify-content: center;
     vertical-align: middle;
-    text-align: center;
-    height: 42px; }
-    .input-addon .input-addon-item-large {
-      height: 52px; }
+    text-align: center; }
   .input-addon {
     font-size: 15px;
     line-height: 1.5; }

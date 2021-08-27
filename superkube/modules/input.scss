@@ -97,7 +97,18 @@ input[type="checkbox"] {
 .input-addon {
     display: flex;
 
-
+    // scales
+    $input-scale: scale(input);
+    @each $name, $value in $input-scale {
+        @if $name == base {
+            height: $value;
+        }
+        @else {
+            &-#{$name} {
+                height: $value;
+            }
+        }
+    }
 
     & input,
     & select {
@@ -111,19 +122,6 @@ input[type="checkbox"] {
         justify-content: center;
         vertical-align: middle;
         text-align: center;
-
-        // scales
-        $input-scale: scale(input);
-        @each $name, $value in $input-scale {
-            @if $name == base {
-                height: $value;
-            }
-            @else {
-                &-#{$name} {
-                    height: $value;
-                }
-            }
-        }
     }
 
     // variants

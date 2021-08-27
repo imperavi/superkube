@@ -2319,6 +2319,38 @@ input[type="checkbox"] {
     border-top-left-radius: 0;
     border-bottom-left-radius: 0; }
 
+.inner-addon {
+  position: relative;
+  height: 42px; }
+  .inner-addon-large {
+    height: 52px; }
+  .inner-addon .inner-addon-item {
+    position: absolute;
+    top: 0;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    pointer-events: none;
+    height: inherit; }
+  .inner-addon .inner-addon-clickable {
+    pointer-events: auto; }
+  .inner-addon {
+    font-size: 15px;
+    line-height: 1.5; }
+  .inner-addon-large {
+    font-size: 21px;
+    line-height: 1.5; }
+  .inner-addon .inner-addon-item {
+    padding: 0 0.6em; }
+
+.inner-addon-right .inner-addon-item {
+  right: 0; }
+
+.inner-addon-both .inner-addon-item:last-child {
+  right: 0; }
+
 .item {
   position: relative; }
 

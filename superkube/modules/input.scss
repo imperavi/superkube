@@ -139,3 +139,50 @@ input[type="checkbox"] {
         }
     }
 }
+
+// =InnerAddon
+.inner-addon {
+    position: relative;
+
+    // scales
+    $input-scale: scale(input);
+    @each $name, $value in $input-scale {
+        @if $name == base {
+            height: $value;
+        }
+        @else {
+            &-#{$name} {
+                height: $value;
+            }
+        }
+    }
+
+    .inner-addon-item {
+        position: absolute;
+        top: 0;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        text-align: center;
+        pointer-events: none;
+        height: inherit;
+    }
+    .inner-addon-clickable {
+        pointer-events: auto;
+    }
+
+    // variants
+    @include generate-type(input);
+    @include generate-variants('.inner-addon', inner-addon, true);
+}
+.inner-addon-right {
+    .inner-addon-item {
+        right: 0;
+    }
+}
+.inner-addon-both {
+    .inner-addon-item:last-child {
+        right: 0;
+    }
+}

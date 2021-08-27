@@ -33,5 +33,15 @@ $colors: map-extend($colors, (
                 shadow: rgba(palette(negative, base), .3)
             )
         )
+    ),
+    input-addon: (
+        default: (
+            item: (
+                base: (
+                    color: palette(black-o, 60),
+                    background-color: palette(neutral, lighter)
+                )
+            )
+        )
     )
 ));

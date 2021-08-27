@@ -21,5 +21,15 @@ $variants: map-extend($variants, (
                 box-shadow: 0 0 4px color(input, error, focus, shadow)
             )
         )
+    ),
+    input-addon: (
+        default: (
+            item: (
+                base: (
+                    padding: 0 0.85em,
+                    border-radius: radius(base)
+                )
+            )
+        )
     )
 ));

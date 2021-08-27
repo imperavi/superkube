@@ -45,3 +45,27 @@ $icons: scale(icon);
         }
     }
 }
+
+// Box
+[class^="icon-box-"],
+[class*=" icon-box-"] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+}
+@each $key, $size in $icons {
+    .icon-box-#{$key} {
+        width: $size;
+        height: $size;
+    }
+}
+@include for-sm {
+    @each $key, $size in $icons {
+        .icon-box-#{$key}-sm {
+            width: $size;
+            height: $size;
+        }
+    }
+}

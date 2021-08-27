@@ -2157,6 +2157,72 @@ a .icon-primary svg {
     width: 64px;
     height: 64px; } }
 
+[class^="icon-box-"],
+[class*=" icon-box-"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  text-align: center; }
+
+.icon-box-12 {
+  width: 12px;
+  height: 12px; }
+
+.icon-box-14 {
+  width: 14px;
+  height: 14px; }
+
+.icon-box-16 {
+  width: 16px;
+  height: 16px; }
+
+.icon-box-20 {
+  width: 20px;
+  height: 20px; }
+
+.icon-box-24 {
+  width: 24px;
+  height: 24px; }
+
+.icon-box-32 {
+  width: 32px;
+  height: 32px; }
+
+.icon-box-48 {
+  width: 48px;
+  height: 48px; }
+
+.icon-box-64 {
+  width: 64px;
+  height: 64px; }
+
+@media only screen and (max-width: 767px) {
+  .icon-box-12-sm {
+    width: 12px;
+    height: 12px; }
+  .icon-box-14-sm {
+    width: 14px;
+    height: 14px; }
+  .icon-box-16-sm {
+    width: 16px;
+    height: 16px; }
+  .icon-box-20-sm {
+    width: 20px;
+    height: 20px; }
+  .icon-box-24-sm {
+    width: 24px;
+    height: 24px; }
+  .icon-box-32-sm {
+    width: 32px;
+    height: 32px; }
+  .icon-box-48-sm {
+    width: 48px;
+    height: 48px; }
+  .icon-box-64-sm {
+    width: 64px;
+    height: 64px; } }
+
 .image-cover {
   display: flex;
   justify-content: center;

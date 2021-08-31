@@ -166,6 +166,10 @@ $color-list: ();
     $replacers: (
         -background-color: bg,
         -border-color: b,
+        -border-top-color: bt,
+        -border-bottom-color: bb,
+        -border-left-color: bl,
+        -border-right-color: br,
         -shadow: sh,
         -color: c
     );

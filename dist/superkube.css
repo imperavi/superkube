@@ -585,8 +585,8 @@ hr {
   --list-numbered_light-item-before-c: rgba(255, 255, 255, 0.6);
   --list-numbered_light-item-after-c: rgba(255, 255, 255, 0.6);
   --list-bordered-b: rgba(3, 25, 39, 0.07);
-  --list-stacked-item-border-bottom-c: rgba(3, 25, 39, 0.07);
-  --list-stacked_light-item-border-bottom-c: rgba(255, 255, 255, 0.2);
+  --list-stacked-item-bb: rgba(3, 25, 39, 0.07);
+  --list-stacked_light-item-bb: rgba(255, 255, 255, 0.2);
   --menu-default-item-active-link-c: rgba(3, 25, 39, 0.4);
   --menu-default-link-base-c: #031927;
   --menu-default-link-hover-c: rgba(3, 25, 39, 0.6);
@@ -607,8 +607,8 @@ hr {
   --menu-numbered-item-after-c: rgba(3, 25, 39, 0.6);
   --menu-numbered_light-item-before-c: rgba(255, 255, 255, 0.6);
   --menu-numbered_light-item-after-c: rgba(255, 255, 255, 0.6);
-  --menu-stacked-item-border-bottom-c: rgba(3, 25, 39, 0.07);
-  --menu-stacked_light-item-border-bottom-c: rgba(255, 255, 255, 0.2);
+  --menu-stacked-item-bb: rgba(3, 25, 39, 0.07);
+  --menu-stacked_light-item-bb: rgba(255, 255, 255, 0.2);
   --nav-default-item-active-link-c: rgba(3, 25, 39, 0.4);
   --nav-default-link-base-c: #031927;
   --nav-default-link-hover-c: rgba(3, 25, 39, 0.6);
@@ -625,16 +625,16 @@ hr {
   --nav-pills-item-active-link-c: #F5F6F7;
   --nav-pills-link-base-c: #031927;
   --nav-pills-link-hover-bg: rgba(3, 25, 39, 0.1);
-  --nav-tabs-list-border-bottom-c: rgba(3, 25, 39, 0.1);
+  --nav-tabs-list-bb: rgba(3, 25, 39, 0.1);
   --nav-tabs-item-active-link-bg: transparent;
   --nav-tabs-item-active-link-c: #031927;
-  --nav-tabs-item-active-link-border-bottom-c: #031927;
+  --nav-tabs-item-active-link-bb: #031927;
   --nav-tabs-link-base-bg: transparent;
   --nav-tabs-link-base-c: rgba(3, 25, 39, 0.5);
-  --nav-tabs-link-base-border-bottom-c: transparent;
+  --nav-tabs-link-base-bb: transparent;
   --nav-tabs-link-hover-bg: #F5F6F7;
   --nav-tabs-link-hover-c: #031927;
-  --nav-tabs-link-hover-border-bottom-c: #031927;
+  --nav-tabs-link-hover-bb: #031927;
   --overlay-light: rgba(255, 255, 255, 0.5);
   --overlay-dark: rgba(3, 25, 39, 0.5);
   --pagination-default-item-active-link-bg: #245DE5;
@@ -2649,7 +2649,7 @@ a.label,
   .list-stacked .list-item {
     border-bottom-width: 1px;
     padding: 8px 0;
-    border-bottom-color: var(--list-stacked-item-border-bottom-c); }
+    border-bottom-color: var(--list-stacked-item-bb); }
   .list-bordered {
     border-width: 1px;
     border-radius: 4px;
@@ -2670,7 +2670,7 @@ a.label,
   .list-numbered.list-light .list-item:after {
     color: var(--list-numbered_light-item-after-c); }
   .list-stacked.list-light .list-item {
-    border-bottom-color: var(--list-stacked_light-item-border-bottom-c); }
+    border-bottom-color: var(--list-stacked_light-item-bb); }
 
 .list-stacked .list-item {
   border-bottom-style: solid; }
@@ -2765,7 +2765,7 @@ a.label,
 
 .menu-stacked .menu-item {
   border-bottom-width: 1px;
-  border-bottom-color: var(--menu-stacked-item-border-bottom-c); }
+  border-bottom-color: var(--menu-stacked-item-bb); }
 
 .menu-stacked .menu-link {
   padding: 8px 0; }
@@ -2824,7 +2824,7 @@ a.label,
   color: var(--menu-numbered_light-item-after-c); }
 
 .menu-stacked.menu-light .menu-item {
-  border-bottom-color: var(--menu-stacked_light-item-border-bottom-c); }
+  border-bottom-color: var(--menu-stacked_light-item-bb); }
 
 .menu-caps .menu-link {
   letter-spacing: .01em;
@@ -2913,24 +2913,24 @@ a.label,
       background-color: var(--nav-pills-link-hover-bg); }
   .nav-tabs .nav-list {
     border-bottom-width: 2px;
-    border-bottom-color: var(--nav-tabs-list-border-bottom-c); }
+    border-bottom-color: var(--nav-tabs-list-bb); }
   .nav-tabs .nav-item {
     margin-right: 1px; }
     .nav-tabs .nav-item.active .nav-link {
       background-color: var(--nav-tabs-item-active-link-bg);
       color: var(--nav-tabs-item-active-link-c);
-      border-bottom-color: var(--nav-tabs-item-active-link-border-bottom-c); }
+      border-bottom-color: var(--nav-tabs-item-active-link-bb); }
   .nav-tabs .nav-link {
     border-bottom-width: 2px;
     margin-bottom: -2px;
     padding: 12px 12px 10px 12px;
     background-color: var(--nav-tabs-link-base-bg);
     color: var(--nav-tabs-link-base-c);
-    border-bottom-color: var(--nav-tabs-link-base-border-bottom-c); }
+    border-bottom-color: var(--nav-tabs-link-base-bb); }
     .nav-tabs .nav-link:hover {
       background-color: var(--nav-tabs-link-hover-bg);
       color: var(--nav-tabs-link-hover-c);
-      border-bottom-color: var(--nav-tabs-link-hover-border-bottom-c); }
+      border-bottom-color: var(--nav-tabs-link-hover-bb); }
   .nav-centered .nav-item {
     margin-left: 2rem;
     margin-right: 2rem; }

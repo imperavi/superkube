@@ -285,14 +285,8 @@
         }
         @else {
             @if length($map) > 0 {
-                @if $color-names {
-                    $name: color-replace($name);
-                    --#{$name}: #{$map};
-                }
-                @else {
-                    $index: get-color-index(#{$name});
-                    --c#{$index}: #{$map};
-                }
+                $name: color-replace($name);
+                --#{$name}: #{$map};
             }
         }
     }
@@ -303,14 +297,8 @@
             @include split-color-to-var(#{$sel}-#{$key}, $value);
         }
         @else {
-            @if $color-names {
-                $name: color-replace($sel + '-' + $key);
-                --#{$name}: #{$value};
-            }
-            @else {
-                $index: get-color-index(#{$sel}-#{$key});
-                --c#{$index}: #{$value};
-            }
+            $name: color-replace($sel + '-' + $key);
+            --#{$name}: #{$value};
         }
     }
 }

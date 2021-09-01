@@ -58,15 +58,9 @@ $color-list: ();
         }
         @else {
             @if length($value) > 0 and $value != false {
-                @if $color-names {
-                    $index: $str + '-' + $key;
-                    $index: color-replace($index);
-                    $colors: map-merge($colors, (#{$key}: var(--#{$index})));
-                }
-                @else {
-                    $index: get-color-index(#{$str}-#{$key});
-                    $colors: map-merge($colors, (#{$key}: var(--c#{$index})));
-                }
+                $index: $str + '-' + $key;
+                $index: color-replace($index);
+                $colors: map-merge($colors, (#{$key}: var(--#{$index})));
             }
         }
     }
@@ -81,15 +75,9 @@ $color-list: ();
         }
         @else {
             @if length($value) > 0 and $value != false {
-                @if $color-names {
-                    $index: $str + '-' + $name + '-' + $key;
-                    $index: color-replace($index);
-                    $map: map-merge($map, (#{$key}: var(--#{$index})));
-                }
-                @else {
-                    $index: get-color-index(#{$str}-#{$name}-#{$key});
-                    $map: map-merge($map, (#{$key}: var(--c#{$index})));
-                }
+                $index: $str + '-' + $name + '-' + $key;
+                $index: color-replace($index);
+                $map: map-merge($map, (#{$key}: var(--#{$index})));
             }
         }
     }
@@ -111,35 +99,18 @@ $color-list: ();
     $color: map-deep-get($colors, $keys...);
     $str: to-string($keys, '-');
 
-    @if (type-of($color) == 'map') {
-        @if $color-names {
-            $name1: color-replace($str + '-from');
-            $name2: color-replace($str + '-to');
+    @if type-of($color) == 'map' {
+        $name1: color-replace($str + '-from');
+        $name2: color-replace($str + '-to');
 
-            @return (
-                from: var(--#{$name1}),
-                to: var(--#{$name2})
-            );
-        }
-        @else {
-            $index1: get-color-index(#{$str}-from);
-            $index2: get-color-index(#{$str}-to);
-
-            @return (
-                from: var(--c#{$index1}),
-                to: var(--c#{$index2})
-            );
-        }
+        @return (
+            from: var(--#{$name1}),
+            to: var(--#{$name2})
+        );
     }
     @else {
-        @if $color-names {
-            $name: color-replace($str);
-            @return var(--#{$name});
-        }
-        @else {
-            $index: get-color-index(#{$str});
-            @return var(--c#{$index});
-        }
+        $name: color-replace($str);
+        @return var(--#{$name});
     }
 }
 

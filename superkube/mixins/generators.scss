@@ -266,7 +266,16 @@
 }
 
 
-
+// vars
+@mixin generate-root-vars {
+    $vars: radius, level, shadow;
+    @each $name in $vars {
+        $map: scale($name);
+        @each $key, $val in $map {
+            --#{$name}-#{$key}: #{$val};
+        }
+    }
+}
 
 // colors
 @mixin generate-root-colors($colors) {

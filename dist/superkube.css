@@ -667,7 +667,23 @@ hr {
   --text-light: #ffffff;
   --text-light-moderated: rgba(255, 255, 255, 0.8);
   --text-light-muted: rgba(255, 255, 255, 0.5);
-  --text-primary: #245DE5; }
+  --text-primary: #245DE5;
+  --radius-small: 2px;
+  --radius-base: 4px;
+  --radius-large: 6px;
+  --radius-huge: 8px;
+  --radius-mega: 10px;
+  --radius-giga: 16px;
+  --level-content: 100;
+  --level-page: 200;
+  --level-control: 300;
+  --level-all: 400;
+  --shadow-100: 0 1px 2px;
+  --shadow-150: 0 2px 4px;
+  --shadow-200: 0 4px 6px;
+  --shadow-250: 0 6px 8px;
+  --shadow-300: 0 20px 25px;
+  --shadow-350: 0 25px 50px; }
 
 .alert {
   position: relative;

@@ -1,6 +1,7 @@
 // =Generate
 :root {
     @include generate-root-colors($colors);
+    @include generate-root-vars;
 }
 @if $dark-class == null {
     @media (prefers-color-scheme: dark) {

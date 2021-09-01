@@ -1,14 +1,14 @@
 // =Mixins
 @import "mixins";
 
+// =Generate
+@import "base/generate";
+
 // =Base
 @import "base/reset";
 @import "base/print";
 @import "base/elements";
 @import "base/icons";
-
-// =Generate
-@import "base/generate";
 
 // =Modules
 @import "modules/alert";

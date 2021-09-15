@@ -1,7 +1,8 @@
 // =Palette
-$palette: (
+$palette: map-extend($palette, (
+    transparent: transparent,
     black: #031927,
-    black-o: (
+    black-opacity: (
         5: rgba(#031927, .05),
         7: rgba(#031927, .07),
         10: rgba(#031927, .1),
@@ -17,7 +18,7 @@ $palette: (
         90: rgba(#031927, .9)
     ),
     white: #ffffff,
-    white-o: (
+    white-opacity: (
         5: rgba(#ffffff, .05),
         7: rgba(#ffffff, .07),
         10: rgba(#ffffff, .1),
@@ -33,12 +34,12 @@ $palette: (
         90: rgba(#ffffff, .9)
     ),
     primary: (
-        darker: #1844A2,
-        dark: #1F52C8,
+        darker: #122F73,
+        dark: #1B46AC,
         base: #245DE5,
-        light: #A7BEF5,
-        lighter: #E4EBFB,
-        lightest: #F0F4FD
+        light: #91AEF2,
+        lighter: #C8D6F8,
+        lightest: #E9EEFC
     ),
     neutral: (
         darker: #223542,
@@ -50,27 +51,99 @@ $palette: (
         lightest: #F5F6F7
     ),
     negative: (
-        darker: #9A333E,
-        dark: #C83B46,
+        darker: #762126,
+        dark: #B03239,
         base: #EB424C,
-        light: #F7B3B7,
-        lighter: #FCE8E9,
-        lightest: #FDF2F2
+        light: #F5A0A5,
+        lighter: #FAD0D2,
+        lightest: #FDECED
     ),
     positive: (
-        darker: #135E42,
-        dark: #1D8851,
+        darker: #12522F,
+        dark: #1B7B46,
         base: #24A45D,
-        light: #A7DBBE,
-        lighter: #E4F4EB,
-        lightest: #F0F8F4
+        light: #91D1AE,
+        lighter: #C8E8D6,
+        lightest: #E9F5EE
     ),
     active: (
-        darker: #1844A2,
-        dark: #1F52C8,
+        darker: #122F73,
+        dark: #1B46AC,
         base: #245DE5,
-        light: #A7BEF5,
-        lighter: #E4EBFB,
-        lightest: #F0F4FD
+        light: #91AEF2,
+        lighter: #C8D6F8,
+        lightest: #E9EEFC
+    ),
+    yellow: (
+        darker: #7D6711,
+        dark: #D4AE1C,
+        base: #F9CD21,
+        light: #FCE690,
+        lighter: #FDF2C7,
+        lightest: #FEFAE8
+    ),
+    orange: (
+        darker: #804B03,
+        dark: #D97F04,
+        base: #FF9505,
+        light: #FFCA82,
+        lighter: #FFE4C0,
+        lightest: #FFF4E6
+    ),
+    teal: (
+        darker: #17615F,
+        dark: #22928E,
+        base: #2DC2BD,
+        light: #96E0DE,
+        lighter: #CAF0EE,
+        lightest: #EAF8F8
+    ),
+    blue: (
+        darker: #075C80,
+        dark: #0B89BF,
+        base: #0EB7FF,
+        light: #86DBFF,
+        lighter: #C3EDFF,
+        lightest: #E6F7FF
+    ),
+    purple: (
+        darker: #3C2980,
+        dark: #593DBF,
+        base: #7751FF,
+        light: #BBA8FF,
+        lighter: #DDD3FF,
+        lightest: #F1EDFF
+    ),
+    pink: (
+        darker: #802955,
+        dark: #BF3D80,
+        base: #FF51AA,
+        light: #FFA8D4,
+        lighter: #FFD3EA,
+        lightest: #FFEDF6
+    ),
+    red: (
+        darker: #801A33,
+        dark: #BF264D,
+        base: #FF3366,
+        light: #FF99B2,
+        lighter: #FFCCD9,
+        lightest: #FFEAEF
+    ),
+    green: (
+        darker: #006644,
+        dark: #009966,
+        base: #00CC88,
+        light: #7FE5C3,
+        lighter: #BFF2E1,
+        lightest: #E5F9F3
+    ),
+    indigo: (
+        darker: #122F73,
+        dark: #1B46AC,
+        base: #1E66FF,
+        light: #91AEF2,
+        lighter: #C8D6F8,
+        lightest: #E9EEFC
     )
-) !default;
+));

@@ -1,25 +1,32 @@
 // =Hint
 .hint {
+    // colors
+    --hint-color: var(--palette-black-50);
+
+    // vars
+    --hint-font-weight: normal;
+    --hint-font-style: normal;
+
+    // props
     font-size: type-size(form, hint);
     line-height: type-line(form, hint);
-    color: color(hint, default);
-
-    // hint properties
-    $hintvariant: variant(form, hint);
-    @each $key, $value in $hintvariant {
-        #{$key}: $value;
-    }
+    font-weight: var(--hint-font-weight);
+    font-style: var(--hint-font-style);
+    color: var(--hint-color);
 }
 div.hint {
     margin-top: 2px;
 }
 .hint-success {
-    color: color(hint, success);
+    --hint-color: var(--palette-positive-dark);
 }
 .hint-error {
-    color: color(hint, error);
+    --hint-color: var(--palette-negative-dark);
 }
 .hint-req {
-    font-weight: bold;
-    color: color(hint, required);
+    --hint-color: var(--palette-negative-base);
+    --hint-font-weight: bold;
+
+    // props
+    font-size: 105%;
 }

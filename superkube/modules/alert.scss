@@ -1,7 +1,33 @@
 // =Alert
 .alert {
+    // colors
+    --alert-background-color: var(--palette-neutral-lighter);
+    --alert-border-color: var(--palette-transparent);
+    --alert-color: var(--palette-neutral-darker);
+
+    // vars
+    --alert-padding: 4rem 5rem;
+    --alert-font-weight: normal;
+    --alert-border-radius: var(--radius-base);
+    --alert-border-width: 1px;
+    --alert-border-style: solid;
+    --alert-font-size: var(--type-scale-14);
+    --alert-line-height: var(--body-text-line);
+    --alert-close-size: 14px;
+
+    // props
     position: relative;
-    margin-bottom: type-space(tag-to-tag);
+    font-weight: var(--alert-font-weight);
+    font-size: var(--alert-font-size);
+    line-height: var(--alert-line-height);
+    padding: var(--alert-padding);
+    border-radius: var(--alert-border-radius);
+    border-style: var(--alert-border-style);
+    border-width: var(--alert-border-width);
+    margin-bottom: var(--type-space-tag-to-tag);
+    background-color: var(--alert-background-color);
+    border-color: var(--alert-border-color);
+    color: var(--alert-color);
 
     h2, h3, h4, h5, h6, p, a {
         color: inherit;
@@ -16,7 +42,7 @@
         fill: currentColor;
     }
     .close {
-        font-size: 14px;
+        font-size: var(--alert-close-size);
         position: absolute;
         right: 0;
         top: 0;
@@ -24,8 +50,18 @@
         padding-top: .85em;
     }
 }
-.alert {
-    // Variants
-    @include generate-variants('.alert', alert);
-    @include generate-type(alert);
+.alert.alert-info {
+    --alert-background-color: var(--palette-active-lightest);
+    --alert-border-color: var(--palette-transparent);
+    --alert-color: var(--palette-active-darker);
+}
+.alert.alert-success {
+    --alert-background-color: var(--palette-positive-lightest);
+    --alert-border-color: var(--palette-transparent);
+    --alert-color: var(--palette-positive-darker);
+}
+.alert.alert-error {
+    --alert-background-color: var(--palette-negative-lightest);
+    --alert-border-color: var(--palette-transparent);
+    --alert-color: var(--palette-negative-darker);
 }

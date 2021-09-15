@@ -1,9 +1,0 @@
-// =Hint
-$colors: map-extend($colors, (
-    hint: (
-        default: palette(black-o, 50),
-        success: palette(positive, dark),
-        error: palette(negative, dark),
-        required: palette(negative, base)
-    )
-));

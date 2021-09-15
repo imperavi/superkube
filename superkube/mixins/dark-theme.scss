@@ -1,0 +1,51 @@
+// =DarkTheme
+
+// modules
+@mixin dark-theme {
+    @if $dark-theme == false and $dark-class == null {}
+    @else if $dark-theme == true and $dark-class == null {
+        @media (prefers-color-scheme: dark) {
+            @content;
+        }
+    }
+    @else if $dark-theme == false and $dark-class != null {
+        html.#{$dark-class} {
+            @content;
+        }
+    }
+    @else if $dark-theme == true and $dark-class != null {
+        @media (prefers-color-scheme: dark) {
+            @content;
+        }
+        html.#{$dark-class} {
+            @content;
+        }
+    }
+}
+
+// root
+@mixin dark-theme-root {
+    @if $dark-theme == false and $dark-class == null {}
+    @else if $dark-theme == true and $dark-class == null {
+        @media (prefers-color-scheme: dark) {
+            :root {
+                @content;
+            }
+        }
+    }
+    @else if $dark-theme == false and $dark-class != null {
+        html.#{$dark-class} {
+            @content;
+        }
+    }
+    @else if $dark-theme == true and $dark-class != null {
+        @media (prefers-color-scheme: dark) {
+            :root {
+                @content;
+            }
+        }
+        html.#{$dark-class} {
+            @content;
+        }
+    }
+}

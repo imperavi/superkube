@@ -1,21 +1,36 @@
-// =Fonts
-$font-text: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Helvetica Neue', Arial, sans-serif !default;
-$font-heading: inherit !default;
-$font-monospace: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace !default;
-
 // =Unit
-$unit: 4px !default;
-
-// =Body Text
-$body-size: 16px !default;
-$body-line: 1.5 !default;
+$unit: 4px;
 
 // =DarkTheme
+$dark-theme: false !default;
 $dark-class: null !default;
+
+// Global
+$global-colors: background, body, border, gradient, form, heading, icon, inline, line, link, overlay, placeholder, pre, table, text-gradient, text !default;
+$global-scales: radius, level, type-space, type-scale !default;
+
+// =Scales
+$scales: () !default;
 
 // =Colors
 $colors: () !default;
 $colors-dark: () !default;
 
-// =Variants
-$variants: () !default;
+// =Palette
+$palette: () !default;
+$palette-dark: () !default;
+
+// =Basis
+:root {
+    // Fonts
+    --font-text: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Helvetica Neue', Arial, sans-serif;
+    --font-heading: inherit;
+    --font-mono: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
+
+    // unit
+    --unit: #{$unit};
+
+    // body
+    --body-text-size: 16px;
+    --body-text-line: 1.5;
+}

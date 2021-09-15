@@ -5,18 +5,22 @@
     white-space: nowrap;
 }
 .table-bordered {
+    --table-border-color: var(--table-default-border-color);
+
     td,
     th {
         padding: 0.75em;
-        border: 1px solid color(table, border);
+        border: 1px solid var(--table-border-color);
     }
 }
 .table-striped {
+    --table-stripe-color: var(--table-default-stripe-color);
+
     td,
     th {
         padding: 0.75em;
     }
     tr:nth-child(odd) td {
-        background-color: color(table, striped);
+        background-color: var(--table-stripe-color);
     }
 }

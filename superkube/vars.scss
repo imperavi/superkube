@@ -1,10 +1,14 @@
 // =Functions
 @import 'funcs';
 
+// =Scales
+@import "vars/basis";
+@import "vars/scales";
+
 // =Palette
 @import "vars/palette";
 @import "vars/palette-dark";
 
-// =Scales
-@import "vars/basis";
-@import "vars/scales";
+// =Colors
+@import "vars/colors";
+@import "vars/colors-dark";

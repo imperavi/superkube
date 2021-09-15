@@ -1,17 +1,10 @@
 // =Generate
 :root {
-    @include generate-root-colors($colors);
     @include generate-root-vars;
+    @include generate-root-palette($palette);
+    @include generate-root-colors($colors);
 }
-@if $dark-class == null {
-    @media (prefers-color-scheme: dark) {
-        :root {
-            @include generate-root-colors($colors-dark);
-        }
-    }
-}
-@else {
-    html.#{$dark-class} {
-        @include generate-root-colors($colors-dark);
-    }
+@include dark-theme-root {
+    @include generate-root-palette($palette-dark);
+    @include generate-root-colors($colors-dark);
 }

@@ -1,9 +1,10 @@
-@import "mixins/generators";
+// =Mixins
 @import "mixins/background";
 @import "mixins/breakpoint";
 @import "mixins/container";
+@import "mixins/dark-theme";
+@import "mixins/generators";
 @import "mixins/grid";
-@import "mixins/line";
 @import "mixins/outset";
 @import "mixins/text";
 @import "mixins/utility";

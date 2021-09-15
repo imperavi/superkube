@@ -1,10 +1,51 @@
 // =Line
-$lines: variant(line);
-@each $key, $line in $lines {
+.line,
+hr {
+    // vars
+    --line-margin-top: 1.5em;
+    --line-margin-bottom: 1.5em;
+    --line-max-height: 10px;
+    --line-height: 1px;
+    --line-width: 100%;
+    --line-style: solid;
+    --line-color: var(--line-default);
+
+    // props
+    position: relative;
+    line-height: 1;
+    background: none;
+    border: none;
+    text-align: left;
+    margin-top: var(--line-margin-top);
+    margin-bottom: var(--line-margin-bottom);
+    height: var(--line-max-height);
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        width: var(--line-width);
+        max-width: var(--line-width);
+        margin-top: calc(var(--line-height)/2*-1);
+        border-top-width: var(--line-height);
+        border-top-style: var(--line-style);
+        border-top-color: var(--line-color);
+    }
+    &.line-right:before {
+        left: 100%;
+        margin-left: -var(--line-width);
+    }
+    &.line-centered:before {
+        left: 50%;
+        margin-left: calc(var(--line-width)/2*-1);
+    }
+}
+// Colors
+$lines: color(line);
+@each $key, $color in $lines {
     @if $key != default {
         .line-#{$key} {
-            $line: map-extend(map-get($lines, default), $line);
-            @include line($line);
+            --line-color: var(--line-#{$key});
         }
     }
 }

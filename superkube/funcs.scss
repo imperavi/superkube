@@ -38,137 +38,18 @@
     @return map-get(scale(type-space), $name);
 }
 
+// color
+@function color($keys...) {
+    @return map-deep-get($colors, $keys...);
+}
+
+@function color-dark($keys...) {
+    @return map-deep-get($colors-dark, $keys...);
+}
+
 // palette
 @function palette($keys...) {
     @return map-deep-get($palette, $keys...);
-}
-@function palette-dark($keys...) {
-    @return map-deep-get($palette-dark, $keys...);
-}
-
-// colors
-$color-list: ();
-@function create-colors($colors, $keys...) {
-    $str: to-string($keys, '-');
-
-    @each $key, $value in $colors {
-        @if type-of($value) == map {
-            $value: create-var-from-color($str, $key, $value);
-            $colors: map-merge($colors, (#{$key}: $value));
-        }
-        @else {
-            @if length($value) > 0 and $value != false {
-                $index: $str + '-' + $key;
-                $index: color-replace($index);
-                $colors: map-merge($colors, (#{$key}: var(--#{$index})));
-            }
-        }
-    }
-
-    @return $colors;
-}
-@function create-var-from-color($str, $name, $map) {
-    @each $key, $value in $map {
-        @if type-of($value) == map {
-            $value: create-var-from-color($str, '#{$name}-#{$key}', $value);
-            $map: map-merge($map, (#{$key}: $value));
-        }
-        @else {
-            @if length($value) > 0 and $value != false {
-                $index: $str + '-' + $name + '-' + $key;
-                $index: color-replace($index);
-                $map: map-merge($map, (#{$key}: var(--#{$index})));
-            }
-        }
-    }
-
-    @return $map;
-}
-
-@function colors($keys...) {
-    $map: map-deep-get($colors, $keys...);
-    @if $map == null {
-        @return $map;
-    }
-    @else {
-        @return create-colors($map, $keys...);
-    }
-}
-// color
-@function color($keys...) {
-    $color: map-deep-get($colors, $keys...);
-    $str: to-string($keys, '-');
-
-    @if type-of($color) == 'map' {
-        $name1: color-replace($str + '-from');
-        $name2: color-replace($str + '-to');
-
-        @return (
-            from: var(--#{$name1}),
-            to: var(--#{$name2})
-        );
-    }
-    @else {
-        $name: color-replace($str);
-        @return var(--#{$name});
-    }
-}
-
-
-@function get-color-index($str) {
-    $index: index($color-list, $str);
-    @if $index == null {
-        $color-list: append($color-list, $str) !global;
-        $index: length($color-list);
-    }
-
-    @return $index;
-}
-@function str-replace($string, $search, $replace: '') {
-    $index: str-index($string, $search);
-
-    @if $index {
-        @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
-    }
-
-    @return $string;
-}
-@function color-replace($str) {
-    $replacers: (
-        -background-color: bg,
-        -border-color: b,
-        -border-top-color: bt,
-        -border-bottom-color: bb,
-        -border-left-color: bl,
-        -border-right-color: br,
-        -shadow: sh,
-        -color: c
-    );
-    $replace: '';
-    @each $name, $val in $replacers {
-        $index: str-index($str, $name);
-        @if $index {
-            $str: str-slice($str, 1, $index - 1) + $replace + str-replace(str-slice($str, $index + str-length($name)), $name, $replace);
-            $str: $str + '-' + $val;
-        }
-    }
-
-    @return $str;
-}
-
-// scale
-@function scale($keys...) {
-    @return map-deep-get($scales, $keys...);
-}
-
-// variant
-@function variant($keys...) {
-    @return map-deep-get($variants, $keys...);
-}
-
-// param
-@function param($keys...) {
-    @return map-deep-get($params, $keys...);
 }
 
 // level
@@ -181,39 +62,9 @@ $color-list: ();
     @return map-get(scale(radius), $name);
 }
 
-// shadow
-@function shadow($name, $value) {
-    @return build-shadows(scale(shadow), $name, $value);
-}
-
-@function build-shadows($map, $name, $value) {
-    $shadow: map-get($map, $value);
-    $index: shadow-#{$name}-#{$value};
-    $color: var(--#{$index});
-
-    @if type-of($shadow) == 'map' {
-        $map: ();
-        @each $key, $val in $shadow {
-            $index: shadow-#{$name}-#{$value}-#{$key};
-            $color: var(--#{$index});
-            $str: $val $color;
-            $map: map-merge($map, ($key: $str));
-        }
-
-        @return map-values($map);
-    }
-    @else {
-        @return $shadow $color;
-    }
-}
-
-@function build-shadow($shadow, $color) {
-    $len: length($shadow);
-    $opacity: nth($shadow, $len);
-    $shadow: remove-nth($shadow, $len);
-    $str: $shadow rgba($color, $opacity);
-
-    @return $str;
+// scale
+@function scale($keys...) {
+    @return map-deep-get($scales, $keys...);
 }
 
 // container
@@ -226,10 +77,122 @@ $color-list: ();
     @return map-get(scale(edge), $name);
 }
 
-// strip units
-@function strip-units($number) {
-    @return $number / ($number * 0 + 1);
+// shadow
+@function shadow($name, $type, $color) {
+    $shadow: scale(shadow, to-number($type));
+
+    @if type-of($shadow) == 'map' {
+        $map: ();
+        @each $key, $val in $shadow {
+            $strcolor: map-get($color, $key);
+            $str: $val $strcolor;
+            $map: map-merge($map, ($key: $str));
+        }
+
+        @return map-values($map);
+    }
+
+    @return $shadow $color;
 }
+
+// gradient
+@function gradient($map, $to: null, $deg: null) {
+    $from: null;
+    @if type-of($map) == map {
+        $from: map-get($map, from);
+        $to: map-get($map, to);
+        $deg: 180deg;
+        @if (map-has-key($map, deg)) {
+            $deg: map-get($map, deg);
+        }
+    }
+    @else {
+        $from: $map;
+        @if $deg == null {
+            $deg: 180deg;
+        }
+    }
+
+    @if $deg == 'radial' {
+        @return radial-gradient($from, $to);
+    }
+    @else {
+        @return linear-gradient($deg, $from 0%, $to 100%);
+    }
+}
+
+// String
+// --------------------------------
+
+@function str-replace($string, $search, $replace: '') {
+    $index: str-index($string, $search);
+
+    @if $index {
+        @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+    }
+
+    @return $string;
+}
+
+// string to list
+@function str-split($string, $separator) {
+    // empty array/list
+    $split-arr: ();
+    // first index of separator in string
+    $index : str-index($string, $separator);
+    // loop through string
+    @while $index != null {
+        // get the substring from the first character to the separator
+        $item: str-slice($string, 1, $index - 1);
+        // push item to array
+        $split-arr: append($split-arr, $item);
+        // remove item and separator from string
+        $string: str-slice($string, $index + 1);
+        // find new index of separator
+        $index : str-index($string, $separator);
+    }
+    // add the remaining string to list (the last item)
+    $split-arr: append($split-arr, $string);
+
+    @return $split-arr;
+}
+
+@function ends-with($string, $find) {
+    @return str-slice($string, (str-length($string) - str-length($find) + 1)) == $find;
+}
+
+@function to-number($value) {
+  @if type-of($value) == 'number' {
+    @return $value;
+  } @else if type-of($value) != 'string' {
+    @error 'Value for `to-number` should be a number or a string.';
+  }
+
+  $result: 0;
+  $digits: 0;
+  $minus: str-slice($value, 1, 1) == '-';
+  $numbers: ('0': 0, '1': 1, '2': 2, '3': 3, '4': 4, '5': 5, '6': 6, '7': 7, '8': 8, '9': 9);
+
+  @for $i from if($minus, 2, 1) through str-length($value) {
+    $character: str-slice($value, $i, $i);
+
+    @if (index(map-keys($numbers), $character) or $character == '.') {
+      @if $character == '.' {
+        $digits: 1;
+      } @else if $digits == 0 {
+        $result: $result * 10 + map-get($numbers, $character);
+      } @else {
+        $digits: $digits * 10;
+        $result: $result + map-get($numbers, $character) / $digits;
+      }
+    }
+  }
+
+  @return if($minus, -$result, $result);;
+}
+
+// Map
+// --------------------------------
 
 // map deep get
 // https://www.sitepoint.com/extra-map-functions-sass/
@@ -249,31 +212,6 @@ $color-list: ();
     $value: map-merge($map, if($value-is-map or length($value) == 0, $value, ($value: ())));
 
     @return $value;
-}
-
-/// Update a key deeply nested
-/// @author Hugo Giraudel
-/// @param {Map} $map - Map to update
-/// @param {Arglist} $keys - Keys to access to value to update
-/// @param {*} $value - New value (last member of `$keys`)
-/// @return {Map} - Updated map
-@function map-deep-set($map, $keys.../*, $value */) {
-  $map-list: ($map,);
-  $result: null;
-
-  @if length($keys) == 2 {
-    @return map-merge($map, (nth($keys, 1): nth($keys, -1)));
-  }
-
-  @for $i from 1 through length($keys) - 2 {
-    $map-list: append($map-list, map-get(nth($map-list, -1), nth($keys, $i)));
-  }
-
-  @for $i from length($map-list) through 1 {
-    $result: map-merge(nth($map-list, $i), (nth($keys, $i): if($i == length($map-list), nth($keys, -1), $result)));
-  }
-
-  @return $result;
 }
 
 // map deep extend
@@ -301,73 +239,6 @@ $color-list: ();
     }
 
     @return $map;
-}
-
-// list to string
-@function to-string($list, $glue: '', $is-nested: false) {
-  $result: null;
-
-  @for $i from 1 through length($list) {
-    $e: nth($list, $i);
-
-    @if type-of($e) == list {
-      $result: $result#{to-string($e, $glue, true)};
-    } @else {
-      $result: if(
-        $i != length($list) or $is-nested,
-        #{$result}#{$e}#{$glue}, #{$result}#{$e}
-      );
-    }
-  }
-
-  @return $result;
-}
-
-// string to list
-@function str-split($string, $separator) {
-    // empty array/list
-    $split-arr: ();
-    // first index of separator in string
-    $index : str-index($string, $separator);
-    // loop through string
-    @while $index != null {
-        // get the substring from the first character to the separator
-        $item: str-slice($string, 1, $index - 1);
-        // push item to array
-        $split-arr: append($split-arr, $item);
-        // remove item and separator from string
-        $string: str-slice($string, $index + 1);
-        // find new index of separator
-        $index : str-index($string, $separator);
-    }
-    // add the remaining string to list (the last item)
-    $split-arr: append($split-arr, $string);
-
-    @return $split-arr;
-}
-
-// remove item
-@function remove-nth($list, $index) {
-  $result: null;
-
-  @if type-of($index) != number {
-    @warn "$index: #{quote($index)} is not a number for `remove-nth`.";
-  } @else if $index == 0 {
-    @warn "List index 0 must be a non-zero integer for `remove-nth`.";
-  } @else if abs($index) > length($list) {
-    @warn "List index is #{$index} but list is only #{length($list)} item long for `remove-nth`.";
-  } @else {
-    $result: ();
-    $index: if($index < 0, length($list) + $index + 1, $index);
-
-    @for $i from 1 through length($list) {
-      @if $i != $index {
-        $result: append($result, nth($list, $i));
-      }
-    }
-  }
-
-  @return $result;
 }
 
 // https://github.com/lunelson/sass-maps-plus
@@ -399,4 +270,31 @@ $color-list: ();
   }
   $outdent: __str-times($tab, $level - 1);
   @return unquote($output + '\A' + $outdent + ')');
+}
+
+// List
+// --------------------------------
+
+// remove item
+@function remove-nth($list, $index) {
+  $result: null;
+
+  @if type-of($index) != number {
+    @warn "$index: #{quote($index)} is not a number for `remove-nth`.";
+  } @else if $index == 0 {
+    @warn "List index 0 must be a non-zero integer for `remove-nth`.";
+  } @else if abs($index) > length($list) {
+    @warn "List index is #{$index} but list is only #{length($list)} item long for `remove-nth`.";
+  } @else {
+    $result: ();
+    $index: if($index < 0, length($list) + $index + 1, $index);
+
+    @for $i from 1 through length($list) {
+      @if $i != $index {
+        $result: append($result, nth($list, $i));
+      }
+    }
+  }
+
+  @return $result;
 }

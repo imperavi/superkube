@@ -25,7 +25,7 @@ $iconcolors: map-get($colors, icon);
 @each $key, $value in $iconcolors {
     .icon-#{$key} svg,
     a .icon-#{$key} svg {
-        fill: $value;
+        fill: var(--icon-#{$key});
     }
 }
 

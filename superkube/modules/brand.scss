@@ -1,18 +1,28 @@
 .brand {
+    // vars
+    --brand-color: var(--text-default);
+    --brand-hover-color: var(--text-default);
+    --brand-font-size: var(--type-scale-16);
+    --brand-font-weight: bold;
+    --brand-text-transform: none;
+    --brand-letter-spacing: 0;
+
+    // props
     position: relative;
     display: flex;
     align-items: center;
     height: 100%;
     text-decoration: none;
-    font-weight: bold;
     line-height: 1;
     white-space: nowrap;
-
-    // =Variants
-    @include generate-type(brand);
-    @include generate-variants('.brand', brand);
+    color: var(--brand-color);
+    font-size: var(--brand-font-size);
+    font-weight: var(--brand-font-weight);
+    text-transform: var(--brand-text-transform);
+    letter-spacing: var(--brand-letter-spacing);
 }
 a.brand:hover {
     @include transition;
+    color: var(--brand-hover-color);
     text-decoration: underline;
 }

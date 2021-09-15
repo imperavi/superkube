@@ -12,20 +12,8 @@
 }
 
 // Gradient
-@mixin background($color) {
-    @if (type-of($color) == 'map') {
-        $deg: 180deg;
-        @if map-get($color, deg) != null {
-            $deg: map-get($color, deg);
-        }
-        @include background-gradient($color, $deg);
-    }
-    @else {
-        background-color: $color;
-    }
-}
 @mixin background-gradient($color, $deg: 180deg) {
-    @if (type-of($color) == 'map') {
+    @if type-of($color) == 'map' {
         $from: map-get($color, from);
         $to: map-get($color, to);
 
@@ -35,7 +23,7 @@
 
         background-color: $from;
 
-        @if ($deg == 'radial') {
+        @if $deg == 'radial' {
             background-image: radial-gradient($from, $to);
         }
         @else {

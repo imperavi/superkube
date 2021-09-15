@@ -26,7 +26,26 @@
 .link-ghost:hover {
     text-decoration: underline;
 }
-.link {
-    @include generate-type(link);
-    @include generate-variants('.link', link);
+
+// Color
+$link-colors: map-get($colors, link);
+@each $variant, $map in $link-colors {
+    $sel: '.link';
+    @if $variant != default {
+        $sel: '.link-' + $variant;
+    }
+
+    #{$sel} {
+        // colors
+        @each $key, $value in $map {
+            --link-#{$key}: var(--link-#{$variant}-#{$key});
+        }
+
+        // props
+        color: var(--link-color);
+        &:hover {
+            color: var(--link-hover-color);
+        }
+
+    }
 }

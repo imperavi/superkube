@@ -1,5 +1,5 @@
 // Transition
-@mixin transition($transition: all .2s linear) {
+@mixin transition($transition: all .1s linear) {
     transition: $transition;
 }
 

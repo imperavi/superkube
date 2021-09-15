@@ -7,12 +7,12 @@ $shadow-colors: map-get($colors, shadow);
 @each $name, $value in $shadow-colors {
     @if $name == default {
         @each $type, $shadow in $shadows {
-            .sh-#{$type} { box-shadow: shadow($name, $type); }
+            .sh-#{$type} { box-shadow: var(--shadow-#{$type}); }
         }
     }
     @else {
         @each $type, $shadow in $shadows {
-            .sh-#{$name}-#{$type} { box-shadow: shadow($name, $type); }
+            .sh-#{$name}-#{$type} { box-shadow: var(--shadow-#{$name}-#{$type}); }
         }
     }
 }
@@ -23,12 +23,12 @@ $shadow-colors: map-get($colors, shadow);
     @each $name, $value in $shadow-colors {
         @if $name == default {
             @each $type, $shadow in $shadows {
-                .sh-#{$type}-sm { box-shadow: shadow($name, $type); }
+                .sh-#{$type}-sm { box-shadow: var(--shadow-#{$type}); }
             }
         }
         @else {
             @each $type, $shadow in $shadows {
-                .sh-#{$name}-#{$type}-sm { box-shadow: shadow($name, $type); }
+                .sh-#{$name}-#{$type}-sm { box-shadow: var(--shadow-#{$name}-#{$type}); }
             }
         }
     }

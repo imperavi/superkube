@@ -1,0 +1,61 @@
+// =Input-Addon
+.input-addon {
+    // vars
+    --input-addon-item-padding: 0 0.85em;
+    --input-addon-item-border-radius: var(--radius-base);
+    --input-addon-item-font-size: var(--type-scale-14);
+    --input-addon-item-color: var(--palette-black);
+    --input-addon-item-background-color: var(--palette-transparent);
+    --input-addon-item-border-color: var(--palette-neutral-mid);
+
+    // scales
+    $input-scale: scale(input);
+    @each $name, $value in $input-scale {
+        @if $name == base {
+            --input-addon-height: $value;
+        }
+        @else {
+            &-#{$name} {
+                --input-addon-height: $value;
+            }
+        }
+    }
+
+    // props
+    display: flex;
+    height: var(--input-addon-height);
+
+    & input,
+    & select {
+        flex: 1;
+        margin-left: -1px;
+        margin-right: -1px;
+    }
+    .input-addon-item {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        vertical-align: middle;
+        text-align: center;
+        font-size: var(--input-addon-item-font-size);
+        padding: var(--input-addon-item-padding);
+        border-radius: var(--input-addon-item-border-radius);
+        color: var(--input-addon-item-color);
+        background-color: var(--input-addon-item-background-color);
+        border-width: 1px;
+        border-style: solid;
+        border-color: var(--input-addon-item-border-color);
+    }
+
+
+    & > {
+        :not(:last-child) {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        :not(:first-child) {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+}

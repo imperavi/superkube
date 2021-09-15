@@ -1,12 +1,25 @@
 // =Caption
-a.caption,
 .caption {
+    // colors
+    --caption-color: var(--palette-neutral-base);
+
+    // vars
+    --caption-font-weight: normal;
+    --caption-font-size: var(--type-scale-14);
+    --caption-line-height: 1.3;
+    --caption-text-transform: none;
+
+    // props
     display: inline-flex;
     align-items: center;
     white-space: nowrap;
     vertical-align: middle;
     text-decoration: none;
-    line-height: 1;
+    line-height: var(--caption-line-height);
+    font-weight: var(--caption-font-weight);
+    font-size: var(--caption-font-size);
+    text-transform: var(--caption-text-transform);
+    color: var(--caption-color);
 
     svg {
         fill: currentColor;
@@ -14,11 +27,39 @@ a.caption,
 }
 a.caption:hover {
     opacity: .6;
+    color: var(--caption-color);
     text-decoration: underline;
 }
-a.caption,
-.caption {
-    // Generator
-    @include generate-variants('.caption', caption);
-    @include generate-type(caption);
+// Scales
+.caption-small {
+    --caption-font-size: var(--type-scale-13);
+}
+
+// Variants
+.caption-semibold {
+    --caption-font-weight: 600;
+}
+.caption-strong {
+    --caption-font-weight: bold;
+}
+.caption-caps {
+    --caption-font-size: var(--type-scale-13);
+    --caption-text-transform: uppercase;
+}
+
+// Colors
+.caption-info {
+    --caption-color: var(--palette-active-base);
+}
+.caption-positive {
+    --caption-color: var(--palette-positive-base);
+}
+.caption-important {
+    --caption-color: var(--palette-negative-base);
+}
+.caption-dark {
+    --caption-color: var(--palette-black);
+}
+.caption-light {
+    --caption-color: var(--palette-white);
 }

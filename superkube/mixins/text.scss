@@ -1,9 +1,6 @@
 // Text Gradient
-@mixin text-gradient($color, $deg: 90deg) {
-    $from: map-get($color, from);
-    $to: map-get($color, to);
-
-      color: $from;
+@mixin text-gradient($from, $to, $deg: 90deg) {
+    color: $from;
     background-image: linear-gradient($deg, $from, $to);
     background-clip: text;
     -webkit-background-clip: text;

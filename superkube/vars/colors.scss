@@ -1,0 +1,211 @@
+// =Colors
+$colors: map-extend($colors, (
+    background: (
+        light: var(--palette-white),
+        dark: var(--palette-black),
+        primary: var(--palette-primary-base),
+        aluminum: var(--palette-neutral-lightest),
+        silver: var(--palette-neutral-lighter),
+        platinum: var(--palette-neutral-light)
+    ),
+    body: (
+        default: var(--palette-white)
+    ),
+    border: (
+        dark-low: var(--palette-black-7),
+        dark-medium: var(--palette-black-10),
+        light-low: var(--palette-white-30),
+        primary: var(--palette-primary-base)
+    ),
+    button: (
+        default: (
+            background-color: var(--palette-white),
+            border-color: var(--palette-neutral-mid),
+            color: var(--palette-neutral-darker),
+            hover-background-color: var(--palette-neutral-lighter),
+            hover-border-color: var(--palette-neutral-mid),
+            hover-color: var(--palette-black),
+            disabled-background-color: var(--palette-white),
+            disabled-border-color: var(--palette-neutral-mid),
+            disabled-color: var(--palette-black-80)
+        ),
+        primary: (
+            background-color: var(--palette-primary-base),
+            border-color: var(--palette-transparent),
+            color: var(--palette-primary-lightest),
+            hover-background-color: var(--palette-primary-dark),
+            hover-border-color: var(--palette-transparent),
+            hover-color: var(--palette-primary-lightest),
+            disabled-background-color: var(--palette-black-70),
+            disabled-border-color: var(--palette-transparent),
+            disabled-color: var(--palette-white-70)
+        ),
+        light: (
+            background-color: var(--palette-white),
+            border-color: var(--palette-transparent),
+            color: var(--palette-black),
+            hover-background-color: var(--palette-white-80),
+            hover-border-color: var(--palette-transparent),
+            hover-color: var(--palette-black),
+            disabled-background-color: var(--palette-white),
+            disabled-border-color: var(--palette-transparent),
+            disabled-color: var(--palette-black-80)
+        ),
+        dark: (
+            background-color: var(--palette-black),
+            border-color: var(--palette-transparent),
+            color: var(--palette-neutral-lightest),
+            hover-background-color: var(--palette-neutral-darker),
+            hover-border-color: var(--palette-transparent),
+            hover-color: var(--palette-neutral-lightest),
+            disabled-background-color: var(--palette-black-70),
+            disabled-border-color: var(--palette-transparent),
+            disabled-color: var(--palette-white-70)
+        )
+    ),
+    form: (
+        label: (
+            color: var(--palette-neutral, darker)
+        )
+    ),
+    gradient: (
+
+    ),
+    heading: (
+        default: var(--palette-black),
+        moderated: var(--palette-black-70),
+        muted: var(--palette-black-50),
+        light: var(--palette-white),
+        light-moderated: var(--palette-white-80),
+        primary: var(--palette-primary-base)
+    ),
+    icon: (
+        dark: var(--palette-black),
+        light: var(--palette-white),
+        primary: var(--palette-primary-base)
+    ),
+    inline: (
+        var: (
+            color: var(--palette-black-80),
+            border-color: var(--palette-transparent),
+            background-color: var(--palette-transparent)
+        ),
+        kbd: (
+            color: var(--palette-black-80),
+            border-color: var(--palette-black-15),
+            background-color: var(--palette-transparent)
+        ),
+        code: (
+            color: var(--palette-black-80),
+            border-color: var(--palette-transparent),
+            background-color: var(--palette-neutral-lightest)
+        ),
+        cite: (
+            color: var(--palette-black-70)
+        )
+    ),
+    input: (
+        default: (
+            color: var(--palette-neutral-darker),
+            border-color: var(--palette-neutral-mid),
+            background-color: var(--palette-white),
+            focus-border-color: var(--palette-active-light),
+            focus-box-shadow: inset 0 0 2px var(--palette-active-light)
+        ),
+        error: (
+            color: var(--palette-negative-dark),
+            border-color: var(--palette-negative-base),
+            outline-color: var(--palette-negative-base),
+            focus-color: var(--palette-negative-dark),
+            focus-border-color: var(--palette-negative-base),
+            focus-box-shadow: inset 0 0 3px var(--palette-negative-light)
+        ),
+        light: (
+            color: var(--palette-white-90),
+            border-color: var(--palette-white-25),
+            background-color: var(--palette-white-7),
+            focus-color: var(--palette-white-90),
+            focus-border-color: var(--palette-white-50),
+            focus-background-color: var(--palette-white-7)
+        )
+    ),
+    line: (
+        default: var(--palette-black-10)
+    ),
+    link: (
+        default: (
+            color: var(--palette-active-dark),
+            hover-color: var(--palette-negative-dark)
+        ),
+        dark: (
+            color: var(--palette-black),
+            hover-color: var(--palette-black-60)
+        ),
+        muted: (
+            color: var(--palette-black-50),
+            hover-color: var(--palette-black)
+        ),
+        moderated: (
+            color: var(--palette-black-70),
+            hover-color: var(--palette-black)
+        ),
+        light: (
+            color: var(--palette-white),
+            hover-color: var(--palette-white-60)
+        ),
+        light-moderated: (
+            color: var(--palette-white-70),
+            hover-color: var(--palette-white)
+        ),
+        primary: (
+            color: var(--palette-primary-dark),
+            hover-color: var(--palette-primary-darker)
+        )
+    ),
+    overlay: (
+        light: var(--palette-white-50),
+        dark: var(--palette-black-50)
+    ),
+    placeholder: (
+        default: var(--palette-black-40),
+        light: var(--palette-white-50)
+    ),
+    pre: (
+        default: (
+            background-color: var(--palette-neutral-lightest),
+            color: var(--palette-neutral-darker),
+            border-color: var(--palette-transparent)
+        )
+    ),
+    shadow: (
+        default: (
+            100: var(--palette-black-10),
+            150: var(--palette-black-10),
+            200: var(--palette-black-10),
+            250: var(--palette-black-10),
+            300: var(--palette-black-10),
+            350: var(--palette-black-25)
+        )
+    ),
+    table: (
+        default: (
+            border-color: var(--palette-neutral-light),
+            stripe-color: var(--palette-neutral-lightest)
+        )
+    ),
+    text-gradient: (
+
+    ),
+    text: (
+        dark: var(--palette-black),
+        default: var(--palette-neutral-darker),
+        moderated: var(--palette-black-70),
+        muted: var(--palette-black-50),
+        success: var(--palette-positive-dark),
+        error: var(--palette-negative-dark),
+        light: var(--palette-white),
+        light-moderated: var(--palette-white-80),
+        light-muted: var(--palette-white-50),
+        primary: var(--palette-primary-base)
+    )
+));

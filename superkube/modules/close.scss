@@ -1,8 +1,13 @@
 .close {
+    // vars
+    --close-size: 1em;
+
+    // props
     font-family: 'Supericons' !important;
     font-style: normal;
     font-weight: inherit;
     font-variant: inherit;
+    font-size: var(--close-size);
     text-transform: none;
     display: inline-block;
     cursor: pointer;
@@ -10,12 +15,8 @@
     line-height: 1;
     vertical-align: middle;
     opacity: .65;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-
-    // Variants
-    @include generate-variants('.close', close);
 }
 .close:hover {
     opacity: 1;

@@ -1,275 +1,6 @@
-// =Generators
-@mixin generate-type($name, $prefix: false, $selector: false) {
-    $map: map-deep-get(scale(type), $name);
-    @if $map != null {
-
-        @if $selector != false {
-            @if map-has-key($map, default) {
-                #{$selector} {
-                    @include generate-type-item(map-get($map, default));
-                }
-            }
-            @each $key, $value in $map {
-                @if $key != default {
-                    $name: '&-' + $key;
-                    @if $prefix != false {
-                        $name: $prefix + '-' + $key;
-                    }
-                    #{$name} {
-                        @include generate-type-item($value);
-                    }
-                }
-            }
-        }
-        @else {
-            @if map-has-key($map, default) {
-                $name: '&';
-                @if $prefix != false {
-                    $name: '& ' + $prefix;
-                }
-                #{$name} {
-                    @include generate-type-item(map-get($map, default));
-                }
-            }
-            @each $key, $value in $map {
-                @if $key != default {
-                    $name: '&-' + $key;
-                    @if $prefix != false {
-                        $name: $name + ' ' + $prefix;
-                    }
-                    #{$name} {
-                        @include generate-type-item($value);
-                    }
-                }
-            }
-        }
-    }
-}
-@mixin generate-type-item($value) {
-    $size: $value;
-    $line: false;
-    @if type-of($value) == list {
-        $size: nth($value, 1);
-        $line: nth($value, 2);
-    }
-
-    font-size: $size;
-    @if $line != false {
-        line-height: $line;
-    }
-}
-
-
-@mixin generate-variants($prefix, $modulename, $nested: false, $selector: false) {
-    $map: variant($modulename);
-    $colormap: colors($modulename);
-    $mods: false;
-    @if $colormap != null {
-        $mods: true;
-        @if $map == null {
-            $map: $colormap;
-        }
-        @else {
-            $map: map-extend($map, $colormap);
-        }
-    }
-
-
-    @if $map != null {
-        @if $selector != false {
-            @include generate-variants-selector($map, $prefix, $modulename, $nested, $selector);
-        }
-        @else {
-            @each $key, $value in $map {
-                @if $key == default {
-                    @include generate-variant($prefix, $key, $value, $nested, $mods);
-                }
-                @else if $key != null {
-                    $str: '&-#{$key}';
-                    $list: str-split($key, '_');
-                    @if length($list) > 1 {
-                        $str: '&-' + to-string($list, $prefix + '-');
-                    }
-
-                    #{$str} {
-                       @include generate-variant($prefix, $key, $value, $nested, $mods);
-                    }
-                }
-            }
-        }
-    }
-}
-@mixin generate-variants-selector($map, $prefix, $modulename, $nested: false, $selector: false) {
-    @each $key, $value in $map {
-        $name: '&-#{$key}';
-        $sel: '&';
-        @if $selector != false {
-            $name: $prefix + '-#{$key}';
-            $sel: $selector;
-        }
-
-        @if $key == default {
-            #{$sel} {
-                @include generate-variant($prefix, $key, $value, $nested);
-            }
-        }
-        @else {
-            $str: $name;
-            $list: str-split($key, '_');
-            @if length($list) > 1 {
-                $str: $prefix + '-' + to-string($list, $prefix + '-');
-            }
-
-            #{$str} {
-               @include generate-variant($prefix, $key, $value, $nested);
-            }
-        }
-    }
-}
-
-@mixin generate-variant($prefix, $name, $obj, $nested, $mods: false) {
-    $list: gradient, box-shadow, shadow;
-    @each $key, $value in $obj {
-        @if type-of($value) == map and index($list, $key) == null {
-            @if $nested == true {
-                $str: '& #{$prefix}-#{$key}';
-                #{$str} {
-                    @each $name, $statevalue in $value {
-                        @if type-of($statevalue) == map {
-                            @include generate-variant-state($prefix, $name, $statevalue, $mods);
-                        }
-                        @else {
-                            @include generate-variant-item-rule($name, $statevalue);
-                        }
-                    }
-                }
-            }
-            @else {
-                @include generate-variant-state($prefix, $key, $value, $mods);
-            }
-        }
-        @else {
-            @include generate-variant-item-rule($key, $value);
-        }
-    }
-}
-@mixin generate-variant-state($prefix, $state, $obj, $mods: false) {
-    @if $state == base {
-        @include generate-variant-item($prefix, $obj);
-    }
-    @else if $state == hover {
-        &:hover {
-            @include generate-variant-item($prefix, $obj);
-        }
-    }
-    @else if $state == focus {
-        &:focus {
-            @include generate-variant-item($prefix, $obj);
-        }
-    }
-    @else if $state == hoverfocus {
-        &:hover,
-        &:focus {
-            @include generate-variant-item($prefix, $obj);
-        }
-    }
-    @else if $state == before {
-        &:before {
-            @include generate-variant-item($prefix, $obj);
-        }
-    }
-    @else if $state == after {
-        &:after {
-            @include generate-variant-item($prefix, $obj);
-        }
-    }
-    @else if $state == first-child {
-        &:first-child {
-            @include generate-variant-item($prefix, $obj);
-        }
-    }
-    @else if $state == last-child {
-        &:last-child {
-            @include generate-variant-item($prefix, $obj);
-        }
-    }
-    @else if $state == active {
-        &.active {
-            @include generate-variant-item($prefix, $obj);
-        }
-    }
-    @else if $state == disabled {
-        &.disabled,
-        &:disabled {
-            @include generate-variant-item($prefix, $obj);
-        }
-    }
-    @else {
-        $sel: '&-#{$state}';
-        @if $mods == true {
-            $sel: '&#{$prefix}-#{$state}';
-        }
-        #{$sel} {
-            @include generate-variant-item($prefix, $obj);
-        }
-    }
-}
-@mixin generate-variant-item($prefix, $obj) {
-    $list: gradient, box-shadow, shadow;
-    $states: base, hover, focus, hoverfocus, active, disabled, before, after, first-child, last-child;
-    @each $key, $value in $obj {
-        @if type-of($value) == map and index($list, $key) == null {
-            @if index($states, $key) != null {
-                @include generate-variant-state($prefix, $key, $value);
-            }
-            @else {
-                #{$prefix}-#{$key} {
-                    @each $state, $statevalue in $value {
-                        @if index($states, $state) != null {
-                            @include generate-variant-state($prefix, $state, $statevalue);
-                        }
-                        @else {
-
-                            @include generate-variant-item-rule($state, $statevalue);
-                        }
-                    }
-                }
-            }
-        }
-        @else {
-            @include generate-variant-item-rule($key, $value);
-        }
-    }
-}
-@mixin generate-variant-item-rule($key, $value) {
-    @if $key == gradient {
-        @include background-gradient($value);
-    }
-    @else if $key == box-shadow and type-of($value) == 'map' {
-        $str: '';
-        $z: 0;
-        @each $k, $v in $value {
-            $z: $z + 1;
-            $glue: ', ';
-            @if $z == length($value) {
-                $glue: '';
-            }
-            $str: $str + $v + $glue;
-        }
-        #{$key}: #{$str};
-    }
-    @else {
-        @if ($key != shadow) {
-            #{$key}: $value;
-        }
-    }
-}
-
-
-// vars
+// generate root vars
 @mixin generate-root-vars {
-    $vars: radius, level, shadow;
-    @each $name in $vars {
+    @each $name in $global-scales {
         $map: scale($name);
         @each $key, $val in $map {
             --#{$name}-#{$key}: #{$val};
@@ -277,29 +8,117 @@
     }
 }
 
-// colors
-@mixin generate-root-colors($colors) {
-    @each $name, $map in $colors {
-        @if type-of($map) == map {
-            @include split-color-to-var($name, $map);
-        }
-        @else {
-            @if length($map) > 0 {
-                $name: color-replace($name);
-                --#{$name}: #{$map};
+// generate root palette
+@mixin generate-root-palette($map) {
+    @if $map != null {
+        @each $name, $value in $map {
+            $name: str-replace(#{$name}, '-opacity', '');
+            @if type-of($value) == map {
+                @each $key, $color in $value {
+                    --palette-#{$name}-#{$key}: #{$color};
+                }
+            }
+            @else {
+                --palette-#{$name}: #{$value};
             }
         }
     }
 }
-@mixin split-color-to-var($sel, $map) {
-    @each $key, $value in $map {
-        @if type-of($value) == map {
-            @include split-color-to-var(#{$sel}-#{$key}, $value);
+
+// generate root colors
+@mixin generate-root-colors($map) {
+    @if $map != null {
+        @each $name in $global-colors {
+            $obj: map-get($map, $name);
+            @each $key, $val in $obj {
+                @if type-of($val) == map {
+                    @each $n, $i in $val {
+                        --#{$name}-#{$key}-#{$n}: #{$i};
+                    }
+                }
+                @else {
+                    --#{$name}-#{$key}: #{$val};
+                }
+            }
         }
-        @else {
-            $name: color-replace($sel + '-' + $key);
-            --#{$name}: #{$value};
+
+        // shadows
+        $shadows: map-get($map, shadow);
+        @each $variant, $map in $shadows {
+            @if $variant == default {
+                @each $key, $val in $map {
+                    --shadow-#{$key}: #{shadow($variant, $key, $val)};
+                }
+            }
+            @else {
+                @each $key, $val in $map {
+                    --shadow-#{$variant}-#{$key}: #{shadow($variant, $key, $val)};
+                }
+            }
         }
+    }
+}
+
+// colors
+@mixin generate-colors($modulename) {
+    $map: color($modulename);
+    @if $map != null {
+        @each $variant, $value in $map {
+            $sel: '&';
+            @if $variant != default {
+                $sel: '&.' + $modulename + '-' + $variant;
+            }
+            #{$sel} {
+                @each $name, $val in $value {
+                    @if type-of($val) == map {
+                        @if $name == gradient {
+                            --#{$modulename}-background-image: #{gradient($val)};
+                        }
+                        @else if $name == box-shadow {
+                            --#{$modulename}-#{$name}: #{map-values($val)};
+                        }
+                    }
+                    @else {
+                        --#{$modulename}-#{$name}: #{$val};
+                    }
+                }
+            }
+        }
+    }
+}
+
+// type
+@mixin generate-type($name) {
+    $map: map-deep-get(scale(type), $name);
+    @if $map != null {
+        @if map-has-key($map, default) {
+            & {
+                @include generate-type-item($name, map-get($map, default));
+            }
+        }
+        @each $key, $value in $map {
+            @if $key != default {
+                $sel: '&-' + $key;
+                #{$sel} {
+                    @include generate-type-item($name, $value);
+                }
+            }
+        }
+    }
+}
+
+// type item
+@mixin generate-type-item($name, $value) {
+    $size: $value;
+    $line: false;
+    @if type-of($value) == list {
+        $size: nth($value, 1);
+        $line: nth($value, 2);
+    }
+
+    --#{$name}-font-size: #{$size};
+    @if $line != false {
+        --#{$name}-line-height: #{$line};
     }
 }
 
@@ -319,17 +138,7 @@
     }
 }
 
-// text
-@mixin generate-text-colors {
-    $obj: map-get($colors, text);
-    @each $key, $val in $obj {
-        @if ($key != default) {
-            &-#{$key} {
-                color: color(text, $key);
-            }
-        }
-    }
-}
+// text size
 @mixin generate-text-size($map, $breakpoint) {
     $obj: map-get($map, text);
     @each $key, $val in $obj {
@@ -348,17 +157,7 @@
     }
 }
 
-// heading
-@mixin generate-heading-colors {
-    $obj: map-get($colors, heading);
-    @each $key, $val in $obj {
-        @if ($key != default) {
-            &-#{$key} {
-                color: color(heading, $key);
-            }
-        }
-    }
-}
+// heading size
 @mixin generate-heading-size($map, $breakpoint) {
     $obj: map-get($map, heading);
     @each $key, $val in $obj {

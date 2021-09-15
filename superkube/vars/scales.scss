@@ -1,21 +1,38 @@
 // =Scales
-$scales: (
+$scales: map-extend($scales, (
+    type-scale: (
+        80: 80px,
+        64: 64px,
+        60: 60px,
+        48: 48px,
+        32: 32px,
+        28: 28px,
+        24: 24px,
+        20: 20px,
+        18: 18px,
+        16: 16px,
+        15: 15px,
+        14: 14px,
+        13: 13px,
+        12: 12px,
+        11: 11px
+    ),
     type: (
         base: (
             h1: 48px 1.2,
             h2: 28px 1.3,
-            h3: 21px 1.4,
+            h3: 20px 1.4,
             h4: 16px 1.5,
             quote: 18px 1.5,
             quotecite: 12px 1.5,
             table: 14px 1.5,
             pre: 14px 1.5,
-            figcaption: 13px 1.5
+            figcaption: 12px 1.5
         ),
         text: (
-            giga: 36px 1.5,
+            giga: 32px 1.5,
             mega: 24px 1.5,
-            huge: 21px 1.5,
+            huge: 20px 1.5,
             large: 18px 1.5,
             default: 16px 1.5,
             medium: 14px 1.5,
@@ -29,13 +46,13 @@ $scales: (
             huge: 48px 1.2,
             large: 36px 1.2,
             medium: 24px 1.3,
-            small: 21px 1.4,
+            small: 20px 1.4,
             micro: 16px 1.5,
             eyebrow: 11px 1.5
         ),
         input: (
             default: 15px 1.5,
-            large: 21px 1.5
+            large: 20px 1.5
         ),
         button: (
             small: 15px 1.25,
@@ -46,51 +63,11 @@ $scales: (
             label: 15px 1.5,
             checkbox: 15px 1.5,
             hint: 13px 1.5
-        ),
-        badge: (
-            default: 11px,
-            large: 14px,
-            huge: 16px,
-            mega: 21px
-        ),
-        caption: (
-            caps: 13px,
-            small: 13px,
-            default: 14px
-        ),
-        label: (
-            caps: 11px,
-            default: 12px,
-            large: 14px
-        ),
-        alert: (
-            default: 14px 1.5
-        ),
-        nav: (
-            small: 13px,
-            default: 14px
-        ),
-        menu: (
-            caps: 13px 1.3,
-            small: 13px 1.3,
-            medium: 14px 1.3,
-            default: 15px 1.3
-        ),
-        pagination: (
-            default: 14px
-        ),
-        breadcrumb: (
-            default: 14px 1.5
-        ),
-        list: (
-            small: 13px 1.3,
-            medium: 14px 1.3,
-            default: 15px 1.3
         )
     ),
     type-sm: (
         heading: (
-            giga: 64px 1.1,
+            giga: 60px 1.1,
             mega: 60px 1.1
         )
     ),
@@ -153,8 +130,8 @@ $scales: (
     ),
     level: (
         content: 100, // overlays
-        page: 200, // modals/offcanvas
-        control: 300, // popups
+        page: 200, // offcanvas
+        control: 300, // modals/popups
         all: 400 // messages
     ),
     radius: (
@@ -200,8 +177,8 @@ $scales: (
         3: 3,
         4: 4,
         5: 5,
-        6: 6,
         7: 7,
+        6: 6,
         8: 8,
         9: 9,
         10: 10,
@@ -212,7 +189,7 @@ $scales: (
         24: 24
     ),
     shadow: (
-        100: 0 1px 2px,
+        100:0 1px 2px,
         150: 0 2px 4px,
         200: 0 4px 6px,
         250: 0 6px 8px,
@@ -227,4 +204,4 @@ $scales: (
        64: 64px,
        128: 128px
     )
-) !default;
+));

@@ -1,4 +1,10 @@
 .caret {
+    // vars
+    --caret-size: 1em;
+
+    // props
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
     font-family: 'Supericons' !important;
     font-style: normal;
     font-weight: inherit;
@@ -9,11 +15,7 @@
     position: relative;
     line-height: 1;
     vertical-align: middle;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-
-    // Variants
-    @include generate-variants('.caret', caret);
+    font-size: var(--caret-size);
 }
 .caret:before {
     content: "\e900";

@@ -1,0 +1,13 @@
+// =ColorsDark
+$colors-dark: map-extend($colors-dark, (
+    shadow: (
+        default: (
+            100: var(--palette-black-20),
+            150: var(--palette-black-20),
+            200: var(--palette-black-20),
+            250: var(--palette-black-20),
+            300: var(--palette-black-20),
+            350: var(--palette-black-50)
+        )
+    )
+));

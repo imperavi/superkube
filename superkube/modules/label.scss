@@ -1,6 +1,32 @@
 // =Label
-a.label,
 .label {
+    // colors
+    --label-background-color: var(--palette-neutral-lighter);
+    --label-border-color: var(--palette-transparent);
+    --label-color: var(--palette-neutral-darker);
+
+    // vars
+    --label-font-weight: 600;
+    --label-font-size: var(--type-scale-12);
+    --label-border-radius: var(--radius-base);
+    --label-padding: 4px 9px;
+    --label-border-width: 1px;
+    --label-border-style: solid;
+    --label-text-transform: none;
+    --label-close-size: 10px;
+
+    // props
+    font-weight: var(--label-font-weight);
+    font-size: var(--label-font-size);
+    border-radius: var(--label-border-radius);
+    padding: var(--label-padding);
+    border-width: var(--label-border-width);
+    border-style: var(--label-border-style);
+    text-transform: var(--label-text-transform);
+    color: var(--label-color);
+    border-color: var(--label-border-color);
+    background-color: var(--label-background-color);
+
     display: inline-flex;
     align-items: center;
     white-space: nowrap;
@@ -18,7 +44,7 @@ a.label,
     }
     .close {
         top: 1px;
-        font-size: 10px;
+        font-size: var(--label-close-size);
         margin-top: -1px;
         margin-bottom: -1px;
         margin-right: -3px;
@@ -28,10 +54,41 @@ a.label,
 a.label:hover {
     opacity: 1;
     text-decoration: underline;
+    color: var(--label-color);
 }
-a.label,
-.label {
-    // Generator
-    @include generate-variants('.label', label);
-    @include generate-type(label);
+// Scales
+.label-large {
+    --label-font-size: var(--type-scale-14);
+}
+// Variants
+.label-caps {
+    --label-padding: 5px 8px 4px 8px;
+    --label-text-transform: uppercase;
+    --label-font-size: var(--type-scale-11);
+}
+// Colors
+.label.label-info {
+    --label-background-color: var(--palette-active-lightest);
+    --label-border-color: var(--palette-transparent);
+    --label-color: var(--palette-active-darker);
+}
+.label.label-positive {
+    --label-background-color: var(--palette-positive-lightest);
+    --label-border-color: var(--palette-transparent);
+    --label-color: var(--palette-positive-darker);
+}
+.label.label-important {
+    --label-background-color: var(--palette-negative-lightest);
+    --label-border-color: var(--palette-transparent);
+    --label-color: var(--palette-negative-darker);
+}
+.label.label-dark {
+    --label-background-color: var(--palette-black);
+    --label-border-color: var(--palette-transparent);
+    --label-color: var(--palette-negative-lightest);
+}
+.label.label-light {
+    --label-background-color: var(--palette-white);
+    --label-border-color: var(--palette-transparent);
+    --label-color: var(--palette-negative-darker);
 }

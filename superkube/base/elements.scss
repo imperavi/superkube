@@ -1,55 +1,60 @@
 // =Body
 html {
-    font-size: $unit;
+    font-size: var(--unit);
 }
 body {
-    font-family: $font-text;
-    font-size: $body-size;
-    line-height: $body-line;
-    color: color(text, default);
-    background-color: color(body, default);
+    // colors
+    --body-color: var(--text-default);
+    --body-background-color: var(--body-default);
+
+    // props
+    font-family: var(--font-text);
+    font-size: var(--body-text-size);
+    line-height: var(--body-text-line);
+    min-height: 100vh;
+    color: var(--body-color);
+    background-color: var(--body-default);
 }
 
-// =Placeholder
-@include placeholder(color(placeholder, base));
+// // =Placeholder
+@include placeholder(var(--placeholder-default));
 
-// =Type Spacing
-h1 + * { margin-top: type-space(h1-to-tag); }
-h2 + * { margin-top: type-space(h2-to-tag); }
-h3 + * { margin-top: type-space(h3-to-tag); }
-h4 + * { margin-top: type-space(h4-to-tag); }
-h5 + * { margin-top: type-space(h5-to-tag); }
-h6 + * { margin-top: type-space(h6-to-tag); }
+// // =TypeSpace
+h1 + * { margin-top: var(--type-space-h1-to-tag); }
+h2 + * { margin-top: var(--type-space-h2-to-tag); }
+h3 + * { margin-top: var(--type-space-h3-to-tag); }
+h4 + * { margin-top: var(--type-space-h4-to-tag); }
+h5 + * { margin-top: var(--type-space-h5-to-tag); }
+h6 + * { margin-top: var(--type-space-h6-to-tag); }
 
 p, ul, ol, blockquote, figure, pre, table, dl, address {
-    & + h2 { margin-top: type-space(tag-to-h2); }
-    & + h3 { margin-top: type-space(tag-to-h3); }
-    & + h4 { margin-top: type-space(tag-to-h4); }
-    & + h5 { margin-top: type-space(tag-to-h5); }
-    & + h6 { margin-top: type-space(tag-to-h6); }
+    & + h2 { margin-top: var(--type-space-tag-to-h2); }
+    & + h3 { margin-top: var(--type-space-tag-to-h3); }
+    & + h4 { margin-top: var(--type-space-tag-to-h4); }
+    & + h5 { margin-top: var(--type-space-tag-to-h5); }
+    & + h6 { margin-top: var(--type-space-tag-to-h6); }
     & + * {
-        margin-top: type-space(tag-to-tag);
+        margin-top: var(--type-space-tag-to-tag);
     }
 }
-h1 + h2 { margin-top: type-space(tag-to-h2); }
-h2 + h3 { margin-top: type-space(tag-to-h3); }
-h3 + h4 { margin-top: type-space(tag-to-h4); }
-h4 + h5 { margin-top: type-space(tag-to-h5); }
-h5 + h6 { margin-top: type-space(tag-to-h6); }
+h1 + h2 { margin-top: var(--type-space-tag-to-h2); }
+h2 + h3 { margin-top: var(--type-space-tag-to-h3); }
+h3 + h4 { margin-top: var(--type-space-tag-to-h4); }
+h4 + h5 { margin-top: var(--type-space-tag-to-h5); }
+h5 + h6 { margin-top: var(--type-space-tag-to-h6); }
 
 // =Link
 a {
-    color: color(link, default, base, color);
+    color: var(--link-default-color);
 }
 a:hover {
     @include transition;
-    color: color(link, default, hover, color);
+    color: var(--link-default-hover-color);
 }
 a .icon svg,
 a:hover .icon svg {
     fill: currentColor;
 }
-
 
 // =Heading
 h1,
@@ -58,17 +63,17 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: $font-heading;
+    font-family: var(--font-heading);
     font-style: normal;
-    font-size: $body-size;
-    line-height: $body-line;
-    color: color(heading, default);
+    font-size: var(--body-text-size);
+    font-weight: bold;
+    letter-spacing: -0.01em;
+    line-height: var(--body-text-line);
+    color: var(--heading-default);
     text-rendering: optimizeLegibility;
 
-    font-weight: variant(heading, font-weight);
-    letter-spacing: variant(heading, letter-spacing);
-
     & a {
+        display: block;
         color: inherit;
         text-decoration: none;
     }
@@ -82,7 +87,6 @@ h6 {
 @include for-lg { @include generate-base-headings(scale(type-lg), lg); }
 @include for-md { @include generate-base-headings(scale(type-md), md); }
 @include for-sm { @include generate-base-headings(scale(type-sm), sm); }
-
 
 // =List
 ul,
@@ -111,16 +115,27 @@ dd + dt {
 
 // =Pre
 pre {
+    // colors
+    --pre-color: var(--pre-default-color);
+    --pre-border-color: var(--pre-default-border-color);
+    --pre-background-color: var(--pre-default-background-color);
+
+    // vars
+    --pre-padding: 1em 1em 0.9em 1em;
+
+    // props
     overflow: auto;
     white-space: pre;
-    font-family: $font-monospace;
+    font-family: var(--font-mono);
     font-size: type-size(base, pre);
     line-height: type-line(base, pre);
-    color: color(pre, text);
-    background-color: color(pre, background);
-    padding: 1em;
-    border: 1px solid color(pre, border);
-    border-radius: radius(base);
+    padding: var(--pre-padding);
+    border-radius: var(--radius-base);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--pre-border-color);
+    background-color: var(--pre-background-color);
+    color: var(--pre-color);
 }
 pre code {
     padding: 0;
@@ -132,14 +147,12 @@ pre code {
 
 // =Quote
 blockquote {
-    color: color(text, default);
     font-style: italic;
     font-weight: normal;
     padding: 0;
     background: transparent;
 
     & p {
-        color: color(text, default);
         font-size: type-size(base, quote);
         line-height: type-line(base, quote);
     }
@@ -153,7 +166,7 @@ figcaption {
         font-style: inherit;
         font-size: type-size(base, quotecite);
         line-height: type-line(base, quotecite);
-        color: color(inline, cite, color);
+        color: var(--inline-cite-color);
     }
 }
 
@@ -170,13 +183,17 @@ table {
 }
 td,
 th {
+    // colors
+    --table-border-color: var(--table-default-border-color);
+
+    // props
     text-align: left;
     vertical-align: top;
     font-size: type-size(base, table);
     line-height: type-line(base, table);
     padding: 0.75em 0;
     padding-right: 0.75em;
-    border-bottom: 1px solid color(table, border);
+    border-bottom: 1px solid var(--table-border-color);
 }
 th {
     font-weight: normal;
@@ -210,30 +227,33 @@ var,
 code,
 kbd {
     display: inline-block;
-    font-family: $font-monospace;
+    font-family: var(--font-mono);
     font-style: normal;
     line-height: 1;
     vertical-align: baseline;
 }
 kbd,
 code {
-    border-radius: radius(base);
+    border-radius: var(--radius-base);
 }
 kbd {
-    color: color(inline, kbd, color);
-    border: 1px solid color(inline, kbd, border-color);
+    color: var(--inline-kbd-color);
+    background-color: var(--inline-kbd-background-color);
+    border: 1px solid var(--inline-kbd-border-color);
     padding: .2em .4em;
 }
 var {
-    color: color(inline, var, color);
+    color: var(--inline-var-color);
+    background-color: var(--inline-var-background-color);
+    border: 1px solid var(--inline-var-border-color);
 }
 code {
-    color: color(inline, code, color);
     position: relative;
     top: -1px;
-    border: 1px solid transparent;
-    background-color: color(inline, code, background-color);
     padding: .2em .4em .2em;
+    color: var(--inline-code-color);
+    background-color: var(--inline-code-background-color);
+    border: 1px solid var(--inline-code-border-color);
 }
 pre code {
     background: none;
@@ -273,14 +293,9 @@ sup {
 label {
     display: block;
     font-size: type-size(form, label);
-    color: color(form, label, text);
+    color: var(--form-label-color);
     margin-bottom: 0.15em;
-
-    // label properties
-    $labelvariant: variant(form, label);
-    @each $key, $value in $labelvariant {
-        #{$key}: $value;
-    }
+    font-weight: normal;
 
     &.checkbox,
     & .hint,
@@ -316,24 +331,5 @@ figure {
         margin-top: 0.25em;
         font-size: type-size(base, figcaption);
         line-height: type-line(base, figcaption);
-    }
-}
-
-// =Line
-hr {
-    position: relative;
-    line-height: 1;
-    background: none;
-    border: none;
-    text-align: left;
-    &:before {
-        content: '';
-        position: absolute;
-        top: 50%;
-    }
-
-    $lines: variant(line);
-    @if map-has-key($lines, default) {
-        @include line(map-get($lines, default));
     }
 }

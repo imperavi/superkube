@@ -212,7 +212,7 @@
   --link-muted-hover-color: var(--palette-black);
   --link-moderated-color: var(--palette-black-70);
   --link-moderated-hover-color: var(--palette-black);
-  --link-light-color: var(--palette-white);
+  --link-light-color: var(--palette-white-95);
   --link-light-hover-color: var(--palette-white-60);
   --link-light-moderated-color: var(--palette-white-70);
   --link-light-moderated-hover-color: var(--palette-white);

@@ -41,13 +41,13 @@ $colors: map-extend($colors, (
             disabled-color: var(--palette-white-70)
         ),
         light: (
-            background-color: var(--palette-white),
+            background-color: var(--palette-white-95),
             border-color: var(--palette-transparent),
             color: var(--palette-black),
             hover-background-color: var(--palette-white-80),
             hover-border-color: var(--palette-transparent),
             hover-color: var(--palette-black),
-            disabled-background-color: var(--palette-white),
+            disabled-background-color: var(--palette-white-95),
             disabled-border-color: var(--palette-transparent),
             disabled-color: var(--palette-black-80)
         ),
@@ -75,7 +75,7 @@ $colors: map-extend($colors, (
         default: var(--palette-black),
         moderated: var(--palette-black-70),
         muted: var(--palette-black-50),
-        light: var(--palette-white),
+        light: var(--palette-white-95),
         light-moderated: var(--palette-white-80),
         primary: var(--palette-primary-base)
     ),
@@ -203,7 +203,7 @@ $colors: map-extend($colors, (
         muted: var(--palette-black-50),
         success: var(--palette-positive-dark),
         error: var(--palette-negative-dark),
-        light: var(--palette-white),
+        light: var(--palette-white-90),
         light-moderated: var(--palette-white-80),
         light-muted: var(--palette-white-50),
         primary: var(--palette-primary-base)

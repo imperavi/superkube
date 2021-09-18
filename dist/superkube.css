@@ -187,7 +187,7 @@
   --heading-default: var(--palette-black);
   --heading-moderated: var(--palette-black-70);
   --heading-muted: var(--palette-black-50);
-  --heading-light: var(--palette-white);
+  --heading-light: var(--palette-white-95);
   --heading-light-moderated: var(--palette-white-80);
   --heading-primary: var(--palette-primary-base);
   --icon-dark: var(--palette-black);
@@ -233,7 +233,7 @@
   --text-muted: var(--palette-black-50);
   --text-success: var(--palette-positive-dark);
   --text-error: var(--palette-negative-dark);
-  --text-light: var(--palette-white);
+  --text-light: var(--palette-white-90);
   --text-light-moderated: var(--palette-white-80);
   --text-light-muted: var(--palette-white-50);
   --text-primary: var(--palette-primary-base);
@@ -1086,13 +1086,13 @@ button.button-primary,
 
 button.button-light,
 .button.button-light {
-  --button-background-color: var(--palette-white);
+  --button-background-color: var(--palette-white-95);
   --button-border-color: var(--palette-transparent);
   --button-color: var(--palette-black);
   --button-hover-background-color: var(--palette-white-80);
   --button-hover-border-color: var(--palette-transparent);
   --button-hover-color: var(--palette-black);
-  --button-disabled-background-color: var(--palette-white);
+  --button-disabled-background-color: var(--palette-white-95);
   --button-disabled-border-color: var(--palette-transparent);
   --button-disabled-color: var(--palette-black-80); }
 

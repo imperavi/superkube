@@ -77,13 +77,6 @@ button,
         background-image: var(--button-disabled-background-image);
         box-shadow: var(--button-disabled-box-shadow);
     }
-    // Size
-    &-large {
-        --button-padding: .4em 24px;
-    }
-    &-small {
-        --button-padding: .4em 14px;
-    }
     // Icons
     & .icon + span {
         margin-left: 6px;
@@ -104,4 +97,15 @@ button,
     // generate
     @include generate-type(button);
     @include generate-colors(button);
+}
+// Size
+.button-large {
+    --button-padding: .4em 24px;
+}
+.button-small {
+    --button-padding: .4em 14px;
+}
+// Variants
+.button-circle {
+    --button-border-radius: 99px;
 }

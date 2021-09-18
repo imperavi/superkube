@@ -1030,12 +1030,6 @@ button,
     background-color: var(--button-disabled-background-color);
     background-image: var(--button-disabled-background-image);
     box-shadow: var(--button-disabled-box-shadow); }
-  button-large,
-  .button-large {
-    --button-padding: .4em 24px; }
-  button-small,
-  .button-small {
-    --button-padding: .4em 14px; }
   button .icon + span,
   .button .icon + span {
     margin-left: 6px; }
@@ -1111,6 +1105,15 @@ button.button-dark,
   --button-disabled-background-color: var(--palette-black-70);
   --button-disabled-border-color: var(--palette-transparent);
   --button-disabled-color: var(--palette-white-70); }
+
+.button-large {
+  --button-padding: .4em 24px; }
+
+.button-small {
+  --button-padding: .4em 14px; }
+
+.button-round {
+  --button-border-radius: 99px; }
 
 .caption {
   --caption-color: var(--palette-neutral-base);

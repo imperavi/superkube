@@ -15,7 +15,8 @@ $palette: map-extend($palette, (
         60: rgba(#031927, .6),
         70: rgba(#031927, .7),
         80: rgba(#031927, .8),
-        90: rgba(#031927, .9)
+        90: rgba(#031927, .9),
+        95: rgba(#031927, .95)
     ),
     white: #ffffff,
     white-opacity: (
@@ -31,7 +32,8 @@ $palette: map-extend($palette, (
         60: rgba(#ffffff, .6),
         70: rgba(#ffffff, .7),
         80: rgba(#ffffff, .8),
-        90: rgba(#ffffff, .9)
+        90: rgba(#ffffff, .9),
+        95: rgba(#ffffff, .95)
     ),
     primary: (
         darker: #122F73,

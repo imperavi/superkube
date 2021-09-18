@@ -71,6 +71,7 @@
   --palette-black-70: rgba(3, 25, 39, 0.7);
   --palette-black-80: rgba(3, 25, 39, 0.8);
   --palette-black-90: rgba(3, 25, 39, 0.9);
+  --palette-black-95: rgba(3, 25, 39, 0.95);
   --palette-white: #ffffff;
   --palette-white-5: rgba(255, 255, 255, 0.05);
   --palette-white-7: rgba(255, 255, 255, 0.07);
@@ -85,6 +86,7 @@
   --palette-white-70: rgba(255, 255, 255, 0.7);
   --palette-white-80: rgba(255, 255, 255, 0.8);
   --palette-white-90: rgba(255, 255, 255, 0.9);
+  --palette-white-95: rgba(255, 255, 255, 0.95);
   --palette-primary-darker: #122F73;
   --palette-primary-dark: #1B46AC;
   --palette-primary-base: #245DE5;

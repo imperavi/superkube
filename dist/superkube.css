@@ -3103,14 +3103,16 @@ hr {
     margin-left: var(--nav-item-space);
     margin-right: 0; }
 
-.nav-full .nav-item {
-  flex: 1;
-  margin-left: 0;
-  margin-right: 0; }
-
-.nav-full .nav-link {
-  flex: 1;
-  justify-content: center; }
+.nav-full {
+  flex: 1; }
+  .nav-full .nav-item {
+    flex: 1;
+    justify-content: center;
+    margin-left: 0;
+    margin-right: 0; }
+  .nav-full .nav-link {
+    flex: 1;
+    justify-content: center; }
 
 .nav-primary {
   --nav-link-color: var(--palette-primary-dark);

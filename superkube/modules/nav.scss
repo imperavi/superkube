@@ -189,8 +189,11 @@
 
 // Full
 .nav-full {
+    flex: 1;
+
     .nav-item {
         flex: 1;
+        justify-content: center;
         margin-left: 0;
         margin-right: 0;
     }

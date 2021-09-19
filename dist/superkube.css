@@ -2352,7 +2352,8 @@ textarea,
   --input-padding: 0.3em 0.4em; }
 
 .input-round {
-  --input-border-radius: 99px; }
+  --input-border-radius: 99px;
+  --input-padding: 0.3em 1em; }
 
 .input-light::-webkit-input-placeholder {
   color: var(--placeholder-light); }

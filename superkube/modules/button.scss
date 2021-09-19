@@ -108,4 +108,8 @@ button,
 // Variants
 .button-round {
     --button-border-radius: 99px;
+    --button-padding: .4em 1.45em;
+}
+.button-round.button-small {
+    --button-padding: .4em 1.125em;
 }

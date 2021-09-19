@@ -973,7 +973,8 @@ button,
 .button {
   --button-font-weight: 600;
   --button-border-radius: var(--radius-base);
-  --button-padding: .4em 18px;
+  --button-padding-y: .4em;
+  --button-padding-x: 18px;
   --button-border-width: 1px;
   --button-border-style: solid;
   --button-opacity: 1;
@@ -994,7 +995,10 @@ button,
   font-size: var(--button-font-size);
   line-height: var(--button-line-height);
   border-radius: var(--button-border-radius);
-  padding: var(--button-padding);
+  padding-top: var(--button-padding-y);
+  padding-bottom: var(--button-padding-y);
+  padding-left: var(--button-padding-x);
+  padding-right: var(--button-padding-x);
   border-width: var(--button-border-width);
   border-style: var(--button-border-style);
   box-shadow: var(--button-box-shadow);
@@ -1109,17 +1113,17 @@ button.button-dark,
   --button-disabled-color: var(--palette-white-70); }
 
 .button-large {
-  --button-padding: .4em 24px; }
+  --button-padding-x: 24px; }
 
 .button-small {
-  --button-padding: .4em 14px; }
+  --button-padding-x: 14px; }
 
 .button-round {
   --button-border-radius: 99px;
-  --button-padding: .4em 1.45em; }
+  --button-padding-x: 1.45em; }
 
 .button-round.button-small {
-  --button-padding: .4em 1.125em; }
+  --button-padding-x: 1.125em; }
 
 .caption {
   --caption-color: var(--palette-neutral-base);

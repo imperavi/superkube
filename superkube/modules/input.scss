@@ -52,6 +52,9 @@ textarea,
 .input-large {
     --input-padding: 0.3em 0.4em;
 }
+.input-round {
+    --input-border-radius: 99px;
+}
 .input-light {
     @include placeholder(var(--placeholder-light));
 }

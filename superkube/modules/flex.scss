@@ -59,22 +59,26 @@
 }
 
 // =Sidebars
+.flex-sidebar {
+    --flex-sidebar-width: auto;
+    flex: 0 0 var(--flex-sidebar-width);
+}
 $sidebars: scale(sidebar);
 @each $name, $value in $sidebars {
     @if $name == base {
-        .flex-sidebar { flex: 0 0 $value; }
+        .flex-sidebar { --flex-sidebar-width: #{$value}; }
     }
     @else {
-        .flex-sidebar-#{$name} { flex: 0 0 $value; }
+        .flex-sidebar-#{$name} { --flex-sidebar-width: #{$value}; }
     }
 }
 @include for-sm {
     @each $name, $value in $sidebars {
         @if $name == base {
-            .flex-sidebar { flex: 0 0 100%; }
+            .flex-sidebar { --flex-sidebar-width: 100%; }
         }
         @else {
-            .flex-sidebar-#{$name} { flex: 0 0 100%; }
+            .flex-sidebar-#{$name} { --flex-sidebar-width: 100%; }
         }
     }
 }

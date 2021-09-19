@@ -1436,11 +1436,15 @@ a.caption:hover {
   min-width: 0; }
 
 .flex-sidebar {
-  flex: 0 0 300px; }
+  --flex-sidebar-width: auto;
+  flex: 0 0 var(--flex-sidebar-width); }
+
+.flex-sidebar {
+  --flex-sidebar-width: 300px; }
 
 @media only screen and (max-width: 767px) {
   .flex-sidebar {
-    flex: 0 0 100%; } }
+    --flex-sidebar-width: 100%; } }
 
 @media only screen and (max-width: 767px) {
   .flex-row-sm {

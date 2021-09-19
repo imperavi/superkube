@@ -2843,7 +2843,7 @@ hr {
   --menu-item-space: 0;
   --menu-item-padding: 0;
   font-size: var(--menu-font-size);
-  line-heigh: var(--menu-line-heigh); }
+  line-height: var(--menu-line-height); }
   .menu .menu-item {
     display: flex;
     align-items: center;

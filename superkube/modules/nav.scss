@@ -72,6 +72,14 @@
     }
 }
 
+// Spacing
+$spacing-nav: scale(spacing-nav);
+@each $name, $value in $spacing-nav {
+    .nav-item-space-#{$name} {
+        --nav-item-space: #{$value} !important;
+    }
+}
+
 // Underline
 .nav-underline {
     .nav-link {

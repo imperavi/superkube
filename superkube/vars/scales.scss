@@ -188,6 +188,18 @@ $scales: map-extend($scales, (
         20: 20,
         24: 24
     ),
+    spacing-nav: (
+        off: 0,
+        xxxs: 1rem,
+        xxs: 2rem,
+        xs: 3rem,
+        s: 4rem,
+        m: 5rem,
+        l: 6rem,
+        xl: 7rem,
+        xxl: 8rem,
+        xxxl: 9rem
+    ),
     shadow: (
         100:0 1px 2px,
         150: 0 2px 4px,

@@ -3026,6 +3026,36 @@ hr {
 .nav-strong .nav-link {
   font-weight: bold; }
 
+.nav-item-space-off {
+  --nav-item-space: 0 !important; }
+
+.nav-item-space-xxxs {
+  --nav-item-space: 1rem !important; }
+
+.nav-item-space-xxs {
+  --nav-item-space: 2rem !important; }
+
+.nav-item-space-xs {
+  --nav-item-space: 3rem !important; }
+
+.nav-item-space-s {
+  --nav-item-space: 4rem !important; }
+
+.nav-item-space-m {
+  --nav-item-space: 5rem !important; }
+
+.nav-item-space-l {
+  --nav-item-space: 6rem !important; }
+
+.nav-item-space-xl {
+  --nav-item-space: 7rem !important; }
+
+.nav-item-space-xxl {
+  --nav-item-space: 8rem !important; }
+
+.nav-item-space-xxxl {
+  --nav-item-space: 9rem !important; }
+
 .nav-underline .nav-link {
   text-decoration: underline; }
 

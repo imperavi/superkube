@@ -11,7 +11,8 @@
     // vars
     --menu-font-size: var(--type-scale-15);
     --menu-line-height: 1.3;
-    --menu-link-padding: 6px 0;
+    --menu-link-padding-x: 0;
+    --menu-link-padding-y: 6px;
     --menu-item-space: 0;
     --menu-item-padding: 0;
 
@@ -40,7 +41,10 @@
         align-items: center;
         flex: 1;
         text-decoration: none;
-        padding: var(--menu-link-padding);
+        padding-top: var(--menu-link-padding-y);
+        padding-bottom: var(--menu-link-padding-y);
+        padding-left: var(--menu-link-padding-x);
+        padding-right: var(--menu-link-padding-x);
         color: var(--menu-link-color);
         background-color: var(--menu-link-background-color);
     }
@@ -84,10 +88,24 @@
     }
 }
 
+// Spacing
+$spacing-menu: scale(spacing-menu);
+@each $name, $value in $spacing-menu {
+    .menu-item-space-#{$name} {
+        --menu-item-space: #{$value} !important;
+    }
+}
+$padding-menu: scale(padding-menu);
+@each $name, $value in $padding-menu {
+    .menu-link-padding-#{$name} {
+        --menu-link-padding-y: #{$value} !important;
+    }
+}
+
 // Caps
 .menu-caps {
     --menu-font-size: var(--type-scale-13);
-    --menu-link-padding: 8px 0;
+    --menu-link-padding-y: 8px;
 
     .menu-link {
         letter-spacing: .01em;
@@ -109,7 +127,7 @@
 
 // Stacked
 .menu-stacked {
-    --menu-link-padding: 8px 0;
+    --menu-link-padding-y: 8px;
     --menu-item-border-width: 1px;
     --menu-item-border-color: var(--palette-black-7);
     --menu-item-border-style: solid;
@@ -130,7 +148,8 @@
     --menu-link-hover-background-color: var(--palette-black-10);
     --menu-link-active-color: var(--palette-neutral-lightest);
     --menu-link-active-background-color: var(--palette-black);
-    --menu-link-padding: 6px 10px;
+    --menu-link-padding-y: 6px;
+    --menu-link-padding-x: 10px;
     --menu-link-border-radius: var(--radius-base);
     --menu-item-space: 1px;
 

@@ -200,6 +200,22 @@ $scales: map-extend($scales, (
         xxl: 8rem,
         xxxl: 9rem
     ),
+    spacing-menu: (
+        off: 0,
+        l: 1rem,
+        xl: 2rem,
+        xxl: 3rem
+    ),
+    padding-menu: (
+        off: 0,
+        xxs: 1px,
+        xs: 2px,
+        s: 4px,
+        m: 6px,
+        l: 8px,
+        xl: 10px,
+        xxl: 12px
+    ),
     shadow: (
         100:0 1px 2px,
         150: 0 2px 4px,

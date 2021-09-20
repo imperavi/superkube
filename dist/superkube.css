@@ -1056,7 +1056,7 @@ button,
 
 button-small,
 .button-small {
-  --button-font-size: 15px;
+  --button-font-size: 14px;
   --button-line-height: 1.25; }
 
 button-large,

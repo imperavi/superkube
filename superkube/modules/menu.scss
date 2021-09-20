@@ -11,7 +11,7 @@
     // vars
     --menu-font-size: var(--type-scale-15);
     --menu-line-height: 1.3;
-    --menu-link-padding: 5px 0;
+    --menu-link-padding: 6px 0;
     --menu-item-space: 0;
     --menu-item-padding: 0;
 
@@ -109,7 +109,7 @@
 
 // Stacked
 .menu-stacked {
-    --menu-link-padding: 7px 0;
+    --menu-link-padding: 8px 0;
     --menu-item-border-width: 1px;
     --menu-item-border-color: var(--palette-black-7);
     --menu-item-border-style: solid;

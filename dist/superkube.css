@@ -3138,17 +3138,19 @@ hr {
     overflow-y: hidden;
     overflow-x: auto;
     white-space: nowrap; }
-  .nav-menu-sm .nav-list {
-    flex-direction: column;
-    align-items: stretch; }
-  .nav-menu-sm .nav-item {
-    margin-left: 0;
-    margin-right: 0;
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem; }
-  .nav-menu-sm .nav-link {
-    flex: 1;
-    justify-content: flex-start; }
+  .nav-menu-sm {
+    --nav-menu-item-space: 2rem; }
+    .nav-menu-sm .nav-list {
+      flex-direction: column;
+      align-items: stretch; }
+    .nav-menu-sm .nav-item {
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: var(--nav-menu-item-space);
+      margin-bottom: var(--nav-menu-item-space); }
+    .nav-menu-sm .nav-link {
+      flex: 1;
+      justify-content: flex-start; }
   .nav-menu-sm.nav-pills .nav-item {
     margin-top: 1px;
     margin-bottom: 1px; }

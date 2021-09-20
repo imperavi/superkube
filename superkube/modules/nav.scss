@@ -229,6 +229,8 @@
         white-space: nowrap;
     }
     .nav-menu-sm {
+        --nav-menu-item-space: 2rem;
+
         .nav-list {
             flex-direction: column;
             align-items: stretch;
@@ -236,8 +238,8 @@
         .nav-item {
             margin-left: 0;
             margin-right: 0;
-            margin-top: 1.5rem;
-            margin-bottom: 1.5rem;
+            margin-top: var(--nav-menu-item-space);
+            margin-bottom: var(--nav-menu-item-space);
         }
         .nav-link {
             flex: 1;

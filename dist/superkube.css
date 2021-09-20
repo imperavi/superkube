@@ -2971,7 +2971,7 @@ hr {
   --menu-number-color: var(--palette-white-60); }
 
 .menu-light.menu-stacked {
-  --menu-border-color: var(--palette-white-20); }
+  --menu-item-border-color: var(--palette-white-20); }
 
 .nav {
   --nav-link-color: var(--palette-black);

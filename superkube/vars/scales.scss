@@ -126,7 +126,9 @@ $scales: map-extend($scales, (
         full: 100%
     ),
     edge: (
-        base: 5rem
+        base: 5rem,
+        large: 10rem,
+        huge: 14rem
     ),
     level: (
         content: 100, // overlays

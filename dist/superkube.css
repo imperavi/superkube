@@ -1315,13 +1315,27 @@ a.caption:hover {
   padding-left: 5rem;
   padding-right: 5rem; }
 
+.edges-large {
+  padding-left: 10rem;
+  padding-right: 10rem; }
+
+.edges-huge {
+  padding-left: 14rem;
+  padding-right: 14rem; }
+
 @media only screen and (max-width: 767px) {
   .edges-off-sm {
     padding-left: 0;
     padding-right: 0; }
   .edges-sm {
     padding-left: 5rem;
-    padding-right: 5rem; } }
+    padding-right: 5rem; }
+  .edges-large-sm {
+    padding-left: 10rem;
+    padding-right: 10rem; }
+  .edges-huge-sm {
+    padding-left: 14rem;
+    padding-right: 14rem; } }
 
 .hidden {
   display: none; }

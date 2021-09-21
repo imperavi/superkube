@@ -21,6 +21,11 @@ $container-gutter: scale(grid, gutter);
     }
 }
 
+// Crop
+.container-crop {
+    overflow: hidden;
+}
+
 // =Edges
 .edges-off { padding-left: 0; padding-right: 0; }
 

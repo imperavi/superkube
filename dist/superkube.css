@@ -1307,6 +1307,9 @@ a.caption:hover {
   [class*=" container-"] {
     max-width: none; } }
 
+.container-crop {
+  overflow: hidden; }
+
 .edges-off {
   padding-left: 0;
   padding-right: 0; }

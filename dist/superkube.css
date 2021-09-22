@@ -2446,11 +2446,11 @@ select.input-light,
 textarea.input-light,
 .input.input-light {
   --input-color: var(--palette-white-90);
-  --input-border-color: var(--palette-white-25);
-  --input-background-color: var(--palette-white-7);
+  --input-border-color: var(--palette-white-40);
+  --input-background-color: var(--palette-white-15);
   --input-focus-color: var(--palette-white-90);
-  --input-focus-border-color: var(--palette-white-50);
-  --input-focus-background-color: var(--palette-white-7); }
+  --input-focus-border-color: var(--palette-white-60);
+  --input-focus-background-color: var(--palette-white-20); }
 
 input,
 select,

@@ -122,11 +122,11 @@ $colors: map-extend($colors, (
         ),
         light: (
             color: var(--palette-white-90),
-            border-color: var(--palette-white-25),
-            background-color: var(--palette-white-7),
+            border-color: var(--palette-white-40),
+            background-color: var(--palette-white-15),
             focus-color: var(--palette-white-90),
-            focus-border-color: var(--palette-white-50),
-            focus-background-color: var(--palette-white-7)
+            focus-border-color: var(--palette-white-60),
+            focus-background-color: var(--palette-white-20)
         )
     ),
     line: (

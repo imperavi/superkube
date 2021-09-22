@@ -21,9 +21,21 @@ $container-gutter: scale(grid, gutter);
     }
 }
 
-// Crop
+// Features
 .container-crop {
     overflow: hidden;
+}
+.container-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    pointer-events: none;
+
+    & > * {
+        pointer-events: all;
+    }
 }
 
 // =Edges

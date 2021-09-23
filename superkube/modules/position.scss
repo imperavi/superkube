@@ -2,7 +2,8 @@
 .position-relative {
     position: relative;
 }
-.position-over {
+.position-over,
+.container-overlay {
     position: absolute;
     top: 0;
     left: 0;

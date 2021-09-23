@@ -3308,8 +3308,7 @@ hr {
       justify-content: flex-start; } }
 
 .navbar .navbar-container {
-  display: flex;
-  height: 100%; }
+  display: flex; }
 
 .navbar .navbar-container > div {
   display: flex;

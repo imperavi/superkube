@@ -44,6 +44,50 @@ $spacing-scale: scale(spacing);
     .pr-#{$name}  { padding-right: $unit * $index !important; }
 
 }
+@include for-md {
+    .mt-off-md { margin-top: 0 !important; }
+    .mb-off-md { margin-bottom: 0 !important; }
+    .ml-off-md { margin-left: 0 !important; }
+    .mr-off-md { margin-right: 0 !important; }
+    .my-off-md { margin-top: 0 !important; margin-bottom: 0 !important; }
+    .mx-off-md { margin-left: 0 !important; margin-right: 0 !important; }
+    .p-off-md  { padding: 0 !important; }
+    .pt-off-md { padding-top: 0 !important; }
+    .pb-off-md { padding-bottom: 0 !important; }
+    .pl-off-md { padding-left: 0 !important; }
+    .pr-off-md { padding-right: 0 !important; }
+    .py-off-md { padding-top: 0 !important; padding-bottom: 0 !important; }
+    .px-off-md { padding-left: 0 !important; padding-right: 0 !important; }
+
+    .mt-auto-md { margin-top: auto !important; }
+    .mb-auto-md { margin-bottom: auto !important; }
+    .ml-auto-md { margin-left: auto !important; }
+    .mr-auto-md { margin-right: auto !important; }
+
+    @each $name, $index in $spacing-scale {
+        .p-#{$name}-md   { padding: $unit * $index !important; }
+    }
+    @each $name, $index in $spacing-scale {
+        .my-#{$name}-md  { margin-top: $unit * $index !important; margin-bottom: $unit * $index !important; }
+        .mx-#{$name}-md  { margin-left: $unit * $index !important; margin-right: $unit * $index !important; }
+        .py-#{$name}-md  { padding-top: $unit * $index !important; padding-bottom: $unit * $index !important; }
+        .px-#{$name}-md  { padding-left: $unit * $index !important; padding-right: $unit * $index !important; }
+    }
+    @each $name, $index in $spacing-scale {
+        .mb-#{$name}-md  { margin-bottom: $unit * $index !important; }
+        .mt-#{$name}-md  { margin-top: $unit * $index !important; }
+        .ml-#{$name}-md  { margin-left: $unit * $index !important; }
+        .mr-#{$name}-md  { margin-right: $unit * $index !important; }
+        .mb-n#{$name}-md { margin-bottom: -($unit * $index) !important; }
+        .mt-n#{$name}-md { margin-top: -($unit * $index) !important; }
+        .ml-n#{$name}-md { margin-left: -($unit * $index) !important; }
+        .mr-n#{$name}-md { margin-right: -($unit * $index) !important; }
+        .pt-#{$name}-md  { padding-top: $unit * $index !important; }
+        .pb-#{$name}-md  { padding-bottom: $unit * $index !important; }
+        .pl-#{$name}-md  { padding-left: $unit * $index !important; }
+        .pr-#{$name}-md  { padding-right: $unit * $index !important; }
+    }
+}
 @include for-sm {
     .mt-off-sm { margin-top: 0 !important; }
     .mb-off-sm { margin-bottom: 0 !important; }

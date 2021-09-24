@@ -25,12 +25,6 @@ $container-gutter: scale(grid, gutter);
 .container-crop {
     overflow: hidden;
 }
-.container-overlay {
-    pointer-events: none;
-    & > * {
-        pointer-events: all;
-    }
-}
 
 // =Edges
 .edges-off { padding-left: 0; padding-right: 0; }

@@ -1310,11 +1310,6 @@ a.caption:hover {
 .container-crop {
   overflow: hidden; }
 
-.container-overlay {
-  pointer-events: none; }
-  .container-overlay > * {
-    pointer-events: all; }
-
 .edges-off {
   padding-left: 0;
   padding-right: 0; }
@@ -3695,13 +3690,15 @@ hr {
 .position-relative {
   position: relative; }
 
-.position-over,
-.container-overlay {
+.position-over {
   position: absolute;
   top: 0;
   left: 0;
   bottom: 0;
-  right: 0; }
+  right: 0;
+  pointer-events: none; }
+  .position-over > * {
+    pointer-events: all; }
 
 .r-off {
   border-radius: 0; }

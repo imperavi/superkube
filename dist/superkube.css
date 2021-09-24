@@ -1100,6 +1100,18 @@ button.button-light,
   --button-disabled-border-color: var(--palette-transparent);
   --button-disabled-color: var(--palette-black-80); }
 
+button.button-light-outline,
+.button.button-light-outline {
+  --button-background-color: var(--palette-transparent);
+  --button-border-color: var(--palette-white-60);
+  --button-color: var(--palette-white-90);
+  --button-hover-background-color: var(--palette-white-7);
+  --button-hover-border-color: var(--palette-white-80);
+  --button-hover-color: var(--palette-white);
+  --button-disabled-background-color: var(--palette-white-95);
+  --button-disabled-border-color: var(--palette-transparent);
+  --button-disabled-color: var(--palette-black-80); }
+
 button.button-dark,
 .button.button-dark {
   --button-background-color: var(--palette-black);

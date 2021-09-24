@@ -51,6 +51,17 @@ $colors: map-extend($colors, (
             disabled-border-color: var(--palette-transparent),
             disabled-color: var(--palette-black-80)
         ),
+        light-outline: (
+            background-color: var(--palette-transparent),
+            border-color: var(--palette-white-60),
+            color: var(--palette-white-90),
+            hover-background-color: var(--palette-white-7),
+            hover-border-color: var(--palette-white-80),
+            hover-color: var(--palette-white),
+            disabled-background-color: var(--palette-white-95),
+            disabled-border-color: var(--palette-transparent),
+            disabled-color: var(--palette-black-80)
+        ),
         dark: (
             background-color: var(--palette-black),
             border-color: var(--palette-transparent),

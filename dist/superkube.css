@@ -3339,7 +3339,8 @@ hr {
       justify-content: flex-start; } }
 
 .navbar .navbar-container {
-  display: flex; }
+  display: flex;
+  height: 100%; }
 
 .navbar .navbar-container > div {
   display: flex;
@@ -4108,7 +4109,7 @@ hr {
     min-width: none;
     width: auto; } }
 
-.h-full {
+.vh-full {
   min-height: 100vh; }
 
 .mt-off {

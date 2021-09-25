@@ -37,6 +37,22 @@ p, ul, ol, blockquote, figure, pre, table, dl, address {
         margin-top: var(--type-space-tag-to-tag);
     }
 }
+figure {
+    & + h2,
+    & + h3,
+    & + h4,
+    & + h5,
+    & + h6,
+    & + p,
+    & + ul,
+    & + ol,
+    & + dl,
+    & + pre,
+    & + table {
+        margin-top: var(--type-space-figure-to-tag);
+    }
+}
+
 h1 + h2 { margin-top: var(--type-space-tag-to-h2); }
 h2 + h3 { margin-top: var(--type-space-tag-to-h3); }
 h3 + h4 { margin-top: var(--type-space-tag-to-h4); }

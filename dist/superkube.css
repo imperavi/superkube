@@ -39,6 +39,7 @@
   --type-space-tag-to-h4: 8rem;
   --type-space-tag-to-h5: 8rem;
   --type-space-tag-to-h6: 8rem;
+  --type-space-figure-to-tag: 8rem;
   --type-space-form-item-to-item: 5rem;
   --type-space-form-buttons-to-item: 6rem;
   --type-scale-80: 80px;
@@ -369,6 +370,19 @@ p + h6, ul + h6, ol + h6, blockquote + h6, figure + h6, pre + h6, table + h6, dl
 
 p + *, ul + *, ol + *, blockquote + *, figure + *, pre + *, table + *, dl + *, address + * {
   margin-top: var(--type-space-tag-to-tag); }
+
+figure + h2,
+figure + h3,
+figure + h4,
+figure + h5,
+figure + h6,
+figure + p,
+figure + ul,
+figure + ol,
+figure + dl,
+figure + pre,
+figure + table {
+  margin-top: var(--type-space-figure-to-tag); }
 
 h1 + h2 {
   margin-top: var(--type-space-tag-to-h2); }

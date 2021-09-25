@@ -27,7 +27,7 @@ h4 + * { margin-top: var(--type-space-h4-to-tag); }
 h5 + * { margin-top: var(--type-space-h5-to-tag); }
 h6 + * { margin-top: var(--type-space-h6-to-tag); }
 
-p, ul, ol, blockquote, figure, pre, table, dl, address {
+p, ul, ol, blockquote, pre, dl, address {
     & + h2 { margin-top: var(--type-space-tag-to-h2); }
     & + h3 { margin-top: var(--type-space-tag-to-h3); }
     & + h4 { margin-top: var(--type-space-tag-to-h4); }
@@ -37,7 +37,8 @@ p, ul, ol, blockquote, figure, pre, table, dl, address {
         margin-top: var(--type-space-tag-to-tag);
     }
 }
-figure {
+figure,
+table {
     & + h2,
     & + h3,
     & + h4,
@@ -48,6 +49,7 @@ figure {
     & + ol,
     & + dl,
     & + pre,
+    & + figure,
     & + table {
         margin-top: var(--type-space-figure-to-tag);
     }

@@ -228,7 +228,7 @@
   --pre-default-background-color: var(--palette-neutral-lightest);
   --pre-default-color: var(--palette-neutral-darker);
   --pre-default-border-color: var(--palette-transparent);
-  --table-default-border-color: var(--palette-neutral-light);
+  --table-default-border-color: var(--palette-black-7);
   --table-default-stripe-color: var(--palette-neutral-lightest);
   --text-dark: var(--palette-black);
   --text-default: var(--palette-neutral-darker);
@@ -353,22 +353,22 @@ h5 + * {
 h6 + * {
   margin-top: var(--type-space-h6-to-tag); }
 
-p + h2, ul + h2, ol + h2, blockquote + h2, figure + h2, pre + h2, table + h2, dl + h2, address + h2 {
+p + h2, ul + h2, ol + h2, blockquote + h2, pre + h2, dl + h2, address + h2 {
   margin-top: var(--type-space-tag-to-h2); }
 
-p + h3, ul + h3, ol + h3, blockquote + h3, figure + h3, pre + h3, table + h3, dl + h3, address + h3 {
+p + h3, ul + h3, ol + h3, blockquote + h3, pre + h3, dl + h3, address + h3 {
   margin-top: var(--type-space-tag-to-h3); }
 
-p + h4, ul + h4, ol + h4, blockquote + h4, figure + h4, pre + h4, table + h4, dl + h4, address + h4 {
+p + h4, ul + h4, ol + h4, blockquote + h4, pre + h4, dl + h4, address + h4 {
   margin-top: var(--type-space-tag-to-h4); }
 
-p + h5, ul + h5, ol + h5, blockquote + h5, figure + h5, pre + h5, table + h5, dl + h5, address + h5 {
+p + h5, ul + h5, ol + h5, blockquote + h5, pre + h5, dl + h5, address + h5 {
   margin-top: var(--type-space-tag-to-h5); }
 
-p + h6, ul + h6, ol + h6, blockquote + h6, figure + h6, pre + h6, table + h6, dl + h6, address + h6 {
+p + h6, ul + h6, ol + h6, blockquote + h6, pre + h6, dl + h6, address + h6 {
   margin-top: var(--type-space-tag-to-h6); }
 
-p + *, ul + *, ol + *, blockquote + *, figure + *, pre + *, table + *, dl + *, address + * {
+p + *, ul + *, ol + *, blockquote + *, pre + *, dl + *, address + * {
   margin-top: var(--type-space-tag-to-tag); }
 
 figure + h2,
@@ -381,7 +381,20 @@ figure + ul,
 figure + ol,
 figure + dl,
 figure + pre,
-figure + table {
+figure + figure,
+figure + table,
+table + h2,
+table + h3,
+table + h4,
+table + h5,
+table + h6,
+table + p,
+table + ul,
+table + ol,
+table + dl,
+table + pre,
+table + figure,
+table + table {
   margin-top: var(--type-space-figure-to-tag); }
 
 h1 + h2 {

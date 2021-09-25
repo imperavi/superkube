@@ -27,12 +27,12 @@
   --level-page: 200;
   --level-control: 300;
   --level-all: 400;
-  --type-space-h1-to-tag: 3rem;
+  --type-space-h1-to-tag: 5rem;
   --type-space-h2-to-tag: 3rem;
   --type-space-h3-to-tag: 3rem;
-  --type-space-h4-to-tag: 2rem;
-  --type-space-h5-to-tag: 1rem;
-  --type-space-h6-to-tag: 1rem;
+  --type-space-h4-to-tag: 3rem;
+  --type-space-h5-to-tag: 2rem;
+  --type-space-h6-to-tag: 2rem;
   --type-space-tag-to-tag: 5rem;
   --type-space-tag-to-h2: 8rem;
   --type-space-tag-to-h3: 8rem;
@@ -44,7 +44,9 @@
   --type-scale-80: 80px;
   --type-scale-64: 64px;
   --type-scale-60: 60px;
+  --type-scale-56: 56px;
   --type-scale-48: 48px;
+  --type-scale-36: 36px;
   --type-scale-32: 32px;
   --type-scale-28: 28px;
   --type-scale-24: 24px;
@@ -428,12 +430,12 @@ h6 {
     text-decoration: underline; }
 
 h1 {
-  font-size: 48px;
-  line-height: 1.2; }
+  font-size: 56px;
+  line-height: 1.15; }
 
 h2 {
   font-size: 28px;
-  line-height: 1.3; }
+  line-height: 1.35; }
 
 h3 {
   font-size: 20px;
@@ -495,12 +497,12 @@ blockquote {
     font-size: 18px;
     line-height: 1.5; }
   blockquote p + p {
-    margin-top: 0.5em; }
+    margin-top: 0.25em; }
 
 blockquote cite,
 figcaption cite {
   font-style: inherit;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.5;
   color: var(--inline-cite-color); }
 
@@ -519,7 +521,7 @@ th {
   --table-border-color: var(--table-default-border-color);
   text-align: left;
   vertical-align: top;
-  font-size: 14px;
+  font-size: 15px;
   line-height: 1.5;
   padding: 0.75em 0;
   padding-right: 0.75em;

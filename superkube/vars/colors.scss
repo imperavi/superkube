@@ -170,7 +170,15 @@ $colors: map-extend($colors, (
         ),
         primary: (
             color: var(--palette-primary-dark),
-            hover-color: var(--palette-primary-darker)
+            hover-color: var(--palette-black)
+        ),
+        positive: (
+            color: var(--palette-positive-dark),
+            hover-color: var(--palette-positive-darker)
+        ),
+        important: (
+            color: var(--palette-negative-dark),
+            hover-color: var(--palette-negative-darker)
         )
     ),
     overlay: (
@@ -191,10 +199,22 @@ $colors: map-extend($colors, (
     shadow: (
         default: (
             100: var(--palette-black-10),
-            150: var(--palette-black-10),
-            200: var(--palette-black-10),
-            250: var(--palette-black-10),
-            300: var(--palette-black-10),
+            150: (
+                1: var(--palette-black-5),
+                2: var(--palette-black-10)
+            ),
+            200: (
+                1: var(--palette-black-5),
+                2: var(--palette-black-10)
+            ),
+            250: (
+                1: var(--palette-black-5),
+                2: var(--palette-black-10)
+            ),
+            300: (
+                1: var(--palette-black-5),
+                2: var(--palette-black-10)
+            ),
             350: var(--palette-black-25)
         )
     ),

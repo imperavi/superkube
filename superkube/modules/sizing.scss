@@ -21,6 +21,28 @@ $width-scale: scale(width);
 }
 
 // Height
+.h-off {
+    height: auto;
+}
+.h-full {
+    height: 100%;
+}
 .vh-full {
     min-height: 100vh;
+}
+$height-scale: scale(spacing);
+@each $name, $height in $height-scale {
+    .h-#{$name} {
+        height: $unit * $height !important;
+    }
+}
+@include for-sm {
+    @each $name, $height in $height-scale {
+        .h-#{$name}-sm {
+            height: $unit * $height !important;
+        }
+    }
+    .h-off-sm {
+        height: auto !important;
+    }
 }

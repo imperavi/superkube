@@ -1,10 +1,19 @@
 .navbar {
+    --navbar-height: 14rem;
+
     .navbar-container {
         display: flex;
-        height: 100%;
+        height: var(--navbar-height);
     }
     .navbar-container > div {
         display: flex;
         align-items: center;
+    }
+    .brand,
+    .nav,
+    .nav-list,
+    .nav-item,
+    .nav-link {
+        height: 100%;
     }
 }

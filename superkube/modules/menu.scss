@@ -88,31 +88,6 @@
     }
 }
 
-// Spacing
-$spacing-menu: scale(spacing-menu);
-@each $name, $value in $spacing-menu {
-    .menu-item-space-#{$name} {
-        --menu-item-space: #{$value} !important;
-    }
-}
-$padding-menu: scale(padding-menu);
-@each $name, $value in $padding-menu {
-    .menu-link-padding-#{$name} {
-        --menu-link-padding-y: #{$value} !important;
-    }
-}
-
-// Caps
-.menu-caps {
-    --menu-font-size: var(--type-scale-13);
-    --menu-link-padding-y: 8px;
-
-    .menu-link {
-        letter-spacing: .01em;
-        text-transform: uppercase;
-    }
-}
-
 // Underline
 .menu-underline {
     .menu-link {

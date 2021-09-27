@@ -1,134 +1,90 @@
 // =Spacing
-.mt-off { margin-top: 0 !important; }
-.mb-off { margin-bottom: 0 !important; }
-.ml-off { margin-left: 0 !important; }
-.mr-off { margin-right: 0 !important; }
-.my-off { margin-top: 0 !important; margin-bottom: 0 !important; }
-.mx-off { margin-left: 0 !important; margin-left: 0 !important; }
-.p-off  { padding: 0 !important; }
-.pt-off { padding-top: 0 !important; }
-.pb-off { padding-bottom: 0 !important; }
-.pl-off { padding-left: 0 !important; }
-.pr-off { padding-right: 0 !important; }
-.px-off { padding-left: 0 !important; padding-right: 0 !important; }
-.py-off { padding-top: 0 !important; padding-bottom: 0 !important; }
+.mt-off { margin-top: 0; }
+.mb-off { margin-bottom: 0; }
+.ml-off { margin-left: 0; }
+.mr-off { margin-right: 0; }
+.my-off { margin-top: 0; margin-bottom: 0; }
+.mx-off { margin-left: 0; margin-left: 0; }
+.p-off  { padding: 0; }
+.pt-off { padding-top: 0; }
+.pb-off { padding-bottom: 0; }
+.pl-off { padding-left: 0; }
+.pr-off { padding-right: 0; }
+.px-off { padding-left: 0; padding-right: 0; }
+.py-off { padding-top: 0; padding-bottom: 0; }
 
-.mt-auto { margin-top: auto !important; }
-.mb-auto { margin-bottom: auto !important; }
-.ml-auto { margin-left: auto !important; }
-.mr-auto { margin-right: auto !important; }
+.mt-auto { margin-top: auto; }
+.mb-auto { margin-bottom: auto; }
+.ml-auto { margin-left: auto; }
+.mr-auto { margin-right: auto; }
 
 // =Scale
 $spacing-scale: scale(spacing);
 @each $name, $index in $spacing-scale {
-    .p-#{$name}   { padding: $unit * $index !important; }
+    .p-#{$name}   { padding: $unit * $index; }
 }
 @each $name, $index in $spacing-scale {
-    .my-#{$name}  { margin-top: $unit * $index !important; margin-bottom: $unit * $index !important; }
-    .mx-#{$name}  { margin-left: $unit * $index !important; margin-right: $unit * $index !important; }
-    .py-#{$name}  { padding-top: $unit * $index !important; padding-bottom: $unit * $index !important; }
-    .px-#{$name}  { padding-left: $unit * $index !important; padding-right: $unit * $index !important; }
+    .my-#{$name}  { margin-top: $unit * $index; margin-bottom: $unit * $index; }
+    .mx-#{$name}  { margin-left: $unit * $index; margin-right: $unit * $index; }
+    .py-#{$name}  { padding-top: $unit * $index; padding-bottom: $unit * $index; }
+    .px-#{$name}  { padding-left: $unit * $index; padding-right: $unit * $index; }
 }
 @each $name, $index in $spacing-scale {
-    .mb-#{$name}  { margin-bottom: $unit * $index !important; }
-    .mt-#{$name}  { margin-top: $unit * $index !important; }
-    .ml-#{$name}  { margin-left: $unit * $index !important; }
-    .mr-#{$name}  { margin-right: $unit * $index !important; }
-    .mb-n#{$name} { margin-bottom: -($unit * $index) !important; }
-    .mt-n#{$name} { margin-top: -($unit * $index) !important; }
-    .ml-n#{$name} { margin-left: -($unit * $index) !important; }
-    .mr-n#{$name} { margin-right: -($unit * $index) !important; }
-    .pt-#{$name}  { padding-top: $unit * $index !important; }
-    .pb-#{$name}  { padding-bottom: $unit * $index !important; }
-    .pl-#{$name}  { padding-left: $unit * $index !important; }
-    .pr-#{$name}  { padding-right: $unit * $index !important; }
+    .mb-#{$name}  { margin-bottom: $unit * $index; }
+    .mt-#{$name}  { margin-top: $unit * $index; }
+    .ml-#{$name}  { margin-left: $unit * $index; }
+    .mr-#{$name}  { margin-right: $unit * $index; }
+    .mb-n#{$name} { margin-bottom: -($unit * $index); }
+    .mt-n#{$name} { margin-top: -($unit * $index); }
+    .ml-n#{$name} { margin-left: -($unit * $index); }
+    .mr-n#{$name} { margin-right: -($unit * $index); }
+    .pt-#{$name}  { padding-top: $unit * $index; }
+    .pb-#{$name}  { padding-bottom: $unit * $index; }
+    .pl-#{$name}  { padding-left: $unit * $index; }
+    .pr-#{$name}  { padding-right: $unit * $index; }
 
-}
-@include for-md {
-    .mt-off-md { margin-top: 0 !important; }
-    .mb-off-md { margin-bottom: 0 !important; }
-    .ml-off-md { margin-left: 0 !important; }
-    .mr-off-md { margin-right: 0 !important; }
-    .my-off-md { margin-top: 0 !important; margin-bottom: 0 !important; }
-    .mx-off-md { margin-left: 0 !important; margin-right: 0 !important; }
-    .p-off-md  { padding: 0 !important; }
-    .pt-off-md { padding-top: 0 !important; }
-    .pb-off-md { padding-bottom: 0 !important; }
-    .pl-off-md { padding-left: 0 !important; }
-    .pr-off-md { padding-right: 0 !important; }
-    .py-off-md { padding-top: 0 !important; padding-bottom: 0 !important; }
-    .px-off-md { padding-left: 0 !important; padding-right: 0 !important; }
-
-    .mt-auto-md { margin-top: auto !important; }
-    .mb-auto-md { margin-bottom: auto !important; }
-    .ml-auto-md { margin-left: auto !important; }
-    .mr-auto-md { margin-right: auto !important; }
-
-    @each $name, $index in $spacing-scale {
-        .p-#{$name}-md   { padding: $unit * $index !important; }
-    }
-    @each $name, $index in $spacing-scale {
-        .my-#{$name}-md  { margin-top: $unit * $index !important; margin-bottom: $unit * $index !important; }
-        .mx-#{$name}-md  { margin-left: $unit * $index !important; margin-right: $unit * $index !important; }
-        .py-#{$name}-md  { padding-top: $unit * $index !important; padding-bottom: $unit * $index !important; }
-        .px-#{$name}-md  { padding-left: $unit * $index !important; padding-right: $unit * $index !important; }
-    }
-    @each $name, $index in $spacing-scale {
-        .mb-#{$name}-md  { margin-bottom: $unit * $index !important; }
-        .mt-#{$name}-md  { margin-top: $unit * $index !important; }
-        .ml-#{$name}-md  { margin-left: $unit * $index !important; }
-        .mr-#{$name}-md  { margin-right: $unit * $index !important; }
-        .mb-n#{$name}-md { margin-bottom: -($unit * $index) !important; }
-        .mt-n#{$name}-md { margin-top: -($unit * $index) !important; }
-        .ml-n#{$name}-md { margin-left: -($unit * $index) !important; }
-        .mr-n#{$name}-md { margin-right: -($unit * $index) !important; }
-        .pt-#{$name}-md  { padding-top: $unit * $index !important; }
-        .pb-#{$name}-md  { padding-bottom: $unit * $index !important; }
-        .pl-#{$name}-md  { padding-left: $unit * $index !important; }
-        .pr-#{$name}-md  { padding-right: $unit * $index !important; }
-    }
 }
 @include for-sm {
-    .mt-off-sm { margin-top: 0 !important; }
-    .mb-off-sm { margin-bottom: 0 !important; }
-    .ml-off-sm { margin-left: 0 !important; }
-    .mr-off-sm { margin-right: 0 !important; }
-    .my-off-sm { margin-top: 0 !important; margin-bottom: 0 !important; }
-    .mx-off-sm { margin-left: 0 !important; margin-right: 0 !important; }
-    .p-off-sm  { padding: 0 !important; }
-    .pt-off-sm { padding-top: 0 !important; }
-    .pb-off-sm { padding-bottom: 0 !important; }
-    .pl-off-sm { padding-left: 0 !important; }
-    .pr-off-sm { padding-right: 0 !important; }
-    .py-off-sm { padding-top: 0 !important; padding-bottom: 0 !important; }
-    .px-off-sm { padding-left: 0 !important; padding-right: 0 !important; }
+    .mt-off-sm { margin-top: 0; }
+    .mb-off-sm { margin-bottom: 0; }
+    .ml-off-sm { margin-left: 0; }
+    .mr-off-sm { margin-right: 0; }
+    .my-off-sm { margin-top: 0; margin-bottom: 0; }
+    .mx-off-sm { margin-left: 0; margin-right: 0; }
+    .p-off-sm  { padding: 0; }
+    .pt-off-sm { padding-top: 0; }
+    .pb-off-sm { padding-bottom: 0; }
+    .pl-off-sm { padding-left: 0; }
+    .pr-off-sm { padding-right: 0; }
+    .py-off-sm { padding-top: 0; padding-bottom: 0; }
+    .px-off-sm { padding-left: 0; padding-right: 0; }
 
-    .mt-auto-sm { margin-top: auto !important; }
-    .mb-auto-sm { margin-bottom: auto !important; }
-    .ml-auto-sm { margin-left: auto !important; }
-    .mr-auto-sm { margin-right: auto !important; }
+    .mt-auto-sm { margin-top: auto; }
+    .mb-auto-sm { margin-bottom: auto; }
+    .ml-auto-sm { margin-left: auto; }
+    .mr-auto-sm { margin-right: auto; }
 
     @each $name, $index in $spacing-scale {
-        .p-#{$name}-sm   { padding: $unit * $index !important; }
+        .p-#{$name}-sm   { padding: $unit * $index; }
     }
     @each $name, $index in $spacing-scale {
-        .my-#{$name}-sm  { margin-top: $unit * $index !important; margin-bottom: $unit * $index !important; }
-        .mx-#{$name}-sm  { margin-left: $unit * $index !important; margin-right: $unit * $index !important; }
-        .py-#{$name}-sm  { padding-top: $unit * $index !important; padding-bottom: $unit * $index !important; }
-        .px-#{$name}-sm  { padding-left: $unit * $index !important; padding-right: $unit * $index !important; }
+        .my-#{$name}-sm  { margin-top: $unit * $index; margin-bottom: $unit * $index; }
+        .mx-#{$name}-sm  { margin-left: $unit * $index; margin-right: $unit * $index; }
+        .py-#{$name}-sm  { padding-top: $unit * $index; padding-bottom: $unit * $index; }
+        .px-#{$name}-sm  { padding-left: $unit * $index; padding-right: $unit * $index; }
     }
     @each $name, $index in $spacing-scale {
-        .mb-#{$name}-sm  { margin-bottom: $unit * $index !important; }
-        .mt-#{$name}-sm  { margin-top: $unit * $index !important; }
-        .ml-#{$name}-sm  { margin-left: $unit * $index !important; }
-        .mr-#{$name}-sm  { margin-right: $unit * $index !important; }
-        .mb-n#{$name}-sm { margin-bottom: -($unit * $index) !important; }
-        .mt-n#{$name}-sm { margin-top: -($unit * $index) !important; }
-        .ml-n#{$name}-sm { margin-left: -($unit * $index) !important; }
-        .mr-n#{$name}-sm { margin-right: -($unit * $index) !important; }
-        .pt-#{$name}-sm  { padding-top: $unit * $index !important; }
-        .pb-#{$name}-sm  { padding-bottom: $unit * $index !important; }
-        .pl-#{$name}-sm  { padding-left: $unit * $index !important; }
-        .pr-#{$name}-sm  { padding-right: $unit * $index !important; }
+        .mb-#{$name}-sm  { margin-bottom: $unit * $index; }
+        .mt-#{$name}-sm  { margin-top: $unit * $index; }
+        .ml-#{$name}-sm  { margin-left: $unit * $index; }
+        .mr-#{$name}-sm  { margin-right: $unit * $index; }
+        .mb-n#{$name}-sm { margin-bottom: -($unit * $index); }
+        .mt-n#{$name}-sm { margin-top: -($unit * $index); }
+        .ml-n#{$name}-sm { margin-left: -($unit * $index); }
+        .mr-n#{$name}-sm { margin-right: -($unit * $index); }
+        .pt-#{$name}-sm  { padding-top: $unit * $index; }
+        .pb-#{$name}-sm  { padding-bottom: $unit * $index; }
+        .pl-#{$name}-sm  { padding-left: $unit * $index; }
+        .pr-#{$name}-sm  { padding-right: $unit * $index; }
     }
 }

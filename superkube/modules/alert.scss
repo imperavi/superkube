@@ -53,15 +53,15 @@
 .alert.alert-info {
     --alert-background-color: var(--palette-active-lightest);
     --alert-border-color: var(--palette-transparent);
-    --alert-color: var(--palette-active-darker);
+    --alert-color: var(--palette-active-dark);
 }
 .alert.alert-success {
     --alert-background-color: var(--palette-positive-lightest);
     --alert-border-color: var(--palette-transparent);
-    --alert-color: var(--palette-positive-darker);
+    --alert-color: var(--palette-positive-dark);
 }
 .alert.alert-error {
     --alert-background-color: var(--palette-negative-lightest);
     --alert-border-color: var(--palette-transparent);
-    --alert-color: var(--palette-negative-darker);
+    --alert-color: var(--palette-negative-dark);
 }

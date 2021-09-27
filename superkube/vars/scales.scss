@@ -102,6 +102,7 @@ $scales: map-extend($scales, (
         large: 52px
     ),
     input: (
+        small: 36px,
         base: 42px,
         large: 52px
     ),
@@ -117,21 +118,19 @@ $scales: map-extend($scales, (
         gridname: grid,
         columnname: column,
         columns: 12,
-        gutter: 6rem,
+        gutter: 8rem,
         gap: 6rem
     ),
     container: (
         small: 400px,
         content: 800px,
         medium: 960px,
-        base: 1144px,
+        base: 1112px,
         large: 1200px,
         full: 100%
     ),
     edge: (
-        base: 5rem,
-        large: 10rem,
-        huge: 14rem
+        base: 5rem
     ),
     level: (
         content: 100, // overlays
@@ -187,46 +186,33 @@ $scales: map-extend($scales, (
         8: 8,
         9: 9,
         10: 10,
+        11: 11,
         12: 12,
+        13: 13,
         14: 14,
-        16: 16,
+        15: 15,
         20: 20,
-        24: 24
-    ),
-    spacing-nav: (
-        off: 0,
-        xxxs: 1rem,
-        xxs: 2rem,
-        xs: 3rem,
-        s: 4rem,
-        m: 5rem,
-        l: 6rem,
-        xl: 7rem,
-        xxl: 8rem,
-        xxxl: 9rem
-    ),
-    spacing-menu: (
-        off: 0,
-        l: 1rem,
-        xl: 2rem,
-        xxl: 3rem
-    ),
-    padding-menu: (
-        off: 0,
-        xxs: 1px,
-        xs: 2px,
-        s: 4px,
-        m: 6px,
-        l: 8px,
-        xl: 10px,
-        xxl: 12px
+        25: 25,
+        30: 30
     ),
     shadow: (
-        100:0 1px 2px,
-        150: 0 2px 4px,
-        200: 0 4px 6px,
-        250: 0 6px 8px,
-        300: 0 20px 25px,
+        100: 0 1px 2px,
+        150: (
+            1: 0 1px 2px,
+            2: 0 2px 4px
+        ),
+        200: (
+            1: 0 2px 4px -1px,
+            2: 0 4px 6px -1px
+        ),
+        250: (
+            1: 0 2px 4px -2px,
+            2: 0 6px 8px
+        ),
+        300: (
+            1: 0 10px 10px -6px,
+            2: 0 20px 25px
+        ),
         350: 0 25px 50px
     ),
     image: (

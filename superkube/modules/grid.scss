@@ -68,3 +68,18 @@ $columns: scale(grid, columns);
         grid-column-start: unset;
     }
 }
+
+// =Order
+@include for-sm {
+    .order-first-sm {
+        order: -1;
+    }
+    .order-last-sm {
+        order: 6;
+    }
+    @for $i from 1 through 6 {
+        .order-#{$i}-sm {
+            order: $i;
+        }
+    }
+}

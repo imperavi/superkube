@@ -36,12 +36,12 @@ $palette: map-extend($palette, (
         95: rgba(#ffffff, .95)
     ),
     primary: (
-        darker: #122F73,
-        dark: #1B46AC,
-        base: #245DE5,
-        light: #91AEF2,
-        lighter: #C8D6F8,
-        lightest: #E9EEFC
+        darker: #383FAE,
+        dark: #474AD7,
+        base: #5454F7,
+        light: #BBBBFC,
+        lighter: #DDDDFD,
+        lightest: #F3F3FE
     ),
     neutral: (
         darker: #223542,
@@ -53,99 +53,83 @@ $palette: map-extend($palette, (
         lightest: #F5F6F7
     ),
     negative: (
-        darker: #762126,
-        dark: #B03239,
-        base: #EB424C,
-        light: #F5A0A5,
-        lighter: #FAD0D2,
-        lightest: #FDECED
+        darker: #A52149,
+        dark: #D62454,
+        base: #FC275D,
+        light: #FEB4C7,
+        lighter: #FFDBE4,
+        lightest: #FFF4F7
     ),
     positive: (
-        darker: #12522F,
-        dark: #1B7B46,
-        base: #24A45D,
-        light: #91D1AE,
-        lighter: #C8E8D6,
-        lightest: #E9F5EE
+        darker: #01825F,
+        dark: #009B6C,
+        base: #00BB7E,
+        light: #A6E7D2,
+        lighter: #D4F4E9,
+        lightest: #EDFAF6
     ),
     active: (
-        darker: #122F73,
-        dark: #1B46AC,
-        base: #245DE5,
-        light: #91AEF2,
-        lighter: #C8D6F8,
-        lightest: #E9EEFC
-    ),
-    yellow: (
-        darker: #7D6711,
-        dark: #D4AE1C,
-        base: #F9CD21,
-        light: #FCE690,
-        lighter: #FDF2C7,
-        lightest: #FEFAE8
-    ),
-    orange: (
-        darker: #804B03,
-        dark: #D97F04,
-        base: #FF9505,
-        light: #FFCA82,
-        lighter: #FFE4C0,
-        lightest: #FFF4E6
-    ),
-    teal: (
-        darker: #17615F,
-        dark: #22928E,
-        base: #2DC2BD,
-        light: #96E0DE,
-        lighter: #CAF0EE,
-        lightest: #EAF8F8
-    ),
-    blue: (
-        darker: #075C80,
-        dark: #0B89BF,
-        base: #0EB7FF,
-        light: #86DBFF,
-        lighter: #C3EDFF,
-        lightest: #E6F7FF
-    ),
-    purple: (
-        darker: #3C2980,
-        dark: #593DBF,
-        base: #7751FF,
-        light: #BBA8FF,
-        lighter: #DDD3FF,
-        lightest: #F1EDFF
-    ),
-    pink: (
-        darker: #802955,
-        dark: #BF3D80,
-        base: #FF51AA,
-        light: #FFA8D4,
-        lighter: #FFD3EA,
-        lightest: #FFEDF6
+        darker: #383FAE,
+        dark: #474AD7,
+        base: #5454F7,
+        light: #BBBBFC,
+        lighter: #DDDDFD,
+        lightest: #F3F3FE
     ),
     red: (
-        darker: #801A33,
-        dark: #BF264D,
-        base: #FF3366,
-        light: #FF99B2,
-        lighter: #FFCCD9,
-        lightest: #FFEAEF
+        darker: #A52149,
+        dark: #D62454,
+        base: #FC275D,
+        light: #FEB4C7,
+        lighter: #FFDBE4,
+        lightest: #FFF4F7
+    ),
+    orange: (
+        darker: #A7580D,
+        dark: #D96C05,
+        base: #FF7B00,
+        light: #FFCA99,
+        lighter: #FFE5CC,
+        lightest: #FFF6ED
+    ),
+    yellow: (
+        darker: #A88C01,
+        dark: #BD9A07,
+        base: #FCCE20,
+        light: #FDE279,
+        lighter: #FEF0BC,
+        lightest: #FFFBEF
     ),
     green: (
-        darker: #006644,
-        dark: #009966,
-        base: #00CC88,
-        light: #7FE5C3,
-        lighter: #BFF2E1,
-        lightest: #E5F9F3
+        darker: #01825F,
+        dark: #009B6C,
+        base: #00BB7E,
+        light: #A6E7D2,
+        lighter: #D4F4E9,
+        lightest: #EDFAF6
+    ),
+    blue: (
+        darker: #3062B2,
+        dark: #3D79DD,
+        base: #488BFE,
+        light: #B6D1FF,
+        lighter: #DAE8FF,
+        lightest: #F2F7FF
     ),
     indigo: (
-        darker: #122F73,
-        dark: #1B46AC,
-        base: #1E66FF,
-        light: #91AEF2,
-        lighter: #C8D6F8,
-        lightest: #E9EEFC
+        darker: #383FAE,
+        dark: #474AD7,
+        base: #5454F7,
+        light: #BBBBFC,
+        lighter: #DDDDFD,
+        lightest: #F3F3FE
+    ),
+    violet: (
+        darker: #6011AA,
+        dark: #7C0FD2,
+        base: #920EF1,
+        light: #D9ABFA,
+        lighter: #EDD6FD,
+        lightest: #F9F3FE
     )
 ));

@@ -73,20 +73,6 @@
     --list-font-size: var(--type-scale-14);
 }
 
-// Spacing
-$spacing-menu: scale(spacing-menu);
-@each $name, $value in $spacing-menu {
-    .list-item-space-#{$name} {
-        --list-item-space: #{$value} !important;
-    }
-}
-$padding-menu: scale(padding-menu);
-@each $name, $value in $padding-menu {
-    .list-item-padding-#{$name} {
-        --list-item-padding-y: #{$value} !important;
-    }
-}
-
 // =Stacked
 .list-stacked {
     --list-item-padding-y: 8px;

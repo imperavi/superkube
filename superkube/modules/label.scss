@@ -60,27 +60,21 @@ a.label:hover {
 .label-large {
     --label-font-size: var(--type-scale-14);
 }
-// Variants
-.label-caps {
-    --label-padding: 5px 8px 4px 8px;
-    --label-text-transform: uppercase;
-    --label-font-size: var(--type-scale-11);
-}
 // Colors
 .label.label-info {
     --label-background-color: var(--palette-active-lightest);
     --label-border-color: var(--palette-transparent);
-    --label-color: var(--palette-active-darker);
+    --label-color: var(--palette-active-dark);
 }
 .label.label-positive {
     --label-background-color: var(--palette-positive-lightest);
     --label-border-color: var(--palette-transparent);
-    --label-color: var(--palette-positive-darker);
+    --label-color: var(--palette-positive-dark);
 }
 .label.label-important {
     --label-background-color: var(--palette-negative-lightest);
     --label-border-color: var(--palette-transparent);
-    --label-color: var(--palette-negative-darker);
+    --label-color: var(--palette-negative-dark);
 }
 .label.label-dark {
     --label-background-color: var(--palette-black);
@@ -90,5 +84,5 @@ a.label:hover {
 .label.label-light {
     --label-background-color: var(--palette-white);
     --label-border-color: var(--palette-transparent);
-    --label-color: var(--palette-negative-darker);
+    --label-color: var(--palette-neutral-darker);
 }

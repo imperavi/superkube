@@ -10,19 +10,13 @@
 
     // vars
     --nav-font-size: var(--type-scale-14);
-    --nav-item-space: 5rem;
+    --nav-item-space: 6rem;
     --nav-link-padding: 0;
     --nav-link-border-radius: 0;
 
     // props
-    height: 100%;
     font-size: var(--nav-font-size);
 
-    .nav-list,
-    .nav-item,
-    .nav-link {
-        height: 100%;
-    }
     .nav-list {
         display: flex;
         align-items: center;
@@ -69,14 +63,6 @@
 .nav-strong {
     .nav-link {
         font-weight: bold;
-    }
-}
-
-// Spacing
-$spacing-nav: scale(spacing-nav);
-@each $name, $value in $spacing-nav {
-    .nav-item-space-#{$name} {
-        --nav-item-space: #{$value} !important;
     }
 }
 
@@ -146,7 +132,7 @@ $spacing-nav: scale(spacing-nav);
 // Centered
 .nav-centered {
     // vars
-    --nav-item-space: 2rem;
+    --nav-item-space: 3rem;
 
     // props
     flex: 1 1 auto;
@@ -168,8 +154,6 @@ $spacing-nav: scale(spacing-nav);
 
 // Right
 .nav-right {
-    --nav-item-space: 5rem;
-
     .nav-item {
         margin-left: var(--nav-item-space);
         margin-right: 0;

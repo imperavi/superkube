@@ -209,12 +209,6 @@
   --link-light-moderated-hover-color: var(--palette-white);
   --link-primary-color: var(--palette-primary-dark);
   --link-primary-hover-color: var(--palette-black);
-  --link-positive-color: var(--palette-positive-dark);
-  --link-positive-hover-color: var(--palette-positive-darker);
-  --link-important-color: var(--palette-negative-dark);
-  --link-important-hover-color: var(--palette-negative-darker);
-  --overlay-light: var(--palette-white-50);
-  --overlay-dark: var(--palette-black-50);
   --placeholder-default: var(--palette-black-40);
   --placeholder-light: var(--palette-white-50);
   --pre-default-background-color: var(--palette-neutral-lightest);
@@ -1156,6 +1150,58 @@ button.button-dark,
 
 .button-round.button-small {
   --button-padding-x: 1.125em; }
+
+.caption {
+  --caption-color: var(--palette-neutral-base);
+  --caption-font-weight: normal;
+  --caption-font-size: var(--type-scale-14);
+  --caption-line-height: 1.3;
+  --caption-text-transform: none;
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-decoration: none;
+  line-height: var(--caption-line-height);
+  font-weight: var(--caption-font-weight);
+  font-size: var(--caption-font-size);
+  text-transform: var(--caption-text-transform);
+  color: var(--caption-color); }
+  .caption svg {
+    fill: currentColor; }
+
+a.caption:hover {
+  opacity: .6;
+  color: var(--caption-color);
+  text-decoration: underline; }
+
+.caption-small {
+  --caption-font-size: var(--type-scale-13); }
+
+.caption-semibold {
+  --caption-font-weight: 600; }
+
+.caption-strong {
+  --caption-font-weight: bold; }
+
+.caption-caps {
+  --caption-font-size: var(--type-scale-13);
+  --caption-text-transform: uppercase; }
+
+.caption-info {
+  --caption-color: var(--palette-active-base); }
+
+.caption-positive {
+  --caption-color: var(--palette-positive-base); }
+
+.caption-important {
+  --caption-color: var(--palette-negative-base); }
+
+.caption-dark {
+  --caption-color: var(--palette-black); }
+
+.caption-light {
+  --caption-color: var(--palette-white); }
 
 .card {
   position: relative; }
@@ -2346,10 +2392,10 @@ a .icon-primary svg {
   right: 0; }
 
 .image-overlay-light:before {
-  background-color: var(--overlay-light); }
+  background: var(--palette-white-50); }
 
 .image-overlay-dark:before {
-  background-color: var(--overlay-dark); }
+  background: var(--palette-black-50); }
 
 .image-16 {
   width: 16px;
@@ -2772,20 +2818,6 @@ hr {
   --link-hover-color: var(--link-primary-hover-color);
   color: var(--link-color); }
   .link-primary:hover {
-    color: var(--link-hover-color); }
-
-.link-positive {
-  --link-color: var(--link-positive-color);
-  --link-hover-color: var(--link-positive-hover-color);
-  color: var(--link-color); }
-  .link-positive:hover {
-    color: var(--link-hover-color); }
-
-.link-important {
-  --link-color: var(--link-important-color);
-  --link-hover-color: var(--link-important-hover-color);
-  color: var(--link-color); }
-  .link-important:hover {
     color: var(--link-hover-color); }
 
 .list-unstyled,
@@ -6191,7 +6223,10 @@ hr {
 
 [class^="text-gr-"],
 [class*=" text-gr-"] {
-  display: inline-block; }
+  display: inline-block;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
   [class^="text-gr-"] a,
   [class^="text-gr-"] a:hover,
   [class*=" text-gr-"] a,

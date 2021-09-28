@@ -1,12 +1,3 @@
-// Text Gradient
-@mixin text-gradient($from, $to, $deg: 90deg) {
-    color: $from;
-    background-image: linear-gradient($deg, $from, $to);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
 // Dropcap
 // Based on: https://codepen.io/0skar/pen/yOojVM
 // $size — font size of the text

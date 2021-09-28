@@ -71,10 +71,7 @@
             #{$sel} {
                 @each $name, $val in $value {
                     @if type-of($val) == map {
-                        @if $name == gradient {
-                            --#{$modulename}-background-image: #{gradient($val)};
-                        }
-                        @else if $name == box-shadow {
+                        @if $name == box-shadow {
                             --#{$modulename}-#{$name}: #{map-values($val)};
                         }
                     }

@@ -171,14 +171,6 @@ $colors: map-extend($colors, (
         primary: (
             color: var(--palette-primary-dark),
             hover-color: var(--palette-black)
-        ),
-        positive: (
-            color: var(--palette-positive-dark),
-            hover-color: var(--palette-positive-darker)
-        ),
-        important: (
-            color: var(--palette-negative-dark),
-            hover-color: var(--palette-negative-darker)
         )
     ),
     overlay: (

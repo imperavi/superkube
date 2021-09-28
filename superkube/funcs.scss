@@ -95,35 +95,8 @@
     @return $shadow $color;
 }
 
-// gradient
-@function gradient($map, $to: null, $deg: null) {
-    $from: null;
-    @if type-of($map) == map {
-        $from: map-get($map, from);
-        $to: map-get($map, to);
-        $deg: 180deg;
-        @if (map-has-key($map, deg)) {
-            $deg: map-get($map, deg);
-        }
-    }
-    @else {
-        $from: $map;
-        @if $deg == null {
-            $deg: 180deg;
-        }
-    }
-
-    @if $deg == 'radial' {
-        @return radial-gradient($from, $to);
-    }
-    @else {
-        @return linear-gradient($deg, $from 0%, $to 100%);
-    }
-}
-
 // String
 // --------------------------------
-
 @function str-replace($string, $search, $replace: '') {
     $index: str-index($string, $search);
 
@@ -275,7 +248,7 @@
 // List
 // --------------------------------
 
-// remove item
+// remove item by index
 @function remove-nth($list, $index) {
   $result: null;
 

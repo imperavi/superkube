@@ -25,21 +25,12 @@
 $overlays: map-get($colors, overlay);
 @each $name, $value in $overlays {
     .image-overlay-#{$name}:before {
-        @if type-of($value) == string {
-            background-color: var(--overlay-#{$name});
+        @if type-of($value) == map {
+            background: map-get($value, color);
+            opacity: map-get($value, opacity);
         }
         @else {
-            // background
-            @if map-has-key($value, color) {
-                background-color: var(--overlay-#{$name}-color);
-            }
-            @else {
-                background-image: #{gradient($value)};
-            }
-            // opacity
-            @if map-has-key($value, opacity) {
-                opacity: map-get($value, opacity);
-            }
+            background: $value;
         }
     }
 }

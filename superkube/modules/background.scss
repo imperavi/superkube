@@ -8,11 +8,6 @@ $backgrounds: map-get($colors, background);
 $gradients: map-get($colors, gradient);
 @each $name, $value in $gradients {
     .gr-#{$name} {
-        @if (map-has-key($value, deg)) {
-            @include background-gradient(color(gradient, $name), map-get($value, deg))
-        }
-        @else {
-            @include background-gradient(color(gradient, $name));
-        }
+        background-image: $value;
     }
 }

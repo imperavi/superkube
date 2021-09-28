@@ -1,7 +1,7 @@
 /*
     Superkube
-    Version 2.2.0
-    Updated: September 15, 2021
+    Version 2.3.0
+    Updated: September 28, 2021
 
     http://imperavi.com/superkube/
 
@@ -133,7 +133,7 @@
   --palette-orange-light: #FFCA99;
   --palette-orange-lighter: #FFE5CC;
   --palette-orange-lightest: #FFF6ED;
-  --palette-yellow-darker: #A88C01;
+  --palette-yellow-darker: #926C01;
   --palette-yellow-dark: #BD9A07;
   --palette-yellow-base: #FCCE20;
   --palette-yellow-light: #FDE279;
@@ -721,17 +721,17 @@ figure figcaption {
 .alert.alert-info {
   --alert-background-color: var(--palette-active-lightest);
   --alert-border-color: var(--palette-transparent);
-  --alert-color: var(--palette-active-dark); }
+  --alert-color: var(--palette-active-darker); }
 
 .alert.alert-success {
   --alert-background-color: var(--palette-positive-lightest);
   --alert-border-color: var(--palette-transparent);
-  --alert-color: var(--palette-positive-dark); }
+  --alert-color: var(--palette-positive-darker); }
 
 .alert.alert-error {
   --alert-background-color: var(--palette-negative-lightest);
   --alert-border-color: var(--palette-transparent);
-  --alert-color: var(--palette-negative-dark); }
+  --alert-color: var(--palette-negative-darker); }
 
 .a-left {
   text-align: left; }
@@ -2496,6 +2496,13 @@ textarea,
   --input-font-size: 15px;
   --input-line-height: 1.5; }
 
+input-small,
+select-small,
+textarea-small,
+.input-small {
+  --input-font-size: 15px;
+  --input-line-height: 1.5; }
+
 input-large,
 select-large,
 textarea-large,
@@ -2887,7 +2894,6 @@ hr {
 
 .list-stacked {
   --list-item-padding-y: 8px;
-  --list-item-padding-x: 0;
   --list-item-border-width: 1px;
   --list-item-border-style: solid;
   --list-item-border-color: var(--palette-black-7); }
@@ -4055,6 +4061,11 @@ hr {
   max-width: none;
   min-width: none;
   width: auto; }
+
+.w-full {
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%; }
 
 .w-20 {
   width: 20%;

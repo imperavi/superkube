@@ -4,6 +4,11 @@
     min-width: none;
     width: auto;
 }
+.w-full {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+}
 $width-scale: scale(width);
 @each $name, $width in $width-scale {
     .w-#{$name} {

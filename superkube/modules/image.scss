@@ -10,6 +10,9 @@
     min-height: 100%;
 }
 .image-overlay {
+    --image-overlay-color: var(--palette-transparent);
+    --image-overlay-opacity: 1;
+
     position: relative;
 }
 .image-overlay:before {
@@ -19,18 +22,20 @@
     left: 0;
     bottom: 0;
     right: 0;
+    background: var(--image-overlay-color);
+    opacity: var(--image-overlay-opacity);
 }
 
 // =Overlays
 $overlays: map-get($colors, overlay);
 @each $name, $value in $overlays {
-    .image-overlay-#{$name}:before {
+    .image-overlay-#{$name} {
         @if type-of($value) == map {
-            background: map-get($value, color);
-            opacity: map-get($value, opacity);
+            --image-overlay-color:  #{map-get($value, color)};
+            --image-overlay-opacity: #{map-get($value, opacity)};
         }
         @else {
-            background: $value;
+            --image-overlay-color: #{$value};
         }
     }
 }

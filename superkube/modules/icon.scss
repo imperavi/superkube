@@ -1,47 +1,53 @@
 // =Icon
 .icon {
+    --icon-size: 1em;
+    --icon-color: currentColor;
+
     display: inline-block;
-}
-.icon svg {
-    display: inline-block;
-    vertical-align: middle;
-    margin-top: -.17em;
-    fill: currentColor;
+
+    & svg {
+        display: inline-block;
+        vertical-align: middle;
+    }
 }
 .icon-text {
+    --icon-size: 1em;
+    --icon-color: currentColor;
+
     display: inline-flex;
     align-self: center;
-}
-.icon-text svg {
-    height: 1em;
-    width: 1em;
     top: .125em;
     position: relative;
-    fill: currentColor;
+}
+.icon,
+.icon-text {
+    & svg {
+        fill: var(--icon-color);
+        height: var(--icon-size);
+        width: var(--icon-size);
+    }
 }
 
 // Colors
 $iconcolors: map-get($colors, icon);
 @each $key, $value in $iconcolors {
-    .icon-#{$key} svg,
-    a .icon-#{$key} svg {
-        fill: var(--icon-#{$key});
+    .icon-#{$key},
+    a.icon-#{$key} {
+        --icon-color: #{$value};
     }
 }
 
 // Size
 $icons: scale(icon);
 @each $key, $size in $icons {
-    .icon-#{$key} svg {
-        width: $size;
-        height: $size;
+    .icon-#{$key} {
+        --icon-size: #{$size};
     }
 }
 @include for-sm {
     @each $key, $size in $icons {
-        .icon-#{$key}-sm svg {
-            width: $size;
-            height: $size;
+        .icon-#{$key}-sm {
+            --icon-size: #{$size};
         }
     }
 }
@@ -49,6 +55,11 @@ $icons: scale(icon);
 // Box
 [class^="icon-box-"],
 [class*=" icon-box-"] {
+    --icon-box-size: 1em;
+
+    width: var(--icon-box-size);
+    height: var(--icon-box-size);
+
     display: inline-flex;
     align-items: center;
     justify-content: center;
@@ -57,15 +68,13 @@ $icons: scale(icon);
 }
 @each $key, $size in $icons {
     .icon-box-#{$key} {
-        width: $size;
-        height: $size;
+        --icon-box-size: #{$size};
     }
 }
 @include for-sm {
     @each $key, $size in $icons {
         .icon-box-#{$key}-sm {
-            width: $size;
-            height: $size;
+            --icon-box-size: #{$size};
         }
     }
 }

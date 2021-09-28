@@ -33,11 +33,6 @@
     @return nth($val, $index);
 }
 
-// type space
-@function type-space($name) {
-    @return map-get(scale(type-space), $name);
-}
-
 // color
 @function color($keys...) {
     @return map-deep-get($colors, $keys...);
@@ -52,29 +47,9 @@
     @return map-deep-get($palette, $keys...);
 }
 
-// level
-@function level($name) {
-    @return map-get(scale(level), $name);
-}
-
-// radius
-@function radius($name) {
-    @return map-get(scale(radius), $name);
-}
-
 // scale
 @function scale($keys...) {
     @return map-deep-get($scales, $keys...);
-}
-
-// container
-@function container($name) {
-    @return map-get(scale(container), $name);
-}
-
-// edges
-@function edge($name) {
-    @return map-get(scale(edge), $name);
 }
 
 // shadow

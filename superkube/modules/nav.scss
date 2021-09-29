@@ -215,6 +215,12 @@
 
 //Responsive
 @include for-sm {
+    .nav-right {
+        .nav-item {
+            margin-left: 0;
+            margin-right: var(--nav-item-space);
+        }
+    }
     .nav-overflow-sm {
         overflow-y: hidden;
         overflow-x: auto;

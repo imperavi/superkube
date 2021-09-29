@@ -3241,6 +3241,9 @@ hr {
   --nav-link-active-color: var(--palette-black); }
 
 @media only screen and (max-width: 767px) {
+  .nav-right .nav-item {
+    margin-left: 0;
+    margin-right: var(--nav-item-space); }
   .nav-overflow-sm {
     overflow-y: hidden;
     overflow-x: auto;

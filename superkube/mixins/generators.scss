@@ -44,26 +44,12 @@
 
         // shadows
         $shadows: map-get($map, shadow);
-        @each $variant, $map in $shadows {
-            @if $variant == default {
-                @each $key, $val in $map {
-                    @if type-of($val) == map {
-                        --shadow-#{$key}: #{map-values($val)};
-                    }
-                    @else {
-                        --shadow-#{$key}: #{$val};
-                    }
-                }
+        @each $key, $val in $shadows {
+            @if type-of($val) == map {
+                --shadow-#{$key}: #{map-values($val)};
             }
             @else {
-                @each $key, $val in $map {
-                    @if type-of($val) == map {
-                        --shadow-#{$variant}-#{$key}: #{map-values($val)};
-                    }
-                    @else {
-                        --shadow-#{$variant}-#{$key}: #{$val};
-                    }
-                }
+                --shadow-#{$key}: #{$val};
             }
         }
     }

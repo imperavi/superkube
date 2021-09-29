@@ -1,9 +1,12 @@
 // = Border
 [class^="b-"],
 [class*=" b-"] {
+    --border-color: transparent;
+
     border-width: 1px;
     border-style: solid;
-    border-color: transparent;
+    border-color: var(--border-color);
+
 }
 .b-top {
     border-style: none;
@@ -28,7 +31,7 @@
 // color
 $borders-colors: map-get($colors, border);
 @each $name, $value in $borders-colors {
-    .b-#{$name} { border-color: $value; }
+    .b-#{$name} { --border-color: #{$value}; }
 }
 
 // size

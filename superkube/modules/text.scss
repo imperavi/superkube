@@ -33,6 +33,11 @@
 @include for-sm { .text { @include generate-text-size(scale(type-sm), sm); }}
 
 // Color
+[class^="text-"],
+[class*=" text-"] {
+    --text-color: var(--text-default);
+    color: var(--text-color);
+}
 $text-colors: map-get($colors, text);
 @each $variant, $value in $text-colors {
     $sel: '.text';
@@ -41,26 +46,30 @@ $text-colors: map-get($colors, text);
     }
 
     #{$sel} {
-        color: var(--text-#{$variant});
+        --text-color: #{$value};
     }
 }
 
 // Gradient
-$gradients: map-get($colors, text-gradient);
-@each $name, $value in $gradients {
-    .text-gr-#{$name} {
-        background-image: $value;
-    }
-}
 [class^="text-gr-"],
 [class*=" text-gr-"] {
+    --text-gradient-color: var(--text-default);
+
+    // props
     display: inline-block;
     background-clip: text;
+    background-image: var(--text-gradient-color);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 
     a,
     a:hover {
         opacity: 1;
+    }
+}
+$gradients: map-get($colors, text-gradient);
+@each $name, $value in $gradients {
+    .text-gr-#{$name} {
+        --text-gradient-color: #{$value};
     }
 }

@@ -1,13 +1,23 @@
 // =Background
+[class^="bg-"],
+[class*=" bg-"] {
+    --background-color: transparent;
+    background-color: var(--background-color);
+}
 $backgrounds: map-get($colors, background);
 @each $name, $value in $backgrounds {
-    .bg-#{$name} { background-color: var(--background-#{$name}); }
+    .bg-#{$name} { --background-color: #{$value}; }
 }
 
 // =Gradients
+[class^="gr-"],
+[class*=" gr-"] {
+    --gradient-color: transparent;
+    background: var(--gradient-color);
+}
 $gradients: map-get($colors, gradient);
 @each $name, $value in $gradients {
     .gr-#{$name} {
-        background: $value;
+        --gradient-color: #{$value};
     }
 }

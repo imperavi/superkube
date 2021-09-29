@@ -27,6 +27,21 @@
     text-decoration: underline;
 }
 
+[class^="link-"],
+[class*=" link-"] {
+    --link-color: var(--link-default-color);
+    --link-hover-color: var(--link-default-hover-color);
+    --link-background-color: transparent;
+    --link-hover-background-color: transparent;
+
+    color: var(--link-color);
+    background-color: var(--link-background-color);
+    &:hover {
+        color: var(--link-hover-color);
+        background-color: var(--link-hover-background-color);
+    }
+}
+
 // Color
 $link-colors: map-get($colors, link);
 @each $variant, $map in $link-colors {
@@ -40,12 +55,5 @@ $link-colors: map-get($colors, link);
         @each $key, $value in $map {
             --link-#{$key}: var(--link-#{$variant}-#{$key});
         }
-
-        // props
-        color: var(--link-color);
-        &:hover {
-            color: var(--link-hover-color);
-        }
-
     }
 }

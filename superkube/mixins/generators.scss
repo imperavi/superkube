@@ -127,8 +127,8 @@
         @each $key, $val in $headings {
             @if map-has-key($obj, $key) {
                 #{$key} {
-                    font-size: type-size(base, $key, $breakpoint);
-                    line-height: type-line(base, $key, $breakpoint);
+                    --heading-font-size: #{type-size(base, $key, $breakpoint)};
+                    --heading-line-height: #{type-line(base, $key, $breakpoint)};
                 }
             }
         }
@@ -141,13 +141,13 @@
     @each $key, $val in $obj {
         @if (type-of($val) == 'list') {
             &-#{$key} {
-                font-size: type-size(text, $key, $breakpoint);
-                line-height: type-line(text, $key, $breakpoint);
+                --text-font-size: #{type-size(text, $key, $breakpoint)};
+                --text-line-height: #{type-line(text, $key, $breakpoint)};
             }
             @if (length($val) == 3) {
                 &-#{$key}-alt {
-                    font-size: type-size(text, $key, $breakpoint);
-                    line-height: type-line-alt(text, $key, $breakpoint);
+                    --text-font-size: #{type-size(text, $key, $breakpoint)};
+                    --text-line-height: #{type-line-alt(text, $key, $breakpoint)};
                 }
             }
         }
@@ -160,13 +160,13 @@
     @each $key, $val in $obj {
         @if (type-of($val) == 'list') {
             &-#{$key} {
-                font-size: type-size(heading, $key, $breakpoint);
-                line-height: type-line(heading, $key, $breakpoint);
+                --heading-font-size: #{type-size(heading, $key, $breakpoint)};
+                --heading-line-height: #{type-line(heading, $key, $breakpoint)};
             }
             @if (length($val) == 3) {
                 &-#{$key}-alt {
-                    font-size: type-size(heading, $key, $breakpoint);
-                    line-height: type-line-alt(heading, $key, $breakpoint);
+                    --heading-font-size: #{type-size(heading, $key, $breakpoint)};
+                    --heading-line-height: #{type-line-alt(heading, $key, $breakpoint)};
                 }
             }
         }

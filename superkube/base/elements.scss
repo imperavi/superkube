@@ -81,12 +81,15 @@ h3,
 h4,
 h5,
 h6 {
+    --heading-font-size: inherit;
+    --heading-line-height: inherit;
+
     font-family: var(--font-heading);
     font-style: normal;
-    font-size: var(--body-text-size);
     font-weight: bold;
     letter-spacing: -0.01em;
-    line-height: var(--body-text-line);
+    font-size: var(--heading-font-size);
+    line-height: var(--heading-line-height);
     color: var(--heading-default);
     text-rendering: optimizeLegibility;
 

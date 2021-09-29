@@ -412,12 +412,14 @@ h3,
 h4,
 h5,
 h6 {
+  --heading-font-size: inherit;
+  --heading-line-height: inherit;
   font-family: var(--font-heading);
   font-style: normal;
-  font-size: var(--body-text-size);
   font-weight: bold;
   letter-spacing: -0.01em;
-  line-height: var(--body-text-line);
+  font-size: var(--heading-font-size);
+  line-height: var(--heading-line-height);
   color: var(--heading-default);
   text-rendering: optimizeLegibility; }
   h1 a,
@@ -440,20 +442,20 @@ h6 {
     text-decoration: underline; }
 
 h1 {
-  font-size: 56px;
-  line-height: 1.15; }
+  --heading-font-size: 56px;
+  --heading-line-height: 1.15; }
 
 h2 {
-  font-size: 28px;
-  line-height: 1.35; }
+  --heading-font-size: 28px;
+  --heading-line-height: 1.35; }
 
 h3 {
-  font-size: 20px;
-  line-height: 1.4; }
+  --heading-font-size: 20px;
+  --heading-line-height: 1.4; }
 
 h4 {
-  font-size: 16px;
-  line-height: 1.5; }
+  --heading-font-size: 16px;
+  --heading-line-height: 1.5; }
 
 ul,
 ol {
@@ -2142,50 +2144,54 @@ a.caption:hover {
 .heading-heavy {
   font-weight: 900; }
 
-.heading-giga {
-  font-size: 80px;
-  line-height: 1.1; }
-
-.heading-mega {
-  font-size: 64px;
-  line-height: 1.1; }
-
-.heading-huge {
-  font-size: 48px;
-  line-height: 1.2; }
-
-.heading-large {
-  font-size: 36px;
-  line-height: 1.2; }
-
-.heading-medium {
-  font-size: 24px;
-  line-height: 1.3; }
-
-.heading-small {
-  font-size: 20px;
-  line-height: 1.4; }
-
-.heading-micro {
-  font-size: 16px;
-  line-height: 1.5; }
-
-.heading-eyebrow {
-  font-size: 11px;
-  line-height: 1.5; }
-
-@media only screen and (max-width: 767px) {
-  .heading-giga {
-    font-size: 60px;
-    line-height: 1.1; }
-  .heading-mega {
-    font-size: 60px;
-    line-height: 1.1; } }
-
 [class^="heading-"],
 [class*=" heading-"] {
   --heading-color: var(--heading-default);
+  --heading-font-size: inherit;
+  --heading-line-height: inherit;
+  font-size: var(--heading-font-size);
+  line-height: var(--heading-line-height);
   color: var(--heading-color); }
+
+.heading-giga {
+  --heading-font-size: 80px;
+  --heading-line-height: 1.1; }
+
+.heading-mega {
+  --heading-font-size: 64px;
+  --heading-line-height: 1.1; }
+
+.heading-huge {
+  --heading-font-size: 48px;
+  --heading-line-height: 1.2; }
+
+.heading-large {
+  --heading-font-size: 36px;
+  --heading-line-height: 1.2; }
+
+.heading-medium {
+  --heading-font-size: 24px;
+  --heading-line-height: 1.3; }
+
+.heading-small {
+  --heading-font-size: 20px;
+  --heading-line-height: 1.4; }
+
+.heading-micro {
+  --heading-font-size: 16px;
+  --heading-line-height: 1.5; }
+
+.heading-eyebrow {
+  --heading-font-size: 11px;
+  --heading-line-height: 1.5; }
+
+@media only screen and (max-width: 767px) {
+  .heading-giga {
+    --heading-font-size: 60px;
+    --heading-line-height: 1.1; }
+  .heading-mega {
+    --heading-font-size: 60px;
+    --heading-line-height: 1.1; } }
 
 .heading {
   --heading-color: var(--palette-black); }
@@ -6151,46 +6157,50 @@ hr {
 .text-nowrap th {
   white-space: nowrap; }
 
-.text-giga {
-  font-size: 32px;
-  line-height: 1.5; }
-
-.text-mega {
-  font-size: 24px;
-  line-height: 1.5; }
-
-.text-huge {
-  font-size: 20px;
-  line-height: 1.5; }
-
-.text-large {
-  font-size: 18px;
-  line-height: 1.5; }
-
-.text-default {
-  font-size: 16px;
-  line-height: 1.5; }
-
-.text-medium {
-  font-size: 14px;
-  line-height: 1.5; }
-
-.text-small {
-  font-size: 13px;
-  line-height: 1.5; }
-
-.text-tiny {
-  font-size: 12px;
-  line-height: 1.5; }
-
-.text-micro {
-  font-size: 11px;
-  line-height: 1.5; }
-
 [class^="text-"],
 [class*=" text-"] {
   --text-color: var(--text-default);
+  --text-font-size: inherit;
+  --text-line-height: inherit;
+  font-size: var(--text-font-size);
+  line-height: var(--text-line-height);
   color: var(--text-color); }
+
+.text-giga {
+  --text-font-size: 32px;
+  --text-line-height: 1.5; }
+
+.text-mega {
+  --text-font-size: 24px;
+  --text-line-height: 1.5; }
+
+.text-huge {
+  --text-font-size: 20px;
+  --text-line-height: 1.5; }
+
+.text-large {
+  --text-font-size: 18px;
+  --text-line-height: 1.5; }
+
+.text-default {
+  --text-font-size: 16px;
+  --text-line-height: 1.5; }
+
+.text-medium {
+  --text-font-size: 14px;
+  --text-line-height: 1.5; }
+
+.text-small {
+  --text-font-size: 13px;
+  --text-line-height: 1.5; }
+
+.text-tiny {
+  --text-font-size: 12px;
+  --text-line-height: 1.5; }
+
+.text-micro {
+  --text-font-size: 11px;
+  --text-line-height: 1.5; }
 
 .text-dark {
   --text-color: var(--palette-black); }

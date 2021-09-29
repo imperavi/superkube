@@ -26,18 +26,25 @@
     }
 }
 
+[class^="text-"],
+[class*=" text-"] {
+    --text-color: var(--text-default);
+    --text-font-size: inherit;
+    --text-line-height: inherit;
+
+    // props
+    font-size: var(--text-font-size);
+    line-height: var(--text-line-height);
+    color: var(--text-color);
+}
 // Size
 .text { @include generate-text-size(scale(type), std); }
 @include for-lg { .text { @include generate-text-size(scale(type-lg), lg); }}
 @include for-md { .text { @include generate-text-size(scale(type-md), md); }}
 @include for-sm { .text { @include generate-text-size(scale(type-sm), sm); }}
 
+
 // Color
-[class^="text-"],
-[class*=" text-"] {
-    --text-color: var(--text-default);
-    color: var(--text-color);
-}
 $text-colors: map-get($colors, text);
 @each $variant, $value in $text-colors {
     $sel: '.text';

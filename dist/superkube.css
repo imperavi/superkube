@@ -4014,39 +4014,44 @@ hr {
 .sh-off {
   box-shadow: none; }
 
+[class^="sh-"],
+[class*=" sh-"] {
+  --shadow: none;
+  box-shadow: var(--shadow); }
+
 .sh-100 {
-  box-shadow: var(--shadow-100); }
+  --shadow: var(--shadow-100); }
 
 .sh-150 {
-  box-shadow: var(--shadow-150); }
+  --shadow: var(--shadow-150); }
 
 .sh-200 {
-  box-shadow: var(--shadow-200); }
+  --shadow: var(--shadow-200); }
 
 .sh-250 {
-  box-shadow: var(--shadow-250); }
+  --shadow: var(--shadow-250); }
 
 .sh-300 {
-  box-shadow: var(--shadow-300); }
+  --shadow: var(--shadow-300); }
 
 .sh-350 {
-  box-shadow: var(--shadow-350); }
+  --shadow: var(--shadow-350); }
 
 @media only screen and (max-width: 767px) {
   .sh-off-sm {
     box-shadow: none; }
   .sh-100-sm {
-    box-shadow: var(--shadow-100); }
+    --shadow: var(--shadow-100); }
   .sh-150-sm {
-    box-shadow: var(--shadow-150); }
+    --shadow: var(--shadow-150); }
   .sh-200-sm {
-    box-shadow: var(--shadow-200); }
+    --shadow: var(--shadow-200); }
   .sh-250-sm {
-    box-shadow: var(--shadow-250); }
+    --shadow: var(--shadow-250); }
   .sh-300-sm {
-    box-shadow: var(--shadow-300); }
+    --shadow: var(--shadow-300); }
   .sh-350-sm {
-    box-shadow: var(--shadow-350); } }
+    --shadow: var(--shadow-350); } }
 
 .w-off {
   max-width: none;

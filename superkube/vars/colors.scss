@@ -187,24 +187,24 @@ $colors: map-extend($colors, (
     ),
     shadow: (
         default: (
-            100: var(--palette-black-10),
+            100: 0 1px 2px var(--palette-black-10),
             150: (
-                1: var(--palette-black-5),
-                2: var(--palette-black-10)
+                1: 0 1px 2px var(--palette-black-5),
+                2: 0 2px 4px var(--palette-black-10)
             ),
             200: (
-                1: var(--palette-black-5),
-                2: var(--palette-black-10)
+                1: 0 2px 4px -1px var(--palette-black-5),
+                2: 0 4px 6px -1px var(--palette-black-10)
             ),
             250: (
-                1: var(--palette-black-5),
-                2: var(--palette-black-10)
+                1: 0 2px 4px -2px var(--palette-black-5),
+                2: 0 6px 8px var(--palette-black-10)
             ),
             300: (
-                1: var(--palette-black-5),
-                2: var(--palette-black-10)
+                1: 0 10px 10px -6px var(--palette-black-5),
+                2: 0 20px 25px var(--palette-black-10)
             ),
-            350: var(--palette-black-25)
+            350: 0 25px 50px var(--palette-black-25)
         )
     ),
     table: (

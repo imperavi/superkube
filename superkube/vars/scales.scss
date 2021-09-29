@@ -196,26 +196,6 @@ $scales: map-extend($scales, (
         20: 20,
         24: 24
     ),
-    shadow: (
-        100: 0 1px 2px,
-        150: (
-            1: 0 1px 2px,
-            2: 0 2px 4px
-        ),
-        200: (
-            1: 0 2px 4px -1px,
-            2: 0 4px 6px -1px
-        ),
-        250: (
-            1: 0 2px 4px -2px,
-            2: 0 6px 8px
-        ),
-        300: (
-            1: 0 10px 10px -6px,
-            2: 0 20px 25px
-        ),
-        350: 0 25px 50px
-    ),
     image: (
        16: 16px,
        24: 24px,

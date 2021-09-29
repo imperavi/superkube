@@ -47,12 +47,22 @@
         @each $variant, $map in $shadows {
             @if $variant == default {
                 @each $key, $val in $map {
-                    --shadow-#{$key}: #{shadow($variant, $key, $val)};
+                    @if type-of($val) == map {
+                        --shadow-#{$key}: #{map-values($val)};
+                    }
+                    @else {
+                        --shadow-#{$key}: #{$val};
+                    }
                 }
             }
             @else {
                 @each $key, $val in $map {
-                    --shadow-#{$variant}-#{$key}: #{shadow($variant, $key, $val)};
+                    @if type-of($val) == map {
+                        --shadow-#{$variant}-#{$key}: #{map-values($val)};
+                    }
+                    @else {
+                        --shadow-#{$variant}-#{$key}: #{$val};
+                    }
                 }
             }
         }

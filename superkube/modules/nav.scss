@@ -215,8 +215,13 @@
 
 //Responsive
 @include for-sm {
-    .nav-right {
+    .nav-left-sm {
+        .nav-list {
+            justify-content: start;
+        }
         .nav-item {
+            flex: none;
+            justify-content: start;
             margin-left: 0;
             margin-right: var(--nav-item-space);
         }

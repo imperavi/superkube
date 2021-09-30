@@ -3241,7 +3241,11 @@ hr {
   --nav-link-active-color: var(--palette-black); }
 
 @media only screen and (max-width: 767px) {
-  .nav-right .nav-item {
+  .nav-left-sm .nav-list {
+    justify-content: start; }
+  .nav-left-sm .nav-item {
+    flex: none;
+    justify-content: start;
     margin-left: 0;
     margin-right: var(--nav-item-space); }
   .nav-overflow-sm {

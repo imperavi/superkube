@@ -1,10 +1,5 @@
 // =Label
 .label {
-    // colors
-    --label-background-color: var(--palette-neutral-lighter);
-    --label-border-color: var(--palette-transparent);
-    --label-color: var(--palette-neutral-darker);
-
     // vars
     --label-font-weight: 600;
     --label-font-size: var(--type-scale-12);
@@ -61,28 +56,6 @@ a.label:hover {
     --label-font-size: var(--type-scale-14);
 }
 // Colors
-.label.label-info {
-    --label-background-color: var(--palette-active-lightest);
-    --label-border-color: var(--palette-transparent);
-    --label-color: var(--palette-active-dark);
-}
-.label.label-positive {
-    --label-background-color: var(--palette-positive-lightest);
-    --label-border-color: var(--palette-transparent);
-    --label-color: var(--palette-positive-dark);
-}
-.label.label-important {
-    --label-background-color: var(--palette-negative-lightest);
-    --label-border-color: var(--palette-transparent);
-    --label-color: var(--palette-negative-dark);
-}
-.label.label-dark {
-    --label-background-color: var(--palette-black);
-    --label-border-color: var(--palette-transparent);
-    --label-color: var(--palette-negative-lightest);
-}
-.label.label-light {
-    --label-background-color: var(--palette-white);
-    --label-border-color: var(--palette-transparent);
-    --label-color: var(--palette-neutral-darker);
+.label {
+    @include generate-colors(label);
 }

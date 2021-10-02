@@ -42,10 +42,10 @@ hr {
 }
 // Colors
 $lines: color(line);
-@each $key, $color in $lines {
-    @if $key != default {
-        .line-#{$key} {
-            --line-color: var(--line-#{$key});
+@each $name, $color in $lines {
+    @if $name != default {
+        .line-#{$name} {
+            --line-color: var(--line-#{$name});
         }
     }
 }

@@ -1,10 +1,5 @@
 // =Alert
 .alert {
-    // colors
-    --alert-background-color: var(--palette-neutral-lighter);
-    --alert-border-color: var(--palette-transparent);
-    --alert-color: var(--palette-neutral-darker);
-
     // vars
     --alert-padding: 4rem 5rem;
     --alert-font-weight: normal;
@@ -50,18 +45,6 @@
         padding-top: .85em;
     }
 }
-.alert.alert-info {
-    --alert-background-color: var(--palette-active-lightest);
-    --alert-border-color: var(--palette-transparent);
-    --alert-color: var(--palette-active-darker);
-}
-.alert.alert-success {
-    --alert-background-color: var(--palette-positive-lightest);
-    --alert-border-color: var(--palette-transparent);
-    --alert-color: var(--palette-positive-darker);
-}
-.alert.alert-error {
-    --alert-background-color: var(--palette-negative-lightest);
-    --alert-border-color: var(--palette-transparent);
-    --alert-color: var(--palette-negative-darker);
+.alert {
+    @include generate-colors(alert);
 }

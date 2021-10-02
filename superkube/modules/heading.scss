@@ -36,13 +36,13 @@
 
 // Color
 $heading-colors: map-get($colors, heading);
-@each $variant, $value in $heading-colors {
+@each $name, $value in $heading-colors {
     $sel: '.heading';
-    @if $variant != default {
-        $sel: '.heading-' + $variant;
+    @if $name != default {
+        $sel: '.heading-' + $name;
     }
 
     #{$sel} {
-        --heading-color: #{$value};
+        --heading-color: var(--heading-#{$name});
     }
 }

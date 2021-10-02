@@ -6,7 +6,7 @@
 }
 $backgrounds: map-get($colors, background);
 @each $name, $value in $backgrounds {
-    .bg-#{$name} { --background-color: #{$value}; }
+    .bg-#{$name} { --background-color: var(--background-#{$name}); }
 }
 
 // =Gradients

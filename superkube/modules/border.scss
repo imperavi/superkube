@@ -31,7 +31,7 @@
 // color
 $borders-colors: map-get($colors, border);
 @each $name, $value in $borders-colors {
-    .b-#{$name} { --border-color: #{$value}; }
+    .b-#{$name} { --border-color: var(--border-#{$name}); }
 }
 
 // size

@@ -1,16 +1,10 @@
 // =Breadcrumb
 .breadcrumb {
-    // colors
-    --breadcrumb-link-color: var(--palette-black);
-    --breadcrumb-link-hover-color: var(--palette-black-60);
-    --breadcrumb-link-active-color: var(--palette-black-40);
-
     // vars
     --breadcrumb-font-size: var(--type-scale-14);
     --breadcrumb-line-height: var(--body-text-line);
     --breadcrumb-item-space: 2rem;
     --breadcrumb-separator: '\0002f';
-    --breadcrumb-separator-color: var(--palette-black-25);
 
     // props
     font-size: var(--breadcrumb-font-size);
@@ -55,4 +49,8 @@
 }
 .breadcrumb-path {
     --breadcrumb-separator: '\0227B';
+}
+// Colors
+.breadcrumb {
+    @include generate-colors(breadcrumb);
 }

@@ -1,8 +1,5 @@
 // =Caption
 .caption {
-    // colors
-    --caption-color: var(--palette-neutral-base);
-
     // vars
     --caption-font-weight: normal;
     --caption-font-size: var(--type-scale-14);
@@ -48,18 +45,6 @@ a.caption:hover {
 }
 
 // Colors
-.caption-info {
-    --caption-color: var(--palette-active-base);
-}
-.caption-positive {
-    --caption-color: var(--palette-positive-base);
-}
-.caption-important {
-    --caption-color: var(--palette-negative-base);
-}
-.caption-dark {
-    --caption-color: var(--palette-black);
-}
-.caption-light {
-    --caption-color: var(--palette-white);
+.caption {
+    @include generate-colors(caption);
 }

@@ -1,13 +1,5 @@
 // =Menu
 .menu {
-    // colors
-    --menu-link-color: var(--palette-black);
-    --menu-link-background-color: var(--palette-transparent);
-    --menu-link-hover-color: var(--palette-black-60);
-    --menu-link-hover-background-color: var(--palette-transparent);
-    --menu-link-active-color: var(--palette-black-40);
-    --menu-link-active-background-color: var(--palette-transparent);
-
     // vars
     --menu-font-size: var(--type-scale-15);
     --menu-line-height: 1.3;
@@ -104,7 +96,6 @@
 .menu-stacked {
     --menu-link-padding-y: 8px;
     --menu-item-border-width: 1px;
-    --menu-item-border-color: var(--palette-black-7);
     --menu-item-border-style: solid;
 
     .menu-item {
@@ -119,10 +110,6 @@
 
 // Pills
 .menu-pills {
-    --menu-link-color: var(--palette-black);
-    --menu-link-hover-background-color: var(--palette-black-10);
-    --menu-link-active-color: var(--palette-neutral-lightest);
-    --menu-link-active-background-color: var(--palette-black);
     --menu-link-padding-y: 6px;
     --menu-link-padding-x: 10px;
     --menu-link-border-radius: var(--radius-base);
@@ -137,7 +124,6 @@
 .menu-numbered {
     --menu-number-font-size: 80%;
     --menu-number-width: 24px;
-    --menu-number-color: var(--palette-black-60);
 
     .menu-list {
         counter-reset: table-of-contents;
@@ -165,27 +151,6 @@
 }
 
 // Colors
-.menu-primary {
-    --menu-link-color: var(--palette-primary-dark);
-    --menu-link-hover-color: var(--palette-primary-darker);
-    --menu-link-active-color: var(--palette-black-40);
-}
-.menu-light {
-    --menu-link-color: var(--palette-white-80);
-    --menu-link-hover-color: var(--palette-white);
-    --menu-link-active-color: var(--palette-white-50);
-}
-.menu-muted {
-    --menu-link-color: var(--palette-black-60);
-    --menu-link-hover-color: var(--palette-black);
-    --menu-link-active-color: var(--palette-black);
-}
-// Light
-.menu-light {
-    &.menu-numbered {
-        --menu-number-color: var(--palette-white-60);
-    }
-    &.menu-stacked {
-        --menu-item-border-color: var(--palette-white-20);
-    }
+.menu {
+    @include generate-colors(menu);
 }

@@ -30,10 +30,10 @@
 
 // Colors
 $iconcolors: map-get($colors, icon);
-@each $key, $value in $iconcolors {
-    .icon-#{$key},
-    a.icon-#{$key} {
-        --icon-color: #{$value};
+@each $name, $value in $iconcolors {
+    .icon-#{$name},
+    a.icon-#{$name} {
+        --icon-color: var(--icon-#{$name});
     }
 }
 

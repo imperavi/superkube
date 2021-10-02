@@ -4,9 +4,6 @@
     --input-addon-item-padding: 0 0.85em;
     --input-addon-item-border-radius: var(--radius-base);
     --input-addon-item-font-size: var(--type-scale-14);
-    --input-addon-item-color: var(--palette-black);
-    --input-addon-item-background-color: var(--palette-transparent);
-    --input-addon-item-border-color: var(--palette-neutral-mid);
 
     // scales
     $input-scale: scale(input);
@@ -58,4 +55,7 @@
             border-bottom-left-radius: 0;
         }
     }
+}
+.input-addon {
+    @include generate-colors(input-addon);
 }

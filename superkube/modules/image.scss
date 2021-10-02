@@ -31,11 +31,11 @@ $overlays: map-get($colors, overlay);
 @each $name, $value in $overlays {
     .image-overlay-#{$name} {
         @if type-of($value) == map {
-            --image-overlay-color:  #{map-get($value, color)};
-            --image-overlay-opacity: #{map-get($value, opacity)};
+            --image-overlay-color:  var(--overlay-#{$name}-color);
+            --image-overlay-opacity: var(--overlay-#{$name}-opacity);
         }
         @else {
-            --image-overlay-color: #{$value};
+            --image-overlay-color: var(--overlay-#{$name});
         }
     }
 }

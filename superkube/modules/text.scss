@@ -46,14 +46,14 @@
 
 // Color
 $text-colors: map-get($colors, text);
-@each $variant, $value in $text-colors {
+@each $name, $value in $text-colors {
     $sel: '.text';
-    @if $variant != default {
-        $sel: '.text-' + $variant;
+    @if $name != default {
+        $sel: '.text-' + $name;
     }
 
     #{$sel} {
-        --text-color: #{$value};
+        --text-color: var(--text-#{$name});
     }
 }
 

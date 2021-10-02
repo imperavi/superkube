@@ -1,10 +1,5 @@
 // =Badge
 .badge {
-    // colors
-    --badge-background-color: var(--palette-neutral-lighter);
-    --badge-border-color: var(--palette-transparent);
-    --badge-color: var(--palette-neutral-darker);
-
     // vars
     --badge-font-weight: 600;
     --badge-font-size: var(--type-scale-11);
@@ -66,28 +61,6 @@ a.badge:hover {
 }
 
 // Colors
-.badge.badge-info {
-    --badge-background-color: var(--palette-active-lightest);
-    --badge-border-color: var(--palette-transparent);
-    --badge-color: var(--palette-active-dark);
-}
-.badge.badge-positive {
-    --badge-background-color: var(--palette-positive-lightest);
-    --badge-border-color: var(--palette-transparent);
-    --badge-color: var(--palette-positive-dark);
-}
-.badge.badge-important {
-    --badge-background-color: var(--palette-negative-lightest);
-    --badge-border-color: var(--palette-transparent);
-    --badge-color: var(--palette-negative-dark);
-}
-.badge.badge-dark {
-    --badge-background-color: var(--palette-black);
-    --badge-border-color: var(--palette-transparent);
-    --badge-color: var(--palette-white);
-}
-.badge.badge-light {
-    --badge-background-color: var(--palette-white);
-    --badge-border-color: var(--palette-transparent);
-    --badge-color: var(--palette-black);
+.badge {
+    @include generate-colors(badge);
 }

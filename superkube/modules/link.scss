@@ -44,16 +44,15 @@
 
 // Color
 $link-colors: map-get($colors, link);
-@each $variant, $map in $link-colors {
+@each $name, $map in $link-colors {
     $sel: '.link';
-    @if $variant != default {
-        $sel: '.link-' + $variant;
+    @if $name != default {
+        $sel: '.link-' + $name;
     }
 
     #{$sel} {
-        // colors
         @each $key, $value in $map {
-            --link-#{$key}: var(--link-#{$variant}-#{$key});
+            --link-#{$key}: var(--link-#{$name}-#{$key});
         }
     }
 }

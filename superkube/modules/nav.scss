@@ -1,13 +1,5 @@
 // =Nav
 .nav {
-    // colors
-    --nav-link-color: var(--palette-black);
-    --nav-link-background-color: var(--palette-transparent);
-    --nav-link-hover-color: var(--palette-black-60);
-    --nav-link-hover-background-color: var(--palette-transparent);
-    --nav-link-active-color: var(--palette-black-40);
-    --nav-link-active-background-color: var(--palette-transparent);
-
     // vars
     --nav-font-size: var(--type-scale-14);
     --nav-item-space: 6rem;
@@ -80,10 +72,6 @@
 
 // Pills
 .nav-pills {
-    --nav-link-color: var(--palette-black);
-    --nav-link-hover-background-color: var(--palette-black-10);
-    --nav-link-active-color: var(--palette-neutral-lightest);
-    --nav-link-active-background-color: var(--palette-black);
     --nav-item-space: 1rem;
     --nav-link-padding: 7px 16px;
     --nav-link-border-radius: 99px;
@@ -95,19 +83,9 @@
 
 // Tabs
 .nav-tabs {
-    --nav-border-color: var(--palette-black-10);
     --nav-border-width: 2px;
     --nav-item-space: 1px;
     --nav-link-padding: 12px 12px 10px 12px;
-    --nav-link-color: var(--palette-black-50);
-    --nav-link-border-color: var(--palette-transparent);
-    --nav-link-background-color: var(--palette-transparent);
-    --nav-link-hover-color: var(--palette-black);
-    --nav-link-hover-border-color: var(--palette-black);
-    --nav-link-hover-background-color: var(--palette-neutral-lightest);
-    --nav-link-active-color: var(--palette-black);
-    --nav-link-active-border-color: var(--palette-black);
-    --nav-link-active-background-color: var(--palette-transparent);
 
     .nav-list {
         border-bottom-width: var(--nav-border-width);
@@ -196,20 +174,8 @@
 }
 
 // Colors
-.nav-primary {
-    --nav-link-color: var(--palette-primary-dark);
-    --nav-link-hover-color: var(--palette-primary-darker);
-    --nav-link-active-color: var(--palette-black-40);
-}
-.nav-light {
-    --nav-link-color: var(--palette-white-80);
-    --nav-link-hover-color: var(--palette-white);
-    --nav-link-active-color: var(--palette-white-50);
-}
-.nav-muted {
-    --nav-link-color: var(--palette-black-60);
-    --nav-link-hover-color: var(--palette-black);
-    --nav-link-active-color: var(--palette-black);
+.nav {
+    @include generate-colors(nav);
 }
 
 

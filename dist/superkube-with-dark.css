@@ -1,5 +1,5 @@
 /*
-    Superkube
+    Superkube with Dark Theme
     Version 2.3.1
     Updated: September 30, 2021
 
@@ -433,6 +433,300 @@
   --shadow-250: 0 2px 4px -2px rgba(0, 0, 0, 0.05), 0 6px 8px rgba(0, 0, 0, 0.1);
   --shadow-300: 0 10px 10px -6px rgba(0, 0, 0, 0.05), 0 20px 25px rgba(0, 0, 0, 0.1);
   --shadow-350: 0 25px 50px rgba(0, 0, 0, 0.25); }
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --palette-surface-base: #1A1A1A;
+    --palette-surface-100: #474747;
+    --palette-surface-200: #3C3C3C;
+    --palette-surface-300: #313131;
+    --palette-surface-400: #252525;
+    --palette-black: #000;
+    --palette-black-5: rgba(0, 0, 0, 0.05);
+    --palette-black-7: rgba(0, 0, 0, 0.07);
+    --palette-black-10: rgba(0, 0, 0, 0.1);
+    --palette-black-15: rgba(0, 0, 0, 0.15);
+    --palette-black-20: rgba(0, 0, 0, 0.2);
+    --palette-black-25: rgba(0, 0, 0, 0.25);
+    --palette-black-30: rgba(0, 0, 0, 0.3);
+    --palette-black-40: rgba(0, 0, 0, 0.4);
+    --palette-black-50: rgba(0, 0, 0, 0.5);
+    --palette-black-60: rgba(0, 0, 0, 0.6);
+    --palette-black-70: rgba(0, 0, 0, 0.7);
+    --palette-black-80: rgba(0, 0, 0, 0.8);
+    --palette-black-90: rgba(0, 0, 0, 0.9);
+    --palette-black-95: rgba(0, 0, 0, 0.95);
+    --alert-default-background-color: var(--palette-black);
+    --alert-default-border-color: var(--palette-transparent);
+    --alert-default-color: var(--palette-neutral-lightest);
+    --alert-info-background-color: var(--palette-active-dark);
+    --alert-info-border-color: var(--palette-transparent);
+    --alert-info-color: var(--palette-active-lightest);
+    --alert-success-background-color: var(--palette-positive-dark);
+    --alert-success-border-color: var(--palette-transparent);
+    --alert-success-color: var(--palette-positive-lightest);
+    --alert-error-background-color: var(--palette-negative-dark);
+    --alert-error-border-color: var(--palette-transparent);
+    --alert-error-color: var(--palette-negative-lightest);
+    --background-light: var(--palette-surface-100);
+    --background-dark: var(--palette-surface-400);
+    --background-primary: var(--palette-primary-dark);
+    --background-aluminum: var(--palette-surface-200);
+    --background-silver: var(--palette-surface-300);
+    --background-platinum: var(--palette-surface-400);
+    --badge-default-background-color: var(--palette-black);
+    --badge-default-border-color: var(--palette-transparent);
+    --badge-default-color: var(--palette-neutral-lightest);
+    --badge-info-background-color: var(--palette-active-dark);
+    --badge-info-border-color: var(--palette-transparent);
+    --badge-info-color: var(--palette-active-lightest);
+    --badge-positive-background-color: var(--palette-positive-dark);
+    --badge-positive-border-color: var(--palette-transparent);
+    --badge-positive-color: var(--palette-positive-lightest);
+    --badge-important-background-color: var(--palette-negative-dark);
+    --badge-important-border-color: var(--palette-transparent);
+    --badge-important-color: var(--palette-negative-lightest);
+    --badge-dark-background-color: var(--palette-white);
+    --badge-dark-border-color: var(--palette-transparent);
+    --badge-dark-color: var(--palette-black);
+    --badge-light-background-color: var(--palette-white);
+    --badge-light-border-color: var(--palette-transparent);
+    --badge-light-color: var(--palette-black);
+    --body-default: var(--palette-surface-base);
+    --border-dark-low: var(--palette-white-25);
+    --border-dark-medium: var(--palette-white-40);
+    --border-light-low: var(--palette-white-30);
+    --border-primary: var(--palette-primary-dark);
+    --breadcrumb-default-link-color: var(--palette-white-90);
+    --breadcrumb-default-link-hover-color: var(--palette-white);
+    --breadcrumb-default-link-active-color: var(--palette-white-50);
+    --breadcrumb-default-separator-color: var(--palette-white-30);
+    --button-default-background-color: var(--palette-transparent);
+    --button-default-border-color: var(--palette-white-60);
+    --button-default-color: var(--palette-white-90);
+    --button-default-hover-background-color: var(--palette-white-7);
+    --button-default-hover-border-color: var(--palette-white-80);
+    --button-default-hover-color: var(--palette-white);
+    --button-default-disabled-background-color: var(--palette-white-70);
+    --button-default-disabled-border-color: var(--palette-transparent);
+    --button-default-disabled-color: var(--palette-black-80);
+    --button-primary-background-color: var(--palette-primary-dark);
+    --button-primary-border-color: var(--palette-transparent);
+    --button-primary-color: var(--palette-primary-lightest);
+    --button-primary-hover-background-color: var(--palette-primary-base);
+    --button-primary-hover-border-color: var(--palette-transparent);
+    --button-primary-hover-color: var(--palette-primary-lightest);
+    --button-primary-disabled-background-color: var(--palette-white-70);
+    --button-primary-disabled-border-color: var(--palette-transparent);
+    --button-primary-disabled-color: var(--palette-black-80);
+    --button-light-background-color: var(--palette-white-95);
+    --button-light-border-color: var(--palette-transparent);
+    --button-light-color: var(--palette-black);
+    --button-light-hover-background-color: var(--palette-white);
+    --button-light-hover-border-color: var(--palette-transparent);
+    --button-light-hover-color: var(--palette-black);
+    --button-light-disabled-background-color: var(--palette-white-70);
+    --button-light-disabled-border-color: var(--palette-transparent);
+    --button-light-disabled-color: var(--palette-black-80);
+    --button-light-outline-background-color: var(--palette-transparent);
+    --button-light-outline-border-color: var(--palette-white-60);
+    --button-light-outline-color: var(--palette-white-90);
+    --button-light-outline-hover-background-color: var(--palette-white-7);
+    --button-light-outline-hover-border-color: var(--palette-white-80);
+    --button-light-outline-hover-color: var(--palette-white);
+    --button-light-outline-disabled-background-color: var(--palette-white-70);
+    --button-light-outline-disabled-border-color: var(--palette-transparent);
+    --button-light-outline-disabled-color: var(--palette-black-80);
+    --button-dark-background-color: var(--palette-white-95);
+    --button-dark-border-color: var(--palette-transparent);
+    --button-dark-color: var(--palette-black);
+    --button-dark-hover-background-color: var(--palette-white);
+    --button-dark-hover-border-color: var(--palette-transparent);
+    --button-dark-hover-color: var(--palette-black);
+    --button-dark-disabled-background-color: var(--palette-white-70);
+    --button-dark-disabled-border-color: var(--palette-transparent);
+    --button-dark-disabled-color: var(--palette-black-80);
+    --caption-default-color: var(--palette-white-60);
+    --caption-info-color: var(--palette-active-base);
+    --caption-positive-color: var(--palette-positive-base);
+    --caption-important-color: var(--palette-negative-base);
+    --caption-dark-color: var(--palette-white);
+    --caption-light-color: var(--palette-white);
+    --form-label-color: var(--palette-white-90);
+    --heading-default: var(--palette-white-95);
+    --heading-moderated: var(--palette-white-80);
+    --heading-muted: var(--palette-white-50);
+    --heading-light: var(--palette-white-95);
+    --heading-light-moderated: var(--palette-white-80);
+    --heading-primary: var(--palette-primary-base);
+    --icon-dark: var(--palette-white-95);
+    --icon-light: var(--palette-white-95);
+    --icon-primary: var(--palette-primary-base);
+    --inline-var-color: var(--palette-white-80);
+    --inline-var-border-color: var(--palette-transparent);
+    --inline-var-background-color: var(--palette-transparent);
+    --inline-kbd-color: var(--palette-white-80);
+    --inline-kbd-border-color: var(--palette-white-25);
+    --inline-kbd-background-color: var(--palette-transparent);
+    --inline-code-color: var(--palette-white-80);
+    --inline-code-border-color: var(--palette-transparent);
+    --inline-code-background-color: var(--palette-white-5);
+    --inline-cite-color: var(--palette-white-80);
+    --input-default-color: var(--palette-white-90);
+    --input-default-border-color: var(--palette-white-40);
+    --input-default-background-color: var(--palette-white-15);
+    --input-default-box-shadow: none;
+    --input-default-focus-color: var(--palette-white-90);
+    --input-default-focus-border-color: var(--palette-white-60);
+    --input-default-focus-background-color: var(--palette-white-20);
+    --input-default-focus-box-shadow: none;
+    --input-error-outline-color: var(--palette-negative-base);
+    --input-error-color: var(--palette-negative-dark);
+    --input-error-border-color: var(--palette-negative-base);
+    --input-error-background-color: var(--palette-white-15);
+    --input-error-box-shadow: none;
+    --input-error-focus-color: var(--palette-negative-base);
+    --input-error-focus-border-color: var(--palette-negative-base);
+    --input-error-focus-background-color: var(--palette-white-20);
+    --input-error-focus-box-shadow: none;
+    --input-light-color: var(--palette-white-90);
+    --input-light-border-color: var(--palette-white-40);
+    --input-light-background-color: var(--palette-white-15);
+    --input-light-box-shadow: none;
+    --input-light-focus-color: var(--palette-white-90);
+    --input-light-focus-border-color: var(--palette-white-60);
+    --input-light-focus-background-color: var(--palette-white-20);
+    --input-light-focus-box-shadow: none;
+    --input-addon-item-color: var(--palette-white-90);
+    --input-addon-item-background-color: var(--palette-white-15);
+    --input-addon-item-border-color: var(--palette-white-40);
+    --label-default-background-color: var(--palette-black);
+    --label-default-border-color: var(--palette-transparent);
+    --label-default-color: var(--palette-neutral-lightest);
+    --label-info-background-color: var(--palette-active-dark);
+    --label-info-border-color: var(--palette-transparent);
+    --label-info-color: var(--palette-active-lightest);
+    --label-positive-background-color: var(--palette-positive-dark);
+    --label-positive-border-color: var(--palette-transparent);
+    --label-positive-color: var(--palette-positive-lightest);
+    --label-important-background-color: var(--palette-negative-dark);
+    --label-important-border-color: var(--palette-transparent);
+    --label-important-color: var(--palette-negative-lightest);
+    --label-dark-background-color: var(--palette-white);
+    --label-dark-border-color: var(--palette-transparent);
+    --label-dark-color: var(--palette-black);
+    --label-light-background-color: var(--palette-white);
+    --label-light-border-color: var(--palette-transparent);
+    --label-light-color: var(--palette-black);
+    --line-default: var(--palette-white-30);
+    --link-default-color: var(--palette-white-90);
+    --link-default-hover-color: var(--palette-white);
+    --link-dark-color: var(--palette-white-95);
+    --link-dark-hover-color: var(--palette-white);
+    --link-muted-color: var(--palette-white-50);
+    --link-muted-hover-color: var(--palette-white);
+    --link-moderated-color: var(--palette-white-80);
+    --link-moderated-hover-color: var(--palette-white);
+    --link-light-color: var(--palette-white-95);
+    --link-light-hover-color: var(--palette-white-60);
+    --link-light-moderated-color: var(--palette-white-70);
+    --link-light-moderated-hover-color: var(--palette-white);
+    --link-primary-color: var(--palette-white-95);
+    --link-primary-hover-color: var(--palette-white);
+    --list-default-item-color: var(--text-default);
+    --list-stacked-item-border-color: var(--palette-white-15);
+    --list-bordered-border-color: var(--palette-white-15);
+    --list-numbered-number-color: var(--palette-white-50);
+    --list-light-item-color: var(--text-light);
+    --list-light-item-border-color: var(--palette-white-20);
+    --list-light-border-color: var(--palette-white-15);
+    --list-light-number-color: var(--palette-white-50);
+    --menu-default-link-color: var(--palette-white-90);
+    --menu-default-link-background-color: var(--palette-transparent);
+    --menu-default-link-hover-color: var(--palette-white);
+    --menu-default-link-hover-background-color: var(--palette-transparent);
+    --menu-default-link-active-color: var(--palette-white-50);
+    --menu-default-link-active-background-color: var(--palette-transparent);
+    --menu-stacked-item-border-color: var(--palette-white-15);
+    --menu-pills-link-color: var(--palette-white-90);
+    --menu-pills-link-hover-background-color: var(--palette-white-15);
+    --menu-pills-link-active-color: var(--palette-black);
+    --menu-pills-link-active-background-color: var(--palette-white-90);
+    --menu-numbered-number-color: var(--palette-white-50);
+    --menu-primary-link-color: var(--palette-white-90);
+    --menu-primary-link-hover-color: var(--palette-white);
+    --menu-primary-link-active-color: var(--palette-white-50);
+    --menu-light-link-color: var(--palette-white-90);
+    --menu-light-link-hover-color: var(--palette-white);
+    --menu-light-link-active-color: var(--palette-white-50);
+    --menu-light-item-border-color: var(--palette-white-15);
+    --menu-light-number-color: var(--palette-white-50);
+    --menu-muted-link-color: var(--palette-white-60);
+    --menu-muted-link-hover-color: var(--palette-white);
+    --menu-muted-link-active-color: var(--palette-white);
+    --nav-default-link-color: var(--palette-white-90);
+    --nav-default-link-background-color: var(--palette-transparent);
+    --nav-default-link-hover-color: var(--palette-white);
+    --nav-default-link-hover-background-color: var(--palette-transparent);
+    --nav-default-link-active-color: var(--palette-white-50);
+    --nav-default-link-active-background-color: var(--palette-transparent);
+    --nav-primary-link-color: var(--palette-white-90);
+    --nav-primary-link-hover-color: var(--palette-white);
+    --nav-primary-link-active-color: var(--palette-white-50);
+    --nav-light-link-color: var(--palette-white-90);
+    --nav-light-link-hover-color: var(--palette-white);
+    --nav-light-link-active-color: var(--palette-white-50);
+    --nav-muted-link-color: var(--palette-white-60);
+    --nav-muted-link-hover-color: var(--palette-white);
+    --nav-muted-link-active-color: var(--palette-white);
+    --nav-pills-link-color: var(--palette-white-90);
+    --nav-pills-link-hover-background-color: var(--palette-white-15);
+    --nav-pills-link-active-color: var(--palette-black);
+    --nav-pills-link-active-background-color: var(--palette-white-90);
+    --nav-tabs-border-color: var(--palette-white-20);
+    --nav-tabs-link-color: var(--palette-white-50);
+    --nav-tabs-link-border-color: var(--palette-transparent);
+    --nav-tabs-link-background-color: var(--palette-transparent);
+    --nav-tabs-link-hover-color: var(--palette-white);
+    --nav-tabs-link-hover-border-color: var(--palette-white);
+    --nav-tabs-link-hover-background-color: var(--palette-white-15);
+    --nav-tabs-link-active-color: var(--palette-white);
+    --nav-tabs-link-active-border-color: var(--palette-white);
+    --nav-tabs-link-active-background-color: var(--palette-transparent);
+    --overlay-light: var(--palette-black-50);
+    --overlay-dark: var(--palette-black-50);
+    --pagination-default-link-color: var(--palette-white-90);
+    --pagination-default-link-border-color: var(--palette-white-25);
+    --pagination-default-link-background-color: var(--palette-transparent);
+    --pagination-default-link-hover-color: var(--palette-white);
+    --pagination-default-link-hover-border-color: var(--palette-white-25);
+    --pagination-default-link-hover-background-color: var(--palette-transparent);
+    --pagination-default-link-active-color: var(--palette-active-lightest);
+    --pagination-default-link-active-border-color: var(--palette-active-base);
+    --pagination-default-link-active-background-color: var(--palette-active-base);
+    --placeholder-default: var(--palette-white-50);
+    --placeholder-light: var(--palette-white-50);
+    --pre-default-background-color: var(--palette-surface-300);
+    --pre-default-color: var(--palette-white-80);
+    --pre-default-border-color: var(--palette-transparent);
+    --table-default-border-color: var(--palette-white-20);
+    --table-default-stripe-color: var(--palette-white-5);
+    --text-dark: var(--palette-white-95);
+    --text-default: var(--palette-white-90);
+    --text-moderated: var(--palette-white-80);
+    --text-muted: var(--palette-white-50);
+    --text-success: var(--palette-positive-base);
+    --text-error: var(--palette-negative-base);
+    --text-light: var(--palette-white-90);
+    --text-light-moderated: var(--palette-white-80);
+    --text-light-muted: var(--palette-white-50);
+    --text-primary: var(--palette-primary-base);
+    --shadow-100: 0 1px 2px rgba(0, 0, 0, 0.2);
+    --shadow-150: 0 1px 2px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.2);
+    --shadow-200: 0 2px 4px -1px rgba(0, 0, 0, 0.05), 0 4px 6px -1px rgba(0, 0, 0, 0.2);
+    --shadow-250: 0 2px 4px -2px rgba(0, 0, 0, 0.05), 0 6px 8px rgba(0, 0, 0, 0.2);
+    --shadow-300: 0 10px 10px -6px rgba(0, 0, 0, 0.05), 0 20px 25px rgba(0, 0, 0, 0.2);
+    --shadow-350: 0 25px 50px rgba(0, 0, 0, 0.5); } }
 
 html {
   box-sizing: border-box;
@@ -2759,6 +3053,18 @@ textarea.input-light,
   --input-focus-color: var(--input-light-focus-color);
   --input-focus-border-color: var(--input-light-focus-border-color);
   --input-focus-background-color: var(--input-light-focus-background-color); }
+
+@media (prefers-color-scheme: dark) {
+  select.input {
+    --input-select-toggle: url('data:image/svg+xml;utf8,<svg height="6" viewBox="0 0 10 6" width="10" xmlns="http://www.w3.org/2000/svg"><path fill="rgb(255,255,255)" opacity=".7" d="m6.6168815 3-4.44908109-4.09883609c-.22373388-.20615371-.22373388-.54039492 0-.74654863s.58647818-.20615371.81021206 0l4.85418712 4.47211041c.22373388.20615371.22373388.54039491 0 .74654862l-4.85418712 4.47211041c-.22373388.20615371-.58647818.20615371-.81021206 0s-.22373388-.54039492 0-.74654863z" fill-rule="evenodd" transform="matrix(0 1 -1 0 8 -2)"/></svg>'); }
+  .input::-webkit-input-placeholder {
+    color: var(--placeholder-light); }
+  .input::-moz-placeholder {
+    color: var(--placeholder-light); }
+  .input::-ms-input-placeholder {
+    color: var(--placeholder-light); }
+  .input::placeholder {
+    color: var(--placeholder-light); } }
 
 input.input-small,
 select.input-small {

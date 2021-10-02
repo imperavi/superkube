@@ -28,16 +28,17 @@
 // generate root colors
 @mixin generate-root-colors($map) {
     @if $map != null {
-        @each $name in $global-colors {
-            $obj: map-get($map, $name);
-            @each $key, $val in $obj {
-                @if type-of($val) == map {
-                    @each $n, $i in $val {
-                        --#{$name}-#{$key}-#{$n}: #{$i};
+        @each $name, $value in $map {
+            @if $name != shadow {
+                @each $key, $val in $value {
+                    @if type-of($val) == map {
+                        @each $n, $i in $val {
+                            --#{$name}-#{$key}-#{$n}: #{$i};
+                        }
                     }
-                }
-                @else {
-                    --#{$name}-#{$key}: #{$val};
+                    @else {
+                        --#{$name}-#{$key}: #{$val};
+                    }
                 }
             }
         }
@@ -70,9 +71,14 @@
                         @if $name == box-shadow {
                             --#{$modulename}-#{$name}: #{map-values($val)};
                         }
+                        @else {
+                            @each $key, $index in $map {
+                                --#{$modulename}-#{$name}-#{$key}: $val;
+                            }
+                        }
                     }
                     @else {
-                        --#{$modulename}-#{$name}: #{$val};
+                        --#{$modulename}-#{$name}: var(--#{$modulename}-#{$variant}-#{$name});
                     }
                 }
             }

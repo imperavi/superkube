@@ -1,6 +1,27 @@
 // =PaletteDark
-// $palette-dark: map-extend($palette-dark, (
-//     surface: (
-//         10: #222
-//     )
-// ));
+$palette-dark: map-extend($palette-dark, (
+    surface: (
+        base: #1A1A1A,
+        100: #474747,
+        200: #3C3C3C,
+        300: #313131,
+        400: #252525
+    ),
+    black: #000,
+    black-opacity: (
+        5: rgba(#000, .05),
+        7: rgba(#000, .07),
+        10: rgba(#000, .1),
+        15: rgba(#000, .15),
+        20: rgba(#000, .2),
+        25: rgba(#000, .25),
+        30: rgba(#000, .3),
+        40: rgba(#000, .4),
+        50: rgba(#000, .5),
+        60: rgba(#000, .6),
+        70: rgba(#000, .7),
+        80: rgba(#000, .8),
+        90: rgba(#000, .9),
+        95: rgba(#000, .95)
+    )
+));

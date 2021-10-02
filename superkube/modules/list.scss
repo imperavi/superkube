@@ -32,7 +32,6 @@
     --list-item-space: 0;
     --list-item-padding-y: 6px;
     --list-item-padding-x: 0;
-    --list-item-color: var(--text-default);
 
     // props
     list-style: none;
@@ -78,7 +77,6 @@
     --list-item-padding-y: 8px;
     --list-item-border-width: 1px;
     --list-item-border-style: solid;
-    --list-item-border-color: var(--palette-black-7);
 
     .list-item {
         border-bottom-width: var(--list-item-border-width);
@@ -96,7 +94,6 @@
     --list-border-width: 1px;
     --list-border-style: solid;
     --list-border-radius: var(--radius-base);
-    --list-border-color: var(--palette-black-7);
     --list-item-padding-y: 6px;
     --list-item-padding-x: 12px;
     --list-item-space: 1px;
@@ -117,7 +114,6 @@
     // vars
     --list-number-font-size: 80%;
     --list-number-width: 24px;
-    --list-number-color: var(--palette-black-60);
 
     // props
     counter-reset: table-of-contents;
@@ -150,15 +146,7 @@
         color: var(--list-number-color);
     }
 }
-
-// Light
-.list-light {
-    --list-item-color: var(--text-light);
-
-    &.list-numbered {
-        --list-number-color: var(--palette-white-60);
-    }
-    &.list-stacked {
-        --list-border-color: var(--palette-white-20);
-    }
+// Colors
+.list {
+    @include generate-colors(list);
 }

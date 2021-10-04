@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Superkube Dark Theme Example</title>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/superkube@latest/dist/superkube-with-dark.min.css">
+    <style>
+    /* Brand */
+    .brand-main svg {
+        fill: var(--palette-black);
+    }
+
+    /* Hero */
+    .hero {
+        background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAEKADAAQAAAABAAAACgAAAAAeBf7RAAABpklEQVQoFUWRQW/UMBCFX+x4sxu2CllVFHGigjsS4sQJfiZ/hhNC3BBC5cQBIUS1YilNk83GSezlM2qFk8lMxn5v5o2z63Z8o9sVFXUkjnzibc7c+UziZRme/ytPYQIGQIHYg+yTTxusdNhhS4ICbzmbQInMZEb5HTgBGkpvYfk2R/3k/wYrAT6E5pHNdEpck1vjF/j8CFmqOqWqgH+Ns74cgt4NUW/JNew5Z3TfWT3BP6eVZ7nRecz0AJJElKe+I+BpmNV3k/ZXo9pm0g1avDHyRabuntOPMteH0uop9gqyl9hjhCAniafcMGmx61VdDjrfeb3ogz7ReltYdFC6svJVoYva6euJ00dyryHJ07jNFLTqRtVXg84uO/3Z9nQR/kn7DEFfMr4Kks0kGOU3hd5voi7WTrkJs5zHaN81XgEJzXbQ7rfXKV2dWaPvVAv1kqGU0n7FwCDySzV1odxSfUnC7WeV3J8fMm16q5oO1tejKu+1onhH62rXSD3hEJ6bSrJzx7CKIcgemAV36SajYjZaTE6LA8QtVxbZ6GCf8RlmAcOnY6m/+a3DEqHYRlcAAAAASUVORK5CYII=');
+        background-position: center bottom;
+        background-size: cover;
+    }
+
+    /* Background */
+    .bg-violet {
+        --background-color: var(--palette-violet-base);
+    }
+    .bg-blue {
+        --background-color: var(--palette-blue-base);
+    }
+
+    /* Gradient */
+    .gr-red {
+        --gradient-color: linear-gradient(180deg, var(--palette-red-base), var(--palette-red-dark));
+    }
+    .gr-indigo {
+        --gradient-color: linear-gradient(180deg, var(--palette-indigo-base), var(--palette-indigo-dark));
+    }
+    .gr-green {
+        --gradient-color: linear-gradient(180deg, var(--palette-green-base), var(--palette-green-dark));
+    }
+
+    /* Dark Theme */
+    @media (prefers-color-scheme: dark) {
+        .brand-main svg {
+            fill: var(--palette-white-95);
+        }
+        .hero {
+            background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAKCAYAAAC9vt6cAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAAEKADAAQAAAABAAAACgAAAAAeBf7RAAABgUlEQVQoFXWRTWobQRCFX5qiaY8nzVgMsuIIWfgPR3hlXyIHyMKrXMPbXCY3yQFCyMJHMMYIWchiGJomX+uHrFwzb7qp6vdedc2HGOMPETnnsrwTTtlJvXmlZiCNJ9LZlTT6LCP+k9HIPJKTg7CV3JKzM6WqkmKUBq3UDqWjVtY2rfq+UwdSKvS9QCE6JQx6kHyA3OA6pgPcj88luHY9vdBqvdJiudyIFLoVe++VIXVgDhahRgDn4an0aUYXU4mc3c1u9bpaaL6Yq+s6GQoxeFUUXYhaV7We/Uf99VGP1VD5kA4GJ1LFVbzJbi+/qFuv1b8t5fpekbu2EJuDRhYaWo+au6jfrtZP8MuYA93J0yWvzU4mcvyBkJICow4uUI9yhoPRtri7TDfZNKK7JfgDcRNFYDwaUmbqfLk0eRwQ2e45kUhBqlm/7gQeWJ+KQhHwLf91T047EQ7sieXQZs8SELmnlsg9gBdyTg2ONahwZXgqTRSgtUER2KOU2H8H39iX+AdJY3Fb2L0FJgAAAABJRU5ErkJggg==');
+        }
+    }
+    </style>
+</head>
+<body>
+    <main class="main">
+        <div class="hero pt-6 pb-10 py-off-sm">
+            <div class="navbar hidden-sm">
+                <div class="navbar-container container centered edges">
+                    <div class="navbar-brand">
+                        <a href="#" class="brand brand-main">
+                            <svg height="20" viewBox="0 0 94 20" width="94" xmlns="http://www.w3.org/2000/svg"><path d="m4.89165049 14.7636364c2.22679611 0 4.8368932-1.1818182 4.8368932-3.9454546 0-2.67272725-2.17203884-3.50909089-3.97902913-4.12727271-.08960282-.03140496-.1810158-.06220886-.27316931-.09299911l-.27761242-.09291715c-.83308411-.28215286-1.63950953-.61077795-1.63950953-1.41408374 0-.83636364.78485437-1.27272727 1.66097087-1.27272727.98563107 0 1.93475729.54545454 2.64660195 1.14545454l1.49669903-1.85454545c-1.29592233-.98181818-2.59184466-1.50909091-4.23456311-1.50909091-2.11728155 0-4.17980583 1.14545455-4.17980583 3.56363636 0 2.43636364 1.86174758 3.16363637 3.52271845 3.78181819 1.29592233.47272727 2.46407767.89090909 2.46407767 1.98181815 0 1.1272728-1.0038835 1.6181818-2.02601942 1.6181818-1.33242718 0-2.13553398-.6-3.17592233-1.6l-1.73398058 1.6909091c1.38718447 1.3818182 2.92038835 2.1272728 4.89165049 2.1272728zm10.02826771 0c1.0586408 0 2.2085437-.4545455 2.9751457-1.5272728l.2007767 1.3090909h2.2450485v-9.56363632h-2.5918446v6.34545452c-.4745631.7818182-1.3141748 1.2181818-2.0807767 1.2181818-.5658253 0-1.0403884-.2-1.2776699-.6727272-.2737865-.5454546-.2920389-1.3454546-.2920389-2.05454548v-4.83636364h-2.5918446v4.96363637c0 1.36363635.1095145 2.59999995.857864 3.56363635.6023301.7636364 1.5149515 1.2545455 2.5553398 1.2545455zm10.4115688 4.3272727v-5.4727273c.7300971.8363637 1.88 1.1454546 2.8108738 1.1454546 2.5918446 0 4.4900971-2.2727273 4.4900971-4.9636364 0-2.78181818-1.9165049-5.03636364-4.4718447-5.03636364-.9856311 0-2.2815534.36363637-2.9751456 1.4l-.2007767-1.18181818h-2.2450486v14.10909092zm2.2267961-6.5454546c-.8213592 0-1.5879612-.2727272-2.2267961-1.0363636v-3.25454545c.5658252-.94545454 1.4419417-1.27272727 2.2633009-1.27272727 1.4966991 0 2.391068 1.32727273 2.391068 2.74545455 0 1.34545457-.7666019 2.81818177-2.4275728 2.81818177zm11.0138988 2.2181819c2.0625243 0 3.2854369-.7636364 4.3805825-2.3454546l-1.6974757-1.1454545c-.6205825.9090909-1.2594175 1.4181818-2.5005825 1.4181818-1.368932 0-2.2267961-.9818182-2.4093204-2.2909091h6.7533981c.0730097-.3818182.127767-.83636364.127767-1.21818182 0-2.54545454-1.9712622-4.41818182-4.6361166-4.41818182-2.7561165 0-4.873398 2.21818182-4.873398 5.10909091 0 2.87272723 1.9530097 4.89090913 4.8551456 4.89090913zm2.007767-6.12727276h-4.1067961c.2737864-1.07272728.9491262-1.85454546 2.1902913-1.85454546 1.0586407 0 1.8617475.70909091 1.9165048 1.85454546zm6.9983649 5.90909086v-6.47272723c.3833009-.63636363 1.0586407-1.05454545 1.8069903-1.05454545.3285436 0 .6388349.07272727.9126213.21818182l.6205825-2.25454546c-.3467961-.12727273-.7666019-.21818182-1.241165-.21818182-.9491262 0-1.6974757.6-2.2450486 1.49090909l-.2007767-1.27272727h-2.2450485v9.56363632zm6.706326 0v-2.4727272l.9308738-1.0727273 2.2085436 3.5454545h3.1759224l-3.6504855-5.56363632 3.4314564-4h-2.9568933l-3.1029126 3.89090909h-.0365048v-7.96363636h-2.5918447v13.63636359zm10.7583648.2181819c1.0586408 0 2.2085437-.4545455 2.9751457-1.5272728l.2007767 1.3090909h2.2450485v-9.56363632h-2.5918447v6.34545452c-.4745631.7818182-1.3141747 1.2181818-2.0807767 1.2181818-.5658252 0-1.0403883-.2-1.2776699-.6727272-.2737864-.5454546-.2920388-1.3454546-.2920388-2.05454548v-4.83636364h-2.5918447v4.96363637c0 1.36363635.1095146 2.59999995.8578641 3.56363635.6023301.7636364 1.5149515 1.2545455 2.5553398 1.2545455zm13.2224425 0c2.5918447 0 4.4900971-2.2727273 4.4900971-4.9636364 0-2.78181818-1.9165048-5.03636364-4.4718446-5.03636364-.9308738 0-2.135534.32727273-2.8291262 1.21818182v-5.07272727h-2.5918447v13.63636359h2.2450485l.1825243-1.1636363c.6935922 1.0363636 1.9712621 1.3818182 2.9751456 1.3818182zm-.5840776-2.2181819c-.8213593 0-1.5879612-.2727272-2.2267961-1.0363636v-3.25454545c.5658252-.94545454 1.4419417-1.27272727 2.2633009-1.27272727 1.4966991 0 2.391068 1.32727273 2.391068 2.74545455 0 1.34545457-.766602 2.81818177-2.4275728 2.81818177zm11.0138988 2.2181819c2.0625243 0 3.2854369-.7636364 4.3805825-2.3454546l-1.6974757-1.1454545c-.6205825.9090909-1.2594175 1.4181818-2.5005825 1.4181818-1.3689321 0-2.2267961-.9818182-2.4093204-2.2909091h6.753398c.0730097-.3818182.127767-.83636364.127767-1.21818182 0-2.54545454-1.9712621-4.41818182-4.6361165-4.41818182-2.7561165 0-4.873398 2.21818182-4.873398 5.10909091 0 2.87272723 1.9530097 4.89090913 4.8551456 4.89090913zm2.007767-6.12727276h-4.1067961c.2737864-1.07272728.9491262-1.85454546 2.1902912-1.85454546 1.0586408 0 1.8617476.70909091 1.9165049 1.85454546z"></svg>
+                        </a>
+                    </div>
+                    <div class="navbar-nav flex-auto">
+                        <nav class="nav nav-centered">
+                            <ul class="nav-list">
+                                <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="navbar-action ml-5">
+                        <a href="#" class="button button-small button-dark button-round">Sign in</a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar visible-sm">
+                <div class="navbar-container container centered edges">
+                    <div class="navbar-brand">
+                        <a href="#" class="brand brand-main">
+                            <svg height="20" viewBox="0 0 94 20" width="94" xmlns="http://www.w3.org/2000/svg"><path d="m4.89165049 14.7636364c2.22679611 0 4.8368932-1.1818182 4.8368932-3.9454546 0-2.67272725-2.17203884-3.50909089-3.97902913-4.12727271-.08960282-.03140496-.1810158-.06220886-.27316931-.09299911l-.27761242-.09291715c-.83308411-.28215286-1.63950953-.61077795-1.63950953-1.41408374 0-.83636364.78485437-1.27272727 1.66097087-1.27272727.98563107 0 1.93475729.54545454 2.64660195 1.14545454l1.49669903-1.85454545c-1.29592233-.98181818-2.59184466-1.50909091-4.23456311-1.50909091-2.11728155 0-4.17980583 1.14545455-4.17980583 3.56363636 0 2.43636364 1.86174758 3.16363637 3.52271845 3.78181819 1.29592233.47272727 2.46407767.89090909 2.46407767 1.98181815 0 1.1272728-1.0038835 1.6181818-2.02601942 1.6181818-1.33242718 0-2.13553398-.6-3.17592233-1.6l-1.73398058 1.6909091c1.38718447 1.3818182 2.92038835 2.1272728 4.89165049 2.1272728zm10.02826771 0c1.0586408 0 2.2085437-.4545455 2.9751457-1.5272728l.2007767 1.3090909h2.2450485v-9.56363632h-2.5918446v6.34545452c-.4745631.7818182-1.3141748 1.2181818-2.0807767 1.2181818-.5658253 0-1.0403884-.2-1.2776699-.6727272-.2737865-.5454546-.2920389-1.3454546-.2920389-2.05454548v-4.83636364h-2.5918446v4.96363637c0 1.36363635.1095145 2.59999995.857864 3.56363635.6023301.7636364 1.5149515 1.2545455 2.5553398 1.2545455zm10.4115688 4.3272727v-5.4727273c.7300971.8363637 1.88 1.1454546 2.8108738 1.1454546 2.5918446 0 4.4900971-2.2727273 4.4900971-4.9636364 0-2.78181818-1.9165049-5.03636364-4.4718447-5.03636364-.9856311 0-2.2815534.36363637-2.9751456 1.4l-.2007767-1.18181818h-2.2450486v14.10909092zm2.2267961-6.5454546c-.8213592 0-1.5879612-.2727272-2.2267961-1.0363636v-3.25454545c.5658252-.94545454 1.4419417-1.27272727 2.2633009-1.27272727 1.4966991 0 2.391068 1.32727273 2.391068 2.74545455 0 1.34545457-.7666019 2.81818177-2.4275728 2.81818177zm11.0138988 2.2181819c2.0625243 0 3.2854369-.7636364 4.3805825-2.3454546l-1.6974757-1.1454545c-.6205825.9090909-1.2594175 1.4181818-2.5005825 1.4181818-1.368932 0-2.2267961-.9818182-2.4093204-2.2909091h6.7533981c.0730097-.3818182.127767-.83636364.127767-1.21818182 0-2.54545454-1.9712622-4.41818182-4.6361166-4.41818182-2.7561165 0-4.873398 2.21818182-4.873398 5.10909091 0 2.87272723 1.9530097 4.89090913 4.8551456 4.89090913zm2.007767-6.12727276h-4.1067961c.2737864-1.07272728.9491262-1.85454546 2.1902913-1.85454546 1.0586407 0 1.8617475.70909091 1.9165048 1.85454546zm6.9983649 5.90909086v-6.47272723c.3833009-.63636363 1.0586407-1.05454545 1.8069903-1.05454545.3285436 0 .6388349.07272727.9126213.21818182l.6205825-2.25454546c-.3467961-.12727273-.7666019-.21818182-1.241165-.21818182-.9491262 0-1.6974757.6-2.2450486 1.49090909l-.2007767-1.27272727h-2.2450485v9.56363632zm6.706326 0v-2.4727272l.9308738-1.0727273 2.2085436 3.5454545h3.1759224l-3.6504855-5.56363632 3.4314564-4h-2.9568933l-3.1029126 3.89090909h-.0365048v-7.96363636h-2.5918447v13.63636359zm10.7583648.2181819c1.0586408 0 2.2085437-.4545455 2.9751457-1.5272728l.2007767 1.3090909h2.2450485v-9.56363632h-2.5918447v6.34545452c-.4745631.7818182-1.3141747 1.2181818-2.0807767 1.2181818-.5658252 0-1.0403883-.2-1.2776699-.6727272-.2737864-.5454546-.2920388-1.3454546-.2920388-2.05454548v-4.83636364h-2.5918447v4.96363637c0 1.36363635.1095146 2.59999995.8578641 3.56363635.6023301.7636364 1.5149515 1.2545455 2.5553398 1.2545455zm13.2224425 0c2.5918447 0 4.4900971-2.2727273 4.4900971-4.9636364 0-2.78181818-1.9165048-5.03636364-4.4718446-5.03636364-.9308738 0-2.135534.32727273-2.8291262 1.21818182v-5.07272727h-2.5918447v13.63636359h2.2450485l.1825243-1.1636363c.6935922 1.0363636 1.9712621 1.3818182 2.9751456 1.3818182zm-.5840776-2.2181819c-.8213593 0-1.5879612-.2727272-2.2267961-1.0363636v-3.25454545c.5658252-.94545454 1.4419417-1.27272727 2.2633009-1.27272727 1.4966991 0 2.391068 1.32727273 2.391068 2.74545455 0 1.34545457-.766602 2.81818177-2.4275728 2.81818177zm11.0138988 2.2181819c2.0625243 0 3.2854369-.7636364 4.3805825-2.3454546l-1.6974757-1.1454545c-.6205825.9090909-1.2594175 1.4181818-2.5005825 1.4181818-1.3689321 0-2.2267961-.9818182-2.4093204-2.2909091h6.753398c.0730097-.3818182.127767-.83636364.127767-1.21818182 0-2.54545454-1.9712621-4.41818182-4.6361165-4.41818182-2.7561165 0-4.873398 2.21818182-4.873398 5.10909091 0 2.87272723 1.9530097 4.89090913 4.8551456 4.89090913zm2.007767-6.12727276h-4.1067961c.2737864-1.07272728.9491262-1.85454546 2.1902912-1.85454546 1.0586408 0 1.8617476.70909091 1.9165049 1.85454546z"></svg>
+                        </a>
+                    </div>
+                    <div class="navbar-trigger ml-auto">
+                        <a href="#" class="link-dark link-ghost">
+                            <span class="icon">
+                                <svg height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg"><path d="m16 13.6267606c0-.7584507-.6046753-1.3732395-1.3506494-1.3732395h-13.29870125c-.74597402 0-1.35064935.6147888-1.35064935 1.3732395s.60467533 1.3732394 1.35064935 1.3732394h13.29870125c.7459741 0 1.3506494-.6147887 1.3506494-1.3732394m0-6.12697187c0-.7584507-.6046753-1.37323943-1.3506494-1.37323943h-13.29870125c-.74597402 0-1.35064935.61478873-1.35064935 1.37323943 0 .75845071.60467533 1.37323944 1.35064935 1.37323944h13.29870125c.7459741 0 1.3506494-.61478873 1.3506494-1.37323944m-1.3506494-4.75330986h-13.29870125c-.74597402 0-1.35064935-.61478873-1.35064935-1.37323943 0-.75845071.60467533-1.37323944 1.35064935-1.37323944h13.29870125c.7459741 0 1.3506494.61478873 1.3506494 1.37323944 0 .7584507-.6046753 1.37323943-1.3506494 1.37323943" fill-rule="evenodd"/></svg>
+                            </span>
+                            <span>Menu</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="navbar-mobile visible-sm b-top b-dark-low p-4">
+                <div class="navbar-mobile-menu">
+                    <nav class="menu">
+                        <ul class="menu-list">
+                            <li class="menu-item"><a href="#" class="menu-link">Products</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">About</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Services</a></li>
+                            <li class="menu-item"><a href="#" class="menu-link">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="navbar-mobile-action mt-4">
+                    <a href="#" class="button button-round w-100">Sign in</a>
+                </div>
+            </div>
+            <div class="hero-container container centered edges grid py-24">
+                <div class="column column-6">
+                    <div class="hero-head">
+                        <h1 class="heading-giga">Superkube</h1>
+                    </div>
+                    <div class="hero-body mt-5">
+                        <p class="text-mega text-moderated">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
+                    </div>
+                    <div class="hero-cta mt-10 row row-5">
+                        <a href="#" class="button button-primary button-large">Get started</a>
+                        <a href="#" class="button button-light button-large">See pricing</a>
+                    </div>
+                    <div class="hero-foot mt-6">
+                        <p class="text-small text-moderated">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="column column-1"></div>
+                <div class="column column-5">
+                    <div class="hero-image a-right">
+                        <picture>
+                            <source
+                                srcset="https://imperavi.com/assets/img/superkube/placeholders/img-placeholder-4-5-dark-theme.png"
+                                media="(prefers-color-scheme: dark)">
+                            <img style="max-width: 336px; height: 420px;" src="https://imperavi.com/assets/img/superkube/placeholders/img-placeholder-4-5-dark.png">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-container container centered edges">
+                <div class="content-section pt-24 pb-16 grid">
+                    <div class="column column-5">
+                        <div class="content-image">
+                            <picture>
+                                <source
+                                    srcset="https://imperavi.com/assets/img/superkube/placeholders/img-placeholder-4-5-dark-theme.png"
+                                    media="(prefers-color-scheme: dark)">
+                                <img style="max-width: 336px; height: 420px;" src="https://imperavi.com/assets/img/superkube/placeholders/img-placeholder-4-5-light.png">
+                            </picture>
+                        </div>
+                    </div>
+                    <div class="column column-7">
+                        <div class="content-head mt-7 mt-off-sm">
+                            <h2 class="heading-huge">Summum enim bonum</h2>
+                        </div>
+                        <div class="content-body mt-6">
+                            <p class="text-huge text-moderated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ergo hoc quidem apparet, nos ad agendum esse natos. Qui autem de summo bono dissentit de tota philosophiae ratione dissentit. Cum ageremus, inquit, vitae beatum et eundem supremum.</p>
+                        </div>
+                        <div class="content-cta mt-7">
+                            <p class="text-huge">
+                                <a href="" class="link-ghost link-semibold">Learn more about features &rarr;</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-section a-center grid grid-3 b-top b-dark-low pt-20 pb-24">
+                    <div class="numeral">
+                        <div class="numeral-head">
+                            <h3 class="heading-mega">42</h3>
+                        </div>
+                        <div class="numeral-body">
+                            <p class="text-moderated">Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                    <div class="numeral">
+                        <div class="numeral-head">
+                            <h3 class="heading-mega">132</h3>
+                        </div>
+                        <div class="numeral-body">
+                            <p class="text-moderated">Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                    <div class="numeral">
+                        <div class="numeral-head">
+                            <h3 class="heading-mega">87</h3>
+                        </div>
+                        <div class="numeral-body">
+                            <p class="text-moderated">Lorem ipsum dolor sit amet</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content bg-aluminum">
+            <div class="content-container container container-crop centered edges a-center pt-24">
+                <div class="content-head">
+                    <h2 class="heading-huge">Summum ením bonum<br class="hidden-sm"> exposuit vacuitatem doloris</h2>
+                </div>
+                <div class="content-box grid grid-3 mt-16">
+                    <div class="card px-6 pt-10 pb-8 sh-200 r-large bg-light">
+                        <div class="card-icon mb-4">
+                            <span class="icon icon-32 icon-box-48 r-huge gr-red icon-light">
+                                <svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="m48.354102 16.5-24.354102-12.17705098-24.35410197 12.17705098 24.35410197 12.177051zm-24.354102-8.824 17.646 8.824-17.646 8.823-17.647-8.823zm20.3291796 22.7550865 1.3416408 2.6832816-21.6708204 10.8354102-21.67082039-10.8354102 1.34164078-2.6832816 20.32917961 10.1649135zm0-7.6363637 1.3416408 2.6832816-21.6708204 10.8354102-21.67082039-10.8354102 1.34164078-2.6832816 20.32917961 10.1642772z"/></svg>
+                            </span>
+                        </div>
+                        <div class="card-head">
+                            <h3 class="heading-medium">Modular</h3>
+                        </div>
+                        <div class="card-body mt-2">
+                            <p class="text-medium">Ideologically Superkube implies<br class="hidden-sm"> modular and reusable HTML<br class="hidden-sm"> and CSS code.</p>
+                        </div>
+                    </div>
+                    <div class="card px-6 pt-10 pb-8 sh-200 r-large bg-light">
+                        <div class="card-icon mb-4">
+                            <span class="icon icon-32 icon-box-48 r-huge gr-indigo icon-light">
+                                <svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="m18.8333333 2.5-.0003333 13.333 13.3336667.0003333-.0006667 13.3326667 13.334.0006667v16.3333333h-43v-43zm-3.0003333 29.666h-10.333v10.334h10.333zm13.333 0h-10.333v10.334h10.333zm13.334 0h-10.334v10.334h10.334zm-23.667-13.333v10.333h10.333v-10.333zm-13.333 10.333h10.333l-.001-10.333h-10.333zm10.333-23.666h-10.333l-.001 10.333h10.333z"/></svg>
+                            </span>
+                        </div>
+                        <div class="card-head">
+                            <h3 class="heading-medium">System</h3>
+                        </div>
+                        <div class="card-body mt-2">
+                            <p class="text-medium">Superkube is built with the design<br class="hidden-sm"> system in mind. Every detail in it<br class="hidden-sm"> has a system logic.</p>
+                        </div>
+                    </div>
+                    <div class="card px-6 pt-10 pb-8 sh-200 r-large bg-light">
+                        <div class="card-icon mb-4">
+                            <span class="icon icon-32 icon-box-48 r-huge gr-green icon-light">
+                                <svg height="48" viewBox="0 0 48 48" width="48" xmlns="http://www.w3.org/2000/svg"><path d="m40.5 1.5v14.606383c0 5.9026081-4.7134312 10.704557-10.5853012 10.857923l-.2896988.0037791-19.125-.0000851v20.032h-3v-34.6382979c0-5.90260812 4.7134312-10.70455695 10.5853012-10.85792299l.2896988-.00377911zm-3 3h-19.125c-4.2677888 0-7.7416823 3.38855593-7.8712533 7.6168486l-.0037467.2448535v11.606383h19.125c4.2677888 0 7.7416823-3.3885559 7.8712533-7.6168486l.0037467-.2448535z"/></svg>
+                            </span>
+                        </div>
+                        <div class="card-head">
+                            <h3 class="heading-medium">Free</h3>
+                        </div>
+                        <div class="card-body mt-2">
+                            <p class="text-medium">Superkube is licensed under MIT. It is<br class="hidden-sm"> absolutely free for personal or<br class="hidden-sm"> commercial use.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-body container-8 centered mt-16">
+                    <p class="text-huge text-semibold">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui autem de summo bono dissentit de tota philosophiae ratione dissentit. </p>
+                </div>
+                <div class="content-image mt-10 mb-n24">
+                    <picture>
+                        <source
+                            srcset="https://imperavi.com/assets/img/superkube/placeholders/img-placeholder-2-1-dark-theme.png"
+                            media="(prefers-color-scheme: dark)">
+                        <img style="height: 536px;" src="https://imperavi.com/assets/img/superkube/placeholders/img-placeholder-2-1-light.png">
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <div class="content bg-dark">
+            <div class="content-container container centered edges">
+                <div class="content-section pt-24 pb-16 grid">
+                    <div class="column column-6">
+                        <div class="content-head mt-7 mt-off-sm">
+                            <h2 class="heading-huge heading-light">Summum enim bonum</h2>
+                        </div>
+                        <div class="content-body mt-6">
+                            <p class="text-huge text-light-moderated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui autem de summo bono dissentit de tota philosophiae ratione dissentit. </p>
+                        </div>
+                        <div class="content-cta mt-7">
+                            <p class="text-huge">
+                                <a href="" class="link-ghost link-light link-semibold">Learn more about API &rarr;</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="column column-1"></div>
+                    <div class="column column-5">
+                        <div class="content-image a-right">
+                            <picture>
+                                <source
+                                    srcset="https://imperavi.com/assets/img/superkube/placeholders/img-placeholder-4-5-dark-theme-light.png"
+                                    media="(prefers-color-scheme: dark)">
+                                <img style="max-width: 336px; height: 420px;" src="https://imperavi.com/assets/img/superkube/placeholders/img-placeholder-4-5-light.png">
+                            </picture>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="content-container container centered edges">
+                <div class="content-section py-24 grid">
+                    <div class="column column-4">
+                        <div class="content-box stack stack-10">
+                            <div class="card r-large p-10 bg-blue">
+                                <div class="card-head">
+                                    <h4 class="heading-small heading-light">Summum enim bonum</h4>
+                                </div>
+                                <div class="card-body mt-4">
+                                    <p class="text-medium text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui autem de summo bono dissentit de tota philosophiae ratione dissentit. </p>
+                                </div>
+                            </div>
+                            <div class="card r-large p-10 bg-violet">
+                                <div class="card-head">
+                                    <h4 class="heading-small heading-light">Summum enim bonum</h4>
+                                </div>
+                                <div class="card-body mt-4">
+                                    <p class="text-medium text-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui autem de summo bono dissentit de tota philosophiae ratione dissentit. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column column-1"></div>
+                    <div class="column column-7">
+                        <div class="content-head">
+                            <h2 class="heading-huge">Summum enim bonum exposuit</h2>
+                        </div>
+                        <div class="content-body mt-6">
+                            <p class="text-huge text-moderated">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Qui autem de summo bono dissentit de tota philosophiae ratione dissentit. </p>
+                        </div>
+                        <div class="content-cta mt-14 row row-5 flex-middle">
+                            <a href="#" class="button button-primary button-large">Get started</a>
+                            <a href="" class="link-ghost link-semibold">View pricing options</a>
+                        </div>
+                        <div class="content-foot mt-12">
+                            <p class="text-small text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer mb-16">
+        <div class="footer-container container centered edges">
+            <div class="footer-section pt-7 b-top b-dark-low grid">
+                <div class="footer-copy column column-6">
+                    <p class="text-small text-muted text-semibold">&copy; Company Inc, 2021</p>
+                </div>
+                <div class="footer-nav column column-6 flex">
+                    <nav class="nav nav-semibold nav-muted nav-small nav-right nav-left-sm ml-auto ml-off-sm">
+                        <ul class="nav-list">
+                            <li class="nav-item"><a href="#" class="nav-link">Products</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Services</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

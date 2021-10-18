@@ -66,9 +66,12 @@ $colors: map-extend($colors, (
         default: var(--palette-white)
     ),
     border: (
+        dark: var(--palette-black),
         dark-low: var(--palette-black-7),
         dark-medium: var(--palette-black-10),
-        light-low: var(--palette-white-30),
+        light: var(--palette-white),
+        light-low: var(--palette-white-20),
+        light-medium: var(--palette-white-50),
         primary: var(--palette-primary-base)
     ),
     breadcrumb: (

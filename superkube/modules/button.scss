@@ -2,7 +2,7 @@
 button,
 .button {
     // vars
-    --button-font-weight: 600;
+    --button-font-weight: normal;
     --button-border-radius: var(--radius-base);
     --button-padding-y: .4em;
     --button-padding-x: 18px;
@@ -112,8 +112,5 @@ button,
 // Variants
 .button-round {
     --button-border-radius: 99px;
-    --button-padding-x: 1.45em;
-}
-.button-round.button-small {
-    --button-padding-x: 1.125em;
+    --button-padding-x: 1.2em;
 }

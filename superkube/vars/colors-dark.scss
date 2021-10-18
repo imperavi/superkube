@@ -36,10 +36,10 @@ $colors-dark: map-extend($colors-dark, (
             border-color: var(--palette-transparent),
             color: var(--palette-neutral-lightest)
         ),
-        info: (
-            background-color: var(--palette-active-dark),
+        primary: (
+            background-color: var(--palette-primary-dark),
             border-color: var(--palette-transparent),
-            color: var(--palette-active-lightest)
+            color: var(--palette-primary-lightest)
         ),
         positive: (
             background-color: var(--palette-positive-dark),
@@ -143,8 +143,8 @@ $colors-dark: map-extend($colors-dark, (
         default: (
             color: var(--palette-white-60)
         ),
-        info: (
-            color: var(--palette-active-base)
+        primary: (
+            color: var(--palette-primary-base)
         ),
         positive: (
             color: var(--palette-positive-base)
@@ -241,10 +241,10 @@ $colors-dark: map-extend($colors-dark, (
             border-color: var(--palette-transparent),
             color: var(--palette-neutral-lightest)
         ),
-        info: (
-            background-color: var(--palette-active-dark),
+        primary: (
+            background-color: var(--palette-primary-dark),
             border-color: var(--palette-transparent),
-            color: var(--palette-active-lightest)
+            color: var(--palette-primary-lightest)
         ),
         positive: (
             background-color: var(--palette-positive-dark),

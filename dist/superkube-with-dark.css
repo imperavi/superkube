@@ -493,9 +493,9 @@
     --badge-default-background-color: var(--palette-black);
     --badge-default-border-color: var(--palette-transparent);
     --badge-default-color: var(--palette-neutral-lightest);
-    --badge-info-background-color: var(--palette-active-dark);
-    --badge-info-border-color: var(--palette-transparent);
-    --badge-info-color: var(--palette-active-lightest);
+    --badge-primary-background-color: var(--palette-primary-dark);
+    --badge-primary-border-color: var(--palette-transparent);
+    --badge-primary-color: var(--palette-primary-lightest);
     --badge-positive-background-color: var(--palette-positive-dark);
     --badge-positive-border-color: var(--palette-transparent);
     --badge-positive-color: var(--palette-positive-lightest);
@@ -566,7 +566,7 @@
     --button-dark-disabled-border-color: var(--palette-transparent);
     --button-dark-disabled-color: var(--palette-black-80);
     --caption-default-color: var(--palette-white-60);
-    --caption-info-color: var(--palette-active-base);
+    --caption-primary-color: var(--palette-primary-base);
     --caption-positive-color: var(--palette-positive-base);
     --caption-important-color: var(--palette-negative-base);
     --caption-dark-color: var(--palette-white);
@@ -622,9 +622,9 @@
     --label-default-background-color: var(--palette-black);
     --label-default-border-color: var(--palette-transparent);
     --label-default-color: var(--palette-neutral-lightest);
-    --label-info-background-color: var(--palette-active-dark);
-    --label-info-border-color: var(--palette-transparent);
-    --label-info-color: var(--palette-active-lightest);
+    --label-primary-background-color: var(--palette-primary-dark);
+    --label-primary-border-color: var(--palette-transparent);
+    --label-primary-color: var(--palette-primary-lightest);
     --label-positive-background-color: var(--palette-positive-dark);
     --label-positive-border-color: var(--palette-transparent);
     --label-positive-color: var(--palette-positive-lightest);

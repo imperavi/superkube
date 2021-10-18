@@ -84,10 +84,10 @@ $colors: map-extend($colors, (
     ),
     button: (
         default: (
-            background-color: var(--palette-white),
+            background-color: var(--palette-transparent),
             border-color: var(--palette-neutral-mid),
             color: var(--palette-neutral-darker),
-            hover-background-color: var(--palette-neutral-lighter),
+            hover-background-color: var(--palette-black-5),
             hover-border-color: var(--palette-neutral-mid),
             hover-color: var(--palette-black),
             disabled-background-color: var(--palette-white),

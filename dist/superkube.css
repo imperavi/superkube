@@ -211,10 +211,10 @@
   --breadcrumb-default-link-hover-color: var(--palette-black-60);
   --breadcrumb-default-link-active-color: var(--palette-black-40);
   --breadcrumb-default-separator-color: var(--palette-black-25);
-  --button-default-background-color: var(--palette-white);
+  --button-default-background-color: var(--palette-transparent);
   --button-default-border-color: var(--palette-neutral-mid);
   --button-default-color: var(--palette-neutral-darker);
-  --button-default-hover-background-color: var(--palette-neutral-lighter);
+  --button-default-hover-background-color: var(--palette-black-5);
   --button-default-hover-border-color: var(--palette-neutral-mid);
   --button-default-hover-color: var(--palette-black);
   --button-default-disabled-background-color: var(--palette-white);
@@ -1220,7 +1220,7 @@ a.brand:hover {
 
 button,
 .button {
-  --button-font-weight: normal;
+  --button-font-weight: 600;
   --button-border-radius: var(--radius-base);
   --button-padding-y: .4em;
   --button-padding-x: 18px;

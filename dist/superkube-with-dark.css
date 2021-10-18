@@ -3837,7 +3837,7 @@ hr {
       justify-content: flex-start; } }
 
 .navbar {
-  --navbar-height: 14rem; }
+  --navbar-height: 16rem; }
   .navbar .navbar-container {
     display: flex;
     height: var(--navbar-height); }

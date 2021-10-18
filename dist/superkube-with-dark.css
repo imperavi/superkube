@@ -740,12 +740,12 @@
     --text-light-moderated: var(--palette-white-80);
     --text-light-muted: var(--palette-white-50);
     --text-primary: var(--palette-primary-base);
-    --shadow-100: 0 1px 2px rgba(0, 0, 0, 0.2);
-    --shadow-150: 0 1px 2px rgba(0, 0, 0, 0.05), 0 2px 4px rgba(0, 0, 0, 0.2);
-    --shadow-200: 0 2px 4px -1px rgba(0, 0, 0, 0.05), 0 4px 6px -1px rgba(0, 0, 0, 0.2);
-    --shadow-250: 0 2px 4px -2px rgba(0, 0, 0, 0.05), 0 6px 8px rgba(0, 0, 0, 0.2);
-    --shadow-300: 0 10px 10px -6px rgba(0, 0, 0, 0.05), 0 20px 25px rgba(0, 0, 0, 0.2);
-    --shadow-350: 0 25px 50px rgba(0, 0, 0, 0.5); } }
+    --shadow-100: none;
+    --shadow-150: none;
+    --shadow-200: none;
+    --shadow-250: none;
+    --shadow-300: none;
+    --shadow-350: none; } }
 
 html {
   box-sizing: border-box;

@@ -16,11 +16,11 @@ button,
     $button-scale: scale(button);
     @each $name, $value in $button-scale {
         @if $name == base {
-            --button-height: #{$value};
+            --button-height: var(--button-#{$name});
         }
         @else {
             &-#{$name} {
-                --button-height: #{$value};
+                --button-height: var(--button-#{$name});
             }
         }
     }

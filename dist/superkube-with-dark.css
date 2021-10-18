@@ -23,6 +23,12 @@
   --radius-huge: 8px;
   --radius-mega: 10px;
   --radius-giga: 16px;
+  --button-small: 32px;
+  --button-base: 42px;
+  --button-large: 52px;
+  --input-small: 36px;
+  --input-base: 42px;
+  --input-large: 52px;
   --level-content: 100;
   --level-page: 200;
   --level-control: 300;
@@ -1533,7 +1539,7 @@ button,
   --button-border-style: solid;
   --button-opacity: 1;
   --button-box-shadow: none;
-  --button-height: 42px;
+  --button-height: var(--button-base);
   -webkit-appearance: none;
   display: inline-flex;
   align-items: center;
@@ -1563,10 +1569,10 @@ button,
   background-image: var(--button-background-image); }
   button-small,
   .button-small {
-    --button-height: 32px; }
+    --button-height: var(--button-small); }
   button-large,
   .button-large {
-    --button-height: 52px; }
+    --button-height: var(--button-large); }
   button:hover,
   .button:hover {
     outline: none; }
@@ -3088,16 +3094,16 @@ textarea.input-light,
 
 input.input-small,
 select.input-small {
-  --input-height: 36px; }
+  --input-height: var(--input-small); }
 
 input,
 select,
 .input {
-  --input-height: 42px; }
+  --input-height: var(--input-base); }
 
 input.input-large,
 select.input-large {
-  --input-height: 52px; }
+  --input-height: var(--input-large); }
 
 textarea,
 textarea.input {

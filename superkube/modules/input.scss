@@ -84,14 +84,14 @@ $input-scale: scale(input);
         input,
         select,
         .input {
-            --input-height: #{$value};
+            --input-height: var(--input-#{$name});
         }
     }
     @else {
         input,
         select {
             &.input-#{$name} {
-                --input-height: #{$value};
+                --input-height: var(--input-#{$name});
             }
         }
     }

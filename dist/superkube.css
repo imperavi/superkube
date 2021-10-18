@@ -1222,6 +1222,7 @@ button,
 .button {
   --button-font-weight: normal;
   --button-border-radius: var(--radius-base);
+  --button-line-height: 1.25;
   --button-padding-y: .4em;
   --button-padding-x: 18px;
   --button-border-width: 1px;

@@ -388,7 +388,7 @@ $colors: map-extend($colors, (
             link-active-color: var(--palette-neutral-lightest),
             link-active-background-color: var(--palette-black)
         ),
-        tabs: (
+        points: (
             border-color: var(--palette-black-10),
             link-color: var(--palette-black-50),
             link-border-color: var(--palette-transparent),
@@ -396,6 +396,26 @@ $colors: map-extend($colors, (
             link-hover-color: var(--palette-black),
             link-hover-border-color: var(--palette-black),
             link-hover-background-color: var(--palette-neutral-lightest),
+            link-active-color: var(--palette-black),
+            link-active-border-color: var(--palette-black),
+            link-active-background-color: var(--palette-transparent)
+        ),
+        tabs: (
+            link-color: var(--palette-black-50),
+            link-background-color: var(--palette-black-5),
+            link-hover-color: var(--palette-black),
+            link-hover-background-color: var(--palette-white),
+            link-active-color: var(--palette-black),
+            link-active-background-color: var(--palette-white)
+        ),
+        switcher: (
+            border-color: var(--palette-black-10),
+            link-color: var(--palette-black-50),
+            link-border-color: var(--palette-transparent),
+            link-background-color: var(--palette-transparent),
+            link-hover-color: var(--palette-black),
+            link-hover-border-color: var(--palette-black),
+            link-hover-background-color: var(--palette-transparent),
             link-active-color: var(--palette-black),
             link-active-border-color: var(--palette-black),
             link-active-background-color: var(--palette-transparent)

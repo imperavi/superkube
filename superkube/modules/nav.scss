@@ -81,11 +81,11 @@
     }
 }
 
-// Tabs
-.nav-tabs {
+// Points
+.nav-points {
     --nav-border-width: 2px;
     --nav-item-space: 1px;
-    --nav-link-padding: 12px 12px 10px 12px;
+    --nav-link-padding: 12px 14px 10px 14px;
 
     .nav-list {
         border-bottom-width: var(--nav-border-width);
@@ -107,6 +107,51 @@
     }
 }
 
+// Tabs
+.nav-tabs {
+    --nav-item-space: 1px;
+    --nav-link-padding: 12px 16px 10px 16px;
+
+    .nav-link:hover {
+        text-decoration: none;
+    }
+}
+
+// Switcher
+.nav-switcher {
+    --nav-border-width: 1px;
+    --nav-item-space: 1px;
+    --nav-link-padding: 8px 16px;
+    --nav-link-border-radius: 99px;
+    --nav-link-border-width: 2px;
+
+    // props
+    .nav-list {
+        display: inline-flex;
+        border-color: var(--nav-border-color);
+        border-width: var(--nav-border-width);
+        border-style: solid;
+        border-radius: var(--nav-link-border-radius);
+    }
+    .nav-item {
+        margin-top: calc(var(--nav-border-width)*-1);
+        margin-bottom: calc(var(--nav-border-width)*-1);
+    }
+    .nav-item.active .nav-link {
+        border-color: var(--nav-link-active-border-color);
+    }
+    .nav-link {
+        border-width: var(--nav-link-border-width);
+        border-color: var(--nav-link-border-color);
+        border-style: solid;
+    }
+    .nav-link:hover {
+        text-decoration: none;
+        border-color: var(--nav-link-hover-border-color);
+    }
+}
+
+
 // Centered
 .nav-centered {
     // vars
@@ -126,8 +171,15 @@
 .nav-centered.nav-pills {
     --nav-item-space: 0.5rem;
 }
-.nav-centered.nav-tabs {
+.nav-centered.nav-points,
+.nav-centered.nav-tabs,
+.nav-centered.nav-switcher {
     --nav-item-space: 1px;
+}
+.nav-centered.nav-switcher {
+    flex: initial;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 // Right
@@ -137,6 +189,7 @@
         margin-right: 0;
     }
 }
+.nav-right.nav-points,
 .nav-right.nav-tabs {
     --nav-item-space: 1px;
 
@@ -172,12 +225,51 @@
         justify-content: center;
     }
 }
+.nav-full.nav-tabs {
+    .nav-item {
+        margin-right: var(--nav-item-space);
+    }
+    .nav-item:last-child {
+        margin-right: 0;
+    }
+}
+.nav-full.nav-switcher {
+    .nav-list {
+        display: flex;
+    }
+}
 
 // Colors
 .nav {
     @include generate-colors(nav);
 }
-
+.nav-pills.nav-light {
+    --nav-link-color: var(--palette-white-70);
+    --nav-link-hover-background-color: var(--palette-white-30);
+    --nav-link-active-color: var(--palette-black);
+    --nav-link-active-background-color: var(--palette-white-95);
+}
+.nav-points.nav-light {
+    --nav-border-color: var(--palette-white-20);
+    --nav-link-color: var(--palette-white-60);
+    --nav-link-hover-color: var(--palette-white);
+    --nav-link-hover-border-color: var(--palette-white);
+    --nav-link-hover-background-color: var(--palette-white-30);
+    --nav-link-active-color: var(--palette-white);
+    --nav-link-active-border-color: var(--palette-white);
+}
+.nav-tabs.nav-light {
+    --nav-link-color: var(--palette-white-70);
+    --nav-link-background-color: var(--palette-white-20);
+}
+.nav-switcher.nav-light {
+    --nav-border-color: var(--palette-white-30);
+    --nav-link-color: var(--palette-white-60);
+    --nav-link-hover-color: var(--palette-white);
+    --nav-link-hover-border-color: var(--palette-white);
+    --nav-link-active-color: var(--palette-white);
+    --nav-link-active-border-color: var(--palette-white);
+}
 
 //Responsive
 @include for-sm {
@@ -196,6 +288,9 @@
         overflow-y: hidden;
         overflow-x: auto;
         white-space: nowrap;
+        .nav-list {
+            display: inline-flex;
+        }
     }
     .nav-menu-sm {
         --nav-menu-item-space: 2rem;
@@ -221,13 +316,15 @@
             margin-bottom: 1px;
         }
     }
-    .nav-menu-sm.nav-tabs {
+    .nav-menu-sm.nav-points,
+    .nav-menu-sm.nav-tabs,
+    .nav-menu-sm.nav-switcher {
         .nav-list,
         .nav-link {
             border: none;
         }
         .nav-item {
-            margin-top: 1px;
+            margin-top: 0;
             margin-bottom: 1px;
         }
     }

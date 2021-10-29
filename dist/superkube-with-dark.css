@@ -47,7 +47,6 @@
   --type-space-tag-to-h6: 8rem;
   --type-space-figure-to-tag: 8rem;
   --type-space-form-item-to-item: 5rem;
-  --type-space-form-buttons-to-item: 6rem;
   --type-scale-80: 80px;
   --type-scale-64: 64px;
   --type-scale-60: 60px;
@@ -2088,8 +2087,6 @@ a.caption:hover {
     margin-bottom: var(--form-item-space); }
   .form .form-item .form-item {
     margin-bottom: 0; }
-  .form .form-buttons {
-    margin-top: var(--form-buttons-space); }
 
 .form-checkboxes label.checkbox {
   display: inline-block;

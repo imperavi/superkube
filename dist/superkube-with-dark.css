@@ -4455,6 +4455,7 @@ hr {
 .position-relative {
   position: relative; }
 
+.position-under,
 .position-over {
   position: absolute;
   top: 0;
@@ -4462,8 +4463,19 @@ hr {
   bottom: 0;
   right: 0;
   pointer-events: none; }
+  .position-under > *,
   .position-over > * {
     pointer-events: all; }
+
+.position-under {
+  z-index: 1; }
+
+.position-main {
+  position: relative;
+  z-index: 2; }
+
+.position-over {
+  z-index: 3; }
 
 .r-off {
   border-radius: 0; }

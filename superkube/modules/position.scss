@@ -2,6 +2,7 @@
 .position-relative {
     position: relative;
 }
+.position-under,
 .position-over {
     position: absolute;
     top: 0;
@@ -13,4 +14,14 @@
     & > * {
         pointer-events: all;
     }
+}
+.position-under {
+    z-index: 1;
+}
+.position-main {
+    position: relative;
+    z-index: 2;
+}
+.position-over {
+    z-index: 3;
 }

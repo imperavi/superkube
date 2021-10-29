@@ -131,7 +131,7 @@
 .list-numbered-right {
     .list-item {
         position: relative;
-        padding-right: calc(var(--list-number-width)+4px);
+        padding-right: calc(var(--list-number-width) + 4px);
     }
     .list-item:before {
         display: none;

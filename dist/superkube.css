@@ -1007,9 +1007,6 @@ figure figcaption {
   --gradient-color: transparent;
   background: var(--gradient-color); }
 
-.gr- {
-  --gradient-color: ; }
-
 .badge {
   --badge-font-weight: 600;
   --badge-font-size: var(--type-scale-11);
@@ -6642,6 +6639,3 @@ hr {
   [class*=" grt-"] a,
   [class*=" grt-"] a:hover {
     opacity: 1; }
-
-.grt- {
-  --text-gradient-color: ; }

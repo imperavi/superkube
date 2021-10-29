@@ -75,8 +75,10 @@ $text-colors: map-get($colors, text);
     }
 }
 $gradients: map-get($colors, text-gradient);
-@each $name, $value in $gradients {
-    .grt-#{$name} {
-        --text-gradient-color: #{$value};
+@if $gradients != null {
+    @each $name, $value in $gradients {
+        .grt-#{$name} {
+            --text-gradient-color: #{$value};
+        }
     }
 }

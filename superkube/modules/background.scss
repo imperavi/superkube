@@ -6,7 +6,7 @@
 }
 $backgrounds: map-get($colors, background);
 @each $name, $value in $backgrounds {
-    .bg-#{$name} { --background-color: var(--background-#{$name}); }
+    .bg-#{"" + $name} { --background-color: var(--background-#{$name}); }
 }
 
 // =Gradients
@@ -16,8 +16,10 @@ $backgrounds: map-get($colors, background);
     background: var(--gradient-color);
 }
 $gradients: map-get($colors, gradient);
-@each $name, $value in $gradients {
-    .gr-#{$name} {
-        --gradient-color: #{$value};
+@if $gradients != null {
+    @each $name, $value in $gradients {
+        .gr-#{$name} {
+            --gradient-color: #{$value};
+        }
     }
 }

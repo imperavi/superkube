@@ -24,3 +24,13 @@
         background-color: var(--table-stripe-color);
     }
 }
+.table-light,
+.table-light.table-bordered {
+    th,
+    td {
+        --table-border-color: var(--palette-white-15);
+    }
+}
+.table-light.table-striped {
+    --table-stripe-color: var(--palette-white-5);
+}

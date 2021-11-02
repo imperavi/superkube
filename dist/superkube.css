@@ -6527,6 +6527,15 @@ hr {
   .table-striped tr:nth-child(odd) td {
     background-color: var(--table-stripe-color); }
 
+.table-light th,
+.table-light td,
+.table-light.table-bordered th,
+.table-light.table-bordered td {
+  --table-border-color: var(--palette-white-15); }
+
+.table-light.table-striped {
+  --table-stripe-color: var(--palette-white-5); }
+
 .text-thin {
   font-weight: 300; }
 

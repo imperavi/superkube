@@ -25,6 +25,10 @@
     margin-right: 6px;
     color: var(--list-mark-color);
 }
+.list-light.list-checkmark,
+.list-light.list-dashed {
+    --list-mark-color: var(--palette-white-80);
+}
 .list {
     // vars
     --list-font-size: var(--type-scale-15);

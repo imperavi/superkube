@@ -1,5 +1,8 @@
 // =Badge
 .badge {
+    // colors
+    @include generate-colors(badge);
+
     // vars
     --badge-font-weight: 600;
     --badge-font-size: var(--type-scale-11);
@@ -58,9 +61,4 @@ a.badge:hover {
 .badge-mega {
     --badge-font-size: var(--type-scale-20);
     --badge-size: 48px;
-}
-
-// Colors
-.badge {
-    @include generate-colors(badge);
 }

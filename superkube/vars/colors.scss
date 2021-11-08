@@ -85,13 +85,13 @@ $colors: map-extend($colors, (
     button: (
         default: (
             background-color: var(--palette-transparent),
-            border-color: var(--palette-neutral-mid),
+            border-color: var(--palette-black-20),
             color: var(--palette-neutral-darker),
             hover-background-color: var(--palette-black-5),
-            hover-border-color: var(--palette-neutral-mid),
+            hover-border-color: var(--palette-black-20),
             hover-color: var(--palette-black),
             disabled-background-color: var(--palette-white),
-            disabled-border-color: var(--palette-neutral-mid),
+            disabled-border-color: var(--palette-black-20),
             disabled-color: var(--palette-black-80)
         ),
         primary: (
@@ -139,26 +139,6 @@ $colors: map-extend($colors, (
             disabled-color: var(--palette-white-70)
         )
     ),
-    caption: (
-        default: (
-            color: var(--palette-neutral-base)
-        ),
-        primary: (
-            color: var(--palette-primary-base)
-        ),
-        positive: (
-            color: var(--palette-positive-base)
-        ),
-        important: (
-            color: var(--palette-negative-base)
-        ),
-        dark: (
-            color: var(--palette-black)
-        ),
-        light: (
-            color: var(--palette-white)
-        )
-    ),
     form: (
         label: (
             color: var(--palette-neutral-darker)
@@ -200,7 +180,7 @@ $colors: map-extend($colors, (
     input: (
         default: (
             color: var(--palette-neutral-darker),
-            border-color: var(--palette-neutral-mid),
+            border-color: var(--palette-black-25),
             background-color: var(--palette-white),
             box-shadow: none,
             focus-color: var(--palette-neutral-darker),
@@ -230,9 +210,11 @@ $colors: map-extend($colors, (
         )
     ),
     input-addon: (
-        item-color: var(--palette-black),
-        item-background-color: var(--palette-transparent),
-        item-border-color: var(--palette-neutral-mid)
+        default: (
+            item-color: var(--palette-black),
+            item-background-color: var(--palette-transparent),
+            item-border-color: var(--palette-black-25)
+        )
     ),
     label: (
         default: (
@@ -263,7 +245,7 @@ $colors: map-extend($colors, (
         light: (
             background-color: var(--palette-white),
             border-color: var(--palette-transparent),
-            color: var(--palette-neutral-darker)
+            color: var(--palette-black)
         )
     ),
     line: (

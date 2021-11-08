@@ -17,7 +17,7 @@ $spacing-scale: scale(spacing);
         }
     }
 }
-@include for-sm{
+@include for-sm {
     @each $name, $val in $spacing-scale {
         .gutter-#{$name}-sm {
             grid-column-gap: $unit * $val;

@@ -1,5 +1,6 @@
 // =Relative
-.position-relative {
+.position-relative,
+.position-base {
     position: relative;
 }
 .position-under,
@@ -18,8 +19,7 @@
 .position-under {
     z-index: 1;
 }
-.position-main {
-    position: relative;
+.position-base {
     z-index: 2;
 }
 .position-over {

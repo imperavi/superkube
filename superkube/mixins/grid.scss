@@ -46,6 +46,13 @@
     }
     // md
     @include for-md {
+        // columns
+        @for $i from 1 through $columns {
+            .#{$columnname}-#{$i}-md {
+                @include column($i);
+            }
+        }
+        // grids
         @for $i from 1 through $columns {
             .#{$gridname}-#{$i}-md {
                 grid-template-columns: repeat($i, 1fr);

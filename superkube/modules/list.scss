@@ -30,6 +30,9 @@
     --list-mark-color: var(--palette-white-80);
 }
 .list {
+    // colors
+    @include generate-colors(list);
+
     // vars
     --list-font-size: var(--type-scale-15);
     --list-line-height: 1.3;
@@ -149,8 +152,4 @@
         text-align: right;
         color: var(--list-number-color);
     }
-}
-// Colors
-.list {
-    @include generate-colors(list);
 }

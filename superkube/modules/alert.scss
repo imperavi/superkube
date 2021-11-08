@@ -1,5 +1,8 @@
 // =Alert
 .alert {
+    // colors
+    @include generate-colors(alert);
+
     // vars
     --alert-padding: 4rem 5rem;
     --alert-font-weight: normal;
@@ -44,7 +47,4 @@
         padding-right: .65em;
         padding-top: .85em;
     }
-}
-.alert {
-    @include generate-colors(alert);
 }

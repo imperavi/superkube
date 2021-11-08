@@ -1,5 +1,8 @@
 // =Label
 .label {
+    // colors
+    @include generate-colors(label);
+
     // vars
     --label-font-weight: 600;
     --label-font-size: var(--type-scale-12);
@@ -54,8 +57,4 @@ a.label:hover {
 // Scales
 .label-large {
     --label-font-size: var(--type-scale-14);
-}
-// Colors
-.label {
-    @include generate-colors(label);
 }

@@ -3,6 +3,12 @@ input,
 select,
 textarea,
 .input {
+    // type
+    @include generate-type(input);
+
+    // colors
+    @include generate-colors(input);
+
     // vars
     --input-border-radius: var(--radius-base);
     --input-padding: 0.3em 0.5em;
@@ -58,14 +64,6 @@ textarea,
 }
 .input-light {
     @include placeholder(var(--placeholder-light));
-}
-input,
-select,
-textarea,
-.input {
-    // generate
-    @include generate-type(input);
-    @include generate-colors(input);
 }
 // DarkTheme
 @include dark-theme {

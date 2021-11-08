@@ -1,5 +1,8 @@
 // =Input-Addon
 .input-addon {
+    // colors
+    @include generate-colors(input-addon);
+
     // vars
     --input-addon-item-padding: 0 0.85em;
     --input-addon-item-border-radius: var(--radius-base);
@@ -55,7 +58,4 @@
             border-bottom-left-radius: 0;
         }
     }
-}
-.input-addon {
-    @include generate-colors(input-addon);
 }

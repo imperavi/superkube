@@ -1,5 +1,8 @@
 // =Menu
 .menu {
+    // colors
+    @include generate-colors(menu);
+
     // vars
     --menu-font-size: var(--type-scale-15);
     --menu-line-height: 1.3;
@@ -148,9 +151,4 @@
         content: counter(table-of-contents, decimal-leading-zero);
         text-align: right;
     }
-}
-
-// Colors
-.menu {
-    @include generate-colors(menu);
 }

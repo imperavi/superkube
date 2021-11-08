@@ -1,6 +1,12 @@
 // =Button
 button,
 .button {
+    // type
+    @include generate-type(button);
+
+    // colors
+    @include generate-colors(button);
+
     // vars
     --button-font-weight: normal;
     --button-border-radius: var(--radius-base);
@@ -97,12 +103,6 @@ button,
         margin-right: -3px;
     }
 }
-button,
-.button {
-    // generate
-    @include generate-type(button);
-    @include generate-colors(button);
-}
 // Size
 .button-large {
     --button-padding-x: 24px;
@@ -113,5 +113,11 @@ button,
 // Variants
 .button-round {
     --button-border-radius: 99px;
-    --button-padding-x: 1.2em;
+    --button-padding-x: 22px;
+}
+.button-round.button-small {
+    --button-padding-x: 17px;
+}
+.button-round.button-large {
+    --button-padding-x: 32px;
 }

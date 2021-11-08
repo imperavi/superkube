@@ -38,6 +38,17 @@ $edges: scale(edge);
         .edges-#{$name} { padding-left: $value; padding-right: $value; }
     }
 }
+@include for-md {
+    .edges-off-md { padding-left: 0; padding-right: 0; }
+    @each $name, $value in $edges {
+        @if $name == base {
+            .edges-md { padding-left: $value; padding-right: $value; }
+        }
+        @else {
+            .edges-#{$name}-md { padding-left: $value; padding-right: $value; }
+        }
+    }
+}
 @include for-sm {
     .edges-off-sm { padding-left: 0; padding-right: 0; }
     @each $name, $value in $edges {

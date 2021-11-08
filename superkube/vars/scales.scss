@@ -142,9 +142,7 @@ $scales: map-extend($scales, (
         small: 2px,
         base: 4px,
         large: 6px,
-        huge: 8px,
-        mega: 10px,
-        giga: 16px
+        huge: 10px
     ),
     border: (
         1: 1px,
@@ -181,16 +179,11 @@ $scales: map-extend($scales, (
         3: 3,
         4: 4,
         5: 5,
-        7: 7,
         6: 6,
         8: 8,
-        9: 9,
         10: 10,
-        11: 11,
         12: 12,
-        13: 13,
         14: 14,
-        15: 15,
         16: 16,
         20: 20,
         24: 24

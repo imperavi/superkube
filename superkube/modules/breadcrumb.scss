@@ -1,5 +1,8 @@
 // =Breadcrumb
 .breadcrumb {
+    // colors
+    @include generate-colors(breadcrumb);
+
     // vars
     --breadcrumb-font-size: var(--type-scale-14);
     --breadcrumb-line-height: var(--body-text-line);
@@ -49,8 +52,4 @@
 }
 .breadcrumb-path {
     --breadcrumb-separator: '\0227B';
-}
-// Colors
-.breadcrumb {
-    @include generate-colors(breadcrumb);
 }

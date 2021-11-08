@@ -22,7 +22,7 @@
 @each $name, $value in $borders-colors {
     .stack-#{$name} > * {
         &:after {
-            border-bottom-color: var(--border-#{$name});
+            border-bottom-color: #{$value};
         }
     }
 }

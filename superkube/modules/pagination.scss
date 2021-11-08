@@ -1,5 +1,8 @@
 // =Pagination
 .pagination {
+    // colors
+    @include generate-colors(pagination);
+
     // vars
     --pagination-font-size: var(--type-scale-14);
     --pagination-item-space: 1rem;
@@ -58,7 +61,4 @@
     .pagination-next {
         white-space: nowrap;
     }
-}
-.pagination {
-    @include generate-colors(pagination);
 }

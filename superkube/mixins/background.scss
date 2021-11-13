@@ -1,0 +1,12 @@
+// =Background
+@mixin background-image($file1, $file2, $width: auto, $height:  auto) {
+    background-image: url($file1);
+
+    @media
+      only screen and (-webkit-min-device-pixel-ratio: 2),
+      only screen and (min--moz-device-pixel-ratio: 2),
+      only screen and (min-device-pixel-ratio: 2) {
+        background-image: url($file2);
+        background-size: $width $height;
+    }
+}

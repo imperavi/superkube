@@ -1075,9 +1075,11 @@ th {
   vertical-align: top;
   font-size: 15px;
   line-height: 1.5;
-  padding: 0.75em 0;
-  padding-right: 0.75em;
+  padding: 0.75em 6rem 0.75em 2rem;
   border-bottom: 1px solid var(--table-border-color); }
+  td:first-child,
+  th:first-child {
+    padding-left: 0; }
 
 th {
   font-weight: normal; }
@@ -5965,18 +5967,23 @@ hr {
 
 .table-bordered {
   --table-border-color: var(--table-default-border-color); }
-  .table-bordered td,
-  .table-bordered th {
-    padding: 0.75em;
-    border: 1px solid var(--table-border-color); }
 
 .table-striped {
   --table-stripe-color: var(--table-default-stripe-color); }
-  .table-striped td,
-  .table-striped th {
-    padding: 0.75em; }
   .table-striped tr:nth-child(odd) td {
     background-color: var(--table-stripe-color); }
+
+.table-bordered td,
+.table-bordered th,
+.table-striped td,
+.table-striped th {
+  padding: 0.75em 6rem 0.75em 2rem;
+  border: 1px solid var(--table-border-color); }
+  .table-bordered td:first-child,
+  .table-bordered th:first-child,
+  .table-striped td:first-child,
+  .table-striped th:first-child {
+    padding-left: 2rem; }
 
 .table-light th,
 .table-light td,

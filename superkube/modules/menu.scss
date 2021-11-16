@@ -46,8 +46,11 @@
         color: var(--menu-link-hover-color);
         background-color: var(--menu-link-hover-background-color);
     }
-    .menu-nested {
+    .menu {
         margin-left: var(--menu-nested-margin);
+    }
+    .menu-flat {
+        margin-left: 0;
     }
     .menu-list + h4,
     .menu-list + h5,

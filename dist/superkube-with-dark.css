@@ -3448,8 +3448,10 @@ hr {
     text-decoration: underline;
     color: var(--menu-link-hover-color);
     background-color: var(--menu-link-hover-background-color); }
-  .menu .menu-nested {
+  .menu .menu {
     margin-left: var(--menu-nested-margin); }
+  .menu .menu-flat {
+    margin-left: 0; }
   .menu .menu-list + h4,
   .menu .menu-list + h5,
   .menu .menu-list + h6 {

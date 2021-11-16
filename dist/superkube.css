@@ -961,13 +961,25 @@ figure figcaption {
 .a-right {
   text-align: right; }
 
+.va-baseline {
+  vertical-align: baseline; }
+
+.va-bottom {
+  vertical-align: bottom; }
+
 @media only screen and (max-width: 767px) {
   .a-left-sm {
     text-align: left; }
   .a-center-sm {
     text-align: center; }
   .a-right-sm {
-    text-align: right; } }
+    text-align: right; }
+  .va-baseline-sm {
+    vertical-align: baseline; }
+  .va-bottom-sm {
+    vertical-align: bottom; }
+  .va-top-sm {
+    vertical-align: top; } }
 
 [class^="bg-"],
 [class*=" bg-"] {

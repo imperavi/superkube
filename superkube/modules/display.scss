@@ -1,6 +1,6 @@
 // =Display
 .hidden {
-    display: none;
+    display: none !important;
 }
 .visible {
     display: block;

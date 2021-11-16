@@ -1873,7 +1873,7 @@ button,
     padding-right: 5rem; } }
 
 .hidden {
-  display: none; }
+  display: none !important; }
 
 .visible {
   display: block; }

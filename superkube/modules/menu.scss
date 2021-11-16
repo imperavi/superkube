@@ -46,6 +46,10 @@
         color: var(--menu-link-hover-color);
         background-color: var(--menu-link-hover-background-color);
     }
+    .menu-link-box {
+        display: flex;
+        align-items: center;
+    }
     .menu {
         margin-left: var(--menu-nested-margin);
     }

@@ -4,6 +4,7 @@
     @include generate-colors(menu);
 
     // vars
+    --menu-nested-margin: 5rem;
     --menu-font-size: var(--type-scale-15);
     --menu-line-height: 1.3;
     --menu-link-padding-x: 0;
@@ -16,9 +17,6 @@
     line-height: var(--menu-line-height);
 
     .menu-item {
-        display: flex;
-        align-items: center;
-        flex-flow: wrap;
         padding: var(--menu-item-padding);
         margin-bottom: var(--menu-item-space);
     }
@@ -48,11 +46,8 @@
         color: var(--menu-link-hover-color);
         background-color: var(--menu-link-hover-background-color);
     }
-    .menu-list .menu-list {
-        width: 100%;
-        margin-top: 3px;
-        margin-bottom: 3px;
-        margin-left: 5rem;
+    .menu-nested {
+        margin-left: var(--menu-nested-margin);
     }
     .menu-list + h4,
     .menu-list + h5,

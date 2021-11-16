@@ -3052,6 +3052,7 @@ hr {
   color: var(--list-number-color); }
 
 .menu {
+  --menu-nested-margin: 5rem;
   --menu-font-size: var(--type-scale-15);
   --menu-line-height: 1.3;
   --menu-link-padding-x: 0;
@@ -3091,9 +3092,6 @@ hr {
     --menu-link-hover-color: var(--menu-muted-link-hover-color);
     --menu-link-active-color: var(--menu-muted-link-active-color); }
   .menu .menu-item {
-    display: flex;
-    align-items: center;
-    flex-flow: wrap;
     padding: var(--menu-item-padding);
     margin-bottom: var(--menu-item-space); }
   .menu .menu-item:last-child {
@@ -3118,11 +3116,8 @@ hr {
     text-decoration: underline;
     color: var(--menu-link-hover-color);
     background-color: var(--menu-link-hover-background-color); }
-  .menu .menu-list .menu-list {
-    width: 100%;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    margin-left: 5rem; }
+  .menu .menu-nested {
+    margin-left: var(--menu-nested-margin); }
   .menu .menu-list + h4,
   .menu .menu-list + h5,
   .menu .menu-list + h6 {

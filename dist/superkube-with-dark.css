@@ -3505,6 +3505,8 @@ hr {
   .menu-numbered .menu-list {
     counter-reset: table-of-contents; }
   .menu-numbered .menu-item {
+    display: flex;
+    align-items: center;
     counter-increment: table-of-contents; }
   .menu-numbered .menu-item:before {
     width: var(--menu-number-width);

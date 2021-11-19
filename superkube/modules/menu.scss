@@ -134,6 +134,8 @@
         counter-reset: table-of-contents;
     }
     .menu-item {
+        display: flex;
+        align-items: center;
         counter-increment: table-of-contents;
     }
     .menu-item:before {

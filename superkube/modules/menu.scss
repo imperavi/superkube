@@ -123,6 +123,9 @@
     .menu-link {
         border-radius: var(--menu-link-border-radius);
     }
+    .menu-link:hover {
+        text-decoration: none;
+    }
 }
 
 // =Numbered

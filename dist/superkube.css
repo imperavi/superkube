@@ -1,7 +1,7 @@
 /*
     Superkube
-    Version 2.5.0
-    Updated: November 3, 2021
+    Version 2.5.1
+    Updated: November 19, 2021
 
     http://imperavi.com/superkube/
 
@@ -3166,6 +3166,8 @@ hr {
   --menu-item-space: 1px; }
   .menu-pills .menu-link {
     border-radius: var(--menu-link-border-radius); }
+  .menu-pills .menu-link:hover {
+    text-decoration: none; }
 
 .menu-numbered {
   --menu-number-font-size: 80%;

@@ -1,11 +1,11 @@
 // =Menu
 .menu {
-    // colors
+    // generate
+    @include generate-type(menu);
     @include generate-colors(menu);
 
     // vars
     --menu-nested-margin: 5rem;
-    --menu-font-size: var(--type-scale-14);
     --menu-line-height: 1.3;
     --menu-link-padding-x: 0;
     --menu-link-padding-y: 6px;
@@ -64,10 +64,6 @@
     & .label {
         margin-top: -2px;
     }
-}
-// Scales
-.menu-small {
-    --menu-font-size: var(--type-scale-12);
 }
 
 // Variants

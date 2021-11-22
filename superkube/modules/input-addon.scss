@@ -1,12 +1,12 @@
 // =Input-Addon
 .input-addon {
-    // colors
+    // generate
+    @include generate-type(input-addon, input-addon-item);
     @include generate-colors(input-addon);
 
     // vars
     --input-addon-item-padding: 0 0.85em;
     --input-addon-item-border-radius: var(--radius-base);
-    --input-addon-item-font-size: var(--type-scale-14);
 
     // scales
     $input-scale: scale(input);

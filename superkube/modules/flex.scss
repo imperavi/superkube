@@ -11,6 +11,9 @@
 .flex-off {
     flex: 0 !important;
 }
+.flex-none {
+    flex: 0 0 auto !important;
+}
 .flex-shrink-off {
     flex-shrink: 0;
 }

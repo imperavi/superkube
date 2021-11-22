@@ -13,9 +13,11 @@ $scales: map-extend($scales, (
         20: 20px,
         18: 18px,
         16: 16px,
+        15: 15px,
         14: 14px,
+        13: 13px,
         12: 12px,
-        10: 10px
+        11: 11px
     ),
     type: (
         base: (
@@ -25,17 +27,19 @@ $scales: map-extend($scales, (
             h4: 16px 1.5,
             quote: 18px 1.5,
             quotecite: 14px 1.5,
-            table: 14px 1.5,
+            table: 15px 1.5,
             pre: 14px 1.5,
             figcaption: 12px 1.5
         ),
         text: (
             giga: 32px 1.5,
             mega: 24px 1.5,
-            large: 20px 1.5,
+            huge: 20px 1.5,
+            large: 18px 1.5,
             default: 16px 1.5,
             medium: 14px 1.5,
-            small: 12px 1.5
+            small: 13px 1.5,
+            tiny: 12px 1.5
         ),
         heading: (
             giga: 80px 1.1,
@@ -45,22 +49,48 @@ $scales: map-extend($scales, (
             medium: 24px 1.3,
             small: 20px 1.4,
             micro: 16px 1.5,
-            tagline: 10px 1.5
+            tagline: 11px 1.5
         ),
         input: (
-            small: 16px 1.5,
-            default: 16px 1.5,
+            small: 14px 1.5,
+            default: 15px 1.5,
             large: 20px 1.5
+        ),
+        input-addon: (
+            default: 14px
         ),
         button: (
             small: 14px 1.25,
-            default: 16px 1.25,
+            default: 15px 1.25,
             large: 18px 1.25
         ),
         form: (
-            label: 16px 1.5,
-            checkbox: 16px 1.5,
-            hint: 12px 1.5
+            label: 15px 1.5,
+            checkbox: 15px 1.5,
+            hint: 13px 1.5
+        ),
+        list: (
+            default: 15px 1.3,
+            medium: 14px 1.3,
+            small: 13px 1.3
+        ),
+        menu: (
+            default: 15px 1.3,
+            medium: 14px 1.3,
+            small: 13px 1.3
+        ),
+        nav: (
+            default: 14px 1.3,
+            small: 13px 1.3
+        ),
+        brand: (
+            default: 16px
+        ),
+        breadcrumb: (
+            default: 14px 1.5
+        ),
+        pagination: (
+            default: 14px
         )
     ),
     type-sm: (

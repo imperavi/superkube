@@ -1,10 +1,10 @@
 // =Nav
 .nav {
-    // colors
+    // generate
+    @include generate-type(nav);
     @include generate-colors(nav);
 
     // vars
-    --nav-font-size: var(--type-scale-14);
     --nav-item-space: 6rem;
     --nav-link-padding: 0;
     --nav-link-border-radius: 0;
@@ -46,7 +46,6 @@
 }
 // Scales
 .nav-small {
-    --nav-font-size: var(--type-scale-12);
     --nav-item-space: 5rem;
 }
 

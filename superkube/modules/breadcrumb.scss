@@ -1,11 +1,10 @@
 // =Breadcrumb
 .breadcrumb {
-    // colors
+    // generate
+    @include generate-type(breadcrumb);
     @include generate-colors(breadcrumb);
 
     // vars
-    --breadcrumb-font-size: var(--type-scale-14);
-    --breadcrumb-line-height: var(--body-text-line);
     --breadcrumb-item-space: 2rem;
     --breadcrumb-separator: '\0002f';
 

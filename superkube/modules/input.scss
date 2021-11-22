@@ -3,10 +3,8 @@ input,
 select,
 textarea,
 .input {
-    // type
+    // generate
     @include generate-type(input);
-
-    // colors
     @include generate-colors(input);
 
     // vars

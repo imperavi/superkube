@@ -99,19 +99,19 @@
 }
 
 // type
-@mixin generate-type($name) {
+@mixin generate-type($name, $prefix: null) {
     $map: map-deep-get(scale(type), $name);
     @if $map != null {
         @if map-has-key($map, default) {
             & {
-                @include generate-type-item($name, map-get($map, default));
+                @include generate-type-item($name, map-get($map, default), $prefix);
             }
         }
         @each $key, $value in $map {
             @if $key != default {
                 $sel: '&-' + $key;
                 #{$sel} {
-                    @include generate-type-item($name, $value);
+                    @include generate-type-item($name, $value, $prefix);
                 }
             }
         }
@@ -119,12 +119,16 @@
 }
 
 // type item
-@mixin generate-type-item($name, $value) {
+@mixin generate-type-item($name, $value, $prefix) {
     $size: $value;
     $line: false;
     @if type-of($value) == list {
         $size: nth($value, 1);
         $line: nth($value, 2);
+    }
+
+    @if $prefix != null {
+        $name: $prefix;
     }
 
     --#{$name}-font-size: #{$size};

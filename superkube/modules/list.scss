@@ -14,15 +14,26 @@
 .list-checkmark,
 .list-dashed {
     --list-mark-color: var(--text-default);
+
+    // props
+    position: relative;
+}
+.list-checkmark {
+    padding-left: 1.3em;
+}
+.list-dashed {
+    padding-left: 1.35em;
 }
 .list-checkmark li:before {
+    position: absolute;
     content: "\2713";
-    margin-right: 6px;
+    left: 0;
     color: var(--list-mark-color);
 }
 .list-dashed li:before {
+    position: absolute;
     content: "\2014";
-    margin-right: 6px;
+    left: 0;
     color: var(--list-mark-color);
 }
 .list-light.list-checkmark,
@@ -30,11 +41,11 @@
     --list-mark-color: var(--palette-white-80);
 }
 .list {
-    // colors
+    // generate
+    @include generate-type(list);
     @include generate-colors(list);
 
     // vars
-    --list-font-size: var(--type-scale-14);
     --list-line-height: 1.3;
     --list-item-space: 0;
     --list-item-padding-y: 6px;
@@ -68,9 +79,6 @@
     & .label {
         margin-top: -2px;
     }
-}
-.list-small {
-    --list-font-size: var(--type-scale-12);
 }
 
 // =Stacked

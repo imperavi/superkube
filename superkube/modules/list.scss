@@ -45,9 +45,6 @@
     margin-left: 0;
 
     .list-item {
-        display: flex;
-        align-items: center;
-        flex-flow: wrap;
         font-size: var(--list-font-size);
         line-height: var(--list-line-height);
         padding-top: var(--list-item-padding-y);

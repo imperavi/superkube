@@ -22,7 +22,7 @@
   --radius-small: 2px;
   --radius-base: 4px;
   --radius-large: 6px;
-  --radius-huge: 10px;
+  --radius-huge: 12px;
   --button-small: 32px;
   --button-base: 42px;
   --button-large: 56px;
@@ -3189,9 +3189,6 @@ hr {
     --list-border-color: var(--list-light-border-color);
     --list-number-color: var(--list-light-number-color); }
   .list .list-item {
-    display: flex;
-    align-items: center;
-    flex-flow: wrap;
     font-size: var(--list-font-size);
     line-height: var(--list-line-height);
     padding-top: var(--list-item-padding-y);
@@ -4291,23 +4288,23 @@ hr {
   border-bottom-right-radius: 6px; }
 
 .r-huge {
-  border-radius: 10px; }
+  border-radius: 12px; }
 
 .r-top-huge {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px; }
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px; }
 
 .r-bottom-huge {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px; }
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px; }
 
 .r-left-huge {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px; }
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px; }
 
 .r-right-huge {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px; }
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px; }
 
 @media only screen and (max-width: 767px) {
   .r-off-sm {
@@ -4357,19 +4354,19 @@ hr {
     border-top-right-radius: 6px;
     border-bottom-right-radius: 6px; }
   .r-huge-sm {
-    border-radius: 10px; }
+    border-radius: 12px; }
   .r-top-huge-sm {
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px; }
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px; }
   .r-bottom-huge-sm {
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px; }
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px; }
   .r-left-huge-sm {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px; }
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px; }
   .r-right-huge-sm {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px; } }
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px; } }
 
 .row {
   display: flex;

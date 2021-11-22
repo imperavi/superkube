@@ -1,6 +1,6 @@
 // =Text
 .text-semibold {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
 }
 .text-strong {
     font-weight: bold;

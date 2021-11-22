@@ -6,7 +6,7 @@
     font-weight: bold;
 }
 .link-semibold {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
 }
 .link-italic {
     font-style: italic;

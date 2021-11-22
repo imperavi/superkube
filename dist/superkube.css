@@ -14,7 +14,9 @@
   --font-mono: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
   --unit: 4px;
   --body-text-size: 16px;
-  --body-text-line: 1.5; }
+  --body-text-line: 1.5;
+  --font-weight-semibold: 600;
+  --font-weight-heavy: 900; }
 
 :root {
   --radius-small: 2px;
@@ -1057,7 +1059,7 @@ figure figcaption {
   background: var(--gradient-color); }
 
 .badge {
-  --badge-font-weight: 600;
+  --badge-font-weight: var(--font-weight-semibold);
   --badge-font-size: var(--type-scale-11);
   --badge-border-radius: 99px;
   --badge-padding: 1px 4px;
@@ -2284,13 +2286,13 @@ button,
   letter-spacing: 0.05em; }
 
 .heading-semibold {
-  font-weight: 600; }
+  font-weight: var(--font-weight-semibold); }
 
 .heading-normal {
   font-weight: normal; }
 
 .heading-heavy {
-  font-weight: 900; }
+  font-weight: var(--font-weight-heavy); }
 
 [class^="heading-"],
 [class*=" heading-"] {
@@ -2783,7 +2785,7 @@ input[type="checkbox"] {
   position: relative; }
 
 .label {
-  --label-font-weight: 600;
+  --label-font-weight: var(--font-weight-semibold);
   --label-font-size: var(--type-scale-12);
   --label-border-radius: var(--radius-base);
   --label-padding: 4px 9px;
@@ -2903,7 +2905,7 @@ hr {
   font-weight: bold; }
 
 .link-semibold {
-  font-weight: 600; }
+  font-weight: var(--font-weight-semibold); }
 
 .link-italic {
   font-style: italic; }
@@ -3184,7 +3186,7 @@ hr {
   --menu-font-size: var(--type-scale-14); }
 
 .menu-semibold .menu-link {
-  font-weight: 600; }
+  font-weight: var(--font-weight-semibold); }
 
 .menu-strong .menu-link {
   font-weight: bold; }
@@ -3330,7 +3332,7 @@ hr {
   --nav-font-size: var(--type-scale-13); }
 
 .nav-semibold .nav-link {
-  font-weight: 600; }
+  font-weight: var(--font-weight-semibold); }
 
 .nav-strong .nav-link {
   font-weight: bold; }
@@ -5726,7 +5728,7 @@ hr {
   --table-stripe-color: var(--palette-white-5); }
 
 .text-semibold {
-  font-weight: 600; }
+  font-weight: var(--font-weight-semibold); }
 
 .text-strong {
   font-weight: bold; }

@@ -4,13 +4,13 @@
     letter-spacing: 0.05em;
 }
 .heading-semibold {
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
 }
 .heading-normal {
     font-weight: normal;
 }
 .heading-heavy {
-    font-weight: 900;
+    font-weight: var(--font-weight-heavy);
 }
 
 [class^="heading-"],

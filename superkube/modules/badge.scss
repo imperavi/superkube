@@ -4,7 +4,7 @@
     @include generate-colors(badge);
 
     // vars
-    --badge-font-weight: 600;
+    --badge-font-weight: var(--font-weight-semibold);
     --badge-font-size: var(--type-scale-11);
     --badge-border-radius: 99px;
     --badge-padding: 1px 4px;

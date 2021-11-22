@@ -52,7 +52,7 @@
 // Variants
 .nav-semibold {
     .nav-link {
-        font-weight: 600;
+        font-weight: var(--font-weight-semibold);
     }
 }
 .nav-strong {

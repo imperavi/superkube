@@ -4,7 +4,7 @@
     @include generate-colors(label);
 
     // vars
-    --label-font-weight: 600;
+    --label-font-weight: var(--font-weight-semibold);
     --label-font-size: var(--type-scale-12);
     --label-border-radius: var(--radius-base);
     --label-padding: 4px 9px;

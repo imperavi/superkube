@@ -994,6 +994,40 @@ figure figcaption {
     padding-right: .65em;
     padding-top: .85em; }
 
+.align-left {
+  text-align: left; }
+
+.align-center {
+  text-align: center; }
+
+.align-right {
+  text-align: right; }
+
+.align-baseline {
+  vertical-align: baseline; }
+
+.align-bottom {
+  vertical-align: bottom; }
+
+.align-middle {
+  vertical-align: middle; }
+
+@media only screen and (max-width: 767px) {
+  .align-left-sm {
+    text-align: left; }
+  .align-center-sm {
+    text-align: center; }
+  .align-right-sm {
+    text-align: right; }
+  .align-baseline-sm {
+    vertical-align: baseline; }
+  .align-middle-sm {
+    vertical-align: middle; }
+  .align-bottom-sm {
+    vertical-align: bottom; }
+  .align-top-sm {
+    vertical-align: top; } }
+
 .a-left {
   text-align: left; }
 

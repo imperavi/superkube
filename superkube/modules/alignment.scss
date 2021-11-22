@@ -5,12 +5,14 @@
 
 .va-baseline { vertical-align: baseline; }
 .va-bottom { vertical-align: bottom; }
+.va-middle { vertical-align: middle; }
 
 @include for-sm {
     .a-left-sm { text-align: left; }
     .a-center-sm { text-align: center; }
     .a-right-sm { text-align: right; }
     .va-baseline-sm { vertical-align: baseline; }
+    .va-middle-sm { vertical-align: middle; }
     .va-bottom-sm { vertical-align: bottom; }
     .va-top-sm { vertical-align: top; }
 }

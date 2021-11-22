@@ -1287,6 +1287,9 @@ figure figcaption {
 .va-bottom {
   vertical-align: bottom; }
 
+.va-middle {
+  vertical-align: middle; }
+
 @media only screen and (max-width: 767px) {
   .a-left-sm {
     text-align: left; }
@@ -1296,6 +1299,8 @@ figure figcaption {
     text-align: right; }
   .va-baseline-sm {
     vertical-align: baseline; }
+  .va-middle-sm {
+    vertical-align: middle; }
   .va-bottom-sm {
     vertical-align: bottom; }
   .va-top-sm {

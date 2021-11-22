@@ -6785,12 +6785,8 @@ hr {
   --text-font-size: 24px;
   --text-line-height: 1.5; }
 
-.text-huge {
-  --text-font-size: 20px;
-  --text-line-height: 1.5; }
-
 .text-large {
-  --text-font-size: 18px;
+  --text-font-size: 20px;
   --text-line-height: 1.5; }
 
 .text-default {

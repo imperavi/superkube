@@ -12,7 +12,6 @@
 @mixin generate-root-palette($map) {
     @if $map != null {
         @each $name, $value in $map {
-            $name: str-replace(#{$name}, '-opacity', '');
             @if type-of($value) == map {
                 @each $key, $color in $value {
                     --palette-#{$name}-#{$key}: #{$color};
@@ -20,6 +19,19 @@
             }
             @else {
                 --palette-#{$name}: #{$value};
+            }
+        }
+
+        // opacity
+        @each $name in $opacity-colors {
+            $color: map-get($map, $name);
+            @if type-of($color) == map {
+                    $color: map-get($color, base);
+            }
+            @if $color != null {
+                @each $index in $opacity-scale {
+                    --palette-#{$name}-#{$index}: #{rgba($color, $index/100)};
+                }
             }
         }
     }

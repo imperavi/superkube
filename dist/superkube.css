@@ -3495,7 +3495,8 @@ hr {
     background-color: var(--nav-link-hover-background-color); }
 
 .nav-small {
-  --nav-font-size: var(--type-scale-12); }
+  --nav-font-size: var(--type-scale-12);
+  --nav-item-space: 5rem; }
 
 .nav-semibold .nav-link {
   font-weight: var(--font-weight-semibold); }

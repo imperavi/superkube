@@ -3501,7 +3501,7 @@ hr {
   --list-mark-color: var(--palette-white-80); }
 
 .list {
-  --list-font-size: var(--type-scale-16);
+  --list-font-size: var(--type-scale-14);
   --list-line-height: 1.3;
   --list-item-space: 0;
   --list-item-padding-y: 6px;
@@ -3547,9 +3547,6 @@ hr {
 
 .list-small {
   --list-font-size: var(--type-scale-12); }
-
-.list-medium {
-  --list-font-size: var(--type-scale-14); }
 
 .list-stacked {
   --list-item-padding-y: 8px;
@@ -3606,7 +3603,7 @@ hr {
 
 .menu {
   --menu-nested-margin: 5rem;
-  --menu-font-size: var(--type-scale-16);
+  --menu-font-size: var(--type-scale-14);
   --menu-line-height: 1.3;
   --menu-link-padding-x: 0;
   --menu-link-padding-y: 6px;
@@ -3685,9 +3682,6 @@ hr {
 
 .menu-small {
   --menu-font-size: var(--type-scale-12); }
-
-.menu-medium {
-  --menu-font-size: var(--type-scale-14); }
 
 .menu-semibold .menu-link {
   font-weight: var(--font-weight-semibold); }

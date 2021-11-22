@@ -8,11 +8,11 @@ button,
     @include generate-colors(button);
 
     // vars
-    --button-font-weight: normal;
-    --button-border-radius: var(--radius-base);
+    --button-font-weight: var(--font-weight-semibold);
+    --button-border-radius: var(--radius-large);
     --button-line-height: 1.25;
     --button-padding-y: .4em;
-    --button-padding-x: 18px;
+    --button-padding-x: 24px;
     --button-border-width: 1px;
     --button-border-style: solid;
     --button-opacity: 1;
@@ -105,19 +105,12 @@ button,
 }
 // Size
 .button-large {
-    --button-padding-x: 24px;
+    --button-padding-x: 32px;
 }
 .button-small {
-    --button-padding-x: 14px;
+    --button-padding-x: 16px;
 }
 // Variants
 .button-round {
     --button-border-radius: 99px;
-    --button-padding-x: 22px;
-}
-.button-round.button-small {
-    --button-padding-x: 17px;
-}
-.button-round.button-large {
-    --button-padding-x: 32px;
 }

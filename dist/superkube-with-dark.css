@@ -24,11 +24,11 @@
   --radius-large: 6px;
   --radius-huge: 10px;
   --button-small: 32px;
-  --button-base: 42px;
-  --button-large: 52px;
+  --button-base: 44px;
+  --button-large: 56px;
   --input-small: 36px;
-  --input-base: 42px;
-  --input-large: 52px;
+  --input-base: 44px;
+  --input-large: 56px;
   --level-content: 100;
   --level-page: 200;
   --level-control: 300;
@@ -59,11 +59,9 @@
   --type-scale-20: 20px;
   --type-scale-18: 18px;
   --type-scale-16: 16px;
-  --type-scale-15: 15px;
   --type-scale-14: 14px;
-  --type-scale-13: 13px;
   --type-scale-12: 12px;
-  --type-scale-11: 11px;
+  --type-scale-10: 10px;
   --palette-transparent: transparent;
   --palette-black: #04131C;
   --palette-white: #ffffff;
@@ -1022,7 +1020,7 @@ h6 {
   h5 a:hover,
   h6 a:hover {
     color: inherit !important;
-    opacity: 0.7;
+    opacity: 0.75;
     text-decoration: underline; }
 
 h1 {
@@ -1111,7 +1109,7 @@ table {
   border-spacing: 0;
   width: 100%;
   empty-cells: show;
-  font-size: 15px;
+  font-size: 16px;
   line-height: 1.5; }
 
 td,
@@ -1216,7 +1214,7 @@ sup {
 
 label {
   display: block;
-  font-size: 15px;
+  font-size: 16px;
   color: var(--form-label-color);
   margin-bottom: 0.15em;
   font-weight: normal; }
@@ -1228,7 +1226,7 @@ label {
     font-weight: normal;
     letter-spacing: 0; }
   label.checkbox {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.5;
     cursor: pointer;
     color: inherit; }
@@ -1380,7 +1378,7 @@ figure figcaption {
 
 .badge {
   --badge-font-weight: var(--font-weight-semibold);
-  --badge-font-size: var(--type-scale-11);
+  --badge-font-size: var(--type-scale-12);
   --badge-border-radius: 99px;
   --badge-padding: 1px 4px;
   --badge-border-width: 1px;
@@ -1602,11 +1600,11 @@ a.brand:hover {
 
 button,
 .button {
-  --button-font-weight: normal;
-  --button-border-radius: var(--radius-base);
+  --button-font-weight: var(--font-weight-semibold);
+  --button-border-radius: var(--radius-large);
   --button-line-height: 1.25;
   --button-padding-y: .4em;
-  --button-padding-x: 18px;
+  --button-padding-x: 24px;
   --button-border-width: 1px;
   --button-border-style: solid;
   --button-opacity: 1;
@@ -1641,7 +1639,7 @@ button,
   background-image: var(--button-background-image); }
   button,
   .button {
-    --button-font-size: 15px;
+    --button-font-size: 16px;
     --button-line-height: 1.25; }
   button-small,
   .button-small {
@@ -1749,20 +1747,13 @@ button,
     margin-right: -3px; }
 
 .button-large {
-  --button-padding-x: 24px; }
+  --button-padding-x: 32px; }
 
 .button-small {
-  --button-padding-x: 14px; }
+  --button-padding-x: 16px; }
 
 .button-round {
-  --button-border-radius: 99px;
-  --button-padding-x: 22px; }
-
-.button-round.button-small {
-  --button-padding-x: 17px; }
-
-.button-round.button-large {
-  --button-padding-x: 32px; }
+  --button-border-radius: 99px; }
 
 .card {
   position: relative; }
@@ -2748,7 +2739,7 @@ button,
   .order-6-sm {
     order: 6; } }
 
-.heading-eyebrow {
+.heading-tagline {
   text-transform: uppercase;
   letter-spacing: 0.05em; }
 
@@ -2798,8 +2789,8 @@ button,
   --heading-font-size: 16px;
   --heading-line-height: 1.5; }
 
-.heading-eyebrow {
-  --heading-font-size: 11px;
+.heading-tagline {
+  --heading-font-size: 10px;
   --heading-line-height: 1.5; }
 
 @media only screen and (max-width: 767px) {
@@ -2832,7 +2823,7 @@ button,
   --hint-color: var(--palette-black-50);
   --hint-font-weight: normal;
   --hint-font-style: normal;
-  font-size: 13px;
+  font-size: 12px;
   line-height: 1.5;
   font-weight: var(--hint-font-weight);
   font-style: var(--hint-font-style);
@@ -3068,13 +3059,13 @@ textarea,
   select,
   textarea,
   .input {
-    --input-font-size: 15px;
+    --input-font-size: 16px;
     --input-line-height: 1.5; }
   input-small,
   select-small,
   textarea-small,
   .input-small {
-    --input-font-size: 15px;
+    --input-font-size: 16px;
     --input-line-height: 1.5; }
   input-large,
   select-large,
@@ -3476,7 +3467,7 @@ hr {
   --list-mark-color: var(--palette-white-80); }
 
 .list {
-  --list-font-size: var(--type-scale-15);
+  --list-font-size: var(--type-scale-16);
   --list-line-height: 1.3;
   --list-item-space: 0;
   --list-item-padding-y: 6px;
@@ -3521,7 +3512,7 @@ hr {
     margin-top: -2px; }
 
 .list-small {
-  --list-font-size: var(--type-scale-13); }
+  --list-font-size: var(--type-scale-12); }
 
 .list-medium {
   --list-font-size: var(--type-scale-14); }
@@ -3581,7 +3572,7 @@ hr {
 
 .menu {
   --menu-nested-margin: 5rem;
-  --menu-font-size: var(--type-scale-15);
+  --menu-font-size: var(--type-scale-16);
   --menu-line-height: 1.3;
   --menu-link-padding-x: 0;
   --menu-link-padding-y: 6px;
@@ -3659,7 +3650,7 @@ hr {
     margin-top: -2px; }
 
 .menu-small {
-  --menu-font-size: var(--type-scale-13); }
+  --menu-font-size: var(--type-scale-12); }
 
 .menu-medium {
   --menu-font-size: var(--type-scale-14); }
@@ -3808,7 +3799,7 @@ hr {
     background-color: var(--nav-link-hover-background-color); }
 
 .nav-small {
-  --nav-font-size: var(--type-scale-13); }
+  --nav-font-size: var(--type-scale-12); }
 
 .nav-semibold .nav-link {
   font-weight: var(--font-weight-semibold); }
@@ -7143,15 +7134,7 @@ hr {
   --text-line-height: 1.5; }
 
 .text-small {
-  --text-font-size: 13px;
-  --text-line-height: 1.5; }
-
-.text-tiny {
   --text-font-size: 12px;
-  --text-line-height: 1.5; }
-
-.text-micro {
-  --text-font-size: 11px;
   --text-line-height: 1.5; }
 
 .text-dark {

@@ -5,7 +5,7 @@
 
     // vars
     --menu-nested-margin: 5rem;
-    --menu-font-size: var(--type-scale-15);
+    --menu-font-size: var(--type-scale-16);
     --menu-line-height: 1.3;
     --menu-link-padding-x: 0;
     --menu-link-padding-y: 6px;
@@ -67,7 +67,7 @@
 }
 // Scales
 .menu-small {
-    --menu-font-size: var(--type-scale-13);
+    --menu-font-size: var(--type-scale-12);
 }
 .menu-medium {
     --menu-font-size: var(--type-scale-14);

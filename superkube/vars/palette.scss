@@ -1,103 +1,103 @@
 // =Palette
 $palette: map-extend($palette, (
     transparent: transparent,
-    black: #04131C,
+    black: #030612,
     white: #ffffff,
     primary: (
-        darker: #383FAE,
-        dark: #474AD7,
-        base: #5454F7,
-        light: #BBBBFC,
-        lighter: #DDDDFD,
-        lightest: #F3F3FE
+        darker: #2048AA,
+        dark: #285BD8,
+        base: #2F6BFC,
+        light: #B6CBFE,
+        lighter: #DCE6FF,
+        lightest: #F0F4FF
     ),
     neutral: (
-        darker: #1F2F39,
-        dark: #3A4852,
-        base: #768187,
-        mid: #CDD1D3,
-        light: #E5E7E8,
-        lighter: #EDEFF0,
-        lightest: #F3F5F6
+        darker: #2A2D3C,
+        dark: #3F424A,
+        base: #7C7C83,
+        mid: #CDCDD0,
+        light: #E6E6E9,
+        lighter: #EDEDEE,
+        lightest: #F5F5F6
     ),
     negative: (
-        darker: #A52149,
-        dark: #D62454,
-        base: #FC275D,
-        light: #FEB4C7,
-        lighter: #FFDBE4,
-        lightest: #FFF4F7
+        darker: #A02146,
+        dark: #D02956,
+        base: #F53063,
+        light: #FCB7C9,
+        lighter: #FEDCE5,
+        lightest: #FEF4F7
     ),
     positive: (
-        darker: #01825F,
-        dark: #009B6C,
-        base: #00BB7E,
-        light: #A6E7D2,
-        lighter: #D4F4E9,
-        lightest: #EDFAF6
+        darker: #237457,
+        dark: #2A8D66,
+        base: #35AF7C,
+        light: #AEDFCB,
+        lighter: #DDF2E9,
+        lightest: #F1F9F6
     ),
     active: (
-        darker: #383FAE,
-        dark: #474AD7,
-        base: #5454F7,
-        light: #BBBBFC,
-        lighter: #DDDDFD,
-        lightest: #F3F3FE
+        darker: #2048AA,
+        dark: #285BD8,
+        base: #2F6BFC,
+        light: #B6CBFE,
+        lighter: #DCE6FF,
+        lightest: #F0F4FF
     ),
     red: (
-        darker: #A52149,
-        dark: #D62454,
-        base: #FC275D,
-        light: #FEB4C7,
-        lighter: #FFDBE4,
-        lightest: #FFF4F7
+        darker: #A02146,
+        dark: #D02956,
+        base: #F53063,
+        light: #FCB7C9,
+        lighter: #FEDCE5,
+        lightest: #FEF4F7
     ),
     orange: (
-        darker: #A7580D,
-        dark: #D96C05,
-        base: #FF7B00,
-        light: #FFCA99,
-        lighter: #FFE5CC,
-        lightest: #FFF6ED
+        darker: #985A07,
+        dark: #C97703,
+        base: #FB9300,
+        light: #FDD499,
+        lighter: #FEE9CC,
+        lightest: #FFF7ED
     ),
     yellow: (
-        darker: #926C01,
-        dark: #BD9A07,
-        base: #FCCE20,
-        light: #FDE279,
-        lighter: #FEF0BC,
-        lightest: #FFFBEF
+        darker: #7F6C22,
+        dark: #B19210,
+        base: #FBD333,
+        light: #FCE27A,
+        lighter: #FDF1C1,
+        lightest: #FFFCF1
     ),
     green: (
-        darker: #01825F,
-        dark: #009B6C,
-        base: #00BB7E,
-        light: #A6E7D2,
-        lighter: #D4F4E9,
-        lightest: #EDFAF6
+        darker: #237457,
+        dark: #2A8D66,
+        base: #35AF7C,
+        light: #AEDFCB,
+        lighter: #DDF2E9,
+        lightest: #F1F9F6
     ),
     blue: (
-        darker: #3062B2,
-        dark: #3D79DD,
-        base: #488BFE,
-        light: #B6D1FF,
-        lighter: #DAE8FF,
-        lightest: #F2F7FF
+        darker: #2048AA,
+        dark: #285BD8,
+        base: #2F6BFC,
+        light: #B6CBFE,
+        lighter: #DCE6FF,
+        lightest: #F0F4FF
     ),
     indigo: (
-        darker: #383FAE,
-        dark: #474AD7,
-        base: #5454F7,
-        light: #BBBBFC,
-        lighter: #DDDDFD,
-        lightest: #F3F3FE
+        darker: #2120AA,
+        dark: #2A27D8,
+        base: #312EFC,
+        light: #B7B6FE,
+        lighter: #DCDCFF,
+        lightest: #F0F0FF
     ),
     violet: (
-        darker: #6011AA,
-        dark: #7C0FD2,
-        base: #920EF1,
-        light: #D9ABFA,
-        lighter: #EDD6FD,
-        lightest: #F9F3FE
+        darker: #5E1DA5,
+        dark: #7A24D1,
+        base: #8F2AF4,
+        light: #D8B5FB,
+        lighter: #ECDBFD,
+        lightest: #F9F4FE
     )
 ));

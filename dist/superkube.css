@@ -1005,14 +1005,17 @@ figure figcaption {
 .align-right {
   text-align: right; }
 
+.align-top {
+  vertical-align: top; }
+
+.align-middle {
+  vertical-align: middle; }
+
 .align-baseline {
   vertical-align: baseline; }
 
 .align-bottom {
   vertical-align: bottom; }
-
-.align-middle {
-  vertical-align: middle; }
 
 @media only screen and (max-width: 767px) {
   .align-left-sm {
@@ -1021,14 +1024,14 @@ figure figcaption {
     text-align: center; }
   .align-right-sm {
     text-align: right; }
-  .align-baseline-sm {
-    vertical-align: baseline; }
+  .align-top-sm {
+    vertical-align: top; }
   .align-middle-sm {
     vertical-align: middle; }
+  .align-baseline-sm {
+    vertical-align: baseline; }
   .align-bottom-sm {
-    vertical-align: bottom; }
-  .align-top-sm {
-    vertical-align: top; } }
+    vertical-align: bottom; } }
 
 .a-left {
   text-align: left; }

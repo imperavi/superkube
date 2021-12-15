@@ -16,5 +16,38 @@ $palette-dark: map-extend($palette-dark, (
         light: #E8E8E8,
         lighter: #ECECEC,
         lightest: #F3F3F4
+    ),
+    primary: (
+        base: #546FFD
+    ),
+    negative: (
+        base: #EE4D77
+    ),
+    positive: (
+        base: #34CB8C
+    ),
+    active: (
+        base: #546FFD
+    ),
+    red: (
+        base: #EE4D77
+    ),
+    orange: (
+        base: #F2AD4A
+    ),
+    yellow: (
+        base: #F3D55E
+    ),
+    green: (
+        base: #34CB8C
+    ),
+    blue: (
+        base: #546FFD
+    ),
+    indigo: (
+        base: #4C4AFD
+    ),
+    violet: (
+        base: #793BF7
     )
 ));

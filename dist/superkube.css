@@ -949,6 +949,7 @@ figure figcaption {
   --alert-border-radius: var(--radius-base);
   --alert-border-width: 1px;
   --alert-border-style: solid;
+  --alert-box-shadow: none;
   --alert-font-size: var(--type-scale-14);
   --alert-line-height: var(--body-text-line);
   --alert-close-size: 14px;
@@ -960,6 +961,7 @@ figure figcaption {
   border-radius: var(--alert-border-radius);
   border-style: var(--alert-border-style);
   border-width: var(--alert-border-width);
+  box-shadow: var(--alert-box-shadow);
   margin-bottom: var(--type-space-tag-to-tag);
   background-color: var(--alert-background-color);
   border-color: var(--alert-border-color);

@@ -9,6 +9,8 @@ button,
     --button-font-weight: var(--font-weight-semibold);
     --button-border-radius: var(--radius-large);
     --button-line-height: 1.25;
+    --button-letter-spacing: 0;
+    --button-text-transform: none;
     --button-padding-y: .4em;
     --button-padding-x: 20px;
     --button-border-width: 1px;
@@ -46,6 +48,8 @@ button,
     font-weight: var(--button-font-weight);
     font-size: var(--button-font-size);
     line-height: var(--button-line-height);
+    letter-spacing: var(--button-letter-spacing);
+    text-transform: var(--button-text-transform);
     border-radius: var(--button-border-radius);
     padding-top: var(--button-padding-y);
     padding-bottom: var(--button-padding-y);

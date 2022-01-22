@@ -1,5 +1,8 @@
 // =Hint
 .hint {
+    // generate
+    @include generate-type(hint);
+
     // colors
     --hint-color: var(--palette-black-50);
 
@@ -8,11 +11,16 @@
     --hint-font-style: normal;
 
     // props
-    font-size: type-size(form, hint);
-    line-height: type-line(form, hint);
+    font-size: var(--hint-font-size);
     font-weight: var(--hint-font-weight);
     font-style: var(--hint-font-style);
+    line-height: var(--hint-line-height);
     color: var(--hint-color);
+}
+label .hint {
+    text-transform: none;
+    font-weight: normal;
+    letter-spacing: 0;
 }
 div.hint {
     margin-top: 2px;

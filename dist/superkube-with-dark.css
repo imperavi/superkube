@@ -1273,21 +1273,6 @@ label {
   color: var(--form-label-color);
   margin-bottom: 0.15em;
   font-weight: normal; }
-  label.checkbox,
-  label .hint,
-  label .success,
-  label .error {
-    text-transform: none;
-    font-weight: normal;
-    letter-spacing: 0; }
-  label.checkbox {
-    font-size: 15px;
-    line-height: 1.5;
-    cursor: pointer;
-    color: inherit; }
-  label.checkbox.disabled {
-    opacity: 0.5;
-    cursor: default; }
 
 figure > img,
 figure > iframe,
@@ -2179,6 +2164,32 @@ button,
   margin-bottom: 0;
   margin-right: 1em; }
 
+label.checkbox,
+.checkbox {
+  --checkbox-font-weight: normal;
+  --checkbox-font-style: normal;
+  --checkbox-text-transform: none;
+  --checkbox-letter-spacing: 0;
+  text-transform: none;
+  font-weight: normal;
+  letter-spacing: 0;
+  font-size: var(--checkbox-font-size);
+  line-height: var(--checkbox-line-height);
+  font-weight: var(--checkbox-font-weight);
+  font-style: var(--checkbox-font-style);
+  text-transform: var(--checkbox-text-transform);
+  letter-spacing: var(--checkbox-letter-spacing);
+  cursor: pointer;
+  color: inherit; }
+  label.checkbox,
+  .checkbox {
+    --checkbox-font-size: 15px;
+    --checkbox-line-height: 1.5; }
+  label.checkbox.disabled,
+  .checkbox.disabled {
+    opacity: 0.5;
+    cursor: default; }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -2925,11 +2936,19 @@ button,
   --hint-color: var(--palette-black-50);
   --hint-font-weight: normal;
   --hint-font-style: normal;
-  font-size: 13px;
-  line-height: 1.5;
+  font-size: var(--hint-font-size);
   font-weight: var(--hint-font-weight);
   font-style: var(--hint-font-style);
+  line-height: var(--hint-line-height);
   color: var(--hint-color); }
+  .hint {
+    --hint-font-size: 13px;
+    --hint-line-height: 1.5; }
+
+label .hint {
+  text-transform: none;
+  font-weight: normal;
+  letter-spacing: 0; }
 
 div.hint {
   margin-top: 2px; }

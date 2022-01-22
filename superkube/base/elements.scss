@@ -320,25 +320,6 @@ label {
     color: var(--form-label-color);
     margin-bottom: 0.15em;
     font-weight: normal;
-
-    &.checkbox,
-    & .hint,
-    & .success,
-    & .error {
-        text-transform: none;
-        font-weight: normal;
-        letter-spacing: 0;
-    }
-    &.checkbox {
-        font-size: type-size(form, checkbox);
-        line-height: type-line(form, checkbox);
-        cursor: pointer;
-        color: inherit;
-    }
-    &.checkbox.disabled {
-        opacity: 0.5;
-        cursor: default;
-    }
 }
 
 // =Embed

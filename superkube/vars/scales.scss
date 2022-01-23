@@ -28,7 +28,6 @@ $scales: map-extend($scales, (
             quote: 18px 1.5,
             quotecite: 14px 1.5,
             table: 15px 1.5,
-            pre: 14px 1.5,
             figcaption: 12px 1.5
         ),
         text: (
@@ -72,6 +71,9 @@ $scales: map-extend($scales, (
         ),
         hint: (
             default: 13px 1.5
+        ),
+        code: (
+            default: 14px 1.5
         ),
         list: (
             default: 15px 1.3,

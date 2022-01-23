@@ -139,6 +139,13 @@ $colors: map-extend($colors, (
             disabled-color: var(--palette-white-70)
         )
     ),
+    code: (
+        default: (
+            background-color: var(--palette-neutral-lightest),
+            color: var(--palette-neutral-darker),
+            border-color: var(--palette-transparent)
+        )
+    ),
     heading: (
         default: var(--palette-black),
         moderated: var(--palette-black-70),
@@ -391,13 +398,6 @@ $colors: map-extend($colors, (
     placeholder: (
         default: var(--palette-black-40),
         light: var(--palette-white-50)
-    ),
-    pre: (
-        default: (
-            background-color: var(--palette-neutral-lightest),
-            color: var(--palette-neutral-darker),
-            border-color: var(--palette-transparent)
-        )
     ),
     shadow: (
         100: (

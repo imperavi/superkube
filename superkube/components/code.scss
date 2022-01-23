@@ -1,0 +1,36 @@
+// =Code
+pre,
+.code {
+    // generate
+    @include generate-type(code);
+    @include generate-colors(code);
+
+    // params
+    --code-font-family: var(--font-mono);
+    --code-padding: 1em 1em 0.9em 1em;
+    --code-border-radius: var(--radius-base);
+    --code-border-width: 1px;
+    --code-border-style: solid;
+
+    // props
+    overflow: auto;
+    white-space: pre;
+    font-family: var(--code-font-family);
+    font-size: var(--code-font-size);
+    line-height: var(--code-line-height);
+    padding: var(--code-padding);
+    border-radius: var(--code-border-radius);
+    border-width: var(--code-border-width);
+    border-style: var(--code-border-style);
+    border-color: var(--code-border-color);
+    background-color: var(--code-background-color);
+    color: var(--code-color);
+
+    code {
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        display: block;
+        line-height: inherit;
+    }
+}

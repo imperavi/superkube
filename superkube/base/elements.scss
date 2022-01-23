@@ -134,38 +134,6 @@ dd + dt {
     margin-top: 0.25em;
 }
 
-// =Pre
-pre {
-    // colors
-    --pre-color: var(--pre-default-color);
-    --pre-border-color: var(--pre-default-border-color);
-    --pre-background-color: var(--pre-default-background-color);
-
-    // vars
-    --pre-padding: 1em 1em 0.9em 1em;
-
-    // props
-    overflow: auto;
-    white-space: pre;
-    font-family: var(--font-mono);
-    font-size: type-size(base, pre);
-    line-height: type-line(base, pre);
-    padding: var(--pre-padding);
-    border-radius: var(--radius-base);
-    border-width: 1px;
-    border-style: solid;
-    border-color: var(--pre-border-color);
-    background-color: var(--pre-background-color);
-    color: var(--pre-color);
-}
-pre code {
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    display: block;
-    line-height: inherit;
-}
-
 // =Quote
 blockquote {
     font-style: italic;

@@ -139,24 +139,11 @@ $colors-dark: map-extend($colors-dark, (
             disabled-color: var(--palette-black-80)
         )
     ),
-    caption: (
+    code: (
         default: (
-            color: var(--palette-white-60)
-        ),
-        primary: (
-            color: var(--palette-primary-base)
-        ),
-        positive: (
-            color: var(--palette-positive-base)
-        ),
-        important: (
-            color: var(--palette-negative-base)
-        ),
-        dark: (
-            color: var(--palette-white)
-        ),
-        light: (
-            color: var(--palette-white)
+            background-color: var(--palette-surface-300),
+            color: var(--palette-white-80),
+            border-color: var(--palette-transparent)
         )
     ),
     heading: (
@@ -410,13 +397,6 @@ $colors-dark: map-extend($colors-dark, (
     placeholder: (
         default: var(--palette-white-50),
         light: var(--palette-white-50)
-    ),
-    pre: (
-        default: (
-            background-color: var(--palette-surface-300),
-            color: var(--palette-white-80),
-            border-color: var(--palette-transparent)
-        )
     ),
     shadow: (
         100: none,

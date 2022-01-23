@@ -1887,6 +1887,32 @@ button,
     margin-left: initial;
     margin-right: initial; } }
 
+label.checkbox,
+.checkbox {
+  --checkbox-font-weight: normal;
+  --checkbox-font-style: normal;
+  --checkbox-text-transform: none;
+  --checkbox-letter-spacing: 0;
+  text-transform: none;
+  font-weight: normal;
+  letter-spacing: 0;
+  font-size: var(--checkbox-font-size);
+  line-height: var(--checkbox-line-height);
+  font-weight: var(--checkbox-font-weight);
+  font-style: var(--checkbox-font-style);
+  text-transform: var(--checkbox-text-transform);
+  letter-spacing: var(--checkbox-letter-spacing);
+  cursor: pointer;
+  color: inherit; }
+  label.checkbox,
+  .checkbox {
+    --checkbox-font-size: 15px;
+    --checkbox-line-height: 1.5; }
+  label.checkbox.disabled,
+  .checkbox.disabled {
+    opacity: 0.5;
+    cursor: default; }
+
 .close {
   --close-size: 1em;
   font-family: 'Supericons' !important;
@@ -2163,32 +2189,6 @@ button,
   display: inline-block;
   margin-bottom: 0;
   margin-right: 1em; }
-
-label.checkbox,
-.checkbox {
-  --checkbox-font-weight: normal;
-  --checkbox-font-style: normal;
-  --checkbox-text-transform: none;
-  --checkbox-letter-spacing: 0;
-  text-transform: none;
-  font-weight: normal;
-  letter-spacing: 0;
-  font-size: var(--checkbox-font-size);
-  line-height: var(--checkbox-line-height);
-  font-weight: var(--checkbox-font-weight);
-  font-style: var(--checkbox-font-style);
-  text-transform: var(--checkbox-text-transform);
-  letter-spacing: var(--checkbox-letter-spacing);
-  cursor: pointer;
-  color: inherit; }
-  label.checkbox,
-  .checkbox {
-    --checkbox-font-size: 15px;
-    --checkbox-line-height: 1.5; }
-  label.checkbox.disabled,
-  .checkbox.disabled {
-    opacity: 0.5;
-    cursor: default; }
 
 .grid {
   display: grid;

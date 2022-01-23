@@ -1,0 +1,29 @@
+//=Checkbox
+label.checkbox,
+.checkbox {
+    // generate
+    @include generate-type(checkbox);
+
+    // vars
+    --checkbox-font-weight: normal;
+    --checkbox-font-style: normal;
+    --checkbox-text-transform: none;
+    --checkbox-letter-spacing: 0;
+
+    text-transform: none;
+    font-weight: normal;
+    letter-spacing: 0;
+    font-size: var(--checkbox-font-size);
+    line-height: var(--checkbox-line-height);
+    font-weight: var(--checkbox-font-weight);
+    font-style: var(--checkbox-font-style);
+    text-transform: var(--checkbox-text-transform);
+    letter-spacing: var(--checkbox-letter-spacing);
+    cursor: pointer;
+    color: inherit;
+
+    &.disabled {
+        opacity: 0.5;
+        cursor: default;
+    }
+}

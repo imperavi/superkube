@@ -206,9 +206,9 @@ $colors: map-extend($colors, (
     ),
     input-addon: (
         default: (
-            item-color: var(--palette-black),
-            item-background-color: var(--palette-transparent),
-            item-border-color: var(--palette-black-25)
+            color: var(--palette-black-60),
+            background-color: var(--palette-transparent),
+            border-color: var(--palette-black-25)
         )
     ),
     label: (

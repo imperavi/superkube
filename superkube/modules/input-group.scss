@@ -1,0 +1,21 @@
+// =Input-Group
+.input-group {
+    display: flex;
+
+    & input,
+    & select {
+        flex: 1;
+        margin-left: -1px;
+        margin-right: -1px;
+    }
+    & > {
+        :not(:last-child) {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        :not(:first-child) {
+            border-top-left-radius: 0;
+            border-bottom-left-radius: 0;
+        }
+    }
+}

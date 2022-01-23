@@ -1,61 +1,25 @@
 // =Input-Addon
 .input-addon {
     // generate
-    @include generate-type(input-addon, input-addon-item);
+    @include generate-type(input-addon);
     @include generate-colors(input-addon);
 
-    // vars
-    --input-addon-item-padding: 0 0.85em;
-    --input-addon-item-border-radius: var(--radius-base);
-
-    // scales
-    $input-scale: scale(input);
-    @each $name, $value in $input-scale {
-        @if $name == base {
-            --input-addon-height: $value;
-        }
-        @else {
-            &-#{$name} {
-                --input-addon-height: $value;
-            }
-        }
-    }
+    // params
+    --input-addon-padding: 0 0.85em;
+    --input-addon-border-radius: var(--radius-base);
 
     // props
-    display: flex;
-    height: var(--input-addon-height);
-
-    & input,
-    & select {
-        flex: 1;
-        margin-left: -1px;
-        margin-right: -1px;
-    }
-    .input-addon-item {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        vertical-align: middle;
-        text-align: center;
-        font-size: var(--input-addon-item-font-size);
-        padding: var(--input-addon-item-padding);
-        border-radius: var(--input-addon-item-border-radius);
-        color: var(--input-addon-item-color);
-        background-color: var(--input-addon-item-background-color);
-        border-width: 1px;
-        border-style: solid;
-        border-color: var(--input-addon-item-border-color);
-    }
-
-
-    & > {
-        :not(:last-child) {
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-        }
-        :not(:first-child) {
-            border-top-left-radius: 0;
-            border-bottom-left-radius: 0;
-        }
-    }
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: middle;
+    text-align: center;
+    font-size: var(--input-addon-font-size);
+    padding: var(--input-addon-padding);
+    border-radius: var(--input-addon-border-radius);
+    color: var(--input-addon-color);
+    background-color: var(--input-addon-background-color);
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--input-addon-border-color);
 }

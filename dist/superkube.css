@@ -2968,30 +2968,6 @@ a.tag:hover {
 .container-crop {
   overflow: hidden; }
 
-.edges-off {
-  padding-left: 0;
-  padding-right: 0; }
-
-.edges {
-  padding-left: 5rem;
-  padding-right: 5rem; }
-
-@media only screen and (max-width: 1023px) {
-  .edges-off-md {
-    padding-left: 0;
-    padding-right: 0; }
-  .edges-md {
-    padding-left: 5rem;
-    padding-right: 5rem; } }
-
-@media only screen and (max-width: 767px) {
-  .edges-off-sm {
-    padding-left: 0;
-    padding-right: 0; }
-  .edges-sm {
-    padding-left: 5rem;
-    padding-right: 5rem; } }
-
 .grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -4086,6 +4062,30 @@ a.tag:hover {
   width: 1px;
   padding: 0;
   border: 0; }
+
+.edges-off {
+  padding-left: 0;
+  padding-right: 0; }
+
+.edges {
+  padding-left: 5rem;
+  padding-right: 5rem; }
+
+@media only screen and (max-width: 1023px) {
+  .edges-off-md {
+    padding-left: 0;
+    padding-right: 0; }
+  .edges-md {
+    padding-left: 5rem;
+    padding-right: 5rem; } }
+
+@media only screen and (max-width: 767px) {
+  .edges-off-sm {
+    padding-left: 0;
+    padding-right: 0; }
+  .edges-sm {
+    padding-left: 5rem;
+    padding-right: 5rem; } }
 
 .flex {
   display: flex; }

@@ -11,13 +11,11 @@ label.checkbox,
     --checkbox-letter-spacing: 0;
     --checkbox-spacing: 1rem;
 
-    text-transform: none;
-    font-weight: normal;
-    letter-spacing: 0;
+    // props
     font-size: var(--checkbox-font-size);
-    line-height: var(--checkbox-line-height);
     font-weight: var(--checkbox-font-weight);
     font-style: var(--checkbox-font-style);
+    line-height: var(--checkbox-line-height);
     text-transform: var(--checkbox-text-transform);
     letter-spacing: var(--checkbox-letter-spacing);
     cursor: pointer;

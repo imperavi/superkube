@@ -159,11 +159,6 @@ $colors-dark: map-extend($colors-dark, (
             color: var(--palette-white)
         )
     ),
-    form: (
-        label: (
-            color: var(--palette-white-90)
-        )
-    ),
     heading: (
         default: var(--palette-white-95),
         moderated: var(--palette-white-80),
@@ -234,6 +229,11 @@ $colors-dark: map-extend($colors-dark, (
         item-color: var(--palette-white-90),
         item-background-color: var(--palette-white-15),
         item-border-color: var(--palette-white-40)
+    ),
+    label: (
+        default: (
+            color: var(--palette-white-90)
+        )
     ),
     line: (
         default: var(--palette-white-30)

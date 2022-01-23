@@ -303,7 +303,6 @@
   --button-dark-disabled-background-color: var(--palette-black-70);
   --button-dark-disabled-border-color: var(--palette-transparent);
   --button-dark-disabled-color: var(--palette-white-70);
-  --form-label-color: var(--palette-neutral-darker);
   --heading-default: var(--palette-black);
   --heading-moderated: var(--palette-black-70);
   --heading-muted: var(--palette-black-50);
@@ -350,6 +349,7 @@
   --input-addon-default-item-color: var(--palette-black);
   --input-addon-default-item-background-color: var(--palette-transparent);
   --input-addon-default-item-border-color: var(--palette-black-25);
+  --label-default-color: var(--palette-neutral-darker);
   --line-default: var(--palette-black-10);
   --link-default-color: var(--palette-active-dark);
   --link-default-hover-color: var(--palette-negative-dark);
@@ -893,13 +893,6 @@ sub {
 
 sup {
   vertical-align: super; }
-
-label {
-  display: block;
-  font-size: 15px;
-  color: var(--form-label-color);
-  margin-bottom: 0.15em;
-  font-weight: normal; }
 
 figure > img,
 figure > iframe,
@@ -1521,13 +1514,10 @@ label.checkbox,
   --checkbox-text-transform: none;
   --checkbox-letter-spacing: 0;
   --checkbox-spacing: 1rem;
-  text-transform: none;
-  font-weight: normal;
-  letter-spacing: 0;
   font-size: var(--checkbox-font-size);
-  line-height: var(--checkbox-line-height);
   font-weight: var(--checkbox-font-weight);
   font-style: var(--checkbox-font-style);
+  line-height: var(--checkbox-line-height);
   text-transform: var(--checkbox-text-transform);
   letter-spacing: var(--checkbox-letter-spacing);
   cursor: pointer;
@@ -2998,6 +2988,27 @@ input[type="checkbox"] {
 
 .item {
   position: relative; }
+
+label {
+  --label-font-weight: normal;
+  --label-font-style: normal;
+  --label-text-transform: none;
+  --label-letter-spacing: 0;
+  --label-margin-bottom: 0.15em;
+  display: block;
+  font-size: var(--label-font-size);
+  font-weight: var(--label-font-weight);
+  font-style: var(--label-font-style);
+  line-height: var(--label-line-height);
+  text-transform: var(--label-text-transform);
+  letter-spacing: var(--label-letter-spacing);
+  color: var(--label-color);
+  margin-bottom: var(--label-margin-bottom); }
+  label {
+    --label-font-size: 15px;
+    --label-line-height: 1.5; }
+  label {
+    --label-color: var(--label-default-color); }
 
 .line,
 hr {

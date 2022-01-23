@@ -64,8 +64,8 @@ $scales: map-extend($scales, (
             default: 15px 1.25,
             large: 18px 1.25
         ),
-        form: (
-            label: 15px 1.5
+        label: (
+            default: 15px 1.5
         ),
         checkbox: (
             default: 15px 1.5

@@ -1544,6 +1544,15 @@ label.checkbox,
 .checkbox + .checkbox {
   margin-top: 1rem; }
 
+.form-checkboxes,
+.checkbox-group {
+  --checkbox-group-spacing: 1em; }
+  .form-checkboxes .checkbox,
+  .checkbox-group .checkbox {
+    display: inline-block;
+    margin-bottom: 0;
+    margin-right: var(--checkbox-group-spacing); }
+
 .close {
   --close-size: 1em;
   font-family: 'Supericons' !important;
@@ -1815,11 +1824,6 @@ label.checkbox,
     margin-bottom: var(--form-item-space); }
   .form .form-item .form-item {
     margin-bottom: 0; }
-
-.form-checkboxes label.checkbox {
-  display: inline-block;
-  margin-bottom: 0;
-  margin-right: 1em; }
 
 .grid {
   display: grid;

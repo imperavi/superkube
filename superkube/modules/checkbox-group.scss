@@ -1,0 +1,13 @@
+//=Checkbox-Group
+.form-checkboxes,
+.checkbox-group {
+
+    // params
+    --checkbox-group-spacing: 1em;
+
+    .checkbox {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-right: var(--checkbox-group-spacing);
+    }
+}

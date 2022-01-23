@@ -1520,7 +1520,7 @@ label.checkbox,
   --checkbox-font-style: normal;
   --checkbox-text-transform: none;
   --checkbox-letter-spacing: 0;
-  --checkbox-letter-spacing: 0;
+  --checkbox-spacing: 1rem;
   text-transform: none;
   font-weight: normal;
   letter-spacing: 0;
@@ -1540,9 +1540,9 @@ label.checkbox,
   .checkbox.disabled {
     opacity: 0.5;
     cursor: default; }
-
-.checkbox + .checkbox {
-  margin-top: 1rem; }
+  label.checkbox + .checkbox,
+  .checkbox + .checkbox {
+    margin-top: var(--checkbox-spacing); }
 
 .form-checkboxes,
 .checkbox-group {

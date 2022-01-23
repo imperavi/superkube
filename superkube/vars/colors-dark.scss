@@ -235,38 +235,6 @@ $colors-dark: map-extend($colors-dark, (
         item-background-color: var(--palette-white-15),
         item-border-color: var(--palette-white-40)
     ),
-    label: (
-        default: (
-            background-color: var(--palette-black),
-            border-color: var(--palette-transparent),
-            color: var(--palette-neutral-lightest)
-        ),
-        primary: (
-            background-color: var(--palette-primary-dark),
-            border-color: var(--palette-transparent),
-            color: var(--palette-primary-lightest)
-        ),
-        positive: (
-            background-color: var(--palette-positive-dark),
-            border-color: var(--palette-transparent),
-            color: var(--palette-positive-lightest)
-        ),
-        important: (
-            background-color: var(--palette-negative-dark),
-            border-color: var(--palette-transparent),
-            color: var(--palette-negative-lightest)
-        ),
-        dark: (
-            background-color: var(--palette-white),
-            border-color: var(--palette-transparent),
-            color: var(--palette-black)
-        ),
-        light: (
-            background-color: var(--palette-white),
-            border-color: var(--palette-transparent),
-            color: var(--palette-black)
-        )
-    ),
     line: (
         default: var(--palette-white-30)
     ),
@@ -462,6 +430,38 @@ $colors-dark: map-extend($colors-dark, (
         default: (
             border-color: var(--palette-white-20),
             stripe-color: var(--palette-white-5)
+        )
+    ),
+    tag: (
+        default: (
+            background-color: var(--palette-black),
+            border-color: var(--palette-transparent),
+            color: var(--palette-neutral-lightest)
+        ),
+        primary: (
+            background-color: var(--palette-primary-dark),
+            border-color: var(--palette-transparent),
+            color: var(--palette-primary-lightest)
+        ),
+        positive: (
+            background-color: var(--palette-positive-dark),
+            border-color: var(--palette-transparent),
+            color: var(--palette-positive-lightest)
+        ),
+        important: (
+            background-color: var(--palette-negative-dark),
+            border-color: var(--palette-transparent),
+            color: var(--palette-negative-lightest)
+        ),
+        dark: (
+            background-color: var(--palette-white),
+            border-color: var(--palette-transparent),
+            color: var(--palette-black)
+        ),
+        light: (
+            background-color: var(--palette-white),
+            border-color: var(--palette-transparent),
+            color: var(--palette-black)
         )
     ),
     text: (

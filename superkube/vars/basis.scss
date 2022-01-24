@@ -26,7 +26,7 @@ $palette-dark: () !default;
 // =Basis
 :root {
     // Fonts
-    --font-text: Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Helvetica Neue', Arial, sans-serif;
+    --font-text: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
     --font-heading: inherit;
     --font-mono: SFMono-Regular, Consolas, 'Liberation Mono', Menlo, Courier, monospace;
 

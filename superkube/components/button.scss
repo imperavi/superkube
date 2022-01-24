@@ -8,10 +8,10 @@ button,
     // vars
     --button-font-weight: var(--font-weight-semibold);
     --button-border-radius: var(--radius-large);
-    --button-line-height: 1.25;
+    --button-line-height: 1;
     --button-letter-spacing: 0;
     --button-text-transform: none;
-    --button-padding-y: .4em;
+    --button-padding-y: 0;
     --button-padding-x: 20px;
     --button-border-width: 1px;
     --button-border-style: solid;
@@ -36,7 +36,7 @@ button,
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    vertical-align: middle;
+    vertical-align: baseline;
     text-align: center;
     font-family: inherit;
     white-space: nowrap;
@@ -51,7 +51,7 @@ button,
     letter-spacing: var(--button-letter-spacing);
     text-transform: var(--button-text-transform);
     border-radius: var(--button-border-radius);
-    padding-top: var(--button-padding-y);
+    padding-top: calc(var(--button-padding-y) * 1px + 1px);
     padding-bottom: var(--button-padding-y);
     padding-left: var(--button-padding-x);
     padding-right: var(--button-padding-x);
@@ -90,9 +90,6 @@ button,
         background-image: var(--button-disabled-background-image);
         box-shadow: var(--button-disabled-box-shadow);
     }
-    .button-label {
-        margin-top: 1px;
-    }
     // Icons
     .button-icon + .button-label {
         margin-left: 6px;
@@ -104,7 +101,6 @@ button,
     // Caret
     .caret {
         font-weight: bold;
-        margin-top: 1px;
         margin-left: 2px;
         margin-right: -3px;
     }

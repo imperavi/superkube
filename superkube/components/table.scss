@@ -1,37 +1,89 @@
 // =Table
+table {
+    // generate
+    @include generate-type(table);
+    @include generate-colors(table);
+
+    // vars
+    --table-border-style: solid;
+    --table-border-width: 1px;
+    --table-head-border-style: solid;
+    --table-head-border-width: 1px;
+    --table-padding: 0.75em 6rem 0.75em 2rem;
+
+    // props
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    empty-cells: show;
+    font-size: var(--table-font-size);
+    line-height: var(--table-line-height);
+
+    th,
+    td {
+        padding: var(--table-padding);
+    }
+    th {
+        border-bottom-style: var(--table-head-border-style);
+        border-bottom-width: var(--table-head-border-width);
+        border-bottom-color: var(--table-head-border-color);
+    }
+    td {
+        border-bottom-style: var(--table-border-style);
+        border-bottom-width: var(--table-border-width);
+        border-bottom-color: var(--table-border-color);
+    }
+
+    &.table-striped {
+        tr:nth-child(odd) td {
+            background-color: var(--table-background-color);
+        }
+    }
+}
+td,
+th {
+    text-align: left;
+    vertical-align: top;
+
+    &:first-child {
+        padding-left: 0;
+    }
+}
+th {
+    font-weight: normal;
+}
+thead th {
+    font-weight: bold;
+}
+caption {
+    text-align: left;
+    font-style: normal;
+}
 .table-scrollable {
     display: block;
     overflow-x: auto;
     white-space: nowrap;
 }
+.table-striped,
 .table-bordered {
-    --table-border-color: var(--table-default-border-color);
-}
-.table-striped {
-    --table-stripe-color: var(--table-default-stripe-color);
-    tr:nth-child(odd) td {
-        background-color: var(--table-stripe-color);
-    }
-}
-.table-bordered,
-.table-striped {
     td,
     th {
-        padding: 0.75em 6rem 0.75em 2rem;
-        border: 1px solid var(--table-border-color);
         &:first-child {
             padding-left: 2rem;
         }
     }
 }
-
-.table-light,
-.table-light.table-bordered {
-    th,
-    td {
-        --table-border-color: var(--palette-white-15);
+.table-bordered {
+    td,
+    th {
+        border: 1px solid var(--table-border-color);
     }
 }
+.table-light,
+.table-light.table-bordered {
+    --table-border-color: var(--palette-white-15);
+    --table-head-border-color: var(--palette-white-15);
+}
 .table-light.table-striped {
-    --table-stripe-color: var(--palette-white-5);
+    --table-background-color: var(--palette-white-10);
 }

@@ -422,7 +422,10 @@ $colors: map-extend($colors, (
     table: (
         default: (
             border-color: var(--palette-black-7),
-            stripe-color: var(--palette-neutral-lightest)
+            head-border-color: var(--palette-black-7)
+        ),
+        striped: (
+            background-color: var(--palette-neutral-lightest)
         )
     ),
     tag: (

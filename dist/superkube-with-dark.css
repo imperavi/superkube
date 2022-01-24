@@ -458,7 +458,8 @@
   --placeholder-default: var(--palette-black-40);
   --placeholder-light: var(--palette-white-50);
   --table-default-border-color: var(--palette-black-7);
-  --table-default-stripe-color: var(--palette-neutral-lightest);
+  --table-default-head-border-color: var(--palette-black-7);
+  --table-striped-background-color: var(--palette-neutral-lightest);
   --tag-default-background-color: var(--palette-neutral-lighter);
   --tag-default-border-color: var(--palette-transparent);
   --tag-default-color: var(--palette-neutral-darker);
@@ -825,7 +826,8 @@
     --placeholder-default: var(--palette-white-50);
     --placeholder-light: var(--palette-white-50);
     --table-default-border-color: var(--palette-white-20);
-    --table-default-stripe-color: var(--palette-white-5);
+    --table-default-head-border-color: var(--palette-white-20);
+    --table-striped-background-color: var(--palette-white-10);
     --tag-default-background-color: var(--palette-black);
     --tag-default-border-color: var(--palette-transparent);
     --tag-default-color: var(--palette-neutral-lightest);
@@ -1124,35 +1126,6 @@ figcaption cite {
   line-height: 1.5;
   color: var(--inline-cite-color); }
 
-caption {
-  text-align: left;
-  font-style: normal; }
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  empty-cells: show;
-  font-size: 15px;
-  line-height: 1.5; }
-
-td,
-th {
-  --table-border-color: var(--table-default-border-color);
-  text-align: left;
-  vertical-align: top;
-  padding: 0.75em 6rem 0.75em 2rem;
-  border-bottom: 1px solid var(--table-border-color); }
-  td:first-child,
-  th:first-child {
-    padding-left: 0; }
-
-th {
-  font-weight: normal; }
-
-thead th {
-  font-weight: bold; }
-
 address {
   font-style: normal; }
 
@@ -1202,9 +1175,6 @@ code {
   color: var(--inline-code-color);
   background-color: var(--inline-code-background-color);
   border: 1px solid var(--inline-code-border-color); }
-
-pre code {
-  background: none; }
 
 mark {
   background-color: yellow;
@@ -1775,7 +1745,8 @@ pre,
     border: 0;
     font-size: 100%;
     display: block;
-    line-height: inherit; }
+    line-height: inherit;
+    background: none; }
 
 .embed-responsive {
   position: relative;
@@ -3084,39 +3055,80 @@ hr {
   .pagination .pagination-next {
     white-space: nowrap; }
 
+table {
+  --table-border-style: solid;
+  --table-border-width: 1px;
+  --table-head-border-style: solid;
+  --table-head-border-width: 1px;
+  --table-padding: 0.75em 6rem 0.75em 2rem;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  empty-cells: show;
+  font-size: var(--table-font-size);
+  line-height: var(--table-line-height); }
+  table {
+    --table-font-size: 15px;
+    --table-line-height: 1.5; }
+  table {
+    --table-border-color: var(--table-default-border-color);
+    --table-head-border-color: var(--table-default-head-border-color); }
+  table.table-striped {
+    --table-background-color: var(--table-striped-background-color); }
+  table th,
+  table td {
+    padding: var(--table-padding); }
+  table th {
+    border-bottom-style: var(--table-head-border-style);
+    border-bottom-width: var(--table-head-border-width);
+    border-bottom-color: var(--table-head-border-color); }
+  table td {
+    border-bottom-style: var(--table-border-style);
+    border-bottom-width: var(--table-border-width);
+    border-bottom-color: var(--table-border-color); }
+  table.table-striped tr:nth-child(odd) td {
+    background-color: var(--table-background-color); }
+
+td,
+th {
+  text-align: left;
+  vertical-align: top; }
+  td:first-child,
+  th:first-child {
+    padding-left: 0; }
+
+th {
+  font-weight: normal; }
+
+thead th {
+  font-weight: bold; }
+
+caption {
+  text-align: left;
+  font-style: normal; }
+
 .table-scrollable {
   display: block;
   overflow-x: auto;
   white-space: nowrap; }
 
-.table-bordered {
-  --table-border-color: var(--table-default-border-color); }
-
-.table-striped {
-  --table-stripe-color: var(--table-default-stripe-color); }
-  .table-striped tr:nth-child(odd) td {
-    background-color: var(--table-stripe-color); }
+.table-striped td:first-child,
+.table-striped th:first-child,
+.table-bordered td:first-child,
+.table-bordered th:first-child {
+  padding-left: 2rem; }
 
 .table-bordered td,
-.table-bordered th,
-.table-striped td,
-.table-striped th {
-  padding: 0.75em 6rem 0.75em 2rem;
+.table-bordered th {
   border: 1px solid var(--table-border-color); }
-  .table-bordered td:first-child,
-  .table-bordered th:first-child,
-  .table-striped td:first-child,
-  .table-striped th:first-child {
-    padding-left: 2rem; }
 
-.table-light th,
-.table-light td,
-.table-light.table-bordered th,
-.table-light.table-bordered td {
-  --table-border-color: var(--palette-white-15); }
+.table-light,
+.table-light.table-bordered {
+  --table-border-color: var(--palette-white-15);
+  --table-head-border-color: var(--palette-white-15); }
 
 .table-light.table-striped {
-  --table-stripe-color: var(--palette-white-5); }
+  --table-background-color: var(--palette-white-10); }
 
 .tag {
   --tag-font-weight: var(--font-weight-semibold);

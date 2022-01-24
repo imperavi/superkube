@@ -111,6 +111,10 @@ button,
 }
 .button-small {
     --button-padding-x: 16px;
+
+    // props
+    padding-top: var(--button-padding-y);
+    padding-bottom: calc(var(--button-padding-y) * 1px + 1px);
 }
 // Variants
 .button-round {

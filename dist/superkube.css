@@ -1227,7 +1227,9 @@ button,
   --button-padding-x: 28px; }
 
 .button-small {
-  --button-padding-x: 16px; }
+  --button-padding-x: 16px;
+  padding-top: var(--button-padding-y);
+  padding-bottom: calc(var(--button-padding-y) * 1px + 1px); }
 
 .button-round {
   --button-border-radius: 99px; }

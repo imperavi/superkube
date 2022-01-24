@@ -24,10 +24,7 @@ $scales: map-extend($scales, (
             h1: 56px 1.15,
             h2: 28px 1.35,
             h3: 20px 1.4,
-            h4: 16px 1.5,
-            quote: 18px 1.5,
-            quotecite: 14px 1.5,
-            figcaption: 12px 1.5
+            h4: 16px 1.5
         ),
         text: (
             giga: 32px 1.5,
@@ -70,6 +67,13 @@ $scales: map-extend($scales, (
         ),
         hint: (
             default: 13px 1.5
+        ),
+        quote: (
+            default: 18px 1.5,
+            caption: 14px 1.5
+        ),
+        caption: (
+            default: 12px 1.5
         ),
         code: (
             default: 14px 1.5

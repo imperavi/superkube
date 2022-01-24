@@ -1108,24 +1108,6 @@ dt {
 dd + dt {
   margin-top: 0.25em; }
 
-blockquote {
-  font-style: italic;
-  font-weight: normal;
-  padding: 0;
-  background: transparent; }
-  blockquote p {
-    font-size: 18px;
-    line-height: 1.5; }
-  blockquote p + p {
-    margin-top: 0.25em; }
-
-blockquote cite,
-figcaption cite {
-  font-style: inherit;
-  font-size: 14px;
-  line-height: 1.5;
-  color: var(--inline-cite-color); }
-
 address {
   font-style: normal; }
 
@@ -1193,6 +1175,7 @@ abbr[title] {
   cursor: help; }
 
 cite {
+  color: var(--inline-cite-color);
   font-style: italic; }
 
 sub,
@@ -1211,13 +1194,6 @@ figure > iframe,
 figure > pre,
 figure > div {
   vertical-align: middle; }
-
-figure figcaption {
-  display: block;
-  font-style: normal;
-  margin-top: 0.4em;
-  font-size: 12px;
-  line-height: 1.5; }
 
 @font-face {
   font-family: 'Supericons';
@@ -1623,6 +1599,48 @@ button,
 
 .button-round {
   --button-border-radius: 99px; }
+
+figcaption,
+.caption {
+  --caption-font-style: normal;
+  --caption-font-weight: normal;
+  --caption-text-transform: none;
+  --caption-letter-spacing: 0;
+  --caption-spacing: 2rem;
+  --caption-padding: 0;
+  --caption-border-radius: 0;
+  display: block;
+  margin-top: var(--caption-spacing);
+  font-style: var(--caption-font-style);
+  font-size: var(--caption-font-size);
+  font-weight: var(--caption-font-weight);
+  text-transform: var(--caption-text-transform);
+  letter-spacing: var(--caption-letter-spacing);
+  line-height: var(--caption-line-height);
+  padding: var(--caption-padding);
+  border-radius: var(--caption-border-radius);
+  background-color: var(--caption-background-color);
+  color: var(--caption-color); }
+  figcaption,
+  .caption {
+    --caption-font-size: 12px;
+    --caption-line-height: 1.5; }
+
+.caption-semibold {
+  --caption-font-weight: var(--font-weight-semibold); }
+
+.caption-strong {
+  --caption-font-weight: bold; }
+
+.caption-italic {
+  --caption-font-style: italic; }
+
+.caption-mono {
+  font-family: var(--font-mono); }
+
+.caption-caps {
+  --caption-text-transform: uppercase;
+  --caption-letter-spacing: .035em; }
 
 .caret {
   --caret-size: 1em;
@@ -3054,6 +3072,44 @@ hr {
   .pagination .pagination-prev,
   .pagination .pagination-next {
     white-space: nowrap; }
+
+blockquote,
+.quote {
+  --quote-font-style: italic;
+  --quote-font-weight: normal;
+  --quote-padding-x: 0;
+  --quote-padding-y: 0;
+  --quote-spacing: 0.25em;
+  --quote-border-radius: 0;
+  padding-top: var(--quote-padding-y);
+  padding-bottom: var(--quote-padding-y);
+  padding-left: var(--quote-padding-x);
+  padding-right: var(--quote-padding-x);
+  border-radius: var(--quote-border-radius);
+  background-color: var(--quote-background-color); }
+  blockquote,
+  .quote {
+    --quote-font-size: 18px;
+    --quote-line-height: 1.5; }
+  blockquote-caption,
+  .quote-caption {
+    --quote-font-size: 14px;
+    --quote-line-height: 1.5; }
+  blockquote p,
+  .quote p {
+    font-style: var(--quote-font-style);
+    font-weight: var(--quote-font-weight);
+    font-size: var(--quote-font-size);
+    line-height: var(--quote-line-height);
+    color: var(--quote-color); }
+  blockquote p + p,
+  .quote p + p {
+    margin-top: var(--quote-spacing); }
+
+.quote-caption {
+  font-style: italic;
+  font-size: var(--quote-font-size);
+  line-height: var(--quote-line-height); }
 
 table {
   --table-border-style: solid;

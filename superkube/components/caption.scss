@@ -1,0 +1,46 @@
+// =Caption
+figcaption,
+.caption {
+    // generate
+    @include generate-type(caption);
+    @include generate-colors(caption);
+
+    // params
+    --caption-font-style: normal;
+    --caption-font-weight: normal;
+    --caption-text-transform: none;
+    --caption-letter-spacing: 0;
+    --caption-spacing: 2rem;
+    --caption-padding: 0;
+    --caption-border-radius: 0;
+
+    // props
+    display: block;
+    margin-top: var(--caption-spacing);
+    font-style: var(--caption-font-style);
+    font-size: var(--caption-font-size);
+    font-weight: var(--caption-font-weight);
+    text-transform: var(--caption-text-transform);
+    letter-spacing: var(--caption-letter-spacing);
+    line-height: var(--caption-line-height);
+    padding: var(--caption-padding);
+    border-radius: var(--caption-border-radius);
+    background-color: var(--caption-background-color);
+    color: var(--caption-color);
+}
+.caption-semibold {
+    --caption-font-weight: var(--font-weight-semibold);
+}
+.caption-strong {
+    --caption-font-weight: bold;
+}
+.caption-italic {
+    --caption-font-style: italic;
+}
+.caption-mono {
+    font-family: var(--font-mono);
+}
+.caption-caps {
+    --caption-text-transform: uppercase;
+    --caption-letter-spacing: .035em;
+}

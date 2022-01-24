@@ -1,0 +1,39 @@
+// =Quote
+blockquote,
+.quote {
+    // generate
+    @include generate-type(quote);
+    @include generate-colors(quote);
+
+    // params
+    --quote-font-style: italic;
+    --quote-font-weight: normal;
+    --quote-padding-x: 0;
+    --quote-padding-y: 0;
+    --quote-spacing: 0.25em;
+    --quote-border-radius: 0;
+
+    // props
+    padding-top: var(--quote-padding-y);
+    padding-bottom: var(--quote-padding-y);
+    padding-left: var(--quote-padding-x);
+    padding-right: var(--quote-padding-x);
+    border-radius: var(--quote-border-radius);
+    background-color: var(--quote-background-color);
+
+    p {
+        font-style: var(--quote-font-style);
+        font-weight: var(--quote-font-weight);
+        font-size: var(--quote-font-size);
+        line-height: var(--quote-line-height);
+        color: var(--quote-color);
+    }
+    p + p {
+        margin-top: var(--quote-spacing);
+    }
+}
+.quote-caption {
+    font-style: italic;
+    font-size: var(--quote-font-size);
+    line-height: var(--quote-line-height);
+}

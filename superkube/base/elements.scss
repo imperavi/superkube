@@ -134,31 +134,6 @@ dd + dt {
     margin-top: 0.25em;
 }
 
-// =Quote
-blockquote {
-    font-style: italic;
-    font-weight: normal;
-    padding: 0;
-    background: transparent;
-
-    & p {
-        font-size: type-size(base, quote);
-        line-height: type-line(base, quote);
-    }
-    & p + p {
-        margin-top: 0.25em;
-    }
-}
-blockquote,
-figcaption {
-    & cite {
-        font-style: inherit;
-        font-size: type-size(base, quotecite);
-        line-height: type-line(base, quotecite);
-        color: var(--inline-cite-color);
-    }
-}
-
 // =Address
 address {
     font-style: normal;
@@ -229,6 +204,7 @@ abbr[title] {
     cursor: help;
 }
 cite {
+    color: var(--inline-cite-color);
     font-style: italic;
 }
 sub,
@@ -250,12 +226,5 @@ figure {
     & > pre,
     & > div {
         vertical-align: middle;
-    }
-    & figcaption {
-        display: block;
-        font-style: normal;
-        margin-top: 0.4em;
-        font-size: type-size(base, figcaption);
-        line-height: type-line(base, figcaption);
     }
 }

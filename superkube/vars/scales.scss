@@ -55,9 +55,9 @@ $scales: map-extend($scales, (
             default: 14px
         ),
         button: (
-            small: 14px 1.25,
-            default: 15px 1.25,
-            large: 18px 1.25
+            small: 14px,
+            default: 15px,
+            large: 18px
         ),
         label: (
             default: 15px 1.5

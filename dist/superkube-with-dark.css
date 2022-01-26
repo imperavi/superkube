@@ -3348,18 +3348,18 @@ a.tag:hover {
 .text-primary {
   --text-color: var(--text-primary); }
 
-[class^="gr-text-"],
-[class*=" gr-text-"] {
+[class^="grt-"],
+[class*=" grt-"] {
   --text-gradient-color: var(--text-default);
   display: inline-block;
   background-clip: text;
   background-image: var(--text-gradient-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
-  [class^="gr-text-"] a,
-  [class^="gr-text-"] a:hover,
-  [class*=" gr-text-"] a,
-  [class*=" gr-text-"] a:hover {
+  [class^="grt-"] a,
+  [class^="grt-"] a:hover,
+  [class*=" grt-"] a,
+  [class*=" grt-"] a:hover {
     opacity: 1; }
 
 .container-small {

@@ -55,8 +55,8 @@ $text-colors: map-get($colors, text);
 }
 
 // Gradient
-[class^="gr-text-"],
-[class*=" gr-text-"] {
+[class^="grt-"],
+[class*=" grt-"] {
     --text-gradient-color: var(--text-default);
 
     // props
@@ -74,7 +74,7 @@ $text-colors: map-get($colors, text);
 $gradients: map-get($colors, text-gradient);
 @if $gradients != null {
     @each $name, $value in $gradients {
-        .gr-text-#{$name} {
+        .grt-#{$name} {
             --text-gradient-color: #{$value};
         }
     }

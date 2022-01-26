@@ -401,23 +401,29 @@ $colors: map-extend($colors, (
     ),
     shadow: (
         100: (
-            0 1px 2px var(--palette-black-5),
-            0 1px 3px var(--palette-black-10)
+            0 1px 3px -1px var(--palette-black-20),
+            0 1px 2px -1px var(--palette-black-30)
         ),
         150: (
-            1: 0 2px 4px -2px var(--palette-black-5),
-            2: 0 4px 8px -2px var(--palette-black-10)
+            1: 0 2px 5px -1px var(--palette-black-20),
+            2: 0 1px 3px -1px var(--palette-black-30)
         ),
         200: (
-            1: 0 4px 6px -2px var(--palette-black-5),
-            2: 0 8px 12px -1px var(--palette-black-10)
+            1: 0 6px 12px -2px var(--palette-black-20),
+            2: 0 3px 7px -3px var(--palette-black-30)
         ),
         250: (
-            1: 0 6px 8px -2px var(--palette-black-5),
-            2: 0 16px 24px -4px var(--palette-black-10)
+            1: 0 13px 27px -5px var(--palette-black-20),
+            2: 0 8px 16px -8px var(--palette-black-30)
         ),
-        300: 0 24px 48px -12px var(--palette-black-25),
-        350: 0 20px 80px -12px var(--palette-black-40)
+        300: (
+            1: 0 30px 60px -12px var(--palette-black-20),
+            2: 0 18px 36px -18px var(--palette-black-30)
+        ),
+        350: (
+            1: 0 50px 100px -10px var(--palette-black-20),
+            2: 0 30px 60px -30px var(--palette-black-30)
+        )
     ),
     table: (
         default: (

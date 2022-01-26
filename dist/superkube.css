@@ -1217,6 +1217,7 @@ button,
   button .caret,
   .button .caret {
     font-weight: bold;
+    margin-top: 2px;
     margin-left: 2px;
     margin-right: -3px; }
 
@@ -1224,9 +1225,7 @@ button,
   --button-padding-x: 28px; }
 
 .button-small {
-  --button-padding-x: 16px;
-  padding-top: var(--button-padding-y);
-  padding-bottom: calc(var(--button-padding-y) * 1px + 1px); }
+  --button-padding-x: 16px; }
 
 .button-round {
   --button-border-radius: 99px; }

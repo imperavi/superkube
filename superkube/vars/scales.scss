@@ -162,8 +162,8 @@ $scales: map-extend($scales, (
         small: 400px,
         content: 800px,
         medium: 960px,
-        base: 1112px,
-        large: 1200px,
+        base: 1120px,
+        large: 1240px,
         full: 100%
     ),
     edge: (
@@ -178,7 +178,7 @@ $scales: map-extend($scales, (
     radius: (
         small: 2px,
         base: 4px,
-        large: 6px,
+        large: 8px,
         huge: 12px
     ),
     border: (

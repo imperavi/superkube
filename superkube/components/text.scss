@@ -53,29 +53,3 @@ $text-colors: map-get($colors, text);
         --text-color: var(--text-#{$name});
     }
 }
-
-// Gradient
-[class^="grt-"],
-[class*=" grt-"] {
-    --text-gradient-color: var(--text-default);
-
-    // props
-    display: inline-block;
-    background-clip: text;
-    background-image: var(--text-gradient-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-
-    a,
-    a:hover {
-        opacity: 1;
-    }
-}
-$gradients: map-get($colors, text-gradient);
-@if $gradients != null {
-    @each $name, $value in $gradients {
-        .grt-#{$name} {
-            --text-gradient-color: #{$value};
-        }
-    }
-}

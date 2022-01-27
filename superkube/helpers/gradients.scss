@@ -1,0 +1,40 @@
+// =Gradients
+[class^="gr-"],
+[class*=" gr-"] {
+    --gradient-color: transparent;
+    background: var(--gradient-color);
+}
+$gradients: map-get($colors, gradient);
+@if $gradients != null {
+    @each $name, $value in $gradients {
+        .gr-#{$name} {
+            --gradient-color: #{$value};
+        }
+    }
+}
+
+// Text
+[class^="grt-"],
+[class*=" grt-"] {
+    --text-gradient-color: var(--text-default);
+
+    // props
+    display: inline-block;
+    background-clip: text;
+    background-image: var(--text-gradient-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    a,
+    a:hover {
+        opacity: 1;
+    }
+}
+$gradients: map-get($colors, text-gradient);
+@if $gradients != null {
+    @each $name, $value in $gradients {
+        .grt-#{$name} {
+            --text-gradient-color: #{$value};
+        }
+    }
+}

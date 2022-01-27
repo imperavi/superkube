@@ -2966,20 +2966,6 @@ a.tag:hover {
 .text-primary {
   --text-color: var(--text-primary); }
 
-[class^="grt-"],
-[class*=" grt-"] {
-  --text-gradient-color: var(--text-default);
-  display: inline-block;
-  background-clip: text;
-  background-image: var(--text-gradient-color);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent; }
-  [class^="grt-"] a,
-  [class^="grt-"] a:hover,
-  [class*=" grt-"] a,
-  [class*=" grt-"] a:hover {
-    opacity: 1; }
-
 .container-small {
   max-width: 400px; }
 
@@ -3941,11 +3927,6 @@ a.tag:hover {
 .bg-platinum {
   --background-color: var(--background-platinum); }
 
-[class^="gr-"],
-[class*=" gr-"] {
-  --gradient-color: transparent;
-  background: var(--gradient-color); }
-
 [class^="b-"],
 [class*=" b-"] {
   --border-color: transparent;
@@ -4204,6 +4185,25 @@ a.tag:hover {
     justify-content: flex-start; }
   .flex-end-sm {
     justify-content: flex-end; } }
+
+[class^="gr-"],
+[class*=" gr-"] {
+  --gradient-color: transparent;
+  background: var(--gradient-color); }
+
+[class^="grt-"],
+[class*=" grt-"] {
+  --text-gradient-color: var(--text-default);
+  display: inline-block;
+  background-clip: text;
+  background-image: var(--text-gradient-color);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+  [class^="grt-"] a,
+  [class^="grt-"] a:hover,
+  [class*=" grt-"] a,
+  [class*=" grt-"] a:hover {
+    opacity: 1; }
 
 [class^="o-"],
 [class*=" o-"] {

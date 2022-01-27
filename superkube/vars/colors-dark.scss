@@ -146,6 +146,13 @@ $colors-dark: map-extend($colors-dark, (
             border-color: var(--palette-transparent)
         )
     ),
+    divider: (
+        default: var(--palette-white-95),
+        primary: var(--palette-primary-base),
+        muted: var(--palette-white-30),
+        light: var(--palette-white),
+        light-muted: var(--palette-white-30)
+    ),
     heading: (
         default: var(--palette-white-95),
         moderated: var(--palette-white-80),

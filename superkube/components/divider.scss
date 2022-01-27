@@ -1,0 +1,30 @@
+// =Divider
+.divider {
+    // params
+    --divider-background-color: transparent;
+
+    // props
+    height: 1px;
+    background-color: var(--divider-background-color);
+}
+.divider-strong {
+    height: 2px;
+}
+.divider-vertical {
+    width: 1px;
+    height: auto;
+}
+// Colors
+$dividercolors: map-get($colors, divider);
+@each $name, $value in $dividercolors {
+    @if $name == default {
+        .divider {
+            --divider-background-color: #{$value};
+        }
+    }
+    @else {
+        .divider-#{$name} {
+            --divider-background-color: #{$value};
+        }
+    }
+}

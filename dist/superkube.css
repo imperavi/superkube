@@ -19,9 +19,9 @@
   --font-weight-heavy: 900; }
 
 :root {
-  --radius-small: 2px;
-  --radius-base: 4px;
-  --radius-large: 8px;
+  --radius-small: 3px;
+  --radius-base: 6px;
+  --radius-large: 9px;
   --radius-huge: 12px;
   --button-small: 32px;
   --button-base: 42px;
@@ -4622,61 +4622,61 @@ a.tag:hover {
   border-radius: 9999px; }
 
 .r-small {
-  border-radius: 2px; }
+  border-radius: 3px; }
 
 .r-top-small {
-  border-top-left-radius: 2px;
-  border-top-right-radius: 2px; }
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px; }
 
 .r-bottom-small {
-  border-bottom-left-radius: 2px;
-  border-bottom-right-radius: 2px; }
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px; }
 
 .r-left-small {
-  border-top-left-radius: 2px;
-  border-bottom-left-radius: 2px; }
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px; }
 
 .r-right-small {
-  border-top-right-radius: 2px;
-  border-bottom-right-radius: 2px; }
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px; }
 
 .r-base {
-  border-radius: 4px; }
+  border-radius: 6px; }
 
 .r-top-base {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px; }
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px; }
 
 .r-bottom-base {
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 4px; }
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px; }
 
 .r-left-base {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px; }
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px; }
 
 .r-right-base {
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px; }
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px; }
 
 .r-large {
-  border-radius: 8px; }
+  border-radius: 9px; }
 
 .r-top-large {
-  border-top-left-radius: 8px;
-  border-top-right-radius: 8px; }
+  border-top-left-radius: 9px;
+  border-top-right-radius: 9px; }
 
 .r-bottom-large {
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px; }
+  border-bottom-left-radius: 9px;
+  border-bottom-right-radius: 9px; }
 
 .r-left-large {
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px; }
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px; }
 
 .r-right-large {
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px; }
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px; }
 
 .r-huge {
   border-radius: 12px; }
@@ -4703,47 +4703,47 @@ a.tag:hover {
   .r-circle-sm {
     border-radius: 9999px; }
   .r-small-sm {
-    border-radius: 2px; }
+    border-radius: 3px; }
   .r-top-small-sm {
-    border-top-left-radius: 2px;
-    border-top-right-radius: 2px; }
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px; }
   .r-bottom-small-sm {
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px; }
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px; }
   .r-left-small-sm {
-    border-top-left-radius: 2px;
-    border-bottom-left-radius: 2px; }
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px; }
   .r-right-small-sm {
-    border-top-right-radius: 2px;
-    border-bottom-right-radius: 2px; }
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px; }
   .r-base-sm {
-    border-radius: 4px; }
+    border-radius: 6px; }
   .r-top-base-sm {
-    border-top-left-radius: 4px;
-    border-top-right-radius: 4px; }
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px; }
   .r-bottom-base-sm {
-    border-bottom-left-radius: 4px;
-    border-bottom-right-radius: 4px; }
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px; }
   .r-left-base-sm {
-    border-top-left-radius: 4px;
-    border-bottom-left-radius: 4px; }
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px; }
   .r-right-base-sm {
-    border-top-right-radius: 4px;
-    border-bottom-right-radius: 4px; }
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px; }
   .r-large-sm {
-    border-radius: 8px; }
+    border-radius: 9px; }
   .r-top-large-sm {
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px; }
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px; }
   .r-bottom-large-sm {
-    border-bottom-left-radius: 8px;
-    border-bottom-right-radius: 8px; }
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px; }
   .r-left-large-sm {
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px; }
+    border-top-left-radius: 9px;
+    border-bottom-left-radius: 9px; }
   .r-right-large-sm {
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px; }
+    border-top-right-radius: 9px;
+    border-bottom-right-radius: 9px; }
   .r-huge-sm {
     border-radius: 12px; }
   .r-top-huge-sm {

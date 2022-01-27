@@ -4,11 +4,11 @@ $palette: map-extend($palette, (
     black: #030612,
     white: #ffffff,
     primary: (
-        darker: #143FA9,
-        dark: #164FDA,
-        base: #2F6BFC,
-        light: #B2C7FB,
-        lighter: #DDE7FD,
+        darker: #1441AD,
+        dark: #235AE1,
+        base: #3B73FC,
+        light: #B7CBFB,
+        lighter: #E2EAFD,
         lightest: #F1F5FE
     ),
     neutral: (
@@ -37,11 +37,11 @@ $palette: map-extend($palette, (
         lightest: #F0FAF6
     ),
     active: (
-        darker: #143FA9,
-        dark: #164FDA,
-        base: #2F6BFC,
-        light: #B2C7FB,
-        lighter: #DDE7FD,
+        darker: #1441AD,
+        dark: #235AE1,
+        base: #3B73FC,
+        light: #B7CBFB,
+        lighter: #E2EAFD,
         lightest: #F1F5FE
     ),
     red: (

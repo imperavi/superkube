@@ -1709,7 +1709,7 @@ input,
 select,
 textarea,
 .input {
-  --input-border-radius: var(--radius-base);
+  --input-border-radius: var(--radius-small);
   --input-padding: 0.3em 0.5em;
   --input-border-width: 1px;
   --input-border-style: solid;
@@ -1877,7 +1877,7 @@ input[type="checkbox"] {
 
 .input-addon {
   --input-addon-padding: 0 0.85em;
-  --input-addon-border-radius: var(--radius-base);
+  --input-addon-border-radius: var(--radius-small);
   display: inline-flex;
   align-items: center;
   justify-content: center;

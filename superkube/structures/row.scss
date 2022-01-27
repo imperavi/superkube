@@ -2,6 +2,14 @@
 .row {
     display: flex;
     flex-wrap: wrap;
+
+    input,
+    select,
+    textarea,
+    .input {
+        width: auto;
+        flex: 1 0 auto;
+    }
 }
 
 // =Size

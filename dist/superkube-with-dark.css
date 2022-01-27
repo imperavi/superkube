@@ -4032,6 +4032,12 @@ a.tag:hover {
 .row {
   display: flex;
   flex-wrap: wrap; }
+  .row input,
+  .row select,
+  .row textarea,
+  .row .input {
+    width: auto;
+    flex: 1 0 auto; }
 
 .row-1 {
   gap: 4px; }

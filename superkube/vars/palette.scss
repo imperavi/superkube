@@ -85,19 +85,19 @@ $palette: map-extend($palette, (
         lightest: #F1F5FE
     ),
     indigo: (
-        darker: #1311A2,
-        dark: #1C19E1,
-        base: #312EFC,
-        light: #B7B6FB,
-        lighter: #E2E2FD,
-        lightest: #F1F1FE
+        darker: #2724A5,
+        dark: #3532CD,
+        base: #4E4BE8,
+        light: #B8B7F6,
+        lighter: #E5E4FC,
+        lightest: #F2F2FD
     ),
-    violet: (
-        darker: #5328A9,
-        dark: #5E19EB,
-        base: #722EFC,
-        light: #D4C2FA,
-        lighter: #EBE3FD,
-        lightest: #F8F6FE
+    purple: (
+        darker: #632097,
+        dark: #8827D3,
+        base: #A64BEC,
+        light: #DFC2F5,
+        lighter: #F1E5FB,
+        lightest: #F8F2FC
     )
 ));

@@ -3275,9 +3275,6 @@ a.tag:hover {
 .gutter-30 {
   grid-column-gap: 120px; }
 
-.gutter-24 {
-  grid-column-gap: 96px; }
-
 @media only screen and (max-width: 1023px) {
   .gutter-1-md {
     grid-column-gap: 4px; }
@@ -3316,9 +3313,7 @@ a.tag:hover {
   .gutter-25-md {
     grid-column-gap: 100px; }
   .gutter-30-md {
-    grid-column-gap: 120px; }
-  .gutter-24-md {
-    grid-column-gap: 96px; } }
+    grid-column-gap: 120px; } }
 
 @media only screen and (max-width: 767px) {
   .gutter-1-sm {
@@ -3358,9 +3353,7 @@ a.tag:hover {
   .gutter-25-sm {
     grid-column-gap: 100px; }
   .gutter-30-sm {
-    grid-column-gap: 120px; }
-  .gutter-24-sm {
-    grid-column-gap: 96px; } }
+    grid-column-gap: 120px; } }
 
 .gap-1 {
   grid-row-gap: 4px; }
@@ -3476,12 +3469,6 @@ a.tag:hover {
 .gap-30 + .gap-30 {
   margin-top: 120px; }
 
-.gap-24 {
-  grid-row-gap: 96px; }
-
-.gap-24 + .gap-24 {
-  margin-top: 96px; }
-
 @media only screen and (max-width: 1023px) {
   .gap-1-md {
     grid-row-gap: 4px; }
@@ -3558,11 +3545,7 @@ a.tag:hover {
   .gap-30-md {
     grid-row-gap: 120px; }
   .gap-30-md + .gap-30-md {
-    margin-top: 120px; }
-  .gap-24-md {
-    grid-row-gap: 96px; }
-  .gap-24-md + .gap-24-md {
-    margin-top: 96px; } }
+    margin-top: 120px; } }
 
 @media only screen and (max-width: 767px) {
   .gap-1-sm {
@@ -3640,11 +3623,7 @@ a.tag:hover {
   .gap-30-sm {
     grid-row-gap: 120px; }
   .gap-30-sm + .gap-30-sm {
-    margin-top: 120px; }
-  .gap-24-sm {
-    grid-row-gap: 96px; }
-  .gap-24-sm + .gap-24-sm {
-    margin-top: 96px; } }
+    margin-top: 120px; } }
 
 .column-offset-1 {
   grid-column-start: 2; }
@@ -3765,9 +3744,6 @@ a.tag:hover {
 
 .row-30 {
   gap: 120px; }
-
-.row-24 {
-  gap: 96px; }
 
 .stack > * {
   position: relative; }
@@ -3899,11 +3875,6 @@ a.tag:hover {
   margin-bottom: 120px; }
   .stack-30 > *:after {
     bottom: -60px; }
-
-.stack-24 > * {
-  margin-bottom: 96px; }
-  .stack-24 > *:after {
-    bottom: -48px; }
 
 .align-left {
   text-align: left; }
@@ -4501,18 +4472,6 @@ a.tag:hover {
 .o-bottom-30 {
   bottom: -120px; }
 
-.o-left-24 {
-  left: -96px; }
-
-.o-right-24 {
-  right: -96px; }
-
-.o-top-24 {
-  top: -96px; }
-
-.o-bottom-24 {
-  bottom: -96px; }
-
 @media only screen and (max-width: 767px) {
   .o-off-sm {
     left: initial;
@@ -4678,15 +4637,7 @@ a.tag:hover {
   .o-top-30-sm {
     top: -120px; }
   .o-bottom-30-sm {
-    bottom: -120px; }
-  .o-left-24-sm {
-    left: -96px; }
-  .o-right-24-sm {
-    right: -96px; }
-  .o-top-24-sm {
-    top: -96px; }
-  .o-bottom-24-sm {
-    bottom: -96px; } }
+    bottom: -120px; } }
 
 .position-relative,
 .position-base {
@@ -5025,9 +4976,6 @@ a.tag:hover {
 .h-30 {
   height: 120px !important; }
 
-.h-24 {
-  height: 96px !important; }
-
 @media only screen and (max-width: 767px) {
   .h-1-sm {
     height: 4px !important; }
@@ -5067,8 +5015,6 @@ a.tag:hover {
     height: 100px !important; }
   .h-30-sm {
     height: 120px !important; }
-  .h-24-sm {
-    height: 96px !important; }
   .h-off-sm {
     height: auto !important; } }
 
@@ -5183,9 +5129,6 @@ a.tag:hover {
 
 .p-30 {
   padding: 120px; }
-
-.p-24 {
-  padding: 96px; }
 
 .my-1 {
   margin-top: 4px;
@@ -5490,22 +5433,6 @@ a.tag:hover {
 .px-30 {
   padding-left: 120px;
   padding-right: 120px; }
-
-.my-24 {
-  margin-top: 96px;
-  margin-bottom: 96px; }
-
-.mx-24 {
-  margin-left: 96px;
-  margin-right: 96px; }
-
-.py-24 {
-  padding-top: 96px;
-  padding-bottom: 96px; }
-
-.px-24 {
-  padding-left: 96px;
-  padding-right: 96px; }
 
 .mb-1 {
   margin-bottom: 4px; }
@@ -6191,42 +6118,6 @@ a.tag:hover {
 .pr-30 {
   padding-right: 120px; }
 
-.mb-24 {
-  margin-bottom: 96px; }
-
-.mt-24 {
-  margin-top: 96px; }
-
-.ml-24 {
-  margin-left: 96px; }
-
-.mr-24 {
-  margin-right: 96px; }
-
-.mb-n24 {
-  margin-bottom: -96px; }
-
-.mt-n24 {
-  margin-top: -96px; }
-
-.ml-n24 {
-  margin-left: -96px; }
-
-.mr-n24 {
-  margin-right: -96px; }
-
-.pt-24 {
-  padding-top: 96px; }
-
-.pb-24 {
-  padding-bottom: 96px; }
-
-.pl-24 {
-  padding-left: 96px; }
-
-.pr-24 {
-  padding-right: 96px; }
-
 @media only screen and (max-width: 767px) {
   .mt-off-sm {
     margin-top: 0; }
@@ -6304,8 +6195,6 @@ a.tag:hover {
     padding: 100px; }
   .p-30-sm {
     padding: 120px; }
-  .p-24-sm {
-    padding: 96px; }
   .my-1-sm {
     margin-top: 4px;
     margin-bottom: 4px; }
@@ -6534,18 +6423,6 @@ a.tag:hover {
   .px-30-sm {
     padding-left: 120px;
     padding-right: 120px; }
-  .my-24-sm {
-    margin-top: 96px;
-    margin-bottom: 96px; }
-  .mx-24-sm {
-    margin-left: 96px;
-    margin-right: 96px; }
-  .py-24-sm {
-    padding-top: 96px;
-    padding-bottom: 96px; }
-  .px-24-sm {
-    padding-left: 96px;
-    padding-right: 96px; }
   .mb-1-sm {
     margin-bottom: 4px; }
   .mt-1-sm {
@@ -7001,28 +6878,4 @@ a.tag:hover {
   .pl-30-sm {
     padding-left: 120px; }
   .pr-30-sm {
-    padding-right: 120px; }
-  .mb-24-sm {
-    margin-bottom: 96px; }
-  .mt-24-sm {
-    margin-top: 96px; }
-  .ml-24-sm {
-    margin-left: 96px; }
-  .mr-24-sm {
-    margin-right: 96px; }
-  .mb-n24-sm {
-    margin-bottom: -96px; }
-  .mt-n24-sm {
-    margin-top: -96px; }
-  .ml-n24-sm {
-    margin-left: -96px; }
-  .mr-n24-sm {
-    margin-right: -96px; }
-  .pt-24-sm {
-    padding-top: 96px; }
-  .pb-24-sm {
-    padding-bottom: 96px; }
-  .pl-24-sm {
-    padding-left: 96px; }
-  .pr-24-sm {
-    padding-right: 96px; } }
+    padding-right: 120px; } }

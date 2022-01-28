@@ -170,10 +170,9 @@ $scales: map-extend($scales, (
         base: 5rem
     ),
     level: (
-        content: 100, // overlays
-        page: 200, // offcanvas
-        control: 300, // modals/popups
-        all: 400 // messages
+        over-content: 100, // dropdowns/popovers
+        over-page: 200, // modals/popups
+        over-all: 300 // messages
     ),
     radius: (
         small: 3px,

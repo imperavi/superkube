@@ -29,8 +29,8 @@
   --input-small: 36px;
   --input-base: 42px;
   --input-large: 56px;
-  --level-over-content: 100;
-  --level-over-page: 200;
+  --level-over-page: 100;
+  --level-over-content: 200;
   --level-over-all: 300;
   --type-space-h1-to-tag: 5rem;
   --type-space-h2-to-tag: 3rem;

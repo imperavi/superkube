@@ -1229,7 +1229,8 @@ button,
   --button-padding-x: 32px; }
 
 .button-small {
-  --button-padding-x: 16px; }
+  --button-padding-x: 16px;
+  padding-top: 0; }
 
 .button-round {
   --button-border-radius: 99px; }

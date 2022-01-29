@@ -1713,14 +1713,6 @@ a.icon-primary {
 .image-overlay-dark {
   --image-overlay-color: var(--overlay-dark); }
 
-.image-16 {
-  width: 16px;
-  height: 16px; }
-
-.image-24 {
-  width: 24px;
-  height: 24px; }
-
 .image-32 {
   width: 32px;
   height: 32px; }

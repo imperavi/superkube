@@ -10,10 +10,20 @@
 .divider-strong {
     height: 2px;
 }
+.divider-heavy {
+    height: 6px;
+}
 .divider-vertical {
     width: 1px;
     height: auto;
 }
+.divider-vertical.divider-strong {
+    width: 2px;
+}
+.divider-vertical.divider-heavy {
+    width: 6px;
+}
+
 // Colors
 $dividercolors: map-get($colors, divider);
 @each $name, $value in $dividercolors {

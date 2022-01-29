@@ -90,7 +90,7 @@ $colors: map-extend($colors, (
             hover-background-color: var(--palette-black-5),
             hover-border-color: var(--palette-black-20),
             hover-color: var(--palette-black),
-            disabled-background-color: var(--palette-white),
+            disabled-background-color: var(--palette-transparent),
             disabled-border-color: var(--palette-black-20),
             disabled-color: var(--palette-black-80)
         ),

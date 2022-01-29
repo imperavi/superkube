@@ -221,7 +221,7 @@
   --button-default-hover-background-color: var(--palette-black-5);
   --button-default-hover-border-color: var(--palette-black-20);
   --button-default-hover-color: var(--palette-black);
-  --button-default-disabled-background-color: var(--palette-white);
+  --button-default-disabled-background-color: var(--palette-transparent);
   --button-default-disabled-border-color: var(--palette-black-20);
   --button-default-disabled-color: var(--palette-black-80);
   --button-primary-background-color: var(--palette-primary-base);

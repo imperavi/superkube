@@ -4807,27 +4807,27 @@ blockquote,
 .sh-off {
   box-shadow: none; }
 
-[class^="sh-"],
-[class*=" sh-"] {
+[class^="shadow-"],
+[class*=" shadow-"] {
   --shadow: none;
   box-shadow: var(--shadow); }
 
-.sh-100 {
+.shadow-100 {
   --shadow: var(--shadow-100); }
 
-.sh-150 {
+.shadow-150 {
   --shadow: var(--shadow-150); }
 
-.sh-200 {
+.shadow-200 {
   --shadow: var(--shadow-200); }
 
-.sh-250 {
+.shadow-250 {
   --shadow: var(--shadow-250); }
 
-.sh-300 {
+.shadow-300 {
   --shadow: var(--shadow-300); }
 
-.sh-350 {
+.shadow-350 {
   --shadow: var(--shadow-350); }
 
 .w-off {

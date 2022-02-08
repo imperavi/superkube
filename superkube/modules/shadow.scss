@@ -2,13 +2,13 @@
 .sh-off {
     box-shadow: none;
 }
-[class^="sh-"],
-[class*=" sh-"] {
+[class^="shadow-"],
+[class*=" shadow-"] {
     --shadow: none;
     box-shadow: var(--shadow);
 }
 
 $shadows: map-get($colors, shadow);
 @each $type, $value in $shadows {
-    .sh-#{$type} { --shadow: var(--shadow-#{$type}); }
+    .shadow-#{$type} { --shadow: var(--shadow-#{$type}); }
 }

@@ -1,0 +1,24 @@
+// =Form-Label
+label {
+    // generate
+    @include generate-type(form-label);
+    @include generate-colors(form-label);
+
+    // params
+    --form-label-font-weight: normal;
+    --form-label-font-style: normal;
+    --form-label-text-transform: none;
+    --form-label-letter-spacing: 0;
+    --form-label-margin-bottom: 0.15em;
+
+    // props
+    display: block;
+    font-size: var(--form-label-font-size);
+    font-weight: var(--form-label-font-weight);
+    font-style: var(--form-label-font-style);
+    line-height: var(--form-label-line-height);
+    text-transform: var(--form-label-text-transform);
+    letter-spacing: var(--form-label-letter-spacing);
+    color: var(--form-label-color);
+    margin-bottom: var(--form-label-margin-bottom);
+}

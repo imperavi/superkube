@@ -268,6 +268,7 @@
   --divider-muted: var(--palette-black-15);
   --divider-light: var(--palette-white);
   --divider-light-muted: var(--palette-white-30);
+  --form-label-default-color: var(--palette-neutral-darker);
   --heading-default: var(--palette-black);
   --heading-moderated: var(--palette-black-70);
   --heading-muted: var(--palette-black-50);
@@ -314,7 +315,24 @@
   --input-addon-default-color: var(--palette-black-60);
   --input-addon-default-background-color: var(--palette-transparent);
   --input-addon-default-border-color: var(--palette-black-25);
+  --label-default-background-color: var(--palette-neutral-lighter);
+  --label-default-border-color: var(--palette-transparent);
   --label-default-color: var(--palette-neutral-darker);
+  --label-primary-background-color: var(--palette-primary-lightest);
+  --label-primary-border-color: var(--palette-transparent);
+  --label-primary-color: var(--palette-primary-dark);
+  --label-positive-background-color: var(--palette-positive-lightest);
+  --label-positive-border-color: var(--palette-transparent);
+  --label-positive-color: var(--palette-positive-dark);
+  --label-important-background-color: var(--palette-negative-lightest);
+  --label-important-border-color: var(--palette-transparent);
+  --label-important-color: var(--palette-negative-dark);
+  --label-dark-background-color: var(--palette-black);
+  --label-dark-border-color: var(--palette-transparent);
+  --label-dark-color: var(--palette-negative-lightest);
+  --label-light-background-color: var(--palette-white);
+  --label-light-border-color: var(--palette-transparent);
+  --label-light-color: var(--palette-black);
   --line-default: var(--palette-black-10);
   --link-default-color: var(--palette-active-dark);
   --link-default-hover-color: var(--palette-negative-dark);
@@ -422,24 +440,6 @@
   --table-default-border-color: var(--palette-black-7);
   --table-default-head-border-color: var(--palette-black-7);
   --table-striped-background-color: var(--palette-neutral-lightest);
-  --tag-default-background-color: var(--palette-neutral-lighter);
-  --tag-default-border-color: var(--palette-transparent);
-  --tag-default-color: var(--palette-neutral-darker);
-  --tag-primary-background-color: var(--palette-primary-lightest);
-  --tag-primary-border-color: var(--palette-transparent);
-  --tag-primary-color: var(--palette-primary-dark);
-  --tag-positive-background-color: var(--palette-positive-lightest);
-  --tag-positive-border-color: var(--palette-transparent);
-  --tag-positive-color: var(--palette-positive-dark);
-  --tag-important-background-color: var(--palette-negative-lightest);
-  --tag-important-border-color: var(--palette-transparent);
-  --tag-important-color: var(--palette-negative-dark);
-  --tag-dark-background-color: var(--palette-black);
-  --tag-dark-border-color: var(--palette-transparent);
-  --tag-dark-color: var(--palette-negative-lightest);
-  --tag-light-background-color: var(--palette-white);
-  --tag-light-border-color: var(--palette-transparent);
-  --tag-light-color: var(--palette-black);
   --text-dark: var(--palette-black);
   --text-default: var(--palette-neutral-darker);
   --text-moderated: var(--palette-black-70);
@@ -598,6 +598,7 @@
     --divider-muted: var(--palette-white-30);
     --divider-light: var(--palette-white);
     --divider-light-muted: var(--palette-white-30);
+    --form-label-default-color: var(--palette-white-90);
     --heading-default: var(--palette-white-95);
     --heading-moderated: var(--palette-white-80);
     --heading-muted: var(--palette-white-50);
@@ -645,7 +646,24 @@
     --input-addon-color: var(--palette-white-70);
     --input-addon-background-color: var(--palette-white-15);
     --input-addon-border-color: var(--palette-white-40);
-    --label-default-color: var(--palette-white-90);
+    --label-default-background-color: var(--palette-black);
+    --label-default-border-color: var(--palette-transparent);
+    --label-default-color: var(--palette-neutral-lightest);
+    --label-primary-background-color: var(--palette-primary-dark);
+    --label-primary-border-color: var(--palette-transparent);
+    --label-primary-color: var(--palette-primary-lightest);
+    --label-positive-background-color: var(--palette-positive-dark);
+    --label-positive-border-color: var(--palette-transparent);
+    --label-positive-color: var(--palette-positive-lightest);
+    --label-important-background-color: var(--palette-negative-dark);
+    --label-important-border-color: var(--palette-transparent);
+    --label-important-color: var(--palette-negative-lightest);
+    --label-dark-background-color: var(--palette-white);
+    --label-dark-border-color: var(--palette-transparent);
+    --label-dark-color: var(--palette-black);
+    --label-light-background-color: var(--palette-white);
+    --label-light-border-color: var(--palette-transparent);
+    --label-light-color: var(--palette-black);
     --line-default: var(--palette-white-30);
     --link-default-color: var(--palette-white-90);
     --link-default-hover-color: var(--palette-white);
@@ -753,24 +771,6 @@
     --table-default-border-color: var(--palette-white-20);
     --table-default-head-border-color: var(--palette-white-20);
     --table-striped-background-color: var(--palette-white-10);
-    --tag-default-background-color: var(--palette-black);
-    --tag-default-border-color: var(--palette-transparent);
-    --tag-default-color: var(--palette-neutral-lightest);
-    --tag-primary-background-color: var(--palette-primary-dark);
-    --tag-primary-border-color: var(--palette-transparent);
-    --tag-primary-color: var(--palette-primary-lightest);
-    --tag-positive-background-color: var(--palette-positive-dark);
-    --tag-positive-border-color: var(--palette-transparent);
-    --tag-positive-color: var(--palette-positive-lightest);
-    --tag-important-background-color: var(--palette-negative-dark);
-    --tag-important-border-color: var(--palette-transparent);
-    --tag-important-color: var(--palette-negative-lightest);
-    --tag-dark-background-color: var(--palette-white);
-    --tag-dark-border-color: var(--palette-transparent);
-    --tag-dark-color: var(--palette-black);
-    --tag-light-background-color: var(--palette-white);
-    --tag-light-border-color: var(--palette-transparent);
-    --tag-light-color: var(--palette-black);
     --text-dark: var(--palette-white-95);
     --text-default: var(--palette-white-90);
     --text-moderated: var(--palette-white-80);
@@ -2136,6 +2136,27 @@ pre,
   .form .form-item .form-item {
     margin-bottom: 0; }
 
+label {
+  --form-label-font-weight: normal;
+  --form-label-font-style: normal;
+  --form-label-text-transform: none;
+  --form-label-letter-spacing: 0;
+  --form-label-margin-bottom: 0.15em;
+  display: block;
+  font-size: var(--form-label-font-size);
+  font-weight: var(--form-label-font-weight);
+  font-style: var(--form-label-font-style);
+  line-height: var(--form-label-line-height);
+  text-transform: var(--form-label-text-transform);
+  letter-spacing: var(--form-label-letter-spacing);
+  color: var(--form-label-color);
+  margin-bottom: var(--form-label-margin-bottom); }
+  label {
+    --form-label-font-size: 15px;
+    --form-label-line-height: 1.5; }
+  label {
+    --form-label-color: var(--form-label-default-color); }
+
 [class^="gr-"],
 [class*=" gr-"] {
   --gradient-color: transparent;
@@ -3286,26 +3307,76 @@ input[type="checkbox"] {
 .item {
   position: relative; }
 
-label {
-  --label-font-weight: normal;
-  --label-font-style: normal;
+.label {
+  --label-font-weight: var(--font-weight-semibold);
+  --label-font-size: var(--type-scale-12);
+  --label-border-radius: var(--radius-small);
+  --label-padding: 4px 9px;
+  --label-border-width: 1px;
+  --label-border-style: solid;
   --label-text-transform: none;
-  --label-letter-spacing: 0;
-  --label-margin-bottom: 0.15em;
-  display: block;
-  font-size: var(--label-font-size);
+  --label-close-size: 10px;
   font-weight: var(--label-font-weight);
-  font-style: var(--label-font-style);
-  line-height: var(--label-line-height);
+  font-size: var(--label-font-size);
+  border-radius: var(--label-border-radius);
+  padding: var(--label-padding);
+  border-width: var(--label-border-width);
+  border-style: var(--label-border-style);
   text-transform: var(--label-text-transform);
-  letter-spacing: var(--label-letter-spacing);
   color: var(--label-color);
-  margin-bottom: var(--label-margin-bottom); }
-  label {
-    --label-font-size: 15px;
-    --label-line-height: 1.5; }
-  label {
+  border-color: var(--label-border-color);
+  background-color: var(--label-background-color);
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-decoration: none;
+  line-height: 1; }
+  .label {
+    --label-background-color: var(--label-default-background-color);
+    --label-border-color: var(--label-default-border-color);
     --label-color: var(--label-default-color); }
+  .label.label-primary {
+    --label-background-color: var(--label-primary-background-color);
+    --label-border-color: var(--label-primary-border-color);
+    --label-color: var(--label-primary-color); }
+  .label.label-positive {
+    --label-background-color: var(--label-positive-background-color);
+    --label-border-color: var(--label-positive-border-color);
+    --label-color: var(--label-positive-color); }
+  .label.label-important {
+    --label-background-color: var(--label-important-background-color);
+    --label-border-color: var(--label-important-border-color);
+    --label-color: var(--label-important-color); }
+  .label.label-dark {
+    --label-background-color: var(--label-dark-background-color);
+    --label-border-color: var(--label-dark-border-color);
+    --label-color: var(--label-dark-color); }
+  .label.label-light {
+    --label-background-color: var(--label-light-background-color);
+    --label-border-color: var(--label-light-border-color);
+    --label-color: var(--label-light-color); }
+  .label a {
+    color: inherit;
+    text-decoration: none; }
+  .label a:hover {
+    color: inherit;
+    text-decoration: underline; }
+  .label .close {
+    top: 1px;
+    font-size: var(--label-close-size);
+    margin-top: -1px;
+    margin-bottom: -1px;
+    margin-right: -3px;
+    margin-left: 2px; }
+
+a.label:hover {
+  opacity: 1;
+  text-decoration: underline;
+  color: var(--label-color); }
+
+.label-large {
+  --label-font-size: var(--type-scale-14); }
 
 .line,
 hr {
@@ -6999,77 +7070,6 @@ caption {
 
 .table-light.table-striped {
   --table-background-color: var(--palette-white-10); }
-
-.tag {
-  --tag-font-weight: var(--font-weight-semibold);
-  --tag-font-size: var(--type-scale-12);
-  --tag-border-radius: var(--radius-small);
-  --tag-padding: 4px 9px;
-  --tag-border-width: 1px;
-  --tag-border-style: solid;
-  --tag-text-transform: none;
-  --tag-close-size: 10px;
-  font-weight: var(--tag-font-weight);
-  font-size: var(--tag-font-size);
-  border-radius: var(--tag-border-radius);
-  padding: var(--tag-padding);
-  border-width: var(--tag-border-width);
-  border-style: var(--tag-border-style);
-  text-transform: var(--tag-text-transform);
-  color: var(--tag-color);
-  border-color: var(--tag-border-color);
-  background-color: var(--tag-background-color);
-  display: inline-flex;
-  align-items: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  text-decoration: none;
-  line-height: 1; }
-  .tag {
-    --tag-background-color: var(--tag-default-background-color);
-    --tag-border-color: var(--tag-default-border-color);
-    --tag-color: var(--tag-default-color); }
-  .tag.tag-primary {
-    --tag-background-color: var(--tag-primary-background-color);
-    --tag-border-color: var(--tag-primary-border-color);
-    --tag-color: var(--tag-primary-color); }
-  .tag.tag-positive {
-    --tag-background-color: var(--tag-positive-background-color);
-    --tag-border-color: var(--tag-positive-border-color);
-    --tag-color: var(--tag-positive-color); }
-  .tag.tag-important {
-    --tag-background-color: var(--tag-important-background-color);
-    --tag-border-color: var(--tag-important-border-color);
-    --tag-color: var(--tag-important-color); }
-  .tag.tag-dark {
-    --tag-background-color: var(--tag-dark-background-color);
-    --tag-border-color: var(--tag-dark-border-color);
-    --tag-color: var(--tag-dark-color); }
-  .tag.tag-light {
-    --tag-background-color: var(--tag-light-background-color);
-    --tag-border-color: var(--tag-light-border-color);
-    --tag-color: var(--tag-light-color); }
-  .tag a {
-    color: inherit;
-    text-decoration: none; }
-  .tag a:hover {
-    color: inherit;
-    text-decoration: underline; }
-  .tag .close {
-    top: 1px;
-    font-size: var(--tag-close-size);
-    margin-top: -1px;
-    margin-bottom: -1px;
-    margin-right: -3px;
-    margin-left: 2px; }
-
-a.tag:hover {
-  opacity: 1;
-  text-decoration: underline;
-  color: var(--tag-color); }
-
-.tag-large {
-  --tag-font-size: var(--type-scale-14); }
 
 .text-semibold {
   font-weight: var(--font-weight-semibold); }

@@ -11,14 +11,14 @@
 }
 $width-scale: scale(width);
 @each $name, $width in $width-scale {
-    .w-#{$name} {
+    .max-#{$name} {
         width: $width;
         min-width: $width;
         max-width: $width;
     }
 }
 @include for-sm {
-    .w-off-sm {
+    .max-off-sm {
         max-width: none;
         min-width: none;
         width: auto;
@@ -38,13 +38,13 @@ $width-scale: scale(width);
 $sizes: scale(spacing);
 @each $name, $size in $sizes {
     .h-#{$name} { height: $unit * $size !important; }
-    .s-#{$name} { width: $unit * $size !important; }
+    .w-#{$name} { width: $unit * $size !important; }
 }
 @include for-sm {
     @each $name, $size in $sizes {
         .h-#{$name}-sm { height: $unit * $size !important; }
-        .s-#{$name}-sm { width: $unit * $size !important; }
+        .w-#{$name}-sm { width: $unit * $size !important; }
     }
     .h-off-sm { height: auto !important; }
-    .s-off-sm { width: auto !important; }
+    .w-off-sm { width: auto !important; }
 }

@@ -3071,6 +3071,27 @@ hr {
 .link-ghost:hover {
   text-decoration: underline; }
 
+.link-giga {
+  font-size: 32px; }
+
+.link-mega {
+  font-size: 24px; }
+
+.link-huge {
+  font-size: 20px; }
+
+.link-large {
+  font-size: 18px; }
+
+.link-medium {
+  font-size: 14px; }
+
+.link-small {
+  font-size: 13px; }
+
+.link-tiny {
+  font-size: 12px; }
+
 [class^="link-"],
 [class*=" link-"] {
   --link-color: var(--link-default-color);

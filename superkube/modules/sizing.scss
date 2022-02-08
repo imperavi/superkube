@@ -38,12 +38,12 @@ $width-scale: scale(width);
 $sizes: scale(spacing);
 @each $name, $size in $sizes {
     .h-#{$name} { height: $unit * $size !important; }
-    .s-#{$name} { width: $unit * $size; }
+    .s-#{$name} { width: $unit * $size !important; }
 }
 @include for-sm {
     @each $name, $size in $sizes {
         .h-#{$name}-sm { height: $unit * $size !important; }
-        .s-#{$name}-sm { width: $unit * $size; }
+        .s-#{$name}-sm { width: $unit * $size !important; }
     }
     .h-off-sm { height: auto !important; }
     .s-off-sm { width: auto !important; }

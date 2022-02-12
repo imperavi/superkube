@@ -2,7 +2,7 @@
 figcaption,
 .caption {
     // generate
-    @include generate-type(caption);
+    @include generate-type(caption, null, '.caption');
     @include generate-colors(caption);
 
     // params

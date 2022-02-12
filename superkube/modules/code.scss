@@ -2,7 +2,7 @@
 pre,
 .code {
     // generate
-    @include generate-type(code);
+    @include generate-type(code, null, '.code');
     @include generate-colors(code);
 
     // params

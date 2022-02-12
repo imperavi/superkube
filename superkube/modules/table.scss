@@ -1,7 +1,7 @@
 // =Table
 table {
     // generate
-    @include generate-type(table);
+    @include generate-type(table, null, '.table');
     @include generate-colors(table);
 
     // vars

@@ -2,7 +2,7 @@
 blockquote,
 .quote {
     // generate
-    @include generate-type(quote);
+    @include generate-type(quote, null, '.code');
     @include generate-colors(quote);
 
     // params

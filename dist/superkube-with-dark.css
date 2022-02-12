@@ -1823,12 +1823,12 @@ pre,
   .code {
     --code-font-size: 14px;
     --code-line-height: 1.5; }
-  pre-large,
-  .code-large {
+  pre.code-large,
+  .code.code-large {
     --code-font-size: 16px;
     --code-line-height: 1.5; }
-  pre-small,
-  .code-small {
+  pre.code-small,
+  .code.code-small {
     --code-font-size: 12px;
     --code-line-height: 1.5; }
   pre,

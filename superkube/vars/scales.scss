@@ -78,7 +78,9 @@ $scales: map-extend($scales, (
             default: 12px 1.5
         ),
         code: (
-            default: 14px 1.5
+            large: 16px 1.5,
+            default: 14px 1.5,
+            small: 12px 1.5
         ),
         table: (
             default: 15px 1.5

@@ -7,7 +7,7 @@ pre,
 
     // params
     --code-font-family: var(--font-mono);
-    --code-padding: 1em 1em 0.9em 1em;
+    --code-padding: 4rem;
     --code-border-radius: var(--radius-base);
     --code-border-width: 1px;
     --code-border-style: solid;
@@ -34,4 +34,9 @@ pre,
         line-height: inherit;
         background: none;
     }
+}
+.code-flat {
+   --code-padding: 0;
+   --code-border-color: transparent;
+   --code-background-color: none;
 }

@@ -263,6 +263,12 @@
   --code-default-background-color: var(--palette-neutral-lightest);
   --code-default-color: var(--palette-neutral-darker);
   --code-default-border-color: var(--palette-transparent);
+  --code-light-background-color: var(--palette-white);
+  --code-light-color: var(--palette-neutral-darker);
+  --code-light-border-color: var(--palette-transparent);
+  --code-dark-background-color: var(--palette-black);
+  --code-dark-color: var(--palette-white-90);
+  --code-dark-border-color: var(--palette-transparent);
   --divider-default: var(--palette-black);
   --divider-primary: var(--palette-primary-base);
   --divider-muted: var(--palette-black-15);
@@ -597,6 +603,12 @@
     --code-default-background-color: var(--palette-surface-300);
     --code-default-color: var(--palette-white-80);
     --code-default-border-color: var(--palette-transparent);
+    --code-light-background-color: var(--palette-white);
+    --code-light-color: var(--palette-neutral-darker);
+    --code-light-border-color: var(--palette-transparent);
+    --code-dark-background-color: var(--palette-black);
+    --code-dark-color: var(--palette-white-90);
+    --code-dark-border-color: var(--palette-transparent);
     --divider-default: var(--palette-white-95);
     --divider-primary: var(--palette-primary-base);
     --divider-muted: var(--palette-white-30);
@@ -1791,7 +1803,7 @@ label.checkbox,
 pre,
 .code {
   --code-font-family: var(--font-mono);
-  --code-padding: 1em 1em 0.9em 1em;
+  --code-padding: 4rem;
   --code-border-radius: var(--radius-base);
   --code-border-width: 1px;
   --code-border-style: solid;
@@ -1811,11 +1823,29 @@ pre,
   .code {
     --code-font-size: 14px;
     --code-line-height: 1.5; }
+  pre-large,
+  .code-large {
+    --code-font-size: 16px;
+    --code-line-height: 1.5; }
+  pre-small,
+  .code-small {
+    --code-font-size: 12px;
+    --code-line-height: 1.5; }
   pre,
   .code {
     --code-background-color: var(--code-default-background-color);
     --code-color: var(--code-default-color);
     --code-border-color: var(--code-default-border-color); }
+  pre.code-light,
+  .code.code-light {
+    --code-background-color: var(--code-light-background-color);
+    --code-color: var(--code-light-color);
+    --code-border-color: var(--code-light-border-color); }
+  pre.code-dark,
+  .code.code-dark {
+    --code-background-color: var(--code-dark-background-color);
+    --code-color: var(--code-dark-color);
+    --code-border-color: var(--code-dark-border-color); }
   pre code,
   .code code {
     padding: 0;
@@ -1824,6 +1854,11 @@ pre,
     display: block;
     line-height: inherit;
     background: none; }
+
+.code-flat {
+  --code-padding: 0;
+  --code-border-color: transparent;
+  --code-background-color: none; }
 
 .container-small {
   max-width: 400px; }

@@ -437,6 +437,10 @@
   --pagination-default-link-active-background-color: var(--palette-active-base);
   --placeholder-default: var(--palette-black-40);
   --placeholder-light: var(--palette-white-50);
+  --quote-default-color: var(--palette-neutral-darker);
+  --quote-default-background-color: var(--palette-transparent);
+  --quote-caption-default-color: var(--palette-neutral-darker);
+  --quote-caption-default-background-color: var(--palette-transparent);
   --table-default-border-color: var(--palette-black-7);
   --table-default-head-border-color: var(--palette-black-7);
   --table-striped-background-color: var(--palette-neutral-lightest);
@@ -4220,10 +4224,10 @@ blockquote,
   .quote {
     --quote-font-size: 18px;
     --quote-line-height: 1.5; }
-  blockquote-caption,
-  .quote-caption {
-    --quote-font-size: 14px;
-    --quote-line-height: 1.5; }
+  blockquote,
+  .quote {
+    --quote-color: var(--quote-default-color);
+    --quote-background-color: var(--quote-default-background-color); }
   blockquote p,
   .quote p {
     font-style: var(--quote-font-style);
@@ -4236,9 +4240,19 @@ blockquote,
     margin-top: var(--quote-spacing); }
 
 .quote-caption {
-  font-style: italic;
-  font-size: var(--quote-font-size);
-  line-height: var(--quote-line-height); }
+  --quote-caption-font-style: italic;
+  --quote-caption-font-weight: normal;
+  font-style: var(--quote-caption-font-style);
+  font-weight: var(--quote-caption-font-weight);
+  font-size: var(--quote-caption-font-size);
+  line-height: var(--quote-caption-line-height);
+  color: var(--quote-caption-color); }
+  .quote-caption {
+    --quote-caption-font-size: 14px;
+    --quote-caption-line-height: 1.5; }
+  .quote-caption {
+    --quote-caption-color: var(--quote-caption-default-color);
+    --quote-caption-background-color: var(--quote-caption-default-background-color); }
 
 .radius-off {
   border-radius: 0; }

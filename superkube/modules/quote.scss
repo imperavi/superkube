@@ -33,7 +33,18 @@ blockquote,
     }
 }
 .quote-caption {
-    font-style: italic;
-    font-size: var(--quote-font-size);
-    line-height: var(--quote-line-height);
+    // generate
+    @include generate-type(quote-caption);
+    @include generate-colors(quote-caption);
+
+    // params
+    --quote-caption-font-style: italic;
+    --quote-caption-font-weight: normal;
+
+    // props
+    font-style: var(--quote-caption-font-style);
+    font-weight: var(--quote-caption-font-weight);
+    font-size: var(--quote-caption-font-size);
+    line-height: var(--quote-caption-line-height);
+    color: var(--quote-caption-color);
 }

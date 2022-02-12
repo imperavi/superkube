@@ -69,8 +69,10 @@ $scales: map-extend($scales, (
             default: 13px 1.5
         ),
         quote: (
-            default: 18px 1.5,
-            caption: 14px 1.5
+            default: 18px 1.5
+        ),
+        quote-caption: (
+            default: 14px 1.5
         ),
         caption: (
             default: 12px 1.5

@@ -438,6 +438,18 @@ $colors: map-extend($colors, (
         default: var(--palette-black-40),
         light: var(--palette-white-50)
     ),
+    quote: (
+        default: (
+            color: var(--palette-neutral-darker),
+            background-color: var(--palette-transparent)
+        )
+    ),
+    quote-caption: (
+        default: (
+            color: var(--palette-neutral-darker),
+            background-color: var(--palette-transparent)
+        )
+    ),
     shadow: (
         100: (
             0 1px 3px -1px var(--palette-black-20),

@@ -139,6 +139,12 @@ $colors-dark: map-extend($colors-dark, (
             disabled-color: var(--palette-black-80)
         )
     ),
+    caption: (
+        default: (
+            color: var(--palette-white-90),
+            background-color: var(--palette-transparent)
+        )
+    ),
     code: (
         default: (
             background-color: var(--palette-surface-300),
@@ -175,6 +181,20 @@ $colors-dark: map-extend($colors-dark, (
         light: var(--palette-white-95),
         light-moderated: var(--palette-white-80),
         primary: var(--palette-primary-base)
+    ),
+    hint: (
+        default: (
+            color: var(--palette-black-50)
+        ),
+        success: (
+            color: var(--palette-positive-dark)
+        ),
+        error: (
+            color: var(--palette-negative-dark)
+        ),
+        req: (
+            color: var(--palette-negative-base)
+        )
     ),
     icon: (
         dark: var(--palette-white-95),

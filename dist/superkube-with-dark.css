@@ -260,6 +260,8 @@
   --button-dark-disabled-background-color: var(--palette-black-70);
   --button-dark-disabled-border-color: var(--palette-transparent);
   --button-dark-disabled-color: var(--palette-white-70);
+  --caption-default-color: var(--palette-neutral-darker);
+  --caption-default-background-color: var(--palette-transparent);
   --code-default-background-color: var(--palette-neutral-lightest);
   --code-default-color: var(--palette-neutral-darker);
   --code-default-border-color: var(--palette-transparent);
@@ -281,6 +283,10 @@
   --heading-light: var(--palette-white-95);
   --heading-light-moderated: var(--palette-white-80);
   --heading-primary: var(--palette-primary-base);
+  --hint-default-color: var(--palette-black-50);
+  --hint-success-color: var(--palette-positive-dark);
+  --hint-error-color: var(--palette-negative-dark);
+  --hint-req-color: var(--palette-negative-base);
   --icon-dark: var(--palette-black);
   --icon-light: var(--palette-white);
   --icon-primary: var(--palette-primary-base);
@@ -600,6 +606,8 @@
     --button-dark-disabled-background-color: var(--palette-white-70);
     --button-dark-disabled-border-color: var(--palette-transparent);
     --button-dark-disabled-color: var(--palette-black-80);
+    --caption-default-color: var(--palette-white-90);
+    --caption-default-background-color: var(--palette-transparent);
     --code-default-background-color: var(--palette-surface-300);
     --code-default-color: var(--palette-white-80);
     --code-default-border-color: var(--palette-transparent);
@@ -621,6 +629,10 @@
     --heading-light: var(--palette-white-95);
     --heading-light-moderated: var(--palette-white-80);
     --heading-primary: var(--palette-primary-base);
+    --hint-default-color: var(--palette-black-50);
+    --hint-success-color: var(--palette-positive-dark);
+    --hint-error-color: var(--palette-negative-dark);
+    --hint-req-color: var(--palette-negative-base);
     --icon-dark: var(--palette-white-95);
     --icon-light: var(--palette-white-95);
     --icon-primary: var(--palette-primary-base);
@@ -1677,6 +1689,10 @@ figcaption,
   .caption {
     --caption-font-size: 12px;
     --caption-line-height: 1.5; }
+  figcaption,
+  .caption {
+    --caption-color: var(--caption-default-color);
+    --caption-background-color: var(--caption-default-background-color); }
 
 .caption-semibold {
   --caption-font-weight: var(--font-weight-semibold); }
@@ -2886,7 +2902,6 @@ label {
   --heading-color: var(--heading-primary); }
 
 .hint {
-  --hint-color: var(--palette-black-50);
   --hint-font-weight: normal;
   --hint-font-style: normal;
   font-size: var(--hint-font-size);
@@ -2897,6 +2912,14 @@ label {
   .hint {
     --hint-font-size: 13px;
     --hint-line-height: 1.5; }
+  .hint {
+    --hint-color: var(--hint-default-color); }
+  .hint.hint-success {
+    --hint-color: var(--hint-success-color); }
+  .hint.hint-error {
+    --hint-color: var(--hint-error-color); }
+  .hint.hint-req {
+    --hint-color: var(--hint-req-color); }
 
 label .hint {
   text-transform: none;
@@ -2906,14 +2929,7 @@ label .hint {
 div.hint {
   margin-top: 2px; }
 
-.hint-success {
-  --hint-color: var(--palette-positive-dark); }
-
-.hint-error {
-  --hint-color: var(--palette-negative-dark); }
-
 .hint-req {
-  --hint-color: var(--palette-negative-base);
   --hint-font-weight: bold;
   font-size: 105%; }
 

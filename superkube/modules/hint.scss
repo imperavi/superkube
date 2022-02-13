@@ -2,9 +2,7 @@
 .hint {
     // generate
     @include generate-type(hint);
-
-    // colors
-    --hint-color: var(--palette-black-50);
+    @include generate-colors(hint);
 
     // vars
     --hint-font-weight: normal;
@@ -25,14 +23,7 @@ label .hint {
 div.hint {
     margin-top: 2px;
 }
-.hint-success {
-    --hint-color: var(--palette-positive-dark);
-}
-.hint-error {
-    --hint-color: var(--palette-negative-dark);
-}
 .hint-req {
-    --hint-color: var(--palette-negative-base);
     --hint-font-weight: bold;
 
     // props

@@ -3621,7 +3621,7 @@ hr {
   .list .list + h5,
   .list .list + h6 {
     margin-top: 5rem; }
-  .list .tag {
+  .list .label {
     margin-top: -2px; }
 
 .list-stacked {
@@ -3761,7 +3761,7 @@ hr {
   .menu .menu-list + h5,
   .menu .menu-list + h6 {
     margin-top: 5rem; }
-  .menu .tag {
+  .menu .label {
     margin-top: -2px; }
 
 .menu-semibold .menu-link {

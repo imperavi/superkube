@@ -443,7 +443,7 @@
   --pagination-default-link-background-color: var(--palette-transparent);
   --pagination-default-link-hover-color: var(--palette-black-60);
   --pagination-default-link-hover-border-color: var(--palette-black-15);
-  --pagination-default-link-hover-background-color: var(--palette-transparent);
+  --pagination-default-link-hover-background-color: var(--palette-active-lighter);
   --pagination-default-link-active-color: var(--palette-active-lightest);
   --pagination-default-link-active-border-color: var(--palette-active-base);
   --pagination-default-link-active-background-color: var(--palette-active-base);

@@ -458,7 +458,7 @@ $colors: map-extend($colors, (
             link-background-color: var(--palette-transparent),
             link-hover-color: var(--palette-black-60),
             link-hover-border-color: var(--palette-black-15),
-            link-hover-background-color: var(--palette-transparent),
+            link-hover-background-color: var(--palette-active-lighter),
             link-active-color: var(--palette-active-lightest),
             link-active-border-color: var(--palette-active-base),
             link-active-background-color: var(--palette-active-base)

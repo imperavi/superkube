@@ -645,10 +645,6 @@ a:hover {
   transition: all 0.1s linear;
   color: var(--link-default-hover-color); }
 
-a .icon svg,
-a:hover .icon svg {
-  fill: currentColor; }
-
 h1,
 h2,
 h3,

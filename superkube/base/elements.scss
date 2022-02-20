@@ -69,10 +69,6 @@ a:hover {
     @include transition;
     color: var(--link-default-hover-color);
 }
-a .icon svg,
-a:hover .icon svg {
-    fill: currentColor;
-}
 
 // =Heading
 h1,

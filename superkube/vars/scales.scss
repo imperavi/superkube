@@ -37,8 +37,8 @@ $scales: map-extend($scales, (
             tiny: 12px 1.5
         ),
         heading: (
-            giga: 80px 1.1,
-            mega: 64px 1.1,
+            giga: 80px 1.15,
+            mega: 64px 1.15,
             huge: 48px 1.2,
             large: 36px 1.2,
             medium: 24px 1.3,
@@ -111,8 +111,8 @@ $scales: map-extend($scales, (
     ),
     type-sm: (
         heading: (
-            giga: 60px 1.1,
-            mega: 60px 1.1
+            giga: 60px 1.15,
+            mega: 60px 1.15
         )
     ),
     type-md: (

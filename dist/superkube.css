@@ -2494,11 +2494,11 @@ label {
 
 .heading-giga {
   --heading-font-size: 80px;
-  --heading-line-height: 1.1; }
+  --heading-line-height: 1.15; }
 
 .heading-mega {
   --heading-font-size: 64px;
-  --heading-line-height: 1.1; }
+  --heading-line-height: 1.15; }
 
 .heading-huge {
   --heading-font-size: 48px;
@@ -2527,10 +2527,10 @@ label {
 @media only screen and (max-width: 767px) {
   .heading-giga {
     --heading-font-size: 60px;
-    --heading-line-height: 1.1; }
+    --heading-line-height: 1.15; }
   .heading-mega {
     --heading-font-size: 60px;
-    --heading-line-height: 1.1; } }
+    --heading-line-height: 1.15; } }
 
 .heading {
   --heading-color: var(--heading-default); }

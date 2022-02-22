@@ -451,19 +451,6 @@ $colors: map-extend($colors, (
         light: var(--palette-white-50),
         dark: var(--palette-black-50)
     ),
-    pagination: (
-        default: (
-            link-color: var(--palette-black),
-            link-border-color: var(--palette-black-15),
-            link-background-color: var(--palette-transparent),
-            link-hover-color: var(--palette-black-60),
-            link-hover-border-color: var(--palette-black-15),
-            link-hover-background-color: var(--palette-active-lighter),
-            link-active-color: var(--palette-active-lightest),
-            link-active-border-color: var(--palette-active-base),
-            link-active-background-color: var(--palette-active-base)
-        )
-    ),
     placeholder: (
         default: var(--palette-black-40),
         light: var(--palette-white-50)

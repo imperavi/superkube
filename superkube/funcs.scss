@@ -38,7 +38,7 @@
     @return map-deep-get($colors, $keys...);
 }
 
-@function color-dark($keys...) {
+@function color-dark-theme($keys...) {
     @return map-deep-get($colors-dark, $keys...);
 }
 

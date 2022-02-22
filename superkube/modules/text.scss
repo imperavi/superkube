@@ -50,6 +50,20 @@ $text-colors: map-get($colors, text);
     }
 
     #{$sel} {
-        --text-color: var(--text-#{$name});
+        --text-color: #{$value};
+    }
+}
+// Dark theme
+@include dark-theme {
+    $text-colors: map-get($colors-dark, text);
+    @each $name, $value in $text-colors {
+        $sel: '.text';
+        @if $name != default {
+            $sel: '.text-' + $name;
+        }
+
+        #{$sel} {
+            --text-color: #{$value};
+        }
     }
 }

@@ -80,6 +80,13 @@
         margin-top: -2px;
     }
 }
+// Dark theme
+@include dark-theme {
+    .list {
+        @include generate-dark-theme-colors(list);
+    }
+}
+
 
 // =Stacked
 .list-stacked {
@@ -120,14 +127,15 @@
 
 // =Numbered
 .list-numbered {
-    // vars
     --list-number-font-size: 80%;
-    --list-number-width: 24px;
+    --list-number-width: 22px;
 
     // props
     counter-reset: table-of-contents;
 
     .list-item {
+        display: flex;
+        align-items: center;
         counter-increment: table-of-contents;
     }
     .list-item:before {

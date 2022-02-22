@@ -52,3 +52,9 @@
 .breadcrumb-path {
     --breadcrumb-separator: '\0227B';
 }
+// Dark theme
+@include dark-theme {
+    .breadcrumb {
+        @include generate-dark-theme-colors(breadcrumb);
+    }
+}

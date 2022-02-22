@@ -40,6 +40,13 @@ table {
         }
     }
 }
+// Dark theme
+@include dark-theme {
+    table {
+        @include generate-dark-theme-colors(table);
+    }
+}
+
 td,
 th {
     text-align: left;

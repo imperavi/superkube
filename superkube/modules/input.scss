@@ -63,13 +63,14 @@ textarea,
 .input-light {
     @include placeholder(var(--placeholder-light));
 }
-// DarkTheme
+// Dark Theme
 @include dark-theme {
     select.input {
         --input-select-toggle: url('data:image/svg+xml;utf8,<svg height="6" viewBox="0 0 10 6" width="10" xmlns="http://www.w3.org/2000/svg"><path fill="rgb(255,255,255)" opacity=".7" d="m6.6168815 3-4.44908109-4.09883609c-.22373388-.20615371-.22373388-.54039492 0-.74654863s.58647818-.20615371.81021206 0l4.85418712 4.47211041c.22373388.20615371.22373388.54039491 0 .74654862l-4.85418712 4.47211041c-.22373388.20615371-.58647818.20615371-.81021206 0s-.22373388-.54039492 0-.74654863z" fill-rule="evenodd" transform="matrix(0 1 -1 0 8 -2)"/></svg>');
     }
     .input {
         @include placeholder(var(--placeholder-light));
+        @include generate-dark-theme-colors(input);
     }
 }
 

@@ -38,3 +38,19 @@ $dividercolors: map-get($colors, divider);
         }
     }
 }
+// Dark theme
+@include dark-theme {
+    $dividercolors: map-get($colors-dark, divider);
+    @each $name, $value in $dividercolors {
+        @if $name == default {
+            .divider {
+                --divider-background-color: #{$value};
+            }
+        }
+        @else {
+            .divider-#{$name} {
+                --divider-background-color: #{$value};
+            }
+        }
+    }
+}

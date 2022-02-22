@@ -40,6 +40,20 @@ $heading-colors: map-get($colors, heading);
     }
 
     #{$sel} {
-        --heading-color: var(--heading-#{$name});
+        --heading-color: #{$value};
+    }
+}
+// Dark theme
+@include dark-theme {
+    $heading-colors: map-get($colors-dark, heading);
+    @each $name, $value in $heading-colors {
+        $sel: '.heading';
+        @if $name != default {
+            $sel: '.heading-' + $name;
+        }
+
+        #{$sel} {
+            --heading-color: #{$value};
+        }
     }
 }

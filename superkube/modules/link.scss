@@ -64,7 +64,23 @@ $link-colors: map-get($colors, link);
 
     #{$sel} {
         @each $key, $value in $map {
-            --link-#{$key}: var(--link-#{$name}-#{$key});
+            --link-#{$key}: #{$value};
+        }
+    }
+}
+// Dark theme
+@include dark-theme {
+    $link-colors: map-get($colors-dark, link);
+    @each $name, $map in $link-colors {
+        $sel: '.link';
+        @if $name != default {
+            $sel: '.link-' + $name;
+        }
+
+        #{$sel} {
+            @each $key, $value in $map {
+                --link-#{$key}: #{$value};
+            }
         }
     }
 }

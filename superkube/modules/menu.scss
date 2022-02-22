@@ -65,6 +65,12 @@
         margin-top: -2px;
     }
 }
+// Dark theme
+@include dark-theme {
+    .menu {
+        @include generate-dark-theme-colors(menu);
+    }
+}
 
 // Variants
 .menu-semibold {
@@ -124,7 +130,7 @@
 // =Numbered
 .menu-numbered {
     --menu-number-font-size: 80%;
-    --menu-number-width: 24px;
+    --menu-number-width: 22px;
 
     .menu-list {
         counter-reset: table-of-contents;

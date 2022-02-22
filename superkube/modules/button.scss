@@ -117,3 +117,9 @@ button,
 .button-round {
     --button-border-radius: 99px;
 }
+// Dark theme
+@include dark-theme {
+    .button {
+        @include generate-dark-theme-colors(button);
+    }
+}

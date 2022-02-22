@@ -42,10 +42,21 @@ hr {
 }
 // Colors
 $lines: color(line);
-@each $name, $color in $lines {
+@each $name, $value in $lines {
     @if $name != default {
         .line-#{$name} {
-            --line-color: var(--line-#{$name});
+            --line-color: #{$value};
+        }
+    }
+}
+// Dark theme
+@include dark-theme {
+    $lines: color-dark-theme(line);
+    @each $name, $value in $lines {
+        @if $name != default {
+            .line-#{$name} {
+                --line-color: #{$value};
+            }
         }
     }
 }

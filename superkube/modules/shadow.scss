@@ -12,3 +12,10 @@ $shadows: map-get($colors, shadow);
 @each $type, $value in $shadows {
     .shadow-#{$type} { --shadow: var(--shadow-#{$type}); }
 }
+// Dark theme
+@include dark-theme {
+    $shadows: map-get($colors-dark, shadow);
+    @each $type, $value in $shadows {
+        .shadow-#{$type} { --shadow: var(--shadow-#{$type}); }
+    }
+}

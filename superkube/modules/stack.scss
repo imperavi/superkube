@@ -18,6 +18,15 @@
     }
 }
 
+// =Size
+$spacing-scale: scale(spacing);
+@each $name, $index in $spacing-scale {
+    .stack-#{$name} > * {
+        margin-bottom: $unit * $index;
+        &:after { bottom: -($unit * $index)/2; }
+    }
+}
+
 // =Divider
 $borders-colors: map-get($colors, border);
 @each $name, $value in $borders-colors {
@@ -27,12 +36,14 @@ $borders-colors: map-get($colors, border);
         }
     }
 }
-
-// =Size
-$spacing-scale: scale(spacing);
-@each $name, $index in $spacing-scale {
-    .stack-#{$name} > * {
-        margin-bottom: $unit * $index;
-        &:after { bottom: -($unit * $index)/2; }
+// Dark theme
+@include dark-theme {
+    $borders-colors: map-get($colors-dark, border);
+    @each $name, $value in $borders-colors {
+        .stack-#{$name} > * {
+            &:after {
+                border-bottom-color: #{$value};
+            }
+        }
     }
 }

@@ -44,6 +44,13 @@
         background-color: var(--nav-link-hover-background-color);
     }
 }
+// Dark theme
+@include dark-theme {
+    .nav {
+        @include generate-dark-theme-colors(nav);
+    }
+}
+
 // Scales
 .nav-small {
     --nav-item-space: 5rem;

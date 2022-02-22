@@ -23,3 +23,9 @@
     border-style: solid;
     border-color: var(--input-addon-border-color);
 }
+// Dark theme
+@include dark-theme {
+    .input-addon {
+        @include generate-dark-theme-colors(input-addon);
+    }
+}

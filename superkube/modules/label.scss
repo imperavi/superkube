@@ -58,3 +58,9 @@ a.label:hover {
 .label-large {
     --label-font-size: var(--type-scale-14);
 }
+// Dark theme
+@include dark-theme {
+    .label {
+        @include generate-dark-theme-colors(label);
+    }
+}

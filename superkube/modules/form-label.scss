@@ -22,3 +22,9 @@ label {
     color: var(--form-label-color);
     margin-bottom: var(--form-label-margin-bottom);
 }
+// Dark theme
+@include dark-theme {
+    label {
+        @include generate-dark-theme-colors(form-label);
+    }
+}

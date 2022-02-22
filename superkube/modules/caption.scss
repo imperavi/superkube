@@ -44,3 +44,10 @@ figcaption,
     --caption-text-transform: uppercase;
     --caption-letter-spacing: .035em;
 }
+// Dark theme
+@include dark-theme {
+    figcaption,
+    .caption {
+        @include generate-dark-theme-colors(caption);
+    }
+}

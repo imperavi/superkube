@@ -50,3 +50,9 @@
         padding-top: .85em;
     }
 }
+// Dark theme
+@include dark-theme {
+    .alert {
+        @include generate-dark-theme-colors(alert);
+    }
+}

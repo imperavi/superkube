@@ -29,3 +29,9 @@ div.hint {
     // props
     font-size: 105%;
 }
+// Dark theme
+@include dark-theme {
+    .hint {
+        @include generate-dark-theme-colors(hint);
+    }
+}

@@ -40,3 +40,10 @@ pre,
    --code-border-color: transparent;
    --code-background-color: none;
 }
+// Dark theme
+@include dark-theme {
+    pre,
+    .code {
+        @include generate-dark-theme-colors(code);
+    }
+}

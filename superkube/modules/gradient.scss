@@ -30,11 +30,23 @@ $gradients: map-get($colors, gradient);
         opacity: 1;
     }
 }
+// Colors
 $gradients: map-get($colors, text-gradient);
 @if $gradients != null {
     @each $name, $value in $gradients {
         .grt-#{$name} {
             --text-gradient-color: #{$value};
+        }
+    }
+}
+// Dark theme
+@include dark-theme {
+    $gradients: map-get($colors-dark, text-gradient);
+    @if $gradients != null {
+        @each $name, $value in $gradients {
+            .grt-#{$name} {
+                --text-gradient-color: #{$value};
+            }
         }
     }
 }

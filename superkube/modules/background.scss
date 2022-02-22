@@ -6,5 +6,12 @@
 }
 $backgrounds: map-get($colors, background);
 @each $name, $value in $backgrounds {
-    .bg-#{"" + $name} { --background-color: var(--background-#{$name}); }
+    .bg-#{"" + $name} { --background-color: #{$value}; }
+}
+// Dark theme
+@include dark-theme {
+    $backgrounds: map-get($colors-dark, background);
+    @each $name, $value in $backgrounds {
+        .bg-#{"" + $name} { --background-color: #{$value}; }
+    }
 }

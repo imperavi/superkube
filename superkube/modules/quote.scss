@@ -48,3 +48,13 @@ blockquote,
     line-height: var(--quote-caption-line-height);
     color: var(--quote-caption-color);
 }
+// Dark theme
+@include dark-theme {
+    blockquote,
+    .quote {
+        @include generate-dark-theme-colors(quote);
+    }
+    .quote-caption {
+        @include generate-dark-theme-colors(quote-caption);
+    }
+}

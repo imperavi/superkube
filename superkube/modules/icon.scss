@@ -33,7 +33,17 @@ $iconcolors: map-get($colors, icon);
 @each $name, $value in $iconcolors {
     .icon-#{$name},
     a.icon-#{$name} {
-        --icon-color: var(--icon-#{$name});
+        --icon-color: #{$value};
+    }
+}
+// Dark theme
+@include dark-theme {
+    $iconcolors: map-get($colors-dark, icon);
+    @each $name, $value in $iconcolors {
+        .icon-#{$name},
+        a.icon-#{$name} {
+            --icon-color: #{$value};
+        }
     }
 }
 

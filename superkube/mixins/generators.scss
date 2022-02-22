@@ -41,15 +41,17 @@
 @mixin generate-root-colors($map) {
     @if $map != null {
         @each $name, $value in $map {
-            @if $name != shadow {
+            @if $name != shadow and index($global-colors, $name) {
                 @each $key, $val in $value {
-                    @if type-of($val) == map {
-                        @each $n, $i in $val {
-                            --#{$name}-#{$key}-#{$n}: #{$i};
+                    @if $name == inline or $key == default {
+                        @if type-of($val) == map {
+                            @each $n, $i in $val {
+                                --#{$name}-#{$key}-#{$n}: #{$i};
+                            }
                         }
-                    }
-                    @else {
-                        --#{$name}-#{"" + $key}: #{$val};
+                        @else {
+                            --#{$name}-#{"" + $key}: #{$val};
+                        }
                     }
                 }
             }
@@ -69,8 +71,11 @@
 }
 
 // colors
-@mixin generate-colors($modulename) {
+@mixin generate-colors($modulename, $dark: null) {
     $map: color($modulename);
+    @if $dark {
+        $map: color-dark-theme($modulename);
+    }
     @if $map != null {
         @each $variant, $value in $map {
             $sel: '&';
@@ -90,12 +95,15 @@
                         }
                     }
                     @else {
-                        --#{$modulename}-#{$name}: var(--#{$modulename}-#{$variant}-#{$name});
+                        --#{$modulename}-#{$name}: #{$val};
                     }
                 }
             }
         }
     }
+}
+@mixin generate-dark-theme-colors($modulename) {
+    @include generate-colors($modulename, true);
 }
 
 // type

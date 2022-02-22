@@ -2,24 +2,24 @@
 $colors-dark: map-extend($colors-dark, (
     alert: (
         default: (
-            background-color: var(--palette-black),
+            background-color: var(--palette-neutral-lighter),
             border-color: var(--palette-transparent),
-            color: var(--palette-neutral-lightest),
+            color: var(--palette-neutral-darker),
         ),
         info: (
-            background-color: var(--palette-active-dark),
+            background-color: var(--palette-active-lighter),
             border-color: var(--palette-transparent),
-            color: var(--palette-active-lightest)
+            color: var(--palette-active-dark)
         ),
         success: (
-            background-color: var(--palette-positive-dark),
+            background-color: var(--palette-positive-lighter),
             border-color: var(--palette-transparent),
-            color: var(--palette-positive-lightest)
+            color: var(--palette-positive-dark)
         ),
         error: (
-            background-color: var(--palette-negative-dark),
+            background-color: var(--palette-negative-lighter),
             border-color: var(--palette-transparent),
-            color: var(--palette-negative-lightest)
+            color: var(--palette-negative-dark)
         )
     ),
     background: (

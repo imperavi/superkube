@@ -1006,82 +1006,82 @@ a.badge:hover {
   --badge-font-size: var(--type-scale-20);
   --badge-size: 48px; }
 
-[class^="b-"],
-[class*=" b-"] {
+[class^="border-"],
+[class*=" border-"] {
   --border-color: transparent;
   border-width: 1px;
   border-style: solid;
   border-color: var(--border-color); }
 
-.b-top {
+.border-top {
   border-style: none;
   border-top-style: solid; }
 
-.b-bottom {
+.border-bottom {
   border-style: none;
   border-bottom-style: solid; }
 
-.b-left {
+.border-left {
   border-style: none;
   border-left-style: solid; }
 
-.b-right {
+.border-right {
   border-style: none;
   border-right-style: solid; }
 
-.b-off {
+.border-off {
   border-color: transparent !important; }
 
-.b-dark {
+.border-dark {
   --border-color: var(--border-dark); }
 
-.b-dark-low {
+.border-dark-low {
   --border-color: var(--border-dark-low); }
 
-.b-dark-medium {
+.border-dark-medium {
   --border-color: var(--border-dark-medium); }
 
-.b-light {
+.border-light {
   --border-color: var(--border-light); }
 
-.b-light-low {
+.border-light-low {
   --border-color: var(--border-light-low); }
 
-.b-light-medium {
+.border-light-medium {
   --border-color: var(--border-light-medium); }
 
-.b-primary {
+.border-primary {
   --border-color: var(--border-primary); }
 
-.b-1 {
+.border-1 {
   border-width: 1px; }
 
-.b-2 {
+.border-2 {
   border-width: 2px; }
 
-.b-4 {
+.border-4 {
   border-width: 4px; }
 
 @media only screen and (max-width: 767px) {
-  .b-off-sm {
+  .border-off-sm {
     border-color: transparent !important; }
-  .b-top-sm {
+  .border-top-sm {
     border-style: none;
     border-top-style: solid; }
-  .b-bottom-sm {
+  .border-bottom-sm {
     border-style: none;
     border-bottom-style: solid; }
-  .b-left-sm {
+  .border-left-sm {
     border-style: none;
     border-left-style: solid; }
-  .b-right-sm {
+  .border-right-sm {
     border-style: none;
     border-right-style: solid; }
-  .b-1-sm {
+  .border-1-sm {
     border-width: 1px; }
-  .b-2-sm {
+  .border-2-sm {
     border-width: 2px; }
-  .b-4-sm {
+  .border-4-sm {
     border-width: 4px; } }
 
 .brand {

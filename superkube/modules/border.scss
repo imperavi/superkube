@@ -1,6 +1,6 @@
 // = Border
-[class^="b-"],
-[class*=" b-"] {
+[class^="border-"],
+[class*=" border-"] {
     --border-color: transparent;
 
     border-width: 1px;
@@ -8,61 +8,61 @@
     border-color: var(--border-color);
 
 }
-.b-top {
+.border-top {
     border-style: none;
     border-top-style: solid;
 }
-.b-bottom {
+.border-bottom {
     border-style: none;
     border-bottom-style: solid;
 }
-.b-left {
+.border-left {
     border-style: none;
     border-left-style: solid;
 }
-.b-right {
+.border-right {
     border-style: none;
     border-right-style: solid;
 }
 
 // off
-.b-off { border-color: transparent !important; }
+.border-off { border-color: transparent !important; }
 
 // color
 $borders-colors: map-get($colors, border);
 @each $name, $value in $borders-colors {
-    .b-#{$name} { --border-color: var(--border-#{$name}); }
+    .border-#{$name} { --border-color: var(--border-#{$name}); }
 }
 
 // size
 $borders: scale(border);
 @each $name, $value in $borders {
     @if $name not 1 {
-        .b-#{$name} { border-width: $value }
+        .border-#{$name} { border-width: $value }
     }
 }
 @include for-sm {
-    .b-off-sm { border-color: transparent !important; }
-    .b-top-sm {
+    .border-off-sm { border-color: transparent !important; }
+    .border-top-sm {
         border-style: none;
         border-top-style: solid;
     }
-    .b-bottom-sm {
+    .border-bottom-sm {
         border-style: none;
         border-bottom-style: solid;
     }
-    .b-left-sm {
+    .border-left-sm {
         border-style: none;
         border-left-style: solid;
     }
-    .b-right-sm {
+    .border-right-sm {
         border-style: none;
         border-right-style: solid;
     }
 
     @each $name, $value in $borders {
         @if $name not 1 {
-            .b-#{$name}-sm { border-width: $value }
+            .border-#{$name}-sm { border-width: $value }
         }
     }
 }

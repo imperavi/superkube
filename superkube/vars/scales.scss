@@ -68,6 +68,10 @@ $scales: map-extend($scales, (
         hint: (
             default: 13px 1.5
         ),
+        label: (
+            default: 12px,
+            large: 14px
+        ),
         quote: (
             default: 18px 1.5
         ),

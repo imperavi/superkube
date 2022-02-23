@@ -2930,7 +2930,6 @@ input[type="checkbox"] {
 
 .label {
   --label-font-weight: var(--font-weight-semibold);
-  --label-font-size: var(--type-scale-12);
   --label-border-radius: var(--radius-small);
   --label-padding: 4px 9px;
   --label-border-width: 1px;
@@ -2953,6 +2952,10 @@ input[type="checkbox"] {
   vertical-align: middle;
   text-decoration: none;
   line-height: 1; }
+  .label {
+    --label-font-size: 12px; }
+  .label-large {
+    --label-font-size: 14px; }
   .label {
     --label-background-color: var(--palette-neutral-lighter);
     --label-border-color: var(--palette-transparent);
@@ -2984,7 +2987,6 @@ input[type="checkbox"] {
     color: inherit;
     text-decoration: underline; }
   .label .close {
-    top: 1px;
     font-size: var(--label-close-size);
     margin-top: -1px;
     margin-bottom: -1px;
@@ -2995,9 +2997,6 @@ a.label:hover {
   opacity: 1;
   text-decoration: underline;
   color: var(--label-color); }
-
-.label-large {
-  --label-font-size: var(--type-scale-14); }
 
 @media (prefers-color-scheme: dark) {
   .label {

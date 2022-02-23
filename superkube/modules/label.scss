@@ -1,11 +1,10 @@
 // =Label
 .label {
-    // colors
+    @include generate-type(label);
     @include generate-colors(label);
 
     // vars
     --label-font-weight: var(--font-weight-semibold);
-    --label-font-size: var(--type-scale-12);
     --label-border-radius: var(--radius-small);
     --label-padding: 4px 9px;
     --label-border-width: 1px;
@@ -41,7 +40,6 @@
         text-decoration: underline;
     }
     .close {
-        top: 1px;
         font-size: var(--label-close-size);
         margin-top: -1px;
         margin-bottom: -1px;
@@ -53,10 +51,6 @@ a.label:hover {
     opacity: 1;
     text-decoration: underline;
     color: var(--label-color);
-}
-// Scales
-.label-large {
-    --label-font-size: var(--type-scale-14);
 }
 // Dark theme
 @include dark-theme {

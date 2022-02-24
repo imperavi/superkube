@@ -1,0 +1,14 @@
+//=CheckboxRadioGroup
+.checkbox-group,
+.radio-group {
+
+    // params
+    --checkbox-radio-group-spacing: 1em;
+
+    .checkbox,
+    .radio {
+        display: inline-block;
+        margin-bottom: 0;
+        margin-right: var(--checkbox-radio-group-spacing);
+    }
+}

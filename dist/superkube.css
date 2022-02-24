@@ -1106,41 +1106,45 @@ figcaption,
     margin-left: initial;
     margin-right: initial; } }
 
-label.checkbox,
-.checkbox {
-  --checkbox-font-weight: normal;
-  --checkbox-font-style: normal;
-  --checkbox-text-transform: none;
-  --checkbox-letter-spacing: 0;
-  --checkbox-spacing: 1rem;
-  font-size: var(--checkbox-font-size);
-  font-weight: var(--checkbox-font-weight);
-  font-style: var(--checkbox-font-style);
-  line-height: var(--checkbox-line-height);
-  text-transform: var(--checkbox-text-transform);
-  letter-spacing: var(--checkbox-letter-spacing);
+.checkbox,
+.radio {
+  --checkbox-radio-font-weight: normal;
+  --checkbox-radio-font-style: normal;
+  --checkbox-radio-text-transform: none;
+  --checkbox-radio-letter-spacing: 0;
+  --checkbox-radio-spacing: 1rem;
+  font-size: var(--checkbox-radio-font-size);
+  font-weight: var(--checkbox-radio-font-weight);
+  font-style: var(--checkbox-radio-font-style);
+  line-height: var(--checkbox-radio-line-height);
+  text-transform: var(--checkbox-radio-text-transform);
+  letter-spacing: var(--checkbox-radio-letter-spacing);
   cursor: pointer;
   color: inherit; }
-  label.checkbox,
-  .checkbox {
-    --checkbox-font-size: 15px;
-    --checkbox-line-height: 1.5; }
-  label.checkbox.disabled,
-  .checkbox.disabled {
+  .checkbox,
+  .radio {
+    --checkbox-radio-font-size: 15px;
+    --checkbox-radio-line-height: 1.5; }
+  .checkbox.disabled,
+  .radio.disabled {
     opacity: 0.5;
     cursor: default; }
-  label.checkbox + .checkbox,
-  .checkbox + .checkbox {
-    margin-top: var(--checkbox-spacing); }
+  .checkbox + .checkbox,
+  .checkbox + .radio,
+  .radio + .checkbox,
+  .radio + .radio {
+    margin-top: var(--checkbox-radio-spacing); }
 
-.form-checkboxes,
-.checkbox-group {
-  --checkbox-group-spacing: 1em; }
-  .form-checkboxes .checkbox,
-  .checkbox-group .checkbox {
+.checkbox-group,
+.radio-group {
+  --checkbox-radio-group-spacing: 1em; }
+  .checkbox-group .checkbox,
+  .checkbox-group .radio,
+  .radio-group .checkbox,
+  .radio-group .radio {
     display: inline-block;
     margin-bottom: 0;
-    margin-right: var(--checkbox-group-spacing); }
+    margin-right: var(--checkbox-radio-group-spacing); }
 
 .close {
   --close-size: 1em;

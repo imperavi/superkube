@@ -1,0 +1,33 @@
+//=CheckboxRadio
+.checkbox,
+.radio {
+    // generate
+    @include generate-type(checkbox-radio);
+    @include generate-colors(checkbox-radio);
+
+    // vars
+    --checkbox-radio-font-weight: normal;
+    --checkbox-radio-font-style: normal;
+    --checkbox-radio-text-transform: none;
+    --checkbox-radio-letter-spacing: 0;
+    --checkbox-radio-spacing: 1rem;
+
+    // props
+    font-size: var(--checkbox-radio-font-size);
+    font-weight: var(--checkbox-radio-font-weight);
+    font-style: var(--checkbox-radio-font-style);
+    line-height: var(--checkbox-radio-line-height);
+    text-transform: var(--checkbox-radio-text-transform);
+    letter-spacing: var(--checkbox-radio-letter-spacing);
+    cursor: pointer;
+    color: inherit;
+
+    &.disabled {
+        opacity: 0.5;
+        cursor: default;
+    }
+    & + .checkbox,
+    & + .radio {
+        margin-top: var(--checkbox-radio-spacing);
+    }
+}

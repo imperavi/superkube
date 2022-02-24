@@ -23,56 +23,56 @@ $colors-dark: map-extend($colors-dark, (
         )
     ),
     background: (
-        light: var(--palette-surface-100),
+        light: var(--palette-white-7),
         dark: var(--palette-surface-400),
-        primary: var(--palette-primary-dark),
+        primary: var(--palette-primary-base),
         aluminum: var(--palette-surface-200),
         silver: var(--palette-surface-300),
         platinum: var(--palette-surface-400)
     ),
     badge: (
         default: (
-            background-color: var(--palette-black),
+            background-color: var(--palette-neutral-lighter),
             border-color: var(--palette-transparent),
-            color: var(--palette-neutral-lightest)
+            color: var(--palette-neutral-darker)
         ),
         primary: (
-            background-color: var(--palette-primary-dark),
+            background-color: var(--palette-primary-light),
             border-color: var(--palette-transparent),
-            color: var(--palette-primary-lightest)
+            color: var(--palette-primary-dark)
         ),
         positive: (
-            background-color: var(--palette-positive-dark),
+            background-color: var(--palette-positive-light),
             border-color: var(--palette-transparent),
-            color: var(--palette-positive-lightest)
+            color: var(--palette-positive-darker)
         ),
         important: (
-            background-color: var(--palette-negative-dark),
+            background-color: var(--palette-negative-light),
             border-color: var(--palette-transparent),
-            color: var(--palette-negative-lightest)
+            color: var(--palette-negative-dark)
         ),
         dark: (
-            background-color: var(--palette-white),
+            background-color: var(--palette-white-30),
             border-color: var(--palette-transparent),
-            color: var(--palette-black)
+            color: var(--palette-white)
         ),
         light: (
-            background-color: var(--palette-white),
+            background-color: var(--palette-white-30),
             border-color: var(--palette-transparent),
-            color: var(--palette-black)
+            color: var(--palette-white)
         )
     ),
     body: (
         default: var(--palette-surface-base)
     ),
     border: (
-        dark: var(--palette-white-95),
-        dark-low: var(--palette-white-25),
+        dark: var(--palette-white-50),
+        dark-low: var(--palette-white-20),
         dark-medium: var(--palette-white-40),
-        light: var(--palette-white-95),
+        light: var(--palette-white-50),
         light-low: var(--palette-white-20),
-        light-medium: var(--palette-white-50),
-        primary: var(--palette-primary-dark)
+        light-medium: var(--palette-white-40),
+        primary: var(--palette-primary-base)
     ),
     breadcrumb: (
         default: (
@@ -85,20 +85,20 @@ $colors-dark: map-extend($colors-dark, (
     button: (
         default: (
             background-color: var(--palette-transparent),
-            border-color: var(--palette-white-60),
-            color: var(--palette-white-90),
+            border-color: var(--palette-white-40),
+            color: var(--palette-white-80),
             hover-background-color: var(--palette-white-7),
-            hover-border-color: var(--palette-white-80),
+            hover-border-color: var(--palette-white-60),
             hover-color: var(--palette-white),
             disabled-background-color: var(--palette-white-70),
             disabled-border-color: var(--palette-transparent),
             disabled-color: var(--palette-black-80)
         ),
         primary: (
-            background-color: var(--palette-primary-dark),
+            background-color: var(--palette-primary-base),
             border-color: var(--palette-transparent),
-            color: var(--palette-primary-lightest),
-            hover-background-color: var(--palette-primary-base),
+            color: var(--palette-primary-lighter),
+            hover-background-color: #716EED,
             hover-border-color: var(--palette-transparent),
             hover-color: var(--palette-primary-lightest),
             disabled-background-color: var(--palette-white-70),
@@ -163,11 +163,11 @@ $colors-dark: map-extend($colors-dark, (
         )
     ),
     divider: (
-        default: var(--palette-white-95),
+        default: var(--palette-white-50),
         primary: var(--palette-primary-base),
-        muted: var(--palette-white-30),
-        light: var(--palette-white),
-        light-muted: var(--palette-white-30)
+        muted: var(--palette-white-20),
+        light: var(--palette-white-50),
+        light-muted: var(--palette-white-20)
     ),
     form-label: (
         default: (
@@ -175,12 +175,12 @@ $colors-dark: map-extend($colors-dark, (
         )
     ),
     heading: (
-        default: var(--palette-white-95),
-        moderated: var(--palette-white-80),
+        default: var(--palette-white-90),
+        moderated: var(--palette-white-70),
         muted: var(--palette-white-50),
         light: var(--palette-white-95),
-        light-moderated: var(--palette-white-80),
-        primary: var(--palette-primary-base)
+        light-moderated: var(--palette-white-70),
+        primary: var(--palette-primary-light)
     ),
     hint: (
         default: (
@@ -197,9 +197,9 @@ $colors-dark: map-extend($colors-dark, (
         )
     ),
     icon: (
-        dark: var(--palette-white-95),
-        light: var(--palette-white-95),
-        primary: var(--palette-primary-base)
+        dark: var(--palette-white-90),
+        light: var(--palette-white-90),
+        primary: var(--palette-primary-light)
     ),
     inline: (
         var: (
@@ -224,11 +224,11 @@ $colors-dark: map-extend($colors-dark, (
     input: (
         default: (
             color: var(--palette-white-90),
-            border-color: var(--palette-white-40),
+            border-color: var(--palette-white-30),
             background-color: var(--palette-white-15),
             box-shadow: none,
             focus-color: var(--palette-white-90),
-            focus-border-color: var(--palette-white-60),
+            focus-border-color: var(--palette-white-50),
             focus-background-color: var(--palette-white-20),
             focus-box-shadow: none
         ),
@@ -292,15 +292,15 @@ $colors-dark: map-extend($colors-dark, (
         )
     ),
     line: (
-        default: var(--palette-white-30)
+        default: var(--palette-white-20)
     ),
     link: (
         default: (
-            color: var(--palette-white-90),
-            hover-color: var(--palette-white)
+            color: var(--palette-active-light),
+            hover-color: var(--palette-white-90)
         ),
         dark: (
-            color: var(--palette-white-95),
+            color: var(--palette-white-90),
             hover-color: var(--palette-white)
         ),
         muted: (
@@ -320,8 +320,8 @@ $colors-dark: map-extend($colors-dark, (
             hover-color: var(--palette-white)
         ),
         primary: (
-            color: var(--palette-white-95),
-            hover-color: var(--palette-white)
+            color: var(--palette-primary-light),
+            hover-color: var(--palette-white-90)
         )
     ),
     list: (
@@ -366,9 +366,9 @@ $colors-dark: map-extend($colors-dark, (
             number-color: var(--palette-white-50)
         ),
         primary: (
-            link-color: var(--palette-white-90),
-            link-hover-color: var(--palette-white),
-            link-active-color: var(--palette-white-50)
+            link-color: var(--palette-primary-light),
+            link-hover-color: var(--palette-white-90),
+            link-active-color: var(--palette-white-90)
         ),
         light: (
             link-color: var(--palette-white-90),
@@ -393,9 +393,9 @@ $colors-dark: map-extend($colors-dark, (
             link-active-background-color: var(--palette-transparent)
         ),
         primary: (
-            link-color: var(--palette-white-90),
-            link-hover-color: var(--palette-white),
-            link-active-color: var(--palette-white-50)
+            link-color: var(--palette-primary-light),
+            link-hover-color: var(--palette-white-90),
+            link-active-color: var(--palette-white-90)
         ),
         light: (
             link-color: var(--palette-white-90),
@@ -441,8 +441,8 @@ $colors-dark: map-extend($colors-dark, (
             link-hover-color: var(--palette-white),
             link-hover-border-color: var(--palette-white),
             link-hover-background-color: var(--palette-transparent),
-            link-active-color: var(--palette-white),
-            link-active-border-color: var(--palette-white),
+            link-active-color: var(--palette-white-90),
+            link-active-border-color: var(--palette-white-90),
             link-active-background-color: var(--palette-transparent)
         )
     ),
@@ -476,11 +476,11 @@ $colors-dark: map-extend($colors-dark, (
     ),
     table: (
         default: (
-            border-color: var(--palette-white-20),
-            head-border-color: var(--palette-white-20)
+            border-color: var(--palette-white-10),
+            head-border-color: var(--palette-white-10)
         ),
         striped: (
-            background-color: var(--palette-white-10)
+            background-color: var(--palette-white-7)
         )
     ),
     text: (
@@ -488,11 +488,11 @@ $colors-dark: map-extend($colors-dark, (
         default: var(--palette-white-90),
         moderated: var(--palette-white-80),
         muted: var(--palette-white-50),
-        success: var(--palette-positive-base),
-        error: var(--palette-negative-base),
+        success: var(--palette-positive-light),
+        error: var(--palette-negative-light),
         light: var(--palette-white-90),
         light-moderated: var(--palette-white-80),
         light-muted: var(--palette-white-50),
-        primary: var(--palette-primary-base)
+        primary: var(--palette-primary-light)
     )
 ));

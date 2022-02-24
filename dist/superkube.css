@@ -182,7 +182,7 @@
   --line-default: var(--palette-black-10);
   --link-default-color: var(--palette-active-dark);
   --link-default-hover-color: var(--palette-negative-dark);
-  --placeholder-default: var(--palette-black-40);
+  --placeholder-default: var(--palette-black-30);
   --text-default: var(--palette-neutral-darker);
   --shadow-100: 0 1px 3px -1px var(--palette-black-10), 0 1px 2px -1px var(--palette-black-20);
   --shadow-150: 0 3px 5px -1px var(--palette-black-10), 0 1px 3px -1px var(--palette-black-20);

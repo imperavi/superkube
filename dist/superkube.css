@@ -540,8 +540,6 @@ figure > div {
   --alert-border-width: 1px;
   --alert-border-style: solid;
   --alert-box-shadow: none;
-  --alert-font-size: var(--type-scale-14);
-  --alert-line-height: var(--body-text-line);
   --alert-close-size: 14px;
   position: relative;
   font-weight: var(--alert-font-weight);
@@ -556,6 +554,9 @@ figure > div {
   background-color: var(--alert-background-color);
   border-color: var(--alert-border-color);
   color: var(--alert-color); }
+  .alert {
+    --alert-font-size: 14px;
+    --alert-line-height: 1.5; }
   .alert {
     --alert-background-color: var(--palette-neutral-lighter);
     --alert-border-color: var(--palette-transparent);

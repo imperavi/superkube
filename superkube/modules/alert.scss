@@ -1,6 +1,6 @@
 // =Alert
 .alert {
-    // colors
+    @include generate-type(alert);
     @include generate-colors(alert);
 
     // vars
@@ -10,8 +10,6 @@
     --alert-border-width: 1px;
     --alert-border-style: solid;
     --alert-box-shadow: none;
-    --alert-font-size: var(--type-scale-14);
-    --alert-line-height: var(--body-text-line);
     --alert-close-size: 14px;
 
     // props

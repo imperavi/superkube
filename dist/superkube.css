@@ -873,7 +873,6 @@ a.brand:hover {
 .breadcrumb-path {
   --breadcrumb-separator: '\0227B'; }
 
-button,
 .button {
   --button-font-weight: var(--font-weight-semibold);
   --button-border-radius: var(--radius-base);
@@ -916,16 +915,12 @@ button,
   border-color: var(--button-border-color);
   background-color: var(--button-background-color);
   background-image: var(--button-background-image); }
-  button,
   .button {
     --button-font-size: 15px; }
-  button-small,
   .button-small {
     --button-font-size: 14px; }
-  button-large,
   .button-large {
     --button-font-size: 18px; }
-  button,
   .button {
     --button-background-color: var(--palette-transparent);
     --button-border-color: var(--palette-black-20);
@@ -936,7 +931,6 @@ button,
     --button-disabled-background-color: var(--palette-transparent);
     --button-disabled-border-color: var(--palette-black-20);
     --button-disabled-color: var(--palette-black-80); }
-  button.button-primary,
   .button.button-primary {
     --button-background-color: var(--palette-primary-base);
     --button-border-color: var(--palette-transparent);
@@ -947,7 +941,6 @@ button,
     --button-disabled-background-color: var(--palette-black-70);
     --button-disabled-border-color: var(--palette-transparent);
     --button-disabled-color: var(--palette-white-70); }
-  button.button-light,
   .button.button-light {
     --button-background-color: var(--palette-white-95);
     --button-border-color: var(--palette-transparent);
@@ -958,7 +951,6 @@ button,
     --button-disabled-background-color: var(--palette-white-95);
     --button-disabled-border-color: var(--palette-transparent);
     --button-disabled-color: var(--palette-black-80); }
-  button.button-light-outline,
   .button.button-light-outline {
     --button-background-color: var(--palette-transparent);
     --button-border-color: var(--palette-white-60);
@@ -969,7 +961,6 @@ button,
     --button-disabled-background-color: var(--palette-white-95);
     --button-disabled-border-color: var(--palette-transparent);
     --button-disabled-color: var(--palette-black-80); }
-  button.button-dark,
   .button.button-dark {
     --button-background-color: var(--palette-black);
     --button-border-color: var(--palette-transparent);
@@ -980,18 +971,13 @@ button,
     --button-disabled-background-color: var(--palette-black-70);
     --button-disabled-border-color: var(--palette-transparent);
     --button-disabled-color: var(--palette-white-70); }
-  button-small,
   .button-small {
     --button-height: var(--button-small); }
-  button-large,
   .button-large {
     --button-height: var(--button-large); }
-  button:hover,
   .button:hover {
     outline: none; }
-  button:hover, button:focus,
-  .button:hover,
-  .button:focus {
+  .button:hover, .button:focus {
     background-image: none;
     text-decoration: none;
     color: var(--button-hover-color);
@@ -999,9 +985,7 @@ button,
     background-color: var(--button-hover-background-color);
     background-image: var(--button-hover-background-image);
     box-shadow: var(--button-hover-box-shadow); }
-  button.disabled, button:disabled,
-  .button.disabled,
-  .button:disabled {
+  .button.disabled, .button:disabled {
     --button-opacity: 0.5;
     cursor: default;
     color: var(--button-disabled-color);
@@ -1009,14 +993,11 @@ button,
     background-color: var(--button-disabled-background-color);
     background-image: var(--button-disabled-background-image);
     box-shadow: var(--button-disabled-box-shadow); }
-  button .button-icon + .button-label,
   .button .button-icon + .button-label {
     margin-left: 6px; }
-  button .button-label + .button-icon,
   .button .button-label + .button-icon {
     margin-left: 6px;
     margin-right: -3px; }
-  button .caret,
   .button .caret {
     font-weight: bold;
     margin-left: 2px;

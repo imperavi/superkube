@@ -66,6 +66,10 @@
     .input {
         @include placeholder(var(--placeholder-light));
         @include generate-dark-theme-colors(input);
+        &.disabled,
+        &:disabled  {
+           opacity: 0.4;
+        }
     }
 }
 

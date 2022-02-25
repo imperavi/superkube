@@ -2787,7 +2787,9 @@ a.icon-primary {
     --input-focus-color: var(--palette-white-90);
     --input-focus-border-color: var(--palette-white-60);
     --input-focus-background-color: var(--palette-white-20);
-    --input-focus-box-shadow: none; } }
+    --input-focus-box-shadow: none; }
+  .input.disabled, .input:disabled {
+    opacity: 0.4; } }
 
 .input.input-small {
   --input-height: var(--input-small); }

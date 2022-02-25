@@ -2,8 +2,7 @@
 .input-group {
     display: flex;
 
-    & input,
-    & select {
+    & .input {
         flex: 1;
         margin-left: -1px;
         margin-right: -1px;

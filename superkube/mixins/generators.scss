@@ -40,10 +40,11 @@
 // generate root colors
 @mixin generate-root-colors($map) {
     @if $map != null {
+        $all: inline, placeholder;
         @each $name, $value in $map {
             @if $name != shadow and index($global-colors, $name) {
                 @each $key, $val in $value {
-                    @if $name == inline or $key == default {
+                    @if index($all, $name) or $key == default {
                         @if type-of($val) == map {
                             @each $n, $i in $val {
                                 --#{$name}-#{$key}-#{$n}: #{$i};

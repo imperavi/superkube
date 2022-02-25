@@ -1,7 +1,4 @@
 // =Input
-input,
-select,
-textarea,
 .input {
     // generate
     @include generate-type(input);
@@ -46,8 +43,6 @@ textarea,
         background-color: var(--input-focus-background-color);
         box-shadow: var(--input-focus-box-shadow);
     }
-}
-.input {
     &[type="radio"],
     &[type="checkbox"] {
         outline: 2px solid var(--input-outline-color);
@@ -78,18 +73,13 @@ textarea,
 $input-scale: scale(input);
 @each $name, $value in $input-scale {
     @if $name == base {
-        input,
-        select,
         .input {
             --input-height: var(--input-#{$name});
         }
     }
     @else {
-        input,
-        select {
-            &.input-#{$name} {
-                --input-height: var(--input-#{$name});
-            }
+        .input.input-#{$name} {
+            --input-height: var(--input-#{$name});
         }
     }
 }
@@ -100,19 +90,20 @@ textarea.input {
     resize: vertical;
     vertical-align: top;
 }
-select {
+select.input {
     -webkit-appearance: none;
     background-image: var(--input-select-toggle);
     background-repeat: no-repeat;
     background-position: right 0.65em center;
     padding-right: 28px !important;
 }
-select[multiple] {
+select[multiple].input {
     --input-height: auto !important;
     background-image: none !important;
+    padding: var(--input-padding) !important;
 }
 
-// =File
+// File
 input[type="file"] {
     --input-height: auto !important;
     width: auto;
@@ -124,7 +115,7 @@ input[type="file"] {
     display: inline-block;
 }
 
-// =Radio & Checkbox
+// Radio & Checkbox
 input[type="radio"],
 input[type="checkbox"] {
     --input-height: auto !important;

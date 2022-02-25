@@ -183,6 +183,7 @@
   --link-default-color: var(--palette-active-dark);
   --link-default-hover-color: var(--palette-negative-dark);
   --placeholder-default: var(--palette-black-30);
+  --placeholder-light: var(--palette-white-40);
   --text-default: var(--palette-neutral-darker);
   --shadow-100: 0 1px 3px -1px var(--palette-black-10), 0 1px 2px -1px var(--palette-black-20);
   --shadow-150: 0 3px 5px -1px var(--palette-black-10), 0 1px 3px -1px var(--palette-black-20);
@@ -2379,9 +2380,6 @@ a.icon-primary {
   width: 128px;
   height: 128px; }
 
-input,
-select,
-textarea,
 .input {
   --input-border-radius: var(--radius-small);
   --input-padding: 0.3em 0.5em;
@@ -2406,27 +2404,15 @@ textarea,
   background-color: var(--input-background-color);
   box-shadow: var(--input-box-shadow);
   height: var(--input-height); }
-  input,
-  select,
-  textarea,
   .input {
     --input-font-size: 15px;
     --input-line-height: 1.5; }
-  input-small,
-  select-small,
-  textarea-small,
   .input-small {
     --input-font-size: 14px;
     --input-line-height: 1.5; }
-  input-large,
-  select-large,
-  textarea-large,
   .input-large {
     --input-font-size: 20px;
     --input-line-height: 1.5; }
-  input,
-  select,
-  textarea,
   .input {
     --input-color: var(--palette-neutral-darker);
     --input-border-color: var(--palette-black-20);
@@ -2436,9 +2422,6 @@ textarea,
     --input-focus-border-color: var(--palette-active-light);
     --input-focus-background-color: var(--palette-white);
     --input-focus-box-shadow: inset 0 0 2px var(--palette-active-light); }
-  input.input-error,
-  select.input-error,
-  textarea.input-error,
   .input.input-error {
     --input-outline-color: var(--palette-negative-base);
     --input-color: var(--palette-negative-dark);
@@ -2449,9 +2432,6 @@ textarea,
     --input-focus-border-color: var(--palette-negative-base);
     --input-focus-background-color: var(--palette-white);
     --input-focus-box-shadow: inset 0 0 3px var(--palette-negative-light); }
-  input.input-light,
-  select.input-light,
-  textarea.input-light,
   .input.input-light {
     --input-color: var(--palette-white-90);
     --input-border-color: var(--palette-white-40);
@@ -2460,27 +2440,17 @@ textarea,
     --input-focus-color: var(--palette-white-90);
     --input-focus-border-color: var(--palette-white-60);
     --input-focus-background-color: var(--palette-white-20); }
-  input.disabled, input:disabled,
-  select.disabled,
-  select:disabled,
-  textarea.disabled,
-  textarea:disabled,
-  .input.disabled,
-  .input:disabled {
+  .input.disabled, .input:disabled {
     resize: none;
     opacity: 0.6;
     cursor: default; }
-  input:focus,
-  select:focus,
-  textarea:focus,
   .input:focus {
     color: var(--input-focus-color);
     border-color: var(--input-focus-border-color);
     background-color: var(--input-focus-background-color);
     box-shadow: var(--input-focus-box-shadow); }
-
-.input[type="radio"], .input[type="checkbox"] {
-  outline: 2px solid var(--input-outline-color); }
+  .input[type="radio"], .input[type="checkbox"] {
+    outline: 2px solid var(--input-outline-color); }
 
 .input-large {
   --input-padding: 0.3em 0.4em; }
@@ -2501,17 +2471,13 @@ textarea,
 .input-light::placeholder {
   color: var(--placeholder-light); }
 
-input.input-small,
-select.input-small {
+.input.input-small {
   --input-height: var(--input-small); }
 
-input,
-select,
 .input {
   --input-height: var(--input-base); }
 
-input.input-large,
-select.input-large {
+.input.input-large {
   --input-height: var(--input-large); }
 
 textarea,
@@ -2520,16 +2486,17 @@ textarea.input {
   resize: vertical;
   vertical-align: top; }
 
-select {
+select.input {
   -webkit-appearance: none;
   background-image: var(--input-select-toggle);
   background-repeat: no-repeat;
   background-position: right 0.65em center;
   padding-right: 28px !important; }
 
-select[multiple] {
+select[multiple].input {
   --input-height: auto !important;
-  background-image: none !important; }
+  background-image: none !important;
+  padding: var(--input-padding) !important; }
 
 input[type="file"] {
   --input-height: auto !important;
@@ -2574,8 +2541,7 @@ input[type="checkbox"] {
 
 .input-group {
   display: flex; }
-  .input-group input,
-  .input-group select {
+  .input-group .input {
     flex: 1;
     margin-left: -1px;
     margin-right: -1px; }

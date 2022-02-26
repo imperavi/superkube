@@ -18,36 +18,47 @@ $palette-dark: map-extend($palette-dark, (
         lightest: #F3F3F4
     ),
     primary: (
+        mid: #716EED,
         base: #504DE6
     ),
     negative: (
+        mid: #E36E8C,
         base: #EE4D77
     ),
     positive: (
+        mid: #67D6A8,
         base: #34CB8C
     ),
     active: (
+        mid: #716EED,
         base: #504DE6
     ),
     red: (
+        mid: #E36E8C,
         base: #EE4D77
     ),
     orange: (
+        mid: #F6C57D,
         base: #F2AD4A
     ),
     yellow: (
+        mid: #F4DC7E,
         base: #F3D55E
     ),
     green: (
+        mid: #67D6A8,
         base: #34CB8C
     ),
     blue: (
+        mid: #7387E8,
         base: #5B74FB
     ),
     indigo: (
+        mid: #716EED,
         base: #504DE6
     ),
     purple: (
+        mid: #B574E7,
         base: #A853E9
     )
 ));

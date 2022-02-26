@@ -2581,8 +2581,6 @@ input[type="checkbox"] {
   line-height: 1; }
   .label {
     --label-font-size: 12px; }
-  .label-large {
-    --label-font-size: 14px; }
   .label {
     --label-background-color: var(--palette-neutral-lighter);
     --label-border-color: var(--palette-transparent);

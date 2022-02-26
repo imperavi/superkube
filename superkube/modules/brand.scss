@@ -1,10 +1,9 @@
 .brand {
     // generate
     @include generate-type(brand);
+    @include generate-colors(brand);
 
     // vars
-    --brand-color: var(--text-default);
-    --brand-hover-color: var(--text-default);
     --brand-font-weight: bold;
     --brand-text-transform: none;
     --brand-letter-spacing: 0;

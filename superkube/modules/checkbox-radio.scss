@@ -1,7 +1,6 @@
 //=CheckboxRadio
 .checkbox,
 .radio {
-    // generate
     @include generate-type(checkbox-radio);
     @include generate-colors(checkbox-radio);
 
@@ -19,8 +18,8 @@
     line-height: var(--checkbox-radio-line-height);
     text-transform: var(--checkbox-radio-text-transform);
     letter-spacing: var(--checkbox-radio-letter-spacing);
+    color: var(--checkbox-radio-color);
     cursor: pointer;
-    color: inherit;
 
     &.disabled {
         opacity: 0.5;

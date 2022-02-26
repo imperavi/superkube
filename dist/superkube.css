@@ -652,13 +652,11 @@ figure > div {
 
 .badge {
   --badge-font-weight: var(--font-weight-semibold);
-  --badge-font-size: var(--type-scale-12);
   --badge-border-radius: 99px;
   --badge-padding: 1px 4px;
   --badge-border-width: 1px;
   --badge-border-style: solid;
   --badge-line-height: 16px;
-  --badge-size: 20px;
   font-weight: var(--badge-font-weight);
   font-size: var(--badge-font-size);
   border-radius: var(--badge-border-radius);
@@ -678,6 +676,14 @@ figure > div {
   white-space: nowrap;
   text-decoration: none;
   height: auto; }
+  .badge {
+    --badge-font-size: 12px; }
+  .badge-large {
+    --badge-font-size: 14px; }
+  .badge-huge {
+    --badge-font-size: 16px; }
+  .badge-mega {
+    --badge-font-size: 20px; }
   .badge {
     --badge-background-color: var(--palette-neutral-lighter);
     --badge-border-color: var(--palette-transparent);
@@ -714,16 +720,16 @@ a.badge:hover {
   color: var(--badge-color);
   text-decoration: underline; }
 
+.badge {
+  --badge-size: 20px; }
+
 .badge-large {
-  --badge-font-size: var(--type-scale-14);
   --badge-size: 26px; }
 
 .badge-huge {
-  --badge-font-size: var(--type-scale-16);
   --badge-size: 36px; }
 
 .badge-mega {
-  --badge-font-size: var(--type-scale-20);
   --badge-size: 48px; }
 
 [class^="border-"],
@@ -805,8 +811,6 @@ a.badge:hover {
     border-width: 4px; } }
 
 .brand {
-  --brand-color: var(--text-default);
-  --brand-hover-color: var(--text-default);
   --brand-font-weight: bold;
   --brand-text-transform: none;
   --brand-letter-spacing: 0;
@@ -823,6 +827,9 @@ a.badge:hover {
   letter-spacing: var(--brand-letter-spacing); }
   .brand {
     --brand-font-size: 16px; }
+  .brand {
+    --brand-color: var(--palette-black);
+    --brand-hover-color: var(--palette-black); }
 
 a.brand:hover {
   transition: all 0.1s linear;
@@ -1120,12 +1127,15 @@ figcaption,
   line-height: var(--checkbox-radio-line-height);
   text-transform: var(--checkbox-radio-text-transform);
   letter-spacing: var(--checkbox-radio-letter-spacing);
-  cursor: pointer;
-  color: inherit; }
+  color: var(--checkbox-radio-color);
+  cursor: pointer; }
   .checkbox,
   .radio {
     --checkbox-radio-font-size: 15px;
     --checkbox-radio-line-height: 1.5; }
+  .checkbox,
+  .radio {
+    --checkbox-radio-color: inherit; }
   .checkbox.disabled,
   .radio.disabled {
     opacity: 0.5;
@@ -2472,13 +2482,13 @@ a.icon-primary {
   color: var(--placeholder-light); }
 
 .input.input-small {
-  --input-height: var(--input-small); }
+  --input-height: 36px; }
 
 .input {
-  --input-height: var(--input-base); }
+  --input-height: 42px; }
 
 .input.input-large {
-  --input-height: var(--input-large); }
+  --input-height: 56px; }
 
 textarea,
 textarea.input {

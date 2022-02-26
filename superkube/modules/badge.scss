@@ -1,17 +1,15 @@
 // =Badge
 .badge {
-    // colors
+    @include generate-type(badge);
     @include generate-colors(badge);
 
     // vars
     --badge-font-weight: var(--font-weight-semibold);
-    --badge-font-size: var(--type-scale-12);
     --badge-border-radius: 99px;
     --badge-padding: 1px 4px;
     --badge-border-width: 1px;
     --badge-border-style: solid;
     --badge-line-height: 16px;
-    --badge-size: 20px;
 
     //props
     font-weight: var(--badge-font-weight);
@@ -50,18 +48,20 @@ a.badge:hover {
     text-decoration: underline;
 }
 // Scales
-.badge-large {
-    --badge-font-size: var(--type-scale-14);
-    --badge-size: 26px;
+$badge-scale: scale(badge);
+@each $name, $value in $badge-scale {
+    @if $name == base {
+        .badge {
+            --badge-size: #{$value};
+        }
+    }
+    @else {
+        .badge-#{$name} {
+            --badge-size: #{$value};
+        }
+    }
 }
-.badge-huge {
-    --badge-font-size: var(--type-scale-16);
-    --badge-size: 36px;
-}
-.badge-mega {
-    --badge-font-size: var(--type-scale-20);
-    --badge-size: 48px;
-}
+
 // Dark theme
 @include dark-theme {
     .badge {

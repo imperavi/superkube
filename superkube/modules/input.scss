@@ -78,12 +78,12 @@ $input-scale: scale(input);
 @each $name, $value in $input-scale {
     @if $name == base {
         .input {
-            --input-height: var(--input-#{$name});
+            --input-height: #{$value};
         }
     }
     @else {
         .input.input-#{$name} {
-            --input-height: var(--input-#{$name});
+            --input-height: #{$value};
         }
     }
 }

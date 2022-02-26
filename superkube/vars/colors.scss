@@ -74,6 +74,12 @@ $colors: map-extend($colors, (
         light-medium: var(--palette-white-50),
         primary: var(--palette-primary-base)
     ),
+    brand: (
+        default: (
+            color: var(--palette-black),
+            hover-color: var(--palette-black)
+        )
+    ),
     breadcrumb: (
         default: (
             link-color: var(--palette-black),
@@ -160,6 +166,11 @@ $colors: map-extend($colors, (
             background-color: var(--palette-black),
             color: var(--palette-white-90),
             border-color: var(--palette-transparent)
+        )
+    ),
+    checkbox-radio: (
+        default: (
+            color: inherit
         )
     ),
     divider: (

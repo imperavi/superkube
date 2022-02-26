@@ -74,6 +74,12 @@ $scales: map-extend($scales, (
         label: (
             default: 12px
         ),
+        badge: (
+            default: 12px,
+            large: 14px,
+            huge: 16px,
+            mega: 20px
+        ),
         quote: (
             default: 18px 1.5
         ),
@@ -149,6 +155,12 @@ $scales: map-extend($scales, (
         small: 36px,
         base: 42px,
         large: 56px
+    ),
+    badge: (
+        base: 20px,
+        large: 26px,
+        huge: 36px,
+        mega: 48px
     ),
     breakpoint: (
         lg: 1442px,

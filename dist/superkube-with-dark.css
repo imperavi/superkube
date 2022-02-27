@@ -2877,14 +2877,14 @@ input[type="checkbox"] {
     --input-addon-font-size: 14px; }
   .input-addon {
     --input-addon-color: var(--palette-black-60);
-    --input-addon-background-color: var(--palette-transparent);
-    --input-addon-border-color: var(--palette-black-25); }
+    --input-addon-background-color: var(--palette-black-5);
+    --input-addon-border-color: var(--palette-transparent); }
 
 @media (prefers-color-scheme: dark) {
   .input-addon {
     --input-addon-color: var(--palette-white-60);
-    --input-addon-background-color: var(--palette-white-7);
-    --input-addon-border-color: var(--palette-white-20); } }
+    --input-addon-background-color: var(--palette-white-10);
+    --input-addon-border-color: var(--palette-transparent); } }
 
 .input-group {
   display: flex; }

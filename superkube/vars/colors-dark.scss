@@ -268,8 +268,8 @@ $colors-dark: map-extend($colors-dark, (
     input-addon: (
         default: (
             color: var(--palette-white-60),
-            background-color: var(--palette-white-7),
-            border-color: var(--palette-white-20)
+            background-color: var(--palette-white-10),
+            border-color: var(--palette-transparent)
         )
     ),
     label: (

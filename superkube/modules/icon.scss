@@ -63,8 +63,7 @@ $icons: scale(icon);
 }
 
 // Box
-[class^="icon-box-"],
-[class*=" icon-box-"] {
+.iconbox {
     --icon-box-size: 1em;
 
     width: var(--icon-box-size);
@@ -77,13 +76,13 @@ $icons: scale(icon);
     text-align: center;
 }
 @each $key, $size in $icons {
-    .icon-box-#{$key} {
+    .iconbox-#{$key} {
         --icon-box-size: #{$size};
     }
 }
 @include for-sm {
     @each $key, $size in $icons {
-        .icon-box-#{$key}-sm {
+        .iconbox-#{$key}-sm {
             --icon-box-size: #{$size};
         }
     }

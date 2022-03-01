@@ -2289,8 +2289,7 @@ a.icon-primary {
   .icon-64-sm {
     --icon-size: 64px; } }
 
-[class^="icon-box-"],
-[class*=" icon-box-"] {
+.iconbox {
   --icon-box-size: 1em;
   width: var(--icon-box-size);
   height: var(--icon-box-size);
@@ -2300,46 +2299,46 @@ a.icon-primary {
   vertical-align: middle;
   text-align: center; }
 
-.icon-box-12 {
+.iconbox-12 {
   --icon-box-size: 12px; }
 
-.icon-box-14 {
+.iconbox-14 {
   --icon-box-size: 14px; }
 
-.icon-box-16 {
+.iconbox-16 {
   --icon-box-size: 16px; }
 
-.icon-box-20 {
+.iconbox-20 {
   --icon-box-size: 20px; }
 
-.icon-box-24 {
+.iconbox-24 {
   --icon-box-size: 24px; }
 
-.icon-box-32 {
+.iconbox-32 {
   --icon-box-size: 32px; }
 
-.icon-box-48 {
+.iconbox-48 {
   --icon-box-size: 48px; }
 
-.icon-box-64 {
+.iconbox-64 {
   --icon-box-size: 64px; }
 
 @media only screen and (max-width: 767px) {
-  .icon-box-12-sm {
+  .iconbox-12-sm {
     --icon-box-size: 12px; }
-  .icon-box-14-sm {
+  .iconbox-14-sm {
     --icon-box-size: 14px; }
-  .icon-box-16-sm {
+  .iconbox-16-sm {
     --icon-box-size: 16px; }
-  .icon-box-20-sm {
+  .iconbox-20-sm {
     --icon-box-size: 20px; }
-  .icon-box-24-sm {
+  .iconbox-24-sm {
     --icon-box-size: 24px; }
-  .icon-box-32-sm {
+  .iconbox-32-sm {
     --icon-box-size: 32px; }
-  .icon-box-48-sm {
+  .iconbox-48-sm {
     --icon-box-size: 48px; }
-  .icon-box-64-sm {
+  .iconbox-64-sm {
     --icon-box-size: 64px; } }
 
 .image-cover {

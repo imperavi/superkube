@@ -47,7 +47,8 @@ $scales: map-extend($scales, (
             large: 18px
         ),
         caption: (
-            default: 12px 1.5
+            default: 12px 1.5,
+            caps: 11px 1.5
         ),
         checkbox-radio: (
             default: 15px 1.5

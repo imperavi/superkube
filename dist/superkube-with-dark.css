@@ -1255,6 +1255,10 @@ figcaption,
   .caption {
     --caption-font-size: 12px;
     --caption-line-height: 1.5; }
+  figcaption.caption-caps,
+  .caption.caption-caps {
+    --caption-font-size: 11px;
+    --caption-line-height: 1.5; }
   figcaption,
   .caption {
     --caption-color: var(--palette-neutral-darker);

@@ -4481,6 +4481,7 @@ blockquote,
   min-width: none;
   width: auto; }
 
+.max-full,
 .w-full {
   width: 100%;
   min-width: 100%;

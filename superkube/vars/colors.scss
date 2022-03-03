@@ -350,7 +350,7 @@ $colors: map-extend($colors, (
             number-color: var(--palette-black-60)
         ),
         light: (
-            item-color: var(--text-light),
+            item-color: var(--palette-white-90),
             item-border-color: var(--palette-white-20),
             border-color: var(--palette-white-20),
             number-color: var(--palette-white-60)

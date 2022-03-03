@@ -2832,7 +2832,7 @@ hr {
   .list.list-numbered {
     --list-number-color: var(--palette-black-60); }
   .list.list-light {
-    --list-item-color: var(--text-light);
+    --list-item-color: var(--palette-white-90);
     --list-item-border-color: var(--palette-white-20);
     --list-border-color: var(--palette-white-20);
     --list-number-color: var(--palette-white-60); }

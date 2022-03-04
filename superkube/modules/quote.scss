@@ -32,21 +32,24 @@ blockquote,
         margin-top: var(--quote-spacing);
     }
 }
-.quote-caption {
-    // generate
-    @include generate-type(quote-caption);
-    @include generate-colors(quote-caption);
+blockquote,
+.quote {
+    .quote-caption {
+        // generate
+        @include generate-type(quote-caption);
+        @include generate-colors(quote-caption);
 
-    // params
-    --quote-caption-font-style: italic;
-    --quote-caption-font-weight: normal;
+        // params
+        --quote-caption-font-style: italic;
+        --quote-caption-font-weight: normal;
 
-    // props
-    font-style: var(--quote-caption-font-style);
-    font-weight: var(--quote-caption-font-weight);
-    font-size: var(--quote-caption-font-size);
-    line-height: var(--quote-caption-line-height);
-    color: var(--quote-caption-color);
+        // props
+        font-style: var(--quote-caption-font-style);
+        font-weight: var(--quote-caption-font-weight);
+        font-size: var(--quote-caption-font-size);
+        line-height: var(--quote-caption-line-height);
+        color: var(--quote-caption-color);
+    }
 }
 // Dark theme
 @include dark-theme {

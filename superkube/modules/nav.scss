@@ -8,6 +8,8 @@
     --nav-item-space: 6rem;
     --nav-link-padding: 0;
     --nav-link-border-radius: 0;
+    --nav-link-font-weight: normal;
+    --nav-link-active-font-weight: normal;
 
     // props
     font-size: var(--nav-font-size);
@@ -24,6 +26,7 @@
     .nav-item.active .nav-link {
         cursor: text;
         text-decoration: none;
+        font-weight: var(--nav-link-active-font-weight);
         color: var(--nav-link-active-color);
         background-color: var(--nav-link-active-background-color);
     }
@@ -33,6 +36,7 @@
         white-space: nowrap;
         text-decoration: none;
         line-height: 1;
+        font-weight: var(--nav-link-font-weight);
         padding: var(--nav-link-padding);
         border-radius: var(--nav-link-border-radius);
         color: var(--nav-link-color);

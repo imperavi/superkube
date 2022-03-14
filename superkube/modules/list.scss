@@ -50,6 +50,7 @@
     --list-item-space: 0;
     --list-item-padding-y: 6px;
     --list-item-padding-x: 0;
+    --list-item-font-weight: normal;
 
     // props
     list-style: none;
@@ -57,6 +58,7 @@
 
     .list-item {
         font-size: var(--list-font-size);
+        font-weight: var(--list-item-font-weight);
         line-height: var(--list-line-height);
         padding-top: var(--list-item-padding-y);
         padding-bottom: var(--list-item-padding-y);

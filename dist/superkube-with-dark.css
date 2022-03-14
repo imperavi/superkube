@@ -3237,6 +3237,7 @@ hr {
   --list-item-space: 0;
   --list-item-padding-y: 6px;
   --list-item-padding-x: 0;
+  --list-item-font-weight: normal;
   list-style: none;
   margin-left: 0; }
   .list {
@@ -3263,6 +3264,7 @@ hr {
     --list-number-color: var(--palette-white-60); }
   .list .list-item {
     font-size: var(--list-font-size);
+    font-weight: var(--list-item-font-weight);
     line-height: var(--list-line-height);
     padding-top: var(--list-item-padding-y);
     padding-bottom: var(--list-item-padding-y);
@@ -3359,6 +3361,8 @@ hr {
   --menu-line-height: 1.3;
   --menu-link-padding-x: 0;
   --menu-link-padding-y: 6px;
+  --menu-link-font-weight: normal;
+  --menu-link-active-font-weight: normal;
   --menu-item-space: 0;
   --menu-item-padding: 0;
   font-size: var(--menu-font-size);
@@ -3410,6 +3414,7 @@ hr {
   .menu .menu-item.active .menu-link {
     cursor: text;
     text-decoration: none;
+    font-weight: var(--menu-link-active-font-weight);
     color: var(--menu-link-active-color);
     background-color: var(--menu-link-active-background-color); }
   .menu .menu-link {
@@ -3417,6 +3422,7 @@ hr {
     align-items: center;
     flex: 1;
     text-decoration: none;
+    font-weight: var(--menu-link-font-weight);
     padding-top: var(--menu-link-padding-y);
     padding-bottom: var(--menu-link-padding-y);
     padding-left: var(--menu-link-padding-x);
@@ -3534,6 +3540,8 @@ hr {
   --nav-item-space: 6rem;
   --nav-link-padding: 0;
   --nav-link-border-radius: 0;
+  --nav-link-font-weight: normal;
+  --nav-link-active-font-weight: normal;
   font-size: var(--nav-font-size); }
   .nav {
     --nav-font-size: 14px; }
@@ -3602,6 +3610,7 @@ hr {
   .nav .nav-item.active .nav-link {
     cursor: text;
     text-decoration: none;
+    font-weight: var(--nav-link-active-font-weight);
     color: var(--nav-link-active-color);
     background-color: var(--nav-link-active-background-color); }
   .nav .nav-link {
@@ -3610,6 +3619,7 @@ hr {
     white-space: nowrap;
     text-decoration: none;
     line-height: 1;
+    font-weight: var(--nav-link-font-weight);
     padding: var(--nav-link-padding);
     border-radius: var(--nav-link-border-radius);
     color: var(--nav-link-color);

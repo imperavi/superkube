@@ -9,6 +9,8 @@
     --menu-line-height: 1.3;
     --menu-link-padding-x: 0;
     --menu-link-padding-y: 6px;
+    --menu-link-font-weight: normal;
+    --menu-link-active-font-weight: normal;
     --menu-item-space: 0;
     --menu-item-padding: 0;
 
@@ -26,6 +28,7 @@
     .menu-item.active .menu-link {
         cursor: text;
         text-decoration: none;
+        font-weight: var(--menu-link-active-font-weight);
         color: var(--menu-link-active-color);
         background-color: var(--menu-link-active-background-color);
     }
@@ -34,6 +37,7 @@
         align-items: center;
         flex: 1;
         text-decoration: none;
+        font-weight: var(--menu-link-font-weight);
         padding-top: var(--menu-link-padding-y);
         padding-bottom: var(--menu-link-padding-y);
         padding-left: var(--menu-link-padding-x);

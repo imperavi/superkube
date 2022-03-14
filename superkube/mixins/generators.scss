@@ -109,7 +109,7 @@
 
 // type
 @mixin generate-type($name, $prefix: null, $selector: null) {
-    $map: map-deep-get(scale(type), $name);
+    $map: map-deep-get($type, $name);
     @if $map != null {
         @if map-has-key($map, default) {
             & {

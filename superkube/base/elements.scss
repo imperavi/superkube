@@ -100,10 +100,10 @@ h6 {
         text-decoration: underline;
     }
 }
-@include generate-base-headings(scale(type), std);
-@include for-lg { @include generate-base-headings(scale(type-lg), lg); }
-@include for-md { @include generate-base-headings(scale(type-md), md); }
-@include for-sm { @include generate-base-headings(scale(type-sm), sm); }
+@include generate-base-headings($type, std);
+@include for-lg { @include generate-base-headings($type-lg, lg); }
+@include for-md { @include generate-base-headings($type-md, md); }
+@include for-sm { @include generate-base-headings($type-sm, sm); }
 
 // =List
 ul,

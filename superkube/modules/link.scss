@@ -28,7 +28,7 @@
 }
 
 // Size
-$link-size: scale(type, text);
+$link-size: map-deep-get($type, text);
 .link {
     @each $name, $value in $link-size {
         @if $name != default {

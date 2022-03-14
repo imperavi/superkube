@@ -35,10 +35,10 @@
     color: var(--text-color);
 }
 // Size
-.text { @include generate-text-size(scale(type), std); }
-@include for-lg { .text { @include generate-text-size(scale(type-lg), lg); }}
-@include for-md { .text { @include generate-text-size(scale(type-md), md); }}
-@include for-sm { .text { @include generate-text-size(scale(type-sm), sm); }}
+.text { @include generate-text-size($type, std); }
+@include for-lg { .text { @include generate-text-size($type-lg, lg); }}
+@include for-md { .text { @include generate-text-size($type-md, md); }}
+@include for-sm { .text { @include generate-text-size($type-sm, sm); }}
 
 
 // Color

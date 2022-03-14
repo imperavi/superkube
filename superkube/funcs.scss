@@ -22,11 +22,11 @@
 
 // type
 @function type($index, $section, $name, $breakpoint) {
-    $map: scale(type);
+    $map: $type;
 
-    @if ($breakpoint == sm) { $map: scale(type-sm); }
-    @else if ($breakpoint == md) { $map: scale(type-md); }
-    @else if ($breakpoint == lg) { $map: scale(type-lg) }
+    @if ($breakpoint == sm) { $map: $type-sm; }
+    @else if ($breakpoint == md) { $map: $type-md; }
+    @else if ($breakpoint == lg) { $map: $type-lg; }
 
     $val: map-deep-get($map, $section, $name);
 

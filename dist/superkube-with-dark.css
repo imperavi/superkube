@@ -3125,14 +3125,22 @@ hr {
 [class*=" link-"] {
   --link-color: var(--link-default-color);
   --link-hover-color: var(--link-default-hover-color);
+  --link-border-color: transparent;
+  --link-hover-border-color: transparent;
   --link-background-color: transparent;
   --link-hover-background-color: transparent;
+  --link-border-width: 1px;
+  --link-border-style: solid;
   color: var(--link-color);
-  background-color: var(--link-background-color); }
+  background-color: var(--link-background-color);
+  border-color: var(--link-border-color);
+  border-style: var(--link-border-style);
+  border-width: var(--link-border-width); }
   [class^="link-"]:hover,
   [class*=" link-"]:hover {
     color: var(--link-hover-color);
-    background-color: var(--link-hover-background-color); }
+    background-color: var(--link-hover-background-color);
+    border-color: var(--link-hover-border-color); }
 
 .link {
   --link-color: var(--palette-active-dark);

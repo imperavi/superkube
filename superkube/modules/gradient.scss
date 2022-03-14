@@ -12,6 +12,17 @@ $gradients: map-get($colors, gradient);
         }
     }
 }
+// Dark theme
+@include dark-theme {
+    $gradients: map-get($colors-dark, gradient);
+    @if $gradients != null {
+        @each $name, $value in $gradients {
+            .gr-#{$name} {
+                --gradient-color: #{$value};
+            }
+        }
+    }
+}
 
 // Text
 [class^="grt-"],

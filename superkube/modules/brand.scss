@@ -26,3 +26,9 @@ a.brand:hover {
     color: var(--brand-hover-color);
     text-decoration: underline;
 }
+// Dark theme
+@include dark-theme {
+    .brand {
+        @include generate-dark-theme-colors(brand);
+    }
+}

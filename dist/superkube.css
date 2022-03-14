@@ -3946,9 +3946,6 @@ blockquote .quote-caption,
 .row-30 {
   gap: 120px; }
 
-.sh-off {
-  box-shadow: none; }
-
 [class^="shadow-"],
 [class*=" shadow-"] {
   --shadow: none;

@@ -986,6 +986,11 @@ a.brand:hover {
   color: var(--brand-hover-color);
   text-decoration: underline; }
 
+@media (prefers-color-scheme: dark) {
+  .brand {
+    --brand-color: var(--palette-white-90);
+    --brand-hover-color: var(--palette-white-90); } }
+
 .breadcrumb {
   --breadcrumb-item-space: 2rem;
   --breadcrumb-separator: '\0002f';
@@ -4442,9 +4447,6 @@ blockquote .quote-caption,
 
 .row-30 {
   gap: 120px; }
-
-.sh-off {
-  box-shadow: none; }
 
 [class^="shadow-"],
 [class*=" shadow-"] {

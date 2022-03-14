@@ -190,7 +190,7 @@ $colors: map-extend($colors, (
         moderated: var(--palette-black-70),
         muted: var(--palette-black-50),
         light: var(--palette-white-95),
-        light-moderated: var(--palette-white-80),
+        light-moderated: var(--palette-white-70),
         primary: var(--palette-primary-base)
     ),
     hint: (
@@ -521,7 +521,7 @@ $colors: map-extend($colors, (
         success: var(--palette-positive-dark),
         error: var(--palette-negative-dark),
         light: var(--palette-white-90),
-        light-moderated: var(--palette-white-80),
+        light-moderated: var(--palette-white-70),
         light-muted: var(--palette-white-50),
         primary: var(--palette-primary-base)
     )

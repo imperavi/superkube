@@ -2206,7 +2206,7 @@ label {
   --heading-color: var(--palette-white-95); }
 
 .heading-light-moderated {
-  --heading-color: var(--palette-white-80); }
+  --heading-color: var(--palette-white-70); }
 
 .heading-primary {
   --heading-color: var(--palette-primary-base); }
@@ -5899,7 +5899,7 @@ caption {
   --text-color: var(--palette-white-90); }
 
 .text-light-moderated {
-  --text-color: var(--palette-white-80); }
+  --text-color: var(--palette-white-70); }
 
 .text-light-muted {
   --text-color: var(--palette-white-50); }

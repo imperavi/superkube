@@ -61,29 +61,3 @@ $icons: scale(icon);
         }
     }
 }
-
-// Box
-.iconbox {
-    --icon-box-size: 1em;
-
-    width: var(--icon-box-size);
-    height: var(--icon-box-size);
-
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    vertical-align: middle;
-    text-align: center;
-}
-@each $key, $size in $icons {
-    .iconbox-#{$key} {
-        --icon-box-size: #{$size};
-    }
-}
-@include for-sm {
-    @each $key, $size in $icons {
-        .iconbox-#{$key}-sm {
-            --icon-box-size: #{$size};
-        }
-    }
-}

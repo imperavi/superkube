@@ -65,6 +65,9 @@
         color: var(--list-item-color);
         margin-bottom: var(--list-item-space);
     }
+    .list-item:last-child {
+        margin-bottom: 0;
+    }
     .list-item .list {
         width: 100%;
         margin-top: 3px;

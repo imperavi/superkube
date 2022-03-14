@@ -2879,6 +2879,8 @@ hr {
     padding-right: var(--list-item-padding-x);
     color: var(--list-item-color);
     margin-bottom: var(--list-item-space); }
+  .list .list-item:last-child {
+    margin-bottom: 0; }
   .list .list-item .list {
     width: 100%;
     margin-top: 3px;

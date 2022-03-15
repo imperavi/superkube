@@ -18,47 +18,43 @@ $palette-dark: map-extend($palette-dark, (
         lightest: #F3F3F4
     ),
     primary: (
-        mid: #716EED,
-        base: #504DE6
+        mid: #6580F1,
+        base: #4E6DEF
     ),
     negative: (
-        mid: #E36E8C,
-        base: #EE4D77
+        mid: #F58086,
+        base: #F36870
     ),
     positive: (
-        mid: #67D6A8,
-        base: #34CB8C
+        mid: #5AD38F,
+        base: #3ACB7A
     ),
     active: (
-        mid: #716EED,
-        base: #504DE6
+        mid: #6580F1,
+        base: #4E6DEF
     ),
     red: (
-        mid: #E36E8C,
-        base: #EE4D77
+        mid: #F58086,
+        base: #F36870
     ),
     orange: (
-        mid: #F6C57D,
-        base: #F2AD4A
+        mid: #F4AF85,
+        base: #F29F6E
     ),
     yellow: (
-        mid: #F4DC7E,
-        base: #F3D55E
+        mid: #E8CF73,
+        base: #E3C554
     ),
     green: (
-        mid: #67D6A8,
-        base: #34CB8C
+        mid: #5AD38F,
+        base: #3ACB7A
     ),
     blue: (
-        mid: #7387E8,
-        base: #5B74FB
-    ),
-    indigo: (
-        mid: #716EED,
-        base: #504DE6
+        mid: #6580F1,
+        base: #4E6DEF
     ),
     purple: (
-        mid: #B574E7,
-        base: #A853E9
+        mid: #AD74FB,
+        base: #A160FB
     )
 ));

@@ -4,12 +4,12 @@ $palette: map-extend($palette, (
     black: #030612,
     white: #ffffff,
     primary: (
-        darker: #2724A5,
-        dark: #3532CD,
-        base: #4E4BE8,
-        light: #B8B7F6,
-        lighter: #E5E4FC,
-        lightest: #F2F2FD
+        darker: #1022A0,
+        dark: #1E34F0,
+        base: #1F4AFB,
+        light: #C7D2FE,
+        lighter: #E8ECFE,
+        lightest: #F4F6FF
     ),
     neutral: (
         darker: #2A2D3C,
@@ -21,83 +21,75 @@ $palette: map-extend($palette, (
         lightest: #F5F5F6
     ),
     negative: (
-        darker: #A02146,
-        dark: #E01A4D,
-        base: #F53063,
-        light: #FCB7C9,
-        lighter: #FEDCE5,
-        lightest: #FEF4F7
+        darker: #A30109,
+        dark: #F5000B,
+        base: #FF424D,
+        light: #FFC6C9,
+        lighter: #FFECED,
+        lightest: #FFF5F6
     ),
     positive: (
-        darker: #286C50,
-        dark: #219564,
-        base: #35AF7C,
-        light: #A0D9C1,
-        lighter: #DAF1E7,
-        lightest: #F0FAF6
+        darker: #106939,
+        dark: #1EAF60,
+        base: #1FC267,
+        light: #B1EACA,
+        lighter: #E8F8EF,
+        lightest: #F4FCF7
     ),
     active: (
-        darker: #2724A5,
-        dark: #3532CD,
-        base: #4E4BE8,
-        light: #B8B7F6,
-        lighter: #E5E4FC,
-        lightest: #F2F2FD
+        darker: #1022A0,
+        dark: #1E34F0,
+        base: #1F4AFB,
+        light: #C7D2FE,
+        lighter: #E8ECFE,
+        lightest: #F4F6FF
     ),
     red: (
-        darker: #A02146,
-        dark: #E01A4D,
-        base: #F53063,
-        light: #FCB7C9,
-        lighter: #FEDCE5,
-        lightest: #FEF4F7
+        darker: #A30109,
+        dark: #F5000B,
+        base: #FF424D,
+        light: #FFC6C9,
+        lighter: #FFECED,
+        lightest: #FFF5F6
     ),
     orange: (
-        darker: #9D5E07,
-        dark: #E08300,
-        base: #FB9300,
-        light: #FBD093,
-        lighter: #FDEED8,
-        lightest: #FEF8F1
+        darker: #B84300,
+        dark: #FF711F,
+        base: #FF8943,
+        light: #FFD6BD,
+        lighter: #FFF3EC,
+        lightest: #FFF9F5
     ),
     yellow: (
-        darker: #886D02,
-        dark: #E0B816,
-        base: #FBD333,
-        light: #F6E18E,
-        lighter: #FDF5D3,
-        lightest: #FDFAEC
+        darker: #9F7E04,
+        dark: #ECC122,
+        base: #F9C918,
+        light: #FDE9A3,
+        lighter: #FEF7DD,
+        lightest: #FEFCF3
     ),
     green: (
-        darker: #286C50,
-        dark: #219564,
-        base: #35AF7C,
-        light: #A0D9C1,
-        lighter: #DAF1E7,
-        lightest: #F0FAF6
+        darker: #106939,
+        dark: #1EAF60,
+        base: #1FC267,
+        light: #B1EACA,
+        lighter: #E8F8EF,
+        lightest: #F4FCF7
     ),
     blue: (
-        darker: #143FA9,
-        dark: #164FDA,
-        base: #2F6BFC,
-        light: #B2C7FB,
-        lighter: #DDE7FD,
-        lightest: #F1F5FE
-    ),
-    indigo: (
-        darker: #2724A5,
-        dark: #3532CD,
-        base: #4E4BE8,
-        light: #B8B7F6,
-        lighter: #E5E4FC,
-        lightest: #F2F2FD
+        darker: #1022A0,
+        dark: #1E34F0,
+        base: #1F4AFB,
+        light: #C7D2FE,
+        lighter: #E8ECFE,
+        lightest: #F4F6FF
     ),
     purple: (
-        darker: #632097,
-        dark: #8827D3,
-        base: #A64BEC,
-        light: #DFC2F5,
-        lighter: #F1E5FB,
-        lightest: #F8F2FC
+        darker: #5D25B2,
+        dark: #7730DB,
+        base: #8C38FF,
+        light: #E2CDFF,
+        lighter: #F6EFFF,
+        lightest: #F9F5FF
     )
 ));

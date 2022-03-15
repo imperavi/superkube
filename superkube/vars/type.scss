@@ -42,10 +42,18 @@ $type: map-extend($type, (
         default: 15px 1.5
     ),
     heading: (
-        giga: 80px 1.15,
+        giga: 96px 1.1,
+        xxmega: 80px 1.15,
+        xmega: 72px 1.15,
         mega: 64px 1.15,
+        xxhuge: 60px 1.15,
+        xhuge: 56px 1.15,
         huge: 48px 1.2,
+        xxlarge: 44px 1.2,
+        xlarge: 40px 1.2,
         large: 36px 1.2,
+        xxmedium: 32px 1.3,
+        xmedium: 28px 1.3,
         medium: 24px 1.3,
         small: 20px 1.4,
         micro: 16px 1.5,
@@ -96,7 +104,8 @@ $type: map-extend($type, (
         default: 16px 1.5,
         medium: 14px 1.5,
         small: 13px 1.5,
-        tiny: 12px 1.5
+        tiny: 12px 1.5,
+        atomic: 10px 1.5
     )
 ));
 
@@ -104,6 +113,8 @@ $type: map-extend($type, (
 $type-sm: map-extend($type-sm, (
     heading: (
         giga: 60px 1.15,
+        xxmega: 60px 1.15,
+        xmega: 60px 1.15,
         mega: 60px 1.15
     )
 ));

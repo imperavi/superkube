@@ -4,7 +4,7 @@
     @include generate-type(button);
     @include generate-colors(button);
 
-    // vars
+    // params
     --button-font-weight: var(--font-weight-semibold);
     --button-border-radius: var(--radius-base);
     --button-line-height: 1;
@@ -17,15 +17,15 @@
     --button-opacity: 1;
     --button-box-shadow: none;
 
-    // Scales
+    // scales
     $button-scale: scale(button);
     @each $name, $value in $button-scale {
         @if $name == base {
-            --button-height: var(--button-#{$name});
+            --button-height: #{$value};
         }
         @else {
             &-#{$name} {
-                --button-height: var(--button-#{$name});
+                --button-height: #{$value};
             }
         }
     }

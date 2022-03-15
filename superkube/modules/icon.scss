@@ -4,6 +4,8 @@
     --icon-color: currentColor;
 
     display: inline-block;
+    position: relative;
+    top: -.025em;
 
     & svg {
         display: inline-block;
@@ -16,8 +18,8 @@
 
     display: inline-flex;
     align-self: center;
-    top: .125em;
     position: relative;
+    top: .125em;
 }
 .icon,
 .icon-text {
@@ -25,6 +27,32 @@
         fill: var(--icon-color);
         height: var(--icon-size);
         width: var(--icon-size);
+    }
+}
+// Wrapper
+.icon-wrapper {
+    text-decoration: none !important;
+
+    .icon,
+    .caret,
+    .close {
+        display: inline;
+    }
+}
+.icon-wrapper:hover {
+    .icon-copy {
+        text-decoration: underline;
+    }
+}
+.icon-wrapper-underline {
+    .icon-copy {
+        text-decoration: underline;
+    }
+}
+.icon-wrapper-underline-off,
+.icon-wrapper-underline-off:hover {
+    .icon-copy {
+        text-decoration: none;
     }
 }
 

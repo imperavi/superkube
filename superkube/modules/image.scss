@@ -10,7 +10,7 @@
     min-height: 100%;
 }
 .image-overlay {
-    --image-overlay-color: var(--palette-transparent);
+    --image-overlay-color: transparent;
     --image-overlay-opacity: 1;
 
     position: relative;

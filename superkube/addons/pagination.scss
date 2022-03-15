@@ -3,7 +3,7 @@
     // colors
     --pagination-link-color: var(--palette-black);
     --pagination-link-border-color: var(--palette-black-15);
-    --pagination-link-background-color: var(--palette-transparent);
+    --pagination-link-background-color: transparent;
     --pagination-link-hover-color: var(--palette-black-60);
     --pagination-link-hover-border-color: var(--palette-black-15);
     --pagination-link-hover-background-color: var(--palette-active-lighter);
@@ -75,7 +75,7 @@
 @include dark-theme {
     --pagination-link-color: var(--palette-white-90);
     --pagination-link-border-color: var(--palette-white-25);
-    --pagination-link-background-color: var(--palette-transparent);
+    --pagination-link-background-color: transparent;
     --pagination-link-hover-color: var(--palette-white);
     --pagination-link-hover-border-color: var(--palette-white-25);
     --pagination-link-hover-background-color: var(--palette-white-7);

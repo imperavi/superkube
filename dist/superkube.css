@@ -2526,6 +2526,9 @@ a.icon-primary {
   --input-padding: 0.3em 0.5em;
   --input-border-width: 1px;
   --input-border-style: solid;
+  --input-outline-offset: -2px;
+  --input-outline-width: 2px;
+  --input-outline-style: solid;
   --input-box-shadow: none;
   --input-height: auto;
   --input-select-toggle: url('data:image/svg+xml;utf8,<svg height="6" viewBox="0 0 10 6" width="10" xmlns="http://www.w3.org/2000/svg"><path fill="rgb(0,0,0)" opacity=".6" d="m6.6168815 3-4.44908109-4.09883609c-.22373388-.20615371-.22373388-.54039492 0-.74654863s.58647818-.20615371.81021206 0l4.85418712 4.47211041c.22373388.20615371.22373388.54039491 0 .74654862l-4.85418712 4.47211041c-.22373388.20615371-.58647818.20615371-.81021206 0s-.22373388-.54039492 0-.74654863z" fill-rule="evenodd" transform="matrix(0 1 -1 0 8 -2)"/></svg>');
@@ -2561,26 +2564,29 @@ a.icon-primary {
     --input-background-color: var(--palette-white);
     --input-box-shadow: none;
     --input-focus-color: var(--palette-neutral-darker);
-    --input-focus-border-color: var(--palette-active-mid);
+    --input-focus-border-color: transparent;
+    --input-focus-outline-color: var(--palette-active-mid);
     --input-focus-background-color: var(--palette-white);
-    --input-focus-box-shadow: inset 0 0 2px var(--palette-active-mid); }
+    --input-focus-box-shadow: none; }
   .input.input-error {
     --input-outline-color: var(--palette-negative-base);
-    --input-color: var(--palette-negative-dark);
+    --input-color: var(--palette-negative-base);
     --input-border-color: var(--palette-negative-base);
     --input-background-color: var(--palette-white);
     --input-box-shadow: none;
-    --input-focus-color: var(--palette-negative-dark);
-    --input-focus-border-color: var(--palette-negative-base);
+    --input-focus-color: var(--palette-negative-base);
+    --input-focus-outline-color: var(--palette-negative-base);
+    --input-focus-border-color: transparent;
     --input-focus-background-color: var(--palette-white);
-    --input-focus-box-shadow: inset 0 0 3px var(--palette-negative-light); }
+    --input-focus-box-shadow: none; }
   .input.input-light {
     --input-color: var(--palette-white-90);
     --input-border-color: var(--palette-white-40);
     --input-background-color: var(--palette-white-15);
     --input-box-shadow: none;
     --input-focus-color: var(--palette-white-90);
-    --input-focus-border-color: var(--palette-white-60);
+    --input-focus-outline-color: var(--palette-white-60);
+    --input-focus-border-color: transparent;
     --input-focus-background-color: var(--palette-white-20); }
   .input-small {
     --input-height: 36px; }
@@ -2594,7 +2600,11 @@ a.icon-primary {
     color: var(--input-focus-color);
     border-color: var(--input-focus-border-color);
     background-color: var(--input-focus-background-color);
-    box-shadow: var(--input-focus-box-shadow); }
+    box-shadow: var(--input-focus-box-shadow);
+    outline-color: var(--input-focus-outline-color);
+    outline-style: var(--input-outline-style);
+    outline-width: var(--input-outline-width);
+    outline-offset: var(--input-outline-offset); }
   .input[type="radio"], .input[type="checkbox"] {
     outline: 2px solid var(--input-outline-color); }
 

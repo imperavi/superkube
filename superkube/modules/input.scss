@@ -9,6 +9,10 @@
     --input-padding: 0.3em 0.5em;
     --input-border-width: 1px;
     --input-border-style: solid;
+    --input-outline-offset: -2px;
+    --input-outline-width: 2px;
+    --input-outline-style: solid;
+
     --input-box-shadow: none;
     --input-height: auto;
     --input-select-toggle: url('data:image/svg+xml;utf8,<svg height="6" viewBox="0 0 10 6" width="10" xmlns="http://www.w3.org/2000/svg"><path fill="rgb(0,0,0)" opacity=".6" d="m6.6168815 3-4.44908109-4.09883609c-.22373388-.20615371-.22373388-.54039492 0-.74654863s.58647818-.20615371.81021206 0l4.85418712 4.47211041c.22373388.20615371.22373388.54039491 0 .74654862l-4.85418712 4.47211041c-.22373388.20615371-.58647818.20615371-.81021206 0s-.22373388-.54039492 0-.74654863z" fill-rule="evenodd" transform="matrix(0 1 -1 0 8 -2)"/></svg>');
@@ -55,6 +59,10 @@
         border-color: var(--input-focus-border-color);
         background-color: var(--input-focus-background-color);
         box-shadow: var(--input-focus-box-shadow);
+        outline-color: var(--input-focus-outline-color);
+        outline-style: var(--input-outline-style);
+        outline-width: var(--input-outline-width);
+        outline-offset: var(--input-outline-offset);
     }
     &[type="radio"],
     &[type="checkbox"] {

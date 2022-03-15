@@ -240,20 +240,22 @@ $colors: map-extend($colors, (
             background-color: var(--palette-white),
             box-shadow: none,
             focus-color: var(--palette-neutral-darker),
-            focus-border-color: var(--palette-active-mid),
+            focus-border-color: transparent,
+            focus-outline-color: var(--palette-active-mid),
             focus-background-color: var(--palette-white),
-            focus-box-shadow: inset 0 0 2px var(--palette-active-mid)
+            focus-box-shadow: none
         ),
         error: (
             outline-color: var(--palette-negative-base),
-            color: var(--palette-negative-dark),
+            color: var(--palette-negative-base),
             border-color: var(--palette-negative-base),
             background-color: var(--palette-white),
             box-shadow: none,
-            focus-color: var(--palette-negative-dark),
-            focus-border-color: var(--palette-negative-base),
+            focus-color: var(--palette-negative-base),
+            focus-outline-color: var(--palette-negative-base),
+            focus-border-color: transparent,
             focus-background-color: var(--palette-white),
-            focus-box-shadow: inset 0 0 3px var(--palette-negative-light)
+            focus-box-shadow: none
         ),
         light: (
             color: var(--palette-white-90),
@@ -261,7 +263,8 @@ $colors: map-extend($colors, (
             background-color: var(--palette-white-15),
             box-shadow: none,
             focus-color: var(--palette-white-90),
-            focus-border-color: var(--palette-white-60),
+            focus-outline-color: var(--palette-white-60),
+            focus-border-color: transparent,
             focus-background-color: var(--palette-white-20)
         )
     ),

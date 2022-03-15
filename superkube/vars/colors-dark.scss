@@ -240,7 +240,8 @@ $colors-dark: map-extend($colors-dark, (
             background-color: var(--palette-white-15),
             box-shadow: none,
             focus-color: var(--palette-white-90),
-            focus-border-color: var(--palette-white-50),
+            focus-border-color: transparent,
+            focus-outline-color: var(--palette-white-50),
             focus-background-color: var(--palette-white-20),
             focus-box-shadow: none
         ),
@@ -251,7 +252,8 @@ $colors-dark: map-extend($colors-dark, (
             background-color: var(--palette-white-15),
             box-shadow: none,
             focus-color: var(--palette-negative-base),
-            focus-border-color: var(--palette-negative-base),
+            focus-border-color: transparent,
+            focus-outline-color: var(--palette-negative-base),
             focus-background-color: var(--palette-white-20),
             focus-box-shadow: none
         ),
@@ -261,7 +263,8 @@ $colors-dark: map-extend($colors-dark, (
             background-color: var(--palette-white-15),
             box-shadow: none,
             focus-color: var(--palette-white-90),
-            focus-border-color: var(--palette-white-60),
+            focus-border-color: transparent,
+            focus-outline-color: var(--palette-white-60),
             focus-background-color: var(--palette-white-20),
             focus-box-shadow: none
         )

@@ -185,6 +185,7 @@ $colors-dark: map-extend($colors-dark, (
             color: var(--palette-white-90)
         )
     ),
+    gradient: (),
     heading: (
         default: var(--palette-white-90),
         moderated: var(--palette-white-70),
@@ -507,5 +508,6 @@ $colors-dark: map-extend($colors-dark, (
         light-moderated: var(--palette-white-80),
         light-muted: var(--palette-white-50),
         primary: var(--palette-primary-light)
-    )
+    ),
+    text-gradient: ()
 ));

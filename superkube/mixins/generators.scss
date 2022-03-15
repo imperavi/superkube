@@ -40,7 +40,7 @@
 // generate root colors
 @mixin generate-root-colors($map) {
     @if $map != null {
-        $all: inline, placeholder;
+        $all: background, border, divider, overlay, gradient, text-gradient, link, inline, placeholder, text, heading;
         @each $name, $value in $map {
             @if $name != shadow and index($global-colors, $name) {
                 @each $key, $val in $value {

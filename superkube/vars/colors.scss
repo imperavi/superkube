@@ -240,9 +240,9 @@ $colors: map-extend($colors, (
             background-color: var(--palette-white),
             box-shadow: none,
             focus-color: var(--palette-neutral-darker),
-            focus-border-color: var(--palette-active-light),
+            focus-border-color: var(--palette-active-mid),
             focus-background-color: var(--palette-white),
-            focus-box-shadow: inset 0 0 2px var(--palette-active-light)
+            focus-box-shadow: inset 0 0 2px var(--palette-active-mid)
         ),
         error: (
             outline-color: var(--palette-negative-base),

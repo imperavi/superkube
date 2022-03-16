@@ -42,6 +42,11 @@ $sizes: scale(spacing);
     .w-#{$name} { width: $unit * $size !important; }
 }
 @include for-sm {
+    .max-full-sm  {
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+    }
     @each $name, $size in $sizes {
         .h-#{$name}-sm { height: $unit * $size !important; }
         .w-#{$name}-sm { width: $unit * $size !important; }

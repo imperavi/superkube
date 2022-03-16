@@ -3365,25 +3365,23 @@ hr {
 
 .list-checkmark,
 .list-dashed {
+  --list-mark: none;
   --list-mark-color: var(--text-default);
   position: relative; }
 
 .list-checkmark {
+  --list-mark: "\2713";
   padding-left: 1.3em; }
 
 .list-dashed {
+  --list-mark: "\2014";
   padding-left: 1.35em; }
 
-.list-checkmark li:before {
-  position: absolute;
-  content: "\2713";
-  left: 0;
-  color: var(--list-mark-color); }
-
+.list-checkmark li:before,
 .list-dashed li:before {
   position: absolute;
-  content: "\2014";
   left: 0;
+  content: var(--list-mark);
   color: var(--list-mark-color); }
 
 .list-light.list-checkmark,

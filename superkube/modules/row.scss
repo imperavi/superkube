@@ -3,12 +3,13 @@
     display: flex;
     flex-wrap: wrap;
 
-    input,
-    select,
-    textarea,
     .input {
         width: auto;
         flex: 1 0 auto;
+    }
+    & > * {
+        margin-top: 0;
+        margin-bottom: 0;
     }
 }
 

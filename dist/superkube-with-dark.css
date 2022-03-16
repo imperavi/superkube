@@ -4628,12 +4628,12 @@ blockquote .quote-caption,
 .row {
   display: flex;
   flex-wrap: wrap; }
-  .row input,
-  .row select,
-  .row textarea,
   .row .input {
     width: auto;
     flex: 1 0 auto; }
+  .row > * {
+    margin-top: 0;
+    margin-bottom: 0; }
 
 .row-1 {
   gap: 4px; }

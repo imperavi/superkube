@@ -353,11 +353,32 @@ $colors: map-extend($colors, (
         numbered: (
             number-color: var(--palette-black-60)
         ),
+        checkmark: (
+            mark-color: var(--palette-neutral-darker)
+        ),
+        dashed: (
+            mark-color: var(--palette-neutral-darker)
+        ),
         light: (
             item-color: var(--palette-white-90),
-            item-border-color: var(--palette-white-20),
-            border-color: var(--palette-white-20),
+            item-border-color: var(--palette-white-20)
+        ),
+        light_stacked: (
+            border-color: var(--palette-white-20)
+        ),
+        light_bordered: (
+            border-color: var(--palette-white-20)
+        ),
+        light_numbered: (
             number-color: var(--palette-white-60)
+        ),
+        light_checkmark: (
+            color: var(--palette-white-90),
+            mark-color: var(--palette-white-80)
+        ),
+        light_dashed: (
+            color: var(--palette-white-90),
+            mark-color: var(--palette-white-80)
         )
     ),
     menu: (
@@ -460,6 +481,33 @@ $colors: map-extend($colors, (
             link-active-color: var(--palette-black),
             link-active-border-color: var(--palette-black),
             link-active-background-color: transparent
+        ),
+        light_pills: (
+            link-color: var(--palette-white-70),
+            link-hover-background-color: var(--palette-white-30),
+            link-active-color: var(--palette-black),
+            link-active-background-color: var(--palette-white-95)
+        ),
+        light_points: (
+            border-color: var(--palette-white-20),
+            link-color: var(--palette-white-60),
+            link-hover-color: var(--palette-white),
+            link-hover-border-color: var(--palette-white),
+            link-hover-background-color: var(--palette-white-30),
+            link-active-color: var(--palette-white),
+            link-active-border-color: var(--palette-white)
+        ),
+        light_tabs: (
+            link-color: var(--palette-white-70),
+            link-background-color: var(--palette-white-20)
+        ),
+        light_switcher: (
+            border-color: var(--palette-white-30),
+            link-color: var(--palette-white-60),
+            link-hover-color: var(--palette-white),
+            link-hover-border-color: var(--palette-white),
+            link-active-color: var(--palette-white),
+            link-active-border-color: var(--palette-white)
         )
     ),
     overlay: (

@@ -253,35 +253,6 @@
     }
 }
 
-// Light
-.nav-pills.nav-light {
-    --nav-link-color: var(--palette-white-70);
-    --nav-link-hover-background-color: var(--palette-white-30);
-    --nav-link-active-color: var(--palette-black);
-    --nav-link-active-background-color: var(--palette-white-95);
-}
-.nav-points.nav-light {
-    --nav-border-color: var(--palette-white-20);
-    --nav-link-color: var(--palette-white-60);
-    --nav-link-hover-color: var(--palette-white);
-    --nav-link-hover-border-color: var(--palette-white);
-    --nav-link-hover-background-color: var(--palette-white-30);
-    --nav-link-active-color: var(--palette-white);
-    --nav-link-active-border-color: var(--palette-white);
-}
-.nav-tabs.nav-light {
-    --nav-link-color: var(--palette-white-70);
-    --nav-link-background-color: var(--palette-white-20);
-}
-.nav-switcher.nav-light {
-    --nav-border-color: var(--palette-white-30);
-    --nav-link-color: var(--palette-white-60);
-    --nav-link-hover-color: var(--palette-white);
-    --nav-link-hover-border-color: var(--palette-white);
-    --nav-link-active-color: var(--palette-white);
-    --nav-link-active-border-color: var(--palette-white);
-}
-
 //Responsive
 @include for-sm {
     .nav-left-sm {

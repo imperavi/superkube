@@ -354,11 +354,11 @@ $colors-dark: map-extend($colors-dark, (
         numbered: (
             number-color: var(--palette-white-50)
         ),
-        light: (
-            item-color: var(--text-light),
-            item-border-color: var(--palette-white-20),
-            border-color: var(--palette-white-15),
-            number-color: var(--palette-white-50)
+        checkmark: (
+            mark-color: var(--palette-white-80)
+        ),
+        dashed: (
+            mark-color: var(--palette-white-80)
         )
     ),
     menu: (
@@ -387,13 +387,6 @@ $colors-dark: map-extend($colors-dark, (
             link-hover-color: var(--palette-white-90),
             link-active-color: var(--palette-white-90)
         ),
-        light: (
-            link-color: var(--palette-white-90),
-            link-hover-color: var(--palette-white),
-            link-active-color: var(--palette-white-50),
-            item-border-color: var(--palette-white-15),
-            number-color: var(--palette-white-50)
-        ),
         muted: (
             link-color: var(--palette-white-60),
             link-hover-color: var(--palette-white),
@@ -413,11 +406,6 @@ $colors-dark: map-extend($colors-dark, (
             link-color: var(--palette-primary-light),
             link-hover-color: var(--palette-white-90),
             link-active-color: var(--palette-white-90)
-        ),
-        light: (
-            link-color: var(--palette-white-90),
-            link-hover-color: var(--palette-white),
-            link-active-color: var(--palette-white-50)
         ),
         muted: (
             link-color: var(--palette-white-60),

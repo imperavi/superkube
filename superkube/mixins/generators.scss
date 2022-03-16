@@ -83,6 +83,12 @@
             @if $variant != default {
                 $sel: '&.' + $modulename + '-' + $variant;
             }
+
+            $list: str-split($variant, '_');
+            @if length($list) > 1 {
+                $sel: '&-' + to-string($list, '.' + $modulename + '-');
+            }
+
             #{$sel} {
                 @each $name, $val in $value {
                     @if type-of($val) == map {

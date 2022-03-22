@@ -1,56 +1,54 @@
 // =Divider
 .divider {
-    // params
+    // colors
     --divider-background-color: transparent;
 
+    // params
+    --divider-size: 1px;
+    --divider-length: auto;
+
     // props
-    height: 1px;
+    width: var(--divider-length);
+    height: var(--divider-size);
     background-color: var(--divider-background-color);
 }
-.divider-strong {
-    height: 2px;
-}
-.divider-heavy {
-    height: 6px;
-}
 .divider-vertical {
-    width: 1px;
-    height: auto;
+    width: var(--divider-size);
+    height: var(--divider-length);
 }
-.divider-vertical.divider-strong {
-    width: 2px;
+
+// Size
+$divider-scale: scale(divider);
+@each $name, $value in $divider-scale {
+    @if $name != 1 {
+        .divider-#{$name} {
+            --divider-size: #{$value};
+        }
+    }
 }
-.divider-vertical.divider-heavy {
-    width: 6px;
+
+// Length
+$divider-length: scale(divider-length);
+@each $name, $value in $divider-length {
+    .divider-#{$name} {
+        --divider-length: #{$value};
+    }
 }
 
 // Colors
 $dividercolors: map-get($colors, divider);
 @each $name, $value in $dividercolors {
-    @if $name == default {
-        .divider {
-            --divider-background-color: #{$value};
-        }
+    .divider-#{$name} {
+        --divider-background-color: #{$value};
     }
-    @else {
-        .divider-#{$name} {
-            --divider-background-color: #{$value};
-        }
-    }
+
 }
 // Dark theme
 @include dark-theme {
     $dividercolors: map-get($colors-dark, divider);
     @each $name, $value in $dividercolors {
-        @if $name == default {
-            .divider {
-                --divider-background-color: #{$value};
-            }
-        }
-        @else {
-            .divider-#{$name} {
-                --divider-background-color: #{$value};
-            }
+        .divider-#{$name} {
+            --divider-background-color: #{$value};
         }
     }
 }

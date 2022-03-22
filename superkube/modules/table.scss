@@ -1,10 +1,14 @@
 // =Table
-table {
-    // generate
-    @include generate-type(table, null, '.table');
-    @include generate-colors(table);
+table,
+.table {
+    // colors
+    --table-border-color: var(--palette-black-7);
+    --table-head-border-color: var(--palette-black-7);
+
 
     // vars
+    --table-font-size: 15px;
+    --table-line-height: var(--type-line);
     --table-border-style: solid;
     --table-border-width: 1px;
     --table-head-border-style: solid;
@@ -34,19 +38,7 @@ table {
         border-bottom-color: var(--table-border-color);
     }
 
-    &.table-striped {
-        tr:nth-child(odd) td {
-            background-color: var(--table-background-color);
-        }
-    }
 }
-// Dark theme
-@include dark-theme {
-    table {
-        @include generate-dark-theme-colors(table);
-    }
-}
-
 td,
 th {
     text-align: left;
@@ -71,6 +63,13 @@ caption {
     overflow-x: auto;
     white-space: nowrap;
 }
+.table-striped {
+    --table-background-color: var(--palette-neutral-lightest);
+
+    tr:nth-child(odd) td {
+        background-color: var(--table-background-color);
+    }
+}
 .table-striped,
 .table-bordered {
     td,
@@ -86,11 +85,24 @@ caption {
         border: 1px solid var(--table-border-color);
     }
 }
-.table-light,
-.table-light.table-bordered {
+.table-light {
     --table-border-color: var(--palette-white-15);
     --table-head-border-color: var(--palette-white-15);
 }
-.table-light.table-striped {
+.table-striped.table-light {
     --table-background-color: var(--palette-white-10);
+}
+
+// Dark theme
+@include dark-theme {
+    table,
+    .table,
+    .table-light  {
+        --table-border-color: var(--palette-white-10);
+        --table-head-border-color: var(--palette-white-10);
+    }
+    .table-striped,
+    .table-striped.table-light {
+        --table-background-color: var(--palette-white-7);
+    }
 }

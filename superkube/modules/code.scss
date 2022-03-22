@@ -1,12 +1,15 @@
 // =Code
 pre,
 .code {
-    // generate
-    @include generate-type(code, null, '.code');
-    @include generate-colors(code);
+    // colors
+    --code-background-color: var(--palette-neutral-lightest);
+    --code-color: var(--palette-neutral-darker);
+    --code-border-color: transparent;
 
     // params
+    --code-font-size: 14px;
     --code-font-family: var(--font-mono);
+    --code-line-height: 1.5;
     --code-padding: 4rem;
     --code-border-radius: var(--radius-base);
     --code-border-width: 1px;
@@ -35,15 +38,12 @@ pre,
         background: none;
     }
 }
-.code-flat {
-   --code-padding: 0;
-   --code-border-color: transparent;
-   --code-background-color: none;
-}
 // Dark theme
 @include dark-theme {
     pre,
     .code {
-        @include generate-dark-theme-colors(code);
+        --code-background-color: var(--palette-surface-300);
+        --code-color: var(--palette-white-80);
+        --code-border-color: transparent;
     }
 }

@@ -1,0 +1,81 @@
+// =Toggle
+.toggle {
+    // colors
+    --toggle-background-color: var(--palette-neutral-mid);
+    --toggle-active-background-color: var(--palette-active-base);
+    --toggle-handle-background-color: var(--palette-white);
+
+    // vars
+    --toggle-label-font-size: 15px;
+    --toggle-label-font-weight: normal;
+    --toggle-label-line-height: var(--type-line);
+    --toggle-label-text-transform: none;
+    --toggle-label-top: 2px;
+    --toggle-label-margin-left: 2px;
+    --toggle-width: 36px;
+    --toggle-height: 22px;
+    --toggle-border-radius: calc(var(--toggle-height)/2);
+    --toggle-size: 18px;
+    --toggle-space: 2px;
+
+    // props
+    cursor: pointer;
+    display: inline-block;
+
+    .toggle-checkbox {
+        position: absolute;
+        visibility: hidden;
+    }
+    .toggle-checkbox:checked + .toggle-toggle {
+        background-color: var(--toggle-active-background-color);
+    }
+    .toggle-checkbox:checked + .toggle-toggle:before {
+        left: 50%;
+    }
+    .toggle-label {
+        position: relative;
+        font-weight: var(--toggle-label-font-weight);
+        font-size: var(--toggle-label-font-size);
+        line-height: var(--toggle-label-line-height);
+        text-transform: var(--toggle-label-text-transform);
+        top: var(--toggle-label-top);
+        margin-left: var(--toggle-label-margin-left);
+    }
+    .toggle-toggle {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        transition: background-color 0.25s;
+        border-radius: var(--toggle-border-radius);
+        width: var(--toggle-width);
+        height: var(--toggle-height);
+        background-color: var(--toggle-background-color);
+    }
+    .toggle-toggle:before,
+    .toggle-toggle:after {
+        content: '';
+    }
+    .toggle-toggle:before {
+        position: absolute;
+        display: block;
+        border-radius: 50%;
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, .25);
+        transition: left 0.25s;
+        width: var(--toggle-size);
+        height: var(--toggle-size);
+        top: var(--toggle-space);
+        left: var(--toggle-space);
+        background-color: var(--toggle-handle-background-color);
+    }
+    &:hover .toggle-toggle:before {
+        box-shadow: 0 0 0 1px rgba(0, 0, 0, .5);
+    }
+}
+// Dark theme
+@include dark-theme {
+    .toggle {
+        --toggle-background-color: var(--palette-neutral-mid);
+        --toggle-active-background-color: var(--palette-active-mid);
+        --toggle-handle-background-color: var(--palette-white);
+    }
+}

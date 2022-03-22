@@ -1,11 +1,15 @@
 // =Alert
 .alert {
-    @include generate-type(alert);
-    @include generate-colors(alert);
+    // colors
+    --alert-background-color: var(--palette-neutral-lighter);
+    --alert-border-color: transparent;
+    --alert-color: var(--palette-neutral-darker);
 
-    // vars
+    // params
     --alert-padding: 4rem 5rem;
+    --alert-font-size: 14px;
     --alert-font-weight: normal;
+    --alert-line-height: var(--type-line);
     --alert-border-radius: var(--radius-base);
     --alert-border-width: 1px;
     --alert-border-style: solid;
@@ -40,17 +44,52 @@
         fill: currentColor;
     }
     .close {
-        font-size: var(--alert-close-size);
+        // params
+        --close-size: var(--alert-close-size);
+
+        // props
         position: absolute;
-        right: 0;
-        top: 0;
-        padding-right: .65em;
-        padding-top: .85em;
+        right: .65em;
+        top: .85em;
     }
 }
+// Variants
+.alert-info {
+    --alert-background-color: var(--palette-active-lightest);
+    --alert-border-color: transparent;
+    --alert-color: var(--palette-active-darker);
+}
+.alert-success {
+    --alert-background-color: var(--palette-positive-lightest);
+    --alert-border-color: transparent;
+    --alert-color: var(--palette-positive-darker);
+}
+.alert-error {
+    --alert-background-color: var(--palette-negative-lightest);
+    --alert-border-color: transparent;
+    --alert-color: var(--palette-negative-darker);
+}
+
 // Dark theme
 @include dark-theme {
     .alert {
-        @include generate-dark-theme-colors(alert);
+        --alert-background-color: var(--palette-neutral-lighter);
+        --alert-border-color: transparent;
+        --alert-color: var(--palette-neutral-darker);
+    }
+    .alert-info {
+        --alert-background-color: var(--palette-active-lighter);
+        --alert-border-color: transparent;
+        --alert-color: var(--palette-active-darker);
+    }
+    .alert-success {
+        --alert-background-color: var(--palette-positive-lighter);
+        --alert-border-color: transparent;
+        --alert-color: var(--palette-positive-darker);
+    }
+    .alert-error {
+        --alert-background-color: var(--palette-negative-lighter);
+        --alert-border-color: transparent;
+        --alert-color: var(--palette-negative-darker);
     }
 }

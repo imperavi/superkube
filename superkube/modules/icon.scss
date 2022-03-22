@@ -4,8 +4,6 @@
     --icon-color: currentColor;
 
     display: inline-block;
-    position: relative;
-    top: -.025em;
 
     & svg {
         display: inline-block;
@@ -29,32 +27,6 @@
         width: var(--icon-size);
     }
 }
-// Wrapper
-.icon-wrapper {
-    text-decoration: none !important;
-
-    .icon,
-    .caret,
-    .close {
-        display: inline;
-    }
-}
-.icon-wrapper:hover {
-    .icon-copy {
-        text-decoration: underline;
-    }
-}
-.icon-wrapper-underline {
-    .icon-copy {
-        text-decoration: underline;
-    }
-}
-.icon-wrapper-underline-off,
-.icon-wrapper-underline-off:hover {
-    .icon-copy {
-        text-decoration: none;
-    }
-}
 
 // Colors
 $iconcolors: map-get($colors, icon);
@@ -62,16 +34,6 @@ $iconcolors: map-get($colors, icon);
     .icon-#{$name},
     a.icon-#{$name} {
         --icon-color: #{$value};
-    }
-}
-// Dark theme
-@include dark-theme {
-    $iconcolors: map-get($colors-dark, icon);
-    @each $name, $value in $iconcolors {
-        .icon-#{$name},
-        a.icon-#{$name} {
-            --icon-color: #{$value};
-        }
     }
 }
 
@@ -86,6 +48,17 @@ $icons: scale(icon);
     @each $key, $size in $icons {
         .icon-#{$key}-sm {
             --icon-size: #{$size};
+        }
+    }
+}
+
+// Dark theme
+@include dark-theme {
+    $iconcolors: map-get($colors-dark, icon);
+    @each $name, $value in $iconcolors {
+        .icon-#{$name},
+        a.icon-#{$name} {
+            --icon-color: #{$value};
         }
     }
 }

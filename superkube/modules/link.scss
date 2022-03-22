@@ -27,18 +27,7 @@
     text-decoration: underline;
 }
 
-// Size
-$link-size: map-deep-get($type, text);
-.link {
-    @each $name, $value in $link-size {
-        @if $name != default {
-            &-#{$name} {
-                font-size: nth($value, 1);
-            }
-        }
-    }
-}
-
+$link-size: scale(type, text);
 [class^="link-"],
 [class*=" link-"] {
     // colors
@@ -63,6 +52,15 @@ $link-size: map-deep-get($type, text);
         color: var(--link-hover-color);
         background-color: var(--link-hover-background-color);
         border-color: var(--link-hover-border-color);
+    }
+
+    // size
+    @each $name, $value in $link-size {
+        @if $name != default {
+            &-#{$name} {
+                font-size: nth($value, 1);
+            }
+        }
     }
 }
 

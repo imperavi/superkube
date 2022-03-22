@@ -13,10 +13,17 @@
     }
 }
 
-// =Size
+// Size
 $spacing-scale: scale(spacing);
 @each $name, $index in $spacing-scale {
     .row-#{$name} {
         gap: $unit * $index;
+    }
+}
+
+// Responsive
+@include for-sm {
+    .row-column-sm {
+        flex-direction: column;
     }
 }

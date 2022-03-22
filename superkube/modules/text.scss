@@ -34,11 +34,26 @@
     line-height: var(--text-line-height);
     color: var(--text-color);
 }
+[class^="text-gradient"],
+[class*=" text-gradient"] {
+    display: inline-block;
+    background-clip: text;
+    background-color: #000;
+    background-image: var(--text-color);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    a,
+    a:hover {
+        opacity: 1;
+    }
+}
+
 // Size
-.text { @include generate-text-size($type, std); }
-@include for-lg { .text { @include generate-text-size($type-lg, lg); }}
-@include for-md { .text { @include generate-text-size($type-md, md); }}
-@include for-sm { .text { @include generate-text-size($type-sm, sm); }}
+.text { @include generate-text-size(scale(type), std); }
+@include for-lg { .text { @include generate-text-size(scale(type-lg), lg); }}
+@include for-md { .text { @include generate-text-size(scale(type-md), md); }}
+@include for-sm { .text { @include generate-text-size(scale(type-sm), sm); }}
 
 
 // Color

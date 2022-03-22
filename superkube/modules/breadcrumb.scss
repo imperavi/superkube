@@ -1,10 +1,14 @@
 // =Breadcrumb
 .breadcrumb {
-    // generate
-    @include generate-type(breadcrumb);
-    @include generate-colors(breadcrumb);
+    // colors
+    --breadcrumb-link-color: var(--palette-black);
+    --breadcrumb-link-hover-color: var(--palette-black-60);
+    --breadcrumb-link-active-color: var(--palette-black-40);
+    --breadcrumb-separator-color: var(--palette-black-25);
 
-    // vars
+    // params
+    --breadcrumb-font-size: 14px;
+    --breadcrumb-line-height: var(--type-line);
     --breadcrumb-item-space: 2rem;
     --breadcrumb-separator: '\0002f';
 
@@ -55,6 +59,9 @@
 // Dark theme
 @include dark-theme {
     .breadcrumb {
-        @include generate-dark-theme-colors(breadcrumb);
+        --breadcrumb-link-color: var(--palette-white-90);
+        --breadcrumb-link-hover-color: var(--palette-white);
+        --breadcrumb-link-active-color: var(--palette-white-50);
+        --breadcrumb-separator-color: var(--palette-white-30);
     }
 }

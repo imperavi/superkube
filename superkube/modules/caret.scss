@@ -1,31 +1,41 @@
+// =Caret
 .caret {
-    // vars
-    --caret-size: 1em;
+    --caret-color: currentColor;
+    --caret-size: 14px;
+    --caret-thickness: 1px;
 
-    // props
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    font-family: 'Supericons' !important;
-    font-style: normal;
-    font-weight: inherit;
-    font-variant: inherit;
-    text-transform: none;
     display: inline-block;
-    cursor: pointer;
     position: relative;
-    line-height: 1;
-    vertical-align: middle;
-    font-size: var(--caret-size);
+
+    width: var(--caret-size);
+    height: var(--caret-size);
+
+    &:after {
+        position: absolute;
+        content: '';
+        width: calc(var(--caret-size)/2);
+        height: calc(var(--caret-size)/2);
+        border-bottom: var(--caret-thickness) solid var(--caret-color);
+        border-right: var(--caret-thickness) solid var(--caret-color);
+
+        // right
+        top: calc(var(--caret-size)/4);
+        left: calc(var(--caret-size)/8);
+        transform: rotate(-45deg);
+    }
 }
-.caret:before {
-    content: "\e900";
+.caret-left:after {
+    top: calc(var(--caret-size)/4);
+    left: calc(var(--caret-size)/3);
+    transform: rotate(135deg);
 }
-.caret-up:before {
-    content: "\e904";
+.caret-up:after {
+    top: calc(var(--caret-size)/3);
+    left: calc(var(--caret-size)/4);
+    transform: rotate(-135deg);
 }
-.caret-right:before {
-    content: "\e903";
-}
-.caret-left:before {
-    content: "\e902";
+.caret-down:after {
+    top: calc(var(--caret-size)/6);
+    left: calc(var(--caret-size)/4);
+    transform: rotate(45deg);
 }

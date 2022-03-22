@@ -1,13 +1,15 @@
 // =Quote
 blockquote,
 .quote {
-    // generate
-    @include generate-type(quote, null, '.code');
-    @include generate-colors(quote);
+    // colors
+    --quote-color: var(--palette-neutral-darker);
+    --quote-background-color: transparent;
 
     // params
+    --quote-font-size: 18px;
     --quote-font-style: italic;
     --quote-font-weight: normal;
+    --quote-line-height: var(--type-line);
     --quote-padding-x: 0;
     --quote-padding-y: 0;
     --quote-spacing: 0.25em;
@@ -35,13 +37,15 @@ blockquote,
 blockquote,
 .quote {
     .quote-caption {
-        // generate
-        @include generate-type(quote-caption);
-        @include generate-colors(quote-caption);
+        // colors
+        --quote-caption-color: var(--palette-neutral-darker);
+        --quote-caption-background-color: transparent;
 
         // params
+        --quote-caption-font-size: 14px;
         --quote-caption-font-style: italic;
         --quote-caption-font-weight: normal;
+        --quote-caption-line-height: var(--type-line);
 
         // props
         font-style: var(--quote-caption-font-style);
@@ -55,9 +59,11 @@ blockquote,
 @include dark-theme {
     blockquote,
     .quote {
-        @include generate-dark-theme-colors(quote);
+        --quote-color: var(--palette-white-90);
+        --quote-background-color: transparent;
     }
     .quote-caption {
-        @include generate-dark-theme-colors(quote-caption);
+        --quote-caption-color: var(--palette-white-90);
+        --quote-caption-background-color: transparent;
     }
 }

@@ -1,12 +1,16 @@
 // =Input-Addon
 .input-addon {
-    // generate
-    @include generate-type(input-addon);
-    @include generate-colors(input-addon);
+    // colors
+    --input-addon-color: var(--palette-black-60);
+    --input-addon-background-color: var(--palette-black-5);
+    --input-addon-border-color: var(--palette-black-10);
 
     // params
+    --input-addon-font-size: 14px;
     --input-addon-padding: 0 0.85em;
     --input-addon-border-radius: var(--radius-small);
+    --input-addon-border-width: 1px;
+    --input-addon-border-style: solid;
 
     // props
     display: inline-flex;
@@ -19,13 +23,15 @@
     border-radius: var(--input-addon-border-radius);
     color: var(--input-addon-color);
     background-color: var(--input-addon-background-color);
-    border-width: 1px;
-    border-style: solid;
+    border-width: var(--input-addon-border-width);
+    border-style: var(--input-addon-border-style);
     border-color: var(--input-addon-border-color);
 }
 // Dark theme
 @include dark-theme {
     .input-addon {
-        @include generate-dark-theme-colors(input-addon);
+        --input-addon-color: var(--palette-white-60);
+        --input-addon-background-color: var(--palette-white-10);
+        --input-addon-border-color: transparent;
     }
 }

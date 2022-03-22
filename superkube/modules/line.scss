@@ -4,8 +4,8 @@ hr {
     // vars
     --line-margin-top: 1.5em;
     --line-margin-bottom: 1.5em;
-    --line-max-height: 10px;
-    --line-height: 1px;
+    --line-max-size: 10px;
+    --line-size: 1px;
     --line-width: 100%;
     --line-style: solid;
     --line-color: var(--line-default);
@@ -18,7 +18,7 @@ hr {
     text-align: left;
     margin-top: var(--line-margin-top);
     margin-bottom: var(--line-margin-bottom);
-    height: var(--line-max-height);
+    height: var(--line-max-size);
 
     &:before {
         content: '';
@@ -26,8 +26,8 @@ hr {
         top: 50%;
         width: var(--line-width);
         max-width: var(--line-width);
-        margin-top: calc(var(--line-height)/2*-1);
-        border-top-width: var(--line-height);
+        margin-top: calc(var(--line-size)/2*-1);
+        border-top-width: var(--line-size);
         border-top-style: var(--line-style);
         border-top-color: var(--line-color);
     }

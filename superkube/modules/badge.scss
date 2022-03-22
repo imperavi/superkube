@@ -1,17 +1,21 @@
 // =Badge
 .badge {
-    @include generate-type(badge);
-    @include generate-colors(badge);
+    // colors
+    --badge-background-color: var(--palette-neutral-lighter);
+    --badge-border-color: transparent;
+    --badge-color: var(--palette-neutral-darker);
 
-    // vars
+    // params
+    --badge-font-size: 12px;
     --badge-font-weight: var(--font-weight-semibold);
     --badge-border-radius: 99px;
     --badge-padding: 1px 4px;
     --badge-border-width: 1px;
     --badge-border-style: solid;
     --badge-line-height: 16px;
+    --badge-size: 20px;
 
-    //props
+    // props
     font-weight: var(--badge-font-weight);
     font-size: var(--badge-font-size);
     border-radius: var(--badge-border-radius);
@@ -47,24 +51,45 @@ a.badge:hover {
     color: var(--badge-color);
     text-decoration: underline;
 }
-// Scales
-$badge-scale: scale(badge);
-@each $name, $value in $badge-scale {
-    @if $name == base {
-        .badge {
-            --badge-size: #{$value};
-        }
-    }
-    @else {
-        .badge-#{$name} {
-            --badge-size: #{$value};
-        }
-    }
+// Variants
+.badge-dark {
+    --badge-background-color: var(--palette-black);
+    --badge-border-color: transparent;
+    --badge-color: var(--palette-white);
+}
+.badge-light {
+    --badge-background-color: var(--palette-white);
+    --badge-border-color: transparent;
+    --badge-color: var(--palette-black);
+}
+.badge-large {
+    --badge-font-size: 14px;
+    --badge-size: 26px;
+}
+.badge-huge {
+    --badge-font-size: 16px;
+    --badge-size: 36px;
+}
+.badge-mega {
+    --badge-font-size: 20px;
+    --badge-size: 48px;
 }
 
 // Dark theme
 @include dark-theme {
     .badge {
-        @include generate-dark-theme-colors(badge);
+        --badge-background-color: var(--palette-neutral-lighter);
+        --badge-border-color: transparent;
+        --badge-color: var(--palette-neutral-darker);
+    }
+    .badge-dark {
+        --badge-background-color: var(--palette-white-30);
+        --badge-border-color: transparent;
+        --badge-color: var(--palette-white);
+    }
+    .badge-light {
+        --badge-background-color: var(--palette-white-20);
+        --badge-border-color: transparent;
+        --badge-color: var(--palette-white);
     }
 }

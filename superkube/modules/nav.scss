@@ -1,10 +1,15 @@
 // =Nav
 .nav {
-    // generate
-    @include generate-type(nav);
-    @include generate-colors(nav);
+    // colors
+    --nav-link-color: var(--palette-black);
+    --nav-link-background-color: transparent;
+    --nav-link-hover-color: var(--palette-black-60);
+    --nav-link-hover-background-color: transparent;
+    --nav-link-active-color: var(--palette-black-40);
+    --nav-link-active-background-color: transparent;
 
-    // vars
+    // params
+    --nav-font-size: 14px;
     --nav-item-space: 6rem;
     --nav-link-padding: 0;
     --nav-link-border-radius: 0;
@@ -47,28 +52,34 @@
         color: var(--nav-link-hover-color);
         background-color: var(--nav-link-hover-background-color);
     }
-}
-// Dark theme
-@include dark-theme {
-    .nav {
-        @include generate-dark-theme-colors(nav);
+    .caret {
+        margin-left: 2px;
     }
 }
 
 // Scales
 .nav-small {
+    --nav-font-size: 13px;
     --nav-item-space: 5rem;
 }
 
 // Variants
 .nav-semibold {
     .nav-link {
-        font-weight: var(--font-weight-semibold);
+        --nav-link-font-weight: var(--font-weight-semibold);
+        --nav-link-active-font-weight: var(--font-weight-semibold);
+    }
+    .caret {
+        --caret-thickness: 2px;
     }
 }
 .nav-strong {
     .nav-link {
-        font-weight: bold;
+        --nav-link-font-weight: bold;
+        --nav-link-active-font-weight: bold;
+    }
+    .caret {
+        --caret-thickness: 2px;
     }
 }
 
@@ -84,8 +95,32 @@
     }
 }
 
+// Colors
+.nav-primary {
+    --nav-link-color: var(--palette-primary-dark);
+    --nav-link-hover-color: var(--palette-primary-darker);
+    --nav-link-active-color: var(--palette-black-40);
+}
+.nav-light {
+    --nav-link-color: var(--palette-white-80);
+    --nav-link-hover-color: var(--palette-white);
+    --nav-link-active-color: var(--palette-white-50);
+}
+.nav-muted {
+    --nav-link-color: var(--palette-black-60);
+    --nav-link-hover-color: var(--palette-black);
+    --nav-link-active-color: var(--palette-black);
+}
+
 // Pills
 .nav-pills {
+    // colors
+    --nav-link-color: var(--palette-black);
+    --nav-link-hover-background-color: var(--palette-black-10);
+    --nav-link-active-color: var(--palette-neutral-lightest);
+    --nav-link-active-background-color: var(--palette-black);
+
+    // params
     --nav-item-space: 1rem;
     --nav-link-padding: 7px 16px;
     --nav-link-border-radius: 99px;
@@ -94,9 +129,28 @@
         text-decoration: none;
     }
 }
+.nav-pills.nav-light {
+    --nav-link-color: var(--palette-white-70);
+    --nav-link-hover-background-color: var(--palette-white-30);
+    --nav-link-active-color: var(--palette-black);
+    --nav-link-active-background-color: var(--palette-white-95);
+}
 
 // Points
 .nav-points {
+    // colors
+    --nav-border-color: var(--palette-black-10);
+    --nav-link-color: var(--palette-black-50);
+    --nav-link-border-color: transparent;
+    --nav-link-background-color: transparent;
+    --nav-link-hover-color: var(--palette-black);
+    --nav-link-hover-border-color: var(--palette-black);
+    --nav-link-hover-background-color: var(--palette-neutral-lightest);
+    --nav-link-active-color: var(--palette-black);
+    --nav-link-active-border-color: var(--palette-black);
+    --nav-link-active-background-color: transparent;
+
+    // params
     --nav-border-width: 2px;
     --nav-item-space: 1px;
     --nav-link-padding: 12px 14px 10px 14px;
@@ -120,9 +174,27 @@
         border-bottom-color: var(--nav-link-hover-border-color);
     }
 }
+.nav-points.nav-light {
+    --nav-border-color: var(--palette-white-20);
+    --nav-link-color: var(--palette-white-60);
+    --nav-link-hover-color: var(--palette-white);
+    --nav-link-hover-border-color: var(--palette-white);
+    --nav-link-hover-background-color: var(--palette-white-30);
+    --nav-link-active-color: var(--palette-white);
+    --nav-link-active-border-color: var(--palette-white);
+}
 
 // Tabs
 .nav-tabs {
+    // colors
+    --nav-link-color: var(--palette-black-50);
+    --nav-link-background-color: var(--palette-black-5);
+    --nav-link-hover-color: var(--palette-black);
+    --nav-link-hover-background-color: var(--palette-white);
+    --nav-link-active-color: var(--palette-black);
+    --nav-link-active-background-color: var(--palette-white);
+
+    // params
     --nav-item-space: 1px;
     --nav-link-padding: 12px 16px 10px 16px;
 
@@ -130,9 +202,26 @@
         text-decoration: none;
     }
 }
+.nav-tabs.nav-light {
+    --nav-link-color: var(--palette-white-70);
+    --nav-link-background-color: var(--palette-white-20);
+}
 
 // Switcher
 .nav-switcher {
+    // colors
+    --nav-border-color: var(--palette-black-10);
+    --nav-link-color: var(--palette-black-50);
+    --nav-link-border-color: transparent;
+    --nav-link-background-color: transparent;
+    --nav-link-hover-color: var(--palette-black);
+    --nav-link-hover-border-color: var(--palette-black);
+    --nav-link-hover-background-color: transparent;
+    --nav-link-active-color: var(--palette-black);
+    --nav-link-active-border-color: var(--palette-black);
+    --nav-link-active-background-color: transparent;
+
+    // params
     --nav-border-width: 1px;
     --nav-item-space: 1px;
     --nav-link-padding: 8px 16px;
@@ -164,7 +253,14 @@
         border-color: var(--nav-link-hover-border-color);
     }
 }
-
+.nav-switcher.nav-light {
+    --nav-border-color: var(--palette-white-30);
+    --nav-link-color: var(--palette-white-60);
+    --nav-link-hover-color: var(--palette-white);
+    --nav-link-hover-border-color: var(--palette-white);
+    --nav-link-active-color: var(--palette-white);
+    --nav-link-active-border-color: var(--palette-white);
+}
 
 // Centered
 .nav-centered {
@@ -253,7 +349,7 @@
     }
 }
 
-//Responsive
+// Responsive
 @include for-sm {
     .nav-left-sm {
         .nav-list {
@@ -315,5 +411,73 @@
         .nav-list {
             justify-content: flex-start;
         }
+    }
+}
+// Dark theme
+@include dark-theme {
+    .nav {
+        --nav-link-color: var(--palette-white-90);
+        --nav-link-background-color: transparent;
+        --nav-link-hover-color: var(--palette-white);
+        --nav-link-hover-background-color: transparent;
+        --nav-link-active-color: var(--palette-white-50);
+        --nav-link-active-background-color: transparent;
+    }
+    .nav-primary {
+        --nav-link-color: var(--palette-primary-light);
+        --nav-link-hover-color: var(--palette-white-90);
+        --nav-link-active-color: var(--palette-white-90);
+    }
+    .nav-muted {
+        --nav-link-color: var(--palette-white-60);
+        --nav-link-hover-color: var(--palette-white);
+        --nav-link-active-color: var(--palette-white);
+    }
+    .nav-light {
+        --nav-link-color: var(--palette-white-80);
+        --nav-link-hover-color: var(--palette-white);
+        --nav-link-active-color: var(--palette-white-50);
+    }
+    .nav-pills,
+    .nav-pills.nav-light {
+        --nav-link-color: var(--palette-white-90);
+        --nav-link-hover-background-color: var(--palette-white-15);
+        --nav-link-active-color: var(--palette-black);
+        --nav-link-active-background-color: var(--palette-white-90);
+    }
+    .nav-points,
+    .nav-points.nav-light {
+        --nav-border-color: var(--palette-white-20);
+        --nav-link-color: var(--palette-white-60);
+        --nav-link-border-color: transparent;
+        --nav-link-background-color: transparent;
+        --nav-link-hover-color: var(--palette-white);
+        --nav-link-hover-border-color: var(--palette-white);
+        --nav-link-hover-background-color: var(--palette-white-15);
+        --nav-link-active-color: var(--palette-white);
+        --nav-link-active-border-color: var(--palette-white);
+        --nav-link-active-background-color: transparent;
+    }
+    .nav-tabs,
+    .nav-tabs.nav-light {
+        --nav-link-color: var(--palette-white-70);
+        --nav-link-background-color: var(--palette-white-20);
+        --nav-link-hover-color: var(--palette-black);
+        --nav-link-hover-background-color: var(--palette-white-90);
+        --nav-link-active-color: var(--palette-black);
+        --nav-link-active-background-color: var(--palette-white);
+    }
+    .nav-switcher,
+    .nav-switcher.nav-light {
+        --nav-border-color: var(--palette-white-30);
+        --nav-link-color: var(--palette-white-60);
+        --nav-link-border-color: transparent;
+        --nav-link-background-color: transparent;
+        --nav-link-hover-color: var(--palette-white);
+        --nav-link-hover-border-color: var(--palette-white-80);
+        --nav-link-hover-background-color: transparent;
+        --nav-link-active-color: var(--palette-white-90);
+        --nav-link-active-border-color: var(--palette-white-90);
+        --nav-link-active-background-color: transparent;
     }
 }

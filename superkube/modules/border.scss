@@ -33,13 +33,6 @@ $borders-colors: map-get($colors, border);
 @each $name, $value in $borders-colors {
     .border-#{$name} { --border-color: #{$value}; }
 }
-// Dark theme
-@include dark-theme {
-    $borders-colors: map-get($colors-dark, border);
-    @each $name, $value in $borders-colors {
-        .border-#{$name} { --border-color: #{$value}; }
-    }
-}
 
 // size
 $borders: scale(border);
@@ -71,5 +64,13 @@ $borders: scale(border);
         @if $name not 1 {
             .border-#{$name}-sm { border-width: $value }
         }
+    }
+}
+
+// Dark theme
+@include dark-theme {
+    $borders-colors: map-get($colors-dark, border);
+    @each $name, $value in $borders-colors {
+        .border-#{$name} { --border-color: #{$value}; }
     }
 }

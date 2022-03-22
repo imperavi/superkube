@@ -1,9 +1,11 @@
+// =Brand
 .brand {
-    // generate
-    @include generate-type(brand);
-    @include generate-colors(brand);
+    // colors
+    --brand-color: var(--palette-black);
+    --brand-hover-color: var(--palette-black);
 
-    // vars
+    // params
+    --brand-font-size: 16px;
     --brand-font-weight: bold;
     --brand-text-transform: none;
     --brand-letter-spacing: 0;
@@ -12,23 +14,46 @@
     position: relative;
     display: flex;
     align-items: center;
-    text-decoration: none;
     line-height: 1;
     white-space: nowrap;
+    text-decoration: none;
     color: var(--brand-color);
     font-size: var(--brand-font-size);
     font-weight: var(--brand-font-weight);
     text-transform: var(--brand-text-transform);
     letter-spacing: var(--brand-letter-spacing);
+
+    svg {
+        fill: currentColor;
+    }
 }
 a.brand:hover {
     @include transition;
     color: var(--brand-hover-color);
     text-decoration: underline;
 }
+// Variants
+.brand-primary {
+    --brand-color: var(--palette-primary-base);
+    --brand-hover-color: var(--palette-primary-base);
+}
+.brand-light {
+    --brand-color: var(--palette-white-90);
+    --brand-hover-color: var(--palette-white-90);
+}
+.brand-light-medium {
+    --brand-color: var(--palette-white-70);
+    --brand-hover-color: var(--palette-white-70);
+}
+
 // Dark theme
 @include dark-theme {
     .brand {
-        @include generate-dark-theme-colors(brand);
+        --brand-color: var(--palette-white-90);
+        --brand-hover-color: var(--palette-white-90);
+    }
+    .brand-primary {
+        --brand-color: var(--palette-white-90);
+        --brand-hover-color: var(--palette-white-90);
     }
 }

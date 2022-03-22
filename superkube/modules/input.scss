@@ -1,10 +1,19 @@
 // =Input
 .input {
-    // generate
-    @include generate-type(input);
-    @include generate-colors(input);
+    // colors
+    --input-color: var(--palette-neutral-darker);
+    --input-border-color: var(--palette-black-20);
+    --input-background-color: var(--palette-white);
+    --input-box-shadow: none;
+    --input-focus-color: var(--palette-neutral-darker);
+    --input-focus-border-color: transparent;
+    --input-focus-outline-color: var(--palette-active-mid);
+    --input-focus-background-color: var(--palette-white);
+    --input-focus-box-shadow: none;
 
     // params
+    --input-font-size: 15px;
+    --input-line-height: var(--type-line);
     --input-border-radius: var(--radius-base);
     --input-padding: 0.3em 0.5em;
     --input-border-width: 1px;
@@ -12,23 +21,9 @@
     --input-outline-offset: -2px;
     --input-outline-width: 2px;
     --input-outline-style: solid;
-
     --input-box-shadow: none;
-    --input-height: auto;
+    --input-height: 42px;
     --input-select-toggle: url('data:image/svg+xml;utf8,<svg height="6" viewBox="0 0 10 6" width="10" xmlns="http://www.w3.org/2000/svg"><path fill="rgb(0,0,0)" opacity=".6" d="m6.6168815 3-4.44908109-4.09883609c-.22373388-.20615371-.22373388-.54039492 0-.74654863s.58647818-.20615371.81021206 0l4.85418712 4.47211041c.22373388.20615371.22373388.54039491 0 .74654862l-4.85418712 4.47211041c-.22373388.20615371-.58647818.20615371-.81021206 0s-.22373388-.54039492 0-.74654863z" fill-rule="evenodd" transform="matrix(0 1 -1 0 8 -2)"/></svg>');
-
-    // scales
-    $input-scale: scale(input);
-    @each $name, $value in $input-scale {
-        @if $name == base {
-            --input-height: #{$value};
-        }
-        @else {
-            &-#{$name} {
-                --input-height: #{$value};
-            }
-        }
-    }
 
     // props
     display: block;
@@ -69,7 +64,13 @@
         outline: 2px solid var(--input-outline-color);
     }
 }
+.input-small {
+    --input-height: 36px;
+    --input-font-size: 14px;
+}
 .input-large {
+    --input-height: 56px;
+    --input-font-size: 20px;
     --input-padding: 0.3em 0.4em;
 }
 .input-round {
@@ -78,7 +79,42 @@
 }
 .input-light {
     @include placeholder(var(--placeholder-light));
+
+    // colors
+    --input-color: var(--palette-white-90);
+    --input-border-color: var(--palette-white-40);
+    --input-background-color: var(--palette-white-15);
+    --input-box-shadow: none;
+    --input-focus-color: var(--palette-white-90);
+    --input-focus-outline-color: var(--palette-white-60);
+    --input-focus-border-color: transparent;
+    --input-focus-background-color: var(--palette-white-20);
 }
+// States
+.input-error {
+    // colors
+    --input-outline-color: var(--palette-negative-base);
+    --input-color: var(--palette-negative-dark);
+    --input-border-color: var(--palette-negative-base);
+    --input-background-color: var(--palette-white);
+    --input-box-shadow: none;
+    --input-focus-color: var(--palette-negative-base);
+    --input-focus-outline-color: var(--palette-negative-base);
+    --input-focus-border-color: transparent;
+    --input-focus-background-color: var(--palette-white);
+    --input-focus-box-shadow: none;
+}
+.input-success {
+    // colors
+    --input-color: var(--palette-positive-dark);
+    --input-border-color: var(--palette-positive-base);
+    --input-outline-color: var(--palette-positive-base);
+    --input-focus-color: var(--palette-positive-base);
+    --input-focus-box-shadow: none;
+    --input-focus-border-color: transparent;
+    --input-focus-outline-color: var(--palette-positive-base);
+}
+
 // Dark Theme
 @include dark-theme {
     select.input {
@@ -86,17 +122,67 @@
     }
     .input {
         @include placeholder(var(--placeholder-light));
-        @include generate-dark-theme-colors(input);
+
+        // colors
+        --input-color: var(--palette-white-90);
+        --input-border-color: var(--palette-white-30);
+        --input-background-color: var(--palette-white-15);
+        --input-box-shadow: none;
+        --input-focus-color: var(--palette-white-90);
+        --input-focus-border-color: transparent;
+        --input-focus-outline-color: var(--palette-white-50);
+        --input-focus-background-color: var(--palette-white-20);
+        --input-focus-box-shadow: none;
+
+        // props
         &.disabled,
         &:disabled  {
            opacity: 0.4;
         }
     }
+    .input-light {
+        --input-color: var(--palette-white-90);
+        --input-border-color: var(--palette-white-40);
+        --input-background-color: var(--palette-white-15);
+        --input-box-shadow: none;
+        --input-focus-color: var(--palette-white-90);
+        --input-focus-border-color: transparent;
+        --input-focus-outline-color: var(--palette-white-60);
+        --input-focus-background-color: var(--palette-white-20);
+        --input-focus-box-shadow: none;
+    }
+    .input-error {
+        --input-outline-color: var(--palette-negative-mid);
+        --input-color: var(--palette-negative-base);
+        --input-border-color: var(--palette-negative-mid);
+        --input-background-color: var(--palette-white-15);
+        --input-box-shadow: none;
+        --input-focus-color: var(--palette-negative-base);
+        --input-focus-border-color: transparent;
+        --input-focus-outline-color: var(--palette-negative-base);
+        --input-focus-background-color: var(--palette-white-20);
+        --input-focus-box-shadow: none;
+    }
+    .input-success {
+        --input-outline-color: var(--palette-positive-mid);
+        --input-color: var(--palette-positive-base);
+        --input-border-color: var(--palette-positive-mid);
+        --input-background-color: var(--palette-white-15);
+        --input-box-shadow: none;
+        --input-focus-color: var(--palette-positive-base);
+        --input-focus-border-color: transparent;
+        --input-focus-outline-color: var(--palette-positive-base);
+        --input-focus-background-color: var(--palette-white-20);
+        --input-focus-box-shadow: none;
+    }
 }
 
 textarea,
 textarea.input {
+    // params
     --input-height: auto !important;
+
+    // props
     resize: vertical;
     vertical-align: top;
 }
@@ -108,14 +194,20 @@ select.input {
     padding-right: 28px !important;
 }
 select[multiple].input {
+    // params
     --input-height: auto !important;
+
+    // props
     background-image: none !important;
     padding: var(--input-padding) !important;
 }
 
 // File
 input[type="file"] {
+    // params
     --input-height: auto !important;
+
+    // props
     width: auto;
     border: none;
     padding: 0;
@@ -128,7 +220,10 @@ input[type="file"] {
 // Radio & Checkbox
 input[type="radio"],
 input[type="checkbox"] {
+    // params
     --input-height: auto !important;
+
+    // props
     display: inline-block;
     width: auto;
     box-shadow: none;

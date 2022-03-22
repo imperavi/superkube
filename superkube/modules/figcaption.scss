@@ -1,0 +1,38 @@
+// =Figcaption
+figcaption {
+    // colors
+    --figcaption-color: var(--text-default);
+    --figcaption-background-color: transparent;
+
+    // params
+    --figcaption-font-size: 12px;
+    --figcaption-line-height: var(--type-line);
+    --figcaption-font-style: normal;
+    --figcaption-font-weight: normal;
+    --figcaption-text-transform: none;
+    --figcaption-letter-spacing: 0;
+    --figcaption-spacing: 0.4em;
+    --figcaption-padding: 0;
+    --figcaption-border-radius: 0;
+
+    // props
+    display: block;
+    margin-top: var(--figcaption-spacing);
+    font-style: var(--figcaption-font-style);
+    font-size: var(--figcaption-font-size);
+    font-weight: var(--figcaption-font-weight);
+    text-transform: var(--figcaption-text-transform);
+    letter-spacing: var(--figcaption-letter-spacing);
+    line-height: var(--figcaption-line-height);
+    padding: var(--figcaption-padding);
+    border-radius: var(--figcaption-border-radius);
+    background-color: var(--figcaption-background-color);
+    color: var(--figcaption-color);
+}
+// Dark theme
+@include dark-theme {
+    figcaption {
+        --figcaption-color: var(--palette-white-80);
+        --figcaption-background-color: transparent;
+    }
+}

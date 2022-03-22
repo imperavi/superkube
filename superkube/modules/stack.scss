@@ -1,24 +1,39 @@
 // =Stack
-.stack > * {
-    position: relative;
-    &:after {
-        position: absolute;
-        content: '';
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 1px;
-        border-bottom: 1px solid transparent;
-    }
-    &:last-child {
-        margin-bottom: 0;
-    }
-    &:last-child:after {
-        display: none;
+.stack {
+    --stack-divider-color: transparent;
+    --stack-divider-style: solid;
+    --stack-divider-size: 1px;
+
+    & > * {
+        position: relative;
+
+        &:after {
+            position: absolute;
+            content: '';
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: var(--stack-divider-size);
+            border-bottom-color: var(--stack-divider-color);
+            border-bottom-style: var(--stack-divider-style);
+            border-bottom-width: var(--stack-divider-size);
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        &:last-child:after {
+            display: none;
+        }
     }
 }
+.stack-dashed {
+    --stack-divider-style: dashed;
+}
+.stack-dotted {
+    --stack-divider-style: dotted;
+}
 
-// =Size
+// Size
 $spacing-scale: scale(spacing);
 @each $name, $index in $spacing-scale {
     .stack-#{$name} > * {
@@ -27,23 +42,19 @@ $spacing-scale: scale(spacing);
     }
 }
 
-// =Divider
+// Divider Color
 $borders-colors: map-get($colors, border);
 @each $name, $value in $borders-colors {
-    .stack-#{$name} > * {
-        &:after {
-            border-bottom-color: #{$value};
-        }
+    .stack-#{$name} {
+        --stack-divider-color: #{$value};
     }
 }
 // Dark theme
 @include dark-theme {
     $borders-colors: map-get($colors-dark, border);
     @each $name, $value in $borders-colors {
-        .stack-#{$name} > * {
-            &:after {
-                border-bottom-color: #{$value};
-            }
+        .stack-#{$name} {
+            --stack-divider-color: #{$value};
         }
     }
 }

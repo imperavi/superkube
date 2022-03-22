@@ -1,24 +1,4 @@
 // =Spacing
-.mt-off { margin-top: 0; }
-.mb-off { margin-bottom: 0; }
-.ml-off { margin-left: 0; }
-.mr-off { margin-right: 0; }
-.my-off { margin-top: 0; margin-bottom: 0; }
-.mx-off { margin-left: 0; margin-left: 0; }
-.p-off  { padding: 0; }
-.pt-off { padding-top: 0; }
-.pb-off { padding-bottom: 0; }
-.pl-off { padding-left: 0; }
-.pr-off { padding-right: 0; }
-.px-off { padding-left: 0; padding-right: 0; }
-.py-off { padding-top: 0; padding-bottom: 0; }
-
-.mt-auto { margin-top: auto; }
-.mb-auto { margin-bottom: auto; }
-.ml-auto { margin-left: auto; }
-.mr-auto { margin-right: auto; }
-
-// =Scale
 $spacing-scale: scale(spacing);
 @each $name, $index in $spacing-scale {
     .p-#{$name}   { padding: $unit * $index; }
@@ -42,7 +22,6 @@ $spacing-scale: scale(spacing);
     .pb-#{$name}  { padding-bottom: $unit * $index; }
     .pl-#{$name}  { padding-left: $unit * $index; }
     .pr-#{$name}  { padding-right: $unit * $index; }
-
 }
 @include for-sm {
     .mt-off-sm { margin-top: 0; }
@@ -58,11 +37,6 @@ $spacing-scale: scale(spacing);
     .pr-off-sm { padding-right: 0; }
     .py-off-sm { padding-top: 0; padding-bottom: 0; }
     .px-off-sm { padding-left: 0; padding-right: 0; }
-
-    .mt-auto-sm { margin-top: auto; }
-    .mb-auto-sm { margin-bottom: auto; }
-    .ml-auto-sm { margin-left: auto; }
-    .mr-auto-sm { margin-right: auto; }
 
     @each $name, $index in $spacing-scale {
         .p-#{$name}-sm   { padding: $unit * $index; }

@@ -1,0 +1,79 @@
+// =Inline
+dfn,
+abbr {
+    font-size: 95%;
+}
+cite,
+small,
+var,
+kbd,
+code {
+    font-size: 85%;
+}
+sup,
+sub {
+    font-size: 65%;
+}
+var,
+code,
+kbd {
+    display: inline-block;
+    font-family: var(--font-mono);
+    font-style: normal;
+    line-height: 1;
+    vertical-align: baseline;
+}
+kbd,
+code {
+    border-radius: var(--radius-base);
+}
+kbd {
+    color: var(--inline-kbd-color);
+    background-color: var(--inline-kbd-background-color);
+    border: 1px solid var(--inline-kbd-border-color);
+    padding: .2em .4em;
+}
+var {
+    color: var(--inline-var-color);
+    background-color: var(--inline-var-background-color);
+    border: 1px solid var(--inline-var-border-color);
+}
+code {
+    position: relative;
+    top: -1px;
+    padding: .2em .4em .2em;
+    color: var(--inline-code-color);
+    background-color: var(--inline-code-background-color);
+    border: 1px solid var(--inline-code-border-color);
+}
+mark {
+    background-color: yellow;
+    color: black;
+}
+b,
+strong {
+    font-weight: bold;
+}
+dfn,
+abbr[title] {
+    letter-spacing: .01em;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-bottom: 1px dotted rgba(#000, .4);
+    cursor: help;
+}
+cite {
+    color: var(--inline-cite-color);
+    font-style: italic;
+}
+sub,
+sup {
+    line-height: 1;
+    margin-left: 2px;
+}
+sub {
+    vertical-align: sub;
+}
+sup {
+    vertical-align: super;
+}

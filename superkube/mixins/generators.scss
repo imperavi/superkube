@@ -40,19 +40,16 @@
 // generate root colors
 @mixin generate-root-colors($map) {
     @if $map != null {
-        $all: background, border, divider, overlay, gradient, text-gradient, link, inline, placeholder, text, heading;
         @each $name, $value in $map {
-            @if $name != shadow and index($global-colors, $name) {
+            @if $name != shadow {
                 @each $key, $val in $value {
-                    @if index($all, $name) or $key == default {
-                        @if type-of($val) == map {
-                            @each $n, $i in $val {
-                                --#{$name}-#{$key}-#{$n}: #{$i};
-                            }
+                    @if type-of($val) == map {
+                        @each $n, $i in $val {
+                            --#{$name}-#{$key}-#{$n}: #{$i};
                         }
-                        @else {
-                            --#{$name}-#{"" + $key}: #{$val};
-                        }
+                    }
+                    @else {
+                        --#{$name}-#{"" + $key}: #{$val};
                     }
                 }
             }
@@ -68,91 +65,6 @@
                 --shadow-#{$key}: #{$val};
             }
         }
-    }
-}
-
-// colors
-@mixin generate-colors($modulename, $dark: null) {
-    $map: color($modulename);
-    @if $dark {
-        $map: color-dark-theme($modulename);
-    }
-    @if $map != null {
-        @each $variant, $value in $map {
-            $sel: '&';
-            @if $variant != default {
-                $sel: '&.' + $modulename + '-' + $variant;
-            }
-
-            $list: str-split($variant, '_');
-            @if length($list) > 1 {
-                $sel: '&-' + to-string($list, '.' + $modulename + '-');
-            }
-
-            #{$sel} {
-                @each $name, $val in $value {
-                    @if type-of($val) == map {
-                        @if $name == box-shadow {
-                            --#{$modulename}-#{$name}: #{map-values($val)};
-                        }
-                        @else {
-                            @each $key, $index in $map {
-                                --#{$modulename}-#{$name}-#{$key}: $val;
-                            }
-                        }
-                    }
-                    @else {
-                        --#{$modulename}-#{$name}: #{$val};
-                    }
-                }
-            }
-        }
-    }
-}
-@mixin generate-dark-theme-colors($modulename) {
-    @include generate-colors($modulename, true);
-}
-
-// type
-@mixin generate-type($name, $prefix: null, $selector: null) {
-    $map: map-deep-get($type, $name);
-    @if $map != null {
-        @if map-has-key($map, default) {
-            & {
-                @include generate-type-item($name, map-get($map, default), $prefix);
-            }
-        }
-        @each $key, $value in $map {
-            @if $key != default {
-                $sel: '&-' + $key;
-                @if $selector != null {
-                    $sel: '&' + $selector + '-' + $key;
-                }
-
-                #{$sel} {
-                    @include generate-type-item($name, $value, $prefix);
-                }
-            }
-        }
-    }
-}
-
-// type item
-@mixin generate-type-item($name, $value, $prefix) {
-    $size: $value;
-    $line: false;
-    @if type-of($value) == list {
-        $size: nth($value, 1);
-        $line: nth($value, 2);
-    }
-
-    @if $prefix != null {
-        $name: $prefix;
-    }
-
-    --#{$name}-font-size: #{$size};
-    @if $line != false {
-        --#{$name}-line-height: #{$line};
     }
 }
 

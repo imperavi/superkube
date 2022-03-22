@@ -1,32 +1,35 @@
+// =Image
 .image-cover {
     display: flex;
     justify-content: center;
     align-items: center;
     overflow: hidden;
-}
-.image-cover img {
-    flex-shrink: 0;
-    min-width: 100%;
-    min-height: 100%;
+
+    img {
+        flex-shrink: 0;
+        min-width: 100%;
+        min-height: 100%;
+    }
 }
 .image-overlay {
     --image-overlay-color: transparent;
     --image-overlay-opacity: 1;
 
     position: relative;
-}
-.image-overlay:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    background: var(--image-overlay-color);
-    opacity: var(--image-overlay-opacity);
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background: var(--image-overlay-color);
+        opacity: var(--image-overlay-opacity);
+    }
 }
 
-// =Overlays
+// Overlays
 $overlays: map-get($colors, overlay);
 @each $name, $value in $overlays {
     .image-overlay-#{$name} {
@@ -39,6 +42,16 @@ $overlays: map-get($colors, overlay);
         }
     }
 }
+
+// Size
+$images: scale(image);
+@each $key, $value in $images {
+    .image-#{$key} {
+        width: $value;
+        height: $value;
+    }
+}
+
 // Dark theme
 @include dark-theme {
     $overlays: map-get($colors-dark, overlay);
@@ -52,14 +65,5 @@ $overlays: map-get($colors, overlay);
                 --image-overlay-color: #{$value};
             }
         }
-    }
-}
-
-// =Sizes
-$images: scale(image);
-@each $key, $value in $images {
-    .image-#{$key} {
-        width: $value;
-        height: $value;
     }
 }

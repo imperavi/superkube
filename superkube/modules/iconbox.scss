@@ -1,25 +1,32 @@
 // =Iconbox
 .iconbox {
-    --icon-box-size: 1em;
+    // params
+    --iconbox-spacing: 0;
 
-    width: var(--icon-box-size);
-    height: var(--icon-box-size);
-
+    // props
     display: inline-flex;
     align-items: center;
     justify-content: center;
     vertical-align: middle;
     text-align: center;
+    line-height: 0;
+    padding: var(--iconbox-spacing);
 }
-@each $key, $size in $icons {
-    .iconbox-#{$key} {
-        --icon-box-size: #{$size};
+.iconbox-circle {
+    --iconbox-border-radius: 99px;
+}
+
+// Size
+$iconbox-scale: scale(iconbox);
+@each $key, $size in $iconbox-scale {
+    @if $key == base {
+        .iconbox {
+            --iconbox-spacing: #{$size};
+        }
     }
-}
-@include for-sm {
-    @each $key, $size in $icons {
-        .iconbox-#{$key}-sm {
-            --icon-box-size: #{$size};
+    @else {
+        .iconbox-#{$key} {
+            --iconbox-spacing: #{$size};
         }
     }
 }

@@ -1,0 +1,37 @@
+// =Popover
+.popover {
+    // colors
+    --popover-background-color: var(--palette-white);
+    --popover-box-shadow: var(--shadow-300);
+
+    // vars
+    --popover-font-size: 16px;
+    --popover-line-height: var(--type-line);
+    --popover-border-radius: var(--radius-base);
+    --popover-level: var(--level-over-page);
+    --popover-width: 240px;
+
+    // props
+    position: absolute;
+    margin: 0;
+    overflow: auto;
+    border-radius: var(--popover-border-radius);
+    z-index: var(--popover-level);
+    min-width: var(--popover-width);
+    box-shadow: var(--popover-box-shadow);
+    font-size: var(--popover-font-size);
+    line-height: var(--popover-line-height);
+    background-color: var(--popover-background-color);
+}
+.popover-dark {
+    --popover-background-color: var(--palette-black);
+    --popover-box-shadow: 0 8px 20px var(--palette-black-50), 0 1px 2px var(--palette-black-15);
+}
+// Dark theme
+@include dark-theme {
+    .popover,
+    .popover-dark {
+        --popover-background-color: var(--palette-surface-100);
+        --popover-box-shadow: none;
+    }
+}

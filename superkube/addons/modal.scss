@@ -1,0 +1,73 @@
+// =Modal
+.modal {
+    // colors
+    --modal-body-background-color: var(--palette-white);
+    --modal-box-shadow: var(--shadow-350);
+
+    // vars
+    --modal-level: var(--level-over-content);
+    --modal-border-radius: var(--radius-base);
+    --modal-close-size: 20px;
+
+    // props
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 50%;
+    margin-left: -50%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: var(--modal-level);
+
+   .close {
+        --close-size: var(--modal-close-size);
+        position: absolute;
+        right: 24px;
+        top: 20px;
+    }
+    .modal-box {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        background-color: var(--modal-body-background-color);
+        box-shadow: var(--modal-box-shadow);
+        border-radius: var(--modal-border-radius);
+    }
+    .modal-body {
+        padding: 20px 24px;
+    }
+    .modal-head {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 20px 24px 0 24px;
+    }
+    .modal-head:empty {
+        display: none;
+    }
+    .modal-foot {
+        margin-top: 8px;
+        padding: 0 24px 20px 24px;
+    }
+    .modal-foot:empty {
+        display: none;
+    }
+}
+.modal-overlay {
+    position: fixed;
+    z-index: level(content);
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--palette-black-20);
+}
+// Dark theme
+@include dark-theme {
+    .modal {
+        --modal-body-background-color: var(--palette-surface-100);
+        --modal-box-shadow: none;
+    }
+
+}

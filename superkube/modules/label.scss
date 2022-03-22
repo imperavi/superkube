@@ -1,16 +1,20 @@
 // =Label
 .label {
-    @include generate-type(label);
-    @include generate-colors(label);
+    // colors
+    --label-background-color: var(--palette-neutral-lighter);
+    --label-border-color: transparent;
+    --label-color: var(--palette-neutral-darker);
 
-    // vars
+    // params
+    --label-font-size: 12px;
     --label-font-weight: var(--font-weight-semibold);
-    --label-border-radius: var(--radius-small);
-    --label-padding: 4px 9px;
+    --label-border-radius: var(--radius-medium);
+    --label-padding: 6px 10px;
     --label-border-width: 1px;
     --label-border-style: solid;
     --label-text-transform: none;
     --label-close-size: 10px;
+    --label-close-spacing: 3px;
 
     // props
     font-weight: var(--label-font-weight);
@@ -27,7 +31,7 @@
     display: inline-flex;
     align-items: center;
     white-space: nowrap;
-    vertical-align: middle;
+    vertical-align: baseline;
     text-decoration: none;
     line-height: 1;
 
@@ -40,11 +44,11 @@
         text-decoration: underline;
     }
     .close {
-        font-size: var(--label-close-size);
-        margin-top: -1px;
-        margin-bottom: -1px;
-        margin-right: -3px;
-        margin-left: 2px;
+        --close-size: var(--label-close-size);
+
+        // props
+        margin-left: var(--label-close-spacing);
+        margin-right: -2px;
     }
 }
 a.label:hover {
@@ -52,9 +56,33 @@ a.label:hover {
     text-decoration: underline;
     color: var(--label-color);
 }
+.label-dark {
+    --label-background-color: var(--palette-black);
+    --label-border-color: transparent;
+    --label-color: var(--palette-negative-lightest);
+}
+.label-light {
+    --label-background-color: var(--palette-white);
+    --label-border-color: transparent;
+    --label-color: var(--palette-black);
+}
+
+
 // Dark theme
 @include dark-theme {
     .label {
-        @include generate-dark-theme-colors(label);
+        --label-background-color: var(--palette-neutral-lighter);
+        --label-border-color: transparent;
+        --label-color: var(--palette-neutral-darker);
+    }
+    .label-dark {
+        --label-background-color: var(--palette-white-30);
+        --label-border-color: transparent;
+        --label-color: var(--palette-white);
+    }
+    .label-light {
+        --label-background-color: var(--palette-white-20);
+        --label-border-color: transparent;
+        --label-color: var(--palette-white);
     }
 }

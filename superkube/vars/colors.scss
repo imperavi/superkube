@@ -1,27 +1,5 @@
 // =Colors
 $colors: map-extend($colors, (
-    alert: (
-        default: (
-            background-color: var(--palette-neutral-lighter),
-            border-color: transparent,
-            color: var(--palette-neutral-darker),
-        ),
-        info: (
-            background-color: var(--palette-active-lightest),
-            border-color: transparent,
-            color: var(--palette-active-darker)
-        ),
-        success: (
-            background-color: var(--palette-positive-lightest),
-            border-color: transparent,
-            color: var(--palette-positive-darker)
-        ),
-        error: (
-            background-color: var(--palette-negative-lightest),
-            border-color: transparent,
-            color: var(--palette-negative-darker)
-        )
-    ),
     background: (
         light: var(--palette-white),
         dark: var(--palette-black),
@@ -29,38 +7,6 @@ $colors: map-extend($colors, (
         aluminum: var(--palette-neutral-lightest),
         silver: var(--palette-neutral-lighter),
         platinum: var(--palette-neutral-light)
-    ),
-    badge: (
-        default: (
-            background-color: var(--palette-neutral-lighter),
-            border-color: transparent,
-            color: var(--palette-neutral-darker)
-        ),
-        primary: (
-            background-color: var(--palette-primary-lightest),
-            border-color: transparent,
-            color: var(--palette-primary-dark)
-        ),
-        positive: (
-            background-color: var(--palette-positive-lightest),
-            border-color: transparent,
-            color: var(--palette-positive-dark)
-        ),
-        important: (
-            background-color: var(--palette-negative-lightest),
-            border-color: transparent,
-            color: var(--palette-negative-dark)
-        ),
-        dark: (
-            background-color: var(--palette-black),
-            border-color: transparent,
-            color: var(--palette-white)
-        ),
-        light: (
-            background-color: var(--palette-white),
-            border-color: transparent,
-            color: var(--palette-black)
-        )
     ),
     body: (
         default: var(--palette-white)
@@ -74,138 +20,25 @@ $colors: map-extend($colors, (
         light-medium: var(--palette-white-50),
         primary: var(--palette-primary-base)
     ),
-    brand: (
-        default: (
-            color: var(--palette-black),
-            hover-color: var(--palette-black)
-        )
-    ),
-    breadcrumb: (
-        default: (
-            link-color: var(--palette-black),
-            link-hover-color: var(--palette-black-60),
-            link-active-color: var(--palette-black-40),
-            separator-color: var(--palette-black-25)
-        )
-    ),
-    button: (
-        default: (
-            background-color: transparent,
-            border-color: var(--palette-black-20),
-            color: var(--palette-neutral-darker),
-            hover-background-color: var(--palette-black-5),
-            hover-border-color: var(--palette-black-20),
-            hover-color: var(--palette-black),
-            disabled-background-color: transparent,
-            disabled-border-color: var(--palette-black-20),
-            disabled-color: var(--palette-black-80)
-        ),
-        primary: (
-            background-color: var(--palette-primary-base),
-            border-color: transparent,
-            color: var(--palette-primary-lightest),
-            hover-background-color: var(--palette-primary-dark),
-            hover-border-color: transparent,
-            hover-color: var(--palette-primary-lightest),
-            disabled-background-color: var(--palette-black-70),
-            disabled-border-color: transparent,
-            disabled-color: var(--palette-white-70)
-        ),
-        light: (
-            background-color: var(--palette-white-95),
-            border-color: transparent,
-            color: var(--palette-black),
-            hover-background-color: var(--palette-white-80),
-            hover-border-color: transparent,
-            hover-color: var(--palette-black),
-            disabled-background-color: var(--palette-white-95),
-            disabled-border-color: transparent,
-            disabled-color: var(--palette-black-80)
-        ),
-        light-outline: (
-            background-color: transparent,
-            border-color: var(--palette-white-60),
-            color: var(--palette-white-90),
-            hover-background-color: var(--palette-white-7),
-            hover-border-color: var(--palette-white-80),
-            hover-color: var(--palette-white),
-            disabled-background-color: var(--palette-white-95),
-            disabled-border-color: transparent,
-            disabled-color: var(--palette-black-80)
-        ),
-        dark: (
-            background-color: var(--palette-black),
-            border-color: transparent,
-            color: var(--palette-neutral-lightest),
-            hover-background-color: var(--palette-neutral-darker),
-            hover-border-color: transparent,
-            hover-color: var(--palette-neutral-lightest),
-            disabled-background-color: var(--palette-black-70),
-            disabled-border-color: transparent,
-            disabled-color: var(--palette-white-70)
-        )
-    ),
-    caption: (
-        default: (
-            color: var(--palette-neutral-darker),
-            background-color: transparent
-        )
-    ),
-    code: (
-        default: (
-            background-color: var(--palette-neutral-lightest),
-            color: var(--palette-neutral-darker),
-            border-color: transparent
-        ),
-        light: (
-            background-color: var(--palette-white),
-            color: var(--palette-neutral-darker),
-            border-color: transparent
-        ),
-        dark: (
-            background-color: var(--palette-black),
-            color: var(--palette-white-90),
-            border-color: transparent
-        )
-    ),
-    checkbox-radio: (
-        default: (
-            color: inherit
-        )
-    ),
     divider: (
-        default: var(--palette-black),
+        dark: var(--palette-black),
         primary: var(--palette-primary-base),
         muted: var(--palette-black-15),
         light: var(--palette-white),
         light-muted: var(--palette-white-30)
     ),
-    form-label: (
-        default: (
-            color: var(--palette-neutral-darker)
-        )
-    ),
     gradient: (),
     heading: (
         default: var(--palette-black),
-        moderated: var(--palette-black-70),
+        dark-medium: var(--palette-black-70),
         muted: var(--palette-black-50),
         light: var(--palette-white-95),
-        light-moderated: var(--palette-white-70),
-        primary: var(--palette-primary-base)
-    ),
-    hint: (
-        default: (
-            color: var(--palette-black-50)
-        ),
-        success: (
-            color: var(--palette-positive-dark)
-        ),
-        error: (
-            color: var(--palette-negative-dark)
-        ),
-        req: (
-            color: var(--palette-negative-base)
+        light-medium: var(--palette-white-70),
+        primary: var(--palette-primary-base),
+        gradient-primary: linear-gradient(
+            90deg,
+            var(--palette-negative-mid),
+            var(--palette-negative-dark)
         )
     ),
     icon: (
@@ -233,80 +66,6 @@ $colors: map-extend($colors, (
             color: var(--palette-black-70)
         )
     ),
-    input: (
-        default: (
-            color: var(--palette-neutral-darker),
-            border-color: var(--palette-black-20),
-            background-color: var(--palette-white),
-            box-shadow: none,
-            focus-color: var(--palette-neutral-darker),
-            focus-border-color: transparent,
-            focus-outline-color: var(--palette-active-mid),
-            focus-background-color: var(--palette-white),
-            focus-box-shadow: none
-        ),
-        error: (
-            outline-color: var(--palette-negative-base),
-            color: var(--palette-negative-base),
-            border-color: var(--palette-negative-base),
-            background-color: var(--palette-white),
-            box-shadow: none,
-            focus-color: var(--palette-negative-base),
-            focus-outline-color: var(--palette-negative-base),
-            focus-border-color: transparent,
-            focus-background-color: var(--palette-white),
-            focus-box-shadow: none
-        ),
-        light: (
-            color: var(--palette-white-90),
-            border-color: var(--palette-white-40),
-            background-color: var(--palette-white-15),
-            box-shadow: none,
-            focus-color: var(--palette-white-90),
-            focus-outline-color: var(--palette-white-60),
-            focus-border-color: transparent,
-            focus-background-color: var(--palette-white-20)
-        )
-    ),
-    input-addon: (
-        default: (
-            color: var(--palette-black-60),
-            background-color: var(--palette-black-5),
-            border-color: transparent
-        )
-    ),
-    label: (
-        default: (
-            background-color: var(--palette-neutral-lighter),
-            border-color: transparent,
-            color: var(--palette-neutral-darker)
-        ),
-        primary: (
-            background-color: var(--palette-primary-lightest),
-            border-color: transparent,
-            color: var(--palette-primary-dark)
-        ),
-        positive: (
-            background-color: var(--palette-positive-lightest),
-            border-color: transparent,
-            color: var(--palette-positive-dark)
-        ),
-        important: (
-            background-color: var(--palette-negative-lightest),
-            border-color: transparent,
-            color: var(--palette-negative-dark)
-        ),
-        dark: (
-            background-color: var(--palette-black),
-            border-color: transparent,
-            color: var(--palette-negative-lightest)
-        ),
-        light: (
-            background-color: var(--palette-white),
-            border-color: transparent,
-            color: var(--palette-black)
-        )
-    ),
     line: (
         default: var(--palette-black-10)
     ),
@@ -319,195 +78,25 @@ $colors: map-extend($colors, (
             color: var(--palette-black),
             hover-color: var(--palette-black-60)
         ),
-        muted: (
-            color: var(--palette-black-50),
+        dark-medium: (
+            color: var(--palette-black-70),
             hover-color: var(--palette-black)
         ),
-        moderated: (
-            color: var(--palette-black-70),
+        muted: (
+            color: var(--palette-black-50),
             hover-color: var(--palette-black)
         ),
         light: (
             color: var(--palette-white-95),
             hover-color: var(--palette-white-60)
         ),
-        light-moderated: (
+        light-medium: (
             color: var(--palette-white-70),
             hover-color: var(--palette-white)
         ),
         primary: (
-            color: var(--palette-primary-dark),
+            color: var(--palette-primary-base),
             hover-color: var(--palette-black)
-        )
-    ),
-    list: (
-        default: (
-            item-color: var(--text-default)
-        ),
-        stacked: (
-            item-border-color: var(--palette-black-7)
-        ),
-        bordered: (
-            border-color: var(--palette-black-7)
-        ),
-        numbered: (
-            number-color: var(--palette-black-60)
-        ),
-        checkmark: (
-            mark-color: var(--palette-neutral-darker)
-        ),
-        dashed: (
-            mark-color: var(--palette-neutral-darker)
-        ),
-        light: (
-            item-color: var(--palette-white-90),
-            item-border-color: var(--palette-white-20)
-        ),
-        light_stacked: (
-            border-color: var(--palette-white-20)
-        ),
-        light_bordered: (
-            border-color: var(--palette-white-20)
-        ),
-        light_numbered: (
-            number-color: var(--palette-white-60)
-        ),
-        light_checkmark: (
-            color: var(--palette-white-90),
-            mark-color: var(--palette-white-80)
-        ),
-        light_dashed: (
-            color: var(--palette-white-90),
-            mark-color: var(--palette-white-80)
-        )
-    ),
-    menu: (
-        default: (
-            link-color: var(--palette-black),
-            link-background-color: transparent,
-            link-hover-color: var(--palette-black-60),
-            link-hover-background-color: transparent,
-            link-active-color: var(--palette-black-40),
-            link-active-background-color: transparent
-        ),
-        stacked: (
-            item-border-color: var(--palette-black-7)
-        ),
-        pills: (
-            link-color: var(--palette-black),
-            link-hover-background-color: var(--palette-black-10),
-            link-active-color: var(--palette-neutral-lightest),
-            link-active-background-color: var(--palette-black)
-        ),
-        numbered: (
-            number-color: var(--palette-black-60)
-        ),
-        primary: (
-            link-color: var(--palette-primary-dark),
-            link-hover-color: var(--palette-primary-darker),
-            link-active-color: var(--palette-black-40)
-        ),
-        light: (
-            link-color: var(--palette-white-80),
-            link-hover-color: var(--palette-white),
-            link-active-color: var(--palette-white-50),
-            item-border-color: var(--palette-white-20),
-            number-color: var(--palette-white-60)
-        ),
-        muted: (
-            link-color: var(--palette-black-60),
-            link-hover-color: var(--palette-black),
-            link-active-color: var(--palette-black)
-        )
-    ),
-    nav: (
-        default: (
-            link-color: var(--palette-black),
-            link-background-color: transparent,
-            link-hover-color: var(--palette-black-60),
-            link-hover-background-color: transparent,
-            link-active-color: var(--palette-black-40),
-            link-active-background-color: transparent
-        ),
-        primary: (
-            link-color: var(--palette-primary-dark),
-            link-hover-color: var(--palette-primary-darker),
-            link-active-color: var(--palette-black-40)
-        ),
-        light: (
-            link-color: var(--palette-white-80),
-            link-hover-color: var(--palette-white),
-            link-active-color: var(--palette-white-50)
-        ),
-        muted: (
-            link-color: var(--palette-black-60),
-            link-hover-color: var(--palette-black),
-            link-active-color: var(--palette-black)
-        ),
-        pills: (
-            link-color: var(--palette-black),
-            link-hover-background-color: var(--palette-black-10),
-            link-active-color: var(--palette-neutral-lightest),
-            link-active-background-color: var(--palette-black)
-        ),
-        points: (
-            border-color: var(--palette-black-10),
-            link-color: var(--palette-black-50),
-            link-border-color: transparent,
-            link-background-color: transparent,
-            link-hover-color: var(--palette-black),
-            link-hover-border-color: var(--palette-black),
-            link-hover-background-color: var(--palette-neutral-lightest),
-            link-active-color: var(--palette-black),
-            link-active-border-color: var(--palette-black),
-            link-active-background-color: transparent
-        ),
-        tabs: (
-            link-color: var(--palette-black-50),
-            link-background-color: var(--palette-black-5),
-            link-hover-color: var(--palette-black),
-            link-hover-background-color: var(--palette-white),
-            link-active-color: var(--palette-black),
-            link-active-background-color: var(--palette-white)
-        ),
-        switcher: (
-            border-color: var(--palette-black-10),
-            link-color: var(--palette-black-50),
-            link-border-color: transparent,
-            link-background-color: transparent,
-            link-hover-color: var(--palette-black),
-            link-hover-border-color: var(--palette-black),
-            link-hover-background-color: transparent,
-            link-active-color: var(--palette-black),
-            link-active-border-color: var(--palette-black),
-            link-active-background-color: transparent
-        ),
-        light_pills: (
-            link-color: var(--palette-white-70),
-            link-hover-background-color: var(--palette-white-30),
-            link-active-color: var(--palette-black),
-            link-active-background-color: var(--palette-white-95)
-        ),
-        light_points: (
-            border-color: var(--palette-white-20),
-            link-color: var(--palette-white-60),
-            link-hover-color: var(--palette-white),
-            link-hover-border-color: var(--palette-white),
-            link-hover-background-color: var(--palette-white-30),
-            link-active-color: var(--palette-white),
-            link-active-border-color: var(--palette-white)
-        ),
-        light_tabs: (
-            link-color: var(--palette-white-70),
-            link-background-color: var(--palette-white-20)
-        ),
-        light_switcher: (
-            border-color: var(--palette-white-30),
-            link-color: var(--palette-white-60),
-            link-hover-color: var(--palette-white),
-            link-hover-border-color: var(--palette-white),
-            link-active-color: var(--palette-white),
-            link-active-border-color: var(--palette-white)
         )
     ),
     overlay: (
@@ -517,18 +106,6 @@ $colors: map-extend($colors, (
     placeholder: (
         default: var(--palette-black-30),
         light: var(--palette-white-40)
-    ),
-    quote: (
-        default: (
-            color: var(--palette-neutral-darker),
-            background-color: transparent
-        )
-    ),
-    quote-caption: (
-        default: (
-            color: var(--palette-neutral-darker),
-            background-color: transparent
-        )
     ),
     shadow: (
         100: (
@@ -556,26 +133,16 @@ $colors: map-extend($colors, (
             2: 0 30px 60px -30px var(--palette-black-30)
         )
     ),
-    table: (
-        default: (
-            border-color: var(--palette-black-7),
-            head-border-color: var(--palette-black-7)
-        ),
-        striped: (
-            background-color: var(--palette-neutral-lightest)
-        )
-    ),
     text: (
         dark: var(--palette-black),
         default: var(--palette-neutral-darker),
-        moderated: var(--palette-black-70),
+        dark-medium: var(--palette-black-70),
         muted: var(--palette-black-50),
         success: var(--palette-positive-dark),
         error: var(--palette-negative-dark),
         light: var(--palette-white-90),
-        light-moderated: var(--palette-white-70),
+        light-medium: var(--palette-white-70),
         light-muted: var(--palette-white-50),
         primary: var(--palette-primary-base)
-    ),
-    text-gradient: ()
+    )
 ));

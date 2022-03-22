@@ -1,12 +1,13 @@
 // =Hint
 .hint {
-    // generate
-    @include generate-type(hint);
-    @include generate-colors(hint);
+    // colors
+    --hint-color: var(--palette-black-50);
 
-    // vars
+    // params
+    --hint-font-size: 13px;
     --hint-font-weight: normal;
     --hint-font-style: normal;
+    --hint-line-height: var(--type-line);
 
     // props
     font-size: var(--hint-font-size);
@@ -23,7 +24,16 @@ label .hint {
 div.hint {
     margin-top: 2px;
 }
+
+// Variants
+.hint-success {
+    --hint-color: var(--palette-positive-dark);
+}
+.hint-error {
+    --hint-color: var(--palette-negative-dark);
+}
 .hint-req {
+    --hint-color: var(--palette-negative-base);
     --hint-font-weight: bold;
 
     // props
@@ -32,6 +42,15 @@ div.hint {
 // Dark theme
 @include dark-theme {
     .hint {
-        @include generate-dark-theme-colors(hint);
+        --hint-color: var(--palette-white-50);
+    }
+    .hint-success {
+        --hint-color: var(--palette-positive-mid);
+    }
+    .hint-error {
+        --hint-color: var(--palette-negative-mid);
+    }
+    .hint-req {
+        --hint-color: var(--palette-negative-mid);
     }
 }

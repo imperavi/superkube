@@ -16,11 +16,19 @@
     position: relative;
 }
 .list-checkmark {
+    // params
+    --list-mark-color: var(--palette-neutral-darker);
     --list-mark: "\2713";
+
+    // props
     padding-left: 1.3em;
 }
 .list-dashed {
+    // params
+    --list-mark-color: var(--palette-neutral-darker);
     --list-mark: "\2014";
+
+    // props
     padding-left: 1.35em;
 }
 .list-checkmark li:before,
@@ -30,12 +38,21 @@
     content: var(--list-mark);
     color: var(--list-mark-color);
 }
-.list {
-    // generate
-    @include generate-type(list);
-    @include generate-colors(list);
+.list-checkmark.list-light {
+    --list-color: var(--palette-white-90);
+    --list-mark-color: var(--palette-white-80);
+}
+.list-dashed.list-light {
+    --list-color: var(--palette-white-90);
+    --list-mark-color: var(--palette-white-80);
+}
 
-    // vars
+.list {
+    // colors
+    --list-item-color: var(--text-default);
+
+    // params
+    --list-font-size: 15px;
     --list-line-height: 1.3;
     --list-item-space: 0;
     --list-item-padding-y: 6px;
@@ -76,8 +93,23 @@
         margin-top: -2px;
     }
 }
-// =Stacked
+// Variants
+.list-medium {
+    --list-font-size: 14px;
+}
+.list-small {
+    --list-font-size: 13px;
+}
+.list-light {
+    --list-item-color: var(--palette-white-90);
+}
+
+// Stacked
 .list-stacked {
+    // colors
+    --list-item-border-color: var(--palette-black-7);
+
+    // params
     --list-item-padding-y: 8px;
     --list-item-border-width: 1px;
     --list-item-border-style: solid;
@@ -91,10 +123,16 @@
         border-bottom-color: transparent;
     }
 }
+.list-stacked.list-light {
+    --list-border-color: var(--palette-white-20);
+}
 
-// =Bordered
+// Bordered
 .list-bordered {
-    // vars
+    // colors
+    --list-border-color: var(--palette-black-7);
+
+    // params
     --list-border-width: 1px;
     --list-border-style: solid;
     --list-border-radius: var(--radius-base);
@@ -112,9 +150,16 @@
         margin-bottom: 0;
     }
 }
+.list-bordered.list-light {
+    --list-border-color: var(--palette-white-20);
+}
 
-// =Numbered
+// Numbered
 .list-numbered {
+    // colors
+    --list-number-color: var(--palette-black-60);
+
+    // params
     --list-number-font-size: 80%;
     --list-number-width: 22px;
 
@@ -132,6 +177,9 @@
         content: counter(table-of-contents, decimal-leading-zero);
         color: var(--list-number-color);
     }
+}
+.list-numbered.list-light {
+    --list-number-color: var(--palette-white-60);
 }
 .list-numbered-right {
     .list-item {
@@ -154,6 +202,29 @@
 // Dark theme
 @include dark-theme {
     .list {
-        @include generate-dark-theme-colors(list);
+        --list-item-color: var(--text-default);
+    }
+    .list-light {
+        --list-item-color: var(--palette-white-90);
+    }
+    .list-stacked,
+    .list-stacked.list-light {
+        --list-item-border-color: var(--palette-white-15);
+    }
+    .list-bordered,
+    .list-bordered.list-light {
+        --list-border-color: var(--palette-white-15);
+    }
+    .list-numbered,
+    .list-numbered.list-light {
+        --list-number-color: var(--palette-white-50);
+    }
+    .list-checkmark,
+    .list-checkmark.list-light {
+        --list-mark-color: var(--palette-white-80);
+    }
+    .list-dashed,
+    .list-dashed.list-light {
+        --list-mark-color: var(--palette-white-80);
     }
 }

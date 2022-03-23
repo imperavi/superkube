@@ -15,7 +15,6 @@
   --unit: 4px;
   --body-text-size: 16px;
   --body-text-line: 1.5;
-  --type-line: var(--body-text-line);
   --font-weight-semibold: 600;
   --font-weight-heavy: 900; }
 
@@ -507,7 +506,7 @@ figure > div {
   --alert-padding: 4rem 5rem;
   --alert-font-size: 14px;
   --alert-font-weight: normal;
-  --alert-line-height: var(--type-line);
+  --alert-line-height: var(--body-text-line);
   --alert-border-radius: var(--radius-base);
   --alert-border-width: 1px;
   --alert-border-style: solid;
@@ -797,7 +796,7 @@ a.brand:hover {
   --breadcrumb-link-active-color: var(--palette-black-40);
   --breadcrumb-separator-color: var(--palette-black-25);
   --breadcrumb-font-size: 14px;
-  --breadcrumb-line-height: var(--type-line);
+  --breadcrumb-line-height: var(--body-text-line);
   --breadcrumb-item-space: 2rem;
   --breadcrumb-separator: '\0002f';
   font-size: var(--breadcrumb-font-size);
@@ -1028,7 +1027,7 @@ a.brand:hover {
   --checkbox-radio-font-weight: normal;
   --checkbox-radio-font-style: normal;
   --checkbox-radio-text-transform: none;
-  --checkbox-radio-line-height: var(--type-line);
+  --checkbox-radio-line-height: var(--body-text-line);
   --checkbox-radio-letter-spacing: 0;
   --checkbox-radio-spacing: 1rem;
   font-size: var(--checkbox-radio-font-size);
@@ -1299,7 +1298,7 @@ figcaption {
   --figcaption-color: var(--text-default);
   --figcaption-background-color: transparent;
   --figcaption-font-size: 12px;
-  --figcaption-line-height: var(--type-line);
+  --figcaption-line-height: var(--body-text-line);
   --figcaption-font-style: normal;
   --figcaption-font-weight: normal;
   --figcaption-text-transform: none;
@@ -1432,7 +1431,7 @@ label {
   --form-label-color: var(--text-default);
   --form-background-color: transparent;
   --form-label-font-size: 15px;
-  --form-label-line-height: var(--type-line);
+  --form-label-line-height: var(--body-text-line);
   --form-label-font-weight: normal;
   --form-label-font-style: normal;
   --form-label-text-transform: none;
@@ -2218,7 +2217,7 @@ label {
   --hint-font-size: 13px;
   --hint-font-weight: normal;
   --hint-font-style: normal;
-  --hint-line-height: var(--type-line);
+  --hint-line-height: var(--body-text-line);
   font-size: var(--hint-font-size);
   font-weight: var(--hint-font-weight);
   font-style: var(--hint-font-style);
@@ -2321,7 +2320,7 @@ a.icon-primary {
     --icon-size: 64px; } }
 
 .iconbox {
-  --iconbox-spacing: 0;
+  --iconbox-spacing: scale(iconbox, base);
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2338,9 +2337,6 @@ a.icon-primary {
 
 .iconbox-medium {
   --iconbox-spacing: 6px; }
-
-.iconbox {
-  --iconbox-spacing: 8px; }
 
 .iconbox-large {
   --iconbox-spacing: 10px; }
@@ -2483,7 +2479,7 @@ sup {
   --input-focus-background-color: var(--palette-white);
   --input-focus-box-shadow: none;
   --input-font-size: 15px;
-  --input-line-height: var(--type-line);
+  --input-line-height: var(--body-text-line);
   --input-border-radius: var(--radius-base);
   --input-padding: 0.3em 0.5em;
   --input-border-width: 1px;
@@ -3916,7 +3912,7 @@ blockquote,
   --quote-font-size: 18px;
   --quote-font-style: italic;
   --quote-font-weight: normal;
-  --quote-line-height: var(--type-line);
+  --quote-line-height: var(--body-text-line);
   --quote-padding-x: 0;
   --quote-padding-y: 0;
   --quote-spacing: 0.25em;
@@ -3945,7 +3941,7 @@ blockquote .quote-caption,
   --quote-caption-font-size: 14px;
   --quote-caption-font-style: italic;
   --quote-caption-font-weight: normal;
-  --quote-caption-line-height: var(--type-line);
+  --quote-caption-line-height: var(--body-text-line);
   font-style: var(--quote-caption-font-style);
   font-weight: var(--quote-caption-font-weight);
   font-size: var(--quote-caption-font-size);
@@ -6181,7 +6177,7 @@ table,
   --table-border-color: var(--palette-black-7);
   --table-head-border-color: var(--palette-black-7);
   --table-font-size: 15px;
-  --table-line-height: var(--type-line);
+  --table-line-height: var(--body-text-line);
   --table-border-style: solid;
   --table-border-width: 1px;
   --table-head-border-style: solid;

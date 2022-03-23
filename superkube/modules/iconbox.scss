@@ -1,7 +1,7 @@
 // =Iconbox
 .iconbox {
     // params
-    --iconbox-spacing: 0;
+    --iconbox-spacing: scale(iconbox, base);
 
     // props
     display: inline-flex;
@@ -19,12 +19,7 @@
 // Size
 $iconbox-scale: scale(iconbox);
 @each $key, $size in $iconbox-scale {
-    @if $key == base {
-        .iconbox {
-            --iconbox-spacing: #{$size};
-        }
-    }
-    @else {
+    @if $key != base {
         .iconbox-#{$key} {
             --iconbox-spacing: #{$size};
         }

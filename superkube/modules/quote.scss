@@ -9,7 +9,7 @@ blockquote,
     --quote-font-size: 18px;
     --quote-font-style: italic;
     --quote-font-weight: normal;
-    --quote-line-height: var(--type-line);
+    --quote-line-height: var(--body-text-line);
     --quote-padding-x: 0;
     --quote-padding-y: 0;
     --quote-spacing: 0.25em;
@@ -45,7 +45,7 @@ blockquote,
         --quote-caption-font-size: 14px;
         --quote-caption-font-style: italic;
         --quote-caption-font-weight: normal;
-        --quote-caption-line-height: var(--type-line);
+        --quote-caption-line-height: var(--body-text-line);
 
         // props
         font-style: var(--quote-caption-font-style);

@@ -3156,6 +3156,10 @@ hr {
 .link-ghost:hover {
   text-decoration: underline; }
 
+.link-caret {
+  display: flex;
+  align-items: center; }
+
 [class^="link-"],
 [class*=" link-"] {
   --link-color: var(--link-default-color);

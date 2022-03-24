@@ -26,6 +26,10 @@
 .link-ghost:hover {
     text-decoration: underline;
 }
+.link-caret {
+    display: flex;
+    align-items: center;
+}
 
 $link-size: scale(type, text);
 [class^="link-"],

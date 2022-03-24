@@ -963,23 +963,8 @@ a.brand:hover {
   color: var(--brand-hover-color);
   text-decoration: underline; }
 
-.brand-primary {
-  --brand-color: var(--palette-primary-base);
-  --brand-hover-color: var(--palette-primary-base); }
-
-.brand-light {
-  --brand-color: var(--palette-white-90);
-  --brand-hover-color: var(--palette-white-90); }
-
-.brand-light-medium {
-  --brand-color: var(--palette-white-70);
-  --brand-hover-color: var(--palette-white-70); }
-
 @media (prefers-color-scheme: dark) {
   .brand {
-    --brand-color: var(--palette-white-90);
-    --brand-hover-color: var(--palette-white-90); }
-  .brand-primary {
     --brand-color: var(--palette-white-90);
     --brand-hover-color: var(--palette-white-90); } }
 

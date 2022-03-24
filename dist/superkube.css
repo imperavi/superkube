@@ -778,18 +778,6 @@ a.brand:hover {
   color: var(--brand-hover-color);
   text-decoration: underline; }
 
-.brand-primary {
-  --brand-color: var(--palette-primary-base);
-  --brand-hover-color: var(--palette-primary-base); }
-
-.brand-light {
-  --brand-color: var(--palette-white-90);
-  --brand-hover-color: var(--palette-white-90); }
-
-.brand-light-medium {
-  --brand-color: var(--palette-white-70);
-  --brand-hover-color: var(--palette-white-70); }
-
 .breadcrumb {
   --breadcrumb-link-color: var(--palette-black);
   --breadcrumb-link-hover-color: var(--palette-black-60);

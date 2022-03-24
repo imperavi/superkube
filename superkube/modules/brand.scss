@@ -32,27 +32,10 @@ a.brand:hover {
     color: var(--brand-hover-color);
     text-decoration: underline;
 }
-// Variants
-.brand-primary {
-    --brand-color: var(--palette-primary-base);
-    --brand-hover-color: var(--palette-primary-base);
-}
-.brand-light {
-    --brand-color: var(--palette-white-90);
-    --brand-hover-color: var(--palette-white-90);
-}
-.brand-light-medium {
-    --brand-color: var(--palette-white-70);
-    --brand-hover-color: var(--palette-white-70);
-}
 
 // Dark theme
 @include dark-theme {
     .brand {
-        --brand-color: var(--palette-white-90);
-        --brand-hover-color: var(--palette-white-90);
-    }
-    .brand-primary {
         --brand-color: var(--palette-white-90);
         --brand-hover-color: var(--palette-white-90);
     }

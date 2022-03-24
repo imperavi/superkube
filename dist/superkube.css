@@ -3903,7 +3903,15 @@ hr {
   .push-right-sm {
     margin-left: auto; }
   .push-left-sm {
-    margin-right: auto; } }
+    margin-right: auto; }
+  .push-bottom-off-sm {
+    margin-top: initial; }
+  .push-top-off-sm {
+    margin-bottom: initial; }
+  .push-right-off-sm {
+    margin-left: initial; }
+  .push-left-off-sm {
+    margin-right: initial; } }
 
 blockquote,
 .quote {

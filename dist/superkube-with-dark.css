@@ -4873,7 +4873,7 @@ blockquote .quote-caption,
 .h-100 {
   height: 100%; }
 
-.w-off {
+.max-off {
   max-width: none;
   min-width: none;
   width: auto; }

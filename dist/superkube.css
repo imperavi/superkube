@@ -1166,6 +1166,9 @@ pre,
   [class*=" container-"] {
     max-width: none; } }
 
+.container-crop {
+  overflow: hidden; }
+
 .hidden {
   display: none !important; }
 

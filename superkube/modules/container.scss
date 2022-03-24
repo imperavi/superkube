@@ -20,3 +20,8 @@ $container-gutter: scale(grid, gutter);
         max-width: none;
     }
 }
+
+// Helpers
+.container-crop {
+    overflow: hidden;
+}

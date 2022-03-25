@@ -1,8 +1,8 @@
 {
   "name": "superkube",
-  "version": "2.6.1",
+  "version": "3.0.0",
   "homepage": "https://imperavi.com/superkube",
-  "description": "Frontend Framework",
+  "description": "HTML/SCSS Framework",
   "main": "superkube.scss",
   "author": "Imperavi <support@imperavi.com> (https://imperavi.com)",
   "repository": {

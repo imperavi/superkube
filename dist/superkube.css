@@ -1017,7 +1017,7 @@ a.brand:hover {
   --checkbox-radio-text-transform: none;
   --checkbox-radio-line-height: var(--body-text-line);
   --checkbox-radio-letter-spacing: 0;
-  --checkbox-radio-spacing: 1rem;
+  --checkbox-radio-space: 1rem;
   font-size: var(--checkbox-radio-font-size);
   font-weight: var(--checkbox-radio-font-weight);
   font-style: var(--checkbox-radio-font-style);
@@ -1034,18 +1034,18 @@ a.brand:hover {
   .checkbox + .radio,
   .radio + .checkbox,
   .radio + .radio {
-    margin-top: var(--checkbox-radio-spacing); }
+    margin-top: var(--checkbox-radio-space); }
 
 .checkbox-group,
 .radio-group {
-  --checkbox-radio-group-spacing: 1em; }
+  --checkbox-radio-group-space: 1em; }
   .checkbox-group .checkbox,
   .checkbox-group .radio,
   .radio-group .checkbox,
   .radio-group .radio {
     display: inline-block;
     margin-bottom: 0;
-    margin-right: var(--checkbox-radio-group-spacing); }
+    margin-right: var(--checkbox-radio-group-space); }
 
 .close {
   --close-color: currentColor;
@@ -1294,11 +1294,11 @@ figcaption {
   --figcaption-font-weight: normal;
   --figcaption-text-transform: none;
   --figcaption-letter-spacing: 0;
-  --figcaption-spacing: 0.4em;
+  --figcaption-space: 0.4em;
   --figcaption-padding: 0;
   --figcaption-border-radius: 0;
   display: block;
-  margin-top: var(--figcaption-spacing);
+  margin-top: var(--figcaption-space);
   font-style: var(--figcaption-font-style);
   font-size: var(--figcaption-font-size);
   font-weight: var(--figcaption-font-weight);
@@ -1427,7 +1427,7 @@ label {
   --form-label-font-style: normal;
   --form-label-text-transform: none;
   --form-label-letter-spacing: 0;
-  --form-label-spacing: 0.15em;
+  --form-label-space: 0.15em;
   --form-label-border-radius: 0;
   --form-label-padding: 0;
   display: block;
@@ -1437,7 +1437,7 @@ label {
   line-height: var(--form-label-line-height);
   text-transform: var(--form-label-text-transform);
   letter-spacing: var(--form-label-letter-spacing);
-  margin-bottom: var(--form-label-spacing);
+  margin-bottom: var(--form-label-space);
   border-radius: var(--form-label-border-radius);
   padding: var(--form-padding);
   color: var(--form-label-color);
@@ -2311,29 +2311,29 @@ a.icon-primary {
     --icon-size: 64px; } }
 
 .iconbox {
-  --iconbox-spacing: scale(iconbox, base);
+  --iconbox-space: scale(iconbox, base);
   display: inline-flex;
   align-items: center;
   justify-content: center;
   vertical-align: middle;
   text-align: center;
   line-height: 0;
-  padding: var(--iconbox-spacing); }
+  padding: var(--iconbox-space); }
 
 .iconbox-circle {
   --iconbox-border-radius: 99px; }
 
 .iconbox-small {
-  --iconbox-spacing: 4px; }
+  --iconbox-space: 4px; }
 
 .iconbox-medium {
-  --iconbox-spacing: 6px; }
+  --iconbox-space: 6px; }
 
 .iconbox-large {
-  --iconbox-spacing: 10px; }
+  --iconbox-space: 10px; }
 
 .iconbox-huge {
-  --iconbox-spacing: 12px; }
+  --iconbox-space: 12px; }
 
 .image-cover {
   display: flex;
@@ -2652,7 +2652,7 @@ input[type="checkbox"] {
   --label-border-style: solid;
   --label-text-transform: none;
   --label-close-size: 10px;
-  --label-close-spacing: 3px;
+  --label-close-space: 3px;
   font-weight: var(--label-font-weight);
   font-size: var(--label-font-size);
   border-radius: var(--label-border-radius);
@@ -2677,7 +2677,7 @@ input[type="checkbox"] {
     text-decoration: underline; }
   .label .close {
     --close-size: var(--label-close-size);
-    margin-left: var(--label-close-spacing);
+    margin-left: var(--label-close-space);
     margin-right: -2px; }
 
 a.label:hover {
@@ -2697,13 +2697,13 @@ a.label:hover {
 
 .line,
 hr {
+  --line-color: var(--line-default);
   --line-margin-top: 1.5em;
   --line-margin-bottom: 1.5em;
   --line-max-size: 10px;
   --line-size: 1px;
   --line-width: 100%;
   --line-style: solid;
-  --line-color: var(--line-default);
   position: relative;
   line-height: 1;
   background: none;
@@ -2765,9 +2765,14 @@ hr {
 .link-ghost:hover {
   text-decoration: underline; }
 
+.link-icon,
 .link-caret {
   display: flex;
   align-items: center; }
+
+.link-icon {
+  --link-icon-space: 4px;
+  gap: var(--link-icon-space); }
 
 [class^="link-"],
 [class*=" link-"] {
@@ -2789,30 +2794,30 @@ hr {
     color: var(--link-hover-color);
     background-color: var(--link-hover-background-color);
     border-color: var(--link-hover-border-color); }
-  [class^="link-"]-giga,
-  [class*=" link-"]-giga {
-    font-size: 32px; }
-  [class^="link-"]-mega,
-  [class*=" link-"]-mega {
-    font-size: 24px; }
-  [class^="link-"]-huge,
-  [class*=" link-"]-huge {
-    font-size: 20px; }
-  [class^="link-"]-large,
-  [class*=" link-"]-large {
-    font-size: 18px; }
-  [class^="link-"]-medium,
-  [class*=" link-"]-medium {
-    font-size: 14px; }
-  [class^="link-"]-small,
-  [class*=" link-"]-small {
-    font-size: 13px; }
-  [class^="link-"]-tiny,
-  [class*=" link-"]-tiny {
-    font-size: 12px; }
-  [class^="link-"]-atomic,
-  [class*=" link-"]-atomic {
-    font-size: 10px; }
+
+.link-giga {
+  font-size: 32px; }
+
+.link-mega {
+  font-size: 24px; }
+
+.link-huge {
+  font-size: 20px; }
+
+.link-large {
+  font-size: 18px; }
+
+.link-medium {
+  font-size: 14px; }
+
+.link-small {
+  font-size: 13px; }
+
+.link-tiny {
+  font-size: 12px; }
+
+.link-atomic {
+  font-size: 10px; }
 
 .link {
   --link-color: var(--palette-active-dark);
@@ -2859,12 +2864,12 @@ hr {
   position: relative; }
 
 .list-checkmark {
-  --list-mark-color: var(--palette-neutral-darker);
+  --list-mark-color: var(--text-default);
   --list-mark: "\2713";
   padding-left: 1.3em; }
 
 .list-dashed {
-  --list-mark-color: var(--palette-neutral-darker);
+  --list-mark-color: var(--text-default);
   --list-mark: "\2014";
   padding-left: 1.35em; }
 
@@ -3918,7 +3923,7 @@ blockquote,
   --quote-line-height: var(--body-text-line);
   --quote-padding-x: 0;
   --quote-padding-y: 0;
-  --quote-spacing: 0.25em;
+  --quote-space: 0.25em;
   --quote-border-radius: 0;
   padding-top: var(--quote-padding-y);
   padding-bottom: var(--quote-padding-y);
@@ -3935,7 +3940,7 @@ blockquote,
     color: var(--quote-color); }
   blockquote p + p,
   .quote p + p {
-    margin-top: var(--quote-spacing); }
+    margin-top: var(--quote-space); }
 
 blockquote .quote-caption,
 .quote .quote-caption {

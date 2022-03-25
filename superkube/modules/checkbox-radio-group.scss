@@ -3,12 +3,12 @@
 .radio-group {
 
     // params
-    --checkbox-radio-group-spacing: 1em;
+    --checkbox-radio-group-space: 1em;
 
     .checkbox,
     .radio {
         display: inline-block;
         margin-bottom: 0;
-        margin-right: var(--checkbox-radio-group-spacing);
+        margin-right: var(--checkbox-radio-group-space);
     }
 }

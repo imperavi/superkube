@@ -1,14 +1,16 @@
 // =Line
 .line,
 hr {
-    // vars
+    // colors
+    --line-color: var(--line-default);
+
+    // params
     --line-margin-top: 1.5em;
     --line-margin-bottom: 1.5em;
     --line-max-size: 10px;
     --line-size: 1px;
     --line-width: 100%;
     --line-style: solid;
-    --line-color: var(--line-default);
 
     // props
     position: relative;

@@ -17,7 +17,7 @@
 }
 .list-checkmark {
     // params
-    --list-mark-color: var(--palette-neutral-darker);
+    --list-mark-color: var(--text-default);
     --list-mark: "\2713";
 
     // props
@@ -25,7 +25,7 @@
 }
 .list-dashed {
     // params
-    --list-mark-color: var(--palette-neutral-darker);
+    --list-mark-color: var(--text-default);
     --list-mark: "\2014";
 
     // props

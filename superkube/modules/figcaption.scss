@@ -11,13 +11,13 @@ figcaption {
     --figcaption-font-weight: normal;
     --figcaption-text-transform: none;
     --figcaption-letter-spacing: 0;
-    --figcaption-spacing: 0.4em;
+    --figcaption-space: 0.4em;
     --figcaption-padding: 0;
     --figcaption-border-radius: 0;
 
     // props
     display: block;
-    margin-top: var(--figcaption-spacing);
+    margin-top: var(--figcaption-space);
     font-style: var(--figcaption-font-style);
     font-size: var(--figcaption-font-size);
     font-weight: var(--figcaption-font-weight);

@@ -11,7 +11,7 @@ label {
     --form-label-font-style: normal;
     --form-label-text-transform: none;
     --form-label-letter-spacing: 0;
-    --form-label-spacing: 0.15em;
+    --form-label-space: 0.15em;
     --form-label-border-radius: 0;
     --form-label-padding: 0;
 
@@ -23,7 +23,7 @@ label {
     line-height: var(--form-label-line-height);
     text-transform: var(--form-label-text-transform);
     letter-spacing: var(--form-label-letter-spacing);
-    margin-bottom: var(--form-label-spacing);
+    margin-bottom: var(--form-label-space);
     border-radius: var(--form-label-border-radius);
     padding: var(--form-padding);
     color: var(--form-label-color);

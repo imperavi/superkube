@@ -1,7 +1,7 @@
 // =Iconbox
 .iconbox {
     // params
-    --iconbox-spacing: scale(iconbox, base);
+    --iconbox-space: scale(iconbox, base);
 
     // props
     display: inline-flex;
@@ -10,7 +10,7 @@
     vertical-align: middle;
     text-align: center;
     line-height: 0;
-    padding: var(--iconbox-spacing);
+    padding: var(--iconbox-space);
 }
 .iconbox-circle {
     --iconbox-border-radius: 99px;
@@ -21,7 +21,7 @@ $iconbox-scale: scale(iconbox);
 @each $key, $size in $iconbox-scale {
     @if $key != base {
         .iconbox-#{$key} {
-            --iconbox-spacing: #{$size};
+            --iconbox-space: #{$size};
         }
     }
 }

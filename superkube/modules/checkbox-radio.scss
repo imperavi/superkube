@@ -11,7 +11,7 @@
     --checkbox-radio-text-transform: none;
     --checkbox-radio-line-height: var(--body-text-line);
     --checkbox-radio-letter-spacing: 0;
-    --checkbox-radio-spacing: 1rem;
+    --checkbox-radio-space: 1rem;
 
     // props
     font-size: var(--checkbox-radio-font-size);
@@ -29,6 +29,6 @@
     }
     & + .checkbox,
     & + .radio {
-        margin-top: var(--checkbox-radio-spacing);
+        margin-top: var(--checkbox-radio-space);
     }
 }

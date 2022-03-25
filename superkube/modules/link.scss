@@ -26,9 +26,17 @@
 .link-ghost:hover {
     text-decoration: underline;
 }
+.link-icon,
 .link-caret {
     display: flex;
     align-items: center;
+}
+.link-icon {
+    // params
+    --link-icon-space: 4px;
+
+    // props
+    gap: var(--link-icon-space);
 }
 
 $link-size: scale(type, text);
@@ -57,8 +65,9 @@ $link-size: scale(type, text);
         background-color: var(--link-hover-background-color);
         border-color: var(--link-hover-border-color);
     }
-
-    // size
+}
+// Size
+.link {
     @each $name, $value in $link-size {
         @if $name != default {
             &-#{$name} {

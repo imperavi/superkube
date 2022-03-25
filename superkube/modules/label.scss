@@ -14,7 +14,7 @@
     --label-border-style: solid;
     --label-text-transform: none;
     --label-close-size: 10px;
-    --label-close-spacing: 3px;
+    --label-close-space: 3px;
 
     // props
     font-weight: var(--label-font-weight);
@@ -47,7 +47,7 @@
         --close-size: var(--label-close-size);
 
         // props
-        margin-left: var(--label-close-spacing);
+        margin-left: var(--label-close-space);
         margin-right: -2px;
     }
 }

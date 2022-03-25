@@ -1,7 +1,7 @@
 // =Iconbox
 .iconbox {
     // params
-    --iconbox-space: scale(iconbox, base);
+    --iconbox-space: #{scale(iconbox, base)};
 
     // props
     display: inline-flex;
@@ -11,9 +11,6 @@
     text-align: center;
     line-height: 0;
     padding: var(--iconbox-space);
-}
-.iconbox-circle {
-    --iconbox-border-radius: 99px;
 }
 
 // Size

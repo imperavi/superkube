@@ -2623,7 +2623,7 @@ a.icon-primary {
     --icon-color: var(--palette-primary-light); } }
 
 .iconbox {
-  --iconbox-space: scale(iconbox, base);
+  --iconbox-space: 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -2631,9 +2631,6 @@ a.icon-primary {
   text-align: center;
   line-height: 0;
   padding: var(--iconbox-space); }
-
-.iconbox-circle {
-  --iconbox-border-radius: 99px; }
 
 .iconbox-small {
   --iconbox-space: 4px; }

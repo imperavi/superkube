@@ -1,0 +1,6 @@
+// =Colors
+$colors: map-extend($colors, (
+    background: (
+        azure: var(--palette-azure)
+    )
+));

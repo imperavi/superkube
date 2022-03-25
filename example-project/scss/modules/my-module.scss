@@ -1,0 +1,12 @@
+// =MyModule
+.my-module:hover {
+    cursor: pointer;
+
+    .my-module-container {
+        // params
+        --background-color: var(--background-platinum);
+
+        // props
+        box-shadow: var(--shadow-300);
+    }
+}

@@ -1,0 +1,12 @@
+// =Button
+.button-positive {
+    --button-background-color: var(--palette-positive-base);
+    --button-border-color: transparent;
+    --button-color: var(--palette-positive-lightest);
+    --button-hover-background-color: var(--palette-positive-dark);
+    --button-hover-border-color: transparent;
+    --button-hover-color: var(--palette-positive-lightest);
+    --button-disabled-background-color: var(--palette-black-70);
+    --button-disabled-border-color: transparent;
+    --button-disabled-color: var(--palette-white-70);
+}

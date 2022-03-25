@@ -113,12 +113,12 @@ $colors-dark: map-extend($colors-dark, (
     text: (
         dark: var(--palette-white-95),
         default: var(--palette-white-90),
-        moderated: var(--palette-white-80),
+        dark-medium: var(--palette-white-80),
         muted: var(--palette-white-50),
         success: var(--palette-positive-light),
         error: var(--palette-negative-light),
         light: var(--palette-white-90),
-        light-moderated: var(--palette-white-80),
+        light-medium: var(--palette-white-80),
         light-muted: var(--palette-white-50),
         primary: var(--palette-primary-light)
     )

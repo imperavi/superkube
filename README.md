@@ -13,7 +13,6 @@ Superkube is a free CSS/SCSS framework that has a lot of ready-made modules, mod
 See the description of Superkube and all its modules in the [documentation](https://imperavi.com/superkube/docs/).
 
 - [How to use](https://imperavi.com/superkube/docs/getting-started/how-to-use)
-- [Cheatsheet](https://imperavi.com/superkube/docs/getting-started/cheatsheet)
 
 
 ## Install

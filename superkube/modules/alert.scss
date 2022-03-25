@@ -15,6 +15,7 @@
     --alert-border-style: solid;
     --alert-box-shadow: none;
     --alert-close-size: 14px;
+    --alert-space: 0.5em;
 
     // props
     position: relative;
@@ -35,7 +36,7 @@
         color: inherit;
     }
     * + p {
-        margin-top: 0.25em;
+        margin-top: var(--alert-space);
     }
     a:hover {
         opacity: .6;

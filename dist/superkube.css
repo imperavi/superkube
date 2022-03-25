@@ -1,7 +1,7 @@
 /*
     Superkube
     Version 3.0.0
-    Updated: March 22, 2022
+    Updated: March 25, 2022
 
     http://imperavi.com/superkube/
 
@@ -512,6 +512,7 @@ figure > div {
   --alert-border-style: solid;
   --alert-box-shadow: none;
   --alert-close-size: 14px;
+  --alert-space: 0.5em;
   position: relative;
   font-weight: var(--alert-font-weight);
   font-size: var(--alert-font-size);
@@ -528,7 +529,7 @@ figure > div {
   .alert h2, .alert h3, .alert h4, .alert h5, .alert h6, .alert p, .alert a {
     color: inherit; }
   .alert * + p {
-    margin-top: 0.25em; }
+    margin-top: var(--alert-space); }
   .alert a:hover {
     opacity: .6; }
   .alert svg {

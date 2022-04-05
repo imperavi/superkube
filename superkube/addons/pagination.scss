@@ -4,9 +4,9 @@
     --pagination-link-color: var(--palette-black);
     --pagination-link-border-color: var(--palette-black-15);
     --pagination-link-background-color: transparent;
-    --pagination-link-hover-color: var(--palette-black-60);
-    --pagination-link-hover-border-color: var(--palette-black-15);
-    --pagination-link-hover-background-color: var(--palette-active-lighter);
+    --pagination-link-hover-color: var(--palette-black);
+    --pagination-link-hover-border-color: transparent;
+    --pagination-link-hover-background-color: var(--palette-black-15);
     --pagination-link-active-color: var(--palette-active-lightest);
     --pagination-link-active-border-color: var(--palette-active-base);
     --pagination-link-active-background-color: var(--palette-active-base);
@@ -54,7 +54,7 @@
         background-color: var(--pagination-link-background-color);
     }
     .pagination-link:hover {
-        text-decoration: underline;
+        text-decoration: none;
         color: var(--pagination-link-hover-color);
         border-color: var(--pagination-link-hover-border-color);
         background-color: var(--pagination-link-hover-background-color);

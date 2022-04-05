@@ -3963,20 +3963,26 @@ blockquote,
   blockquote p + p,
   .quote p + p {
     margin-top: var(--quote-space); }
+  blockquote .quote-caption,
+  .quote .quote-caption {
+    --quote-caption-color: var(--text-default);
+    --quote-caption-background-color: transparent;
+    --quote-caption-font-size: 14px;
+    --quote-caption-font-style: italic;
+    --quote-caption-font-weight: normal;
+    --quote-caption-line-height: var(--body-text-line);
+    font-style: var(--quote-caption-font-style);
+    font-weight: var(--quote-caption-font-weight);
+    font-size: var(--quote-caption-font-size);
+    line-height: var(--quote-caption-line-height);
+    color: var(--quote-caption-color); }
 
-blockquote .quote-caption,
-.quote .quote-caption {
-  --quote-caption-color: var(--text-default);
-  --quote-caption-background-color: transparent;
-  --quote-caption-font-size: 14px;
-  --quote-caption-font-style: italic;
-  --quote-caption-font-weight: normal;
-  --quote-caption-line-height: var(--body-text-line);
-  font-style: var(--quote-caption-font-style);
-  font-weight: var(--quote-caption-font-weight);
-  font-size: var(--quote-caption-font-size);
-  line-height: var(--quote-caption-line-height);
-  color: var(--quote-caption-color); }
+.quote-light {
+  --quote-color: var(--text-light);
+  --quote-background-color: transparent; }
+  .quote-light .quote-caption {
+    --quote-caption-color: var(--text-light);
+    --quote-caption-background-color: transparent; }
 
 .radius-circle {
   border-radius: 9999px; }

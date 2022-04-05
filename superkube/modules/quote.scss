@@ -33,9 +33,6 @@ blockquote,
     p + p {
         margin-top: var(--quote-space);
     }
-}
-blockquote,
-.quote {
     .quote-caption {
         // colors
         --quote-caption-color: var(--text-default);
@@ -53,6 +50,17 @@ blockquote,
         font-size: var(--quote-caption-font-size);
         line-height: var(--quote-caption-line-height);
         color: var(--quote-caption-color);
+    }
+}
+.quote-light {
+    // colors
+    --quote-color: var(--text-light);
+    --quote-background-color: transparent;
+
+    .quote-caption {
+        // colors
+        --quote-caption-color: var(--text-light);
+        --quote-caption-background-color: transparent;
     }
 }
 // Dark theme

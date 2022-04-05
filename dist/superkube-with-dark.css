@@ -1143,9 +1143,9 @@ a.brand:hover {
   --button-disabled-color: var(--palette-black-80); }
 
 .button-large {
-  --button-font-size: 18px;
-  --button-height: 56px;
-  --button-padding-x: 32px; }
+  --button-font-size: 17px;
+  --button-height: 52px;
+  --button-padding-x: 28px; }
 
 .button-small {
   --button-font-size: 14px;

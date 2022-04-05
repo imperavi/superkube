@@ -34,12 +34,7 @@ $colors: map-extend($colors, (
         muted: var(--palette-black-50),
         light: var(--palette-white-95),
         light-medium: var(--palette-white-70),
-        primary: var(--palette-primary-base),
-        gradient-primary: linear-gradient(
-            90deg,
-            var(--palette-negative-mid),
-            var(--palette-negative-dark)
-        )
+        primary: var(--palette-primary-base)
     ),
     icon: (
         dark: var(--palette-black),

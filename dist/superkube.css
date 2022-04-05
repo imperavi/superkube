@@ -173,7 +173,6 @@
   --heading-light: var(--palette-white-95);
   --heading-light-medium: var(--palette-white-70);
   --heading-primary: var(--palette-primary-base);
-  --heading-gradient-primary: linear-gradient(90deg, var(--palette-negative-mid), var(--palette-negative-dark));
   --icon-dark: var(--palette-black);
   --icon-light: var(--palette-white);
   --icon-primary: var(--palette-primary-base);
@@ -2200,9 +2199,6 @@ label {
 
 .heading-primary {
   --heading-color: var(--palette-primary-base); }
-
-.heading-gradient-primary {
-  --heading-color: linear-gradient(90deg, var(--palette-negative-mid), var(--palette-negative-dark)); }
 
 .hint {
   --hint-color: var(--palette-black-50);

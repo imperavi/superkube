@@ -11,7 +11,7 @@ figcaption {
     --figcaption-font-weight: normal;
     --figcaption-text-transform: none;
     --figcaption-letter-spacing: 0;
-    --figcaption-space: 0.4em;
+    --figcaption-space: 4px;
     --figcaption-padding: 0;
     --figcaption-border-radius: 0;
 
@@ -32,7 +32,6 @@ figcaption {
 // Dark theme
 @include dark-theme {
     figcaption {
-        --figcaption-color: var(--palette-white-80);
         --figcaption-background-color: transparent;
     }
 }

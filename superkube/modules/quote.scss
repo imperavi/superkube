@@ -2,7 +2,7 @@
 blockquote,
 .quote {
     // colors
-    --quote-color: var(--palette-neutral-darker);
+    --quote-color: var(--text-default);
     --quote-background-color: transparent;
 
     // params
@@ -38,7 +38,7 @@ blockquote,
 .quote {
     .quote-caption {
         // colors
-        --quote-caption-color: var(--palette-neutral-darker);
+        --quote-caption-color: var(--text-default);
         --quote-caption-background-color: transparent;
 
         // params
@@ -59,11 +59,9 @@ blockquote,
 @include dark-theme {
     blockquote,
     .quote {
-        --quote-color: var(--palette-white-90);
-        --quote-background-color: transparent;
+
     }
     .quote-caption {
-        --quote-caption-color: var(--palette-white-90);
-        --quote-caption-background-color: transparent;
+
     }
 }

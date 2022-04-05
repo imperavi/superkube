@@ -1325,7 +1325,7 @@ a.brand:hover {
 pre,
 .code {
   --code-background-color: var(--palette-neutral-lightest);
-  --code-color: var(--palette-neutral-darker);
+  --code-color: var(--text-default);
   --code-border-color: transparent;
   --code-font-size: 14px;
   --code-font-family: var(--font-mono);
@@ -1359,7 +1359,6 @@ pre,
   pre,
   .code {
     --code-background-color: var(--palette-surface-300);
-    --code-color: var(--palette-white-80);
     --code-border-color: transparent; } }
 
 .container-small {
@@ -1562,7 +1561,7 @@ figcaption {
   --figcaption-font-weight: normal;
   --figcaption-text-transform: none;
   --figcaption-letter-spacing: 0;
-  --figcaption-space: 0.4em;
+  --figcaption-space: 4px;
   --figcaption-padding: 0;
   --figcaption-border-radius: 0;
   display: block;
@@ -1580,7 +1579,6 @@ figcaption {
 
 @media (prefers-color-scheme: dark) {
   figcaption {
-    --figcaption-color: var(--palette-white-80);
     --figcaption-background-color: transparent; } }
 
 .flex {
@@ -1715,10 +1713,6 @@ label {
   padding: var(--form-padding);
   color: var(--form-label-color);
   background-color: var(--form-label-background-color); }
-
-@media (prefers-color-scheme: dark) {
-  label {
-    --form-label-color: var(--palette-white-90); } }
 
 [class^="gr-"],
 [class*=" gr-"] {
@@ -3421,8 +3415,6 @@ hr {
   color: var(--list-number-color); }
 
 @media (prefers-color-scheme: dark) {
-  .list {
-    --list-item-color: var(--text-default); }
   .list-light {
     --list-item-color: var(--palette-white-90); }
   .list-stacked,
@@ -4449,7 +4441,7 @@ hr {
 
 blockquote,
 .quote {
-  --quote-color: var(--palette-neutral-darker);
+  --quote-color: var(--text-default);
   --quote-background-color: transparent;
   --quote-font-size: 18px;
   --quote-font-style: italic;
@@ -4478,7 +4470,7 @@ blockquote,
 
 blockquote .quote-caption,
 .quote .quote-caption {
-  --quote-caption-color: var(--palette-neutral-darker);
+  --quote-caption-color: var(--text-default);
   --quote-caption-background-color: transparent;
   --quote-caption-font-size: 14px;
   --quote-caption-font-style: italic;
@@ -4489,15 +4481,6 @@ blockquote .quote-caption,
   font-size: var(--quote-caption-font-size);
   line-height: var(--quote-caption-line-height);
   color: var(--quote-caption-color); }
-
-@media (prefers-color-scheme: dark) {
-  blockquote,
-  .quote {
-    --quote-color: var(--palette-white-90);
-    --quote-background-color: transparent; }
-  .quote-caption {
-    --quote-caption-color: var(--palette-white-90);
-    --quote-caption-background-color: transparent; } }
 
 .radius-circle {
   border-radius: 9999px; }

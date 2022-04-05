@@ -3,7 +3,7 @@ pre,
 .code {
     // colors
     --code-background-color: var(--palette-neutral-lightest);
-    --code-color: var(--palette-neutral-darker);
+    --code-color: var(--text-default);
     --code-border-color: transparent;
 
     // params
@@ -43,7 +43,6 @@ pre,
     pre,
     .code {
         --code-background-color: var(--palette-surface-300);
-        --code-color: var(--palette-white-80);
         --code-border-color: transparent;
     }
 }

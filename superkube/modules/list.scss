@@ -207,9 +207,6 @@
 }
 // Dark theme
 @include dark-theme {
-    .list {
-        --list-item-color: var(--text-default);
-    }
     .list-light {
         --list-item-color: var(--palette-white-90);
     }

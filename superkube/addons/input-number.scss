@@ -2,6 +2,7 @@
     // params
     --input-number-space: 40px;
     --input-number-size: 16px;
+    --input-number-border-radius: var(--radius-base);
 
     // props
     position: relative;
@@ -42,4 +43,8 @@
 }
 .input-number-up {
     right: 0;
+}
+// Variants
+.input-number-light {
+    color: var(--text-light);
 }

@@ -2908,16 +2908,13 @@ sup {
     color: var(--placeholder-light); }
 
 .input-error {
-  --input-outline-color: var(--palette-negative-base);
   --input-color: var(--palette-negative-dark);
   --input-border-color: var(--palette-negative-base);
-  --input-background-color: var(--palette-white);
-  --input-box-shadow: none;
+  --input-outline-color: var(--palette-negative-base);
   --input-focus-color: var(--palette-negative-base);
-  --input-focus-outline-color: var(--palette-negative-base);
+  --input-focus-box-shadow: none;
   --input-focus-border-color: transparent;
-  --input-focus-background-color: var(--palette-white);
-  --input-focus-box-shadow: none; }
+  --input-focus-outline-color: var(--palette-negative-base); }
 
 .input-success {
   --input-color: var(--palette-positive-dark);

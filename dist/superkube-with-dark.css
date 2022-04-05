@@ -1265,7 +1265,7 @@ a.brand:hover {
 
 .checkbox,
 .radio {
-  --checkbox-radio-color: inherit;
+  --checkbox-radio-color: var(--text-default);
   --checkbox-radio-font-size: 15px;
   --checkbox-radio-font-weight: normal;
   --checkbox-radio-font-style: normal;
@@ -1290,6 +1290,10 @@ a.brand:hover {
   .radio + .checkbox,
   .radio + .radio {
     margin-top: var(--checkbox-radio-space); }
+
+.checkbox-light,
+.radio-light {
+  --checkbox-radio-color: var(--text-light); }
 
 .checkbox-group,
 .radio-group {

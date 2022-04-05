@@ -2,7 +2,7 @@
 .checkbox,
 .radio {
     // colors
-    --checkbox-radio-color: inherit;
+    --checkbox-radio-color: var(--text-default);
 
     // params
     --checkbox-radio-font-size: 15px;
@@ -31,4 +31,8 @@
     & + .radio {
         margin-top: var(--checkbox-radio-space);
     }
+}
+.checkbox-light,
+.radio-light {
+    --checkbox-radio-color: var(--text-light);
 }

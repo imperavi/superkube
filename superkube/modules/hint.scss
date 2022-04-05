@@ -26,8 +26,14 @@ div.hint {
 }
 
 // Variants
+.hint-light {
+    --hint-color: var(--palette-white-70);
+}
 .hint-success {
     --hint-color: var(--palette-positive-dark);
+}
+.hint-success.hint-light {
+    --hint-color: var(--palette-positive-mid);
 }
 .hint-error {
     --hint-color: var(--palette-negative-dark);
@@ -39,6 +45,11 @@ div.hint {
     // props
     font-size: 105%;
 }
+.hint-req.hint-light,
+.hint-error.hint-light {
+    --hint-color: var(--palette-negative-mid);
+}
+
 // Dark theme
 @include dark-theme {
     .hint {

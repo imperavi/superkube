@@ -2505,8 +2505,14 @@ label .hint {
 div.hint {
   margin-top: 2px; }
 
+.hint-light {
+  --hint-color: var(--palette-white-70); }
+
 .hint-success {
   --hint-color: var(--palette-positive-dark); }
+
+.hint-success.hint-light {
+  --hint-color: var(--palette-positive-mid); }
 
 .hint-error {
   --hint-color: var(--palette-negative-dark); }
@@ -2515,6 +2521,10 @@ div.hint {
   --hint-color: var(--palette-negative-base);
   --hint-font-weight: bold;
   font-size: 105%; }
+
+.hint-req.hint-light,
+.hint-error.hint-light {
+  --hint-color: var(--palette-negative-mid); }
 
 @media (prefers-color-scheme: dark) {
   .hint {

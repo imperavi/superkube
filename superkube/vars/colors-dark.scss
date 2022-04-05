@@ -21,9 +21,10 @@ $colors-dark: map-extend($colors-dark, (
         primary: var(--palette-primary-mid)
     ),
     divider: (
+        default: var(--palette-white-20),
+        dark-medium: var(--palette-white-40),
         dark: var(--palette-white-50),
         primary: var(--palette-primary-mid),
-        muted: var(--palette-white-20),
         light: var(--palette-white-50),
         light-muted: var(--palette-white-20)
     ),
@@ -60,9 +61,6 @@ $colors-dark: map-extend($colors-dark, (
         cite: (
             color: var(--palette-white-80)
         )
-    ),
-    line: (
-        default: var(--palette-white-20)
     ),
     link: (
         default: (

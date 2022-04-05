@@ -3347,6 +3347,12 @@ hr {
 .list-light {
   --list-item-color: var(--palette-white-90); }
 
+.list-strong {
+  --list-item-font-weight: bold; }
+
+.list-semibold {
+  --list-item-font-weight: var(--font-weight-semibold); }
+
 .list-stacked {
   --list-item-border-color: var(--palette-black-7);
   --list-item-padding-y: 8px;

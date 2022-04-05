@@ -38,6 +38,11 @@ pre,
         background: none;
     }
 }
+.code-light {
+    --code-background-color: var(--palette-white-20);
+    --code-color: var(--text-light);
+    --code-border-color: transparent;
+}
 // Dark theme
 @include dark-theme {
     pre,

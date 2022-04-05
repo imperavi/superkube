@@ -1106,6 +1106,11 @@ pre,
     line-height: inherit;
     background: none; }
 
+.code-light {
+  --code-background-color: var(--palette-white-20);
+  --code-color: var(--text-light);
+  --code-border-color: transparent; }
+
 .container-small {
   max-width: 400px; }
 

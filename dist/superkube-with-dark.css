@@ -1005,6 +1005,12 @@ a.brand:hover {
     text-decoration: underline;
     color: var(--breadcrumb-link-hover-color); }
 
+.breadcrumb-light {
+  --breadcrumb-link-color: var(--palette-white-80);
+  --breadcrumb-link-hover-color: var(--palette-white);
+  --breadcrumb-link-active-color: var(--palette-white-50);
+  --breadcrumb-separator-color: var(--palette-white-30); }
+
 .breadcrumb-bullet {
   --breadcrumb-separator: '\2219'; }
 

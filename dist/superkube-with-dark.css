@@ -1770,10 +1770,10 @@ label {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   grid-column-gap: 8rem;
-  grid-row-gap: 6rem; }
+  grid-row-gap: 8rem; }
 
 .grid + .grid {
-  margin-top: 6rem; }
+  margin-top: 8rem; }
 
 .grid-gutterless {
   grid-column-gap: 0; }

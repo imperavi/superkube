@@ -32,7 +32,6 @@
         margin-right: var(--pagination-item-space);
     }
     .pagination-item.active .pagination-link {
-        cursor: text;
         text-decoration: none;
         color: var(--pagination-link-active-color);
         border-color: var(--pagination-link-active-border-color);

@@ -994,7 +994,6 @@ a.brand:hover {
     display: none; }
   .breadcrumb .breadcrumb-item.active .breadcrumb-link {
     color: var(--breadcrumb-link-active-color);
-    cursor: text;
     text-decoration: none; }
   .breadcrumb .breadcrumb-link {
     display: flex;
@@ -3474,7 +3473,6 @@ a.label:hover {
   .menu .menu-item:last-child {
     margin-bottom: 0; }
   .menu .menu-item.active .menu-link {
-    cursor: text;
     text-decoration: none;
     font-weight: var(--menu-link-active-font-weight);
     color: var(--menu-link-active-color);
@@ -3662,7 +3660,6 @@ a.label:hover {
     align-items: center;
     margin-right: var(--nav-item-space); }
   .nav .nav-item.active .nav-link {
-    cursor: text;
     text-decoration: none;
     font-weight: var(--nav-link-active-font-weight);
     color: var(--nav-link-active-color);

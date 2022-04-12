@@ -1485,7 +1485,7 @@ label {
   color: var(--form-label-color);
   background-color: var(--form-label-background-color); }
 
-.label-light {
+.form-label-light {
   --form-label-color: var(--text-light); }
 
 [class^="gr-"],

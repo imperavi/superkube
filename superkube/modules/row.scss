@@ -26,4 +26,10 @@ $spacing-scale: scale(spacing);
     .row-column-sm {
         flex-direction: column;
     }
+    $spacing-scale: scale(spacing);
+    @each $name, $index in $spacing-scale {
+        .row-#{$name}-sm {
+            gap: $unit * $index;
+        }
+    }
 }

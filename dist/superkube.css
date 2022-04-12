@@ -4218,7 +4218,43 @@ blockquote,
 
 @media only screen and (max-width: 767px) {
   .row-column-sm {
-    flex-direction: column; } }
+    flex-direction: column; }
+  .row-1-sm {
+    gap: 4px; }
+  .row-2-sm {
+    gap: 8px; }
+  .row-3-sm {
+    gap: 12px; }
+  .row-4-sm {
+    gap: 16px; }
+  .row-5-sm {
+    gap: 20px; }
+  .row-6-sm {
+    gap: 24px; }
+  .row-7-sm {
+    gap: 28px; }
+  .row-8-sm {
+    gap: 32px; }
+  .row-9-sm {
+    gap: 36px; }
+  .row-10-sm {
+    gap: 40px; }
+  .row-11-sm {
+    gap: 44px; }
+  .row-12-sm {
+    gap: 48px; }
+  .row-13-sm {
+    gap: 52px; }
+  .row-14-sm {
+    gap: 56px; }
+  .row-15-sm {
+    gap: 60px; }
+  .row-20-sm {
+    gap: 80px; }
+  .row-25-sm {
+    gap: 100px; }
+  .row-30-sm {
+    gap: 120px; } }
 
 [class^="shadow-"],
 [class*=" shadow-"] {

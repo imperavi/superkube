@@ -39,3 +39,6 @@
     left: calc(var(--caret-size)/4);
     transform: rotate(45deg);
 }
+.caret-strong {
+    --caret-thickness: 2px;
+}

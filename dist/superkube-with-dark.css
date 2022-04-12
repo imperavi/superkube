@@ -1250,6 +1250,9 @@ a.brand:hover {
   left: calc(var(--caret-size)/4);
   transform: rotate(45deg); }
 
+.caret-strong {
+  --caret-thickness: 2px; }
+
 .centered {
   margin-left: auto;
   margin-right: auto; }
@@ -1330,6 +1333,9 @@ a.brand:hover {
     transform: rotate(-45deg); }
   .close:hover {
     opacity: 1; }
+
+.close-strong {
+  --close-thickness: 2px; }
 
 pre,
 .code {
@@ -3171,6 +3177,9 @@ a.label:hover {
 .link-caret {
   display: flex;
   align-items: center; }
+
+.link-caret .caret {
+  top: 1px; }
 
 .link-icon {
   --link-icon-space: 4px;

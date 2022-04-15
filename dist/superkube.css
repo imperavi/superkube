@@ -6251,6 +6251,7 @@ table,
 .table {
   --table-border-color: var(--palette-black-7);
   --table-head-border-color: var(--palette-black-7);
+  --table-color: var(--text-default);
   --table-font-size: 15px;
   --table-line-height: var(--body-text-line);
   --table-border-style: solid;
@@ -6263,7 +6264,8 @@ table,
   width: 100%;
   empty-cells: show;
   font-size: var(--table-font-size);
-  line-height: var(--table-line-height); }
+  line-height: var(--table-line-height);
+  color: var(--table-color); }
   table th,
   table td,
   .table th,
@@ -6319,6 +6321,7 @@ caption {
   border: 1px solid var(--table-border-color); }
 
 .table-light {
+  --table-color: var(--text-light);
   --table-border-color: var(--palette-white-15);
   --table-head-border-color: var(--palette-white-15); }
 

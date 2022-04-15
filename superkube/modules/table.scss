@@ -4,6 +4,7 @@ table,
     // colors
     --table-border-color: var(--palette-black-7);
     --table-head-border-color: var(--palette-black-7);
+    --table-color: var(--text-default);
 
     // params
     --table-font-size: 15px;
@@ -21,6 +22,7 @@ table,
     empty-cells: show;
     font-size: var(--table-font-size);
     line-height: var(--table-line-height);
+    color: var(--table-color);
 
     th,
     td {
@@ -85,6 +87,7 @@ caption {
     }
 }
 .table-light {
+    --table-color: var(--text-light);
     --table-border-color: var(--palette-white-15);
     --table-head-border-color: var(--palette-white-15);
 }

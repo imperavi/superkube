@@ -186,17 +186,17 @@
     --menu-number-width: 22px;
 
     .menu-list {
-        counter-reset: table-of-contents;
+        counter-reset: numbers;
     }
     .menu-item {
         display: flex;
         align-items: center;
-        counter-increment: table-of-contents;
+        counter-increment: numbers;
     }
     .menu-item:before {
         width: var(--menu-number-width);
         font-size: var(--menu-number-font-size);
-        content: counter(table-of-contents, decimal-leading-zero);
+        content: counter(numbers, decimal-leading-zero);
         color: var(--menu-number-color);
     }
 }
@@ -210,7 +210,7 @@
     .menu-item:after {
         width: var(--menu-number-width);
         font-size: var(--menu-number-font-size);
-        content: counter(table-of-contents, decimal-leading-zero);
+        content: counter(numbers, decimal-leading-zero);
         text-align: right;
     }
 }

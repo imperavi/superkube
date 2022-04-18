@@ -3014,15 +3014,15 @@ a.label:hover {
   --list-number-color: var(--palette-black-60);
   --list-number-font-size: 80%;
   --list-number-width: 22px;
-  counter-reset: table-of-contents; }
+  counter-reset: numbers; }
   .list-numbered .list-item {
     display: flex;
     align-items: center;
-    counter-increment: table-of-contents; }
+    counter-increment: numbers; }
   .list-numbered .list-item:before {
     width: var(--list-number-width);
     font-size: var(--list-number-font-size);
-    content: counter(table-of-contents, decimal-leading-zero);
+    content: counter(numbers, decimal-leading-zero);
     color: var(--list-number-color); }
 
 .list-numbered.list-light {
@@ -3040,7 +3040,7 @@ a.label:hover {
   right: 0;
   width: var(--list-number-width);
   font-size: var(--list-number-font-size);
-  content: counter(table-of-contents, decimal-leading-zero);
+  content: counter(numbers, decimal-leading-zero);
   text-align: right;
   color: var(--list-number-color); }
 
@@ -3177,15 +3177,15 @@ a.label:hover {
   --menu-number-font-size: 80%;
   --menu-number-width: 22px; }
   .menu-numbered .menu-list {
-    counter-reset: table-of-contents; }
+    counter-reset: numbers; }
   .menu-numbered .menu-item {
     display: flex;
     align-items: center;
-    counter-increment: table-of-contents; }
+    counter-increment: numbers; }
   .menu-numbered .menu-item:before {
     width: var(--menu-number-width);
     font-size: var(--menu-number-font-size);
-    content: counter(table-of-contents, decimal-leading-zero);
+    content: counter(numbers, decimal-leading-zero);
     color: var(--menu-number-color); }
 
 .menu-numbered.menu-light {
@@ -3197,7 +3197,7 @@ a.label:hover {
 .menu-numbered-right .menu-item:after {
   width: var(--menu-number-width);
   font-size: var(--menu-number-font-size);
-  content: counter(table-of-contents, decimal-leading-zero);
+  content: counter(numbers, decimal-leading-zero);
   text-align: right; }
 
 .nav {

@@ -170,17 +170,17 @@
     --list-number-width: 22px;
 
     // props
-    counter-reset: table-of-contents;
+    counter-reset: numbers;
 
     .list-item {
         display: flex;
         align-items: center;
-        counter-increment: table-of-contents;
+        counter-increment: numbers;
     }
     .list-item:before {
         width: var(--list-number-width);
         font-size: var(--list-number-font-size);
-        content: counter(table-of-contents, decimal-leading-zero);
+        content: counter(numbers, decimal-leading-zero);
         color: var(--list-number-color);
     }
 }
@@ -200,7 +200,7 @@
         right: 0;
         width: var(--list-number-width);
         font-size: var(--list-number-font-size);
-        content: counter(table-of-contents, decimal-leading-zero);
+        content: counter(numbers, decimal-leading-zero);
         text-align: right;
         color: var(--list-number-color);
     }

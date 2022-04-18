@@ -2432,18 +2432,21 @@ label {
   color: var(--heading-color); }
 
 [class^="heading-gradient"],
-[class*=" heading-gradient"] {
+[class^="heading-gradient"] a,
+[class*=" heading-gradient"],
+[class*=" heading-gradient"] a {
   display: inline-block;
   background-clip: text;
   background-color: #000;
   background-image: var(--heading-color);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
-  [class^="heading-gradient"] a,
-  [class^="heading-gradient"] a:hover,
-  [class*=" heading-gradient"] a,
-  [class*=" heading-gradient"] a:hover {
-    opacity: 1; }
+
+[class^="heading-gradient"] a,
+[class^="heading-gradient"] a:hover,
+[class*=" heading-gradient"] a,
+[class*=" heading-gradient"] a:hover {
+  opacity: 1; }
 
 .heading-giga {
   --heading-font-size: 96px;

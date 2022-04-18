@@ -26,12 +26,15 @@
 }
 [class^="heading-gradient"],
 [class*=" heading-gradient"] {
-    display: inline-block;
-    background-clip: text;
-    background-color: #000;
-    background-image: var(--heading-color);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+    &,
+    a {
+        display: inline-block;
+        background-clip: text;
+        background-color: #000;
+        background-image: var(--heading-color);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
 
     a,
     a:hover {

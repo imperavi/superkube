@@ -1253,6 +1253,12 @@ a.brand:hover {
 .caret-strong {
   --caret-thickness: 2px; }
 
+.caret-large {
+  --caret-size: 18px; }
+
+.caret-huge {
+  --caret-size: 22px; }
+
 .centered {
   margin-left: auto;
   margin-right: auto; }
@@ -1336,6 +1342,18 @@ a.brand:hover {
 
 .close-strong {
   --close-thickness: 2px; }
+
+.close-small {
+  --close-size: 10px; }
+
+.close-medium {
+  --close-size: 12px; }
+
+.close-large {
+  --close-size: 16px; }
+
+.close-huge {
+  --close-size: 20px; }
 
 pre,
 .code {

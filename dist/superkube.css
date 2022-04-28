@@ -320,7 +320,6 @@ body {
   font-family: var(--font-text);
   font-size: var(--body-text-size);
   line-height: var(--body-text-line);
-  min-height: 100vh;
   color: var(--body-color);
   background-color: var(--body-background-color); }
 

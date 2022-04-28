@@ -49,6 +49,7 @@ table {
     & + dl,
     & + pre,
     & + figure,
+    & + blockquote,
     & + table {
         margin-top: var(--type-space-figure-to-tag);
     }

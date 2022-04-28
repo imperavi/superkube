@@ -382,6 +382,7 @@ figure + ol,
 figure + dl,
 figure + pre,
 figure + figure,
+figure + blockquote,
 figure + table,
 table + h2,
 table + h3,
@@ -394,6 +395,7 @@ table + ol,
 table + dl,
 table + pre,
 table + figure,
+table + blockquote,
 table + table {
   margin-top: var(--type-space-figure-to-tag); }
 

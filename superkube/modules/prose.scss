@@ -15,7 +15,7 @@
     --prose-tag-to-h6: 8rem;
     --prose-figure-to-tag: 6rem;
 
-    // size
+    // generate size params
     @include generate-prose-size(scale(type), std);
     @include for-lg { @include generate-prose-size(scale(type-lg), lg); }
     @include for-md { @include generate-prose-size(scale(type-md), md); }

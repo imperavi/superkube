@@ -14,15 +14,15 @@ $colors-dark: map-extend($colors-dark, (
     border: (
         dark: var(--palette-white-50),
         dark-low: var(--palette-white-20),
-        dark-medium: var(--palette-white-40),
+        dark-mid: var(--palette-white-40),
         light: var(--palette-white-50),
         light-low: var(--palette-white-20),
-        light-medium: var(--palette-white-40),
+        light-mid: var(--palette-white-40),
         primary: var(--palette-primary-mid)
     ),
     divider: (
         default: var(--palette-white-20),
-        dark-medium: var(--palette-white-40),
+        dark-mid: var(--palette-white-40),
         dark: var(--palette-white-50),
         primary: var(--palette-primary-mid),
         light: var(--palette-white-50),
@@ -31,10 +31,10 @@ $colors-dark: map-extend($colors-dark, (
     gradient: (),
     heading: (
         default: var(--palette-white-90),
-        moderated: var(--palette-white-70),
+        dark-mid: var(--palette-white-70),
         muted: var(--palette-white-50),
         light: var(--palette-white-95),
-        light-moderated: var(--palette-white-70),
+        light-mid: var(--palette-white-70),
         primary: var(--palette-primary-light)
     ),
     icon: (
@@ -75,7 +75,7 @@ $colors-dark: map-extend($colors-dark, (
             color: var(--palette-white-50),
             hover-color: var(--palette-white)
         ),
-        moderated: (
+        dark-mid: (
             color: var(--palette-white-80),
             hover-color: var(--palette-white)
         ),
@@ -83,7 +83,7 @@ $colors-dark: map-extend($colors-dark, (
             color: var(--palette-white-95),
             hover-color: var(--palette-white-60)
         ),
-        light-moderated: (
+        light-mid: (
             color: var(--palette-white-70),
             hover-color: var(--palette-white)
         ),
@@ -111,12 +111,12 @@ $colors-dark: map-extend($colors-dark, (
     text: (
         dark: var(--palette-white-95),
         default: var(--palette-white-90),
-        dark-medium: var(--palette-white-80),
+        dark-mid: var(--palette-white-80),
         muted: var(--palette-white-50),
         success: var(--palette-positive-light),
         error: var(--palette-negative-light),
         light: var(--palette-white-90),
-        light-medium: var(--palette-white-80),
+        light-mid: var(--palette-white-80),
         light-muted: var(--palette-white-50),
         primary: var(--palette-primary-light)
     )

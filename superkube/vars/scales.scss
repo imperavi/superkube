@@ -65,13 +65,14 @@ $scales: map-extend($scales, (
         gridname: grid,
         columnname: column,
         columns: 12,
-        gutter: 6rem,
-        gap: 6rem
+        gutter: 8rem,
+        gap: 8rem
     ),
     container: (
         small: 400px,
         content: 800px,
-        base: 1068px,
+        medium: 1000px,
+        base: 1112px,
         large: 1240px,
         full: 100%
     ),

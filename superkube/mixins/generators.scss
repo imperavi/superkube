@@ -68,17 +68,14 @@
     }
 }
 
-// base headings
-@mixin generate-base-headings($map, $breakpoint) {
-    @if map-has-key($map, base) {
-        $headings: h1, h2, h3, h4, h5, h6;
-        $obj: map-deep-get($map, base);
-        @each $key, $val in $headings {
+// prose type
+@mixin generate-prose-size($map, $breakpoint) {
+    @if map-has-key($map, prose) {
+        $obj: map-deep-get($map, prose);
+        @each $key, $val in $obj {
             @if map-has-key($obj, $key) {
-                #{$key} {
-                    --heading-font-size: #{type-size(base, $key, $breakpoint)};
-                    --heading-line-height: #{type-line(base, $key, $breakpoint)};
-                }
+                --prose-#{$key}-font-size: #{type-size(prose, $key, $breakpoint)};
+                --prose-#{$key}-line-height: #{type-line(prose, $key, $breakpoint)};
             }
         }
     }

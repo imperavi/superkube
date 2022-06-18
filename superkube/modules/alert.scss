@@ -16,6 +16,7 @@
     --alert-box-shadow: none;
     --alert-close-size: 14px;
     --alert-space: 0.5em;
+    --alert-margin-bottom: 5em;
 
     // props
     position: relative;
@@ -27,7 +28,7 @@
     border-style: var(--alert-border-style);
     border-width: var(--alert-border-width);
     box-shadow: var(--alert-box-shadow);
-    margin-bottom: var(--type-space-tag-to-tag);
+    margin-bottom: var(--alert-margin-bottom);
     background-color: var(--alert-background-color);
     border-color: var(--alert-border-color);
     color: var(--alert-color);

@@ -18,11 +18,13 @@ $scales: map-extend($scales, (
         10: 10px
     ),
     type: (
-        base: (
-            h1: 56px 1.15,
-            h2: 28px 1.35,
-            h3: 20px 1.4,
-            h4: 16px 1.5
+        prose: (
+            h1: 64px 1.1,
+            h2: 32px 1.2,
+            h3: 20px 1.3,
+            h4: 18px 1.4,
+            lead: 24px 1.4,
+            p: 16px 1.5
         ),
         heading: (
             giga: 64px 1.1,
@@ -51,21 +53,6 @@ $scales: map-extend($scales, (
     ),
     type-md: (),
     type-lg: (),
-    type-space: (
-        h1-to-tag: 5rem,
-        h2-to-tag: 3rem,
-        h3-to-tag: 3rem,
-        h4-to-tag: 2rem,
-        h5-to-tag: 2rem,
-        h6-to-tag: 2rem,
-        tag-to-tag: 5rem,
-        tag-to-h2: 8rem,
-        tag-to-h3: 8rem,
-        tag-to-h4: 8rem,
-        tag-to-h5: 8rem,
-        tag-to-h6: 8rem,
-        figure-to-tag: 8rem
-    ),
     breakpoint: (
         lg: 1442px,
         md: 1024px,

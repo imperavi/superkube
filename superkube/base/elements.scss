@@ -18,49 +18,6 @@ body {
 // // =Placeholder
 @include placeholder(var(--placeholder-default));
 
-// // =TypeSpace
-h1 + * { margin-top: var(--type-space-h1-to-tag); }
-h2 + * { margin-top: var(--type-space-h2-to-tag); }
-h3 + * { margin-top: var(--type-space-h3-to-tag); }
-h4 + * { margin-top: var(--type-space-h4-to-tag); }
-h5 + * { margin-top: var(--type-space-h5-to-tag); }
-h6 + * { margin-top: var(--type-space-h6-to-tag); }
-
-p, ul, ol, blockquote, pre, dl, address {
-    & + h2 { margin-top: var(--type-space-tag-to-h2); }
-    & + h3 { margin-top: var(--type-space-tag-to-h3); }
-    & + h4 { margin-top: var(--type-space-tag-to-h4); }
-    & + h5 { margin-top: var(--type-space-tag-to-h5); }
-    & + h6 { margin-top: var(--type-space-tag-to-h6); }
-    & + * {
-        margin-top: var(--type-space-tag-to-tag);
-    }
-}
-figure,
-table {
-    & + h2,
-    & + h3,
-    & + h4,
-    & + h5,
-    & + h6,
-    & + p,
-    & + ul,
-    & + ol,
-    & + dl,
-    & + pre,
-    & + figure,
-    & + blockquote,
-    & + table {
-        margin-top: var(--type-space-figure-to-tag);
-    }
-}
-
-h1 + h2 { margin-top: var(--type-space-tag-to-h2); }
-h2 + h3 { margin-top: var(--type-space-tag-to-h3); }
-h3 + h4 { margin-top: var(--type-space-tag-to-h4); }
-h4 + h5 { margin-top: var(--type-space-tag-to-h5); }
-h5 + h6 { margin-top: var(--type-space-tag-to-h6); }
-
 // =Link
 a {
     color: var(--link-default-color);
@@ -100,10 +57,6 @@ h6 {
         text-decoration: underline;
     }
 }
-@include generate-base-headings(scale(type), std);
-@include for-lg { @include generate-base-headings(scale(type-lg), lg); }
-@include for-md { @include generate-base-headings(scale(type-md), md); }
-@include for-sm { @include generate-base-headings(scale(type-sm), sm); }
 
 // =List
 ul,

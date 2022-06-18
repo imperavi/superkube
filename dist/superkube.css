@@ -42,19 +42,6 @@
   --type-scale-12: 12px;
   --type-scale-11: 11px;
   --type-scale-10: 10px;
-  --type-space-h1-to-tag: 5rem;
-  --type-space-h2-to-tag: 3rem;
-  --type-space-h3-to-tag: 3rem;
-  --type-space-h4-to-tag: 2rem;
-  --type-space-h5-to-tag: 2rem;
-  --type-space-h6-to-tag: 2rem;
-  --type-space-tag-to-tag: 5rem;
-  --type-space-tag-to-h2: 8rem;
-  --type-space-tag-to-h3: 8rem;
-  --type-space-tag-to-h4: 8rem;
-  --type-space-tag-to-h5: 8rem;
-  --type-space-tag-to-h6: 8rem;
-  --type-space-figure-to-tag: 8rem;
   --palette-black: #030612;
   --palette-white: #ffffff;
   --palette-primary-darker: #1022A0;
@@ -349,85 +336,6 @@ body {
 *::placeholder {
   color: var(--placeholder-default); }
 
-h1 + * {
-  margin-top: var(--type-space-h1-to-tag); }
-
-h2 + * {
-  margin-top: var(--type-space-h2-to-tag); }
-
-h3 + * {
-  margin-top: var(--type-space-h3-to-tag); }
-
-h4 + * {
-  margin-top: var(--type-space-h4-to-tag); }
-
-h5 + * {
-  margin-top: var(--type-space-h5-to-tag); }
-
-h6 + * {
-  margin-top: var(--type-space-h6-to-tag); }
-
-p + h2, ul + h2, ol + h2, blockquote + h2, pre + h2, dl + h2, address + h2 {
-  margin-top: var(--type-space-tag-to-h2); }
-
-p + h3, ul + h3, ol + h3, blockquote + h3, pre + h3, dl + h3, address + h3 {
-  margin-top: var(--type-space-tag-to-h3); }
-
-p + h4, ul + h4, ol + h4, blockquote + h4, pre + h4, dl + h4, address + h4 {
-  margin-top: var(--type-space-tag-to-h4); }
-
-p + h5, ul + h5, ol + h5, blockquote + h5, pre + h5, dl + h5, address + h5 {
-  margin-top: var(--type-space-tag-to-h5); }
-
-p + h6, ul + h6, ol + h6, blockquote + h6, pre + h6, dl + h6, address + h6 {
-  margin-top: var(--type-space-tag-to-h6); }
-
-p + *, ul + *, ol + *, blockquote + *, pre + *, dl + *, address + * {
-  margin-top: var(--type-space-tag-to-tag); }
-
-figure + h2,
-figure + h3,
-figure + h4,
-figure + h5,
-figure + h6,
-figure + p,
-figure + ul,
-figure + ol,
-figure + dl,
-figure + pre,
-figure + figure,
-figure + blockquote,
-figure + table,
-table + h2,
-table + h3,
-table + h4,
-table + h5,
-table + h6,
-table + p,
-table + ul,
-table + ol,
-table + dl,
-table + pre,
-table + figure,
-table + blockquote,
-table + table {
-  margin-top: var(--type-space-figure-to-tag); }
-
-h1 + h2 {
-  margin-top: var(--type-space-tag-to-h2); }
-
-h2 + h3 {
-  margin-top: var(--type-space-tag-to-h3); }
-
-h3 + h4 {
-  margin-top: var(--type-space-tag-to-h4); }
-
-h4 + h5 {
-  margin-top: var(--type-space-tag-to-h5); }
-
-h5 + h6 {
-  margin-top: var(--type-space-tag-to-h6); }
-
 a {
   color: var(--link-default-color); }
 
@@ -470,22 +378,6 @@ h6 {
     opacity: 0.75;
     text-decoration: underline; }
 
-h1 {
-  --heading-font-size: 56px;
-  --heading-line-height: 1.15; }
-
-h2 {
-  --heading-font-size: 28px;
-  --heading-line-height: 1.35; }
-
-h3 {
-  --heading-font-size: 20px;
-  --heading-line-height: 1.4; }
-
-h4 {
-  --heading-font-size: 16px;
-  --heading-line-height: 1.5; }
-
 ul,
 ol {
   margin-left: 20px; }
@@ -527,6 +419,7 @@ figure > div {
   --alert-box-shadow: none;
   --alert-close-size: 14px;
   --alert-space: 0.5em;
+  --alert-margin-bottom: 5em;
   position: relative;
   font-weight: var(--alert-font-weight);
   font-size: var(--alert-font-size);
@@ -536,7 +429,7 @@ figure > div {
   border-style: var(--alert-border-style);
   border-width: var(--alert-border-width);
   box-shadow: var(--alert-box-shadow);
-  margin-bottom: var(--type-space-tag-to-tag);
+  margin-bottom: var(--alert-margin-bottom);
   background-color: var(--alert-background-color);
   border-color: var(--alert-border-color);
   color: var(--alert-color); }
@@ -3894,6 +3787,112 @@ a.label:hover {
 .position-over {
   z-index: 3; }
 
+.prose {
+  --prose-h1-to-tag: 5rem;
+  --prose-h2-to-tag: 3rem;
+  --prose-h3-to-tag: 3rem;
+  --prose-h4-to-tag: 2rem;
+  --prose-h5-to-tag: 2rem;
+  --prose-h6-to-tag: 2rem;
+  --prose-tag-to-tag: 5rem;
+  --prose-tag-to-h2: 10rem;
+  --prose-tag-to-h3: 8rem;
+  --prose-tag-to-h4: 8rem;
+  --prose-tag-to-h5: 8rem;
+  --prose-tag-to-h6: 8rem;
+  --prose-figure-to-tag: 6rem;
+  --prose-h1-font-size: 64px;
+  --prose-h1-line-height: 1.1;
+  --prose-h2-font-size: 32px;
+  --prose-h2-line-height: 1.2;
+  --prose-h3-font-size: 20px;
+  --prose-h3-line-height: 1.3;
+  --prose-h4-font-size: 18px;
+  --prose-h4-line-height: 1.4;
+  --prose-lead-font-size: 24px;
+  --prose-lead-line-height: 1.4;
+  --prose-p-font-size: 16px;
+  --prose-p-line-height: 1.5; }
+  .prose h1 + * {
+    margin-top: var(--prose-h1-to-tag); }
+  .prose h2 + * {
+    margin-top: var(--prose-h2-to-tag); }
+  .prose h3 + * {
+    margin-top: var(--prose-h3-to-tag); }
+  .prose h4 + * {
+    margin-top: var(--prose-h4-to-tag); }
+  .prose h5 + * {
+    margin-top: var(--prose-h5-to-tag); }
+  .prose h6 + * {
+    margin-top: var(--prose-h6-to-tag); }
+  .prose p + h2, .prose ul + h2, .prose ol + h2, .prose blockquote + h2, .prose pre + h2, .prose dl + h2, .prose address + h2 {
+    margin-top: var(--prose-tag-to-h2); }
+  .prose p + h3, .prose ul + h3, .prose ol + h3, .prose blockquote + h3, .prose pre + h3, .prose dl + h3, .prose address + h3 {
+    margin-top: var(--prose-tag-to-h3); }
+  .prose p + h4, .prose ul + h4, .prose ol + h4, .prose blockquote + h4, .prose pre + h4, .prose dl + h4, .prose address + h4 {
+    margin-top: var(--prose-tag-to-h4); }
+  .prose p + h5, .prose ul + h5, .prose ol + h5, .prose blockquote + h5, .prose pre + h5, .prose dl + h5, .prose address + h5 {
+    margin-top: var(--prose-tag-to-h5); }
+  .prose p + h6, .prose ul + h6, .prose ol + h6, .prose blockquote + h6, .prose pre + h6, .prose dl + h6, .prose address + h6 {
+    margin-top: var(--prose-tag-to-h6); }
+  .prose p + *, .prose ul + *, .prose ol + *, .prose blockquote + *, .prose pre + *, .prose dl + *, .prose address + * {
+    margin-top: var(--prose-tag-to-tag); }
+  .prose figure + h2,
+  .prose figure + h3,
+  .prose figure + h4,
+  .prose figure + h5,
+  .prose figure + h6,
+  .prose figure + p,
+  .prose figure + ul,
+  .prose figure + ol,
+  .prose figure + dl,
+  .prose figure + pre,
+  .prose figure + figure,
+  .prose figure + blockquote,
+  .prose figure + table,
+  .prose table + h2,
+  .prose table + h3,
+  .prose table + h4,
+  .prose table + h5,
+  .prose table + h6,
+  .prose table + p,
+  .prose table + ul,
+  .prose table + ol,
+  .prose table + dl,
+  .prose table + pre,
+  .prose table + figure,
+  .prose table + blockquote,
+  .prose table + table {
+    margin-top: var(--prose-figure-to-tag); }
+  .prose h1 + h2 {
+    margin-top: var(--prose-tag-to-h2); }
+  .prose h2 + h3 {
+    margin-top: var(--prose-tag-to-h3); }
+  .prose h3 + h4 {
+    margin-top: var(--prose-tag-to-h4); }
+  .prose h4 + h5 {
+    margin-top: var(--prose-tag-to-h5); }
+  .prose h5 + h6 {
+    margin-top: var(--prose-tag-to-h6); }
+  .prose h1 {
+    font-size: var(--prose-h1-font-size);
+    line-height: var(--prose-h1-line-height); }
+  .prose h2 {
+    font-size: var(--prose-h2-font-size);
+    line-height: var(--prose-h2-line-height); }
+  .prose h3 {
+    font-size: var(--prose-h3-font-size);
+    line-height: var(--prose-h3-line-height); }
+  .prose h4 {
+    font-size: var(--prose-h4-font-size);
+    line-height: var(--prose-h4-line-height); }
+  .prose p.prose-lead {
+    font-size: var(--prose-lead-font-size);
+    line-height: var(--prose-lead-line-height); }
+  .prose p {
+    font-size: var(--prose-p-font-size);
+    line-height: var(--prose-p-line-height); }
+
 .push-bottom {
   margin-top: auto; }
 
@@ -3928,13 +3927,13 @@ blockquote,
 .quote {
   --quote-color: var(--text-default);
   --quote-background-color: transparent;
-  --quote-font-size: var(--type-scale-18);
-  --quote-font-style: italic;
+  --quote-font-size: var(--type-scale-20);
+  --quote-font-style: normal;
   --quote-font-weight: normal;
   --quote-line-height: var(--body-text-line);
   --quote-padding-x: 0;
   --quote-padding-y: 0;
-  --quote-space: 0.25em;
+  --quote-space: 0.5em;
   --quote-border-radius: 0;
   padding-top: var(--quote-padding-y);
   padding-bottom: var(--quote-padding-y);
@@ -3956,8 +3955,8 @@ blockquote,
   .quote .quote-caption {
     --quote-caption-color: var(--text-default);
     --quote-caption-background-color: transparent;
-    --quote-caption-font-size: var(--type-scale-14);
-    --quote-caption-font-style: italic;
+    --quote-caption-font-size: var(--type-scale-15);
+    --quote-caption-font-style: normal;
     --quote-caption-font-weight: normal;
     --quote-caption-line-height: var(--body-text-line);
     font-style: var(--quote-caption-font-style);

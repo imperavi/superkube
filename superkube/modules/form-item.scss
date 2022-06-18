@@ -1,6 +1,9 @@
 // =FormItem
 .form-item {
+    // params
     --form-item-space: 5rem;
+
+    // props
     margin-bottom: var(--form-item-space);
 }
 .form-item .form-item {

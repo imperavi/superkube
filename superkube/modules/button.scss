@@ -19,7 +19,7 @@
     --button-letter-spacing: 0;
     --button-text-transform: none;
     --button-padding-y: 0;
-    --button-padding-x: 20px;
+    --button-padding-x: 23px;
     --button-border-width: 1px;
     --button-border-style: solid;
     --button-opacity: 1;
@@ -148,14 +148,14 @@
     --button-disabled-color: var(--palette-black-80);
 }
 .button-large {
-    --button-font-size: 17px;
+    --button-font-size: 16px;
     --button-height: 52px;
-    --button-padding-x: 28px;
+    --button-padding-x: 29px;
 }
 .button-small {
     --button-font-size: 14px;
     --button-height: 32px;
-    --button-padding-x: 16px;
+    --button-padding-x: 14px;
 
     // props
     padding-top: 0;

@@ -12,7 +12,7 @@
     --input-focus-box-shadow: none;
 
     // params
-    --input-font-size: 15px;
+    --input-font-size: var(--type-scale-15);
     --input-line-height: var(--body-text-line);
     --input-border-radius: var(--radius-base);
     --input-padding: 0.3em 0.5em;
@@ -66,11 +66,11 @@
 }
 .input-small {
     --input-height: 36px;
-    --input-font-size: 14px;
+    --input-font-size: var(--type-scale-14);
 }
 .input-large {
     --input-height: 52px;
-    --input-font-size: 18px;
+    --input-font-size: var(--type-scale-18);
     --input-padding: 0.3em 0.4em;
 }
 .input-round {

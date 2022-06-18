@@ -27,6 +27,21 @@
   --level-over-page: 100;
   --level-over-content: 200;
   --level-over-all: 300;
+  --type-scale-64: 64px;
+  --type-scale-52: 52px;
+  --type-scale-48: 48px;
+  --type-scale-40: 40px;
+  --type-scale-32: 32px;
+  --type-scale-24: 24px;
+  --type-scale-20: 20px;
+  --type-scale-18: 18px;
+  --type-scale-16: 16px;
+  --type-scale-15: 15px;
+  --type-scale-14: 14px;
+  --type-scale-13: 13px;
+  --type-scale-12: 12px;
+  --type-scale-11: 11px;
+  --type-scale-10: 10px;
   --type-space-h1-to-tag: 5rem;
   --type-space-h2-to-tag: 3rem;
   --type-space-h3-to-tag: 3rem;
@@ -503,7 +518,7 @@ figure > div {
   --alert-border-color: transparent;
   --alert-color: var(--palette-neutral-darker);
   --alert-padding: 4rem 5rem;
-  --alert-font-size: 14px;
+  --alert-font-size: var(--type-scale-14);
   --alert-font-weight: normal;
   --alert-line-height: var(--body-text-line);
   --alert-border-radius: var(--radius-base);
@@ -618,7 +633,7 @@ figure > div {
   --badge-background-color: var(--palette-neutral-lighter);
   --badge-border-color: transparent;
   --badge-color: var(--palette-neutral-darker);
-  --badge-font-size: 12px;
+  --badge-font-size: var(--type-scale-12);
   --badge-font-weight: var(--font-weight-semibold);
   --badge-border-radius: 99px;
   --badge-padding: 1px 4px;
@@ -668,15 +683,15 @@ a.badge:hover {
   --badge-color: var(--palette-black); }
 
 .badge-large {
-  --badge-font-size: 14px;
+  --badge-font-size: var(--type-scale-14);
   --badge-size: 26px; }
 
 .badge-huge {
-  --badge-font-size: 16px;
+  --badge-font-size: var(--type-scale-16);
   --badge-size: 36px; }
 
 .badge-mega {
-  --badge-font-size: 20px;
+  --badge-font-size: var(--type-scale-20);
   --badge-size: 48px; }
 
 [class^="border-"],
@@ -755,7 +770,7 @@ a.badge:hover {
 .brand {
   --brand-color: var(--palette-black);
   --brand-hover-color: var(--palette-black);
-  --brand-font-size: 16px;
+  --brand-font-size: var(--type-scale-16);
   --brand-font-weight: bold;
   --brand-text-transform: none;
   --brand-letter-spacing: 0;
@@ -783,7 +798,7 @@ a.brand:hover {
   --breadcrumb-link-hover-color: var(--palette-black-60);
   --breadcrumb-link-active-color: var(--palette-black-40);
   --breadcrumb-separator-color: var(--palette-black-25);
-  --breadcrumb-font-size: 14px;
+  --breadcrumb-font-size: var(--type-scale-14);
   --breadcrumb-line-height: var(--body-text-line);
   --breadcrumb-item-space: 2rem;
   --breadcrumb-separator: '\0002f';
@@ -836,7 +851,7 @@ a.brand:hover {
   --button-disabled-background-color: transparent;
   --button-disabled-border-color: var(--palette-black-20);
   --button-disabled-color: var(--palette-black-80);
-  --button-font-size: 15px;
+  --button-font-size: var(--type-scale-15);
   --button-font-weight: var(--font-weight-semibold);
   --button-border-radius: var(--radius-base);
   --button-line-height: 1;
@@ -951,12 +966,12 @@ a.brand:hover {
   --button-disabled-color: var(--palette-black-80); }
 
 .button-large {
-  --button-font-size: 16px;
+  --button-font-size: var(--type-scale-16);
   --button-height: 52px;
   --button-padding-x: 29px; }
 
 .button-small {
-  --button-font-size: 14px;
+  --button-font-size: var(--type-scale-14);
   --button-height: 32px;
   --button-padding-x: 14px;
   padding-top: 0; }
@@ -1025,7 +1040,7 @@ a.brand:hover {
 .checkbox,
 .radio {
   --checkbox-radio-color: var(--text-default);
-  --checkbox-radio-font-size: 15px;
+  --checkbox-radio-font-size: var(--type-scale-15);
   --checkbox-radio-font-weight: normal;
   --checkbox-radio-font-style: normal;
   --checkbox-radio-text-transform: none;
@@ -1111,7 +1126,7 @@ pre,
   --code-background-color: var(--palette-neutral-lightest);
   --code-color: var(--text-default);
   --code-border-color: transparent;
-  --code-font-size: 14px;
+  --code-font-size: var(--type-scale-14);
   --code-font-family: var(--font-mono);
   --code-line-height: 1.5;
   --code-padding: 4rem;
@@ -1353,7 +1368,7 @@ hr {
 figcaption {
   --figcaption-color: var(--text-default);
   --figcaption-background-color: transparent;
-  --figcaption-font-size: 12px;
+  --figcaption-font-size: var(--type-scale-12);
   --figcaption-line-height: var(--body-text-line);
   --figcaption-font-style: normal;
   --figcaption-font-weight: normal;
@@ -1486,7 +1501,7 @@ figcaption {
 label {
   --form-label-color: var(--text-default);
   --form-background-color: transparent;
-  --form-label-font-size: 15px;
+  --form-label-font-size: var(--type-scale-15);
   --form-label-line-height: var(--body-text-line);
   --form-label-font-weight: normal;
   --form-label-font-style: normal;
@@ -2273,7 +2288,7 @@ label {
 
 .hint {
   --hint-color: var(--palette-black-50);
-  --hint-font-size: 13px;
+  --hint-font-size: var(--type-scale-13);
   --hint-font-weight: normal;
   --hint-font-style: normal;
   --hint-line-height: var(--body-text-line);
@@ -2548,7 +2563,7 @@ sup {
   --input-focus-outline-color: var(--palette-active-mid);
   --input-focus-background-color: var(--palette-white);
   --input-focus-box-shadow: none;
-  --input-font-size: 15px;
+  --input-font-size: var(--type-scale-15);
   --input-line-height: var(--body-text-line);
   --input-border-radius: var(--radius-base);
   --input-padding: 0.3em 0.5em;
@@ -2594,11 +2609,11 @@ sup {
 
 .input-small {
   --input-height: 36px;
-  --input-font-size: 14px; }
+  --input-font-size: var(--type-scale-14); }
 
 .input-large {
   --input-height: 52px;
-  --input-font-size: 18px;
+  --input-font-size: var(--type-scale-18);
   --input-padding: 0.3em 0.4em; }
 
 .input-round {
@@ -2720,7 +2735,7 @@ input[type="checkbox"] {
   --label-background-color: var(--palette-neutral-lighter);
   --label-border-color: transparent;
   --label-color: var(--palette-neutral-darker);
-  --label-font-size: 12px;
+  --label-font-size: var(--type-scale-12);
   --label-font-weight: var(--font-weight-semibold);
   --label-border-radius: var(--radius-medium);
   --label-padding: 6px 10px;
@@ -2932,7 +2947,7 @@ a.label:hover {
 
 .list {
   --list-item-color: var(--text-default);
-  --list-font-size: 15px;
+  --list-font-size: var(--type-scale-15);
   --list-line-height: 1.3;
   --list-item-space: 0;
   --list-item-padding-y: 6px;
@@ -2966,10 +2981,10 @@ a.label:hover {
     margin-top: -2px; }
 
 .list-medium {
-  --list-font-size: 14px; }
+  --list-font-size: var(--type-scale-14); }
 
 .list-small {
-  --list-font-size: 13px; }
+  --list-font-size: var(--type-scale-13); }
 
 .list-light {
   --list-item-color: var(--palette-white-90); }
@@ -3054,7 +3069,7 @@ a.label:hover {
   --menu-link-hover-background-color: transparent;
   --menu-link-active-color: var(--palette-black-40);
   --menu-link-active-background-color: transparent;
-  --menu-font-size: 15px;
+  --menu-font-size: var(--type-scale-15);
   --menu-nested-margin: 5rem;
   --menu-line-height: 1.3;
   --menu-link-padding-x: 0;
@@ -3106,10 +3121,10 @@ a.label:hover {
     margin-top: -2px; }
 
 .menu-medium {
-  --menu-font-size: 14px; }
+  --menu-font-size: var(--type-scale-14); }
 
 .menu-small {
-  --menu-font-size: 13px; }
+  --menu-font-size: var(--type-scale-13); }
 
 .menu-semibold .menu-link {
   --menu-link-font-weight: var(--font-weight-semibold);
@@ -3210,7 +3225,7 @@ a.label:hover {
   --nav-link-hover-background-color: transparent;
   --nav-link-active-color: var(--palette-black-40);
   --nav-link-active-background-color: transparent;
-  --nav-font-size: 14px;
+  --nav-font-size: var(--type-scale-14);
   --nav-item-space: 6rem;
   --nav-link-padding: 0;
   --nav-link-border-radius: 0;
@@ -3248,7 +3263,7 @@ a.label:hover {
     margin-left: 2px; }
 
 .nav-small {
-  --nav-font-size: 13px;
+  --nav-font-size: var(--type-scale-13);
   --nav-item-space: 5rem; }
 
 .nav-semibold .nav-link {
@@ -3963,7 +3978,7 @@ blockquote,
 .quote {
   --quote-color: var(--text-default);
   --quote-background-color: transparent;
-  --quote-font-size: 18px;
+  --quote-font-size: var(--type-scale-18);
   --quote-font-style: italic;
   --quote-font-weight: normal;
   --quote-line-height: var(--body-text-line);
@@ -3991,7 +4006,7 @@ blockquote,
   .quote .quote-caption {
     --quote-caption-color: var(--text-default);
     --quote-caption-background-color: transparent;
-    --quote-caption-font-size: 14px;
+    --quote-caption-font-size: var(--type-scale-14);
     --quote-caption-font-style: italic;
     --quote-caption-font-weight: normal;
     --quote-caption-line-height: var(--body-text-line);
@@ -6273,7 +6288,7 @@ table,
   --table-border-color: var(--palette-black-7);
   --table-head-border-color: var(--palette-black-7);
   --table-color: var(--text-default);
-  --table-font-size: 15px;
+  --table-font-size: var(--type-scale-15);
   --table-line-height: var(--body-text-line);
   --table-border-style: solid;
   --table-border-width: 1px;

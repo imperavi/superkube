@@ -6,7 +6,7 @@
     --badge-color: var(--palette-neutral-darker);
 
     // params
-    --badge-font-size: 12px;
+    --badge-font-size: var(--type-scale-12);
     --badge-font-weight: var(--font-weight-semibold);
     --badge-border-radius: 99px;
     --badge-padding: 1px 4px;
@@ -63,15 +63,15 @@ a.badge:hover {
     --badge-color: var(--palette-black);
 }
 .badge-large {
-    --badge-font-size: 14px;
+    --badge-font-size: var(--type-scale-14);
     --badge-size: 26px;
 }
 .badge-huge {
-    --badge-font-size: 16px;
+    --badge-font-size: var(--type-scale-16);
     --badge-size: 36px;
 }
 .badge-mega {
-    --badge-font-size: 20px;
+    --badge-font-size: var(--type-scale-20);
     --badge-size: 48px;
 }
 

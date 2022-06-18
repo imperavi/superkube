@@ -5,7 +5,7 @@ figcaption {
     --figcaption-background-color: transparent;
 
     // params
-    --figcaption-font-size: 12px;
+    --figcaption-font-size: var(--type-scale-12);
     --figcaption-line-height: var(--body-text-line);
     --figcaption-font-style: normal;
     --figcaption-font-weight: normal;

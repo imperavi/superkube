@@ -14,7 +14,7 @@
     --dropdown-link-disabled-background-color: var(--palette-white);
 
     // params
-    --dropdown-font-size: 15px;
+    --dropdown-font-size: var(--type-scale-15);
     --dropdown-line-height: var(--body-text-line);
     --dropdown-border-radius: var(--radius-base);
     --dropdown-level: var(--level-over-page);

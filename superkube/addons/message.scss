@@ -6,7 +6,7 @@
     --message-box-shadow: 0 20px 50px -12px var(--palette-black-40);
 
     // vars
-    --message-font-size: 14px;
+    --message-font-size: var(--type-scale-14);
     --message-line-height: var(--body-text-line);
     --message-border-radius: var(--radius-base);
     --message-level: var(--level-over-all);

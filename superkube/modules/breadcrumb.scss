@@ -7,7 +7,7 @@
     --breadcrumb-separator-color: var(--palette-black-25);
 
     // params
-    --breadcrumb-font-size: 14px;
+    --breadcrumb-font-size: var(--type-scale-14);
     --breadcrumb-line-height: var(--body-text-line);
     --breadcrumb-item-space: 2rem;
     --breadcrumb-separator: '\0002f';

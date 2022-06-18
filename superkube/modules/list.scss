@@ -52,7 +52,7 @@
     --list-item-color: var(--text-default);
 
     // params
-    --list-font-size: 15px;
+    --list-font-size: var(--type-scale-15);
     --list-line-height: 1.3;
     --list-item-space: 0;
     --list-item-padding-y: 6px;
@@ -95,10 +95,10 @@
 }
 // Variants
 .list-medium {
-    --list-font-size: 14px;
+    --list-font-size: var(--type-scale-14);
 }
 .list-small {
-    --list-font-size: 13px;
+    --list-font-size: var(--type-scale-13);
 }
 .list-light {
     --list-item-color: var(--palette-white-90);

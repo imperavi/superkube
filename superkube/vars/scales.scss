@@ -1,5 +1,22 @@
 // =Scales
 $scales: map-extend($scales, (
+    type-scale: (
+        64: 64px,
+        52: 52px,
+        48: 48px,
+        40: 40px,
+        32: 32px,
+        24: 24px,
+        20: 20px,
+        18: 18px,
+        16: 16px,
+        15: 15px,
+        14: 14px,
+        13: 13px,
+        12: 12px,
+        11: 11px,
+        10: 10px
+    ),
     type: (
         base: (
             h1: 56px 1.15,

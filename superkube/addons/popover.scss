@@ -5,7 +5,7 @@
     --popover-box-shadow: var(--shadow-300);
 
     // vars
-    --popover-font-size: 16px;
+    --popover-font-size: var(--type-scale-16);
     --popover-line-height: var(--body-text-line);
     --popover-border-radius: var(--radius-base);
     --popover-level: var(--level-over-page);

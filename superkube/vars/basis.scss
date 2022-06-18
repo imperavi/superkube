@@ -6,7 +6,7 @@ $dark-theme: false !default;
 $dark-class: null !default;
 
 // Global
-$global-scales: radius, level, type-space !default;
+$global-scales: radius, level, type-scale, type-space !default;
 
 // Opacity
 $opacity-scale: 5, 7, 10, 15, 20, 25, 30, 40, 50, 60, 70, 80, 90, 95 !default;

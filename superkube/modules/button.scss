@@ -12,7 +12,7 @@
     --button-disabled-color: var(--palette-black-80);
 
     // params
-    --button-font-size: 15px;
+    --button-font-size: var(--type-scale-15);
     --button-font-weight: var(--font-weight-semibold);
     --button-border-radius: var(--radius-base);
     --button-line-height: 1;
@@ -148,12 +148,12 @@
     --button-disabled-color: var(--palette-black-80);
 }
 .button-large {
-    --button-font-size: 16px;
+    --button-font-size: var(--type-scale-16);
     --button-height: 52px;
     --button-padding-x: 29px;
 }
 .button-small {
-    --button-font-size: 14px;
+    --button-font-size: var(--type-scale-14);
     --button-height: 32px;
     --button-padding-x: 14px;
 

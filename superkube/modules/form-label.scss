@@ -5,7 +5,7 @@ label {
     --form-background-color: transparent;
 
     // params
-    --form-label-font-size: 15px;
+    --form-label-font-size: var(--type-scale-15);
     --form-label-line-height: var(--body-text-line);
     --form-label-font-weight: normal;
     --form-label-font-style: normal;

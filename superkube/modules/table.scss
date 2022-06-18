@@ -7,7 +7,7 @@ table,
     --table-color: var(--text-default);
 
     // params
-    --table-font-size: 15px;
+    --table-font-size: var(--type-scale-15);
     --table-line-height: var(--body-text-line);
     --table-border-style: solid;
     --table-border-width: 1px;

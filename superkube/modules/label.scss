@@ -6,7 +6,7 @@
     --label-color: var(--palette-neutral-darker);
 
     // params
-    --label-font-size: 12px;
+    --label-font-size: var(--type-scale-12);
     --label-font-weight: var(--font-weight-semibold);
     --label-border-radius: var(--radius-medium);
     --label-padding: 6px 10px;

@@ -7,7 +7,7 @@ pre,
     --code-border-color: transparent;
 
     // params
-    --code-font-size: 14px;
+    --code-font-size: var(--type-scale-14);
     --code-font-family: var(--font-mono);
     --code-line-height: 1.5;
     --code-padding: 4rem;

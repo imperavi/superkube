@@ -40,7 +40,6 @@
   --type-space-tag-to-h5: 8rem;
   --type-space-tag-to-h6: 8rem;
   --type-space-figure-to-tag: 8rem;
-  --type-space-form-item-to-item: 5rem;
   --palette-black: #030612;
   --palette-white: #ffffff;
   --palette-primary-darker: #1022A0;
@@ -1477,12 +1476,12 @@ figcaption {
   .flex-end-sm {
     justify-content: flex-end; } }
 
-.form {
-  --form-item-space: var(--type-space-form-item-to-item); }
-  .form .form-item {
-    margin-bottom: var(--form-item-space); }
-  .form .form-item .form-item {
-    margin-bottom: 0; }
+.form-item {
+  --form-item-space: 5rem;
+  margin-bottom: var(--form-item-space); }
+
+.form-item .form-item {
+  margin-bottom: 0; }
 
 label {
   --form-label-color: var(--text-default);

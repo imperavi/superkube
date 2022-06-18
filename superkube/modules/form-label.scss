@@ -32,9 +32,3 @@ label {
 .form-label-light {
     --form-label-color: var(--text-light);
 }
-// Dark theme
-@include dark-theme {
-    label {
-
-    }
-}

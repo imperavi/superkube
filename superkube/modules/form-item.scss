@@ -1,0 +1,8 @@
+// =FormItem
+.form-item {
+    --form-item-space: 5rem;
+    margin-bottom: var(--form-item-space);
+}
+.form-item .form-item {
+    margin-bottom: 0;
+}

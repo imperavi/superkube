@@ -1,7 +1,7 @@
 /*
     Superkube with Dark Theme
-    Version 3.3.0
-    Updated: June 18, 2022
+    Version 3.3.1
+    Updated: June 19, 2022
 
     http://imperavi.com/superkube/
 
@@ -27,6 +27,7 @@
   --level-over-page: 100;
   --level-over-content: 200;
   --level-over-all: 300;
+  --type-scale-80: 80px;
   --type-scale-64: 64px;
   --type-scale-52: 52px;
   --type-scale-48: 48px;
@@ -2354,6 +2355,10 @@ label {
 [class*=" heading-gradient"] a:hover {
   opacity: 1; }
 
+.heading-super {
+  --heading-font-size: 80px;
+  --heading-line-height: 1.1; }
+
 .heading-giga {
   --heading-font-size: 64px;
   --heading-line-height: 1.1; }
@@ -2387,9 +2392,12 @@ label {
   --heading-line-height: 1.4; }
 
 @media only screen and (max-width: 767px) {
+  .heading-super {
+    --heading-font-size: 52px;
+    --heading-line-height: 1.1; }
   .heading-giga {
     --heading-font-size: 52px;
-    --heading-line-height: 1.11; } }
+    --heading-line-height: 1.1; } }
 
 .heading {
   --heading-color: var(--palette-black); }
@@ -4334,123 +4342,73 @@ a.label:hover {
   --prose-h3-line-height: 1.3;
   --prose-h4-font-size: 16px;
   --prose-h4-line-height: 1.4;
+  --prose-h5-font-size: 16px;
+  --prose-h5-line-height: 1.4;
+  --prose-h6-font-size: 16px;
+  --prose-h6-line-height: 1.4;
   --prose-lead-font-size: 24px;
   --prose-lead-line-height: 1.4;
   --prose-p-font-size: 16px;
   --prose-p-line-height: 1.5; }
-  .prose > h1 + * {
-    margin-top: var(--prose-h1-to-tag); }
-  .prose > h2 + * {
-    margin-top: var(--prose-h2-to-tag); }
-  .prose > h3 + * {
-    margin-top: var(--prose-h3-to-tag); }
-  .prose > h4 + * {
-    margin-top: var(--prose-h4-to-tag); }
-  .prose > h5 + * {
-    margin-top: var(--prose-h5-to-tag); }
-  .prose > h6 + * {
-    margin-top: var(--prose-h6-to-tag); }
-  .prose > p + h2,
-  .prose > ul + h2,
-  .prose > ol + h2,
-  .prose > blockquote + h2,
-  .prose > pre + h2,
-  .prose > dl + h2,
-  .prose > address + h2 {
-    margin-top: var(--prose-tag-to-h2); }
-  .prose > p + h3,
-  .prose > ul + h3,
-  .prose > ol + h3,
-  .prose > blockquote + h3,
-  .prose > pre + h3,
-  .prose > dl + h3,
-  .prose > address + h3 {
-    margin-top: var(--prose-tag-to-h3); }
-  .prose > p + h4,
-  .prose > ul + h4,
-  .prose > ol + h4,
-  .prose > blockquote + h4,
-  .prose > pre + h4,
-  .prose > dl + h4,
-  .prose > address + h4 {
-    margin-top: var(--prose-tag-to-h4); }
-  .prose > p + h5,
-  .prose > ul + h5,
-  .prose > ol + h5,
-  .prose > blockquote + h5,
-  .prose > pre + h5,
-  .prose > dl + h5,
-  .prose > address + h5 {
-    margin-top: var(--prose-tag-to-h5); }
-  .prose > p + h6,
-  .prose > ul + h6,
-  .prose > ol + h6,
-  .prose > blockquote + h6,
-  .prose > pre + h6,
-  .prose > dl + h6,
-  .prose > address + h6 {
-    margin-top: var(--prose-tag-to-h6); }
-  .prose > p + *,
-  .prose > ul + *,
-  .prose > ol + *,
-  .prose > blockquote + *,
-  .prose > pre + *,
-  .prose > dl + *,
-  .prose > address + * {
-    margin-top: var(--prose-tag-to-tag); }
-  .prose > figure + h2,
-  .prose > figure + h3,
-  .prose > figure + h4,
-  .prose > figure + h5,
-  .prose > figure + h6,
-  .prose > figure + p,
-  .prose > figure + ul,
-  .prose > figure + ol,
-  .prose > figure + dl,
-  .prose > figure + pre,
-  .prose > figure + figure,
-  .prose > figure + blockquote,
-  .prose > figure + table,
-  .prose > table + h2,
-  .prose > table + h3,
-  .prose > table + h4,
-  .prose > table + h5,
-  .prose > table + h6,
-  .prose > table + p,
-  .prose > table + ul,
-  .prose > table + ol,
-  .prose > table + dl,
-  .prose > table + pre,
-  .prose > table + figure,
-  .prose > table + blockquote,
-  .prose > table + table {
-    margin-top: var(--prose-figure-to-tag); }
-  .prose > h1 + h2 {
-    margin-top: var(--prose-tag-to-h2); }
-  .prose > h2 + h3 {
-    margin-top: var(--prose-tag-to-h3); }
-  .prose > h3 + h4 {
-    margin-top: var(--prose-tag-to-h4); }
-  .prose > h4 + h5 {
-    margin-top: var(--prose-tag-to-h5); }
-  .prose > h5 + h6 {
-    margin-top: var(--prose-tag-to-h6); }
-  .prose > h1 {
+  .prose .prose-title {
     font-size: var(--prose-h1-font-size);
     line-height: var(--prose-h1-line-height); }
-  .prose > h2 {
-    font-size: var(--prose-h2-font-size);
-    line-height: var(--prose-h2-line-height); }
-  .prose > h3 {
-    font-size: var(--prose-h3-font-size);
-    line-height: var(--prose-h3-line-height); }
-  .prose > h4 {
-    font-size: var(--prose-h4-font-size);
-    line-height: var(--prose-h4-line-height); }
-  .prose > p.prose-lead {
+  .prose .prose-lead {
     font-size: var(--prose-lead-font-size);
     line-height: var(--prose-lead-line-height); }
-  .prose > p {
+  .prose .prose-title + .prose-lead {
+    margin-top: var(--prose-h1-to-tag); }
+  .prose .prose-body > h1 + * {
+    margin-top: var(--prose-h1-to-tag); }
+  .prose .prose-body > h2 + * {
+    margin-top: var(--prose-h2-to-tag); }
+  .prose .prose-body > h3 + * {
+    margin-top: var(--prose-h3-to-tag); }
+  .prose .prose-body > h4 + * {
+    margin-top: var(--prose-h4-to-tag); }
+  .prose .prose-body > h5 + * {
+    margin-top: var(--prose-h5-to-tag); }
+  .prose .prose-body > h6 + * {
+    margin-top: var(--prose-h6-to-tag); }
+  .prose .prose-body > * + h2 {
+    margin-top: var(--prose-tag-to-h2); }
+  .prose .prose-body > * + h3 {
+    margin-top: var(--prose-tag-to-h3); }
+  .prose .prose-body > * + h4 {
+    margin-top: var(--prose-tag-to-h4); }
+  .prose .prose-body > * + h5 {
+    margin-top: var(--prose-tag-to-h5); }
+  .prose .prose-body > * + h6 {
+    margin-top: var(--prose-tag-to-h6); }
+  .prose .prose-body > * + * {
+    margin-top: var(--prose-tag-to-tag); }
+  .prose .prose-body > figure + *,
+  .prose .prose-body > table + *,
+  .prose .prose-body > div + * {
+    margin-top: var(--prose-figure-to-tag); }
+  .prose .prose-body > h1,
+  .prose .prose-body > h1.prose-title {
+    font-size: var(--prose-h1-font-size);
+    line-height: var(--prose-h1-line-height); }
+  .prose .prose-body > h2 {
+    font-size: var(--prose-h2-font-size);
+    line-height: var(--prose-h2-line-height); }
+  .prose .prose-body > h3 {
+    font-size: var(--prose-h3-font-size);
+    line-height: var(--prose-h3-line-height); }
+  .prose .prose-body > h4 {
+    font-size: var(--prose-h4-font-size);
+    line-height: var(--prose-h4-line-height); }
+  .prose .prose-body > h5 {
+    font-size: var(--prose-h5-font-size);
+    line-height: var(--prose-h5-line-height); }
+  .prose .prose-body > h6 {
+    font-size: var(--prose-h6-font-size);
+    line-height: var(--prose-h6-line-height); }
+  .prose .prose-body > p.prose-lead {
+    font-size: var(--prose-lead-font-size);
+    line-height: var(--prose-lead-line-height); }
+  .prose .prose-body > p {
     font-size: var(--prose-p-font-size);
     line-height: var(--prose-p-line-height); }
 

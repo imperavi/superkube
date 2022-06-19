@@ -1,6 +1,7 @@
 // =Scales
 $scales: map-extend($scales, (
     type-scale: (
+        80: 80px,
         64: 64px,
         52: 52px,
         48: 48px,
@@ -23,10 +24,13 @@ $scales: map-extend($scales, (
             h2: 32px 1.2,
             h3: 20px 1.3,
             h4: 16px 1.4,
+            h5: 16px 1.4,
+            h6: 16px 1.4,
             lead: 24px 1.4,
             p: 16px 1.5
         ),
         heading: (
+            super: 80px 1.1,
             giga: 64px 1.1,
             mega: 48px 1.1,
             huge: 40px 1.2,
@@ -48,7 +52,8 @@ $scales: map-extend($scales, (
     ),
     type-sm: (
         heading: (
-            giga: 52px 1.11
+            super: 52px 1.1,
+            giga: 52px 1.1
         )
     ),
     type-md: (),
